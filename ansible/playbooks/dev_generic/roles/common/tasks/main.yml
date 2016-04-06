@@ -1,0 +1,33 @@
+---
+- name: Refresh apt cache
+  # If we want to keep the distribution up-to-date: upgrade=yes
+  apt: update_cache=yes cache_valid_time=3600
+  tags: [update]
+  become: yes
+  become_method: sudo
+
+- name: Set timezone variables
+  become: yes
+  become_method: sudo
+  copy: content='America/Chicago\n'
+        dest=/etc/timezone
+        owner=root
+        group=root
+        mode=0644
+        backup=yes
+  when: ansible_date_time.tz != 'America/Chicago'
+
+- name: Install base packages for development
+  apt: pkg={{ item }} state=installed
+  become: yes
+  become_method: sudo
+  tags: [packages]
+  with_items:
+    - git
+    - build-essential
+    - automake
+    - autoconf
+    - unzip
+    - curl
+    - screen
+
