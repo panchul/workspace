@@ -31,3 +31,13 @@
     - curl
     - screen
 
+    # ejabberd doc generator wanted this
+    - ruby-full
+    # - ruby-rvm
+    - ruby-bundler
+    # - rubygems
+    - rake
+    # TODO: maybe get and compile Ruby from scratch
+
+
+

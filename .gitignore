@@ -28,4 +28,9 @@
 *.app
 
 .vagrant
+
+# Require things to be added to the repo explicitly
 projects
+
+# Mac stuff
+.DS_Store
