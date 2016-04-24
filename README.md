@@ -4,6 +4,10 @@
 
 \[ Under construction \]
 
+If you are familiar with Vagrant and Ansible, you would know what
+this repository is. If you do not, you should - virtualization and
+all sorts of orchestration and provisioning are hard to void regardless of
+what kind of software-related activity you are involved in.
 
 This repository contains all you need to setup a convinient development
 environment on your machine for distributed programming.

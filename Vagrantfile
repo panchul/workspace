@@ -50,20 +50,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ###  sudo apt-get install -y apache2
     ##SHELL
 
-      box.vm.provision "generic", type: "ansible" do |ansible|
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
          #ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false
       end
-
-      # TODO: do the yarc-specific later
-      #box.vm.provision "yarc", type: "ansible" do |ansible|
-      #   ansible.playbook = "ansible/playbooks/dev_yarc/bootstrap.yml"
-      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
-      #   ansible.verbose = true
-      #   ansible.host_key_checking = false
-      #end
     end
   end
 
@@ -87,32 +79,24 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
-      box.vm.provision "generic", type: "ansible" do |ansible|
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
          #ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false
       end
-
-      # TODO: do the yarc-specific later
-      #box.vm.provision "yarc", type: "ansible" do |ansible|
-      #   ansible.playbook = "ansible/playbooks/dev_yarc/bootstrap.yml"
-      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
-      #   ansible.verbose = true
-      #   ansible.host_key_checking = false
-      #end
     end
   end
 
   N_CPP = 1
   (1..N_CPP).each do |machine_id|
-    config.vm.define "sb_cpp#{machine_id}", autostart: false do |box|
+    config.vm.define "sbcpp#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
       box.vm.network :forwarded_port, guest: 22, host: "21#{30+machine_id}"
-      box.vm.host_name = "ycli#{machine_id}.vm"
+      box.vm.host_name = "sbcpp#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_CPP_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
 
@@ -124,20 +108,19 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
-      box.vm.provision "generic", type: "ansible" do |ansible|
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
          #ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false
       end
 
-      # TODO: do the cpp-specific later
-      #box.vm.provision "yarc", type: "ansible" do |ansible|
-      #   ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
-      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
-      #   ansible.verbose = true
-      #   ansible.host_key_checking = false
-      #end
+      box.vm.provision "dev_cpp", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
     end
   end
 

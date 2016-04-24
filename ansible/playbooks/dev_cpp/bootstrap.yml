@@ -1,0 +1,6 @@
+---
+
+- name: Install things useful for cpp sandbox
+  hosts: all
+  roles:
+    - prime_rib

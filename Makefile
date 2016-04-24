@@ -15,9 +15,9 @@ help:
 	@echo " Common make targets are grouped below by their functionality. "
 	@echo " "
 	@echo " To create virtual machines or sets of them: "
-	@echo "     make sb_cpp        - creates a basic cpp sandbox virtual machine. "
-	@echo "     make sb_erlang     - creates a basic erlang sandbox virtual machine. "
-	@echo "     make sb_yarc       - creates a yarc sandbox virtual machine. "
+	@echo "     make sbcpp        - creates a basic cpp sandbox virtual machine. "
+	@echo "     make sberlang     - creates a basic erlang sandbox virtual machine. "
+	@echo "     make sbyarc       - creates a yarc sandbox virtual machine. "
 	@echo " "
 	@echo " To provision(helps if a re-try is needed): "
 	@echo "     make provision_cpp - runs an Ansible script to provision things needed. "
@@ -31,19 +31,18 @@ help:
 	@echo " If you are reading this, your system seems to have the necessary pre-requisites "
 	@echo " "
 
-sb_yarc: prepare_folders_yarc
+sbyarc: prepare_folders_yarc
 	vagrant up $(DEFAULT_YARC_SET)
 
-sb_cpp: prepare_folders_cpp
-	@echo "TODO: create this vm"
-	vagrant up sb_cpp1
+sbcpp: prepare_folders_cpp
+	vagrant up sbcpp1
 
-sb_erlang: prepare_folders_erlang
+sberlang: prepare_folders_erlang
 	@echo "TODO: create this vm"
-	vagrant up sb_erlang1
+	vagrant up sberlang1
 
 provision_cpp:
-	vagrant provision sb_cpp1
+	vagrant provision sbcpp1
 
 test: test_cpp
 	@echo "Ran all tests"
@@ -56,14 +55,14 @@ test_cpp:
 prepare_folders:  prepare_folders_yarc prepare_folders_cpp prepare_folders_erlang
 
 prepare_folders_yarc:
-	@mkdir -p projects_sb_yser1
-	@mkdir -p projects_sb_yser2
-	@mkdir -p projects_sb_yser3
-	@mkdir -p projects_sb_yser4
-	@mkdir -p projects_sb_yser5
+	@mkdir -p projects_sbyser1
+	@mkdir -p projects_sbyser2
+	@mkdir -p projects_sbyser3
+	@mkdir -p projects_sbyser4
+	@mkdir -p projects_sbyser5
 
 prepare_folders_cpp:
-	@mkdir -p projects_sb_cpp1
+	@mkdir -p projects_sbcpp1
 
 prepare_folders_erlang:
-	@mkdir -p projects_sb_erlang1
+	@mkdir -p projects_sberlang1
