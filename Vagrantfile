@@ -11,20 +11,75 @@ WORKSPACE_VM_BOX_NO_GUI = "ubuntu/trusty64"
 WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/trusty64.box"
 
 WS_IP_FIRST_24BITS = "192.168.10."
+WS_IP_SPACE_GENERIC_START = 2
 WS_IP_SPACE_YARC_SERVER_START = 10
 WS_IP_SPACE_YARC_CLIENT_START = 20
-WS_IP_SPACE_CPP_START = 30
+WS_IP_SPACE_CPP_START = 25
+WS_IP_SPACE_ERL_START = 30
+WS_IP_SPACE_SCALA_START = 35
+WS_IP_SPACE_MYSQL_START = 40
+WS_IP_SPACE_HAPROXY_START = 45
+# NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  NYARCServers = 5
-  (1..NYARCServers).each do |machine_id|
+  N_Generics = 3
+  (1..N_Generics).each do |machine_id|
+    config.vm.define "gen#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
+      box.ssh.forward_agent = true
+      box.vm.host_name = "gen#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        # We do not have to have gui, we can save some memory if we don't.
+        vb.gui = true
+        vb.memory = "2024"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+        #vb.customize ["modifyvm", :id, '--audio', 'coreaudio', '--audiocontroller', 'hda'] # choices: hda sb16 ac97
+        ##if RUBY_PLATFORM =~ /darwin/
+        ##      vb.customize ["modifyvm", :id, '--audio', 'coreaudio', '--audiocontroller', 'hda'] # choices: hda sb16 ac97
+        ##    elsif RUBY_PLATFORM =~ /mingw|mswin|bccwin|cygwin|emx/
+        ##      vb.customize ["modifyvm", :id, '--audio', 'dsound', '--audiocontroller', 'ac97']
+        ##    end
+      end
+
+      config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+
+      box.vm.provision "dev_cpp", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+      
+    end
+  end
+
+  N_YARC_Servers = 3
+  (1..N_YARC_Servers).each do |machine_id|
     config.vm.define "yser#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{10+machine_id}"
+      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_YARC_SERVER_START+machine_id}"
       box.ssh.forward_agent = true
       box.vm.host_name = "yser#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_YARC_SERVER_START+machine_id}"
@@ -59,14 +114,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
-  N_YARC_Clients =5
+  N_YARC_Clients =3
   (1..N_YARC_Clients).each do |machine_id|
     config.vm.define "ycli#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{20+machine_id}"
+      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_YARC_CLIENT_START+machine_id}"
       box.vm.host_name = "ycli#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_YARC_CLIENT_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
@@ -95,10 +150,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{30+machine_id}"
+      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_CPP_START+machine_id}"
       box.vm.host_name = "sbcpp#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_CPP_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
+      box.vm.synced_folder  "projects_sbcpp#{machine_id}", "/projects_sbcpp#{machine_id}"
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
@@ -117,6 +173,43 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "dev_cpp", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+    end
+  end
+
+  N_ERL = 1
+  (1..N_ERL).each do |machine_id|
+    config.vm.define "sberl#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ERL_START+machine_id}"
+      box.vm.host_name = "sberl#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_ERL_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+      box.vm.synced_folder  "projects_sberl#{machine_id}", "/projects_sberl#{machine_id}"
+
+      box.vm.provider "virtualbox" do |vb|
+        vb.gui = true
+        vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+
+      box.vm.provision "dev_erl", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_erl/bootstrap.yml"
          #ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false

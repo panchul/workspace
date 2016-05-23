@@ -1,0 +1,7 @@
+---
+
+- name: Install things useful for erlang sandbox
+  hosts: all
+  roles:
+    - erlang
+    - prime_rib

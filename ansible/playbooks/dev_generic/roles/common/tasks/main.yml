@@ -38,6 +38,7 @@
     # - rubygems
     - rake
     # TODO: maybe get and compile Ruby from scratch
-
+    - gstreamer1.0-plugins-ugly
+    - gstreamer1.0-libav
 
 

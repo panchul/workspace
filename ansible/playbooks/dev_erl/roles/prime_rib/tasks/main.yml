@@ -1,0 +1,9 @@
+---
+
+# NOTE: prime_rib is multi-language thing, in here, for Erlang playbook
+# we place it into the Erlang sandbox.
+- name: Clone prime_rib
+  git: repo=https://github.com/panchul/prime_rib.git
+       dest="{{ ansible_env.HOME }}/sb_erl/prime_rib"
+
+

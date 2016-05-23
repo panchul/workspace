@@ -1,0 +1,5 @@
+---
+# Global variables
+
+erlangurl: http://www.erlang.org/download/otp_src_18.3.tar.gz
+erlangsrc: otp_src_18.3 
