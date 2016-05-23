@@ -15,8 +15,8 @@ help:
 	@echo " Common make targets are grouped below by their functionality. "
 	@echo " "
 	@echo " To create virtual machines or sets of them: "
-	@echo "     make sbcpp        - creates a basic cpp sandbox virtual machine. "
-	@echo "     make sberlang     - creates a basic erlang sandbox virtual machine. "
+	@echo "     make sbcpp        - creates a basic C++ sandbox virtual machine. "
+	@echo "     make sberl        - creates a basic Erlang sandbox virtual machine. "
 	@echo "     make sbyarc       - creates a yarc sandbox virtual machine. "
 	@echo " "
 	@echo " To provision(helps if a re-try is needed): "
@@ -37,9 +37,8 @@ sbyarc: prepare_folders_yarc
 sbcpp: prepare_folders_cpp
 	vagrant up sbcpp1
 
-sberlang: prepare_folders_erlang
-	@echo "TODO: create this vm"
-	vagrant up sberlang1
+sberl: prepare_folders_erl
+	vagrant up sberl1
 
 provision_cpp:
 	vagrant provision sbcpp1
@@ -52,7 +51,7 @@ test_cpp:
 	ansible-playbook --connection ssh -u vagrant -i $(ANSIBLE_INVENTORY) -v ansible/playbooks/test_cpp/test1.yml
 	@echo "Ran cpp tests"
 
-prepare_folders:  prepare_folders_yarc prepare_folders_cpp prepare_folders_erlang
+prepare_folders:  prepare_folders_yarc prepare_folders_cpp prepare_folders_erl
 
 prepare_folders_yarc:
 	@mkdir -p projects_sbyser1
@@ -64,5 +63,5 @@ prepare_folders_yarc:
 prepare_folders_cpp:
 	@mkdir -p projects_sbcpp1
 
-prepare_folders_erlang:
-	@mkdir -p projects_sberlang1
+prepare_folders_erl:
+	@mkdir -p projects_sberl1

@@ -1,0 +1,42 @@
+---
+
+- name: Install packages Erlang might want
+  apt: pkg={{ item }} state=installed
+  become: yes
+  become_method: sudo
+  tags: [packages]
+  with_items:
+# We won't go with the easy way, we'll compile the latest version    
+#    - erlang
+
+    - libncurses5-dev
+    
+    - openssl
+    - libssl-dev
+    - fop
+    - unixodbc-dev
+    
+    - libwxbase2.8-0
+    - libwxgtk2.8-dev
+    - libqt4-opengl-dev
+
+- name: Ensure download directory is present
+  file: path={{ ansible_env.HOME }}/erlang state=directory
+
+- name: download Erlang
+  get_url: url={{ erlangurl }} dest={{ ansible_env.HOME }}/erlang/{{ erlangsrc }}.tar.gz
+
+- name: Unpack Erlang source files
+  shell: cd {{ ansible_env.HOME }}/erlang && tar -xzvf {{ erlangsrc }}.tar.gz creates={{ ansible_env['HOME'] }}/erlang/{{ erlangsrc }}
+
+- name: Configure
+  shell: cd {{ ansible_env.HOME }}/erlang/{{ erlangsrc }} && ./configure --disable-hipe
+
+- name: Make all
+  shell: cd {{ ansible_env.HOME }}/erlang/{{ erlangsrc }} && make
+
+- name: Make install
+  become: true
+  shell: cd {{ ansible_env.HOME }}/erlang/{{ erlangsrc }} && make install
+  
+
