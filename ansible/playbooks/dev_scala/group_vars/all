@@ -1,0 +1,10 @@
+---
+# Global variables
+
+# sbturl: http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.0/sbt.tgz
+sbturl: https://dl.bintray.com/sbt/native-packages/sbt/0.13.11/sbt-0.13.11.tgz
+
+sbtsrc: sbt-0.13.11
+
+eclipseurl: "http://downloads.typesafe.com/scalaide-pack/4.4.1-vfinal-luna-211-20160504/scala-SDK-4.4.1-vfinal-2.11-linux.gtk.x86_64.tar.gz"
+eclipsesrc: "scala-SDK-4.4.1-vfinal-2.11-linux.gtk.x86_64"
