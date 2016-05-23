@@ -3,5 +3,4 @@
 - name: Install things useful for the sandbox
   hosts: all
   roles:
-    - erlang
-    - prime_rib
+    - scala

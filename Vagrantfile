@@ -39,7 +39,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.provider "virtualbox" do |vb|
         # We do not have to have gui, we can save some memory if we don't.
         vb.gui = true
-        vb.memory = "2024"
+        vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
@@ -100,10 +100,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         ##    end
       end
 
-    ##config.vm.provision "shell", inline: <<-SHELL
-    ##  sudo apt-get update
-    ###  sudo apt-get install -y apache2
-    ##SHELL
+      config.vm.provision "shell", inline: <<-SHELL
+         sudo apt-get update
+      ###  sudo apt-get install -y apache2
+      SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
@@ -125,6 +125,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.host_name = "ycli#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_YARC_CLIENT_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
+
+      config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+      SHELL
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
@@ -158,11 +162,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
-        vb.memory = "1024"
+        vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
+
+      config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+      SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
@@ -201,6 +209,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
+      config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+      SHELL
+
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
          #ansible.inventory_path = "ansible/ansible.vmhosts"
@@ -210,6 +222,47 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "dev_erl", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_erl/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+    end
+  end
+
+  N_SCALA = 1
+  (1..N_SCALA).each do |machine_id|
+    config.vm.define "sbsc#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_SCALA_START+machine_id}"
+      box.vm.host_name = "sbsc#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SCALA_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
+
+      box.vm.provider "virtualbox" do |vb|
+        vb.gui = true
+        vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+
+      box.vm.provision "dev_scala", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
          #ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false
