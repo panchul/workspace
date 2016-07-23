@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 if [ ! -d jdk ]; then
   if [ ! -f tmp/jdk-8u101-linux-x64.tar.gz ]; then

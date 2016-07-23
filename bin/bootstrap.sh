@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #
 # If the only provisioning we have is shell provisioning, this script could be handy.
 #

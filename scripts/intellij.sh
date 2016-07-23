@@ -1,6 +1,4 @@
-#
-#
-
+#!/usr/bin/env bash
 
 if [ ! -d idea-IC-162.1121.32 ]; then
   if [ ! -f tmp/idea.tar.gz ]; then

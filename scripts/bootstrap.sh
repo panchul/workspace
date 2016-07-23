@@ -1,4 +1,4 @@
-#
+#!/usr/bin/env bash
 
 # do all the provisioning in a dedicated place we can remove to save space
 mkdir -p tmp 

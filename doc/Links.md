@@ -11,7 +11,7 @@ TODO: Create sub-pages of these.
 - [Ansible](Ansible)  
 - rake  
 - bundler  
-- Docker
+- [Docker](Docker)  
 - [VirtualBox](VirtualBox)  
 - [VMWare](VMWare)  
 - AWS
@@ -143,6 +143,8 @@ TODO: Create sub-pages of these.
 - Jira
 - Jenkins
 - Redmine
+- Phabricator
+- Trello
 
 ## Career etc.
 

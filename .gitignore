@@ -33,6 +33,7 @@ install
 *.out
 *.app
 
+# Vagrant
 .vagrant
 *.retry
 

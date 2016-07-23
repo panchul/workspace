@@ -1,4 +1,4 @@
-
+#!/usr/bin/env bash
 
 if [ ! -d sbt ]; then
   if [ ! -f tmp/sbt.tgz ]; then

@@ -1,5 +1,4 @@
-#
-#
+#!/usr/bin/env bash
 
 # sync the list
 sudo apt-get -y update
