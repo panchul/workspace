@@ -9,7 +9,7 @@ this repository is. If you do not, you should - virtualization and
 all sorts of orchestration and provisioning are hard to void regardless of
 what kind of software-related activity you are involved in.
 
-This repository contains all you need to setup a convinient development
+This repository contains all you need to setup a convenient development
 environment on your machine for distributed programming.
 It spawns and provisions virtual machines that have their own network
 configured, making it easy to apply and host any code you want to run.
