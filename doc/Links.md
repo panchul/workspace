@@ -38,7 +38,7 @@ TODO: Create sub-pages of these.
 - Racket  
 - Go  
 - [Scala](Scala)  
-- Java  
+- [Java](Java)  
 - Matlab  
 - Simulink
 - PostScript
@@ -100,7 +100,7 @@ TODO: Create sub-pages of these.
 - MS Visual Studio  
 - Eclipse  
 - [IntelliJ](Intellij)  
-- vi
+- [vi/vim](Vim)  
 - emacs
 
 ### Networking
