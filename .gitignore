@@ -1,3 +1,9 @@
+# Require things to be added to the repo explicitly
+private
+projects
+projects_*
+install
+
 # Compiled Object files
 *.slo
 *.lo
@@ -29,10 +35,6 @@
 
 .vagrant
 *.retry
-
-# Require things to be added to the repo explicitly
-projects
-projects_*
 
 # Mac stuff
 .DS_Store
