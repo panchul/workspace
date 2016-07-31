@@ -7,13 +7,13 @@ TODO: Create sub-pages of these.
 
 ### Virtualization, clustering, and provisioning
 
-- [Vagrant](Vagrant)  
-- [Ansible](Ansible)  
+- [Vagrant](Vagrant.md)  
+- [Ansible](Ansible.md)  
 - rake  
 - bundler  
-- [Docker](Docker)  
-- [VirtualBox](VirtualBox)  
-- [VMWare](VMWare)  
+- [Docker](Docker.md)  
+- [VirtualBox](VirtualBox.md)  
+- [VMWare](VMWare.md)  
 - AWS
 - Fabric
 - Otto
@@ -23,7 +23,7 @@ TODO: Create sub-pages of these.
 - C++
   - STL
   - Boost   
-- [Erlang/OTP](Erlang)  
+- [Erlang/OTP](Erlang.md)  
   - Kerl
   - emake
   - Jiffy
@@ -33,12 +33,12 @@ TODO: Create sub-pages of these.
   - MochiWeb
 - Perl  
 - Assembler  
-- [Ruby](Ruby)  
+- [Ruby](Ruby.md)  
 - ML  
 - Racket  
 - Go  
-- [Scala](Scala)  
-- [Java](Java)  
+- [Scala](Scala.md)  
+- [Java](Java.md)  
 - Matlab  
 - Simulink
 - PostScript
@@ -58,24 +58,24 @@ TODO: Create sub-pages of these.
 
 ### Databases
 
-- [MySQL](MySQL)
+- [MySQL](MySQL.md)
 - PostGRE
 - MongoDB
 - Riak
 
 ### Version control systems  
 
-- [Git](Git)  
+- [Git](Git.md)  
   - gitk  
 - SVN  
 
   
 ### Operating systems
   
-- Linux  
-  - Ubuntu  
-  - RedHat  
-  - CentOS  
+- [Linux](Linux.md)  
+  -- Ubuntu  
+  -- RedHat  
+  -- CentOS  
 - SunOS  
 - Windows  
 - Symbian OS  
@@ -83,6 +83,7 @@ TODO: Create sub-pages of these.
 ### Web Frameworks
 
 - MochiWeb
+- [PlayFramework](PlayFramework.md)
 
 ### GUI Frameworks
 
@@ -99,8 +100,8 @@ TODO: Create sub-pages of these.
   
 - MS Visual Studio  
 - Eclipse  
-- [IntelliJ](Intellij)  
-- [vi/vim](Vim)  
+- [IntelliJ](Intellij.md)  
+- [vi/vim](Vim.md)  
 - emacs
 
 ### Networking
@@ -110,7 +111,7 @@ TODO: Create sub-pages of these.
   - Routers
   - Firewalls
   - Load balancers
-- [HAProxy](HAProxy)
+- [HAProxy](HAProxy.md)
 - DNS
   - BIND
 
@@ -131,7 +132,7 @@ TODO: Create sub-pages of these.
 - Slack
 - ICQ
 - XMPP
-  - [Ejabberd](Ejabberd)
+  - [Ejabberd](Ejabberd.md)
   - Mongoose
 - BOSH
 
@@ -149,7 +150,7 @@ TODO: Create sub-pages of these.
 ## Career etc.
 
 
-- [Career](Career)
+- [Career](Career.md)
 
 
 
@@ -160,7 +161,7 @@ TODO: Create sub-pages of these.
 All sorts of profound statements, rules of life and
 advises are piled up here:
 
-- [Motivational](Motivational)
+- [Motivational](Motivational.md)
 
 
 ## Fun.

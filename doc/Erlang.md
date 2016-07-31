@@ -37,6 +37,21 @@ Popular XMPP server implementation is ejabberd, it has a vagrant dev environment
 #### common test(CT)  
 #### eunit  
 
+#### Misc snippets in no particular order
+
+Simple Erlang script template
+
+    #!/usr/bin/env escript
+    main([Arg]) ->
+      case Arg of
+        "test" ->
+          io:format("Here I am~n");
+        _ ->
+          io:format("I only process 'test'~n")
+      end;
+    main(_) ->
+        io:format("something else~n").
+    
 
 
 ###  Links
