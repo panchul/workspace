@@ -44,8 +44,9 @@ TODO: Create sub-pages of these.
 - Matlab  
 - Simulink
 - PostScript
-- Elixir
+- [Elixir](Elixir.md)
 - Lua
+- [Awk](Awk.md)
 
 ### Data formats
 
@@ -141,7 +142,7 @@ TODO: Create sub-pages of these.
 
 ### Process Management
 
-- Scrum
+- [Scrum](Scrum.md)
 - Kanban
 - Jira
 - Jenkins
