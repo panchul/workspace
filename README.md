@@ -21,13 +21,30 @@ It is intended to be a starting point for prototypes on variety of
 technologies.
 
 Pre-requisites include VirtualBox, Vagrant, and Ansible.
-Once you have those on your host machine, you can provision the VMs for
-particular type of work, and clone the sandboxes:
+(Ansible is not officially supported on Windows, there are some
+shell provisioning scripts to compensate, in work-in-progress state)
+Once you have those on your host machine, you can spin off the vms:
 
-* sb_cpp - sandbox for C++ development.
-* sb_erlang - sandbox for Erlang development.
+* gen1 - a generic machine with shell provisioning only
+* gen2 - another generic machine with shell provisioning only
+* gen3 - a more elaborate generic machine
+* yser1 - YARC node
+* yser2 - YARC node
+* yser3 - YARC node
+* ycli1 - YARC node
+* ycli2 - YARC node
+* ycli3 - YARC node
+* sbcpp1 - a generic sandbox for C++ development.
+    * Clones, among other things, sb_cpp repo
+* sberl1 - a generic sandbox for Erlang development.
+    * Clones, among other things, sb_erl repo
+* sbsc1 - a generic sandbox for Scala development.
+    * Clones, among other things, sb_scala repo
+
+Other sandbox repositories could be provisioned on these boxes. For example,
+
 * sb_bash - sandbox for bash development, tips and tricks you don't have
-to re-type every time you need them on a new machine.
+    to re-type every time you need them on a new machine.
 
 
 TODO: Make a diagram how the other repos are connected to this one using
