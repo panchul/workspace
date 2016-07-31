@@ -57,6 +57,8 @@ Simple Erlang script template
 ###  Links
 
 [https://www.erlang.org/](https://www.erlang.org/)
+[http://erlang.org/mailman/listinfo/erlang-questions](http://erlang.org/mailman/listinfo/erlang-questions) - mailing list
+  
   
   
   
