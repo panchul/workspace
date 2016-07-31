@@ -17,6 +17,8 @@ TODO: Create sub-pages of these.
 - AWS
 - Fabric
 - Otto
+- [make](make.md)
+- autoconfig
 
 ### Programming languages
 

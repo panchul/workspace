@@ -19,6 +19,7 @@ of relatively complicated things like distributed Erlang nodes on separate
 servers.
 It is intended to be a starting point for prototypes on variety of
 technologies.
+More information is in ```doc``` folder, [doc/Links.md](doc/Links.md).
 
 Pre-requisites include VirtualBox, Vagrant, and Ansible.
 (Ansible is not officially supported on Windows, there are some
@@ -40,6 +41,10 @@ Once you have those on your host machine, you can spin off the vms:
     * Clones, among other things, sb_erl repo
 * sbsc1 - a generic sandbox for Scala development.
     * Clones, among other things, sb_scala repo
+* sbshell1 - a generic sandbox for shell script development.
+    * Clones, among other things, sb_shell repo
+* sbperl1 - a generic sandbox for Perl development.
+    * Clones, among other things, sb_perl repo
 
 Other sandbox repositories could be provisioned on these boxes. For example,
 
