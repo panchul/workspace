@@ -20,6 +20,7 @@ WS_IP_SPACE_SCALA_START = 35
 WS_IP_SPACE_MYSQL_START = 40
 WS_IP_SPACE_HAPROXY_START = 45
 WS_IP_SPACE_SHELL_START = 50
+WS_IP_SPACE_PERL_START = 51
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -136,6 +137,34 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SHELL_START+machine_id}"
     box.vm.synced_folder  "projects", "/projects"
     box.vm.synced_folder  "projects_sbshell#{machine_id}", "/projects_sbshell#{machine_id}"
+
+    box.vm.provider "virtualbox" do |vb|
+      # We do not have to have gui, we can save some memory if we don't.
+      vb.gui = true
+      vb.memory = "2048"
+      vb.customize ["modifyvm", :id, "--vram", "16"]
+      vb.cpus = 2
+
+      # win machines did not take this.
+      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+    end
+
+    config.vm.provision "shell", inline: <<-SHELL
+      apt-get install dos2unix
+      /vagrant/scripts/bootstrap.sh
+    SHELL
+  end
+
+  config.vm.define "sbperl1", autostart: false do |box|
+    machine_id = 1
+    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+    box.ssh.forward_agent = true
+    box.vm.host_name = "perl#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_PERL_START+machine_id}"
+    box.vm.synced_folder  "projects", "/projects"
+    box.vm.synced_folder  "projects_sbperl#{machine_id}", "/projects_sbperl#{machine_id}"
 
     box.vm.provider "virtualbox" do |vb|
       # We do not have to have gui, we can save some memory if we don't.
