@@ -19,57 +19,168 @@ WS_IP_SPACE_ERL_START = 30
 WS_IP_SPACE_SCALA_START = 35
 WS_IP_SPACE_MYSQL_START = 40
 WS_IP_SPACE_HAPROXY_START = 45
+WS_IP_SPACE_SHELL_START = 50
+WS_IP_SPACE_PERL_START = 51
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  N_Generics = 3
-  (1..N_Generics).each do |machine_id|
-    config.vm.define "gen#{machine_id}", autostart: false do |box|
+  # Simplest generic box, with only shell provisioning  
+  machine_id = 1
+  config.vm.define "gen#{machine_id}", autostart: false do |box|
+    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
+    box.ssh.forward_agent = true
+    box.vm.host_name = "gen#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}"
+    box.vm.synced_folder  "projects", "/projects"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
-      box.ssh.forward_agent = true
-      box.vm.host_name = "gen#{machine_id}.vm"
-      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}"
-      box.vm.synced_folder  "projects", "/projects"
+    box.vm.provider "virtualbox" do |vb|
+      # We do not have to have gui, we can save some memory if we don't.
+      vb.gui = true
+      vb.memory = "2048"
+      vb.customize ["modifyvm", :id, "--vram", "16"]
+      vb.cpus = 2
 
-      box.vm.provider "virtualbox" do |vb|
-        # We do not have to have gui, we can save some memory if we don't.
-        vb.gui = true
-        vb.memory = "2048"
-        vb.customize ["modifyvm", :id, "--vram", "16"]
-        vb.cpus = 2
-        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
-        #vb.customize ["modifyvm", :id, '--audio', 'coreaudio', '--audiocontroller', 'hda'] # choices: hda sb16 ac97
-        ##if RUBY_PLATFORM =~ /darwin/
-        ##      vb.customize ["modifyvm", :id, '--audio', 'coreaudio', '--audiocontroller', 'hda'] # choices: hda sb16 ac97
-        ##    elsif RUBY_PLATFORM =~ /mingw|mswin|bccwin|cygwin|emx/
-        ##      vb.customize ["modifyvm", :id, '--audio', 'dsound', '--audiocontroller', 'ac97']
-        ##    end
-      end
-
-      config.vm.provision "shell", inline: <<-SHELL
-        sudo apt-get update
-      SHELL
-
-      box.vm.provision "dev_generic", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
-
-      box.vm.provision "dev_cpp", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
-      
+      # win7 machine did not take this.
+      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
     end
+
+    config.vm.provision "shell", inline: <<-SHELL
+      apt-get install dos2unix 
+      /vagrant/scripts/bootstrap.sh 
+    SHELL
+  end
+
+  # another simple one
+  machine_id = 2
+  config.vm.define "gen#{machine_id}", autostart: false do |box|
+    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
+    box.ssh.forward_agent = true
+    box.vm.host_name = "gen#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}"
+    box.vm.synced_folder  "projects", "/projects"
+
+    box.vm.provider "virtualbox" do |vb|
+      # We do not have to have gui, we can save some memory if we don't.
+      vb.gui = true
+      vb.memory = "2048"
+      vb.customize ["modifyvm", :id, "--vram", "16"]
+      vb.cpus = 2
+
+      # win7 machine did not take this.
+      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+    end
+
+    config.vm.provision "shell", inline: <<-SHELL
+      apt-get install dos2unix 
+      /vagrant/scripts/bootstrap.sh 
+    SHELL
+  end
+
+  # A more feature-rich generic box
+  machine_id = 3
+  config.vm.define "gen#{machine_id}", autostart: false do |box|
+    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
+    box.ssh.forward_agent = true
+    box.vm.host_name = "gen#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}"
+    box.vm.synced_folder  "projects", "/projects"
+
+    box.vm.provider "virtualbox" do |vb|
+      # We do not have to have gui, we can save some memory if we don't.
+      vb.gui = true
+      vb.memory = "2048"
+      vb.customize ["modifyvm", :id, "--vram", "16"]
+      vb.cpus = 2
+
+      # win7 machine did not take this.
+      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+    end
+
+    config.vm.provision "shell", inline: <<-SHELL
+      apt-get install dos2unix 
+      /vagrant/scripts/bootstrap.sh 
+    SHELL
+
+    box.vm.provision "dev_generic", type: "ansible" do |ansible|
+       ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+       #ansible.inventory_path = "ansible/ansible.vmhosts"
+       ansible.verbose = true
+       ansible.host_key_checking = false
+    end
+   
+    box.vm.provision "dev_cpp", type: "ansible" do |ansible|
+       ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
+       #ansible.inventory_path = "ansible/ansible.vmhosts"
+       ansible.verbose = true
+       ansible.host_key_checking = false
+    end
+
+  end
+
+  config.vm.define "sbshell1", autostart: false do |box|
+    machine_id = 1
+    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+    box.ssh.forward_agent = true
+    box.vm.host_name = "shell#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SHELL_START+machine_id}"
+    box.vm.synced_folder  "projects", "/projects"
+    box.vm.synced_folder  "projects_sbshell#{machine_id}", "/projects_sbshell#{machine_id}"
+
+    box.vm.provider "virtualbox" do |vb|
+      # We do not have to have gui, we can save some memory if we don't.
+      vb.gui = true
+      vb.memory = "2048"
+      vb.customize ["modifyvm", :id, "--vram", "16"]
+      vb.cpus = 2
+
+      # win machines did not take this.
+      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+    end
+
+    config.vm.provision "shell", inline: <<-SHELL
+      apt-get install dos2unix
+      /vagrant/scripts/bootstrap.sh
+    SHELL
+  end
+
+  config.vm.define "sbperl1", autostart: false do |box|
+    machine_id = 1
+    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+    box.ssh.forward_agent = true
+    box.vm.host_name = "perl#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_PERL_START+machine_id}"
+    box.vm.synced_folder  "projects", "/projects"
+    box.vm.synced_folder  "projects_sbperl#{machine_id}", "/projects_sbperl#{machine_id}"
+
+    box.vm.provider "virtualbox" do |vb|
+      # We do not have to have gui, we can save some memory if we don't.
+      vb.gui = true
+      vb.memory = "2048"
+      vb.customize ["modifyvm", :id, "--vram", "16"]
+      vb.cpus = 2
+
+      # win machines did not take this.
+      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+    end
+
+    config.vm.provision "shell", inline: <<-SHELL
+      apt-get install dos2unix
+      /vagrant/scripts/bootstrap.sh
+    SHELL
   end
 
   N_YARC_Servers = 3
@@ -165,26 +276,26 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
-        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
       config.vm.provision "shell", inline: <<-SHELL
         sudo apt-get update
       SHELL
 
-      box.vm.provision "dev_generic", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
+      #box.vm.provision "dev_generic", type: "ansible" do |ansible|
+      #   ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
+      #   ansible.verbose = true
+      #   ansible.host_key_checking = false
+      #end
 
-      box.vm.provision "dev_cpp", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
+      #box.vm.provision "dev_cpp", type: "ansible" do |ansible|
+      #   ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
+      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
+      #   ansible.verbose = true
+      #   ansible.host_key_checking = false
+      #end
     end
   end
 
@@ -206,7 +317,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
-        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+
+      # Windows does not take it well
+      #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+
       end
 
       config.vm.provision "shell", inline: <<-SHELL

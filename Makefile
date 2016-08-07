@@ -15,6 +15,8 @@ help:
 	@echo " Common make targets are grouped below by their functionality. "
 	@echo " "
 	@echo " To create virtual machines or sets of them: "
+	@echo "     make sbshell      - creates a shell sandbox virtual machine. "
+	@echo "     make sbperl      - creates a Perl sandbox virtual machine. "
 	@echo "     make sbcpp        - creates a basic C++ sandbox virtual machine. "
 	@echo "     make sberl        - creates a basic Erlang sandbox virtual machine. "
 	@echo "     make sbsc         - creates a basic Scala sandbox virtual machine. "
@@ -44,6 +46,12 @@ sberl: prepare_folders_erl
 sbsc: prepare_folders_scala
 	vagrant up sbsc1
 
+sbshell: prepare_folders_shell
+	vagrant up sbshell1
+
+sbperl: prepare_folders_perl
+	vagrant up sbperl1
+
 provision_cpp:
 	vagrant provision sbcpp1
 
@@ -55,7 +63,12 @@ test_cpp:
 	ansible-playbook --connection ssh -u vagrant -i $(ANSIBLE_INVENTORY) -v ansible/playbooks/test_cpp/test1.yml
 	@echo "Ran cpp tests"
 
-prepare_folders:  prepare_folders_yarc prepare_folders_cpp prepare_folders_erl prepare_folders_scala
+prepare_folders:  prepare_folders_yarc \
+				prepare_folders_cpp \
+				prepare_folders_erl \
+				prepare_folders_scala \
+				prepare_folders_shell \
+				prepare_folders_perl
 
 prepare_folders_yarc:
 	@mkdir -p projects_sbyser1
@@ -63,6 +76,12 @@ prepare_folders_yarc:
 	@mkdir -p projects_sbyser3
 	@mkdir -p projects_sbyser4
 	@mkdir -p projects_sbyser5
+
+prepare_folders_shell:
+	@mkdir -p projects_sbshell1
+
+prepare_folders_perl:
+	@mkdir -p projects_sbperl1
 
 prepare_folders_cpp:
 	@mkdir -p projects_sbcpp1
