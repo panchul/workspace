@@ -22,7 +22,7 @@ TODO: Create sub-pages of these.
 
 ### Programming languages
 
-- C++
+- [C/C++](CPP.md)
   - STL
   - Boost   
 - [Erlang/OTP](Erlang.md)  
@@ -50,13 +50,13 @@ TODO: Create sub-pages of these.
 
 ### Data formats
 
-- XML  
-- JSON  
-- MarkDown  
+- [XML](XML.md)  
+- [JSON](JSON.md)  
+- [MarkDown](MarkDown.md)  
 - YAML  
 - JavaScript  
 - HTML  
-- UTF-8  
+- [UTF-8](UTF-8)  
 - Jiffy (JSON converting)
 
 ### Databases

@@ -5,6 +5,7 @@
 
 Nice open-source ide, with a lot of plugins covering anything you want.
 
+[https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)
 
 
 ### Misc. Troubleshooting
