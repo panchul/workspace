@@ -276,26 +276,26 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
-        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
       config.vm.provision "shell", inline: <<-SHELL
         sudo apt-get update
       SHELL
 
-      box.vm.provision "dev_generic", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
+      #box.vm.provision "dev_generic", type: "ansible" do |ansible|
+      #   ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
+      #   ansible.verbose = true
+      #   ansible.host_key_checking = false
+      #end
 
-      box.vm.provision "dev_cpp", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
+      #box.vm.provision "dev_cpp", type: "ansible" do |ansible|
+      #   ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
+      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
+      #   ansible.verbose = true
+      #   ansible.host_key_checking = false
+      #end
     end
   end
 
