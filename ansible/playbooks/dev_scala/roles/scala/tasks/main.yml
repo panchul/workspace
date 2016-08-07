@@ -7,10 +7,10 @@
   tags: [packages]
   with_items:
     - openjdk-7-jdk
-    - eclipse-platform
-
+##    - eclipse-platform
 #    - scala
-          
+
+# sbt          
 - name: Ensure download directory is present
   file: path={{ ansible_env.HOME }}/sbt state=directory
 
@@ -23,7 +23,7 @@
 - name: Update .bashrc to have sbt path
   lineinfile: dest="{{ ansible_env.HOME }}/.bashrc" backup=yes line="PATH=$PATH:{{ ansible_env['HOME'] }}/sbt/sbt/bin" insertbefore="# End of file"
 
-
+# eclipse for scala
 - name: Ensure download directory is present
   file: path={{ ansible_env.HOME }}/eclipse state=directory
 
@@ -34,4 +34,4 @@
   shell: cd {{ ansible_env.HOME }}/eclipse && tar -xzvf {{ eclipsesrc }}.tar.gz creates={{ ansible_env['HOME'] }}/eclipse/eclipse
   
 - name: Update .bashrc to have eclipse path
-  lineinfile: dest="{{ ansible_env.HOME }}/.bashrc" backup=yes line="PATH=$PATH:{{ ansible_env['HOME'] }}/eclipse/eclipse/" insertbefore="# End of file"
+  lineinfile: dest="{{ ansible_env.HOME }}/.bashrc" backup=yes line="PATH={{ ansible_env['HOME'] }}/eclipse/eclipse/:$PATH" insertbefore="# End of file"

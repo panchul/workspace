@@ -72,3 +72,5 @@ prepare_folders_erl:
 
 prepare_folders_scala:
 	@mkdir -p projects_sbsc1
+	@mkdir -p projects_sbsc2
+	@mkdir -p projects_sbsc3

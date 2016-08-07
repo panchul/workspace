@@ -229,7 +229,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
-  N_SCALA = 1
+  N_SCALA = 3
   (1..N_SCALA).each do |machine_id|
     config.vm.define "sbsc#{machine_id}", autostart: false do |box|
 
@@ -244,9 +244,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
-        vb.memory = "2048"
+        vb.memory = "4096"
+        # vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
-        vb.cpus = 2
+        vb.cpus = 4
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
