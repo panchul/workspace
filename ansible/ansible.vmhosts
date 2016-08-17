@@ -1,4 +1,10 @@
 
+
+[gen_sandboxes]
+gen1 ansible_host=192.168.10.3
+gen2 ansible_host=192.168.10.4
+gen3 ansible_host=192.168.10.5
+
 [yarc_servers]
 yser1 ansible_host=192.168.10.11
 yser2 ansible_host=192.168.10.12

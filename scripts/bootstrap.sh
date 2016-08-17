@@ -8,15 +8,17 @@ dos2unix -n /vagrant/scripts/init.sh tmp/init.sh
 dos2unix -n /vagrant/scripts/git.sh tmp/git.sh 
 dos2unix -n /vagrant/scripts/jdk.sh tmp/jdk.sh 
 dos2unix -n /vagrant/scripts/intellij.sh tmp/intellij.sh 
-dos2unix -n /vagrant/scripts/scala.sh tmp/scala.sh 
-chmod +x tmp/*.sh 
+dos2unix -n /vagrant/scripts/scala.sh tmp/scala.sh
+chmod +x tmp/*.sh
 
+dos2unix -n /vagrant/config/hosts_append.txt tmp/hosts_append.txt
+sudo cat tmp/hosts_append.txt >> /etc/hosts
 
 # These are optional, but for now let's throw them all into the defult set
-tmp/git.sh 
-tmp/jdk.sh 
-tmp/scala.sh 
-tmp/intellij.sh 
+#tmp/git.sh
+#tmp/jdk.sh
+#tmp/scala.sh
+#tmp/intellij.sh
 
 
 tmp/init.sh 
