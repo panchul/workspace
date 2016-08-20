@@ -21,6 +21,7 @@ help:
 	@echo "     make sberl        - creates a basic Erlang sandbox virtual machine. "
 	@echo "     make sbsc         - creates a basic Scala sandbox virtual machine. "
 	@echo "     make sbyarc       - creates a yarc sandbox virtual machine. "
+	@echo "     make sbjavascript - creates a sandbox virtual machine for JavaScript. "
 	@echo " "
 	@echo " To provision(helps if a re-try is needed): "
 	@echo "     make provision_cpp - runs an Ansible script to provision things needed. "
@@ -38,22 +39,25 @@ sbyarc: prepare_folders_yarc
 	vagrant up $(DEFAULT_YARC_SET)
 
 sbcpp: prepare_folders_cpp
-	vagrant up sbcpp1
+	vagrant up cpp1
 
 sberl: prepare_folders_erl
-	vagrant up sberl1
+	vagrant up erlang1
 
 sbsc: prepare_folders_scala
-	vagrant up sbsc1
+	vagrant up scala1
 
 sbshell: prepare_folders_shell
-	vagrant up sbshell1
+	vagrant up shell1
 
 sbperl: prepare_folders_perl
-	vagrant up sbperl1
+	vagrant up perl1
+
+sbjavascript:
+	vagrant up javascript1
 
 provision_cpp:
-	vagrant provision sbcpp1
+	vagrant provision cpp1
 
 test: test_cpp
 	@echo "Ran all tests"
@@ -78,16 +82,16 @@ prepare_folders_yarc:
 	@mkdir -p projects_sbyser5
 
 prepare_folders_shell:
-	@mkdir -p projects_sbshell1
+	# @mkdir -p projects_sbshell1
 
 prepare_folders_perl:
-	@mkdir -p projects_sbperl1
+	# @mkdir -p projects_sbperl1
 
 prepare_folders_cpp:
-	@mkdir -p projects_sbcpp1
+	# @mkdir -p projects_sbcpp1
 
 prepare_folders_erl:
-	@mkdir -p projects_sberl1
+	# @mkdir -p projects_sberl1
 
 prepare_folders_scala:
-	@mkdir -p projects_sbsc1
+	# @mkdir -p projects_sbsc1

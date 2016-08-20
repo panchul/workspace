@@ -20,7 +20,26 @@ ycli4 ansible_host=192.168.10.24
 ycli5 ansible_host=192.168.10.25
 
 [cpp_sandboxes]
-sbcpp1 ansible_host=192.168.10.31
+cpp1 ansible_host=192.168.10.26
+
+[erland_sandboxes]
+erlang1 ansible_host=192.168.10.31
+
+[scala_sandboxes]
+scala1 ansible_host=192.168.10.36
+
+[mysql_sandboxes]
+mysql1 ansible_host=192.168.10.41
+
+[haproxy_sandboxes]
+haproxy1 ansible_host=192.168.10.46
 
 [shell_sandboxes]
-sbshell1 ansible_host=192.168.10.51
+shell1 ansible_host=192.168.10.51
+
+[perl_sandboxes]
+perl1 ansible_host=192.168.10.52
+
+[javascript_sandboxes]
+javascript1 ansible_host=192.168.10.54
+
