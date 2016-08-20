@@ -47,15 +47,15 @@ TODO: Create sub-pages of these.
 - [Elixir](Elixir.md)
 - Lua
 - [Awk](Awk.md)
+- [JavaScript](JavaScript.md)  
 
 ### Data formats
 
-- [XML](XML.md)  
-- [JSON](JSON.md)  
+- [XML](XML.md)
+- [JSON](JSON.md)
 - [MarkDown](MarkDown.md)  
-- YAML  
-- JavaScript  
-- HTML  
+- YAML
+- HTML
 - [UTF-8](UTF-8)  
 - Jiffy (JSON converting)
 

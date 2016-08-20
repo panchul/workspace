@@ -11,6 +11,9 @@ WORKSPACE_VM_BOX_NO_GUI = "ubuntu/trusty64"
 WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/trusty64.box"
 
 ##################################################
+#
+# !! When editing, sync the following with hosts_append.txt and ansible.vmhosts
+#
 
 WS_IP_FIRST_24BITS = "192.168.10."
 WS_NETWORK_NAME = "vagrant_ws"
@@ -39,6 +42,9 @@ WS_IP_SPACE_HAPROXY_START = 45
 WS_IP_SPACE_SHELL_START = 50
 
 WS_IP_SPACE_PERL_START = 51
+
+WS_IP_SPACE_JAVASCRIPT_START = 53
+N_JAVASCRIPT = 1
 
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
@@ -153,7 +159,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   end
 
-  config.vm.define "sbshell1", autostart: false do |box|
+  config.vm.define "shell1", autostart: false do |box|
     machine_id = 1
     box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
     box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
@@ -162,7 +168,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     box.vm.host_name = "shell#{machine_id}.vm"
     box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SHELL_START+machine_id}"
     box.vm.synced_folder  "projects", "/projects"
-    box.vm.synced_folder  "projects_sbshell#{machine_id}", "/projects_sbshell#{machine_id}"
+    # box.vm.synced_folder  "projects_sbshell#{machine_id}", "/projects_sbshell#{machine_id}"
 
     box.vm.provider "virtualbox" do |vb|
       # We do not have to have gui, we can save some memory if we don't.
@@ -182,7 +188,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     SHELL
   end
 
-  config.vm.define "sbperl1", autostart: false do |box|
+  config.vm.define "perl1", autostart: false do |box|
     machine_id = 1
     box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
     box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
@@ -191,7 +197,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     box.vm.host_name = "perl#{machine_id}.vm"
     box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_PERL_START+machine_id}"
     box.vm.synced_folder  "projects", "/projects"
-    box.vm.synced_folder  "projects_sbperl#{machine_id}", "/projects_sbperl#{machine_id}"
+    # box.vm.synced_folder  "projects_sbperl#{machine_id}", "/projects_sbperl#{machine_id}"
 
     box.vm.provider "virtualbox" do |vb|
       # We do not have to have gui, we can save some memory if we don't.
@@ -288,16 +294,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   (1..N_CPP).each do |machine_id|
-    config.vm.define "sbcpp#{machine_id}", autostart: false do |box|
+    config.vm.define "cpp#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
       box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_CPP_START+machine_id}"
-      box.vm.host_name = "sbcpp#{machine_id}.vm"
+      box.vm.host_name = "cpp#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_CPP_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
-      box.vm.synced_folder  "projects_sbcpp#{machine_id}", "/projects_sbcpp#{machine_id}"
+      # box.vm.synced_folder  "projects_sbcpp#{machine_id}", "/projects_sbcpp#{machine_id}"
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
@@ -330,16 +336,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   (1..N_ERL).each do |machine_id|
-    config.vm.define "sberl#{machine_id}", autostart: false do |box|
+    config.vm.define "erlang#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
       box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ERL_START+machine_id}"
-      box.vm.host_name = "sberl#{machine_id}.vm"
+      box.vm.host_name = "erlang#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_ERL_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
-      box.vm.synced_folder  "projects_sberl#{machine_id}", "/projects_sberl#{machine_id}"
+      # box.vm.synced_folder  "projects_sberl#{machine_id}", "/projects_sberl#{machine_id}"
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
@@ -375,16 +381,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   (1..N_SCALA).each do |machine_id|
-    config.vm.define "sbsc#{machine_id}", autostart: false do |box|
+    config.vm.define "scala#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
       box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_SCALA_START+machine_id}"
-      box.vm.host_name = "sbsc#{machine_id}.vm"
+      box.vm.host_name = "scala#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SCALA_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
-      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
+#      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
@@ -416,4 +422,41 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
+  (1..N_JAVASCRIPT).each do |machine_id|
+    config.vm.define "javascript#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_JAVASCRIPT_START+machine_id}"
+      box.vm.host_name = "javascript#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_JAVASCRIPT_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        vb.gui = true
+        vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+      end
+
+      config.vm.provision "shell", inline: <<-SHELL
+        apt-get install dos2unix
+        dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
+        source ~/bootstrap.sh
+      SHELL
+
+      # Skipping Ansible, let the vm work with windows provisioners too
+      #box.vm.provision "dev_generic", type: "ansible" do |ansible|
+      #   ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
+      #   ansible.verbose = true
+      #   ansible.host_key_checking = false
+      #end
+
+    end
+  end
+
 end
+
+
