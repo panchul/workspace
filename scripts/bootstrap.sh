@@ -9,6 +9,7 @@ dos2unix -n /vagrant/scripts/git.sh tmp/git.sh
 dos2unix -n /vagrant/scripts/jdk.sh tmp/jdk.sh 
 dos2unix -n /vagrant/scripts/intellij.sh tmp/intellij.sh 
 dos2unix -n /vagrant/scripts/scala.sh tmp/scala.sh
+dos2unix -n /vagrant/scripts/erlang.sh tmp/erlang.sh
 chmod +x tmp/*.sh
 
 dos2unix -n /vagrant/config/hosts_append.txt tmp/hosts_append.txt

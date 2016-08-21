@@ -35,15 +35,15 @@ Once you have those on your host machine, you can spin off the vms:
 * ycli1 - YARC node
 * ycli2 - YARC node
 * ycli3 - YARC node
-* sbcpp1 - a generic sandbox for C++ development.
+* cpp1 - a generic sandbox for C++ development.
     * Clones, among other things, sb_cpp repo
-* sberl1 - a generic sandbox for Erlang development.
+* erlang1 - a generic sandbox for Erlang development.
     * Clones, among other things, sb_erl repo
-* sbsc1 - a generic sandbox for Scala development.
+* scala1 - a generic sandbox for Scala development.
     * Clones, among other things, sb_scala repo
-* sbshell1 - a generic sandbox for shell script development.
+* shell1 - a generic sandbox for shell script development.
     * Clones, among other things, sb_shell repo
-* sbperl1 - a generic sandbox for Perl development.
+* perl1 - a generic sandbox for Perl development.
     * Clones, among other things, sb_perl repo
 
 Other sandbox repositories could be provisioned on these boxes. For example,

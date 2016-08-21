@@ -362,6 +362,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         apt-get install dos2unix
         dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
         source ~/bootstrap.sh
+        source /home/vagrant/tmp/git.sh
+        source /home/vagrant/tmp/erlang.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
