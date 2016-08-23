@@ -362,8 +362,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         apt-get install dos2unix
         dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
         source ~/bootstrap.sh
-        source /home/vagrant/tmp/git.sh
-        source /home/vagrant/tmp/erlang.sh
+        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/erlang.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -399,28 +399,33 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
-        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
       config.vm.provision "shell", inline: <<-SHELL
         apt-get install dos2unix
-        dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-        source ~/bootstrap.sh
+        mkdir /home/vagrant/tmp_provisioning
+        dos2unix -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/jdk.sh
+        source /home/vagrant/tmp_provisioning/scala.sh
       SHELL
 
-      box.vm.provision "dev_generic", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
+   #   box.vm.provision "dev_generic", type: "ansible" do |ansible|
+   #      ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+   #      #ansible.inventory_path = "ansible/ansible.vmhosts"
+   #      ansible.verbose = true
+   #      ansible.host_key_checking = false
+   #   end
+   #
+   #   box.vm.provision "dev_scala", type: "ansible" do |ansible|
+   #      ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
+   #      #ansible.inventory_path = "ansible/ansible.vmhosts"
+   #      ansible.verbose = true
+   #      ansible.host_key_checking = false
+   #   end
 
-      box.vm.provision "dev_scala", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
     end
   end
 

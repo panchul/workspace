@@ -8,7 +8,6 @@
 #sudo apt-get -y upgrade
 #
 
-
 echo "set esckeys" >> ~/.vimrc
 echo "set tabstop=4" >> ~/.vimrc
 echo "set number" >> ~/.vimrc
