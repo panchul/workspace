@@ -14,7 +14,7 @@ ycli4 ansible_host=192.168.10.24
 ycli5 ansible_host=192.168.10.25
 
 [cpp_sandboxes]
-sbcpp1 ansible_host=192.168.10.31
+sbcpp1 ansible_host=192.168.10.26
 
 [shell_sandboxes]
 sbshell1 ansible_host=192.168.10.51

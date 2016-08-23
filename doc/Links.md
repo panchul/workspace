@@ -18,6 +18,7 @@ TODO: Create sub-pages of these.
 - Fabric
 - Otto
 - [make](make.md)
+- [aptitude](aptitude.md)
 - autoconfig
 
 ### Programming languages

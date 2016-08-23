@@ -238,7 +238,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.synced_folder  "projects", "/projects"
 
       config.vm.provision "shell", inline: <<-SHELL
-        sudo apt-get update
+        sudo apt-get -y update
       SHELL
 
       box.vm.provider "virtualbox" do |vb|
@@ -280,22 +280,22 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       config.vm.provision "shell", inline: <<-SHELL
-        sudo apt-get update
+        sudo apt-get -y update
       SHELL
 
-      #box.vm.provision "dev_generic", type: "ansible" do |ansible|
-      #   ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
-      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
-      #   ansible.verbose = true
-      #   ansible.host_key_checking = false
-      #end
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
 
-      #box.vm.provision "dev_cpp", type: "ansible" do |ansible|
-      #   ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
-      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
-      #   ansible.verbose = true
-      #   ansible.host_key_checking = false
-      #end
+      box.vm.provision "dev_cpp", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_cpp/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
     end
   end
 
@@ -324,7 +324,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       config.vm.provision "shell", inline: <<-SHELL
-        sudo apt-get update
+        sudo apt-get -y update
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -366,7 +366,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       config.vm.provision "shell", inline: <<-SHELL
-        sudo apt-get update
+        sudo apt-get -y update
+      SHELL
+
+      config.vm.provision "shell", inline: <<-SHELL
+        apt-get install dos2unix 
+        /vagrant/scripts/bootstrap.sh 
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -376,12 +381,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
          ansible.host_key_checking = false
       end
 
-      box.vm.provision "dev_scala", type: "ansible" do |ansible|
-         ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
-         ansible.verbose = true
-         ansible.host_key_checking = false
-      end
+    #  box.vm.provision "dev_scala", type: "ansible" do |ansible|
+    #     ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
+    #     #ansible.inventory_path = "ansible/ansible.vmhosts"
+    #     ansible.verbose = true
+    #     ansible.host_key_checking = false
+    #  end
+    
     end
   end
 

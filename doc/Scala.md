@@ -1,6 +1,10 @@
 
 ## UNDER CONSTRUCTION
 
+[http://www.scala-lang.org/](http://www.scala-lang.org/) Scala  
+
+[http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines  
+
 Sbt link is here:
 [http://www.scala-sbt.org/download.html](http://www.scala-sbt.org/download.html)  
 
