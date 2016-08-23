@@ -4,8 +4,12 @@
 
 
 [https://www.vagrantup.com/](https://www.vagrantup.com/)
+https://circleci.com/blog/its-the-future/ - An article about Docker and Vagrant
 
 
+
+
+## Vagrantfile misc.
 
 Run ```vagrant box update``` to keep the boxes up to date and not
 need to update from within the VMs.

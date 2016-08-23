@@ -12,3 +12,5 @@ Some presentations and articles:
 
 [http://owaaa.github.io/docker/amazon/aws/devops/continuous/delivery/2014/10/10/docker_continous_delivery.html](http://owaaa.github.io/docker/amazon/aws/devops/continuous/delivery/2014/10/10/docker_continous_delivery.html)
 
+
+https://circleci.com/blog/its-the-future/ An article about Docker and Vagrant
