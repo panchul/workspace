@@ -1,19 +1,18 @@
 #!/usr/bin/env bash
 
 if [ ! -d jdk ]; then
-  if [ ! -f tmp/jdk-8u101-linux-x64.tar.gz ]; then
+  if [ ! -f /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz ]; then
     if [ ! -f /vagrant/install/jdk-8u101-linux-x64.tar.gz  ]; then
-      wget -O tmp/jdk-8u101-linux-x64.tar.gz http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz 
-    else
-      cp /vagrant/install/jdk-8u101-linux-x64.tar.gz tmp/jdk-8u101-linux-x64.tar.gz 
+      wget -O /vagrant/install/jdk-8u101-linux-x64.tar.gz http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz
     fi
+    cp /vagrant/install/jdk-8u101-linux-x64.tar.gz /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz
   fi
 
   #sudo alien -i tmp/jdk-8u101-linux-x64.rpm 
 
   sudo mkdir /usr/local/java
   cd /usr/local/java
-  sudo tar xzf /home/vagrant/tmp/jdk-8u101-linux-x64.tar.gz 
+  sudo tar xzf /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz
 
 # pretty much from here: https://www3.ntu.edu.sg/home/ehchua/programming/howto/Ubuntu_HowTo.html#jdk
 

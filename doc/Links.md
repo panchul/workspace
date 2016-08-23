@@ -38,7 +38,7 @@ TODO: Create sub-pages of these.
 - Assembler  
 - [Ruby](Ruby.md)  
 - ML  
-- Racket  
+- [Racket](Racket.md)  
 - Go  
 - [Scala](Scala.md)  
 - [Java](Java.md)  
@@ -48,15 +48,21 @@ TODO: Create sub-pages of these.
 - [Elixir](Elixir.md)
 - Lua
 - [Awk](Awk.md)
+- [JavaScript](JavaScript.md)  
 
-### Data formats
+#### Frameworks
 
-- [XML](XML.md)  
-- [JSON](JSON.md)  
+ - ReactiveX http://reactivex.io/intro.html
+  
+  
+
+### Data formats, APIs, Protocols
+
+- [XML](XML.md)
+- [JSON](JSON.md)
 - [MarkDown](MarkDown.md)  
-- YAML  
-- JavaScript  
-- HTML  
+- [YAML](YAML.md)
+- HTML
 - [UTF-8](UTF-8)  
 - Jiffy (JSON converting)
 
@@ -66,11 +72,14 @@ TODO: Create sub-pages of these.
 - PostGRE
 - MongoDB
 - Riak
+- [Hadoop](Hadoop.md)
 
 ### Version control systems  
 
 - [Git](Git.md)  
-  - gitk  
+  - gitk
+  - github
+  - bitbucket
 - SVN  
 
   
@@ -129,7 +138,8 @@ TODO: Create sub-pages of these.
 
 ### Message brokers
 
-- RabbitMQ
+- [RabbitMQ](RabbitMQ.md)
+- [Kafka](Kafka.md)
 
 ### Conferencing systems and protocols
 
