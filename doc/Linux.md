@@ -24,3 +24,8 @@ when I have time to explore them more and maybe create a sub-page.
 https://mmonit.com/monit/
 
 
+#### Ubuntu
+
+http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
+
+
