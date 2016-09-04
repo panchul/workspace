@@ -53,6 +53,9 @@ TODO: Create sub-pages of these.
 #### Frameworks
 
  - ReactiveX http://reactivex.io/intro.html
+ 
+  Nice about fundamentals:
+  https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
   
   
 
