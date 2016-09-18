@@ -34,7 +34,7 @@ TODO: Create sub-pages of these.
   - Rebar
   - CT
   - MochiWeb
-- Perl  
+- [Perl](Perl.md)  
 - Assembler  
 - [Ruby](Ruby.md)  
 - ML  
@@ -48,7 +48,9 @@ TODO: Create sub-pages of these.
 - [Elixir](Elixir.md)
 - Lua
 - [Awk](Awk.md)
+- [Sed](Sed.md)
 - [JavaScript](JavaScript.md)  
+- [RegEx](RegEx.md)
 
 #### Frameworks
 
@@ -100,6 +102,9 @@ TODO: Create sub-pages of these.
 
 - MochiWeb
 - [PlayFramework](PlayFramework.md)
+- [WordPress](WordPress.md)
+
+
 
 ### GUI Frameworks
 
@@ -162,7 +167,10 @@ TODO: Create sub-pages of these.
 - Jenkins
 - Redmine
 - Phabricator
-- Trello
+- Trello.com
+- www.planitpoker.com
+- www.websequencediagrams.com
+- www.lucidchart.com
 
 ## Career etc.
 

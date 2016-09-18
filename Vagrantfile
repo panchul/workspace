@@ -400,7 +400,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         # vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
-      #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
       config.vm.provision "shell", inline: <<-SHELL
