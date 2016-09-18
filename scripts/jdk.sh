@@ -1,9 +1,17 @@
 #!/usr/bin/env bash
 
+echo "Installing jdk-8 ..."
+
 if [ ! -d jdk ]; then
   if [ ! -f /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz ]; then
     if [ ! -f /vagrant/install/jdk-8u101-linux-x64.tar.gz  ]; then
-      wget -O /vagrant/install/jdk-8u101-linux-x64.tar.gz http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz
+    
+      echo "NOTE: To continue, you need to download jdk-8 from internet, create file /vagrant/install/jdk-8u101-linux-x64.tar.gz"
+      exit -1
+      
+      ## This thing requires clicking 'Accept' on the page. Look it up later how to automate it
+      ##
+      ## wget -O /vagrant/install/jdk-8u101-linux-x64.tar.gz http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz
     fi
     cp /vagrant/install/jdk-8u101-linux-x64.tar.gz /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz
   fi
@@ -31,4 +39,3 @@ if [ ! -d jdk ]; then
   echo "JAVA_HOME=/usr/java/jdk1.8.0_101" >> /home/vagrant/.bashrc
   echo "PATH=\$PATH:\$JAVA_HOME/bin" >> /home/vagrant/.bashrc
 fi
-

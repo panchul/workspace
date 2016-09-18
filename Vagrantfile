@@ -33,7 +33,7 @@ WS_IP_SPACE_ERL_START = 30
 N_ERL = 1
 
 WS_IP_SPACE_SCALA_START = 35
-N_SCALA = 1
+N_SCALA = 5
 
 WS_IP_SPACE_MYSQL_START = 40
 
@@ -45,6 +45,13 @@ WS_IP_SPACE_PERL_START = 51
 
 WS_IP_SPACE_JAVASCRIPT_START = 53
 N_JAVASCRIPT = 1
+
+WS_IP_SPACE_ZOOKEEPER_START = 55
+N_ZOOKEEPER = 1
+
+WS_IP_SPACE_KAFKA_BROKER_START = 60
+N_KAFKA_BROKER = 1
+
 
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
@@ -77,7 +84,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
     end
 
-    config.vm.provision "shell", inline: <<-SHELL
+    box.vm.provision "shell", inline: <<-SHELL
       apt-get install dos2unix 
       dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
       source ~/bootstrap.sh
@@ -107,7 +114,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
     end
 
-    config.vm.provision "shell", inline: <<-SHELL
+    box.vm.provision "shell", inline: <<-SHELL
       apt-get install dos2unix 
       dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
       source ~/bootstrap.sh
@@ -137,7 +144,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
     end
 
-    config.vm.provision "shell", inline: <<-SHELL
+    box.vm.provision "shell", inline: <<-SHELL
       apt-get install dos2unix 
       dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
       source ~/bootstrap.sh
@@ -181,7 +188,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
     end
 
-    config.vm.provision "shell", inline: <<-SHELL
+    box.vm.provision "shell", inline: <<-SHELL
       apt-get install dos2unix
       dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
       source ~/bootstrap.sh
@@ -210,7 +217,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
     end
 
-    config.vm.provision "shell", inline: <<-SHELL
+    box.vm.provision "shell", inline: <<-SHELL
       apt-get install dos2unix
       dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
       source ~/bootstrap.sh
@@ -244,7 +251,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         ##    end
       end
 
-      config.vm.provision "shell", inline: <<-SHELL
+      box.vm.provision "shell", inline: <<-SHELL
         apt-get install dos2unix
         dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
         source ~/bootstrap.sh
@@ -270,7 +277,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_YARC_CLIENT_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
 
-      config.vm.provision "shell", inline: <<-SHELL
+      box.vm.provision "shell", inline: <<-SHELL
         apt-get install dos2unix
         dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
         source ~/bootstrap.sh
@@ -313,7 +320,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
-      config.vm.provision "shell", inline: <<-SHELL
+      box.vm.provision "shell", inline: <<-SHELL
         apt-get install dos2unix
         dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
         source ~/bootstrap.sh
@@ -358,7 +365,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       end
 
-      config.vm.provision "shell", inline: <<-SHELL
+      box.vm.provision "shell", inline: <<-SHELL
         apt-get install dos2unix
         dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
         source ~/bootstrap.sh
@@ -403,7 +410,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
-      config.vm.provision "shell", inline: <<-SHELL
+      box.vm.provision "shell", inline: <<-SHELL
         apt-get install dos2unix
         mkdir /home/vagrant/tmp_provisioning
         dos2unix -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
@@ -413,20 +420,123 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         source /home/vagrant/tmp_provisioning/scala.sh
       SHELL
 
-   #   box.vm.provision "dev_generic", type: "ansible" do |ansible|
-   #      ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
-   #      #ansible.inventory_path = "ansible/ansible.vmhosts"
-   #      ansible.verbose = true
-   #      ansible.host_key_checking = false
-   #   end
-   #
-   #   box.vm.provision "dev_scala", type: "ansible" do |ansible|
-   #      ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
-   #      #ansible.inventory_path = "ansible/ansible.vmhosts"
-   #      ansible.verbose = true
-   #      ansible.host_key_checking = false
-   #   end
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+   
+      box.vm.provision "dev_scala", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
 
+      box.vm.provision "shell", path: "scripts/kafka.sh", args:"#{machine_id}", privileged: false
+
+    end
+  end
+
+  (1..N_ZOOKEEPER).each do |machine_id|
+    config.vm.define "zookeeper#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ZOOKEEPER_START+machine_id}"
+      box.vm.host_name = "zookeeper#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_ZOOKEEPER_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+#      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
+
+      box.vm.provider "virtualbox" do |vb|
+        vb.gui = true
+        vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        apt-get install dos2unix
+        mkdir /home/vagrant/tmp_provisioning
+        dos2unix -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/jdk.sh
+        source /home/vagrant/tmp_provisioning/scala.sh
+      SHELL
+      
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+   
+      box.vm.provision "dev_scala", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+
+      box.vm.provision "shell", path: "scripts/zookeeper.sh", args:"#{machine_id}", privileged: false
+    
+      # we do not have to have it on this vm.
+      box.vm.provision "shell", path: "scripts/kafka.sh", args:"#{machine_id}", privileged: false
+    end
+  end
+
+  (1..N_KAFKA_BROKER).each do |machine_id|
+    config.vm.define "kafka_broker#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_KAFKA_BROKER_START+machine_id}"
+      box.vm.host_name = "kafka-broker#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_KAFKA_BROKER_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+#      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
+
+      box.vm.provider "virtualbox" do |vb|
+        vb.gui = true
+        vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        apt-get install dos2unix
+        mkdir /home/vagrant/tmp_provisioning
+        dos2unix -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/jdk.sh
+        source /home/vagrant/tmp_provisioning/scala.sh
+      SHELL
+      
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+   
+      box.vm.provision "dev_scala", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+
+      box.vm.provision "shell", path: "scripts/kafka.sh", args:"#{machine_id}", privileged: false
+      
+      box.vm.provision "shell", path: "scripts/kafka_start_broker.sh", args:"#{machine_id}", privileged: false
     end
   end
 
@@ -448,7 +558,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.cpus = 2
       end
 
-      config.vm.provision "shell", inline: <<-SHELL
+      box.vm.provision "shell", inline: <<-SHELL
         apt-get install dos2unix
         dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
         source ~/bootstrap.sh

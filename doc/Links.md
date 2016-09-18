@@ -145,10 +145,12 @@ TODO: Create sub-pages of these.
 - Common Test (CT)
 
 
-### Message brokers
+### Message brokers and distributed environment coordinators. 
 
 - [RabbitMQ](RabbitMQ.md)
 - [Kafka](Kafka.md)
+- [Zookeeper](Zookeeper.md)
+
 
 ### Conferencing systems and protocols
 
