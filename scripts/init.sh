@@ -16,3 +16,4 @@ echo "set esckeys" >> /home/vagrant/.vimrc
 echo "set tabstop=4" >> /home/vagrant/.vimrc
 echo "set number" >> /home/vagrant/.vimrc
 
+sudo apt-get -y install ubuntu-restricted-extras
