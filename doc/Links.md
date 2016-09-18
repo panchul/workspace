@@ -18,6 +18,7 @@ TODO: Create sub-pages of these.
 - Fabric
 - Otto
 - [make](make.md)
+- [aptitude](aptitude.md)
 - autoconfig
 
 ### Programming languages
@@ -33,7 +34,7 @@ TODO: Create sub-pages of these.
   - Rebar
   - CT
   - MochiWeb
-- Perl  
+- [Perl](Perl.md)  
 - Assembler  
 - [Ruby](Ruby.md)  
 - ML  
@@ -47,7 +48,9 @@ TODO: Create sub-pages of these.
 - [Elixir](Elixir.md)
 - Lua
 - [Awk](Awk.md)
+- [Sed](Sed.md)
 - [JavaScript](JavaScript.md)  
+- [RegEx](RegEx.md)
 
 #### Frameworks
 
@@ -94,11 +97,15 @@ TODO: Create sub-pages of these.
 - SunOS  
 - Windows  
 - Symbian OS  
+- [MacOS](MacOS.md)
 
 ### Web Frameworks
 
 - MochiWeb
 - [PlayFramework](PlayFramework.md)
+- [WordPress](WordPress.md)
+
+
 
 ### GUI Frameworks
 
@@ -138,10 +145,12 @@ TODO: Create sub-pages of these.
 - Common Test (CT)
 
 
-### Message brokers
+### Message brokers and distributed environment coordinators. 
 
 - [RabbitMQ](RabbitMQ.md)
 - [Kafka](Kafka.md)
+- [Zookeeper](Zookeeper.md)
+
 
 ### Conferencing systems and protocols
 
@@ -161,7 +170,10 @@ TODO: Create sub-pages of these.
 - Jenkins
 - Redmine
 - Phabricator
-- Trello
+- Trello.com
+- www.planitpoker.com
+- www.websequencediagrams.com
+- www.lucidchart.com
 
 ## Career etc.
 

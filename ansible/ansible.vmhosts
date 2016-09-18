@@ -27,6 +27,10 @@ erlang1 ansible_host=192.168.10.31
 
 [scala_sandboxes]
 scala1 ansible_host=192.168.10.36
+scala2 ansible_host=192.168.10.37
+scala3 ansible_host=192.168.10.38
+scala4 ansible_host=192.168.10.39
+scala5 ansible_host=192.168.10.40
 
 [mysql_sandboxes]
 mysql1 ansible_host=192.168.10.41
@@ -42,4 +46,18 @@ perl1 ansible_host=192.168.10.52
 
 [javascript_sandboxes]
 javascript1 ansible_host=192.168.10.54
+
+[zookeeper_nodes]
+zookeeper1 ansible_host=192.168.10.56
+zookeeper2 ansible_host=192.168.10.57
+zookeeper3 ansible_host=192.168.10.58
+zookeeper4 ansible_host=192.168.10.59
+zookeeper5 ansible_host=192.168.10.60
+
+[kafka_brokers]
+kafka-broker1 ansible_host=192.168.10.61
+kafka-broker2 ansible_host=192.168.10.62
+kafka-broker3 ansible_host=192.168.10.63
+kafka-broker4 ansible_host=192.168.10.64
+kafka-broker5 ansible_host=192.168.10.65
 

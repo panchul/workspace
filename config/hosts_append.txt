@@ -23,6 +23,10 @@
 192.168.10.31 erlang1
 
 192.168.10.36 scala1
+192.168.10.37 scala2
+192.168.10.38 scala3
+192.168.10.39 scala4
+192.168.10.40 scala5
 
 192.168.10.41 mysql1
 
@@ -33,4 +37,16 @@
 192.168.10.52 perl1
 
 192.168.10.54 javascript1
+
+192.168.10.56 zookeeper1
+192.168.10.57 zookeeper2
+192.168.10.58 zookeeper3
+192.168.10.59 zookeeper4
+192.168.10.60 zookeeper5
+
+192.168.10.61 kafka-broker1
+192.168.10.62 kafka-broker2
+192.168.10.63 kafka-broker3
+192.168.10.64 kafka-broker4
+192.168.10.65 kafka-broker5
 

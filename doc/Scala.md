@@ -3,6 +3,7 @@
 
 
 [http://www.scala-lang.org/](http://www.scala-lang.org/)
+[http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines 
 [http://danielwestheide.com/scala/neophytes.html](http://danielwestheide.com/scala/neophytes.html) - The Neophyte's Guide to Scala
 
 ### sbt

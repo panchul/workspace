@@ -9,13 +9,13 @@
 - name: Set timezone variables
   become: yes
   become_method: sudo
-  copy: content='America/Chicago\n'
+  copy: content='America/New_York\n'
         dest=/etc/timezone
         owner=root
         group=root
         mode=0644
         backup=yes
-  when: ansible_date_time.tz != 'America/Chicago'
+  when: ansible_date_time.tz != 'America/New_York'
 
 - name: Install base packages for development
   apt: pkg={{ item }} state=installed
@@ -41,4 +41,7 @@
     - gstreamer1.0-plugins-ugly
     - gstreamer1.0-libav
 
-
+    - xcowsay
+    - feh
+    - imagemagick
+    

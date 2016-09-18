@@ -6,32 +6,35 @@
   become_method: sudo
   tags: [packages]
   with_items:
-    - openjdk-7-jdk
-    - eclipse-platform
-
+# We get jdk-8 with the script provisioning
+#    - openjdk-7-jdk
+##    - eclipse-platform
 #    - scala
-          
-- name: Ensure download directory is present
-  file: path={{ ansible_env.HOME }}/sbt state=directory
+     - xcowsay
 
-- name: download sbt
-  get_url: url={{ sbturl }} dest={{ ansible_env.HOME }}/sbt/{{ sbtsrc }}.tgz
-
-- name: Unpack Sbt source files
-  shell: cd {{ ansible_env.HOME }}/sbt && tar -xzvf {{ sbtsrc }}.tgz creates={{ ansible_env['HOME'] }}/sbt/sbt
-  
-- name: Update .bashrc to have sbt path
-  lineinfile: dest="{{ ansible_env.HOME }}/.bashrc" backup=yes line="PATH=$PATH:{{ ansible_env['HOME'] }}/sbt/sbt/bin" insertbefore="# End of file"
-
-
-- name: Ensure download directory is present
-  file: path={{ ansible_env.HOME }}/eclipse state=directory
-
-- name: download eclipse
-  get_url: url={{ eclipseurl }} dest={{ ansible_env.HOME }}/eclipse/{{ eclipsesrc }}.tar.gz
-
-- name: Unpack Eclipse source files
-  shell: cd {{ ansible_env.HOME }}/eclipse && tar -xzvf {{ eclipsesrc }}.tar.gz creates={{ ansible_env['HOME'] }}/eclipse/eclipse
-  
-- name: Update .bashrc to have eclipse path
-  lineinfile: dest="{{ ansible_env.HOME }}/.bashrc" backup=yes line="PATH=$PATH:{{ ansible_env['HOME'] }}/eclipse/eclipse/" insertbefore="# End of file"
+# We do not care for Eclipse now, and sbt is provisioned with shell script.
+## sbt          
+#- name: Ensure download directory is present
+#  file: path={{ ansible_env.HOME }}/sbt state=directory
+#
+#- name: download sbt
+#  get_url: url={{ sbturl }} dest={{ ansible_env.HOME }}/sbt/{{ sbtsrc }}.tgz
+#
+#- name: Unpack Sbt source files
+#  shell: cd {{ ansible_env.HOME }}/sbt && tar -xzvf {{ sbtsrc }}.tgz creates={{ ansible_env['HOME'] }}/sbt/sbt
+#  
+#- name: Update .bashrc to have sbt path
+#  lineinfile: dest="{{ ansible_env.HOME }}/.bashrc" backup=yes line="PATH=$PATH:{{ ansible_env['HOME'] }}/sbt/sbt/bin" insertbefore="# End of file"
+#
+## eclipse for scala
+#- name: Ensure download directory is present
+#  file: path={{ ansible_env.HOME }}/eclipse state=directory
+#
+#- name: download eclipse
+#  get_url: url={{ eclipseurl }} dest={{ ansible_env.HOME }}/eclipse/{{ eclipsesrc }}.tar.gz
+#
+#- name: Unpack Eclipse source files
+#  shell: cd {{ ansible_env.HOME }}/eclipse && tar -xzvf {{ eclipsesrc }}.tar.gz creates={{ ansible_env['HOME'] }}/eclipse/eclipse
+#  
+#- name: Update .bashrc to have eclipse path
+#  lineinfile: dest="{{ ansible_env.HOME }}/.bashrc" backup=yes line="PATH={{ ansible_env['HOME'] }}/eclipse/eclipse/:$PATH" insertbefore="# End of file"
