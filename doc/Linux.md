@@ -71,11 +71,15 @@ http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
 
 ## Misc. Troubleshooting
 
+---
+
 #### grub issues, broken packager 
 
 On Ubuntu vm setup in VirtualBox on MacOS via Vagrant.
 Had something wrong with ```grub``` on a vm, needed to run ```sudo dpkg --configure -a``` to get
 the packager work better.
+
+---
 
 #### html5, flash, etc.
 
@@ -84,5 +88,22 @@ Here is how you could get html5 working on ubuntu:
     sudo apt-get install ubuntu-restricted-extras
     
 (﻿http://askubuntu.com/questions/475351/firefox-html5-video-support )
+
+---
+
+#### To update the OS, run these:
+
+    sudo apt-get -y update
+    sudo apt-get -y upgrade
+
+---
+
+#### Install languages from command line
+
+    sudo apt-get install language-pack-[cod] language-pack-gnome-[cod] language-pack-[cod]-base language-pack-gnome-[cod]-base 
+
+For Gnome there is also:
+
+    ﻿gnome-language-selector --install [cod]
     
     

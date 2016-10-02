@@ -41,3 +41,7 @@ Nice book: Camel in Action (has preview and good links)
 https://www.manning.com/books/camel-in-action
 
 
+#### Logging
+
+[http://naildrivin5.com/scalatour/wiki_pages/TypeDependentClosures/](http://naildrivin5.com/scalatour/wiki_pages/TypeDependentClosures/)
+
