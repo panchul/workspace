@@ -51,6 +51,7 @@ TODO: Create sub-pages of these.
 - [Sed](Sed.md)
 - [JavaScript](JavaScript.md)  
 - [RegEx](RegEx.md)
+- [Bash](Bash.md)
 
 #### Frameworks
 

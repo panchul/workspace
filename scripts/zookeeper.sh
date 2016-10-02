@@ -1,39 +1,41 @@
 #!/usr/bin/env bash
 
-echo Starting zookeeper
+ZOOKEEPER_RUN_DIR="/tmp/zookeeper$1"
 
-if [ ! -d /tmp/zookeeper ]; then
-    echo creating zookeeper data dir...
-    mkdir /tmp/zookeeper
+# echo Starting zookeeper
+#
+if [ ! -d $ZOOKEEPER_RUN_DIR ]; then
+    echo [INFO] Creating zookeeper data dir "$ZOOKEEPER_RUN_DIR" ...
+    sudo mkdir -p $ZOOKEEPER_RUN_DIR
+    sudo chown vagrant:vagrant -R $ZOOKEEPER_RUN_DIR
 fi
-
-echo $1 > /tmp/zookeeper/myid
-echo zookeeper id is:
-cat /tmp/zookeeper/myid
-
+sudo sh -c "echo $1 > $ZOOKEEPER_RUN_DIR/myid "
+echo [INFO] zookeeper id is:
+cat $ZOOKEEPER_RUN_DIR/myid
 
 ZOOKEEPER_VERSION="3.4.9"
 ZOOKEEPER_NAME="zookeeper-$ZOOKEEPER_VERSION"
-ZOOKEEPER_TARGET="/vagrant/install"
+ZOOKEEPER_INSTALLER_DIR="/vagrant/install"
 
-if [ ! -f  $ZOOKEEPER_TARGET/$ZOOKEEPER_NAME.tar.gz ]; then
-   echo "Downloading Zookeeper($ZOOKEEPER_TARGET/$ZOOKEEPER_NAME.tar.gz) ..."
-   mkdir -p $ZOOKEEPER_TARGET
-   wget -O "$ZOOKEEPER_TARGET/$ZOOKEEPER_NAME.tar.gz" "http://apache.claz.org/zookeeper/$ZOOKEEPER_NAME/$ZOOKEEPER_NAME.tar.gz"
+if [ ! -f  $ZOOKEEPER_INSTALLER_DIR/$ZOOKEEPER_NAME.tar.gz ]; then
+   echo "[INFO] Downloading Zookeeper($ZOOKEEPER_INSTALLER_DIR/$ZOOKEEPER_NAME.tar.gz) ..."
+   wget -O "$ZOOKEEPER_INSTALLER_DIR/$ZOOKEEPER_NAME.tar.gz" "http://apache.claz.org/zookeeper/$ZOOKEEPER_NAME/$ZOOKEEPER_NAME.tar.gz"
 else
-   echo "Skipping downloading Zookeeper: the install .tar.gz is present ($ZOOKEEPER_TARGET/$ZOOKEEPER_NAME.tar.gz)"
+   echo "[INFO] Skipping downloading Zookeeper: the install .tar.gz is present ($ZOOKEEPER_INSTALLER_DIR/$ZOOKEEPER_NAME.tar.gz)"
 fi
 
 if [ ! -d /home/vagrant/$ZOOKEEPER_NAME ]; then
-   echo "Installing Zookeeper ..."
-   tar -zxf $ZOOKEEPER_TARGET/$ZOOKEEPER_NAME.tar.gz -C /home/vagrant/
-   echo "export PATH=\$PATH:~/$ZOOKEEPER_NAME/bin/" >> /home/vagrant/.bashrc
+   echo "[INFO] Installing Zookeeper ..."
+   tar -zxf $ZOOKEEPER_INSTALLER_DIR/$ZOOKEEPER_NAME.tar.gz -C /home/vagrant/
+   echo "export PATH=\$PATH:/home/vagrant/$ZOOKEEPER_NAME/bin/" >> /home/vagrant/.bashrc
    chown vagrant:vagrant -R /home/vagrant/$ZOOKEEPER_NAME
 else
-   echo "Skipping unpacking Zookeeper: /home/vagrant/$ZOOKEEPER_NAME is present"
+   echo "[INFO] Skipping unpacking Zookeeper: /home/vagrant/$ZOOKEEPER_NAME is present"
 fi
 
-cp /vagrant/config/zoo.cfg $HOME/zookeeper-3.4.9/conf/zoo.cfg 
+cp /vagrant/config/zoo1.cfg /home/vagrant/zookeeper-3.4.9/conf/zoo.cfg 
 
-$HOME/zookeeper-3.4.9/bin/zkServer.sh start
+# Not sure if we want to start it right away.
+cd $ZOOKEEPER_RUN_DIR
+sudo /home/vagrant/$ZOOKEEPER_NAME/bin/zkServer.sh start
 

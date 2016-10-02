@@ -4,9 +4,13 @@
 ```aptitude```, that is, ```apt-get```, etc. is a Debian packaging tool.
  (Advanced Package Tool)
 
+---
 
-To update the OS, run these:
+#### To skip the stdin's asking for key 'y', use ```'-y'```:
 
-       sudo apt-get -y update
-       sudo apt-get -y upgrade
+    sudo apt-get install -y somenicepackage
+    
+---
+    
+More of the packaging-related infor is in [Linux](Linux.md)
 

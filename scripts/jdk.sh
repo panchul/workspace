@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-echo "Installing jdk-8 ..."
+# TODO: normalize the filename everywhere
 
-if [ ! -d jdk ]; then
+if [ ! -d /usr/java/jdk1.8.0_101 ]; then
   if [ ! -f /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz ]; then
     if [ ! -f /vagrant/install/jdk-8u101-linux-x64.tar.gz  ]; then
     
@@ -12,15 +12,16 @@ if [ ! -d jdk ]; then
       ## This thing requires clicking 'Accept' on the page. Look it up later how to automate it
       ##
       ## wget -O /vagrant/install/jdk-8u101-linux-x64.tar.gz http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz
+    else
+      echo "[INFO] Skipping downloading /vagrant/install/jdk-8u101-linux-x64.tar.gz"
     fi
     cp /vagrant/install/jdk-8u101-linux-x64.tar.gz /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz
   fi
 
   #sudo alien -i tmp/jdk-8u101-linux-x64.rpm 
 
-  sudo mkdir /usr/local/java
-  cd /usr/local/java
-  sudo tar xzf /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz
+  sudo mkdir -p /usr/local/java
+  sudo tar xzf /home/vagrant/tmp_provisioning/jdk-8u101-linux-x64.tar.gz -C /usr/local/java 
 
 # pretty much from here: https://www3.ntu.edu.sg/home/ehchua/programming/howto/Ubuntu_HowTo.html#jdk
 
@@ -38,4 +39,8 @@ if [ ! -d jdk ]; then
 
   echo "JAVA_HOME=/usr/java/jdk1.8.0_101" >> /home/vagrant/.bashrc
   echo "PATH=\$PATH:\$JAVA_HOME/bin" >> /home/vagrant/.bashrc
+  
+  echo "[INFO] Installed jdk: /usr/java/jdk1.8.0_101"
+else
+  echo "[INFO] Skipping installing jdk - it seems to exist already: /usr/java/jdk1.8.0_101"
 fi

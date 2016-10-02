@@ -5,4 +5,5 @@ if [ $# -gt 0 ]; then
     $HOME/kafka_2.11-0.10.0.1/bin/kafka-server-start.sh /vagrant/config/kafka_broker_server$1.properties &
 else
     echo "Usage: $0 <server number>"
+    exit 1
 fi

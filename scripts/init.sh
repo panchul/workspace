@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
+export DEBIAN_FRONTEND=noninteractive
+
 # sync the list
-#sudo apt-get -y update
+sudo apt-get -y update
 
 # Takes too long
 ## actual upgrade
@@ -16,4 +18,5 @@ echo "set esckeys" >> /home/vagrant/.vimrc
 echo "set tabstop=4" >> /home/vagrant/.vimrc
 echo "set number" >> /home/vagrant/.vimrc
 
+# These are for browser plug-ins
 sudo apt-get -y install ubuntu-restricted-extras

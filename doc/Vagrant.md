@@ -71,4 +71,12 @@ Line 5 uses ```-y``` to make sure the installer does not wait for the user entry
 ```
 
 
+## Shell provisioning
+
+### ﻿dpkg-reconfigure: unable to re-open stdin: No file or directory
+
+Info about resolving it is here [﻿http://serverfault.com/questions/500764/dpkg-reconfigure-unable-to-re-open-stdin-no-file-or-directory](http://serverfault.com/questions/500764/dpkg-reconfigure-unable-to-re-open-stdin-no-file-or-directory) 
+Seem to be resolved with adding this before apt-get step:
+
+    export DEBIAN_FRONTEND=noninteractive
 

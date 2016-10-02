@@ -68,8 +68,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
     box.ssh.forward_agent = true
-    box.vm.host_name = "gen#{machine_id}.vm"
-    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: "{#WS_NETWORK_NAME}"
+    box.vm.hostname = "gen#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: "{#WS_NETWORK_NAME}", drop_nat_interface_default_route: true
 #    box.vm.network "private_network", ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: true
     box.vm.synced_folder  "projects", "/projects"
 
@@ -85,9 +85,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
 
     box.vm.provision "shell", inline: <<-SHELL
-      apt-get install dos2unix 
-      dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-      source ~/bootstrap.sh
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get install -y dos2unix 
+      mkdir -p /home/vagrant/tmp_provisioning
+      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      source /home/vagrant/tmp_provisioning/bootstrap.sh
     SHELL
   end
 
@@ -115,9 +117,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
 
     box.vm.provision "shell", inline: <<-SHELL
-      apt-get install dos2unix 
-      dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-      source ~/bootstrap.sh
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get install -y dos2unix 
+      mkdir -p /home/vagrant/tmp_provisioning
+      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      source /home/vagrant/tmp_provisioning/bootstrap.sh
     SHELL
   end
 
@@ -145,9 +149,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
 
     box.vm.provision "shell", inline: <<-SHELL
-      apt-get install dos2unix 
-      dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-      source ~/bootstrap.sh
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get install -y dos2unix 
+      mkdir -p /home/vagrant/tmp_provisioning
+      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      source /home/vagrant/tmp_provisioning/bootstrap.sh
     SHELL
 
     box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -189,9 +195,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
 
     box.vm.provision "shell", inline: <<-SHELL
-      apt-get install dos2unix
-      dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-      source ~/bootstrap.sh
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get install -y dos2unix 
+      mkdir -p /home/vagrant/tmp_provisioning
+      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      source /home/vagrant/tmp_provisioning/bootstrap.sh
     SHELL
   end
 
@@ -218,9 +226,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
 
     box.vm.provision "shell", inline: <<-SHELL
-      apt-get install dos2unix
-      dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-      source ~/bootstrap.sh
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get install -y dos2unix 
+      mkdir -p /home/vagrant/tmp_provisioning
+      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      source /home/vagrant/tmp_provisioning/bootstrap.sh
     SHELL
   end
 
@@ -230,7 +240,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_YARC_SERVER_START+machine_id}"
+     # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_YARC_SERVER_START+machine_id}"
       box.ssh.forward_agent = true
       box.vm.host_name = "yser#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_YARC_SERVER_START+machine_id}"
@@ -252,9 +262,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       box.vm.provision "shell", inline: <<-SHELL
-        apt-get install dos2unix
-        dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-        source ~/bootstrap.sh
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -272,16 +284,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_YARC_CLIENT_START+machine_id}"
+     # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_YARC_CLIENT_START+machine_id}"
       box.vm.host_name = "ycli#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_YARC_CLIENT_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
-
-      box.vm.provision "shell", inline: <<-SHELL
-        apt-get install dos2unix
-        dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-        source ~/bootstrap.sh
-      SHELL
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
@@ -290,6 +296,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.cpus = 2
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+      SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
@@ -306,7 +320,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_CPP_START+machine_id}"
+    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_CPP_START+machine_id}"
       box.vm.host_name = "cpp#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_CPP_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
@@ -321,9 +335,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       box.vm.provision "shell", inline: <<-SHELL
-        apt-get install dos2unix
-        dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-        source ~/bootstrap.sh
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -348,7 +364,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ERL_START+machine_id}"
+    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ERL_START+machine_id}"
       box.vm.host_name = "erlang#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_ERL_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
@@ -366,9 +382,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       box.vm.provision "shell", inline: <<-SHELL
-        apt-get install dos2unix
-        dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-        source ~/bootstrap.sh
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/git.sh
         source /home/vagrant/tmp_provisioning/erlang.sh
       SHELL
@@ -395,11 +413,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_SCALA_START+machine_id}"
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_SCALA_START+machine_id}"
+      # box.ssh.forward_agent = true
+      # box.ssh.insert_key = false
+      # box.vm.boot_timeout = 1200
+      
       box.vm.host_name = "scala#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SCALA_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
-#      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
+      # box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
 
       box.vm.provider "virtualbox" do |vb|
         vb.gui = true
@@ -411,9 +433,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       box.vm.provision "shell", inline: <<-SHELL
-        apt-get install dos2unix
-        mkdir /home/vagrant/tmp_provisioning
-        dos2unix -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/git.sh
         source /home/vagrant/tmp_provisioning/jdk.sh
@@ -429,7 +452,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    
       box.vm.provision "dev_scala", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
+        #ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false
       end
@@ -445,7 +468,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ZOOKEEPER_START+machine_id}"
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ZOOKEEPER_START+machine_id}"
       box.vm.host_name = "zookeeper#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_ZOOKEEPER_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
@@ -460,13 +483,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       box.vm.provision "shell", inline: <<-SHELL
-        apt-get install dos2unix
-        mkdir /home/vagrant/tmp_provisioning
-        dos2unix -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/git.sh
         source /home/vagrant/tmp_provisioning/jdk.sh
-        source /home/vagrant/tmp_provisioning/scala.sh
+        source /home/vagrant/tmp_provisioning/zookeeper.sh #{machine_id}
       SHELL
       
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -483,10 +507,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
          ansible.host_key_checking = false
       end
 
-      box.vm.provision "shell", path: "scripts/zookeeper.sh", args:"#{machine_id}", privileged: false
-    
       # we do not have to have it on this vm.
-      box.vm.provision "shell", path: "scripts/kafka.sh", args:"#{machine_id}", privileged: false
+      # box.vm.provision "shell", path: "scripts/kafka.sh", args:"#{machine_id}", privileged: false
     end
   end
 
@@ -496,7 +518,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-      box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_KAFKA_BROKER_START+machine_id}"
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_KAFKA_BROKER_START+machine_id}"
       box.vm.host_name = "kafka-broker#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_KAFKA_BROKER_START+machine_id}"
       box.vm.synced_folder  "projects", "/projects"
@@ -511,13 +533,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       box.vm.provision "shell", inline: <<-SHELL
-        apt-get install dos2unix
-        mkdir /home/vagrant/tmp_provisioning
-        dos2unix -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/git.sh
         source /home/vagrant/tmp_provisioning/jdk.sh
-        source /home/vagrant/tmp_provisioning/scala.sh
       SHELL
       
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -559,9 +581,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       box.vm.provision "shell", inline: <<-SHELL
-        apt-get install dos2unix
-        dos2unix -n /vagrant/scripts/bootstrap.sh ~/bootstrap.sh
-        source ~/bootstrap.sh
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
       SHELL
 
       # Skipping Ansible, let the vm work with windows provisioners too
