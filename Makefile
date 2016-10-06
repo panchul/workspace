@@ -22,6 +22,10 @@ help:
 	@echo "     make sbsc         - creates a basic Scala sandbox virtual machine. "
 	@echo "     make sbyarc       - creates a yarc sandbox virtual machine. "
 	@echo "     make sbjavascript - creates a sandbox virtual machine for JavaScript. "
+	@echo "     make kafka        - brings up a setup for working with Kafka:"
+	@echo "                         - vm zookeeper1, single node Zookeeper          "
+	@echo "                         - vm kafka_broker1, single node Kafka cluster   "
+	@echo "                         - vm scala1, a generic Scala box                "
 	@echo " "
 	@echo " To provision(helps if a re-try is needed): "
 	@echo "     make provision_cpp - runs an Ansible script to provision things needed. "
@@ -34,6 +38,9 @@ help:
 	ansible --version
 	@echo " If you are reading this, your system seems to have the necessary pre-requisites "
 	@echo " "
+
+kafka: 
+	vagrant up zookeeper1 kafka_broker1 scala1
 
 sbyarc: prepare_folders_yarc
 	vagrant up $(DEFAULT_YARC_SET)

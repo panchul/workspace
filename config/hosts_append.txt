@@ -21,6 +21,10 @@
 192.168.10.26 cpp1.vm cpp1
 
 192.168.10.31 erlang1.vm erlang1
+192.168.10.32 erlang2.vm erlang2
+192.168.10.33 erlang3.vm erlang3
+192.168.10.34 erlang4.vm erlang4
+192.168.10.35 erlang5.vm erlang5
 
 192.168.10.36 scala1.vm scala1
 192.168.10.37 scala2.vm scala2

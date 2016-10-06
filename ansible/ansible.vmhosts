@@ -24,6 +24,10 @@ cpp1 ansible_host=192.168.10.26
 
 [erland_sandboxes]
 erlang1 ansible_host=192.168.10.31
+erlang2 ansible_host=192.168.10.32
+erlang3 ansible_host=192.168.10.33
+erlang4 ansible_host=192.168.10.34
+erlang5 ansible_host=192.168.10.35
 
 [scala_sandboxes]
 scala1 ansible_host=192.168.10.36
