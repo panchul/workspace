@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+#KAFKA_VERSION="0.8.2.2"
 KAFKA_VERSION="0.10.0.1"
 KAFKA_NAME="kafka_2.11-$KAFKA_VERSION"
 KAFKA_INSTALL_DIR="/vagrant/install"
@@ -15,6 +16,7 @@ if [ ! -d /home/vagrant/$KAFKA_NAME ]; then
    echo "[INFO] Installing Kafka ..."
    tar -zxf $KAFKA_INSTALL_DIR/$KAFKA_NAME.tgz -C /home/vagrant
    echo "export PATH=\$PATH:/home/vagrant/$KAFKA_NAME/bin/" >> /home/vagrant/.bashrc
+   echo "export WS_KAFKA_VERSION=$KAFKA_VERSION" >> /home/vagrant/.bashrc
    chown vagrant:vagrant -R /home/vagrant/$KAFKA_NAME
 else
    echo "[INFO] Skipping unpacking Kafka: /home/vagrant/$KAFKA_NAME is present"

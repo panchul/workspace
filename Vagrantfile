@@ -440,6 +440,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         source /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/git.sh
         source /home/vagrant/tmp_provisioning/jdk.sh
+        source /home/vagrant/tmp_provisioning/sbt.sh
         source /home/vagrant/tmp_provisioning/scala.sh
       SHELL
 

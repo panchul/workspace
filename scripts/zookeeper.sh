@@ -28,12 +28,13 @@ if [ ! -d /home/vagrant/$ZOOKEEPER_NAME ]; then
    echo "[INFO] Installing Zookeeper ..."
    tar -zxf $ZOOKEEPER_INSTALLER_DIR/$ZOOKEEPER_NAME.tar.gz -C /home/vagrant/
    echo "export PATH=\$PATH:/home/vagrant/$ZOOKEEPER_NAME/bin/" >> /home/vagrant/.bashrc
+   echo "export WS_ZOOKEEPER_VERSION=$ZOOKEEPER_VERSION" >> /home/vagrant/.bashrc
    chown vagrant:vagrant -R /home/vagrant/$ZOOKEEPER_NAME
 else
    echo "[INFO] Skipping unpacking Zookeeper: /home/vagrant/$ZOOKEEPER_NAME is present"
 fi
 
-cp /vagrant/config/zoo1.cfg /home/vagrant/zookeeper-3.4.9/conf/zoo.cfg 
+cp /vagrant/config/zoo$1.cfg /home/vagrant/zookeeper-3.4.9/conf/zoo.cfg 
 
 # Not sure if we want to start it right away.
 cd $ZOOKEEPER_RUN_DIR

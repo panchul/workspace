@@ -15,9 +15,10 @@ if [ ! -d /home/vagrant/sbt ]; then
    echo "[INFO] Installing Sbt. Might take a while ..."
    tar -zxf $SBT_INSTALLER_DIR/$SBT_NAME.tgz -C /home/vagrant
    chown vagrant:vagrant -R /home/vagrant/sbt
-   cd sbt/bin
-   ./sbt
+   # cd sbt/bin
+   # ./sbt
    echo "export PATH=\$PATH:/home/vagrant/sbt/bin/" >> /home/vagrant/.bashrc
+   echo "export WS_SBT_VERSION=$SBT_VERSION" >> /home/vagrant/.bashrc
    echo "[INFO] Done installing Sbt"
 else
    echo "[INFO] Sbt seem to be already installed : /home/vagrant/sbt"
