@@ -6,9 +6,15 @@ VAGRANTFILE_API_VERSION = "2"
 
 WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1404-desktop"
 WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
+#WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1604-desktop"
+#WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1604-desktop"
 
 WORKSPACE_VM_BOX_NO_GUI = "ubuntu/trusty64"
 WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/trusty64.box"
+# WORKSPACE_VM_BOX_NO_GUI = "ubuntu/xenial64"
+# WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/xenial64.box"
+
+WORKSPACE_VM_BOOT_TIMEOUT = 2400
 
 ##################################################
 #
@@ -64,15 +70,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "gen1", autostart: false do |box|
     machine_id = 1
     box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+  #  box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
-    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
-    box.ssh.forward_agent = true
-    box.vm.hostname = "gen#{machine_id}.vm"
-    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: "{#WS_NETWORK_NAME}", drop_nat_interface_default_route: true
-#    box.vm.network "private_network", ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: true
-    box.vm.synced_folder  "projects", "/projects"
-
+    box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+      
     box.vm.provider "virtualbox" do |vb|
       # We do not have to have gui, we can save some memory if we don't.
       vb.gui = true
@@ -82,8 +83,29 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       # win7 machine did not take this.
       #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
-    end
+      
+      # For NAT adapter
+      vb.customize ["modifyvm", :id, "--nictype1", "Am79C973"]
+      # For host-only adapter
+      vb.customize ["modifyvm", :id, "--nictype2", "Am79C973"]
 
+    end
+    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
+    box.ssh.forward_agent = true
+    box.vm.hostname = "gen#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: "{#WS_NETWORK_NAME}", drop_nat_interface_default_route: true, auto_config: false
+#    box.vm.network "private_network", ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: true
+    box.vm.synced_folder  "projects", "/projects"
+
+ config.vm.provision "shell", inline: <<-SHELL
+    rm -f /etc/network/interfaces.d/eth1.cfg
+    echo "auto eth1" >> /etc/network/interfaces.d/eth1.cfg
+    echo "iface eth1 inet static" >> /etc/network/interfaces.d/eth1.cfg
+    echo "address #{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}" >> /etc/network/interfaces.d/eth1.cfg
+    echo "netmask 255.255.255.0" >> /etc/network/interfaces.d/eth1.cfg
+    ifdown eth1 && ifup eth1
+  SHELL
+  
     box.vm.provision "shell", inline: <<-SHELL
       export DEBIAN_FRONTEND=noninteractive
       apt-get install -y dos2unix 
@@ -416,7 +438,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_SCALA_START+machine_id}"
       # box.ssh.forward_agent = true
       # box.ssh.insert_key = false
-      # box.vm.boot_timeout = 1200
+      box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
       
       box.vm.host_name = "scala#{machine_id}.vm"
       box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SCALA_START+machine_id}"

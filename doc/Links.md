@@ -170,6 +170,7 @@ TODO: Create sub-pages of these.
 - Jira
 - Jenkins
 - Redmine
+- Sonarqube
 - Phabricator
 - Trello.com
 - www.planitpoker.com
