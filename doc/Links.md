@@ -12,6 +12,7 @@ TODO: Create sub-pages of these.
 - rake  
 - bundler  
 - [Docker](Docker.md)  
+- [Kubernetes](Kubernetes.md)  
 - [VirtualBox](VirtualBox.md)  
 - [VMWare](VMWare.md)  
 - AWS
@@ -39,7 +40,7 @@ TODO: Create sub-pages of these.
 - [Ruby](Ruby.md)  
 - ML  
 - [Racket](Racket.md)  
-- Go  
+- [Go](Go.md)  
 - [Scala](Scala.md)  
 - [Java](Java.md)  
 - Matlab  
