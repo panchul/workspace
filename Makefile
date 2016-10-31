@@ -5,6 +5,8 @@
 
 DEFAULT_YARC_SET=yser{1..2}
 
+DEFAULT_KAFKA_SET = zookeeper1 kafka_broker1 scala1
+
 ANSIBLE_INVENTORY=.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory
 
 all: help
@@ -23,6 +25,12 @@ help:
 	@echo "     make sbyarc       - creates a yarc sandbox virtual machine. "
 	@echo "     make sbjavascript - creates a sandbox virtual machine for JavaScript. "
 	@echo " "
+	@echo "     make kafka_up     - brings up a setup for working with Kafka:"
+	@echo "                         - vm zookeeper1, single node Zookeeper          "
+	@echo "                         - vm kafka_broker1, single node Kafka cluster   "
+	@echo "                         - vm scala1, a generic Scala box                "
+	@echo "     make kafka_suspend  - suspends the set of Kafka vms"
+	@echo " "
 	@echo " To provision(helps if a re-try is needed): "
 	@echo "     make provision_cpp - runs an Ansible script to provision things needed. "
 	@echo " "
@@ -34,6 +42,14 @@ help:
 	ansible --version
 	@echo " If you are reading this, your system seems to have the necessary pre-requisites "
 	@echo " "
+
+kafka: kafka_up
+
+kafka_up: 
+	vagrant up $(DEFAULT_KAFKA_SET)
+
+kafka_suspend: 
+	vagrant suspend $(DEFAULT_KAFKA_SET)
 
 sbyarc: prepare_folders_yarc
 	vagrant up $(DEFAULT_YARC_SET)

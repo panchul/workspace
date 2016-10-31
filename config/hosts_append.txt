@@ -21,6 +21,10 @@
 192.168.10.26 cpp1.vm cpp1
 
 192.168.10.31 erlang1.vm erlang1
+192.168.10.32 erlang2.vm erlang2
+192.168.10.33 erlang3.vm erlang3
+192.168.10.34 erlang4.vm erlang4
+192.168.10.35 erlang5.vm erlang5
 
 192.168.10.36 scala1.vm scala1
 192.168.10.37 scala2.vm scala2
@@ -50,3 +54,8 @@
 192.168.10.64 kafka-broker4.vm kafka-broker4
 192.168.10.65 kafka-broker5.vm kafka-broker5
 
+192.168.10.66 golang1.vm golang1
+192.168.10.67 golang2.vm golang2
+192.168.10.68 golang3.vm golang3
+192.168.10.69 golang4.vm golang4
+192.168.10.70 golang5.vm golang5

@@ -24,6 +24,10 @@ cpp1 ansible_host=192.168.10.26
 
 [erland_sandboxes]
 erlang1 ansible_host=192.168.10.31
+erlang2 ansible_host=192.168.10.32
+erlang3 ansible_host=192.168.10.33
+erlang4 ansible_host=192.168.10.34
+erlang5 ansible_host=192.168.10.35
 
 [scala_sandboxes]
 scala1 ansible_host=192.168.10.36
@@ -61,3 +65,9 @@ kafka-broker3 ansible_host=192.168.10.63
 kafka-broker4 ansible_host=192.168.10.64
 kafka-broker5 ansible_host=192.168.10.65
 
+[golang_sandboxes]
+golang1 ansible_host=192.168.10.66
+golang2 ansible_host=192.168.10.67
+golang3 ansible_host=192.168.10.68
+golang4 ansible_host=192.168.10.69
+golang5 ansible_host=192.168.10.70

@@ -4,6 +4,7 @@
 
 
 [https://www.vagrantup.com/](https://www.vagrantup.com/)
+
 https://circleci.com/blog/its-the-future/ - An article about Docker and Vagrant
 
 
@@ -24,9 +25,11 @@ You might also want to run this to do the actual updating:
 
 Bootloader might make it more complicated.
 
+---
 
 ## Vagrantfile misc.
 
+---
 
 #### Example customizing the box
 
@@ -42,7 +45,7 @@ Bootloader might make it more complicated.
 
 Line 6 may not work on Windows.
 
-
+---
 
 #### Example provisioning section with shell provisioning:
 
@@ -59,6 +62,8 @@ Line 2 installs the file converter to remove the ```\r``` that Windows may have 
 
 Line 5 uses ```-y``` to make sure the installer does not wait for the user entry.
 
+---
+
 #### Example provisioning section with Ansible provisioning:
 
 ```
@@ -70,6 +75,50 @@ Line 5 uses ```-y``` to make sure the installer does not wait for the user entry
       end
 ```
 
+---
+
+#### Vagrantfile which uses getopts and allows you to change the name dynamically
+
+Found this online, not sure about dynamic modifications being a preferable way to do things.
+
+    # -*- mode: ruby -*-
+    require 'getoptlong'
+    
+    opts = GetoptLong.new(
+      [ '--vm-name',        GetoptLong::OPTIONAL_ARGUMENT ],
+    )
+    vm_name        = ENV['VM_NAME'] || 'default'
+    
+    begin
+      opts.each do |opt, arg|
+        case opt
+          when '--vm-name'
+            vm_name = arg
+        end
+      end
+      rescue
+    end
+    
+    Vagrant.configure(2) do |config|
+      config.vm.define vm_name
+      config.vm.provider "virtualbox" do |vbox, override|
+        override.vm.box = "ubuntu/wily64"
+        # ...
+      end
+      # ...
+    end
+
+So to use different name, you can run for example:
+
+    vagrant --vm-name=my_name up --no-provision
+
+Note: The --vm-name parameter needs to be specified before up command.
+
+or:
+
+    VM_NAME=my_name vagrant up --no-provision
+
+---
 
 ## Shell provisioning
 
@@ -80,3 +129,4 @@ Seem to be resolved with adding this before apt-get step:
 
     export DEBIAN_FRONTEND=noninteractive
 
+---

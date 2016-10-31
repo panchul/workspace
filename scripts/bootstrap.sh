@@ -35,6 +35,9 @@ dos2unix -q -n /vagrant/scripts/zookeeper.sh /home/vagrant/tmp_provisioning/zook
 # apache kafka
 dos2unix -q -n /vagrant/scripts/kafka.sh /home/vagrant/tmp_provisioning/kafka.sh
 
+# golang
+dos2unix -q -n /vagrant/scripts/golang.sh /home/vagrant/tmp_provisioning/golang.sh
+
 # -------------------------------------
 
 dos2unix -q -n /vagrant/config/hosts_append.txt /home/vagrant/tmp_provisioning/hosts_append.txt
