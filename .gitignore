@@ -40,3 +40,6 @@ install
 # Mac stuff
 .DS_Store
 
+# IntelliJ
+.idea
+
