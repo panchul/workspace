@@ -8,7 +8,8 @@ GOLANG_VERSION="1.7.3"
 GOLANG_NAME="go$GOLANG_VERSION.linux-amd64"
 GOLANG_INSTALLER_DIR="/vagrant/install"
 
-GOLANG_GOPATH="/home/vagrant/golang_workspace"
+# Fix it later
+GOLANG_GOPATH="/projects/sb_golang/hello"
 
 if [ ! -f "$GOLANG_INSTALLER_DIR/$GOLANG_NAME.tar.gz" ]; then
    echo "[INFO] Downloading golang install, $GOLANG_NAME.tar.gz ..."
@@ -24,9 +25,10 @@ if [ ! -d /usr/local/go ]; then
    chown vagrant:vagrant -R /usr/local/go
    echo "export GOROOT=/usr/local/go" >> /home/vagrant/.bashrc
    echo "export PATH=\$PATH:\$GOROOT/bin" >> /home/vagrant/.bashrc
-   mkdir -p "$GOLANG_GOPATH/src/github.com/vagrant"
+   # Skip it for now. Clone the packages manually
+   # mkdir -p "$GOLANG_GOPATH/src/github.com/vagrant"
    chown vagrant:vagrant -R $GOLANG_GOPATH
-   echo "export GOPATH=$GOLANG_GOPATH" >> /home/vagrant/.bashrc
+   echo "export GOPATH=$GOROOT:$GOLANG_GOPATH" >> /home/vagrant/.bashrc
    echo "[INFO] Done installing Golang"
 else
    echo "[INFO] Golang seem to be already installed : /usr/local/go"
