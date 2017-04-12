@@ -23,3 +23,12 @@ There were some issues with the credentials on Cygwin.
 https://rtyley.github.io/bfg-repo-cleaner/
 https://jorin.me/clean-git-history/
 
+
+### .gitignore notes
+
+to exclude a file from bing ignored, use ```!filename```, for example:
+
+    ...
+    some_local_folder
+    !some_local_folder/.git_keep
+

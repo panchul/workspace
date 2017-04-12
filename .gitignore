@@ -1,8 +1,14 @@
 # Require things to be added to the repo explicitly
 private
+!private/.git_keep
+
 projects
+!projects/.git_keep
+
 projects_*
+
 install
+!install/.git_keep
 
 # Compiled Object files
 *.slo

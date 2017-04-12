@@ -6,6 +6,10 @@
 [http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines 
 [http://danielwestheide.com/scala/neophytes.html](http://danielwestheide.com/scala/neophytes.html) - The Neophyte's Guide to Scala
 
+### ScalaDoc
+
+[Scaladoc](Scaladoc.md) is sometimes used for documentation.
+
 ### sbt
 
 Sbt link is at  [Sbt.md](Sbt.md)
@@ -26,6 +30,10 @@ Nice Akka distributed  transaction processing example:
 
 [https://github.com/typelevel/cats](https://github.com/typelevel/cats) - Nice testing link for Scala
 
+[Scalameter](Scalameter.md) - for benchmarking, etc.
+
+Nice scala link with quick demo of runtime info:
+http://alvinalexander.com/scala/how-show-memory-ram-use-scala-application-used-free-total-max
 
 ## Camel
  
@@ -40,3 +48,11 @@ https://www.manning.com/books/camel-in-action
 
 [http://naildrivin5.com/scalatour/wiki_pages/TypeDependentClosures/](http://naildrivin5.com/scalatour/wiki_pages/TypeDependentClosures/)
 
+## Scalatra, a webserver in Scala
+
+[Scalatra](Scalatra.md)
+
+
+## JSON in Scala
+
+See [Json](JSON.md) for sample snippets.

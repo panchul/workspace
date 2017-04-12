@@ -15,7 +15,7 @@ TODO: Create sub-pages of these.
 - [Kubernetes](Kubernetes.md)  
 - [VirtualBox](VirtualBox.md)  
 - [VMWare](VMWare.md)  
-- AWS
+- [AWS](AWS.md)
 - Fabric
 - Otto
 - [make](make.md)
@@ -57,6 +57,7 @@ TODO: Create sub-pages of these.
 #### Frameworks
 
  - ReactiveX http://reactivex.io/intro.html
+ - [Apache Spark](ApacheSpark.md)
  
   Nice about fundamentals:
   https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
@@ -106,12 +107,12 @@ TODO: Create sub-pages of these.
 - MochiWeb
 - [PlayFramework](PlayFramework.md)
 - [WordPress](WordPress.md)
-
-
+- [Scalatra](Scalatra.md)
+- [Yaws](Yaws.md)
 
 ### GUI Frameworks
 
-- wxWidgets
+- [wxWidgets](wxWidgets.md)
 - OpenGL
 
   
@@ -126,7 +127,8 @@ TODO: Create sub-pages of these.
 - Eclipse  
 - [IntelliJ](Intellij.md)  
 - [vi/vim](Vim.md)  
-- emacs
+- [emacs](Emacs.md) 
+- [Atom](Atom.md)
 
 ### Networking
 
@@ -145,7 +147,7 @@ TODO: Create sub-pages of these.
 - Graphite
 - Meck
 - Common Test (CT)
-
+- [Scalameter](Scalameter.md)
 
 ### Message brokers and distributed environment coordinators. 
 
