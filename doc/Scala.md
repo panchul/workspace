@@ -56,3 +56,9 @@ https://www.manning.com/books/camel-in-action
 ## JSON in Scala
 
 See [Json](JSON.md) for sample snippets.
+
+
+## Assorted misc projects to sort out later
+
+https://github.com/ScalaWilliam/xs4s - XML Streaming for Scala
+

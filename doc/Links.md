@@ -199,19 +199,5 @@ advises are piled up here:
 
 ## Fun.
 
-TODO : create a subpage for this
-
-- Fractals
-- Conway's Life
-- Prime numbers
-
-
-### Movies
-
-TODO: keep the titles you are interested in here.
-
-### Videos
-
-TODO: put some youtube videos here.
-
-
+- [misc fun, youtube, etc.](misc_fun.html)
+- [misc historic links](misc_historic.html)

@@ -16,4 +16,15 @@ http://www.keepaustinbeautiful.org
 http://www.southwestshowdown.com  
 
 
+### Location, Locaion, Location
+
+States without state income tax([full info](http://www.money-zine.com/financial-planning/tax-shelter/state-income-tax-rates/)):
+- Alaska
+- Florida
+- Nevada
+- South Dakota
+- Texas
+- Washington
+- Wyoming
+
 
