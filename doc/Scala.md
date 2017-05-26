@@ -14,6 +14,13 @@
 
 Sbt link is at  [Sbt.md](Sbt.md)
 
+
+### Giter8
+
+Here are some nice templates:
+https://github.com/foundweekends/giter8/wiki/giter8-templates
+
+
 ### Eclipse
 
 There is a package of Eclipse that already has the Scala additions, downolad url:

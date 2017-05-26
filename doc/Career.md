@@ -13,7 +13,9 @@ TODO: List interests, etc.
 https://capitalfactory.apps.umbel.com/6d6/2016-pre-sxsw-startup-crawl/  
 https://austinstartups.com/bbva-pre-sxsw-startup-crawl-stops-8ed1002b8e92#.elta46dmt  
 http://www.keepaustinbeautiful.org  
-http://www.southwestshowdown.com  
+http://www.southwestshowdown.com
+https://remote4.me/free-remote-work-freelance-services/
+http://www.datasciencecentral.com/profiles/blogs/what-to-look-for-when-hiring-an-entry-level-data-scientist
 
 
 ### Location, Locaion, Location

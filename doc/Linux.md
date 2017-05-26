@@ -87,7 +87,7 @@ Here is how you could get html5 working on ubuntu:
 
     sudo apt-get install ubuntu-restricted-extras
     
-(﻿http://askubuntu.com/questions/475351/firefox-html5-video-support )
+(http://askubuntu.com/questions/475351/firefox-html5-video-support )
 
 ---
 
@@ -104,6 +104,20 @@ Here is how you could get html5 working on ubuntu:
 
 For Gnome there is also:
 
-    ﻿gnome-language-selector --install [cod]
+    gnome-language-selector --install [cod]
     
+---
     
+#### OpenVPN
+
+Build a Real VPN with OpenVPN:
+
+https://www.linux.com/learn/intro-to-linux/2017/3/build-real-vpn-openvpn
+
+
+---
+
+#### Linux Kernel
+
+https://kernelnewbies.org/FAQ  - nice FAQ
+

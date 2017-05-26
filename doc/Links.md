@@ -43,8 +43,8 @@ TODO: Create sub-pages of these.
 - [Go](Go.md)  
 - [Scala](Scala.md)  
 - [Java](Java.md)  
-- Matlab  
-- Simulink
+- [Matlab/Simulink](Matlab.md)  
+- [R](R.md)
 - PostScript
 - [Elixir](Elixir.md)
 - Lua
@@ -164,6 +164,12 @@ TODO: Create sub-pages of these.
   - [Ejabberd](Ejabberd.md)
   - Mongoose
 - BOSH
+
+### Data mining, AI, Misc
+
+- Chat bots
+- Speech generation
+  [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
 
 
 ### Process Management
