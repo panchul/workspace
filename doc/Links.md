@@ -118,7 +118,7 @@ TODO: Create sub-pages of these.
   
 ### Micorcontrollers
 
-- Arduino  
+- [Arduino](Arduino.md)  
 - 
   
 ### IDEs and editors
@@ -190,6 +190,7 @@ TODO: Create sub-pages of these.
 
 
 - [Career](Career.md)
+- [Startup](Startup.md)
 
 
 
