@@ -28,4 +28,7 @@ https://github.com/wurstmeister/kafka-docker - Dokerizing Kafka
 ---
 
 [Deep dive on Kafka from Confluent](https://vimeo.com/185844593/77f7d239a3)
+
 [Slides from the deep dive on Kafka](http://www.slideshare.net/ConfluentInc/deep-dive-into-apache-kafka-66821186)
+
+[Slides from Introduction To Streaming Data and Stream Processing with Apache Kafka](https://www.slideshare.net/ConfluentInc/introduction-to-streaming-data-and-stream-processing-with-apache-kafka)

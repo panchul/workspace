@@ -129,6 +129,9 @@ TODO: Create sub-pages of these.
 - [vi/vim](Vim.md)  
 - [emacs](Emacs.md) 
 - [Atom](Atom.md)
+- Sublime http://www.sublimetext.com/
+- LiteIDE
+
 
 ### Networking
 
@@ -172,7 +175,17 @@ TODO: Create sub-pages of these.
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
 
 
-### Process Management
+### Algorithms and Data Structures
+
+
+Nice MIT OCW:
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
+
+Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
+
+
+
+### Process management and misc software lifecycle issues
 
 - [Scrum](Scrum.md)
 - Kanban
@@ -185,6 +198,7 @@ TODO: Create sub-pages of these.
 - www.planitpoker.com
 - www.websequencediagrams.com
 - www.lucidchart.com
+- [Code Review](CodeReview.md)
 
 ## Career etc.
 

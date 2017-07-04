@@ -22,6 +22,24 @@ Tarball is also available like so:  http://erlang.org/download/otp_src_18.3.tar.
 
 Pre-requisites are needed, depending on what you want to do with it.
 
+---
+
+Simple steps that seem to do it:
+
+    $ tar xzf otp_src_20.0.tar.gz 
+    $ cd otp_src_20.0/
+    $ export ERL_TOP=`pwd`
+    $ ./configure
+    $ ./make
+    $ sudo make install
+    $ erl
+
+It skips several components, like wxWidgets, disables OpenSSL and ODBC, uses fakefop instead of the real one.
+
+
+#### IDE support
+
+http://ignatov.github.io/intellij-erlang/ IntelliJ plug-in
 
 
 ### Popular open-source system that use Erlang
