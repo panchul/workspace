@@ -2,7 +2,6 @@
 
 ## UNDER CONSTRUCTION
 
-
 # Scalatra
 
 
@@ -28,3 +27,4 @@ Nice links on deployment are here:
 
 http://stackoverflow.com/questions/15360623/deploying-starting-and-stopping-scala-applications-on-a-remote-server/22479968
 https://github.com/earldouglas/xsbt-web-plugin
+

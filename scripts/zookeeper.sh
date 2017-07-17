@@ -13,7 +13,8 @@ sudo sh -c "echo $1 > $ZOOKEEPER_RUN_DIR/myid "
 echo [INFO] zookeeper id is:
 cat $ZOOKEEPER_RUN_DIR/myid
 
-ZOOKEEPER_VERSION="3.4.9"
+#ZOOKEEPER_VERSION="3.4.9"
+ZOOKEEPER_VERSION="3.4.10"
 ZOOKEEPER_NAME="zookeeper-$ZOOKEEPER_VERSION"
 ZOOKEEPER_INSTALLER_DIR="/vagrant/install"
 
@@ -34,9 +35,9 @@ else
    echo "[INFO] Skipping unpacking Zookeeper: /home/vagrant/$ZOOKEEPER_NAME is present"
 fi
 
-cp /vagrant/config/zoo$1.cfg /home/vagrant/zookeeper-3.4.9/conf/zoo.cfg 
+cp "/vagrant/config/zoo$1.cfg" "/home/vagrant/zookeeper-$ZOOKEEPER_VERSION/conf/zoo.cfg" 
 
 # Not sure if we want to start it right away.
-cd $ZOOKEEPER_RUN_DIR
-sudo /home/vagrant/$ZOOKEEPER_NAME/bin/zkServer.sh start
+cd "$ZOOKEEPER_RUN_DIR"
+sudo "/home/vagrant/$ZOOKEEPER_NAME/bin/zkServer.sh" start
 

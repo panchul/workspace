@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 #KAFKA_VERSION="0.8.2.2"
-KAFKA_VERSION="0.10.0.1"
+#KAFKA_VERSION="0.10.0.1"
+KAFKA_VERSION="0.11.0.0"
 KAFKA_NAME="kafka_2.11-$KAFKA_VERSION"
 KAFKA_INSTALL_DIR="/vagrant/install"
 

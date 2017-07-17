@@ -9,9 +9,10 @@ TODO: Create sub-pages of these.
 
 - [Vagrant](Vagrant.md)  
 - [Ansible](Ansible.md)  
-- rake  
+- [Rake](Rake.md)  
 - bundler  
-- [Docker](Docker.md)  
+- [Docker](Docker.md)
+- [Swarm](Swarm.md)
 - [Kubernetes](Kubernetes.md)  
 - [VirtualBox](VirtualBox.md)  
 - [VMWare](VMWare.md)  
@@ -19,14 +20,16 @@ TODO: Create sub-pages of these.
 - Fabric
 - Otto
 - [make](make.md)
+- cmake https://cmake.org/overview/
 - [aptitude](aptitude.md)
 - autoconfig
+- [Mesos](Mesos.md)
 
 ### Programming languages
 
 - [C/C++](CPP.md)
   - STL
-  - Boost   
+  - [Boost](Boost.md)   
 - [Erlang/OTP](Erlang.md)  
   - Kerl
   - emake
@@ -54,13 +57,32 @@ TODO: Create sub-pages of these.
 - [RegEx](RegEx.md)
 - [Bash](Bash.md)
 
-#### Frameworks
+#### Frameworks and architecture approaches
 
  - ReactiveX http://reactivex.io/intro.html
  - [Apache Spark](ApacheSpark.md)
  
   Nice about fundamentals:
   https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+  
+  About Domain-Driven Design, event sourcing, etc. :
+  https://www.youtube.com/watch?v=7kX3fs0pWwc
+
+  More on DDD, in REST context:
+  https://www.youtube.com/watch?v=NdZqeAAIHzc
+
+  Neat presentation, similar to what I wanted to record, about how to organize dev properly:
+  https://www.youtube.com/watch?v=S4ez739fles
+  
+  Another CQRS talk:
+  https://www.youtube.com/watch?v=A0goyZ9F4bg
+  
+  Axon CQRS demo:
+  https://www.youtube.com/watch?v=Jp-rW-XOYzA
+  github.com/abuijze/bootiful-axon
+  
+  Spring Boot CQRS Example:
+  https://github.com/jinternals/demo-cqrs
   
   
 
@@ -73,6 +95,7 @@ TODO: Create sub-pages of these.
 - HTML
 - [UTF-8](UTF-8)  
 - Jiffy (JSON converting)
+- Swagger https://swagger.io/
 
 ### Databases
 
@@ -81,6 +104,7 @@ TODO: Create sub-pages of these.
 - MongoDB
 - Riak
 - [Hadoop](Hadoop.md)
+- CouchDB http://couchdb.apache.org/
 
 ### Version control systems  
 
@@ -173,7 +197,8 @@ TODO: Create sub-pages of these.
 - Chat bots
 - Speech generation
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
-
+- Splunk https://www.splunk.com/
+- AppDynamics https://www.appdynamics.com/
 
 ### Algorithms and Data Structures
 
@@ -199,6 +224,15 @@ Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
 - www.websequencediagrams.com
 - www.lucidchart.com
 - [Code Review](CodeReview.md)
+
+
+## Security
+
+- SASL https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer
+- IPSec https://en.wikipedia.org/wiki/IPsec
+- TLS, Transport Layer Security https://en.wikipedia.org/wiki/Transport_Layer_Security
+
+
 
 ## Career etc.
 

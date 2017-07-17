@@ -1,6 +1,7 @@
 
 ## UNDER CONSTRUCTION
 
+# Scala
 
 [http://www.scala-lang.org/](http://www.scala-lang.org/)
 [http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines 

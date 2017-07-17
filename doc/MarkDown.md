@@ -1,8 +1,11 @@
 
 ** UNDER CONSTRUCTION **
 
-## Quick-n-dirty notes and what they produce
+# Markdown
 
+--
+
+## Quick-n-dirty notes and what they produce
 
 ### Miscellaneous
 

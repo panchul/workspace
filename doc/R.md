@@ -2,12 +2,14 @@
 
 ## UNDER CONSTRUCTION
 
+# R language
 
 // TODO: make an R sandbox
 
 
 Misc Links
 
+---
 
 Some datamining over Trump's Tweeter feed:
 

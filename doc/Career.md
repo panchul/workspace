@@ -18,7 +18,7 @@ https://remote4.me/free-remote-work-freelance-services/
 http://www.datasciencecentral.com/profiles/blogs/what-to-look-for-when-hiring-an-entry-level-data-scientist
 https://www.linkedin.com/pulse/wework-effect-ageism-tech-lindsay-boyajian - interesting article about ageism, that states that diverse perspectives foster more successful outcomes in the workplace.  
 https://www.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals TED talk about stoicism
-
+https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-and-more-want-you-to-ask
 
 ### Location, Locaion, Location
 

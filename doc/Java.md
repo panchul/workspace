@@ -1,12 +1,21 @@
 
+## UNDER CONSTRUCTION
+
+# Java
+
+
+---
 
 JDK8:  
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
 
+---
 
 Nice HowTo that mentions JDK:  
 https://www3.ntu.edu.sg/home/ehchua/programming/howto/Ubuntu_HowTo.html#jdk  
 
+
+---
 
 Create a file Hello.java with content:
 

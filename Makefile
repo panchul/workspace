@@ -29,6 +29,7 @@ help:
 	@echo "                         - vm zookeeper1, single node Zookeeper          "
 	@echo "                         - vm kafka_broker1, single node Kafka cluster   "
 	@echo "                         - vm scala1, a generic Scala box                "
+	# TODO: maybe add a C++ sandbox with Kafka client
 	@echo "     make kafka_suspend  - suspends the set of Kafka vms"
 	@echo " "
 	@echo " To provision(helps if a re-try is needed): "
