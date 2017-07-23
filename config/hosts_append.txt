@@ -59,3 +59,9 @@
 192.168.10.68 golang3.vm golang3
 192.168.10.69 golang4.vm golang4
 192.168.10.70 golang5.vm golang5
+
+192.168.10.71 docker1.vm docker1
+192.168.10.72 docker2.vm docker2
+192.168.10.73 docker3.vm docker3
+192.168.10.74 docker4.vm docker4
+192.168.10.75 docker5.vm docker5

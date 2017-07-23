@@ -71,3 +71,10 @@ golang2 ansible_host=192.168.10.67
 golang3 ansible_host=192.168.10.68
 golang4 ansible_host=192.168.10.69
 golang5 ansible_host=192.168.10.70
+
+[docker_sandboxes]
+docker1 ansible_host=192.168.10.71
+docker2 ansible_host=192.168.10.72
+docker3 ansible_host=192.168.10.73
+docker4 ansible_host=192.168.10.74
+docker5 ansible_host=192.168.10.75

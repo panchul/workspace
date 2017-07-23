@@ -121,3 +121,13 @@ https://www.linux.com/learn/intro-to-linux/2017/3/build-real-vpn-openvpn
 
 https://kernelnewbies.org/FAQ  - nice FAQ
 
+
+---
+
+You can use this to get the name of the release:
+
+    $ lsb_release -cs
+    trusty
+
+
+

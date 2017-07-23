@@ -5,6 +5,18 @@
 
 See also [DockerCompose](DockerCompose.md)
 
+---
+
+https://www.docker.com/
+
+---
+
+Docker for Ubuntu:
+
+https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requirements
+
+---
+
 
 Some presentations and articles:
 

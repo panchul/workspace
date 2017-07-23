@@ -12,6 +12,7 @@ TODO: Create sub-pages of these.
 - [Rake](Rake.md)  
 - bundler  
 - [Docker](Docker.md)
+  - [Docker-Compose](DockerCompose.md)
 - [Swarm](Swarm.md)
 - [Kubernetes](Kubernetes.md)  
 - [VirtualBox](VirtualBox.md)  
@@ -24,6 +25,7 @@ TODO: Create sub-pages of these.
 - [aptitude](aptitude.md)
 - autoconfig
 - [Mesos](Mesos.md)
+- [OpenStack](OpenStack.md)
 
 ### Programming languages
 

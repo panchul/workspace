@@ -33,10 +33,20 @@ dos2unix -q -n /vagrant/scripts/spark.sh /home/vagrant/tmp_provisioning/spark.sh
 dos2unix -q -n /vagrant/scripts/zookeeper.sh /home/vagrant/tmp_provisioning/zookeeper.sh
 
 # apache kafka
-dos2unix -q -n /vagrant/scripts/kafka.sh /home/vagrant/tmp_provisioning/kafka.sh
+dos2unix -q -n /vagrant/scripts/kafka_install.sh /home/vagrant/tmp_provisioning/kafka_install.sh
+dos2unix -q -n /vagrant/scripts/kafka_list_topics.sh /home/vagrant/tmp_provisioning/kafka_list_topics.sh
+dos2unix -q -n /vagrant/scripts/kafka_create_topic.sh /home/vagrant/tmp_provisioning/kafka_create_topic.sh
+dos2unix -q -n /vagrant/scripts/kafka_start_broker.sh /home/vagrant/tmp_provisioning/kafka_start_broker.sh
 
 # golang
 dos2unix -q -n /vagrant/scripts/golang.sh /home/vagrant/tmp_provisioning/golang.sh
+
+# docker
+dos2unix -q -n /vagrant/scripts/docker_install.sh /home/vagrant/tmp_provisioning/docker_install.sh
+dos2unix -q -n /vagrant/scripts/docker_uninstall.sh /home/vagrant/tmp_provisioning/docker_uninstall.sh
+
+# pip
+dos2unix -q -n /vagrant/scripts/pip_install.sh /home/vagrant/tmp_provisioning/pip_install.sh
 
 # -------------------------------------
 

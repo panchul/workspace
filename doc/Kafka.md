@@ -40,6 +40,10 @@ https://www.youtube.com/watch?v=QkDYkB6Q16Q - More Kafka Streams demos.
 
 https://github.com/wurstmeister/kafka-docker - Dockerizing Kafka
 
+And with Vagrant using Sbt:
+https://allthingshadoop.com/2013/12/07/using-vagrant-to-get-up-and-running-with-apache-kafka/
+
+
 ---
 
 [https://github.com/elodina/scala-kafka](https://github.com/elodina/scala-kafka) - Another nice repo, similar to my approach.
@@ -96,10 +100,14 @@ Kafka web console. Useful utils.
 
 https://www.youtube.com/watch?v=kby1aZBxU2I
 
+---
+
+kafka-manager
+kafka-topic
 
 ---
 
-Quck flash of a bunch of useful stuff:
+Quick flash of a bunch of useful stuff:
 (Kafka, Storm, Vertica, Zookeeper, with Docker-compose )
 https://www.youtube.com/watch?v=U-Kn7-7m6Z8
 

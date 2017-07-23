@@ -28,3 +28,10 @@ Create a file Hello.java with content:
 To compile run ```javac Hello.java```
 
 To execute run ```java Hello``` (runs the ```Hello.class``` file)
+
+---
+
+JMX (Java Management Extensions) overview:
+https://www.youtube.com/watch?v=aKGYa6Y9r60
+
+---
