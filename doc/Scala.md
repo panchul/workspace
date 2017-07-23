@@ -70,3 +70,48 @@ See [Json](JSON.md) for sample snippets.
 
 https://github.com/ScalaWilliam/xs4s - XML Streaming for Scala
 
+---
+
+## Syntax overview
+
+I'll add these into my Scala sandbox, [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala).
+Run these in the REPL, or put into a file and run, for example ```$ scala hello.scala``` 
+
+    // run it as
+    // $ scala hello.sc my arguments are a plenty
+    
+    println("With a bunch of arguments using for:")
+    for(arg <- args) println(arg)
+
+    println("With a bunch of arguments using while:")
+    var i=0
+    while(i < args.length) {
+      println("args(" + i.toString + ") is \"" + args(i) + "\"")
+      i += 1
+    }
+
+    println("With a bunch of arguments using foreach:")
+    var counter=0
+    args.foreach(arg => {
+      println("args(" + counter.toString + ") is \"" + arg + "\"")
+      counter += 1
+    })
+
+    println("Using List count:")
+    val aList = List("aaa","aaaa","bbbb", "c", "cccc")
+    println(aList.mkString(", "))
+    println("aList.count(p => p.length == 4):" + aList.count(p => p.length == 4))
+
+File operations (from my sandbox, [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala) )
+
+    import scala.io.Source
+    
+    val myfilename = if(args.length > 0) args(0) else {
+      println("INFO: using my own name as the input file")
+      "read.scala"
+      }
+    for(line <- Source.fromFile(myfilename).getLines())
+      println(line.length + " " + line)
+
+---
+
