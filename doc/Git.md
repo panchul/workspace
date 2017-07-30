@@ -39,3 +39,27 @@ to exclude a file from bing ignored, use ```!filename```, for example:
     some_local_folder
     !some_local_folder/.git_keep
 
+
+---
+
+Normal cycle:
+
+Fetch the repo:
+
+    git clone [repo name]
+    git branch -b featurebranch
+    
+Hack, hack, hack
+When ready, commit the files into the remote feature branch:
+
+    git add [files changed]
+    git commit -m "implemented fieature x"
+    git push
+
+At the Github create the pull request.
+When ready, at Github:
+ - merge the pull retuest
+ - delete the feature branch
+ - delete local feature branch
+    
+   

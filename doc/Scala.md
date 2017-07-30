@@ -36,6 +36,10 @@ Nice Akka distributed  transaction processing example:
 
 ## Testing frameworks
 
+ScalaTest
+http://www.scalatest.org/user_guide/using_scalatest_with_sbt
+
+
 [https://github.com/typelevel/cats](https://github.com/typelevel/cats) - Nice testing link for Scala
 
 [Scalameter](Scalameter.md) - for benchmarking, etc.
