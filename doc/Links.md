@@ -90,14 +90,16 @@ TODO: Create sub-pages of these.
 
 ### Data formats, APIs, Protocols
 
-- [XML](XML.md)
+- HTML
+- Jiffy (JSON converting)
 - [JSON](JSON.md)
 - [MarkDown](MarkDown.md)  
-- [YAML](YAML.md)
-- HTML
 - [UTF-8](UTF-8)  
-- Jiffy (JSON converting)
+- [ScalaDoc](Scaladoc.md)
 - Swagger https://swagger.io/
+- [XML](XML.md)
+- [YAML](YAML.md)
+
 
 ### Databases
 
@@ -177,6 +179,8 @@ TODO: Create sub-pages of these.
 - Meck
 - Common Test (CT)
 - [Scalameter](Scalameter.md)
+- [ScalaTest](ScalaTest.md)
+
 
 ### Message brokers and distributed environment coordinators. 
 

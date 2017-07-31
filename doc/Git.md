@@ -47,7 +47,10 @@ Normal cycle:
 Fetch the repo:
 
     git clone [repo name]
-    git branch -b featurebranch
+    
+Go to the branch you want to branch from, and create a feature branch
+    
+    git checkout -b featurebranch
     
 Hack, hack, hack
 When ready, commit the files into the remote feature branch:

@@ -36,13 +36,15 @@ Nice Akka distributed  transaction processing example:
 
 ## Testing frameworks
 
-ScalaTest
-http://www.scalatest.org/user_guide/using_scalatest_with_sbt
+---
 
+[ScalaTest](ScalaTest.md) - for unit-testing, etc.
+[Scalameter](Scalameter.md) - for benchmarking, etc.
+
+---
 
 [https://github.com/typelevel/cats](https://github.com/typelevel/cats) - Nice testing link for Scala
 
-[Scalameter](Scalameter.md) - for benchmarking, etc.
 
 Nice scala link with quick demo of runtime info:
 http://alvinalexander.com/scala/how-show-memory-ram-use-scala-application-used-free-total-max
