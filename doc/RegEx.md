@@ -1,19 +1,24 @@
 
 ## UNDER CONSTRUCTION
 
-# RegEx
+# RegEx (a cookbook for Regular Expressions)
 
-## Cookbook for Regular Expressions
+---
 
+Nice website for regexes, good examples:
+
+http://www.regular-expressions.info/perl.html
+
+---
 
 All .jpg and .png files, case insensitive
 
     $ find . -iregex ".*\.\(jpg\|png\)" -exec identify {} \;
     ./somefilder/IMG_8408.JPG JPEG 2187x1458 2187x1458+0+0 8-bit DirectClass 2.61MB 0.000u 0:00.000
 
+---
 
-### Perl script template to apply a regex to a file
-
+Perl script template to apply a regex to a file
 The following removes '\r' symbols from a file:
 
     #!/usr/bin/perl
@@ -28,3 +33,16 @@ The following removes '\r' symbols from a file:
     s/\r//ge;
     print;
 
+---
+
+Replacing thing in Perl is:
+
+    $string =~ s/regex/replacement/g;
+    
+Or, with positions:
+
+    while ($string =~ m/regex/g) {
+      print "Found '$&'.  Next attempt at character " . pos($string)+1 . "\n";
+    }
+    
+    
