@@ -10,6 +10,11 @@ See a separate page on reg.exes - [RegEx.md](RegEx.md)
 
 ---
 
+To add modules, use ```cpan```
+http://www.cpan.org/modules/INSTALL.html
+
+---
+
 Nice cheat sheet website:
 http://lzone.de/cheat-sheet/Perl
 
