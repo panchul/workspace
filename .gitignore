@@ -5,7 +5,7 @@ private
 projects
 !projects/.git_keep
 
-projects_*
+tmp
 
 install
 !install/.git_keep
