@@ -5,6 +5,9 @@
 
 See also [DockerCompose](DockerCompose.md)
 
+
+My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker).
+
 ---
 
 https://www.docker.com/
@@ -17,6 +20,11 @@ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requireme
 
 ---
 
+Nice summary of ```Entrypoint``` vs ```CMD```
+
+https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/
+
+---
 
 Some presentations and articles:
 
@@ -30,3 +38,35 @@ Some presentations and articles:
 
 
 https://circleci.com/blog/its-the-future/ An article about Docker and Vagrant
+
+---
+
+Quick and simple Dockerfile.
+Write this into file name ```Dockerfile```
+
+    FROM ubuntu:trusty
+    RUN echo 'I like Docker, and it works!'
+    CMD ping localhost
+
+    # Might want to do something like:
+    # ENTRYPOINT ["/bin/ping","-c","3"]
+    # CMD ["localhost"]
+
+Then build an image
+
+    $ docker build -t mydemo
+    
+Then run the image:
+
+    $ docker run 3485629465 -d
+         
+See that it runs:
+
+    $ docker ps -l --no-trunc
+
+See what it is outputting:
+
+    $ docker logs 2364586249
+    
+---
+    

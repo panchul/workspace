@@ -2,6 +2,11 @@
 
 ## UNDER CONSTRUCTION
 
+# Erlang
+
+My Erlang sandbox is [https://github.com/panchul/sb_erlang](https://github.com/panchul/sb_erlang).
+
+
 ### Installing
 
 #### Installing from pre-built binary packages
