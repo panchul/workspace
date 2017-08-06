@@ -2,11 +2,12 @@
 
 ## Under Construction
 
+# Ansible
 
 [https://www.ansible.com/](https://www.ansible.com/)
 
 
-
+---
 
 To run a playbook at a Vagrant box one can use:  
 
@@ -21,3 +22,4 @@ run this to fix Ansible python errors:
 
     $ pip install --upgrade setuptools --user python
 
+---

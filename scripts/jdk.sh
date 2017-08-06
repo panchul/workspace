@@ -12,6 +12,11 @@ if [ ! -d /usr/java/jdk1.8.0_101 ]; then
       ## This thing requires clicking 'Accept' on the page. Look it up later how to automate it
       ##
       ## wget -O /vagrant/install/jdk-8u101-linux-x64.tar.gz http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz
+      
+      ## The following worked in the past, don't have time to check it:
+      ##
+      ##wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+
     else
       echo "[INFO] Skipping downloading /vagrant/install/jdk-8u101-linux-x64.tar.gz"
     fi

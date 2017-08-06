@@ -102,8 +102,11 @@ https://www.youtube.com/watch?v=kby1aZBxU2I
 
 ---
 
-kafka-manager
-kafka-topic
+Kafka-manager, a neat web-based Kafka command panel.
+https://github.com/yahoo/kafka-manager
+
+Kafka-topic
+https://github.com/Landoop/kafka-topics-ui
 
 ---
 

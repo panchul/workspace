@@ -3,7 +3,9 @@
 
 # Docker
 
-See also [DockerCompose](DockerCompose.md)
+See also:
+ - [DockerCompose](DockerCompose.md)
+ - [DockerCSwarm](DockerSwarm.md)
 
 
 My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker).
@@ -23,6 +25,18 @@ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requireme
 Nice summary of ```Entrypoint``` vs ```CMD```
 
 https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/
+
+
+In some way it is similar to these facts:
+
+To run a stdout redirect in a sudo line, this helped:
+
+    $ sudo sh -c "echo $1 > /tmp/myserver$1/myid "
+
+Without "sh -c" did not work:
+
+    $ sudo echo $1 > /tmp/zookeeper$1/myid         <----- is not allowed.
+
 
 ---
 

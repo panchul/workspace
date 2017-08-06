@@ -117,7 +117,7 @@ https://www.linux.com/learn/intro-to-linux/2017/3/build-real-vpn-openvpn
 
 ---
 
-#### Linux Kernel
+Linux Kernel
 
 https://kernelnewbies.org/FAQ  - nice FAQ
 
@@ -129,5 +129,41 @@ You can use this to get the name of the release:
     $ lsb_release -cs
     trusty
 
+This also works similarly:
+
+    $ cat /etc/*rel*
+    DISTRIB_ID=Ubuntu
+    DISTRIB_RELEASE=16.04
+    DISTRIB_CODENAME=xenial
+    DISTRIB_DESCRIPTION="Ubuntu 16.04.2 LTS"
+    NAME="Ubuntu"
+    VERSION="16.04.2 LTS (Xenial Xerus)"
+    ID=ubuntu
+    ID_LIKE=debian
+    PRETTY_NAME="Ubuntu 16.04.2 LTS"
+    VERSION_ID="16.04"
+    HOME_URL="http://www.ubuntu.com/"
+    SUPPORT_URL="http://help.ubuntu.com/"
+    BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+    VERSION_CODENAME=xenial
+    UBUNTU_CODENAME=xenial
 
 
+---
+
+wget tricks for the downloads that needed checkboxes, etc.
+
+To download the jdk
+$ wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+
+This worked better:
+$ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+
+---
+
+Sample usage of xargs:
+    
+    $ find . -name *.txt | xargs dos2unix
+
+---
+ 

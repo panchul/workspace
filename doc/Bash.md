@@ -17,6 +17,9 @@ Without "sh -c" did not work:
 
     sudo echo $1 > /tmp/zookeeper$1/myid         <----- is not allowed.
 
+Similar thing is going on with Dockerfile's CMD and Entrypoint
+
+---
 
 ## Unit testing of bash scripts
 
@@ -27,3 +30,10 @@ There is another similar framework at https://github.com/djui/bashunit
 And this project has interesting usage if it: https://github.com/atmoz/sftp
 
 
+---
+
+Sample usage of xargs:
+    
+    $ find . -name *.txt | xargs dos2unix
+
+---
