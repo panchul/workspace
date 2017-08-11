@@ -5,7 +5,7 @@
 
 ---
 
-### To add/remove carriage return, the dos2unix file convertion
+To add/remove carriage return, subset of ```dos2unix``` file convertion
 
 To remove ( '-i' means edit files in place):
 
@@ -16,4 +16,15 @@ To add:
     sed -i 's/$/\r/' LF.txt
 
 ---
+
+A quick search-and-replace, to use "<PATH_TO_CONFIG>" in the template file:
+
+    $ sed "s|<PATH_TO_CONFIG>|$PATH_TO_CONFIG|g" config.template > config.for_realz
+    
+Here is another idiomatic command to make that config visible:
+
+    $ export CONFIG_FOR_REALZ=$(pwd)/config.for_realz
+    
+---
+
 

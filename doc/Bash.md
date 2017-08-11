@@ -37,3 +37,14 @@ Sample usage of xargs:
     $ find . -name *.txt | xargs dos2unix
 
 ---
+
+A quick search-and-replace, to use "<PATH_TO_CONFIG>" in the template file:
+
+    $ sed "s|<PATH_TO_CONFIG>|$PATH_TO_CONFIG|g" config.template > config.for_realz
+
+See [Sed.md](Sed.md) for more.
+Here is another idiomatic command to make that config visible:
+
+    $ export CONFIG_FOR_REALZ=$(pwd)/config.for_realz
+    
+---

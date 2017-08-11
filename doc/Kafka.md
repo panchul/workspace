@@ -114,3 +114,4 @@ Quick flash of a bunch of useful stuff:
 (Kafka, Storm, Vertica, Zookeeper, with Docker-compose )
 https://www.youtube.com/watch?v=U-Kn7-7m6Z8
 
+---

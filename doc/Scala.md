@@ -124,3 +124,7 @@ File operations (from my sandbox, [https://github.com/panchul/sb_scala](https://
 
 ---
 
+Link about Monads and Functors:
+http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+
+---

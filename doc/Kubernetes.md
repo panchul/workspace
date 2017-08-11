@@ -136,3 +136,10 @@ Interacting with minikube api:
     BODY:
     -no body in request- 
 
+---
+
+Another link about Kubernetes and CoreOS:
+https://github.com/coreos/coreos-kubernetes
+
+Has deployment instructions for Vagrant stack too.
+
