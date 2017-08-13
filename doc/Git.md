@@ -3,6 +3,16 @@
 
 # Git
 
+---
+
+Sometimes you need to run ```apt-get update``` to see git package. For example in a Dockerfile:
+
+    ...
+    RUN apt-get update
+    RUN apt-get -y install git
+    ...
+    
+- did not work without update, for some distros of ubuntu.
 
 ---
 
@@ -39,7 +49,6 @@ to exclude a file from bing ignored, use ```!filename```, for example:
     some_local_folder
     !some_local_folder/.git_keep
 
-
 ---
 
 Normal cycle:
@@ -65,4 +74,15 @@ When ready, at Github:
  - delete the feature branch
  - delete local feature branch
     
-   
+---
+
+The thing I often do to put the changes into the correct branch:
+
+    hack hack hack
+    $ git stash
+    $ git checkout the_branch_i_want
+    $ git stash pop
+    
+---
+       
+       

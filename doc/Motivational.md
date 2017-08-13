@@ -11,3 +11,19 @@ https://www.youtube.com/watch?v=du035tg-SwY - How to Remain Calm With People.
 http://psychologytoday.ru/public/urovni-slozhnosti-v-otstaivanii-svoikh-granits/ - Ways to stand up for yourself.
 
 
+---
+
+A page about psychological manipulation
+http://elenamitina.com.ua/publications/moy-vnutrenniy-presledovatel-kak-spravlyatsya-s-sobstvennoy-viktimnostyu.html
+
+---
+
+Birthday Clown Lewis CK SNL skit
+https://www.youtube.com/watch?v=X-XuT5qKt00
+
+---
+
+Average Zombies. Psychological manipulations
+https://www.youtube.com/watch?v=lLEiT9PeHSg
+
+---
