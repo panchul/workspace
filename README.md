@@ -48,8 +48,16 @@ Once you have those on your host machine, you can spin off the vms:
 
 Other sandbox repositories could be provisioned on these boxes. For example,
 
-* sb_bash - sandbox for bash development, tips and tricks you don't have
-    to re-type every time you need them on a new machine.
+* [https://github.com/panchul/sb_arduino](https://github.com/panchul/sb_arduino)
+* [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp)
+* [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker)
+* [https://github.com/panchul/sb_erl](https://github.com/panchul/sb_erl)
+* [https://github.com/panchul/sb_golang](https://github.com/panchul/sb_golang)
+* [https://github.com/panchul/sb_javascript](https://github.com/panchul/sb_javascript)
+* [https://github.com/panchul/sb_perl](https://github.com/panchul/sb_perl)
+* [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala)
+* [https://github.com/panchul/sb_shell](https://github.com/panchul/sb_shell) - sandbox for shell
+ script development, tips and tricks you don't have to re-type every time you need them on a new machine.
 
 
 TODO: Make a diagram how the other repos are connected to this one using

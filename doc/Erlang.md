@@ -62,6 +62,8 @@ Popular XMPP server implementation is ejabberd, it has a vagrant dev environment
 
 #### Misc snippets in no particular order
 
+---
+
 Simple Erlang script template
 
     #!/usr/bin/env escript
@@ -75,7 +77,7 @@ Simple Erlang script template
     main(_) ->
         io:format("something else~n").
     
-
+---
 
 ###  Links
 
