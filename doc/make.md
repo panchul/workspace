@@ -18,3 +18,8 @@ Miscellaneous remarks in no particular order:
 
 ---
 
+On Mac, make is here if you are using XCode:
+
+/Applications/Xcode.app/Contents/Developer/usr/bin/
+
+---

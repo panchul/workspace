@@ -163,7 +163,82 @@ $ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acce
 
 Sample usage of xargs:
     
-    $ find . -name *.txt | xargs dos2unix
+    $ find . -name "*.txt" | xargs dos2unix
+
+The quotation marks are important - may not work without them.
+
+See also [Find](Find.md)
 
 ---
  
+A few tricks into getting file content into the cut/past buffer:
+
+Windows:
+
+    cd %userprofile%/.ssh
+    clip < somefile.txt
+
+On Mac OS X or Linux:
+
+    pbcopy < somefile.txt
+
+On Linux ```xclip``` will work too:
+
+    sudo apt-get install xclip
+    xclip -sel clip < somefile.txt
+
+---
+
+About Steven's book on network programming, etc. On Mac:
+
+    1. download, ungzip, and untar unpv12e.tar.gz from the net.
+    2. cd to the unpv12e directory
+    3. cp /usr/share/automake-1.15/config.* .
+
+AVP: Actually, ```automake-1.15/lib/config.*```
+And I had to add a bunch of tools to PATH.
+
+    4. ./configure
+    5. cd lib
+    6. Edit the file lib/mcast_join.c replacing
+    IPV6_ADD_MEMBERSHIP with IPV6_JOIN_GROUP
+    7. Edit the file lib/mcast_leave.c replacing
+    IPV6_DROP_MEMBERSHIP with IPV6_LEAVE_GROUP
+    8. Still in the lib directory:
+    make
+
+To get the autoconf, etc.:
+
+    export build=~/devtools # or wherever you'd like to build
+    mkdir -p $build
+    
+    cd $build
+    curl -OL http://ftpmirror.gnu.org/autoconf/autoconf-2.68.tar.gz
+    tar xzf autoconf-2.68.tar.gz
+    cd autoconf-2.68
+    ./configure --prefix=$build/autotools-bin
+    make
+    make install
+    export PATH=$PATH:$build/autotools-bin/bin
+    
+    cd $build
+    curl -OL http://ftpmirror.gnu.org/automake/automake-1.15.tar.gz
+    tar xzf automake-1.15.tar.gz
+    cd automake-1.15
+    ./configure --prefix=$build/autotools-bin
+    make
+    make install
+    
+    cd $build
+    curl -OL http://ftpmirror.gnu.org/libtool/libtool-2.4.tar.gz
+    tar xzf libtool-2.4.tar.gz
+    cd libtool-2.4
+    ./configure --prefix=$build/autotools-bin
+    make
+    make install
+
+See also: [Autoconf](Autoconf.md)
+See also: [Automake](Automake.md)
+See also: [Libtool](Libtool.md)
+
+---

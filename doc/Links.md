@@ -110,13 +110,16 @@ TODO: Create sub-pages of these.
 - [Hadoop](Hadoop.md)
 - CouchDB http://couchdb.apache.org/
 
-### Version control systems  
+### Version control systems and configuration tools 
 
 - [Git](Git.md)  
   - gitk
   - github
   - bitbucket
 - SVN  
+- [Autoconf](Autoconf.md)
+- [Automake](Automake.md)
+- [Libtool](Libtool.md)
 
   
 ### Operating systems
@@ -124,7 +127,10 @@ TODO: Create sub-pages of these.
 - [Linux](Linux.md)  
   -- Ubuntu  
   -- RedHat  
-  -- CentOS  
+  -- CentOS
+  - Commands
+    - [Find](Find.md)
+
 - SunOS  
 - Windows  
 - Symbian OS  

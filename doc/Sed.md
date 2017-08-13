@@ -27,4 +27,3 @@ Here is another idiomatic command to make that config visible:
     
 ---
 
-

@@ -1,7 +1,7 @@
 
 ## UNDER CONSTRUCTION
 
-# Vim
+# Vi/Vim
 
 ---
 
@@ -41,3 +41,10 @@ set tabstop=4
 set number
 ```
 
+---
+
+Finding and replacing a text in entire test:
+
+    :%s/pattern1/replacement/
+
+---

@@ -9,6 +9,11 @@ My shell sandbox is [https://github.com/panchul/sb_shell](https://github.com/pan
 
 ---
 
+A collection of snippets
+http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc7
+
+---
+
 To run a stdout redirect in a sudo line, this helped:
 
     sudo sh -c "echo $1 > /tmp/myserver$1/myid "
@@ -34,7 +39,7 @@ And this project has interesting usage if it: https://github.com/atmoz/sftp
 
 Sample usage of xargs:
     
-    $ find . -name *.txt | xargs dos2unix
+    $ find . -name "*.txt" | xargs dos2unix
 
 ---
 
@@ -48,3 +53,37 @@ Here is another idiomatic command to make that config visible:
     $ export CONFIG_FOR_REALZ=$(pwd)/config.for_realz
     
 ---
+
+Quick example of ```for``` loop
+
+    $ for i in $( ls ); do echo item: $i; done
+
+Or, in a file,
+
+     #!/bin/bash
+     for i in $( ls ); do
+         echo item: $i
+     done
+
+---
+
+Idiomatic ```while``` loop
+
+    #!/bin/bash 
+    COUNTER=0
+    while [  $COUNTER -lt 10 ]; do
+         echo The counter is $COUNTER
+         let COUNTER=COUNTER+1 
+    done
+    
+similar thing with ```until```
+
+    #!/bin/bash 
+    COUNTER=10
+    until [  $COUNTER -lt 5 ]; do
+         echo COUNTER $COUNTER
+         let COUNTER-=1
+    done
+    
+---
+
