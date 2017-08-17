@@ -242,3 +242,73 @@ See also: [Automake](Automake.md)
 See also: [Libtool](Libtool.md)
 
 ---
+
+Example of start/stop scrips on RedHat:
+https://access.redhat.com/discussions/1455613
+
+The Linux Standards Base documents requirements for initscripts:
+    http://refspecs.linuxbase.org/LSB_5.0.0/LSB-Core-generic/LSB-Core-generic/tocsysinit.html
+
+
+The script is below, here is how to plug it in:
+
+    $ chmod 755 /etc/init.d/oracle_oem
+    $ chkconfig oracle_oem on
+
+Here is the script, add it into file ```/etc/init.d/oracle_oem```
+The line ```# chkconfig: 2345 99 01``` is about runlevel actions. See ```man chkconfig```
+
+    #!/bin/bash
+    #
+    # oracle Start up the oracle software
+    #
+    # chkconfig: 2345 99 01
+    # description: Oracle Enterprise Manager start/stop script \
+    #              and because of the backslash, this is the second line in the description
+    #
+    # source function library
+    #
+    source /etc/rc.d/init.d/functions
+    
+    RETVAL=0
+    prog="oracle_oem"
+    
+    lockfile=/var/lock/subsys/$prog
+    
+    start()
+    {
+        # "start commands"
+    }
+    
+    stop()
+    {
+        # "stop commands"
+    }
+    
+    restart()
+    {
+        stop
+        sleep 15
+        start
+    }
+    
+    case "$1" in
+    start)
+        touch $lockfile
+        start
+        ;;
+    stop)
+        rm -f $lockfile
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    *)
+        echo $"Usage: $0 {start|stop|restart}"
+        RETVAL=2
+    esac
+    exit $RETVAL
+
+
+---

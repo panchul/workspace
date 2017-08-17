@@ -8,6 +8,25 @@
 
 ---
 
+Pretty print for JSON:
+
+    $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
+    $ curl http://some_api_url/ | python -m json.tool
+   
+This last one might get crapped up with the ```curl```'s progress bar, to keep it silent:
+    
+    $ curl -s http://some_api_url/ | python -m json.tool
+
+or, if the JSON is in a file, you can do:
+
+    $ python -m json.tool my_json.json
+
+Make it an alias:
+
+    alias prettyjson='python -m json.tool'
+
+---
+
 ## Using JSON in Scala
 
 Quick and dirty json formatting, from here:
