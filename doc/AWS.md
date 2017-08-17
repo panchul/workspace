@@ -13,3 +13,8 @@ https://thehftguy.com/2016/03/10/how-to-export-amazon-ec2-instances-to-a-csv-fil
 https://github.com/awslabs/aws-shell
 
 ---
+
+AWS Shell, a cli to aws
+https://github.com/awslabs/aws-shell
+
+---

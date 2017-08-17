@@ -8,6 +8,9 @@
 
 The overview is at https://kafka.apache.org/documentation/
 
+List of clients for many languages:
+https://cwiki.apache.org/confluence/display/KAFKA/Clients
+
 ---
 
 one of the C/C++ clients:
@@ -115,3 +118,17 @@ Quick flash of a bunch of useful stuff:
 https://www.youtube.com/watch?v=U-Kn7-7m6Z8
 
 ---
+
+Kafka-rest, a REST-ful library for Kafka.
+
+https://github.com/confluentinc/kafka-rest
+
+Some issues:
+https://github.com/confluentinc/kafka-rest/issues/83
+
+---
+
+Confluent Kafka (Apache/kafka fork)
+https://github.com/confluentinc/kafka.git
+
+--

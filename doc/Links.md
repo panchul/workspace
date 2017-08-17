@@ -9,8 +9,6 @@ TODO: Create sub-pages of these.
 
 - [Vagrant](Vagrant.md)  
 - [Ansible](Ansible.md)  
-- [Rake](Rake.md)  
-- bundler  
 - [Docker](Docker.md)
   - [Docker-Compose](DockerCompose.md)
 - [Swarm](Swarm.md)
@@ -18,14 +16,10 @@ TODO: Create sub-pages of these.
 - [VirtualBox](VirtualBox.md)  
 - [VMWare](VMWare.md)  
 - [AWS](AWS.md)
+- [OpenStack](OpenStack.md)
 - Fabric
 - Otto
-- [make](make.md)
-- cmake https://cmake.org/overview/
-- [aptitude](aptitude.md)
-- autoconfig
 - [Mesos](Mesos.md)
-- [OpenStack](OpenStack.md)
 
 ### Programming languages
 
@@ -63,6 +57,7 @@ TODO: Create sub-pages of these.
 
  - ReactiveX http://reactivex.io/intro.html
  - [Apache Spark](ApacheSpark.md)
+ - [Confluent](Confluent.md)
  
   Nice about fundamentals:
   https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
@@ -109,6 +104,7 @@ TODO: Create sub-pages of these.
 - Riak
 - [Hadoop](Hadoop.md)
 - CouchDB http://couchdb.apache.org/
+- [Couchbase](Couchbase.md)
 
 ### Version control systems and configuration tools 
 
@@ -120,6 +116,16 @@ TODO: Create sub-pages of these.
 - [Autoconf](Autoconf.md)
 - [Automake](Automake.md)
 - [Libtool](Libtool.md)
+- [Sbt](Sbt.md)  
+- [Maven](Maven.md)
+- [Gradle](Gradle.md)
+- [Homebrew](Homebrew.md)
+- [make](make.md)
+- cmake https://cmake.org/overview/
+- [aptitude](aptitude.md)
+- autoconfig
+- [Rake](Rake.md)  
+- bundler
 
   
 ### Operating systems
@@ -144,6 +150,12 @@ TODO: Create sub-pages of these.
 - [Scalatra](Scalatra.md)
 - [Yaws](Yaws.md)
 
+### Web Utilities
+
+- [Curl](Curl.md)
+- ...
+
+    
 ### GUI Frameworks
 
 - [wxWidgets](wxWidgets.md)
