@@ -2,6 +2,19 @@
 
 ## UNDER CONSTRUCTION
 
+#Linux
+
+
+See Also:
+
+  - [Alpine](Alpine.md)
+  - [Ubuntu](Ubuntu.md)
+ 
+  - [Curl](Curl.md)
+  - [Ipvsadm](ipvsadm.md)
+
+---
+
 Easily Encrypt your Flash Drives with Linux
 [https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux](https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux)
 
@@ -16,15 +29,13 @@ LiLi:
 [http://www.linuxliveusb.com/en/download](http://www.linuxliveusb.com/en/download)
 
 
-## Utilities
-
-Some nice projects are worth mentioning. I might had to stash them fo later,
-when I have time to explore them more and maybe create a sub-page.
+---
 
 ### Monit
 
 https://mmonit.com/monit/
 
+---
 
 ### Graphics
  
@@ -57,7 +68,9 @@ Pretty neat for the summary of what is out there:
     $ find . -iregex ".*\.\(jpg\|png\)" -exec identify {} \;
     ./somefolder/anotherone/IMG_8408.JPG JPEG 2187x1458 2187x1458+0+0 8-bit DirectClass 2.61MB 0.000u 0:00.000
 
-#### xcowsay
+---
+
+#### cowsay, cowthink, xcowsay
 
 ```sudo apt-get install xcowsay``` - installs it (Ubuntu)
 
@@ -65,11 +78,26 @@ To get a temporary pop-up with a cute picture saying your line:
 
     $ xcowsay Hello there, I am using xcowsay. Ok, Moo-o-o-o
 
-## Ubuntu
+The plain text version works fine in the terminal. 
+
+    $ cowsay "Screw you guys I am going home. Moo-o-o-o"
+     _________________________________
+    / Screw you guys I am going home. \
+    \ Moo-o-o-o                       /
+     ---------------------------------
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
+
+---
+
+# Ubuntu
 
 http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
 
-## Misc. Troubleshooting
+See Also [Ubuntu](Ubuntu.md)
 
 ---
 
@@ -121,6 +149,7 @@ Linux Kernel
 
 https://kernelnewbies.org/FAQ  - nice FAQ
 
+See Also [ipvsadm](ipvsadm.md)
 
 ---
 
@@ -310,5 +339,14 @@ The line ```# chkconfig: 2345 99 01``` is about runlevel actions. See ```man chk
     esac
     exit $RETVAL
 
+
+---
+
+Alpine Linux is a lightweight distro. 
+
+https://alpinelinux.org/
+https://en.wikipedia.org/wiki/Alpine_Linux
+
+apk packaging tool.
 
 ---

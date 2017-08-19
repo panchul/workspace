@@ -5,7 +5,7 @@
 
 TODO: Create sub-pages of these.
 
-### Virtualization, clustering, and provisioning
+### Virtualization, clustering, provisioning, and monitoring
 
 - [Vagrant](Vagrant.md)  
 - [Ansible](Ansible.md)  
@@ -20,6 +20,10 @@ TODO: Create sub-pages of these.
 - Fabric
 - Otto
 - [Mesos](Mesos.md)
+- Nagios
+- Munin
+- Cacti
+
 
 ### Programming languages
 
@@ -108,32 +112,34 @@ TODO: Create sub-pages of these.
 
 ### Version control systems and configuration tools 
 
+- [aptitude](aptitude.md)
+- [Autoconf](Autoconf.md)
+- autoconfig
+- [Automake](Automake.md)
+- bundler
 - [Git](Git.md)  
   - gitk
   - github
   - bitbucket
-- SVN  
-- [Autoconf](Autoconf.md)
-- [Automake](Automake.md)
-- [Libtool](Libtool.md)
-- [Sbt](Sbt.md)  
-- [Maven](Maven.md)
 - [Gradle](Gradle.md)
 - [Homebrew](Homebrew.md)
+- [Libtool](Libtool.md)
 - [make](make.md)
-- cmake https://cmake.org/overview/
-- [aptitude](aptitude.md)
-- autoconfig
+- [Maven](Maven.md)
+- [Mercurial](Mercurial.md)
 - [Rake](Rake.md)  
-- bundler
+- [Sbt](Sbt.md)  
+- [Subversion](Subversion.md)  
+- cmake https://cmake.org/overview/
 
   
 ### Operating systems
   
 - [Linux](Linux.md)  
-  -- Ubuntu  
+  -- [Ubuntu](Ubuntu.md)
   -- RedHat  
   -- CentOS
+  -- [Alpine](Alpine.md)
   - Commands
     - [Find](Find.md)
 
@@ -150,16 +156,18 @@ TODO: Create sub-pages of these.
 - [Scalatra](Scalatra.md)
 - [Yaws](Yaws.md)
 
-### Web Utilities
+### Misc Utilities and Commands
 
 - [Curl](Curl.md)
+- [Ipvsadm](ipvsadm.md)
+- [Postman](Postman.md)
 - ...
 
     
 ### GUI Frameworks
 
 - [wxWidgets](wxWidgets.md)
-- OpenGL
+- [OpenGL](OpenGL.md)
 
   
 ### Micorcontrollers
@@ -187,8 +195,10 @@ TODO: Create sub-pages of these.
   - Firewalls
   - Load balancers
 - [HAProxy](HAProxy.md)
+- [nginx](nginx.md)
 - DNS
   - BIND
+- [OpenVPN](OpenVPN.md)
 
 ### Testing Frameworks
 
@@ -253,8 +263,9 @@ Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
 
 ## Security
 
-- SASL https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer
 - IPSec https://en.wikipedia.org/wiki/IPsec
+- SASL https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer
+- [SSH](SSH.md)
 - TLS, Transport Layer Security https://en.wikipedia.org/wiki/Transport_Layer_Security
 
 

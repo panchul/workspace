@@ -87,3 +87,8 @@ similar thing with ```until```
     
 ---
 
+use ```echo -e "something\n the other line"``` to get multi-line strings
+
+https://stackoverflow.com/questions/3005963/how-can-i-have-a-newline-in-a-string-in-sh
+
+---
