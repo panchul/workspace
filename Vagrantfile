@@ -68,6 +68,12 @@ N_GOLANG = 1
 WS_IP_SPACE_DOCKER_START = 70
 N_DOCKER = 1
 
+WS_IP_SPACE_GIT_START = 75
+N_GIT = 2
+
+WS_IP_SPACE_SSH_START = 80
+N_SSH = 3
+
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
 ##################################################
@@ -721,6 +727,95 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+   
+    end
+  end
+
+  (1..N_GIT).each do |machine_id|
+    config.vm.define "git#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+      # box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GIT_START+machine_id}"
+      # box.ssh.forward_agent = true
+      # box.ssh.insert_key = false
+      box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+      
+      box.vm.host_name = "git#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GIT_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        # TODO: The desktop version of the vm is screwed up. :-( It would be nice to repair for using IntelliJ
+        #vb.gui = true
+        vb.memory = "4096"
+        # vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/git.sh
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+   
+    end
+  end
+
+  (1..N_SSH).each do |machine_id|
+    config.vm.define "ssh#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+      # box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_SSH_START+machine_id}"
+      # box.ssh.forward_agent = true
+      # box.ssh.insert_key = false
+      box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+      
+      box.vm.host_name = "ssh#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SSH_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        # TODO: The desktop version of the vm is screwed up. :-( It would be nice to repair for using IntelliJ
+        #vb.gui = true
+        vb.memory = "4096"
+        # vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/generic/bootstrap.yml"
          #ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false

@@ -26,25 +26,32 @@ Pre-requisites include VirtualBox, Vagrant, and Ansible.
 shell provisioning scripts to compensate, in work-in-progress state)
 Once you have those on your host machine, you can spin off the vms:
 
+In alphabetical order (the way they are defined in ```ansible.vmhosts``, and
+in file ```hosts_append.txt``` that ends up in each boxes ```/etc/hosts```)
+
 * gen1 - a generic machine with shell provisioning only
 * gen2 - another generic machine with shell provisioning only
 * gen3 - a more elaborate generic machine
-* yser1 - YARC node
-* yser2 - YARC node
-* yser3 - YARC node
-* ycli1 - YARC node
-* ycli2 - YARC node
-* ycli3 - YARC node
-* cpp1 - a generic sandbox for C++ development.
-    * Clones, among other things, sb_cpp repo
-* erlang1 - a generic sandbox for Erlang development.
-    * Clones, among other things, sb_erl repo
-* scala1 - a generic sandbox for Scala development.
-    * Clones, among other things, sb_scala repo
 * shell1 - a generic sandbox for shell script development.
     * Clones, among other things, sb_shell repo
 * perl1 - a generic sandbox for Perl development.
     * Clones, among other things, sb_perl repo
+* yser1-3 - YARC nodes
+* ycli1-3 - YARC nodes
+* cpp1-5 - generic sandboxes for C++ development.
+    * Clones, among other things, sb_cpp repo
+* erlang1-5 - generic sandboxes for Erlang development.
+    * Clones, among other things, sb_erl repo
+* scala1-5 - generic sandboxes for Scala development.
+    * Clones, among other things, sb_scala repo
+* zookeeper1-5 - Zookeeper vms
+* kafka_broker1-5 - Kafka nodes
+* javascript1-5 - Javascript sandbox
+* golang1-5 - Golang sandbox
+* docker1-5 - Docker sandbox
+* git1-5 - Git sandbox. For Git daemon scenarios, etc.
+* ssh1-5 - SSH sandbox. For SSH scenarios.
+
 
 Other sandbox repositories could be provisioned on these boxes. For example,
 

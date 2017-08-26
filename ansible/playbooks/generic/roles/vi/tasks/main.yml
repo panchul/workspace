@@ -1,0 +1,19 @@
+---
+
+- name: Create the config
+  template: src=vimrc.j2 dest="{{ ansible_env.HOME }}/.vimrc" backup=yes mode=0644
+
+# We already have template, no need to mess with it
+#
+#- name: Ensure the file is present
+#  file: path={{ ansible_env.HOME }}/.vimrc mode=0644
+#
+#- name: Update .vimrc file 1
+#  lineinfile: dest="{{ ansible_env.HOME }}/.vimrc" backup=yes line="set nocp" insertbefore="# End of file"
+#
+#- name: Update .vimrc file 2
+#  lineinfile: dest="{{ ansible_env.HOME }}/.vimrc" backup=yes line="set tabstop=4" insertbefore="# End of file"
+#
+#- name: Update .vimrc file 3
+#  lineinfile: dest="{{ ansible_env.HOME }}/.vimrc" backup=yes line="set number" insertbefore="# End of file"
+

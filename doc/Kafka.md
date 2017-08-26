@@ -131,4 +131,9 @@ https://github.com/confluentinc/kafka-rest/issues/83
 Confluent Kafka (Apache/kafka fork)
 https://github.com/confluentinc/kafka.git
 
---
+---
+
+Example of docker-compose file for a cluster
+https://github.com/confluentinc/cp-docker-images/blob/3.3.x/examples/kafka-cluster/docker-compose.yml
+
+---

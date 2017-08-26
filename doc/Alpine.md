@@ -10,4 +10,4 @@ https://alpinelinux.org/
 
 https://en.wikipedia.org/wiki/Alpine_Linux
 
-apk packaging tool.
+apk is the packaging tool.
