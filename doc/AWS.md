@@ -18,3 +18,80 @@ AWS Shell, a cli to aws
 https://github.com/awslabs/aws-shell
 
 ---
+
+CloudWatch costs money if you add metrics and want to store them.
+
+---
+
+Some useful links for AWS Certification:
+
+https://www.amazon.com/Certified-Solutions-Architect-Official-Study/dp/1119138558
+https://gist.github.com/leonardofed/bbf6459ad154ad5215d354f3825435dc
+
+---
+
+About EBS volumes, how to format and mount them, etc:
+
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html
+
+    $  lsblk
+    NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    xvda    202:0    0  100G  0 disk 
+    └─xvda1 202:1    0  100G  0 part /
+    xvdb    202:16   0 1000G  0 disk 
+    
+    $  sudo file -s /dev/xvdb
+    /dev/xvdb: data
+    
+    $  sudo mkfs -t ext4 /dev/xvdb
+    mke2fs 1.42.9 (28-Dec-2013)
+    Filesystem label=
+    OS type: Linux
+    Block size=4096 (log=2)
+    Fragment size=4096 (log=2)
+    Stride=0 blocks, Stripe width=0 blocks
+    65536000 inodes, 262144000 blocks
+    13107200 blocks (5.00%) reserved for the super user
+    First data block=0
+    Maximum filesystem blocks=2409627648
+    8000 block groups
+    32768 blocks per group, 32768 fragments per group
+    8192 inodes per group
+    Superblock backups stored on blocks: 
+    	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+    	4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968, 
+    	102400000, 214990848
+    
+    Allocating group tables: done                            
+    Writing inode tables: done                            
+    Creating journal (32768 blocks): done
+    Writing superblocks and filesystem accounting information: done     
+
+ 
+    $  sudo mkdir /data
+
+Can mount temporarily like so:
+    
+    $  sudo mount /dev/xvdb /data
+
+But to do it right, need to use UUID and write it in fstab:
+
+    $  sudo file -s /dev/xvdb
+    /dev/xvdb: Linux rev 1.0 ext4 filesystem data, UUID=something-sdfads-23452346-9etr-notreadluuid6 (extents) (64bit) (large files) (huge files)
+
+Or can do this:
+
+    $  ls -al /dev/disk/by-uuid/
+
+    $  sudo cp /etc/fstab /etc/fstab.orig
+    $  sudo vi /etc/fstab
+
+Add this into fstab:
+
+    UUID=1d3dddddgfd-afakaa-4asd-ag35-342sanitized55 /data ext4 defaults,nofail 0 2
+
+This will mount what is in /etc/fstab:
+        
+    $  sudo mount -a
+
+---

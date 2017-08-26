@@ -51,4 +51,21 @@ Great summary on regexes
 
 http://www.regular-expressions.info/perl.html
 
+---
+
+Here's how the subroutines work:
+
+    my $first_name = prompt("First name: ");
+    my $last_name = prompt("Last name: ");
+     
+    sub prompt {
+       my ($text) = @_;
+       print $text;
+     
+       my $answer = <STDIN>;
+       chomp $answer;
+       return $answer;
+    }
+    
+---
         

@@ -1,0 +1,7 @@
+---
+
+- name: Install things useful for anything
+  hosts: all
+  roles:
+    - common
+    - vi

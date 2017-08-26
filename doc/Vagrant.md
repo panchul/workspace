@@ -31,10 +31,6 @@ Bootloader might make it more complicated.
 
 ---
 
-## Vagrantfile misc.
-
----
-
 #### Example customizing the box
 
 ```
@@ -133,4 +129,10 @@ Seem to be resolved with adding this before apt-get step:
 
     export DEBIAN_FRONTEND=noninteractive
 
+---
+
+To control multiple boxes and not having to click y/n there is option ```-f```:
+
+    $ vagrant destroy -f box{1..5}
+    
 ---

@@ -350,3 +350,8 @@ https://en.wikipedia.org/wiki/Alpine_Linux
 apk packaging tool.
 
 ---
+
+Nice page about ssh login. See also [SSH.md](SSH.md)
+http://www.linuxproblem.org/art_9.html
+
+---
