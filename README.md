@@ -2,9 +2,7 @@
 # Workspace
 
 
-\[ Under construction \]
-
-If you are familiar with Vagrant and Ansible, you would know what
+If you are familiar with Virtual Box, Vagrant, Ansible, etc., you would know what
 this repository is. If you do not, you should - virtualization and
 all sorts of orchestration and provisioning are hard to void regardless of
 what kind of software-related activity you are involved in.
@@ -16,18 +14,17 @@ configured, making it easy to apply and host any code you want to run.
 
 I created it as a simple way to have templates and pre-made samples
 of relatively complicated things like distributed Erlang nodes on separate
-servers.
+servers, trying out prof-of-concept demos for proxies and big-data tools.
 It is intended to be a starting point for prototypes on variety of
 technologies.
 More information is in ```doc``` folder, [doc/Links.md](doc/Links.md).
 
 Pre-requisites include VirtualBox, Vagrant, and Ansible.
-(Ansible is not officially supported on Windows, there are some
-shell provisioning scripts to compensate, in work-in-progress state)
 Once you have those on your host machine, you can spin off the vms:
 
 In alphabetical order (the way they are defined in ```ansible.vmhosts``, and
-in file ```hosts_append.txt``` that ends up in each boxes ```/etc/hosts```)
+in file ```hosts_append.txt``` that ends up in each boxes ```/etc/hosts``` just to
+hot having to have a dns server vm box)
 
 * gen1 - a generic machine with shell provisioning only
 * gen2 - another generic machine with shell provisioning only
@@ -54,6 +51,10 @@ in file ```hosts_append.txt``` that ends up in each boxes ```/etc/hosts```)
 * jenkins1-2 - Jenkins sandbox. For CICD tests, etc.
 * ssh1-5 - SSH sandbox. For SSH scenarios.
 
+The VMs have a mapped folder to the host, ```/vagrant```, and ```projects```,
+but as a general rule, they fetch and deploy everything in their own ephemeral space,
+for example, cloning a sandbox git repository in the home forlder of user 'vagrant'.
+
 
 Other sandbox repositories could be provisioned on these boxes. For example,
 
@@ -70,10 +71,11 @@ Other sandbox repositories could be provisioned on these boxes. For example,
  script development, tips and tricks you don't have to re-type every time you need them on a new machine.
 
 
-TODO: Make a diagram how the other repos are connected to this one using
-shared folders.
+| Ip             | box name        | Comments       |
+| ---------------|:----------------:| -------------:|
+| 192.168.10.3   | gen1             | generic box   |
 
-TODO: Make a link to the wiki with more explanations as it becomes available
+
 
 
 
