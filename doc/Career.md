@@ -32,3 +32,15 @@ States without state income tax([full info](http://www.money-zine.com/financial-
 - Wyoming
 
 
+---
+
+Remember to ask these before jumping in.
+
+- What are the expectations in terms of arrival and departure times?
+- What are your norms for working at home, especially when the weather is bad or I'm not feeling well but not sick enough to take a sick day?
+- Who will be evaluating my performance in this role? What are the evaluation criteria?
+- Tell me about my most important internal clients and other contacts. What do I need to know about working with each of them -- their particular requirements, quirks, communication styles, etc?
+- What do you think will be the most challenging part of the role? What is your advice for surmounting that hurdle?
+- What else do I need to know about the culture, the management team and the company?
+
+---

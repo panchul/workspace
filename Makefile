@@ -39,10 +39,18 @@ help:
 	@echo "     make test          - runs all tests. Could be long and painful. "
 	@echo "     make test_cpp      - runs an Ansible script to run tests "
 	@echo " "
+	@echo " To check if any of the repos need pushing: "
+	@echo "     make git_status    - runs 'git status' in the sandboxes. "
+	@echo " "
 	vagrant --version
 	ansible --version
 	@echo " If you are reading this, your system seems to have the necessary pre-requisites "
 	@echo " "
+
+git_status:
+	@ for repo in `ls projects | grep sb_` ; \
+	do sh -c "echo \"Checking projects/$$repo...\" ; cd projects/$$repo ; git status -sb ; cd ../.. " ; \
+	done ;
 
 kafka: kafka_up
 

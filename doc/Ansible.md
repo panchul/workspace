@@ -63,3 +63,68 @@ A command with output (not a module, so not '-m', but '-a')
 
 ---
 
+Example of ansible.hosts:
+
+    [whole_fleet:children]
+    qa
+    production
+
+    [qa]
+    10.10.11.11 ansible_connection=ssh ansible_user=myuser ansible_ssh_private_key_file=myusers_key.pem
+
+    [production]
+    10.10.11.12 ansible_connection=ssh ansible_user=myuser ansible_ssh_private_key_file=myusers_key.pem
+
+---
+
+To run an individual command on servers grouped in ```hostsubset``` in file ansible.hosts:
+
+    ansible --become --connection=ssh --private-key "~/mykeyIStoreLocally.pem" -u myRemoteUsername -i ansible.hosts hostssubset -a "docker ps"
+
+---
+
+Example of using connection local:
+
+    mytest.yml -------------------------------
+    ---
+    - hosts: 127.0.0.1
+      gather_facts: no
+      
+      tasks:
+      - name: Check the date.
+        command: date
+        register: date
+      - name: Print the date.
+        debug: var=date.stdout
+    -----------------------------------------------
+
+And run it like sl:
+
+    $ ansible-playbook --connection=local mytest.yml
+     [WARNING]: Host file not found: /etc/ansible/hosts
+     [WARNING]: provided hosts list is empty, only localhost is available
+    
+    PLAY [127.0.0.1] ***************************************************************
+    
+    TASK [Check the date.] *********************************************************
+    changed: [127.0.0.1]
+    
+    TASK [Print the date.] *********************************************************
+    ok: [127.0.0.1] => {
+        "date.stdout": "Mon Aug 28 15:21:10 EDT 2007"
+    }
+    
+    PLAY RECAP *********************************************************************
+    127.0.0.1                  : ok=2    changed=1    unreachable=0    failed=0   
+
+---
+
+Ansible'ized setup for Kafka on AWS EC2 using Galaxy:
+
+https://galaxy.ansible.com/giladju/setup-kafka-cluster-ec2/
+
+---
+
+
+
+

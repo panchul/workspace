@@ -47,4 +47,6 @@ Or, with positions:
       print "Found '$&'.  Next attempt at character " . pos($string)+1 . "\n";
     }
     
+---
+
     

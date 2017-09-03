@@ -76,15 +76,19 @@ golang5 ansible_host=192.168.10.70
 docker1 ansible_host=192.168.10.71
 docker2 ansible_host=192.168.10.72
 docker3 ansible_host=192.168.10.73
-docker4 ansible_host=192.168.10.74
-docker5 ansible_host=192.168.10.75
+
+[apache_sandboxes]
+apache1 ansible_host=192.168.10.74
+apache2 ansible_host=192.168.10.75
 
 [git_sandboxes]
 git1 ansible_host=192.168.10.76
 git2 ansible_host=192.168.10.77
 git3 ansible_host=192.168.10.78
-git4 ansible_host=192.168.10.79
-git5 ansible_host=192.168.10.80
+
+[jekinks_sandboxes]
+jekinks1 ansible_host=192.168.10.79
+jekinks2 ansible_host=192.168.10.80
 
 [ssh_sandboxes]
 ssh1 ansible_host=192.168.10.81

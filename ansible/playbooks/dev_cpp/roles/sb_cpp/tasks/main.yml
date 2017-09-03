@@ -1,0 +1,6 @@
+---
+- name: Clone cpp sandbox
+  git: repo=https://github.com/panchul/sb_cpp.git
+       dest="{{ ansible_env.HOME }}/mysandbox/sb_cpp"
+       
+

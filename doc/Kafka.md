@@ -137,3 +137,25 @@ Example of docker-compose file for a cluster
 https://github.com/confluentinc/cp-docker-images/blob/3.3.x/examples/kafka-cluster/docker-compose.yml
 
 ---
+
+Ansible'ized setup for Kafka on AWS EC2 from Galaxy:
+
+https://galaxy.ansible.com/giladju/setup-kafka-cluster-ec2/
+
+---
+
+Akka Stream Kafka stuff
+
+http://doc.akka.io/docs/akka-stream-kafka/current/home.html
+
+---
+
+Some CLI Kafka stuff
+https://www.cloudera.com/documentation/kafka/latest/topics/kafka_command_line.html
+
+
+    $ ./kafka-consumer-groups.sh --zookeeper kafka.broker.com:2181 --list
+    $ ./kafka-consumer-groups --zookeeper zk01.example.com:2181 --describe --group flume
+
+
+---

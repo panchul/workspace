@@ -151,6 +151,7 @@ TODO: Create sub-pages of these.
 ### Web Frameworks
 
 - MochiWeb
+- [Apache](Apache.md)
 - [PlayFramework](PlayFramework.md)
 - [WordPress](WordPress.md)
 - [Scalatra](Scalatra.md)
@@ -249,7 +250,7 @@ Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
 - [Scrum](Scrum.md)
 - Kanban
 - Jira
-- Jenkins
+- [Jenkins](Jenkins.md)
 - Redmine
 - Sonarqube
 - Phabricator

@@ -48,8 +48,10 @@ in file ```hosts_append.txt``` that ends up in each boxes ```/etc/hosts```)
 * kafka_broker1-5 - Kafka nodes
 * javascript1-5 - Javascript sandbox
 * golang1-5 - Golang sandbox
-* docker1-5 - Docker sandbox
-* git1-5 - Git sandbox. For Git daemon scenarios, etc.
+* docker1-3 - Docker sandbox
+* apache1-2 - Apache web server sandbox
+* git1-2 - Git sandbox. For Git daemon scenarios, etc.
+* jenkins1-2 - Jenkins sandbox. For CICD tests, etc.
 * ssh1-5 - SSH sandbox. For SSH scenarios.
 
 
@@ -61,6 +63,7 @@ Other sandbox repositories could be provisioned on these boxes. For example,
 * [https://github.com/panchul/sb_erl](https://github.com/panchul/sb_erl)
 * [https://github.com/panchul/sb_golang](https://github.com/panchul/sb_golang)
 * [https://github.com/panchul/sb_javascript](https://github.com/panchul/sb_javascript)
+* [https://github.com/panchul/sb_jenkins.git](https://github.com/panchul/sb_jenkins.git)
 * [https://github.com/panchul/sb_perl](https://github.com/panchul/sb_perl)
 * [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala)
 * [https://github.com/panchul/sb_shell](https://github.com/panchul/sb_shell) - sandbox for shell

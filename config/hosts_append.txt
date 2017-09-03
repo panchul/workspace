@@ -63,14 +63,16 @@
 192.168.10.71 docker1.vm docker1
 192.168.10.72 docker2.vm docker2
 192.168.10.73 docker3.vm docker3
-192.168.10.74 docker4.vm docker4
-192.168.10.75 docker5.vm docker5
+
+192.168.10.74 apache1.vm apache1
+192.168.10.75 apache2.vm apache2
 
 192.168.10.76 git1.vm git1
 192.168.10.77 git2.vm git2
 192.168.10.78 git3.vm git3
-192.168.10.79 git4.vm git4
-192.168.10.80 git5.vm git5
+
+192.168.10.79 jekinks1.vm jekinks1
+192.168.10.80 jekinks2.vm jekinks2
 
 192.168.10.81 ssh1.vm ssh1
 192.168.10.82 ssh2.vm ssh2

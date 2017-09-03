@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# specific to the kafka sandbox vm
+
 if [ $# -gt 0 ]; then
     kafka-server-start.sh /vagrant/config/kafka_broker_server$1.properties &
 else
