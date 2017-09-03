@@ -355,3 +355,24 @@ Nice page about ssh login. See also [SSH.md](SSH.md)
 http://www.linuxproblem.org/art_9.html
 
 ---
+
+Quick idiomatic pattern to install a service on Linux:
+
+    if ! rpm -qa | grep -qw ntp; then
+        yum install ntp
+    fi
+
+And the pattern to set it up running:
+
+    # Start ntpd if it's not already running.
+    if ps aux | grep -v grep | grep "[n]tpd" > /dev/null
+    then
+        echo "ntpd is running." > /dev/null
+    else
+        /sbin/service ntpd restart > /dev/null
+        echo "Started ntpd."
+    fi
+    # Make sure ntpd is enabled on system startup.
+    chkconfig ntpd on
+
+---

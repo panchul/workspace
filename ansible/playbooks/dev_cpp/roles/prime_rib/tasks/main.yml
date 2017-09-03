@@ -1,6 +1,4 @@
 ---
 - name: Clone prime_rib
   git: repo=https://github.com/panchul/prime_rib.git
-       dest="{{ ansible_env.HOME }}/sb_cpp/prime_rib"
-
-
+       dest="{{ ansible_env.HOME }}/mysandbox/prime_rib"

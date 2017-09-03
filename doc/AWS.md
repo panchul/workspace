@@ -94,4 +94,28 @@ This will mount what is in /etc/fstab:
         
     $  sudo mount -a
 
+Same thing with some automation:
+
+    lsblk
+    sudo file -s /dev/xvdb
+    pause "should be data"
+    sudo mkfs -t ext4 /dev/xvdb
+    sudo mkdir /mymountpoint
+    sudo file -s /dev/xvdb
+    sudo cp /etc/fstab /etc/fstab.orig
+
+then I had to use a temp file to because bash's "" will mess up printf's "":
+    
+    sudo file -s /dev/xvdb | awk '{printf "%s    /mymountpoint ext4 defaults,nofail 0 2\n", $8}' > myvolume
+    sudo sh -c "cat myvolume >> /etc/fstab "
+    
+    sudo mount -a
+    ls -la /data
+
+---
+
+Ansible'ized setup for Kafka on AWS EC2 using Galaxy:
+
+https://galaxy.ansible.com/giladju/setup-kafka-cluster-ec2/
+
 ---

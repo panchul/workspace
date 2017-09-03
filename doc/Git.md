@@ -7,6 +7,10 @@ See Also:
  - [Mercurial](Mercurial.md)
  - [Subversion](Subversion.md)
 
+
+[https://git-scm.com/](https://git-scm.com/)
+
+
 ---
 
 Sometimes you need to run ```apt-get update``` to see git package. For example in a Dockerfile:
@@ -88,5 +92,18 @@ The thing I often do to put the changes into the correct branch:
     $ git stash pop
     
 ---
-       
-       
+
+Example of starting a new repo from existing sources
+           
+    $ cd /path/to/the_project
+    $ git init     
+    $ git add .    
+    $ git commit       
+
+    $ mkdir tmp ; cd ~/tmp
+    $ git clone file://localhost:/the_project
+      Cloning into 'myproj'...
+      warning: You appear to have cloned an empty repository.
+      Checking connectivity... done.
+
+---
