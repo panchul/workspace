@@ -46,8 +46,10 @@ WS_IP_SPACE_SCALA_START = 35
 N_SCALA = 2
 
 WS_IP_SPACE_MYSQL_START = 40
+N_MYSQL = 1
 
 WS_IP_SPACE_HAPROXY_START = 45
+N_HAPROXY = 3
 
 WS_IP_SPACE_SHELL_START = 50
 
@@ -216,69 +218,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
        ansible.host_key_checking = false
     end
 
-  end
-
-  config.vm.define "shell1", autostart: false do |box|
-    machine_id = 1
-    box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
-    #box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-    #box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
-
-    box.ssh.forward_agent = true
-    box.vm.host_name = "shell#{machine_id}.vm"
-    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SHELL_START+machine_id}"
-    box.vm.synced_folder  "projects", "/projects"
-    # box.vm.synced_folder  "projects_sbshell#{machine_id}", "/projects_sbshell#{machine_id}"
-
-    box.vm.provider "virtualbox" do |vb|
-      # We do not have to have gui, we can save some memory if we don't.
-      #vb.gui = true
-      vb.memory = "2048"
-      vb.customize ["modifyvm", :id, "--vram", "16"]
-      vb.cpus = 2
-
-      # win machines did not take this.
-      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
-    end
-
-    box.vm.provision "shell", inline: <<-SHELL
-      export DEBIAN_FRONTEND=noninteractive
-      apt-get install -y dos2unix 
-      mkdir -p /home/vagrant/tmp_provisioning
-      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-      source /home/vagrant/tmp_provisioning/bootstrap.sh
-    SHELL
-  end
-
-  config.vm.define "perl1", autostart: false do |box|
-    machine_id = 1
-    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
-
-    box.ssh.forward_agent = true
-    box.vm.host_name = "perl#{machine_id}.vm"
-    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_PERL_START+machine_id}"
-    box.vm.synced_folder  "projects", "/projects"
-    # box.vm.synced_folder  "projects_sbperl#{machine_id}", "/projects_sbperl#{machine_id}"
-
-    box.vm.provider "virtualbox" do |vb|
-      # We do not have to have gui, we can save some memory if we don't.
-      vb.gui = true
-      vb.memory = "2048"
-      vb.customize ["modifyvm", :id, "--vram", "16"]
-      vb.cpus = 2
-
-      # win machines did not take this.
-      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
-    end
-
-    box.vm.provision "shell", inline: <<-SHELL
-      export DEBIAN_FRONTEND=noninteractive
-      apt-get install -y dos2unix 
-      mkdir -p /home/vagrant/tmp_provisioning
-      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-      source /home/vagrant/tmp_provisioning/bootstrap.sh
-    SHELL
   end
 
   (1..N_YARC_Servers).each do |machine_id|
@@ -512,6 +451,198 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
+  (1..N_MYSQL).each do |machine_id|
+    config.vm.define "mysql#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+      # box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_MYSQLSTART+machine_id}"
+      # box.ssh.forward_agent = true
+      # box.ssh.insert_key = false
+      box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+      
+      box.vm.host_name = "haproxy#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_MYSQL_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        # TODO: The desktop version of the vm is screwed up. :-( It would be nice to repair for using IntelliJ
+        #vb.gui = true
+        vb.memory = "4096"
+        # vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/mysql.sh
+        # TODO: finish mysql boxes
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+   
+    end
+  end
+
+  (1..N_HAPROXY).each do |machine_id|
+    config.vm.define "haproxy#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+      # box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_HAPROXY_START+machine_id}"
+      # box.ssh.forward_agent = true
+      # box.ssh.insert_key = false
+      box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+      
+      box.vm.host_name = "haproxy#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_HAPROXY_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        # TODO: The desktop version of the vm is screwed up. :-( It would be nice to repair for using IntelliJ
+        #vb.gui = true
+        vb.memory = "4096"
+        # vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/haproxy.sh
+        # TODO: finish haproxy boxes
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+   
+    end
+  end
+
+  config.vm.define "shell1", autostart: false do |box|
+    machine_id = 1
+    box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+    #box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    #box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+    box.ssh.forward_agent = true
+    box.vm.host_name = "shell#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_SHELL_START+machine_id}"
+    box.vm.synced_folder  "projects", "/projects"
+    # box.vm.synced_folder  "projects_sbshell#{machine_id}", "/projects_sbshell#{machine_id}"
+
+    box.vm.provider "virtualbox" do |vb|
+      # We do not have to have gui, we can save some memory if we don't.
+      #vb.gui = true
+      vb.memory = "2048"
+      vb.customize ["modifyvm", :id, "--vram", "16"]
+      vb.cpus = 2
+
+      # win machines did not take this.
+      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+    end
+
+    box.vm.provision "shell", inline: <<-SHELL
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get install -y dos2unix 
+      mkdir -p /home/vagrant/tmp_provisioning
+      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      source /home/vagrant/tmp_provisioning/bootstrap.sh
+    SHELL
+  end
+
+  config.vm.define "perl1", autostart: false do |box|
+    machine_id = 1
+    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+    box.ssh.forward_agent = true
+    box.vm.host_name = "perl#{machine_id}.vm"
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_PERL_START+machine_id}"
+    box.vm.synced_folder  "projects", "/projects"
+    # box.vm.synced_folder  "projects_sbperl#{machine_id}", "/projects_sbperl#{machine_id}"
+
+    box.vm.provider "virtualbox" do |vb|
+      # We do not have to have gui, we can save some memory if we don't.
+      vb.gui = true
+      vb.memory = "2048"
+      vb.customize ["modifyvm", :id, "--vram", "16"]
+      vb.cpus = 2
+
+      # win machines did not take this.
+      #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+    end
+
+    box.vm.provision "shell", inline: <<-SHELL
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get install -y dos2unix 
+      mkdir -p /home/vagrant/tmp_provisioning
+      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      source /home/vagrant/tmp_provisioning/bootstrap.sh
+    SHELL
+  end
+
+  (1..N_JAVASCRIPT).each do |machine_id|
+    config.vm.define "javascript#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_JAVASCRIPT_START+machine_id}"
+      box.vm.host_name = "javascript#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_JAVASCRIPT_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        vb.gui = true
+        vb.memory = "2048"
+        vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        source /home/vagrant/tmp_provisioning/bootstrap.sh
+      SHELL
+
+      # Skipping Ansible, let the vm work with windows provisioners too
+      #box.vm.provision "dev_generic", type: "ansible" do |ansible|
+      #   ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
+      #   ansible.verbose = true
+      #   ansible.host_key_checking = false
+      #end
+
+    end
+  end
+
   (1..N_ZOOKEEPER).each do |machine_id|
     config.vm.define "zookeeper#{machine_id}", autostart: false do |box|
 
@@ -609,43 +740,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.provision "shell", path: "scripts/kafka_install.sh", args:"#{machine_id}", privileged: false
       
       box.vm.provision "shell", path: "scripts/kafka_start_broker.sh", args:"#{machine_id}", privileged: false
-    end
-  end
-
-  (1..N_JAVASCRIPT).each do |machine_id|
-    config.vm.define "javascript#{machine_id}", autostart: false do |box|
-
-      box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
-
-      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_JAVASCRIPT_START+machine_id}"
-      box.vm.host_name = "javascript#{machine_id}.vm"
-      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_JAVASCRIPT_START+machine_id}"
-      box.vm.synced_folder  "projects", "/projects"
-
-      box.vm.provider "virtualbox" do |vb|
-        vb.gui = true
-        vb.memory = "2048"
-        vb.customize ["modifyvm", :id, "--vram", "16"]
-        vb.cpus = 2
-      end
-
-      box.vm.provision "shell", inline: <<-SHELL
-        export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
-        mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-      SHELL
-
-      # Skipping Ansible, let the vm work with windows provisioners too
-      #box.vm.provision "dev_generic", type: "ansible" do |ansible|
-      #   ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
-      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
-      #   ansible.verbose = true
-      #   ansible.host_key_checking = false
-      #end
-
     end
   end
 

@@ -13,23 +13,19 @@
 
 Add this to ```~/.vimrc``` to make sure the arrows work as expected:
 
-```
-set esckeys
-```
+```set esckeys```
 
 I think this works too:
 
-```
-set nocp
-```
+```set nocp```
 
 ---
 
 This turns on the line numbers, in ```~/.vimrc```:
 
-```
-set number
-```
+```set number```
+
+To turn them off, '''set nonumber``` 
 
 ---
 

@@ -5,12 +5,24 @@ gen1 ansible_host=192.168.10.3
 gen2 ansible_host=192.168.10.4
 gen3 ansible_host=192.168.10.5
 
+# not taken 192.168.10.6
+# not taken 192.168.10.7
+# not taken 192.168.10.8
+# not taken 192.168.10.9
+# not taken 192.168.10.10
+
 [yarc_servers]
 yser1 ansible_host=192.168.10.11
 yser2 ansible_host=192.168.10.12
 yser3 ansible_host=192.168.10.13
 yser4 ansible_host=192.168.10.14
 yser5 ansible_host=192.168.10.15
+
+# not taken 192.168.10.16
+# not taken 192.168.10.17
+# not taken 192.168.10.18
+# not taken 192.168.10.19
+# not taken 192.168.10.20
 
 [yarc_clients]
 ycli1 ansible_host=192.168.10.21
@@ -21,6 +33,10 @@ ycli5 ansible_host=192.168.10.25
 
 [cpp_sandboxes]
 cpp1 ansible_host=192.168.10.26
+cpp2 ansible_host=192.168.10.27
+cpp3 ansible_host=192.168.10.28
+cpp4 ansible_host=192.168.10.29
+cpp5 ansible_host=192.168.10.30
 
 [erland_sandboxes]
 erlang1 ansible_host=192.168.10.31
@@ -38,18 +54,28 @@ scala5 ansible_host=192.168.10.40
 
 [mysql_sandboxes]
 mysql1 ansible_host=192.168.10.41
+mysql2 ansible_host=192.168.10.42
+mysql3 ansible_host=192.168.10.43
+mysql4 ansible_host=192.168.10.44
+mysql5 ansible_host=192.168.10.45
 
 [haproxy_sandboxes]
 haproxy1 ansible_host=192.168.10.46
+haproxy2 ansible_host=192.168.10.47
+haproxy3 ansible_host=192.168.10.48
+haproxy4 ansible_host=192.168.10.49
+haproxy5 ansible_host=192.168.10.50
 
 [shell_sandboxes]
 shell1 ansible_host=192.168.10.51
 
 [perl_sandboxes]
 perl1 ansible_host=192.168.10.52
+perl2 ansible_host=192.168.10.53
 
 [javascript_sandboxes]
 javascript1 ansible_host=192.168.10.54
+javascript2 ansible_host=192.168.10.55
 
 [zookeeper_nodes]
 zookeeper1 ansible_host=192.168.10.56
@@ -75,11 +101,11 @@ golang5 ansible_host=192.168.10.70
 [docker_sandboxes]
 docker1 ansible_host=192.168.10.71
 docker2 ansible_host=192.168.10.72
-docker3 ansible_host=192.168.10.73
 
 [apache_sandboxes]
-apache1 ansible_host=192.168.10.74
-apache2 ansible_host=192.168.10.75
+apache1 ansible_host=192.168.10.73
+apache2 ansible_host=192.168.10.74
+apache3 ansible_host=192.168.10.75
 
 [git_sandboxes]
 git1 ansible_host=192.168.10.76
@@ -94,5 +120,3 @@ jekinks2 ansible_host=192.168.10.80
 ssh1 ansible_host=192.168.10.81
 ssh2 ansible_host=192.168.10.82
 ssh3 ansible_host=192.168.10.83
-ssh4 ansible_host=192.168.10.84
-ssh5 ansible_host=192.168.10.85

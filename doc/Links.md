@@ -89,7 +89,7 @@ TODO: Create sub-pages of these.
 
 ### Data formats, APIs, Protocols
 
-- HTML
+- [HTML](HTML.md)
 - Jiffy (JSON converting)
 - [JSON](JSON.md)
 - [MarkDown](MarkDown.md)  

@@ -33,14 +33,24 @@
 192.168.10.40 scala5.vm scala5
 
 192.168.10.41 mysql1.vm mysql1
+192.168.10.42 mysql2.vm mysql2
+192.168.10.43 mysql3.vm mysql3
+192.168.10.44 mysql4.vm mysql4
+192.168.10.45 mysql5.vm mysql5
 
 192.168.10.46 haproxy1.vm haproxy1
+192.168.10.47 haproxy2.vm haproxy2
+192.168.10.48 haproxy3.vm haproxy3
+192.168.10.49 haproxy4.vm haproxy4
+192.168.10.50 haproxy5.vm haproxy5
 
 192.168.10.51 shell1.vm shell1
 
 192.168.10.52 perl1.vm perl1
+192.168.10.53 perl2.vm perl2
 
 192.168.10.54 javascript1.vm javascript1
+192.168.10.55 javascript2.vm javascript2
 
 192.168.10.56 zookeeper1.vm zookeeper1
 192.168.10.57 zookeeper2.vm zookeeper2
@@ -62,10 +72,10 @@
 
 192.168.10.71 docker1.vm docker1
 192.168.10.72 docker2.vm docker2
-192.168.10.73 docker3.vm docker3
 
-192.168.10.74 apache1.vm apache1
-192.168.10.75 apache2.vm apache2
+192.168.10.73 apache1.vm apache1
+192.168.10.74 apache2.vm apache2
+192.168.10.75 apache3.vm apache3
 
 192.168.10.76 git1.vm git1
 192.168.10.77 git2.vm git2
@@ -77,5 +87,3 @@
 192.168.10.81 ssh1.vm ssh1
 192.168.10.82 ssh2.vm ssh2
 192.168.10.83 ssh3.vm ssh3
-192.168.10.84 ssh4.vm ssh4
-192.168.10.85 ssh5.vm ssh5
