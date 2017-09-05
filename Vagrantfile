@@ -70,8 +70,8 @@ N_GOLANG = 1
 WS_IP_SPACE_DOCKER_START = 70
 N_DOCKER = 1
 
-WS_IP_SPACE_APACHE_START = 73
-N_APACHE = 1
+WS_IP_SPACE_APACHE_START = 72
+N_APACHE = 3
 
 WS_IP_SPACE_GIT_START = 75
 N_GIT = 2
@@ -869,7 +869,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         source /home/vagrant/tmp_provisioning/bootstrap.sh
         
         # Maybe do it with Ansible instead
-        source /home/vagrant/tmp_provisioning/apache.sh
+        source /home/vagrant/tmp_provisioning/apache.sh "#{machine_id}"
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|

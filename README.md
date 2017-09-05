@@ -76,7 +76,7 @@ eliminate the need for dns server.
 |192.168.10.45     | mysql5          |                                                      |
 |==================+=================+======================================================|  
 |192.168.10.46     | haproxy1        | HAProxy boxes                                        |
-|192.168.10.47     | haproxy2        |                                                      |
+|192.168.10.47     | haproxy2        |  (haproxy1 load balances http port to apache1,2,3)   |
 |192.168.10.48     | haproxy3        |                                                      |
 |192.168.10.49     | haproxy4        |                                                      |
 |192.168.10.50     | haproxy5        |                                                      |
@@ -111,7 +111,7 @@ eliminate the need for dns server.
 |192.168.10.71     | docker1         | Docker sandbox                                       |
 |192.168.10.72     | docker2         |                                                      |
 |==================+=================+======================================================|  
-|192.168.10.73     | apache1         | Apache web server sandbox                            |
+|192.168.10.73     | apache1         | Apache web server sandboxes.                         |
 |192.168.10.74     | apache2         |                                                      |
 |192.168.10.75     | apache3         |                                                      |
 |==================+=================+======================================================|  
@@ -135,6 +135,7 @@ for example, cloning a sandbox git repository in the home forlder of user 'vagra
 
 Other sandbox repositories could be provisioned on these boxes. For example,
 
+* [https://github.com/panchul/sb_ansible](https://github.com/panchul/sb_ansible)
 * [https://github.com/panchul/sb_arduino](https://github.com/panchul/sb_arduino)
 * [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp)
 * [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker)

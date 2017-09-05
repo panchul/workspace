@@ -3,9 +3,9 @@
 # messy Ansible commands over Vagrant provisioning. Hence, this Makefile.
 #
 
-DEFAULT_YARC_SET=yser{1..2}
+DEFAULT_KAFKA_SET=zookeeper1 kafka_broker1 scala1
 
-DEFAULT_KAFKA_SET = zookeeper1 kafka_broker1 scala1
+DEFAULT_HAPROXY_SET=haproxy1 apache{1..3}
 
 ANSIBLE_INVENTORY=.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory
 
@@ -13,34 +13,33 @@ all: help
 # You have to be more specific about the targets
 
 help:
-	@echo " This repository is a toolbox. "
-	@echo " Common make targets are grouped below by their functionality. "
+	@echo " For most of the functionality you can use Vagrant commands, for example:"
+	@echo "     To see status          "
+	@echo "         $$ vagrant status   "
+	@echo "     To create vm 'gen1'    "
+	@echo "         $$ vagrant up gen1  "
+	@echo "     To ssh to it:          "
+	@echo "         $$ vagrant ssh gen1"
 	@echo " "
-	@echo " To create virtual machines or sets of them: "
-	@echo "     make sbshell      - creates a shell sandbox virtual machine. "
-	@echo "     make sbperl      - creates a Perl sandbox virtual machine. "
-	@echo "     make sbcpp        - creates a basic C++ sandbox virtual machine. "
-	@echo "     make sberl        - creates a basic Erlang sandbox virtual machine. "
-	@echo "     make sbsc         - creates a basic Scala sandbox virtual machine. "
-	@echo "     make sbyarc       - creates a yarc sandbox virtual machine. "
-	@echo "     make sbjavascript - creates a sandbox virtual machine for JavaScript. "
+	@echo " Git helpers: "
+	@echo "     $$ make git_status    - runs 'git status' in the sandboxes. "
 	@echo " "
-	@echo "     make kafka_up     - brings up a setup for working with Kafka:"
-	@echo "                         - vm zookeeper1, single node Zookeeper          "
-	@echo "                         - vm kafka_broker1, single node Kafka cluster   "
-	@echo "                         - vm scala1, a generic Scala box                "
-	# TODO: maybe add a C++ sandbox with Kafka client
-	@echo "     make kafka_suspend  - suspends the set of Kafka vms"
+	@echo " HAProxy playground: "
+	@echo "     $$ make haproxy_up       - creates a vms for HAProxy and Apache web servers. "
+	@echo "     $$ make haproxy_suspend  - suspends the set of the vms"
+	@echo "     $$ make haproxy_destroy  - deletes the set of the vms"
 	@echo " "
-	@echo " To provision(helps if a re-try is needed): "
-	@echo "     make provision_cpp - runs an Ansible script to provision things needed. "
+	@echo " Kafka playground: "
+	@echo "     $$ make kafka_up       - brings up a setup for working with Kafka:"
+	@echo "                                - vm zookeeper1, single node Zookeeper          "
+	@echo "                                - vm kafka_broker1, single node Kafka cluster   "
+	@echo "                                - vm scala1, a generic Scala box                "
+	@echo "     $$ make kafka_suspend  - suspends the set of Kafka vms"
+	@echo "     $$ make kafka_destroy  - destroys the set of Kafka vms"
 	@echo " "
 	@echo " To test: "
-	@echo "     make test          - runs all tests. Could be long and painful. "
-	@echo "     make test_cpp      - runs an Ansible script to run tests "
-	@echo " "
-	@echo " To check if any of the repos need pushing: "
-	@echo "     make git_status    - runs 'git status' in the sandboxes. "
+	@echo "     $$ make test          - runs all tests. Could be long and painful. "
+	@echo "     $$ make test_cpp      - runs an Ansible script to run tests "
 	@echo " "
 	vagrant --version
 	ansible --version
@@ -55,34 +54,28 @@ git_status:
 kafka: kafka_up
 
 kafka_up: 
+	@echo Bringing up $(DEFAULT_KAFKA_SET)
 	vagrant up $(DEFAULT_KAFKA_SET)
 
 kafka_suspend: 
+	@echo Bringing down $(DEFAULT_KAFKA_SET)
 	vagrant suspend $(DEFAULT_KAFKA_SET)
 
-sbyarc: prepare_folders_yarc
-	vagrant up $(DEFAULT_YARC_SET)
+kafka_destroy: 
+	@echo Deleting $(DEFAULT_KAFKA_SET)
+	vagrant destroy $(DEFAULT_KAFKA_SET)
 
-sbcpp: prepare_folders_cpp
-	vagrant up cpp1
+haproxy_up: 
+	@echo Bringing up $(DEFAULT_HAPROXY_SET)
+	vagrant up $(DEFAULT_HAPROXY_SET)
 
-sberl: prepare_folders_erl
-	vagrant up erlang1
+haproxy_suspend: 
+	@echo Bringing down $(DEFAULT_HAPROXY_SET)
+	vagrant suspend $(DEFAULT_HAPROXY_SET)
 
-sbsc: prepare_folders_scala
-	vagrant up scala1
-
-sbshell: prepare_folders_shell
-	vagrant up shell1
-
-sbperl: prepare_folders_perl
-	vagrant up perl1
-
-sbjavascript:
-	vagrant up javascript1
-
-provision_cpp:
-	vagrant provision cpp1
+haproxy_destroy: 
+	@echo Deleting $(DEFAULT_HAPROXY_SET)
+	vagrant destroy -f $(DEFAULT_HAPROXY_SET)
 
 test: test_cpp
 	@echo "Ran all tests"
@@ -91,32 +84,3 @@ test_cpp:
 	@echo "TODO: create these tests"
 	ansible-playbook --connection ssh -u vagrant -i $(ANSIBLE_INVENTORY) -v ansible/playbooks/test_cpp/test1.yml
 	@echo "Ran cpp tests"
-
-prepare_folders:  prepare_folders_yarc \
-				prepare_folders_cpp \
-				prepare_folders_erl \
-				prepare_folders_scala \
-				prepare_folders_shell \
-				prepare_folders_perl
-
-prepare_folders_yarc:
-	@mkdir -p projects_sbyser1
-	@mkdir -p projects_sbyser2
-	@mkdir -p projects_sbyser3
-	@mkdir -p projects_sbyser4
-	@mkdir -p projects_sbyser5
-
-prepare_folders_shell:
-	# @mkdir -p projects_sbshell1
-
-prepare_folders_perl:
-	# @mkdir -p projects_sbperl1
-
-prepare_folders_cpp:
-	# @mkdir -p projects_sbcpp1
-
-prepare_folders_erl:
-	# @mkdir -p projects_sberl1
-
-prepare_folders_scala:
-	# @mkdir -p projects_sbsc1

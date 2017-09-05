@@ -32,6 +32,16 @@ For multiline content, this would work:
     1.2.3.43  mydomain3.com  
     EOF
 
+B.t.w. if you want to have parameters in that body, use EOF without quotes:
+
+    sudo sh -c "cat > /var/www/html/index.html " << EOF
+      <html>
+      <body>
+      "${HTTP_CONTENT}"
+      </body>
+      </html>
+    EOF
+
 ---
 
 ## Unit testing of bash scripts
