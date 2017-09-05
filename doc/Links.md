@@ -84,6 +84,9 @@ TODO: Create sub-pages of these.
   
   Spring Boot CQRS Example:
   https://github.com/jinternals/demo-cqrs
+   
+  Link about Automated testing. DevOps fundamentals, etc. 
+  https://www.linux.com/blog/learn/chapter/dev-ops/2017/8/devops-fundamentals-part-6-automated-testing
   
   
 
@@ -148,13 +151,14 @@ TODO: Create sub-pages of these.
 - Symbian OS  
 - [MacOS](MacOS.md)
 
-### Web Frameworks
+### Web Frameworks and servers
 
 - MochiWeb
 - [Apache](Apache.md)
+- [nginx](nginx.md)
 - [PlayFramework](PlayFramework.md)
-- [WordPress](WordPress.md)
 - [Scalatra](Scalatra.md)
+- [WordPress](WordPress.md)
 - [Yaws](Yaws.md)
 
 ### Misc Utilities and Commands
@@ -235,6 +239,9 @@ TODO: Create sub-pages of these.
 - Splunk https://www.splunk.com/
 - AppDynamics https://www.appdynamics.com/
 
+- Nice AI human animation
+  https://www.facebook.com/techinsider/videos/814455945419430/
+
 ### Algorithms and Data Structures
 
 
@@ -293,3 +300,5 @@ advises are piled up here:
 
 - [misc fun, youtube, etc.](misc_fun.html)
 - [misc historic links](misc_historic.html)
+
+- The price of being single. http://ideas.ted.com/the-price-of-being-single/

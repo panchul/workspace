@@ -1,17 +1,17 @@
 
-
-## Under Construction
-
 # Ansible
 
 [https://www.ansible.com/](https://www.ansible.com/)
 
+See Also:
+
+- [https://github.com/panchul/sb_ansible](https://github.com/panchul/sb_ansible)
 
 ---
 
 To run a playbook at a Vagrant box one can use:  
 
-    ansible-playbook --connection ssh -u vagrant -i ansible/ansible.vmhosts ansible/playbooks/mybook/mythings2do.yml
+    $ ansible-playbook --connection ssh -u vagrant -i ansible/ansible.vmhosts ansible/playbooks/mybook/mythings2do.yml
 
 ---
 
@@ -124,7 +124,3 @@ Ansible'ized setup for Kafka on AWS EC2 using Galaxy:
 https://galaxy.ansible.com/giladju/setup-kafka-cluster-ec2/
 
 ---
-
-
-
-

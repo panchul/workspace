@@ -21,3 +21,8 @@ http://irc.gov.ua/ua/el_reg
 http://rp.irc.gov.ua/ 
 
 ---
+
+16 things CEOs should do before an IPO
+https://techcrunch.com/2017/08/22/16-things-ceos-should-do-before-an-ipo/
+
+---
