@@ -1,8 +1,11 @@
 
-
 ## Under Construction
 
 # Kafka
+See Also:
+ [Zookeeper](Zookeeper.md)
+
+---
 
 [http://kafka.apache.org/](http://kafka.apache.org/) - Official Link
 
@@ -10,6 +13,14 @@ The overview is at https://kafka.apache.org/documentation/
 
 List of clients for many languages:
 https://cwiki.apache.org/confluence/display/KAFKA/Clients
+
+---
+
+Commonly assigned ports:
+
+- Zookeeper: 2181 (client-facing)
+- Kafka: 9092, (9091, 9093 for SSL, SASL, etc.)
+-        2888, 3888 - internal Kafka, leader selection, etc.
 
 ---
 
@@ -153,9 +164,25 @@ http://doc.akka.io/docs/akka-stream-kafka/current/home.html
 Some CLI Kafka stuff
 https://www.cloudera.com/documentation/kafka/latest/topics/kafka_command_line.html
 
-
     $ ./kafka-consumer-groups.sh --zookeeper kafka.broker.com:2181 --list
     $ ./kafka-consumer-groups --zookeeper zk01.example.com:2181 --describe --group flume
 
+---
+
+To get the topic info from a cluster:
+
+    $ ./kafka-topics.sh --zookeeper mynode1.om:2181,mynode2:2181 --list > topic_namesonly.txt 
+
+    $ for topic in `cat topic_names_only.txt` ; do \
+     ./kafka-topics.sh --zookeeper mynode1.om:2181,mynode2:2181 --describe --topic $topic ; \
+     done | grep -v Partition: > topic_describe.txt 
+
+Produces something like:
+
+    ...
+    Topic:mytopic	PartitionCount:12	ReplicationFactor:3	Configs:delete.retention.ms=34560000
+    Topic:mytopic2	PartitionCount:12	ReplicationFactor:3	Configs:max.message.bytes=2000    
+    ...
 
 ---
+

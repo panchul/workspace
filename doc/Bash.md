@@ -151,6 +151,12 @@ Command to restart Docker services
     for SVC in $(docker service ls | grep ' 0/' | awk '{print $2}'); do \
     docker service update --force $SVC; done
 
+How to rewrite it using sudo, this snippet might be helpful:
+
+    $ sudo bash -v -c "for dcyml in \$(ls -1 *.sh) ; do echo \$dcyml ; done"
+ 
+```-v``` is just for verbosity. 
+ 
 ---
 
 I used this to time an operation:
@@ -191,5 +197,39 @@ Neat bash trick:
     $ export DEBUG_LOG=1
     $ debug "something"
     ### something
+
+---
+
+First letter of a variable:
+
+    $ word=something ; echo ${word::1}
+    s
+
+Or
+
+    $ word=something ; echo $(echo $word | head -c 1)
+    
+---
+
+Skipping the commented lines in an input file
+
+    #!/bin/bash
+    # $1 has the filename
+    
+    while IFS='' read -r line || [[ -n "$line" ]]; do 
+        if [[ -n "$line" ]] ; then
+           if [[ "$(echo $line | head -c 1)" != "#" ]] ; then
+               echo "next line from file: \"${line}\""
+           fi
+        fi
+    done < "$1"    
+    
+    
+---
+
+A lot of nice tricks on advanced Bash with functions, and dereferencing variables, etc.:
+
+http://tldp.org/LDP/abs/html/complexfunct.html
+
 
 ---

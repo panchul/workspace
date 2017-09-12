@@ -3,7 +3,7 @@
 # messy Ansible commands over Vagrant provisioning. Hence, this Makefile.
 #
 
-DEFAULT_KAFKA_SET=zookeeper1 kafka_broker1 scala1
+DEFAULT_KAFKA_SET=zookeeper{1..2} kafka_broker{1..2}
 
 DEFAULT_HAPROXY_SET=haproxy1 apache{1..3}
 
@@ -63,7 +63,7 @@ kafka_suspend:
 
 kafka_destroy: 
 	@echo Deleting $(DEFAULT_KAFKA_SET)
-	vagrant destroy $(DEFAULT_KAFKA_SET)
+	vagrant destroy -f $(DEFAULT_KAFKA_SET)
 
 haproxy_up: 
 	@echo Bringing up $(DEFAULT_HAPROXY_SET)

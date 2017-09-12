@@ -11,7 +11,7 @@ TODO: Create sub-pages of these.
 - [Ansible](Ansible.md)  
 - [Docker](Docker.md)
   - [Docker-Compose](DockerCompose.md)
-- [Swarm](Swarm.md)
+  - [Docker Swarm](Swarm.md)
 - [Kubernetes](Kubernetes.md)  
 - [VirtualBox](VirtualBox.md)  
 - [VMWare](VMWare.md)  
@@ -120,6 +120,7 @@ TODO: Create sub-pages of these.
 - autoconfig
 - [Automake](Automake.md)
 - bundler
+- cmake https://cmake.org/overview/
 - [Git](Git.md)  
   - gitk
   - github
@@ -133,7 +134,7 @@ TODO: Create sub-pages of these.
 - [Rake](Rake.md)  
 - [Sbt](Sbt.md)  
 - [Subversion](Subversion.md)  
-- cmake https://cmake.org/overview/
+- [yum](yum.md)
 
   
 ### Operating systems
@@ -166,6 +167,7 @@ TODO: Create sub-pages of these.
 - [Curl](Curl.md)
 - [Ipvsadm](ipvsadm.md)
 - [Postman](Postman.md)
+- [tar](tar.md)
 - ...
 
     
@@ -201,7 +203,7 @@ TODO: Create sub-pages of these.
   - Load balancers
 - [HAProxy](HAProxy.md)
 - [nginx](nginx.md)
-- DNS
+- [DNS](DNS.md)
   - BIND
 - [OpenVPN](OpenVPN.md)
 

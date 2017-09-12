@@ -3,7 +3,9 @@
 
 # Aptitude
 
-See also [Linux.md](Linux.md)
+See Also:
+ [Linux](Linux.md)
+ [yum](yum.md)
 
 
 ```aptitude```, that is, ```apt-get```, etc. is a Debian packaging tool.
