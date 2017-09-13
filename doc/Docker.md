@@ -14,6 +14,14 @@ My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/p
 
 https://www.docker.com/
 
+Installation:
+
+https://docs.docker.com/engine/installation/
+
+To start the daemon:
+
+    $ sudo  systemctl start docker
+
 ---
 
 Docker for Ubuntu:
@@ -83,4 +91,9 @@ See what it is outputting:
     $ docker logs 2364586249
     
 ---
-    
+
+If the services are running on their own, the entry point could be just command like
+
+    $ /bin/bash -c tail -f /usr/local/mywebserver/log.out
+
+---

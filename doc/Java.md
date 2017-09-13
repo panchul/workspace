@@ -9,6 +9,12 @@
 JDK8:  
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
 
+
+To install JDK on CentOS:
+(https://stackoverflow.com/questions/20901442/how-to-install-jdk-in-centos)
+
+    $ sudo yum install java-1.8.0-openjdk
+
 ---
 
 Nice HowTo that mentions JDK:  

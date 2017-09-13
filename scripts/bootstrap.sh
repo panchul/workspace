@@ -3,14 +3,21 @@
 # do all the provisioning in a dedicated place we can remove to save space
 mkdir -p /home/vagrant/tmp_provisioning
 
+#dos2unix might not be available.
 # Occationally \r slips in, let's be ready.
+#for myscript in `ls /vagrant/scripts/*.sh` ; do \
+#dos2unix -q -n $myscript /home/vagrant/tmp_provisioning/$(basename $myscript) \
+#; done
 
-for myscript in `ls /vagrant/scripts/*.sh` ; do \
-dos2unix -q -n $myscript /home/vagrant/tmp_provisioning/$(basename $myscript) ; done
+for myscript in `ls -1 /vagrant/scripts/*.sh` ; do \
+  cp $myscript /home/vagrant/tmp_provisioning/$(basename $myscript) ; \
+done
 
 # -------------------------------------
 
-dos2unix -q -n /vagrant/config/hosts_append.txt /home/vagrant/tmp_provisioning/hosts_append.txt
+cp /vagrant/config/hosts_append.txt /home/vagrant/tmp_provisioning/hosts_append.txt
+#dos2unix might not be available.
+#dos2unix -q /vagrant/config/hosts_append.txt /home/vagrant/tmp_provisioning/hosts_append.txt
 
 # TODO: we probably should not be doing this.
 chown --recursive vagrant:vagrant /home/vagrant/tmp_provisioning

@@ -92,5 +92,9 @@ To bring everything down, removing the containers entirely, also remove the data
 
     $ docker-compose down --volumes
 
+---
 
+Docker-compose file can have comments, the first letter of a comment is '#'
+
+---
         

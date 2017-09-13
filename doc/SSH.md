@@ -127,3 +127,14 @@ To trick ssh into using empty known_hosts and not check for host. (not asking to
     $ ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/mykey.pem myuser@some.host.address.com
 
 ---
+
+This tunnels an IRC session from client machine ```127.0.0.1``` (local-host) to
+remote server ```server.example.com```:
+
+         $ ssh -f -L 1234:localhost:6667 server.example.com sleep 10
+         $ irc -c '#users' -p 1234 pinky 127.0.0.1
+
+Option -f brings ssh into background, and the remote command 'sleep 10' allows to start the service
+which is to be tunnelled.
+
+---

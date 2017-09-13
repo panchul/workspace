@@ -1,4 +1,6 @@
 
+[test_sandboxes]
+test1 ansible_host=192.168.10.2
 
 [gen_sandboxes]
 gen1 ansible_host=192.168.10.3

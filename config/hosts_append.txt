@@ -2,6 +2,8 @@
 # This should sync with the ansible.vmhosts, and with the Vagrantfile.
 # It is in leu of a dns server, that hopefully will come to existance.
 
+192.168.10.2 test1.vm test1
+
 192.168.10.3 gen1.vm gen1
 192.168.10.4 gen2.vm gen2
 192.168.10.5 gen3.vm gen3

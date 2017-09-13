@@ -12,6 +12,7 @@ See Also:
  
   - [Curl](Curl.md)
   - [Ipvsadm](ipvsadm.md)
+  - [tar](tar.md)
 
 ---
 
@@ -374,5 +375,15 @@ And the pattern to set it up running:
     fi
     # Make sure ntpd is enabled on system startup.
     chkconfig ntpd on
+
+---
+
+To see 100 biggest files this idiom could be helpful:
+
+    $ sudo du -m | sort -n | tail -n 100
+
+du in megabytes.
+sorting with numeric mode.
+last 100 lines of the output.
 
 ---
