@@ -3,7 +3,7 @@
 # messy Ansible commands over Vagrant provisioning. Hence, this Makefile.
 #
 
-DEFAULT_KAFKA_SET=zookeeper{1..2} kafka_broker{1..2}
+DEFAULT_KAFKA_SET=zookeeper{1..3} kafka_broker{1..3}
 
 DEFAULT_HAPROXY_SET=haproxy1 apache{1..3}
 
@@ -50,6 +50,7 @@ git_status:
 	@ for repo in `ls projects | grep sb_` ; \
 	do sh -c "echo \"Checking projects/$$repo...\" ; cd projects/$$repo ; git status -sb ; cd ../.. " ; \
 	done ;
+	@ git status -sb
 
 kafka: kafka_up
 

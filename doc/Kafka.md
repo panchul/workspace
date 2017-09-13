@@ -186,3 +186,9 @@ Produces something like:
 
 ---
 
+Apparently, to get the cluster going, I had to add explicit listeners to brokers .properties files, like so: 
+
+    listeners=PLAINTEXT://0.0.0.0:9092
+    advertised.listeners=PLAINTEXT://kafka-broker1.vm:9092
+
+---

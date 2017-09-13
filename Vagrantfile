@@ -188,10 +188,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
     box.vm.provision "shell", inline: <<-SHELL
       export DEBIAN_FRONTEND=noninteractive
-      apt-get install -y dos2unix 
+    #  apt-get install -y dos2unix 
       mkdir -p /home/vagrant/tmp_provisioning
-      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-      source /home/vagrant/tmp_provisioning/bootstrap.sh
+      cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+    #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
+      /home/vagrant/tmp_provisioning/bootstrap.sh
     SHELL
   end
 
@@ -712,8 +713,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provider "virtualbox" do |vb|
       #  vb.gui = true
-       # vb.memory = "2048"
-        vb.memory = "3048"
+        vb.memory = "2048"
       #  vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
       #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
@@ -777,8 +777,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provider "virtualbox" do |vb|
       #  vb.gui = true
-       # vb.memory = "2048"
-        vb.memory = "3048"
+        vb.memory = "2048"
       #  vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
       #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']

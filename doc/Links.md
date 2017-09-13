@@ -166,6 +166,7 @@ TODO: Create sub-pages of these.
 
 - [Curl](Curl.md)
 - [Ipvsadm](ipvsadm.md)
+- [netcat(nc)](Netcat.md)
 - [Postman](Postman.md)
 - [tar](tar.md)
 - ...
@@ -206,6 +207,7 @@ TODO: Create sub-pages of these.
 - [DNS](DNS.md)
   - BIND
 - [OpenVPN](OpenVPN.md)
+
 
 ### Testing Frameworks
 

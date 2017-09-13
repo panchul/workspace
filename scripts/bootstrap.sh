@@ -10,7 +10,7 @@ mkdir -p /home/vagrant/tmp_provisioning
 #; done
 
 for myscript in `ls -1 /vagrant/scripts/*.sh` ; do \
-cp $myscript /home/vagrant/tmp_provisioning/$(basename $myscript) ; \
+  cp $myscript /home/vagrant/tmp_provisioning/$(basename $myscript) ; \
 done
 
 # -------------------------------------
