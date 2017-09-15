@@ -192,3 +192,34 @@ Apparently, to get the cluster going, I had to add explicit listeners to brokers
     advertised.listeners=PLAINTEXT://kafka-broker1.vm:9092
 
 ---
+
+Simple sandbox scenario to play with:
+
+On one machine run the console producer:
+
+    $ ./kafka-console-producer.sh --broker-list kafka-broker1.vm:9092,kafka-broker2.vm:9092,kafka-broker3.vm:9092 --topic mytopic
+
+On other three run three console consumers(same command line comand):
+
+    $ ./kafka-console-consumer.sh --topic mytopic --bootstrap-server kafka-broker1.vm:9092,kafka-broker2.vm:9092,kafka-broker3.vm:9092 --consumer-property group.id=mygroup
+
+From another terminal, observe how the data is loadbalanced, and how the partitions are populated:
+
+    $ ./kafka-consumer-groups.sh --describe --group mygroup --bootstrap-server kafka-broker1.vm:9092,kafka-broker2.vm:9092,kafka-broker3.vm:9092
+    Note: This will only show information about consumers that use the Java consumer API (non-ZooKeeper-based consumers).
+
+    TOPIC                          PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG        CONSUMER-ID                                       HOST                           CLIENT-ID
+    mytopic                        8          1               1               0          consumer-1-a453d73f-415b-48d6-a654-9b57c7796319   /192.168.10.3                  consumer-1
+    mytopic                        9          2               2               0          consumer-1-a453d73f-415b-48d6-a654-9b57c7796319   /192.168.10.3                  consumer-1
+    mytopic                        10         2               2               0          consumer-1-a453d73f-415b-48d6-a654-9b57c7796319   /192.168.10.3                  consumer-1
+    mytopic                        11         1               1               0          consumer-1-a453d73f-415b-48d6-a654-9b57c7796319   /192.168.10.3                  consumer-1
+    mytopic                        0          2               2               0          consumer-1-05054af4-c8bf-4800-8034-a134b40f1d47   /192.168.10.56                 consumer-1
+    mytopic                        1          2               2               0          consumer-1-05054af4-c8bf-4800-8034-a134b40f1d47   /192.168.10.56                 consumer-1
+    mytopic                        2          1               1               0          consumer-1-05054af4-c8bf-4800-8034-a134b40f1d47   /192.168.10.56                 consumer-1
+    mytopic                        3          2               2               0          consumer-1-05054af4-c8bf-4800-8034-a134b40f1d47   /192.168.10.56                 consumer-1
+    mytopic                        4          1               1               0          consumer-1-18c24e86-db0b-42ed-8ee3-13b0dca5db11   /192.168.10.3                  consumer-1
+    mytopic                        5          1               1               0          consumer-1-18c24e86-db0b-42ed-8ee3-13b0dca5db11   /192.168.10.3                  consumer-1
+    mytopic                        6          2               2               0          consumer-1-18c24e86-db0b-42ed-8ee3-13b0dca5db11   /192.168.10.3                  consumer-1
+    mytopic                        7          2               2               0          consumer-1-18c24e86-db0b-42ed-8ee3-13b0dca5db11   /192.168.10.3                  consumer-1
+
+---    

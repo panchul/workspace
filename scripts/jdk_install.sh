@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+WHERE_I_STARTED_PWD=`pwd`
+
 # TODO: normalize the filename everywhere
 
 if [ ! -d /usr/java/jdk1.8.0_101 ]; then
@@ -49,3 +51,5 @@ if [ ! -d /usr/java/jdk1.8.0_101 ]; then
 else
   echo "[INFO] Skipping installing jdk - it seems to exist already: /usr/java/jdk1.8.0_101"
 fi
+
+cd $WHERE_I_STARTED_PWD

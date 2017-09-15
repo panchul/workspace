@@ -193,6 +193,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
     #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
       /home/vagrant/tmp_provisioning/bootstrap.sh
+      /home/vagrant/tmp_provisioning/git_install.sh
     SHELL
   end
 
@@ -211,7 +212,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     box.vm.provider "virtualbox" do |vb|
       # We do not have to have gui, we can save some memory if we don't.
       vb.gui = true
-      vb.memory = "2048"
+      vb.memory = "3048"
       vb.customize ["modifyvm", :id, "--vram", "16"]
       vb.cpus = 2
 
@@ -221,10 +222,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     box.vm.provision "shell", inline: <<-SHELL
       export DEBIAN_FRONTEND=noninteractive
-      apt-get install -y dos2unix 
+      #apt-get install -y dos2unix 
       mkdir -p /home/vagrant/tmp_provisioning
-      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-      source /home/vagrant/tmp_provisioning/bootstrap.sh
+      cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      /home/vagrant/tmp_provisioning/bootstrap.sh
+      /home/vagrant/tmp_provisioning/git_install.sh
     SHELL
   end
 
@@ -428,7 +431,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         mkdir -p /home/vagrant/tmp_provisioning
         dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/git_install.sh
         source /home/vagrant/tmp_provisioning/erlang.sh
       SHELL
 
@@ -481,7 +484,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         mkdir -p /home/vagrant/tmp_provisioning
         dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/git_install.sh
         source /home/vagrant/tmp_provisioning/jdk.sh
         source /home/vagrant/tmp_provisioning/sbt.sh
         source /home/vagrant/tmp_provisioning/scala.sh
@@ -712,11 +715,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 #      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
 
       box.vm.provider "virtualbox" do |vb|
-      #  vb.gui = true
         vb.memory = "2048"
-      #  vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
-      #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
       box.vm.provision "shell", inline: <<-SHELL
@@ -726,7 +726,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
       #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
-      #  source /home/vagrant/tmp_provisioning/git.sh
+      #  source /home/vagrant/tmp_provisioning/git_install.sh
         source /home/vagrant/tmp_provisioning/jdk.sh
       # source /home/vagrant/tmp_provisioning/zookeeper_install.sh
         /home/vagrant/tmp_provisioning/zookeeper_install.sh
@@ -776,11 +776,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 #      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
 
       box.vm.provider "virtualbox" do |vb|
-      #  vb.gui = true
         vb.memory = "2048"
-      #  vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
-      #  vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       end
 
       box.vm.provision "shell", inline: <<-SHELL
@@ -790,7 +787,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
              cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
             #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
              source /home/vagrant/tmp_provisioning/bootstrap.sh
-            #  source /home/vagrant/tmp_provisioning/git.sh
+            #  source /home/vagrant/tmp_provisioning/git_install.sh
              source /home/vagrant/tmp_provisioning/jdk.sh
              /home/vagrant/tmp_provisioning/kafka_install.sh
        SHELL
@@ -855,7 +852,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         mkdir -p /home/vagrant/tmp_provisioning
         dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/git_install.sh
         source /home/vagrant/tmp_provisioning/golang.sh
       SHELL
 
@@ -901,7 +898,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         mkdir -p /home/vagrant/tmp_provisioning
         dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/git_install.sh
         source /home/vagrant/tmp_provisioning/docker_install.sh
       SHELL
 
@@ -994,7 +991,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         mkdir -p /home/vagrant/tmp_provisioning
         dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git.sh
+        source /home/vagrant/tmp_provisioning/git_install.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|

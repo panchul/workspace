@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+WHERE_I_STARTED_PWD=`pwd`
+
 SBT_VERSION="0.13.11"
 SBT_NAME="sbt-$SBT_VERSION"
 SBT_INSTALLER_DIR="/vagrant/install"
@@ -23,3 +25,5 @@ if [ ! -d /home/vagrant/sbt ]; then
 else
    echo "[INFO] Sbt seem to be already installed : /home/vagrant/sbt"
 fi
+
+cd $WHERE_I_STARTED_PWD

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+WHERE_I_STARTED_PWD=`pwd`
+
 source $(dirname $0)/kafka_env.sh
 
 if [[ -z ${KAFKA_INSTALLER_DIR} ]] ; then
@@ -42,7 +44,7 @@ fi
 
 if [ ! -d "$KAFKA_DEPLOYMENT_DIR/$KAFKA_NAME" ]; then
    echo "[INFO] Installing Kafka ..."
-   tar -zxf $KAFKA_INSTALLER_DIR/$KAFKA_NAME.tgz -C /home/vagrant
+   tar -zxf $KAFKA_INSTALLER_DIR/$KAFKA_NAME.tgz -C $KAFKA_DEPLOYMENT_DIR
    echo "export PATH=\$PATH:$KAFKA_DEPLOYMENT_DIR/$KAFKA_NAME/bin/" >> /home/vagrant/.bashrc
    echo "export WS_KAFKA_VERSION=$KAFKA_VERSION" >> /home/vagrant/.bashrc
    chown vagrant:vagrant -R "$KAFKA_DEPLOYMENT_DIR/$KAFKA_NAME"
@@ -55,3 +57,5 @@ if [ ! -d $KAFKA_RUN_DIR ]; then
    sudo mkdir -p $KAFKA_RUN_DIR
    sudo chown vagrant:vagrant -R $KAFKA_RUN_DIR
 fi
+
+cd $WHERE_I_STARTED_PWD

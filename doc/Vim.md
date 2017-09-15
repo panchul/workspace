@@ -1,6 +1,4 @@
 
-## UNDER CONSTRUCTION
-
 # Vi/Vim
 
 ---
@@ -9,7 +7,7 @@
 
 ---
 
-### On some distributions of Linux the keys are messed up.
+On some distributions of Linux the keys are messed up.
 
 Add this to ```~/.vimrc``` to make sure the arrows work as expected:
 
@@ -108,5 +106,15 @@ All the above movements can be preceded by a count; e.g. 4j moves down 4 lines.
     
 See :help {command} (for example, :help g_) for all of the above if you want more details. 
 
+
+---
+
+Using Vim as a Hexadecimal editor:
+    
+1. Open the file in Vim.
+2. Run the command ```:% ! xxd```
+3. Edit.
+4. Once done, run ```:% ! xxd -r```
+5. Save.
 
 ---
