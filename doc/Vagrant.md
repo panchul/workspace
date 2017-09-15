@@ -216,3 +216,9 @@ The inventory file has the ```myboxname```:
     ...
 
 ---
+
+Nice discussion about known issue of ```stdin: is not a tty```
+https://github.com/hashicorp/vagrant/issues/1673
+
+---
+

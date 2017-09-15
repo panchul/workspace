@@ -43,6 +43,10 @@ else
 fi
 
 if [ ! -d "$ZOOKEEPER_DEPLOYMENT_DIR/$ZOOKEEPER_NAME" ]; then
+
+    
+   sudo $(dirname $0)/jdk_install.sh
+
    echo "[INFO] Installing Zookeeper ..."
    tar -zxf $ZOOKEEPER_INSTALLER_DIR/$ZOOKEEPER_NAME.tar.gz -C "$ZOOKEEPER_DEPLOYMENT_DIR"
    echo "export PATH=\$PATH:$ZOOKEEPER_DEPLOYMENT_DIR/$ZOOKEEPER_NAME/bin/" >> /home/vagrant/.bashrc

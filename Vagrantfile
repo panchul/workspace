@@ -485,9 +485,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/git_install.sh
-        source /home/vagrant/tmp_provisioning/jdk.sh
-        source /home/vagrant/tmp_provisioning/sbt.sh
-        source /home/vagrant/tmp_provisioning/scala.sh
+        source /home/vagrant/tmp_provisioning/jdk_install.sh
+        source /home/vagrant/tmp_provisioning/sbt_install.sh
+        source /home/vagrant/tmp_provisioning/scala_install.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -541,7 +541,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         mkdir -p /home/vagrant/tmp_provisioning
         dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/mysql.sh
+        source /home/vagrant/tmp_provisioning/mysql_install.sh
         # TODO: finish mysql boxes
       SHELL
 
@@ -704,6 +704,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   (1..N_ZOOKEEPER).each do |machine_id|
     config.vm.define "zookeeper#{machine_id}", autostart: false do |box|
 
+      config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+
       box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
       #box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       #box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
@@ -727,7 +729,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
       #  source /home/vagrant/tmp_provisioning/git_install.sh
-        source /home/vagrant/tmp_provisioning/jdk.sh
+        source /home/vagrant/tmp_provisioning/jdk_install.sh
       # source /home/vagrant/tmp_provisioning/zookeeper_install.sh
         /home/vagrant/tmp_provisioning/zookeeper_install.sh
       SHELL
@@ -765,6 +767,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   (1..N_KAFKA_BROKER).each do |machine_id|
     config.vm.define "kafka_broker#{machine_id}", autostart: false do |box|
 
+      config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+
       box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
       #box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
       #box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
@@ -788,7 +792,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
              source /home/vagrant/tmp_provisioning/bootstrap.sh
             #  source /home/vagrant/tmp_provisioning/git_install.sh
-             source /home/vagrant/tmp_provisioning/jdk.sh
+             source /home/vagrant/tmp_provisioning/jdk_install.sh
              /home/vagrant/tmp_provisioning/kafka_install.sh
        SHELL
             
@@ -1038,9 +1042,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         source /home/vagrant/tmp_provisioning/bootstrap.sh
         
         # At some point wanted java, might be a pre-req
-        #source /home/vagrant/tmp_provisioning/jdk.sh
+        #source /home/vagrant/tmp_provisioning/jdk_install.sh
         
-        source /home/vagrant/tmp_provisioning/jenkins.sh
+        source /home/vagrant/tmp_provisioning/jenkins_install.sh
         
       SHELL
 

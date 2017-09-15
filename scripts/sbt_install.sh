@@ -14,6 +14,10 @@ else
 fi
 
 if [ ! -d /home/vagrant/sbt ]; then
+
+
+
+
    echo "[INFO] Installing Sbt. Might take a while ..."
    tar -zxf $SBT_INSTALLER_DIR/$SBT_NAME.tgz -C /home/vagrant
    chown vagrant:vagrant -R /home/vagrant/sbt

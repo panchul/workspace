@@ -43,6 +43,9 @@ else
 fi
 
 if [ ! -d "$KAFKA_DEPLOYMENT_DIR/$KAFKA_NAME" ]; then
+
+   sudo $(dirname $0)/jdk_install.sh
+
    echo "[INFO] Installing Kafka ..."
    tar -zxf $KAFKA_INSTALLER_DIR/$KAFKA_NAME.tgz -C $KAFKA_DEPLOYMENT_DIR
    echo "export PATH=\$PATH:$KAFKA_DEPLOYMENT_DIR/$KAFKA_NAME/bin/" >> /home/vagrant/.bashrc
