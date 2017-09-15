@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+WHERE_I_STARTED_PWD=`pwd`
+
 source $(dirname $0)/zookeeper_env.sh
 
 if [[ -z ${ZOOKEEPER_INSTALLER_DIR} ]] ; then
@@ -55,3 +57,5 @@ if [ ! -d $ZOOKEEPER_RUN_DIR ]; then
    sudo mkdir -p $ZOOKEEPER_RUN_DIR
    sudo chown vagrant:vagrant -R $ZOOKEEPER_RUN_DIR
 fi
+
+cd $WHERE_I_STARTED_PWD

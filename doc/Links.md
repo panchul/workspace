@@ -57,11 +57,15 @@ TODO: Create sub-pages of these.
 - [RegEx](RegEx.md)
 - [Bash](Bash.md)
 
-#### Frameworks and architecture approaches
+#### Frameworks Libraries and architecture approaches
 
  - ReactiveX http://reactivex.io/intro.html
  - [Apache Spark](ApacheSpark.md)
  - [Confluent](Confluent.md)
+ - [Zlib](ZLib.md)
+ - [M4](M4.md)
+ - [ASCIIDoc](asciidoc.md]
+ - [xmlto](xmlto.md)
  
   Nice about fundamentals:
   https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
