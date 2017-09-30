@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+WHERE_I_STARTED_PWD=`pwd`
+
 # do all the provisioning in a dedicated place we can remove to save space
 mkdir -p /home/vagrant/tmp_provisioning
 
@@ -26,3 +28,5 @@ chown --recursive vagrant:vagrant /home/vagrant/tmp_provisioning
 sudo cat /home/vagrant/tmp_provisioning/hosts_append.txt >> /etc/hosts
 
 # /home/vagrant/tmp_provisioning/init.sh
+
+cd $WHERE_I_STARTED_PWD

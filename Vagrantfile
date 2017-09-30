@@ -28,6 +28,10 @@ WORKSPACE_VM_BOOT_TIMEOUT = 2400
 WS_IP_FIRST_24BITS = "192.168.10."
 WS_NETWORK_NAME = "vagrant_ws"
 
+# The ssh ports will be 2201...
+# the host 127.0.0.1
+WS_SSH_PORT_SPACE_START = 2300
+
 WS_IP_SPACE_TEST_START = 1
 
 WS_IP_SPACE_GENERIC_START = 2
@@ -84,9 +88,12 @@ N_JENKINS = 1
 WS_IP_SPACE_SSH_START = 80
 N_SSH = 3
 
+WS_IP_SPACE_NGINX_START = 83
+N_NGINX = 3
+
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
-##################################################
+#######################################################################
 
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -142,6 +149,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 #    SHELL
   end
 
+#######################################################################
 
   # Simplest generic box, with only shell provisioning  
   config.vm.define "gen1", autostart: false do |box|
@@ -193,9 +201,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
     #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
       /home/vagrant/tmp_provisioning/bootstrap.sh
-      /home/vagrant/tmp_provisioning/git_install.sh
+    #  /home/vagrant/tmp_provisioning/git_install.sh
     SHELL
   end
+
+#######################################################################
 
   # another simple one
   config.vm.define "gen2", autostart: false do |box|
@@ -259,7 +269,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       apt-get install -y dos2unix 
       mkdir -p /home/vagrant/tmp_provisioning
       dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-      source /home/vagrant/tmp_provisioning/bootstrap.sh
+      /home/vagrant/tmp_provisioning/bootstrap.sh
     SHELL
 
     box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -307,10 +317,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+      # apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      # dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -343,10 +354,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -380,10 +392,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -427,12 +440,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git_install.sh
-        source /home/vagrant/tmp_provisioning/erlang.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/git_install.sh
+        /home/vagrant/tmp_provisioning/erlang.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -480,14 +494,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git_install.sh
-        source /home/vagrant/tmp_provisioning/jdk_install.sh
-        source /home/vagrant/tmp_provisioning/sbt_install.sh
-        source /home/vagrant/tmp_provisioning/scala_install.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/git_install.sh
+        /home/vagrant/tmp_provisioning/jdk_install.sh
+        /home/vagrant/tmp_provisioning/sbt_install.sh
+        /home/vagrant/tmp_provisioning/scala_install.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -537,11 +552,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/mysql_install.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/mysql_install.sh
         # TODO: finish mysql boxes
       SHELL
 
@@ -583,11 +599,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/haproxy.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/haproxy.sh
         # TODO: finish haproxy boxes
       SHELL
 
@@ -626,10 +643,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     box.vm.provision "shell", inline: <<-SHELL
       export DEBIAN_FRONTEND=noninteractive
-      apt-get install -y dos2unix 
+     #apt-get install -y dos2unix 
       mkdir -p /home/vagrant/tmp_provisioning
-      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-      source /home/vagrant/tmp_provisioning/bootstrap.sh
+      cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+     #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+      /home/vagrant/tmp_provisioning/bootstrap.sh
     SHELL
   end
 
@@ -684,9 +702,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         source /home/vagrant/tmp_provisioning/bootstrap.sh
       SHELL
 
@@ -727,10 +746,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         mkdir -p /home/vagrant/tmp_provisioning
         cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
       #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-      #  source /home/vagrant/tmp_provisioning/git_install.sh
-        source /home/vagrant/tmp_provisioning/jdk_install.sh
-      # source /home/vagrant/tmp_provisioning/zookeeper_install.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+      #  /home/vagrant/tmp_provisioning/git_install.sh
+        /home/vagrant/tmp_provisioning/jdk_install.sh
+      # /home/vagrant/tmp_provisioning/zookeeper_install.sh
         /home/vagrant/tmp_provisioning/zookeeper_install.sh
       SHELL
       
@@ -790,9 +809,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
              mkdir -p /home/vagrant/tmp_provisioning
              cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
             #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
-             source /home/vagrant/tmp_provisioning/bootstrap.sh
+             /home/vagrant/tmp_provisioning/bootstrap.sh
             #  source /home/vagrant/tmp_provisioning/git_install.sh
-             source /home/vagrant/tmp_provisioning/jdk_install.sh
+             /home/vagrant/tmp_provisioning/jdk_install.sh
              /home/vagrant/tmp_provisioning/kafka_install.sh
        SHELL
             
@@ -852,12 +871,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git_install.sh
-        source /home/vagrant/tmp_provisioning/golang.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/git_install.sh
+        /home/vagrant/tmp_provisioning/golang.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -898,12 +918,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git_install.sh
-        source /home/vagrant/tmp_provisioning/docker_install.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/git_install.sh
+        /home/vagrant/tmp_provisioning/docker_install.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -944,13 +965,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
         
         # Maybe do it with Ansible instead
-        source /home/vagrant/tmp_provisioning/apache.sh "#{machine_id}"
+        /home/vagrant/tmp_provisioning/apache_install.sh "#{machine_id}"
+        /home/vagrant/tmp_provisioning/apache_start.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -991,11 +1014,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/git_install.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/git_install.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -1036,15 +1060,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
         
         # At some point wanted java, might be a pre-req
-        #source /home/vagrant/tmp_provisioning/jdk_install.sh
+        #/home/vagrant/tmp_provisioning/jdk_install.sh
         
-        source /home/vagrant/tmp_provisioning/jenkins_install.sh
+        /home/vagrant/tmp_provisioning/jenkins_install.sh
         
       SHELL
 
@@ -1086,10 +1111,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
         export DEBIAN_FRONTEND=noninteractive
-        apt-get install -y dos2unix 
+       #apt-get install -y dos2unix 
         mkdir -p /home/vagrant/tmp_provisioning
-        dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
-        source /home/vagrant/tmp_provisioning/bootstrap.sh
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
@@ -1099,6 +1125,55 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
          ansible.host_key_checking = false
       end
    
+    end
+  end
+
+  (1..N_NGINX).each do |machine_id|
+    config.vm.define "nginx#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+      # box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_NGINX_START+machine_id}"
+      # box.ssh.forward_agent = true
+      # box.ssh.insert_key = false
+      box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+      
+      box.vm.host_name = "nginx#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_NGINX_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        # TODO: The desktop version of the vm is screwed up. :-( It would be nice to repair for using IntelliJ
+        #vb.gui = true
+        #vb.memory = "4096"
+        vb.memory = "2048"
+        #vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+       #apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/nginx_install.sh
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+         /home/vagrant/tmp_provisioning/nginx_start.sh "#{machine_id}"
+      SHELL
     end
   end
 

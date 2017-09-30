@@ -68,4 +68,18 @@ Here's how the subroutines work:
     }
     
 ---
-        
+
+File operations summary        
+https://perldoc.perl.org/functions/open.html
+
+Using sysopen:
+
+    use IO::Handle;
+    sysopen(my $fh, $path, O_RDWR|O_CREAT|O_EXCL)
+            or die "Can't open $path: $!";
+    $fh->autoflush(1);
+    print $fh "stuff $$\n";
+    seek($fh, 0, 0);
+    print "File contains: ", readline($fh);   
+           
+---

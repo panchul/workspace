@@ -89,3 +89,7 @@
 192.168.10.81 ssh1.vm ssh1
 192.168.10.82 ssh2.vm ssh2
 192.168.10.83 ssh3.vm ssh3
+
+192.168.10.84 nginx1.vm nginx1
+192.168.10.85 nginx2.vm nginx2
+192.168.10.86 nginx3.vm nginx3

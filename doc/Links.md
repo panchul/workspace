@@ -135,6 +135,7 @@ TODO: Create sub-pages of these.
 - [make](make.md)
 - [Maven](Maven.md)
 - [Mercurial](Mercurial.md)
+- [Pip](pip.md)  
 - [Rake](Rake.md)  
 - [Sbt](Sbt.md)  
 - [Subversion](Subversion.md)  
@@ -148,8 +149,6 @@ TODO: Create sub-pages of these.
   -- RedHat  
   -- CentOS
   -- [Alpine](Alpine.md)
-  - Commands
-    - [Find](Find.md)
 
 - SunOS  
 - Windows  
@@ -169,10 +168,15 @@ TODO: Create sub-pages of these.
 ### Misc Utilities and Commands
 
 - [Curl](Curl.md)
+- [Find](Find.md)
+- [hostname](hostname.md)
 - [Ipvsadm](ipvsadm.md)
+- [N2W](N2W.md)
 - [netcat(nc)](Netcat.md)
 - [Postman](Postman.md)
+- [screen](screen.md)
 - [tar](tar.md)
+- [sysdig](sysdig.md)
 - ...
 
     
@@ -239,13 +243,18 @@ TODO: Create sub-pages of these.
   - Mongoose
 - BOSH
 
-### Data mining, AI, Misc
+### Data mining, AI, Misc utils
 
 - Chat bots
 - Speech generation
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
 - Splunk https://www.splunk.com/
 - AppDynamics https://www.appdynamics.com/
+- Caffe
+- MXNet
+- Neon
+- Nirvana Cloud
+- TensorFlow
 
 - Nice AI human animation
   https://www.facebook.com/techinsider/videos/814455945419430/

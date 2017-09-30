@@ -119,3 +119,11 @@ Ansible'ized setup for Kafka on AWS EC2 using Galaxy:
 https://galaxy.ansible.com/giladju/setup-kafka-cluster-ec2/
 
 ---
+
+Resizing of the volumes
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html
+
+https://aws.amazon.com/premiumsupport/knowledge-center/expand-root-ebs-linux/
+
+
+---

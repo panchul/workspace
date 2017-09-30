@@ -222,3 +222,55 @@ https://github.com/hashicorp/vagrant/issues/1673
 
 ---
 
+Sometimes the private network does not seem to work, or some errors pop up. Here is the templates that has no errors:
+
+    # -*- mode: ruby -*-
+    # vi: set ft=ruby :
+
+    Vagrant.configure("2") do |config|
+
+      config.vm.box = "puppetlabs/centos-6.6-64-puppet"
+      config.ssh.forward_agent = true # So that boxes don't have to setup key-less ssh
+      config.ssh.insert_key = false # To generate a new ssh key and don't use the default Vagrant one
+ 
+      # common provisioning for all 
+      config.vm.provision "shell", path: "scripts/init.sh"
+  
+      # configure cluster
+      (1..3).each do |i|
+        config.vm.define "mynodehost#{i}" do |s|
+          s.vm.hostname = "mynodehost#{i}"
+          s.vm.network "private_network", ip: "10.30.3.#{i+1}", netmask: "255.255.255.0", virtualbox__intnet: "my-network", drop_nat_interface_default_route: true
+          s.vm.provision "shell", path: "scripts/mynodehost.sh", args:"#{i}", privileged: false
+        end
+      end
+
+      config.vm.provider "virtualbox" do |v|
+        #  This setting controls how much cpu time a virtual CPU can use. A value of 50 implies a single virtual CPU can use up to 50% of a single host CPU.
+        v.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
+      end
+    end
+
+---
+
+To get the information how to ssh to that box, use
+
+    $ vagrant ssh-config myhost1
+    Host myhost1
+    HostName 127.0.0.1
+    User vagrant
+    Port 2204
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking yes
+    PasswordAuthentication yes
+    IdentityFile /Users/fbi/.vagrant/machines/gen1/virtualbox/private_key
+    IdentitiesOnly yes
+    LogLevel FATAL
+    ForwardAgent yes
+    
+Now you can get in:    
+
+    $ ssh -p 2204 -i /Users/fbi/.vagrant/machines/myhost1/virtualbox/private_key vagrant@127.0.0.1
+
+---
+

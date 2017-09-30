@@ -285,6 +285,8 @@ The script is below, here is how to plug it in:
     $ chmod 755 /etc/init.d/oracle_oem
     $ chkconfig oracle_oem on
 
+There is a script 'skeleton' in /etc/init.d/, that should be a template for adding daemons.
+
 Here is the script, add it into file ```/etc/init.d/oracle_oem```
 The line ```# chkconfig: 2345 99 01``` is about runlevel actions. See ```man chkconfig```
 
@@ -385,5 +387,47 @@ To see 100 biggest files this idiom could be helpful:
 du in megabytes.
 sorting with numeric mode.
 last 100 lines of the output.
+
+Something like this would also work to find what's taking space:
+
+    $ sudo find / -type f -size +1000M -exec ls -lh {} \; 
+
+---
+
+Simple way to see the statistics of the sytem on a vm. The fact that it prints it
+one by line, could be a good feed for the kafka console producer/consumer:
+
+    $ vmstat -a 1 -n 100
+    procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+    r  b   swpd   free  inact active   si   so    bi    bo   in   cs us sy id wa st
+    1  0      0 1569096 326080 993940    0    0    35    15   87  290  1  0 98  0  0
+    0  0      0 1568900 326080 993952    0    0     0     0  250  658  1  0 99  0  0
+    0  0      0 1568924 326080 993952    0    0     0     0  170  666  2  1 98  0  0
+    0  0      0 1568924 326080 993952    0    0     0     0  192  564  1  1 99  0  0
+    0  0      0 1568900 326080 993952    0    0     0     0  136  516  1  0 99  0  0
+    1  0      0 1568900 326080 993952    0    0     0     0  134  520  1  1 99  0  0
+    ^C
+
+Now where the Kafka is:
+
+    $ ./kafka-topics.sh --zookeeper 192.168.10.56:2181,192.168.10.57:2181 --replication-factor 2 --partitions 5 --topic myvmstat --create
+    Created topic "myvmstat".
+
+On consumer side:
+
+    $ ./kafka-console-consumer.sh --zookeeper 192.168.10.56:2181,192.168.10.57:2181 --topic myvmstat
+
+On producer side:
+
+    $ vmstat -a 1 -n 100 | ./kafka-console-producer.sh --broker-list 192.168.10.61:9092,192.168.10.62 --topic myvmstat 
+
+See the data stream in.
+
+You can observe the offsets using a command like this:
+
+    $kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list kafka-broker1.vm:9092,kafka-broker2.vm:9092,kafka-broker3.vm:9092 --topic mytopic --time -1
+    mytopic:0:109
+
+where -1 means the latest offset. And then '0' is the first partition, '109' is the latest offset (if we fed 102 messages)
 
 ---
