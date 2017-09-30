@@ -24,6 +24,26 @@ To start the daemon:
 
 ---
 
+One of the ways to see the disk usage:
+
+    $ docker system df -v
+
+    Images space usage:
+
+    REPOSITORY          TAG                 IMAGE ID            CREATED ago         SIZE                SHARED SIZE         UNIQUE SiZE         CONTAINERS
+    ...
+    centos              latest              328edcd84f1b        7 weeks ago ago     192.5MB             0B                  192.5MB             0
+    ...
+
+    Containers space usage:
+
+    CONTAINER ID        IMAGE               COMMAND                  LOCAL VOLUMES       SIZE                CREATED ago         STATUS                     NAMES
+    ...
+    1ac3653c24d7        53911b53e21b        "/bin/server.out "       0                   0B                  6 weeks ago ago     Exited (137) 6 weeks ago   peaceful_carson
+    ...
+
+---
+
 Docker for Ubuntu:
 
 https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requirements

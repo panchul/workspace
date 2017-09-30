@@ -122,3 +122,8 @@ jekinks2 ansible_host=192.168.10.80
 ssh1 ansible_host=192.168.10.81
 ssh2 ansible_host=192.168.10.82
 ssh3 ansible_host=192.168.10.83
+
+[nginx_sandboxes]
+nginx1 ansible_host=192.168.10.84
+nginx2 ansible_host=192.168.10.85
+nginx3 ansible_host=192.168.10.86

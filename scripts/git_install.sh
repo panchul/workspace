@@ -2,6 +2,12 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
+# simple, but external way:
+#
+# sudo apt-get -y install git 
+#
+
+
 GIT_INSTALLER_DIR="/vagrant/install"
 GIT_VERSION="2.9.5"
 GIT_NAME="git-${GIT_VERSION}"
@@ -72,9 +78,5 @@ else
    echo "[INFO] Skipping building Git: already have $GIT_DEPLOYMENT_DIR/$GIT_NAME/bin/git"
 fi
 
-# simple, but external way:
-#
-# sudo apt-get -y install git 
-#
 
 # TODO: install more mergetools, gui, etc.
