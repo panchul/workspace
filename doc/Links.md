@@ -23,6 +23,7 @@ TODO: Create sub-pages of these.
 - Nagios
 - Munin
 - Cacti
+- [Rex-Ray](RexRay.md)
 
 
 ### Programming languages
@@ -39,6 +40,7 @@ TODO: Create sub-pages of these.
   - CT
   - MochiWeb
 - [Perl](Perl.md)  
+- [Python](Python.md)  
 - Assembler  
 - [Ruby](Ruby.md)  
 - ML  
@@ -112,6 +114,7 @@ TODO: Create sub-pages of these.
 - [MySQL](MySQL.md)
 - PostGRE
 - MongoDB
+- [Redis](Redis.md)
 - Riak
 - [Hadoop](Hadoop.md)
 - CouchDB http://couchdb.apache.org/
@@ -159,6 +162,7 @@ TODO: Create sub-pages of these.
 
 - MochiWeb
 - [Apache](Apache.md)
+- [Disqus](Disqus.md)
 - [nginx](nginx.md)
 - [PlayFramework](PlayFramework.md)
 - [Scalatra](Scalatra.md)
