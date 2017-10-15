@@ -233,3 +233,29 @@ http://tldp.org/LDP/abs/html/complexfunct.html
 
 
 ---
+
+Example of using ```<<<``` and ```read```
+
+    $ cat /tmp/ifs.sh
+    LINE="7.6.5.4"
+    IFS='.'  read -a ARRAY <<< "$LINE"
+    echo "$IFS"
+    echo "${ARRAY[@]}"
+    
+    $ bash /tmp/ifs.sh 
+    
+    7 6 5 4
+    
+By the way, a typo can cause different result:
+    
+    $ cat /tmp/ifs.sh 
+    LINE="7.6.5.4"
+    IFS='.';  read -a ARRAY <<< "$LINE"
+    echo "$IFS"
+    echo "${ARRAY[@]}"
+    
+    $ bash /tmp/ifs.sh 
+    .
+    7 6 5 4
+
+---

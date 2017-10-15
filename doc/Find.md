@@ -27,3 +27,9 @@ All .jpg and .png files, case insensitive
 See also [RegEx](RegEx.md)
 
 ---
+
+Quick search and replace
+
+    $ find . -name "*.txt" -exec sed 's/myfrom/myto/' +
+
+--

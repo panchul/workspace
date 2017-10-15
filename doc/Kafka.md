@@ -285,3 +285,24 @@ where -1 means the latest offset. And then '0' is the first partition, '109' is 
 https://github.com/yahoo/kafka-manager/issues/148
 
 ---
+
+Kafkacat utility overview (b.t.w there's kafkacat and kafka-cat. :-) ):
+
+https://engineering.randrr.com/debugging-with-kafkacat-b4da80079f56
+
+
+---
+
+Nice summary about Kafka clients. Kafka Clients (At-Most-Once, At-Least-Once, Exactly-Once, and Avro Client) 
+
+https://dzone.com/articles/kafka-clients-at-most-once-at-least-once-exactly-o
+
+---
+
+
+Kafka Security
+
+http://kafka.apache.org/documentation/#security
+
+
+---
