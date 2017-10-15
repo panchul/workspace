@@ -14,7 +14,12 @@ https://github.com/awslabs/aws-shell
 
 ---
 
-AWS Shell, a cli to aws
+AWS CLI
+http://docs.aws.amazon.com/cli/latest/userguide/installing.html
+
+---
+
+Alternative AWS Shell, a cli to aws
 https://github.com/awslabs/aws-shell
 
 ---
@@ -125,5 +130,11 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html
 
 https://aws.amazon.com/premiumsupport/knowledge-center/expand-root-ebs-linux/
 
+
+---
+
+About resizing of instances:
+
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html
 
 ---

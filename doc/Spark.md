@@ -23,3 +23,9 @@ https://github.com/pfcoperez/mandelbrot_spark
 http://blog.stratio.com/sparkart-part-one/
 
 ---
+
+A Spark playlist. Big Data with Spark, etc.
+
+https://www.youtube.com/playlist?list=PLLMXbkbDbVt-f6qwCZqfq7e_6eT8aFxzT
+
+---
