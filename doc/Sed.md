@@ -10,11 +10,15 @@ To add/remove carriage return, subset of ```dos2unix``` file convertion
 
 To remove ( '-i' means edit files in place):
 
-    sed -i 's/\r//' CRLF.txt
+    $ sed -i 's/\r//' CRLF.txt
 
 To add:
 
-    sed -i 's/$/\r/' LF.txt
+    $ sed -i 's/$/\r/' LF.txt
+
+On MacOS, you need to provide the extention for the backup:
+
+    $ sed -i ".orig" 's/myfrom/myto/' aaa.txt 
 
 ---
 

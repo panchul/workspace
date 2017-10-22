@@ -117,3 +117,11 @@ If the services are running on their own, the entry point could be just command 
     $ /bin/bash -c tail -f /usr/local/mywebserver/log.out
 
 ---
+
+Example how to save a docker image in a file:
+
+    $ docker image save docker-myrepo.com/base/myserver:myversion-1.2.3 | gzip > mybase_myserver_myversion-1.2.3.docker.tgz
+
+And restore in a similar fashion.
+
+---

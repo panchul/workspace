@@ -91,6 +91,10 @@ N_SSH = 3
 WS_IP_SPACE_NGINX_START = 83
 N_NGINX = 3
 
+WS_IP_SPACE_WP_START = 86
+N_WP = 3
+
+
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
 #######################################################################
@@ -1173,6 +1177,55 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
          /home/vagrant/tmp_provisioning/nginx_start.sh "#{machine_id}"
+      SHELL
+    end
+  end
+
+  (1..N_WP).each do |machine_id|
+    config.vm.define "wp#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+      # box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_WP_START+machine_id}"
+      # box.ssh.forward_agent = true
+      # box.ssh.insert_key = false
+      box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+      
+      box.vm.host_name = "wp#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_WP_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        # TODO: The desktop version of the vm is screwed up. :-( It would be nice to repair for using IntelliJ
+        #vb.gui = true
+        #vb.memory = "4096"
+        vb.memory = "2048"
+        #vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+       #apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/wp_install.sh
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+         /home/vagrant/tmp_provisioning/wp_start.sh "#{machine_id}"
       SHELL
     end
   end

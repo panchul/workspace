@@ -86,3 +86,11 @@ Let's consider a class Base and a class Child that inherits from Base.
 
 ---
 
+Had an issue with compiling relatively basic code:
+```gcc: error trying to exec 'cc1plus': execvp: No such file or directory``` 
+needed to run these to fix it:
+
+    $ sudo apt-get update
+    $ sudo apt-get install --reinstall build-essential
+
+--

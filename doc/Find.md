@@ -30,6 +30,10 @@ See also [RegEx](RegEx.md)
 
 Quick search and replace
 
-    $ find . -name "*.txt" -exec sed 's/myfrom/myto/' +
+    $ find . -name "*.txt" -exec sed -i ".orig" 's/myfrom/myto/' +
+
+On MacOS,  you might need to do something about the command, some special hoops to jump through:
+
+    $ find . -name "aa*.txt" -exec sed -i ".orig" 's/myto/myto2/' {} \;
 
 --
