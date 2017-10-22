@@ -7,5 +7,8 @@ fi
 # TODO: do it the right way, package and turn into a service.
 
 cd /home/vagrant/kafka-manager
+#
+# TODO: I think I ended up having to do the packaging and run the app instead
+#
 sudo ./sbt run
 

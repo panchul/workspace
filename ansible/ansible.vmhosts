@@ -127,3 +127,8 @@ ssh3 ansible_host=192.168.10.83
 nginx1 ansible_host=192.168.10.84
 nginx2 ansible_host=192.168.10.85
 nginx3 ansible_host=192.168.10.86
+
+[wp_sandboxes]
+wp1 ansible_host=192.168.10.87
+wp2 ansible_host=192.168.10.88
+wp3 ansible_host=192.168.10.89

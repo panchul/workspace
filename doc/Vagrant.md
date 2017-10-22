@@ -274,3 +274,8 @@ Now you can get in:
 
 ---
 
+Automatically download the guest additions:
+https://dzone.com/articles/automatically-download-and
+(not sure if it works, tried it out)
+
+--- 
