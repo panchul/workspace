@@ -63,5 +63,11 @@ http://stackoverflow.com/questions/29203069/format-nullable-seq-or-list-of-objec
 
 ---
 
+JSON validation using Scala-base lib on PLAY.
+play-json-schema-validator - https://github.com/eclipsesource/play-json-schema-validator
  
- 
+Java-based Schema validation, Jackson library 
+json-schema-validator - https://github.com/daveclayton/json-schema-validator
+
+---
+

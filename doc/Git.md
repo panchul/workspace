@@ -110,3 +110,121 @@ Example of starting a new repo from existing sources
       Checking connectivity... done.
 
 ---
+
+Nice way to search:
+
+    $ git grep -e "pattern" branch -- some/file
+
+    $ git log --pickaxe-regex -S"some.*code.*change"
+    
+---
+
+One way to set up a git-daemon (see another one below)
+https://git-scm.com/book/en/v2/Git-on-the-Server-Git-Daemon
+
+Create git group and git user (restrict them properly).
+Crate folder ```/srv/git/```
+Create file ```/etc/systemd/system/git-daemon.service```:
+
+    ==================
+    [Unit]
+    Description=Start Git Daemon
+    
+    [Service]
+    ExecStart=git daemon --reuseaddr --base-path=/srv/git/ /srv/git/
+    
+    Restart=always
+    RestartSec=500ms
+    
+    StandardOutput=syslog
+    StandardError=syslog
+    SyslogIdentifier=git-daemon
+    
+    User=git
+    Group=git
+    
+    [Install]
+    WantedBy=multi-user.target
+    ==================
+    
+Run to automatically start the service on boot.
+   
+    $ systemctl enable git-daemon
+
+To start:
+    
+    $ systemctl start git-daemon
+
+Similar to stop, restart, etc.
+If you edit the git-daemon.service file, you might run this to refresh the config:
+
+    $ systemctl daemon-reload
+
+In the repository you need to let the repo be exported:
+
+    $ cd /path/to/
+    $ git init --shared --bare project.git
+    $ cd /path/to/project.git
+    $ touch git-daemon-export-ok
+
+In /etc/services there is a line for git-daemon port:
+
+```
+...
+git             9418/tcp                        # Git Version Control System
+...
+```
+
+To let others push into this repository, add to the git repository's config file:
+
+    $ cd /path/to/project.git
+    $ vi config
+    
+    ...
+    [daemon]
+    # UNSECURE anonymous Write access
+        receivepack = true
+    ...
+
+---
+
+This seems to be more useful:
+https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
+
+
+
+
+
+---
+
+If you write a script with name ```git-somename```, and add it to PATH, git will execute it when you run, for example:
+
+    $ git somename arg1 arg2 whatever
+
+---
+
+Another neat trick to keep but not track a file. This will allow you to
+get a local changes be ignored by git:
+
+    $ git update-index --assume-unchanged Makefile
+
+If you do want to push the local changes to that file, turn it back on:
+
+    $ git update-index --no-assume-unchanged Makefile
+    $ git add -p Makefile
+     # ...
+     # add the makefile shanges
+     # ...
+    $ git commit
+    $ git update-index --assume-unchanged Makefile
+    $ git push
+
+---
+
+There is a feature in git, to make easier merging:
+
+    $ git config --global rerere.enabled true
+
+It saves left and right for the merge and caches the resolution.
+
+---

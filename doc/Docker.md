@@ -125,3 +125,52 @@ Example how to save a docker image in a file:
 And restore in a similar fashion.
 
 ---
+
+Neat trick to use dockerized Kafka instead of the command line.
+```--rm``` removes the container when exits.
+```-i```  iteractive mode 
+```-t```  allocate pseudo tty 
+
+    $ docker run --rm -it ches/kafka:0.10.1.0 bin/kafka-topics.sh --zookeeper mykafka.mykafkadomain:2181 --topic testTopic --describe
+    Topic:testTopic	PartitionCount:3	ReplicationFactor:1	Configs:
+	    Topic: testTopic	Partition: 0	Leader: 1001	Replicas: 1001	Isr: 1001
+
+---
+
+Transferring files in and out of a container without mounting volumes.
+
+    $ docker cp ~/file.txt $container_id:/home/me/
+    $ docker cp $container_id:/home/me/file.txt .
+
+---
+
+Linking containers. E.g. Zookeeper and Kafka on containers, with internal network named ```myzk```:
+
+    $ docker run --name my-zookeeper -p 2181:2181 myartefactory:8080/my-zookeeper
+    $ docker run --link my-zookeeper:myzk --name my-kafka -p 9092:9092 myartefactory:8080/my-kafka
+
+---
+
+From here: https://docs.docker.com/compose/bundles/
+
+About experimental Docker features:
+ 
+The easiest way to produce a bundle is to generate it using docker-compose from an existing docker-compose.yml.
+Of course, that’s just one possible way to proceed, in the same way that docker build isn’t the only way to
+produce a Docker image.
+From docker-compose:
+
+    $ docker-compose bundle
+    WARNING: Unsupported key 'network_mode' in services.nsqd - ignoring
+    WARNING: Unsupported key 'links' in services.nsqd - ignoring
+    WARNING: Unsupported key 'volumes' in services.nsqd - ignoring
+    [...]
+    Wrote bundle to vossibility-stack.dab
+
+---
+
+Nice Docker cheat sheet repo, a number of nice links and how-tos:
+
+https://github.com/wsargent/docker-cheat-sheet
+
+---

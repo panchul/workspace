@@ -306,3 +306,23 @@ http://kafka.apache.org/documentation/#security
 
 
 ---
+
+Another Getting Started document, for CentOS 7
+https://www.vultr.com/docs/how-to-install-apache-kafka-on-centos-7
+
+---
+
+Deleting a topic in Kafka:
+
+1. Stop Kafka server.
+2. Delete the topic directory (with ```rm -rf``` command).
+3. Connect to Zookeeper instance: ```zookeeper-shell.sh host:port```,
+   observe that the topic is there: ```ls /brokers/topics```
+4. Remove the topic folder from ZooKeeper using ```rmr /brokers/topics/topic2die```
+5. Restart Kafka server
+6. Confirm if it was deleted or not by using this command ```kafka-topics.sh --list --zookeeper host:port```
+
+If the cluster was setup with 'auto-create topics' flag, you need to make sure
+the producers and consumers are not connected, or the topic will be auto-created.
+
+---

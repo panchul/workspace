@@ -8,6 +8,10 @@ https://docs.docker.com/engine/swarm/
 Admin Guide:
 https://docs.docker.com/engine/swarm/admin_guide/
 
+---
+
+Install CS Docker Engine
+https://docs.docker.com/cs-engine/1.13/
 
 ---
 

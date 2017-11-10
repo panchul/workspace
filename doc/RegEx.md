@@ -4,6 +4,12 @@ See Also:
 - [Sed](Sed.md)
 - [Awk](Awk.md)
 
+--
+
+End of line symbol is "$". To find the executable aws, for example:
+
+    $ find / 2>/dev/null | grep --regex ".*aws$"
+
 ---
 
 Nice website for regexes, good examples:

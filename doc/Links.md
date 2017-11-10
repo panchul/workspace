@@ -120,6 +120,8 @@ TODO: Create sub-pages of these.
 - [Hadoop](Hadoop.md)
 - CouchDB http://couchdb.apache.org/
 - [Couchbase](Couchbase.md)
+- A blog with comparison: http://highscalability.com/blog/2015/12/30/how-to-choose-an-in-memory-nosql-solution-performance-measur.html
+
 
 ### Version control systems and configuration tools 
 
@@ -247,6 +249,7 @@ TODO: Create sub-pages of these.
   - [Ejabberd](Ejabberd.md)
   - Mongoose
 - BOSH
+- [SMTP and mailservers](SMTP.md)
 
 ### Data mining, AI, Misc utils
 
@@ -271,6 +274,10 @@ Nice MIT OCW:
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
 
 Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
+
+### Computer Graphics and Computer Vision
+
+- OpenCV  https://opencv.org/
 
 
 

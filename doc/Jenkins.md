@@ -22,3 +22,8 @@ For my sandbox, once the installation is over, open in browser "jenkins1.vm:8080
 The initial admin password was at /var/lib/jenkins/secrets
 
 ---
+
+Installing Jenkins on AWS:
+https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
+
+---

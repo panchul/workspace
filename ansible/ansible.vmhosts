@@ -132,3 +132,8 @@ nginx3 ansible_host=192.168.10.86
 wp1 ansible_host=192.168.10.87
 wp2 ansible_host=192.168.10.88
 wp3 ansible_host=192.168.10.89
+
+[snmp_sandboxex]
+snmp1 ansible_host=192.168.10.90
+snmp2 ansible_host=192.168.10.91
+snmp3 ansible_host=192.168.10.92

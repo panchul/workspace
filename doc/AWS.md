@@ -138,3 +138,18 @@ About resizing of instances:
 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html
 
 ---
+
+Installing Jenkins on AWS:
+https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
+
+---
+
+AWS CLI getting started:
+http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+
+You might want to run "aws configure" to use proper AWS access credentials.
+
+For Python work, install boto3, run "pip install boto3" on a system where you want to run it,
+Boto3 repo: https://github.com/boto/boto3
+
+---
