@@ -101,8 +101,8 @@ eliminate the need for dns server.
 |192.168.10.61     | kafka_broker1   | Kafka nodes                                          |          |
 |192.168.10.62     | kafka_broker2   |                                                      |          |
 |192.168.10.63     | kafka_broker3   |                                                      |          |
-|192.168.10.64     | kafka_broker4   |                                                      |          |
-|192.168.10.65     | kafka_broker5   |                                                      |          |
+|192.168.10.64     | kafka_broker4   |  I put kafka-monitor on this one                     |          |
+|192.168.10.65     | kafka_broker5   |  dockerized (1x1 cluster )                           |          |
 |==================+=================+======================================================|==========|  
 |192.168.10.66     | golang1         | Golang sandbox                                       |          |
 |192.168.10.67     | golang2         |                                                      |          |
@@ -128,6 +128,14 @@ eliminate the need for dns server.
 |192.168.10.82     | ssh2            |                                                      |          |
 |192.168.10.83     | ssh3            |                                                      |          |
 |==================+=================+======================================================|==========|  
+|192.168.10.84     | nginx1          | Nginx sandbox.                                       |          |
+|192.168.10.85     | nginx2          |                                                      |          |
+|192.168.10.86     | nginx3          |                                                      |          |
+|==================+=================+======================================================|==========|  
+|192.168.10.87     | wp1             | WordPress sandbox. Web servers.                      |          |
+|192.168.10.88     | wp2             |                                                      |          |
+|192.168.10.89     | wp3             |                                                      |          |
+|==================+=================+======================================================|==========|  
 ```                                                                                          
 
 The VMs have a mapped folder to the host, ```/vagrant```, and ```projects```,
@@ -146,6 +154,7 @@ Other sandbox repositories could be provisioned on these boxes. For example,
 * [https://github.com/panchul/sb_javascript](https://github.com/panchul/sb_javascript)
 * [https://github.com/panchul/sb_jenkins.git](https://github.com/panchul/sb_jenkins.git)
 * [https://github.com/panchul/sb_perl](https://github.com/panchul/sb_perl)
+* [https://github.com/panchul/sb_python](https://github.com/panchul/sb_python)
 * [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala)
 * [https://github.com/panchul/sb_shell](https://github.com/panchul/sb_shell) - sandbox for shell
  script development, tips and tricks you don't have to re-type every time you need them on a new machine.

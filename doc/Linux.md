@@ -434,3 +434,80 @@ You can observe the offsets using a command like this:
 where -1 means the latest offset. And then '0' is the first partition, '109' is the latest offset (if we fed 102 messages)
 
 ---
+
+Adding swap space 
+    
+    $ dd if=/dev/zero of=/swapfile bs=1024 count=8192000
+    $ chmod 600 /swapfile
+    $ mkswap /swapfile
+
+Make swapfile immediately available :
+
+    $ swapon  /swapfile
+
+Permanent swap file entry:
+
+    $ echo "/swapfile       none       swap       sw.    0   0" >> /etc/fstab 
+---
+
+Quick script I wrote to add a new volume to aws instance, and mount it to ```/data```
+(there is a page on aws website that explains what it is)
+
+    mybootstrap.sh
+    =========================
+    #!/usr/bin/env bash
+    
+    # not related to volumes, but too cute an idiom to throw out
+    sudo sh -c "cat >> /etc/hosts " << 'EOF'
+    1.2.3.4  some.server.test.com  
+    EOF
+
+    lsblk
+    sudo file -s /dev/xvdb
+    pause "should be data, if not, check what is going on - you might lose data"
+    sudo mkfs -t ext4 /dev/xvdb
+    sudo mkdir -p /data
+    
+    sudo file -s /dev/xvdb
+    sudo cp /etc/fstab /etc/fstab.orig
+    
+    # prints the uuid
+    sudo file -s /dev/xvdb | awk '{printf "%s    /data ext4 defaults,nofail 0 2\n", $8}' > myvolume
+    sudo sh -c "cat myvolume >> /etc/fstab "
+    
+    sudo mount -a
+    
+    ls -la /data
+    ===========================
+
+Yay, the volume is there.
+
+---
+
+A few notes on systemd journal rate update
+https://www.rootusers.com/how-to-change-log-rate-limiting-in-linux/
+(seem to be a neat website)
+
+---
+
+Change the lineendings in the vi:
+
+    :e ++ff=dos
+    :e ++ff=mac
+    :e ++ff=unix
+
+This can also be used as saving operation (:w alone will not save using the lineendings you see on screen):
+
+    :w ++ff=dos
+    :w ++ff=mac
+    :w ++ff=unix
+
+And you can use it from the command-line:
+
+    for file in $(ls *.txt)
+    do 
+      vi +":w ++ff=unix" +":q" ${file}
+    done
+
+--
+

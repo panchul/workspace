@@ -180,3 +180,18 @@ From this gist: https://gist.github.com/cowboyrushforth/5963752
     }
 
 ---
+
+Generate a 2048 bit RSA Key
+You can generate a public and private RSA key pair like this:
+
+    $ openssl genrsa -des3 -out private.pem 2048
+
+This exports public key:
+
+    $ openssl rsa -in private.pem -outform PEM -pubout -out public.pem
+
+This exports private key:
+
+    $ openssl rsa -in private.pem -out private_unencrypted.pem -outform PEM
+
+---
