@@ -174,3 +174,13 @@ Nice Docker cheat sheet repo, a number of nice links and how-tos:
 https://github.com/wsargent/docker-cheat-sheet
 
 ---
+
+Link about how to mount volumes on a running Docker container, nice script to automate it.
+https://jpetazzo.github.io/2015/01/13/docker-mount-dynamic-volumes/
+
+---
+
+Nice meetup talk about container monitoring. Sysdig, Datadog and Prometheus, etc.
+https://www.youtube.com/watch?v=XiC6Dy38HnA
+
+---

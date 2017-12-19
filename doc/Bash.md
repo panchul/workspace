@@ -259,3 +259,23 @@ By the way, a typo can cause different result:
     7 6 5 4
 
 ---
+
+Quick script to append the line numbers and possibly offset.
+
+    #!/usr/bin/env bash
+    
+    if [[ -n "$2" ]] ; then
+      MYCOUNTER=$(($2))
+    else
+      MYCOUNTER=0
+    fi
+    
+    cat $1 | \
+        while IFS='' read -r line || [[ -n "$line" ]]; do 
+            if [[ -n "$line" ]] ; then
+                echo $MYCOUNTER $line
+                MYCOUNTER=$(($MYCOUNTER+1))
+            fi
+        done 
+    
+---    
