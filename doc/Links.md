@@ -99,13 +99,14 @@ TODO: Create sub-pages of these.
 
 ### Data formats, APIs, Protocols
 
+- [Base64](Base64.md)
 - [HTML](HTML.md)
 - Jiffy (JSON converting)
 - [JSON](JSON.md)
 - [MarkDown](MarkDown.md)  
-- [UTF-8](UTF-8)  
 - [ScalaDoc](Scaladoc.md)
 - Swagger https://swagger.io/
+- [UTF-8](UTF-8)  
 - [XML](XML.md)
 - [YAML](YAML.md)
 
@@ -281,15 +282,19 @@ Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
 
 
 
+### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
+
+- [Jenkins](Jenkins.md)
+- Jira
+- [Octopus](Octopus.md)
+- Phabricator
+- Redmine
+- Sonarqube
+
 ### Process management and misc software lifecycle issues
 
 - [Scrum](Scrum.md)
 - Kanban
-- Jira
-- [Jenkins](Jenkins.md)
-- Redmine
-- Sonarqube
-- Phabricator
 - Trello.com
 - www.planitpoker.com
 - www.websequencediagrams.com

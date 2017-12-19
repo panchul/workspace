@@ -326,3 +326,9 @@ If the cluster was setup with 'auto-create topics' flag, you need to make sure
 the producers and consumers are not connected, or the topic will be auto-created.
 
 ---
+
+Rebalancing topics (partition leaders, etc) in Kafka cluster:
+
+https://blog.imaginea.com/how-to-rebalance-topics-in-kafka-cluster/
+
+---
