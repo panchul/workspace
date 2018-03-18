@@ -27,7 +27,7 @@ TODO: Create sub-pages of these.
 - [Rex-Ray](RexRay.md)
 
 
-### Programming languages
+### Programming languages, scripts, etc.
 
 - [C/C++](CPP.md)
   - STL
@@ -40,6 +40,8 @@ TODO: Create sub-pages of these.
   - Rebar
   - CT
   - MochiWeb
+- [Scala](Scala.md)  
+- [F#](FSharp.md)  
 - [Perl](Perl.md)  
 - [Python](Python.md)  
 - Assembler  
@@ -47,7 +49,6 @@ TODO: Create sub-pages of these.
 - ML  
 - [Racket](Racket.md)  
 - [Go](Go.md)  
-- [Scala](Scala.md)  
 - [Java](Java.md)  
 - [Matlab/Simulink](Matlab.md)  
 - [R](R.md)
@@ -57,6 +58,7 @@ TODO: Create sub-pages of these.
 - [Awk](Awk.md)
 - [Sed](Sed.md)
 - [JavaScript](JavaScript.md)  
+- [CSS](CSS.md)
 - [RegEx](RegEx.md)
 - [Bash](Bash.md)
 
@@ -192,6 +194,9 @@ TODO: Create sub-pages of these.
 
 - [wxWidgets](wxWidgets.md)
 - [OpenGL](OpenGL.md)
+- GTK+ http://www.gtk.org/
+- Qt http://qt-project.org
+
 
   
 ### Micorcontrollers
@@ -276,11 +281,15 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-in
 
 Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
 
+Nice collection of algorithms and solutions
+https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-problems-and-their-solutions-b45a83d803f0
+
+
 ### Computer Graphics and Computer Vision
 
 - OpenCV  https://opencv.org/
-
-
+- [SVG](SVG.md)
+- [PNG](png.md)
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
 
@@ -309,7 +318,16 @@ Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
 - SASL https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer
 - [SSH](SSH.md)
 - TLS, Transport Layer Security https://en.wikipedia.org/wiki/Transport_Layer_Security
+- [Obfuscators](Obfuscators.md)
 
+
+## Photography and optics
+
+- Lunar Eclipse photography tips: https://www.bhphotovideo.com/explora/photography/tips-and-solutions/22-tips-for-photographing-a-lunar-eclipse
+
+## Filmmaking
+
+-﻿Shot Lists and Script Lining. https://nofilmschool.com/2018/02/shot-lists-and-script-lining-how-prepare-your-screenplay-shoot
 
 
 ## Career etc.
@@ -319,7 +337,9 @@ Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
 - [Startup](Startup.md)
 
 
+## Meteorology and Misc Technology
 
+-- NOAA data: https://www1.ncdc.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf
 
 
 ## Motivational
