@@ -5,8 +5,12 @@
 VAGRANTFILE_API_VERSION = "2"
 
 # TODO: something got messed up with ubuntu boxes. Network acts out, especially with gui. Use w/o gui for now.
-WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1404-desktop"
-WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
+WORKSPACE_VM_BOX_WITH_GUI = "ubuntu/bionic64"
+#WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
+
+#WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1404-desktop"
+#WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
+
 #WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1604-desktop"
 #WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1604-desktop"
 
@@ -298,7 +302,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.define "yser#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+     # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_YARC_SERVER_START+machine_id}"
       box.ssh.forward_agent = true

@@ -31,7 +31,8 @@ TODO: Create sub-pages of these.
 
 - [C/C++](CPP.md)
   - STL
-  - [Boost](Boost.md)   
+  - [Boost](Boost.md)
+- [C#](CSharp.md)   
 - [Erlang/OTP](Erlang.md)  
   - Kerl
   - emake
@@ -62,11 +63,13 @@ TODO: Create sub-pages of these.
 - [RegEx](RegEx.md)
 - [Bash](Bash.md)
 
-#### Frameworks Libraries and architecture approaches
+#### Frameworks Libraries, Static code analyse, architecture approaches, etc.
 
  - ReactiveX http://reactivex.io/intro.html
  - [Apache Spark](ApacheSpark.md)
+ - Codeclimate https://developer.codeclimate.com/#overview
  - [Confluent](Confluent.md)
+ - Domain Driven Design (DDD)
  - [Zlib](ZLib.md)
  - [M4](M4.md)
  - [ASCIIDoc](asciidoc.md]
@@ -101,13 +104,16 @@ TODO: Create sub-pages of these.
 
 ### Data formats, APIs, Protocols
 
+- [APIs](APIs.md)
 - [Base64](Base64.md)
 - [HTML](HTML.md)
 - Jiffy (JSON converting)
 - [JSON](JSON.md)
-- [MarkDown](MarkDown.md)  
+- [JSON API](JSON-API.md)
+- [MarkDown](MarkDown.md)
+- [Protobuf](Protobuf.md)  
 - [ScalaDoc](Scaladoc.md)
-- Swagger https://swagger.io/
+- [Swagger](Swagger.md)
 - [UTF-8](UTF-8)  
 - [XML](XML.md)
 - [YAML](YAML.md)
@@ -132,7 +138,7 @@ TODO: Create sub-pages of these.
 - [Autoconf](Autoconf.md)
 - autoconfig
 - [Automake](Automake.md)
-- bundler
+- bundler(packager for Ruby) http://bundler.io/
 - cmake https://cmake.org/overview/
 - [Git](Git.md)  
   - gitk
@@ -232,12 +238,14 @@ TODO: Create sub-pages of these.
 
 ### Testing Frameworks
 
-- Tsung
-- Graphite
-- Meck
 - Common Test (CT)
+- Graphite
+- [Googletest](Googletest.md)
+- Meck
 - [Scalameter](Scalameter.md)
 - [ScalaTest](ScalaTest.md)
+- Tsung
+- xUnit
 
 
 ### Message brokers and distributed environment coordinators. 
@@ -257,7 +265,7 @@ TODO: Create sub-pages of these.
 - BOSH
 - [SMTP and mailservers](SMTP.md)
 
-### Data mining, AI, Misc utils
+### Data mining, Machine Learning, Artificial Intelligence, etc.
 
 - Chat bots
 - Speech generation
@@ -269,6 +277,9 @@ TODO: Create sub-pages of these.
 - Neon
 - Nirvana Cloud
 - TensorFlow
+- Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
+- Octave
+
 
 - Nice AI human animation
   https://www.facebook.com/techinsider/videos/814455945419430/
@@ -285,10 +296,11 @@ Nice collection of algorithms and solutions
 https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-problems-and-their-solutions-b45a83d803f0
 
 
-### Computer Graphics and Computer Vision
+### Computer Graphics, Computer Vision, Visualization, etc
 
 - OpenCV  https://opencv.org/
 - [SVG](SVG.md)
+- Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
 - [PNG](png.md)
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
@@ -309,21 +321,24 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 - www.websequencediagrams.com
 - www.lucidchart.com
 - [Code Review](CodeReview.md)
- - monosnap utility, for video capture
+ - monosnap utility, for video capture on Windows
 
 
-## Security
+## Cryptography, Network Security, etc.
 
-- IPSec https://en.wikipedia.org/wiki/IPsec
-- SASL https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer
+- [Cryptography](Cryptography.md)
+- [IPSec](IPSec.md)
+- [SASL](SASL.md)
 - [SSH](SSH.md)
-- TLS, Transport Layer Security https://en.wikipedia.org/wiki/Transport_Layer_Security
+- [TLS, Transport Layer Security](TLS.md)
 - [Obfuscators](Obfuscators.md)
 
 
-## Photography and optics
+## Photography, Video, and optics in general
 
 - Lunar Eclipse photography tips: https://www.bhphotovideo.com/explora/photography/tips-and-solutions/22-tips-for-photographing-a-lunar-eclipse
+
+
 
 ## Filmmaking
 
@@ -337,9 +352,19 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 - [Startup](Startup.md)
 
 
-## Meteorology and Misc Technology
+## GPS, Meteorology, Alternative energy, and related
 
--- NOAA data: https://www1.ncdc.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf
+- NOAA data: https://www1.ncdc.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf
+- noaa.gov satellite images, weather forecasts, etc.
+- http://www.ssd.noaa.gov/
+- https://www.climate.gov/maps-data/dataset/past-weather-zip-code-data-table
+- https://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php?lat=33.74&lon=-97.42&product=time-series&begin=2017-12-08T05:00:00&end=2017-12-18T00:00:00&wspd=wspd&sky=sky&wdir=wdir&temp=temp
+- ftp://ftp.ncdc.noaa.gov/pub/data/asos-onemin/README.TXT
+- https://www1.ncdc.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf
+- http://www.nws.noaa.gov/mdl/synop/products.php
+- http://www.nws.noaa.gov/cgi-bin/mos/getmet.pl?sta=KLUD    - Nicely parseable
+- https://www.ferc.gov/market-oversight/data.asp
+- http://www.ercot.com/news/mediakit/maps
 
 
 ## Motivational

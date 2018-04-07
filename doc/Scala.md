@@ -32,10 +32,24 @@ There is a package of Eclipse that already has the Scala additions, downolad url
     
 
 ### Akka
+---
 
 Nice Akka distributed  transaction processing example:
 [https://github.com/anicolaspp/distributd-transaction-processor](https://github.com/anicolaspp/distributd-transaction-processor)
 
+---
+
+Receptionist pattern, misc
+http://www.smartjava.org/content/akka-typed-actors-exploring-receptionist-pattern
+
+---
+
+Book link(a preview)
+Applied Akka Patterns: A Hands-On Guide to Designing Distributed Applications 
+By Michael Nash, Wade Waldron
+https://books.google.com/books?id=2PWzDQAAQBAJ&pg=PA159&lpg=PA159&dq=scalameter+and+akka&source=bl&ots=XYBY3OM4Lw&sig=O2k38PzLk2UfMGGItWcUpZxra80&hl=en&sa=X&ved=0ahUKEwjgoKas0-rSAhWhgVQKHVL6AVQQ6AEILDAD#v=onepage&q=scalameter%20and%20akka&f=false
+
+---
 
 ## Testing frameworks
 
@@ -126,5 +140,11 @@ File operations (from my sandbox, [https://github.com/panchul/sb_scala](https://
 
 Link about Monads and Functors:
 http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+
+---
+
+About variant/invariant, etc.
+http://blog.tmorris.net/posts/functors-and-things-using-scala/index.html
+http://typelevel.org/blog/2016/02/04/variance-and-functors.html
 
 ---

@@ -187,10 +187,12 @@ This also works similarly:
 wget tricks for the downloads that needed checkboxes, etc.
 
 To download the jdk
-$ wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+
+    $ wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
 
 This worked better:
-$ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+
+    $ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
 
 ---
 
@@ -353,7 +355,7 @@ Alpine Linux is a lightweight distro.
 https://alpinelinux.org/
 https://en.wikipedia.org/wiki/Alpine_Linux
 
-apk packaging tool.
+```apk``` packaging tool.
 
 ---
 
@@ -362,7 +364,7 @@ http://www.linuxproblem.org/art_9.html
 
 ---
 
-Quick idiomatic pattern to install a service on Linux:
+Quick idiomatic pattern to install a service on Linux with yum:
 
     if ! rpm -qa | grep -qw ntp; then
         yum install ntp

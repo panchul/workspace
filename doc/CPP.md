@@ -8,6 +8,11 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Summary C++ 17 – New and Removed Features
+https://www.mycplus.com/featured-articles/cplusplus-17-features/
+
+---
+
 http://www.modernescpp.com/index.php/what-is-modern-c 
 Overview of C++ trends and guidelines
 

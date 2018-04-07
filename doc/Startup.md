@@ -26,3 +26,12 @@ http://rp.irc.gov.ua/
 https://techcrunch.com/2017/08/22/16-things-ceos-should-do-before-an-ipo/
 
 ---
+
+Interesting interview with Steve Jobs about corporate identity
+https://www.youtube.com/watch?v=xb8idEf-Iak
+
+And a wider discussion about branding:
+https://www.fastcodesign.com/90164213/3-essential-branding-lessons-from-a-rare-steve-jobs-interview
+
+
+---
