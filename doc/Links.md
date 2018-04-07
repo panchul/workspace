@@ -208,7 +208,7 @@ TODO: Create sub-pages of these.
 ### Micorcontrollers
 
 - [Arduino](Arduino.md)  
-- 
+- [CNC Machines](CNC.md)
   
 ### IDEs and editors
   
@@ -267,15 +267,16 @@ TODO: Create sub-pages of these.
 
 ### Data mining, Machine Learning, Artificial Intelligence, etc.
 
-- Chat bots
-- Speech generation
-  [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
-- Splunk https://www.splunk.com/
 - AppDynamics https://www.appdynamics.com/
+- [Alexa](Alexa.md)
 - Caffe
+- Chat bots
 - MXNet
 - Neon
 - Nirvana Cloud
+- Speech generation
+  [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
+- Splunk https://www.splunk.com/
 - TensorFlow
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
 - Octave

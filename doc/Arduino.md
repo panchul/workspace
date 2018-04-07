@@ -34,3 +34,13 @@ Free Arduino simulator:
 https://www.tinkercad.com/learn/
 
 ---
+
+$350 CNC machine. Pretty cool:
+http://www.maslowcnc.com/assemblyguide/
+
+---
+
+A bunch of nice projects:
+https://hackaday.com/
+
+---
