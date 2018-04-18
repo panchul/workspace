@@ -44,3 +44,8 @@ Remember to ask these before jumping in.
 - What else do I need to know about the culture, the management team and the company?
 
 ---
+
+Great article with a lot of food for thoughts
+https://waitbutwhy.com/2018/04/picking-career.html
+
+---

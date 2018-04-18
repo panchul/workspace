@@ -8,6 +8,16 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Refresher on socket communications in C for a webserver(has very neat skeleton code just like in Stevens book):
+
+    https://www.ibm.com/developerworks/systems/library/es-nweb/index.html
+
+Neat Web server in C, a derivation of the IBM’s:
+
+    https://github.com/davidsblog/dweb
+
+---
+
 Summary C++ 17 – New and Removed Features
 https://www.mycplus.com/featured-articles/cplusplus-17-features/
 

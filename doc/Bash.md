@@ -9,6 +9,14 @@ My shell sandbox is [https://github.com/panchul/sb_shell](https://github.com/pan
 
 ---
 
+Idiomatic passing parameters in bash, flag ‘-e’ for echo and ‘@-‘ for curl:
+
+    $ echo -e "[MYSETTING_1]\nsomeValue=123" | curl --data-binary @- http://128.0.0.1/myapi/consume
+
+    OK
+ 
+---
+
 A collection of snippets
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc7
 

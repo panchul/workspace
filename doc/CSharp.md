@@ -3,6 +3,15 @@
 
 # C#
 
+---
+
+Web server in C#
+
+    http://codehosting.net/blog/BlogEngine/post/Simple-C-Web-Server
+
+and some adoption of it:
+
+    https://bitbucket.org/tevert/tinywebserver
 
 ---
 

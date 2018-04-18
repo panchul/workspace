@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 # TODO: something got messed up with ubuntu boxes. Network acts out, especially with gui. Use w/o gui for now.
 WORKSPACE_VM_BOX_WITH_GUI = "ubuntu/bionic64"
-#WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
+WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
 
 #WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1404-desktop"
 #WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"

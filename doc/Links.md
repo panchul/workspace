@@ -166,15 +166,17 @@ TODO: Create sub-pages of these.
   -- [Alpine](Alpine.md)
 
 - SunOS  
-- Windows  
+- [Windows](Windows.md)  
 - Symbian OS  
 - [MacOS](MacOS.md)
 
 ### Web Frameworks and servers
 
 - MochiWeb
+- [Ajax](Ajax.md)
 - [Apache](Apache.md)
 - [Disqus](Disqus.md)
+- [JQuery](JQuery.md)
 - [nginx](nginx.md)
 - [PlayFramework](PlayFramework.md)
 - [Scalatra](Scalatra.md)
@@ -202,6 +204,7 @@ TODO: Create sub-pages of these.
 - [OpenGL](OpenGL.md)
 - GTK+ http://www.gtk.org/
 - Qt http://qt-project.org
+- Open-source UI Automation library https://github.com/TestStack/White
 
 
   
@@ -209,6 +212,13 @@ TODO: Create sub-pages of these.
 
 - [Arduino](Arduino.md)  
 - [CNC Machines](CNC.md)
+- Misc Manufacturing and hardware, etc. https://www.designworldonline.com/iot-owe-advances-power-ethernet-cabling/
+- Brushless motors, etc.  https://www.alliedmotion.com/whitepaper-differences-brush-brushless-motors/
+- Sensors, and misc hardware: https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
+- https://www.digikey.com/ Misc hardware
+- http://www.newark.com/ Misc electronics
+-
+  
   
 ### IDEs and editors
   
@@ -245,6 +255,8 @@ TODO: Create sub-pages of these.
 - [Scalameter](Scalameter.md)
 - [ScalaTest](ScalaTest.md)
 - Tsung
+- UiPath https://www.uipath.com/studio
+- WinAutomation http://www.winautomation.com/features/
 - xUnit
 
 
@@ -264,6 +276,7 @@ TODO: Create sub-pages of these.
   - Mongoose
 - BOSH
 - [SMTP and mailservers](SMTP.md)
+
 
 ### Data mining, Machine Learning, Artificial Intelligence, etc.
 
@@ -303,6 +316,8 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 - [SVG](SVG.md)
 - Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
 - [PNG](png.md)
+- video recording for terminal ```asciinema.org``` ```gohugo.io``` web content
+
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
 
@@ -338,11 +353,6 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 ## Photography, Video, and optics in general
 
 - Lunar Eclipse photography tips: https://www.bhphotovideo.com/explora/photography/tips-and-solutions/22-tips-for-photographing-a-lunar-eclipse
-
-
-
-## Filmmaking
-
 -﻿Shot Lists and Script Lining. https://nofilmschool.com/2018/02/shot-lists-and-script-lining-how-prepare-your-screenplay-shoot
 
 

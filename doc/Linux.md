@@ -19,6 +19,19 @@ See Also:
 
 ---
 
+Idiomatic passing parameters in bash, flag ‘-e’ for echo and ‘@-‘ for curl:
+
+    $ echo -e "[MYSETTING_1]\nsomeValue=123" | curl --data-binary @- http://128.0.0.1/myapi/consume
+
+    OK
+ 
+---
+
+Interesting resource on setuid in Unix, and why the shebang symbols should end in ‘-‘:
+http://www.faqs.org/faqs/unix-faq/faq/part4/section-7.html
+
+---
+
 Easily Encrypt your Flash Drives with Linux
 [https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux](https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux)
 
@@ -35,7 +48,7 @@ LiLi:
 
 ---
 
-### Monit
+Monit
 
 https://mmonit.com/monit/
 

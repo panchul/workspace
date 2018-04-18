@@ -9,6 +9,13 @@ See Also:
 [https://git-scm.com/](https://git-scm.com/)
 
 https://git-scm.com/downloads
+
+---
+
+Git commit guidelines:
+
+    https://chris.beams.io/posts/git-commit/
+
 ---
 
 Another gui for git, SourceTree
