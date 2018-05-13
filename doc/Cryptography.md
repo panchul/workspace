@@ -26,3 +26,8 @@ Voltage Sensor for the poc of exfiltrator
 https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
 
 ---
+
+An article about cryptocurrency hipe.
+https://hackernoon.com/24-lessons-i-learned-from-interviewing-over-45-cryptocurrency-projects-in-two-months-680dfa213aa6
+
+---

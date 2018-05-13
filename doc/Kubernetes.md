@@ -10,6 +10,11 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ---
 
+About best practices. Organizing with Namespaces.
+https://cloudplatform.googleblog.com/2018/04/Kubernetes-best-practices-Organizing-with-Namespaces.html
+
+---
+
 A few point why Kubernetes is nice:
 https://www.linux.com/blog/top-5-reasons-love-kubernetes
 https://www.linux.com/blog/5-more-reasons-love-kubernetes

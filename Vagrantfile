@@ -5,22 +5,24 @@
 VAGRANTFILE_API_VERSION = "2"
 
 # TODO: something got messed up with ubuntu boxes. Network acts out, especially with gui. Use w/o gui for now.
-WORKSPACE_VM_BOX_WITH_GUI = "ubuntu/bionic64"
+#WORKSPACE_VM_BOX_WITH_GUI = "ubuntu/bionic64"
+##WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
+
+WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1404-desktop"
 WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
 
-#WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1404-desktop"
-#WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
-
 #WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1604-desktop"
+##WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1610-desktop"
 #WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1604-desktop"
+##WORKSPACE_VM_BOX_WITH_GUI_URL = "https://app.vagrantup.com/box-cutter/boxes/ubuntu1604-desktop"
 
 # 14.04
 WORKSPACE_VM_BOX_NO_GUI = "ubuntu/trusty64"
 WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/trusty64.box"
 
 # 16.04
-# WORKSPACE_VM_BOX_NO_GUI = "ubuntu/xenial64"
-# WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/xenial64.box"
+#WORKSPACE_VM_BOX_NO_GUI = "ubuntu/xenial64"
+#WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/xenial64.box"
 
 WORKSPACE_VM_BOOT_TIMEOUT = 2400
 
@@ -157,6 +159,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 #      dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
 #      source /home/vagrant/tmp_provisioning/bootstrap.sh
 #    SHELL
+
   end
 
 #######################################################################
@@ -165,12 +168,21 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "gen1", autostart: false do |box|
     machine_id = 1
 
-    box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
-
-  #  box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-  ##  box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+    #box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+    ##box.vm.box = "ubuntu/xenial64"
+    
+    box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+    #box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
     box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+
+    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
+    box.ssh.forward_agent = true
+    box.vm.hostname = "gen#{machine_id}.vm"
+#    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: "{#WS_NETWORK_NAME}", drop_nat_interface_default_route: true, auto_config: false
+#    box.vm.network "private_network", ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: true
+    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: "{#WS_NETWORK_NAME}"
+    box.vm.synced_folder  "projects", "/projects"
       
     box.vm.provider "virtualbox" do |vb|
       # We do not have to have gui, we can save some memory if we don't.
@@ -182,27 +194,21 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       # win7 machine did not take this.
       #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
       
-      # For NAT adapter
-      vb.customize ["modifyvm", :id, "--nictype1", "Am79C973"]
-      # For host-only adapter
-      vb.customize ["modifyvm", :id, "--nictype2", "Am79C973"]
+#      # For NAT adapter
+#      vb.customize ["modifyvm", :id, "--nictype1", "Am79C973"]
+#      # For host-only adapter
+#      vb.customize ["modifyvm", :id, "--nictype2", "Am79C973"]
 
     end
-    #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
-    box.ssh.forward_agent = true
-    box.vm.hostname = "gen#{machine_id}.vm"
-    box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: "{#WS_NETWORK_NAME}", drop_nat_interface_default_route: true, auto_config: false
-#    box.vm.network "private_network", ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: true
-    box.vm.synced_folder  "projects", "/projects"
 
-    config.vm.provision "shell", inline: <<-SHELL
-      rm -f /etc/network/interfaces.d/eth1.cfg
-      echo "auto eth1" >> /etc/network/interfaces.d/eth1.cfg
-      echo "iface eth1 inet static" >> /etc/network/interfaces.d/eth1.cfg
-      echo "address #{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}" >> /etc/network/interfaces.d/eth1.cfg
-      echo "netmask 255.255.255.0" >> /etc/network/interfaces.d/eth1.cfg
-      ifdown eth1 && ifup eth1
-    SHELL
+#    config.vm.provision "shell", inline: <<-SHELL
+#      rm -f /etc/network/interfaces.d/eth1.cfg
+#      echo "auto eth1" >> /etc/network/interfaces.d/eth1.cfg
+#      echo "iface eth1 inet static" >> /etc/network/interfaces.d/eth1.cfg
+#      echo "address #{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}" >> /etc/network/interfaces.d/eth1.cfg
+#      echo "netmask 255.255.255.0" >> /etc/network/interfaces.d/eth1.cfg
+#      ifdown eth1 && ifup eth1
+#    SHELL
   
     box.vm.provision "shell", inline: <<-SHELL
       export DEBIAN_FRONTEND=noninteractive
@@ -221,7 +227,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "gen2", autostart: false do |box|
     machine_id = 2
     box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+    #box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+    box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
 
     #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
     box.ssh.forward_agent = true

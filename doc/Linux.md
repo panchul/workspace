@@ -15,7 +15,11 @@ See Also:
   - [tar](tar.md)
   - [tcpdump](tcpdump.md)
   - [nohup](nohup.md)
-     
+ 
+---
+
+Quick simple demo of using systemd services (I have a better how-to on services in the sandbox)
+https://www.linux.com/blog/learn/intro-to-linux/2018/5/writing-systemd-services-fun-and-profit     
 
 ---
 

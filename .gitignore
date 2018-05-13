@@ -58,6 +58,7 @@ tmp
 # Vagrant
 .vagrant
 *.retry
+ubuntu-*-cloudimg-console.log
 
 # Mac stuff
 .DS_Store

@@ -27,3 +27,7 @@ Average Zombies. Psychological manipulations
 https://www.youtube.com/watch?v=lLEiT9PeHSg
 
 ---
+
+"Do the things you believe in, and believe in things you do."
+
+---

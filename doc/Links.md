@@ -354,6 +354,8 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 
 - Lunar Eclipse photography tips: https://www.bhphotovideo.com/explora/photography/tips-and-solutions/22-tips-for-photographing-a-lunar-eclipse
 -﻿Shot Lists and Script Lining. https://nofilmschool.com/2018/02/shot-lists-and-script-lining-how-prepare-your-screenplay-shoot
+- ﻿https://pixabay.com/ Free bank of photos.
+
 
 
 ## Career etc.
@@ -376,6 +378,14 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 - http://www.nws.noaa.gov/cgi-bin/mos/getmet.pl?sta=KLUD    - Nicely parseable
 - https://www.ferc.gov/market-oversight/data.asp
 - http://www.ercot.com/news/mediakit/maps
+
+
+## Manufacturing, etc.
+
+- neat 3d printer﻿https://ultimaker.com/en/products/ultimaker-s5
+
+
+
 
 
 ## Motivational
