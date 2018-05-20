@@ -31,3 +31,7 @@ https://www.youtube.com/watch?v=lLEiT9PeHSg
 "Do the things you believe in, and believe in things you do."
 
 ---
+
+﻿“We don't see things as they are, we see them as we are.”
+
+---

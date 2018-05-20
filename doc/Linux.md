@@ -16,6 +16,12 @@ See Also:
   - [tcpdump](tcpdump.md)
   - [nohup](nohup.md)
  
+ 
+---
+
+How to compile Linux kernel
+https://www.linux.com/learn/intro-to-linux/2018/4/how-compile-linux-kernel-0
+ 
 ---
 
 Quick simple demo of using systemd services (I have a better how-to on services in the sandbox)

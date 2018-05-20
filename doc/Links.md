@@ -117,7 +117,7 @@ TODO: Create sub-pages of these.
 - [UTF-8](UTF-8)  
 - [XML](XML.md)
 - [YAML](YAML.md)
-
+-﻿[QR code](qr_code.md)
 
 ### Databases
 
@@ -164,13 +164,12 @@ TODO: Create sub-pages of these.
   -- RedHat  
   -- CentOS
   -- [Alpine](Alpine.md)
-
 - SunOS  
 - [Windows](Windows.md)  
 - Symbian OS  
 - [MacOS](MacOS.md)
 
-### Web Frameworks and servers
+### Web Frameworks, servers, etc
 
 - MochiWeb
 - [Ajax](Ajax.md)
@@ -293,7 +292,7 @@ TODO: Create sub-pages of these.
 - TensorFlow
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
 - Octave
-
+- CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
 
 - Nice AI human animation
   https://www.facebook.com/techinsider/videos/814455945419430/
@@ -342,7 +341,7 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 
 ## Cryptography, Network Security, etc.
 
-- [Cryptography](Cryptography.md)
+- [Cryptography and Network Security](Cryptography.md)
 - [IPSec](IPSec.md)
 - [SASL](SASL.md)
 - [SSH](SSH.md)

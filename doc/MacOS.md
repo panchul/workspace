@@ -16,7 +16,7 @@ Simple way is to add PATH to file ```~/.bash_profile```. Like so:
 
     ﻿export PATH="/usr/local/someprogramijustwrote/bin:$PATH"
 
---
+---
 
 Screenshot capture:
 1. Click ```Shift-Command-4```, or, I guess ```Command-$```
@@ -33,4 +33,10 @@ Video capture can be done using QuickTime(that is part of standard Applications)
 
 http://www.loopinsight.com/2014/01/08/your-macs-built-in-screen-recorder/
 
---
+---
+
+to get `http`(the comannd line http client):
+
+    $ brew install httpie
+
+---

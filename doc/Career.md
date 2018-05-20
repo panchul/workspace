@@ -20,6 +20,24 @@ https://www.linkedin.com/pulse/wework-effect-ageism-tech-lindsay-boyajian - inte
 https://www.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals TED talk about stoicism
 https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-and-more-want-you-to-ask
 
+## Cold hard cash
+
+---
+
+Companies are disclosing how much they pay typical workers. See how your income compares using the WSJ's interactive tracker.
+https://www.wsj.com/graphics/how-does-your-pay-stack-up/
+
+---
+
+## Psychos at the workplace
+
+---
+
+Signs a narcissist is manipulating you
+﻿https://www.providr.com/clear-signs-a-narcissist-is-manipulating-you
+
+---
+
 ### Location, Locaion, Location
 
 States without state income tax([full info](http://www.money-zine.com/financial-planning/tax-shelter/state-income-tax-rates/)):
@@ -49,3 +67,4 @@ Great article with a lot of food for thoughts
 https://waitbutwhy.com/2018/04/picking-career.html
 
 ---
+
