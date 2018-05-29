@@ -3,7 +3,13 @@
 
 # Cryptography and Network Security
 
+---
 
+About DER, BER, CER encoding rules:
+https://en.wikipedia.org/wiki/X.690
+
+Public Key Cryptography Standards (they are numbered)
+https://en.wikipedia.org/wiki/PKCS
 
 ---
 

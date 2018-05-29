@@ -20,7 +20,10 @@ https://www.linkedin.com/pulse/wework-effect-ageism-tech-lindsay-boyajian - inte
 https://www.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals TED talk about stoicism
 https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-and-more-want-you-to-ask
 
-## Cold hard cash
+---
+
+Great podcast on starting a business 
+http://knowledge.wharton.upenn.edu/article/great-entrepreneurs-really/
 
 ---
 
@@ -29,8 +32,8 @@ https://www.wsj.com/graphics/how-does-your-pay-stack-up/
 
 ---
 
-## Psychos at the workplace
-
+A different link with some resources is here:
+https://www.pandadoc.com/consulting-proposal-templates/
 ---
 
 Signs a narcissist is manipulating you
@@ -49,6 +52,13 @@ States without state income tax([full info](http://www.money-zine.com/financial-
 - Washington
 - Wyoming
 
+---
+
+Cost of living calculator
+www.numbeo.com
+
+Another salary calculator w2 vs 1099
+https://www.viewthenumbers.com/w2-vs-1099
 
 ---
 
@@ -65,6 +75,11 @@ Remember to ask these before jumping in.
 
 Great article with a lot of food for thoughts
 https://waitbutwhy.com/2018/04/picking-career.html
+
+---
+
+Neat summary of transactional relationship vs. transformational.
+https://journal.thriveglobal.com/want-automatic-motivation-and-wealth-do-this-one-thing-immediately-7ae22a88731c
 
 ---
 

@@ -181,6 +181,16 @@ TODO: Create sub-pages of these.
 - [Scalatra](Scalatra.md)
 - [WordPress](WordPress.md)
 - [Yaws](Yaws.md)
+- Yeoman, http://yeoman.io/codelab/index.html
+- MEAN stack example, Angular.js and other stuff https://www.djamware.com/post/5a0673c880aca7739224ee21/mean-stack-angular-5-crud-web-application-example
+ About the MEAN stack,
+ JavaScript frameworks build on express.js
+ https://expressjs.com/en/resources/frameworks.html
+ Feathers.js seems to be a nice one. Self-hosted, free, very capable. Email/password OAuth authentication
+ https://feathersjs.com/comparison
+ Firebase (closed-source, paid hosted service, paid shared dev environment)
+ Meteor (some venture-backed stuff, its own eco-system)
+ Sails
 
 ### Misc Utilities and Commands
 
@@ -293,6 +303,7 @@ TODO: Create sub-pages of these.
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
 - Octave
 - CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
+- popular Python modules include NumPy, Pandas, Seaborn, Scikit-Learn, open source toolkits Apache MXNet, Caffe2, Keras, Microsoft Cognitive Toolkit, TensorFlow, PyTorch.
 
 - Nice AI human animation
   https://www.facebook.com/techinsider/videos/814455945419430/
@@ -377,12 +388,17 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 - http://www.nws.noaa.gov/cgi-bin/mos/getmet.pl?sta=KLUD    - Nicely parseable
 - https://www.ferc.gov/market-oversight/data.asp
 - http://www.ercot.com/news/mediakit/maps
+– http://www.energychoicematters.com/ The guy that scoops everyone
+– https://www.snl.com/  The most comprehensive energy news
 
-
-## Manufacturing, etc.
+## Manufacturing, IoT, etc.
 
 - neat 3d printer﻿https://ultimaker.com/en/products/ultimaker-s5
 
+- https://www.youtube.com/watch?v=NuPMIUWbPsQ  Tutorials about OSIsoft’s PI Server HA configuration
+- https://pisquare.osisoft.com/community/Learn-PI/programming-in-pi-web-api OSIsoft website about PI programming
+- https://github.com/osisoft/PI-Web-API-Programming-Online-Course - neat course they made
+- PI SDK online videos https://pisquare.osisoft.com/community/Learn-PI/developing-applications-with-PI-AF-SDK
 
 
 

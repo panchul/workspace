@@ -32,6 +32,10 @@ https://www.youtube.com/watch?v=lLEiT9PeHSg
 
 ---
 
-﻿“We don't see things as they are, we see them as we are.”
+"We don't see things as they are, we see them as we are."
+
+---
+
+"It requires wisdom to understand wisdom: the music is nothing if the audience is deaf" -- Walter Lippmann
 
 ---

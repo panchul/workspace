@@ -108,4 +108,110 @@ needed to run these to fix it:
     $ sudo apt-get update
     $ sudo apt-get install --reinstall build-essential
 
---
+---
+
+Snippet share website:
+coliru.stacked-crooked.com/a/5aa89a65e3a86c98
+
+---
+
+Whole lot of fun with a ‘slide’ operator:
+https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c?rq=1
+ 
+    #include <stdio.h>
+    int main()
+    {
+        int x = 10;
+
+        while (x --> 0) // x goes to 0
+        {
+            printf("%d ", x);
+        }
+    }
+
+"Slide":
+    
+    while (x --\
+                \
+                 \
+                  \
+                   > 0)
+    printf("%d ", x);
+
+    int x = 10;
+
+    while( 0 <---- x )
+    {
+       printf("%d ", x);
+    }
+
+`8 6 4 2`
+
+You can control speed with an arrow!
+
+    int x = 100;
+    while( 0 <-------------------- x )
+    {
+       printf("%d ", x);
+    }
+
+`90 80 70 60 50 40 30 20 10`
+
+Laser:
+
+    while( 0 > - - - - - -- -- -- -- -- ---------- x )
+ 
+Compilers try to parse expressions to the biggest token by using the left right rule.
+In this case, the expression:
+
+    x-->0
+
+Parses to biggest tokens:
+
+    token 1: x
+    token 2: --
+    token 3: >
+    token 4: 0
+    conclude: x-- > 0
+
+The same rule applies to this expression:
+    
+    a-----b
+
+After parse:
+    
+    token 1: a
+    token 2: --
+    token 3: --
+    token 4: -
+    token 5: b
+
+    conclude: (a--)-- - b
+
+---
+
+    #define as ;while
+
+    int main(int argc, char* argv[])
+    {
+        int n = atoi(argv[1]);
+        do printf("n is %d\n", n) as ( n --> 0);
+        return 0;
+    }
+
+---
+
+It also could have been something like
+
+    for(--x++;--x;++x--)
+    -->    x-->0
+    ++>    x++>0
+    -->=   x-->=0
+    ++>=   x++>=0
+
+This would also work:
+
+    while (0 <-- x)
+
+---
+ 

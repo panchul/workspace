@@ -10,6 +10,14 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ---
 
+Docker on Windows:
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon
+
+Kubernetes on Windows:
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/kubernetes/getting-started-kubernetes-windows
+
+---
+
 About best practices. Organizing with Namespaces.
 https://cloudplatform.googleblog.com/2018/04/Kubernetes-best-practices-Organizing-with-Namespaces.html
 
