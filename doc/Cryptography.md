@@ -5,6 +5,12 @@
 
 ---
 
+In line with crypto hipe.
+Adam Ruins Everything - How the Fine Art Market is a Scam | truTV
+﻿https://www.youtube.com/watch?v=Dw5kme5Q_Yo
+
+---
+
 About DER, BER, CER encoding rules:
 https://en.wikipedia.org/wiki/X.690
 

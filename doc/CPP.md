@@ -8,6 +8,16 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Nice overview of the iterators
+http://thispointer.com/c-different-ways-to-iterate-over-a-list-of-objects/
+
+---
+
+Neat talk on C++14 back when it was released
+https://www.youtube.com/watch?v=IqVZG6jWXvs
+
+---
+
 Refresher on socket communications in C for a webserver(has very neat skeleton code just like in Stevens book):
 
     https://www.ibm.com/developerworks/systems/library/es-nweb/index.html

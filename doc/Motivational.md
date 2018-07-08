@@ -10,6 +10,18 @@ https://www.youtube.com/watch?v=du035tg-SwY - How to Remain Calm With People.
 
 http://psychologytoday.ru/public/urovni-slozhnosti-v-otstaivanii-svoikh-granits/ - Ways to stand up for yourself.
 
+---
+
+"Before success comes in any man's life, he's sure to meet with
+ much temporary defeat and, perhaps some failures. When defeat
+ overtakes a man, the easiest and the most logical thing to do
+ is to quit. That's exactly what the majority of men do."
+  ―Napoleon Hill
+
+---
+
+Neat video about critisism 
+https://www.youtube.com/watch?v=N_lZpyap8BQ
 
 ---
 
@@ -39,3 +51,8 @@ https://www.youtube.com/watch?v=lLEiT9PeHSg
 "It requires wisdom to understand wisdom: the music is nothing if the audience is deaf" -- Walter Lippmann
 
 ---
+
+﻿“Satisfaction lies in the effort, not in the attainment, full effort is full victory.” ― Mahatma Gandhi
+
+---
+

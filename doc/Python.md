@@ -7,6 +7,21 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+Keras link
+https://keras.io/
+
+---
+
+Python IDEs, etc.
+
+PyCharm IDE (Jetbrains)
+https://www.jetbrains.com/help/pycharm/meet-pycharm.html
+
+Spyder IDE (Anaconda, WinPython, Python(x,y) )
+Conda
+
+---
+
 Simple birthday attack calculator(from wikipedia.org). Write this into ```birthday.py```:
 
     from math import log1p, sqrt

@@ -3,6 +3,14 @@
 
 # Scala
 
+See Also:
+
+ [Sbt.md](Sbt.md)  
+ [Scaladoc](Scaladoc.md)  
+ [ScalaTest](ScalaTest.md) - for unit-testing, etc.  
+ [Scalameter](Scalameter.md) - for benchmarking, etc.  
+
+
 My Scala sandbox is [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala).
 
 
@@ -10,32 +18,40 @@ My Scala sandbox is [https://github.com/panchul/sb_scala](https://github.com/pan
 [http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines 
 [http://danielwestheide.com/scala/neophytes.html](http://danielwestheide.com/scala/neophytes.html) - The Neophyte's Guide to Scala
 
-### ScalaDoc
+---
 
-[Scaladoc](Scaladoc.md) is sometimes used for documentation.
+Nice article on enums and case classes:
+http://stackoverflow.com/questions/1898932/case-objects-vs-enumerations-in-scala
 
-### sbt
+More on Scala Enumerators:
+http://underscore.io/blog/posts/2014/09/03/enumerations.html
 
-Sbt link is at  [Sbt.md](Sbt.md)
+---
 
-
-### Giter8
+Giter8
 
 Here are some nice templates:
 https://github.com/foundweekends/giter8/wiki/giter8-templates
 
 
-### Eclipse
+---
 
+Eclipse
 There is a package of Eclipse that already has the Scala additions, downolad url:
 [http://scala-ide.org/download/sdk.html](http://scala-ide.org/download/sdk.html)
     
 
-### Akka
----
+--- 
 
 Nice Akka distributed  transaction processing example:
 [https://github.com/anicolaspp/distributd-transaction-processor](https://github.com/anicolaspp/distributd-transaction-processor)
+
+
+---
+
+Akka test links:
+http://doc.akka.io/docs/akka/current/scala/testing.html#Expecting_Log_Messages
+http://rerun.me/2014/09/29/akka-notes-logging-and-testing/
 
 ---
 
@@ -51,9 +67,54 @@ https://books.google.com/books?id=2PWzDQAAQBAJ&pg=PA159&lpg=PA159&dq=scalameter+
 
 ---
 
-## Testing frameworks
+http://doc.akka.io/docs/akka/current/scala/routing.html  
+http://doc.akka.io/docs/akka/current/scala/actors.html#Extending_Actors_using_PartialFunction_chaining  
+http://stackoverflow.com/questions/18124643/how-to-use-stackable-trait-pattern-with-akka-actors  
+
+
+http://www.smartjava.org/content/akka-typed-actors-exploring-receptionist-pattern  
+http://stackoverflow.com/questions/18339082/how-to-create-routers-in-akka-with-parameterized-actors  
 
 ---
+
+Alpakka
+https://index.scala-lang.org/akka/alpakka
+
+---
+
+A few links the guys were recommending:
+
+http://doc.akka.io/docs/akka/2.4.16/scala/event-bus.html
+https://en.wikipedia.org/wiki/Command_pattern
+https://twitter.github.io/scala_school/collections.html
+https://www.udacity.com/course/artificial-intelligence-nanodegree--nd889
+
+---
+
+Akka sample for clustering
+https://github.com/typesafehub/activator-akka-clustering
+
+---
+
+Some akka doc links to look at
+
+http://doc.akka.io/docs/akka/2.4/scala/event-bus.html
+http://doc.akka.io/docs/akka/2.4/scala/distributed-pub-sub.html
+
+Akka testing:
+http://doc.akka.io/docs/akka/current/scala/testing.html
+
+About scaladoc formatting
+http://docs.scala-lang.org/style/scaladoc.html
+http://docs.scala-lang.org/overviews/core/futures.html
+https://www.tutorialspoint.com/scala/scala_lists.htm
+
+Scalatest examples, etc.
+http://doc.scalatest.org/1.8/org/scalatest/FlatSpec.html
+
+---
+
+Testing frameworks
 
 [ScalaTest](ScalaTest.md) - for unit-testing, etc.
 [Scalameter](Scalameter.md) - for benchmarking, etc.
@@ -66,7 +127,29 @@ https://books.google.com/books?id=2PWzDQAAQBAJ&pg=PA159&lpg=PA159&dq=scalameter+
 Nice scala link with quick demo of runtime info:
 http://alvinalexander.com/scala/how-show-memory-ram-use-scala-application-used-free-total-max
 
-## Camel
+---
+
+Nice video with overview of Scala features
+https://www.youtube.com/watch?v=IobLWVuD-CQ
+
+---
+
+About implicits, quick refresher:
+http://stackoverflow.com/questions/10375633/understanding-implicit-in-scala
+
+---
+
+https://github.com/write2munish/Akka-Essentials
+Good demos on all sorts of Scala and Akka stuff.
+
+---
+
+http://doc.akka.io/docs/akka/2.4/scala/event-bus.html
+http://doc.akka.io/docs/akka/current/scala/distributed-pub-sub.html
+
+---
+
+Camel
  
 [http://camel.apache.org/eip](http://camel.apache.org/eip) - Enterprise Integration Patterns
 
@@ -75,27 +158,34 @@ Nice book: Camel in Action (has preview and good links)
 https://www.manning.com/books/camel-in-action
 
 
-#### Logging
+---
+
+Logging
 
 [http://naildrivin5.com/scalatour/wiki_pages/TypeDependentClosures/](http://naildrivin5.com/scalatour/wiki_pages/TypeDependentClosures/)
 
-## Scalatra, a webserver in Scala
+---
+
+Scalatra, a webserver in Scala
 
 [Scalatra](Scalatra.md)
 
 
-## JSON in Scala
+---
+
+JSON in Scala
 
 See [Json](JSON.md) for sample snippets.
 
 
-## Assorted misc projects to sort out later
+---
 
+Assorted misc projects to sort out later
 https://github.com/ScalaWilliam/xs4s - XML Streaming for Scala
 
 ---
 
-## Syntax overview
+Syntax overview
 
 I'll add these into my Scala sandbox, [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala).
 Run these in the REPL, or put into a file and run, for example ```$ scala hello.scala``` 

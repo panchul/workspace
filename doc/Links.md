@@ -226,7 +226,9 @@ TODO: Create sub-pages of these.
 - Sensors, and misc hardware: https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
 - https://www.digikey.com/ Misc hardware
 - http://www.newark.com/ Misc electronics
--
+- Embedded stuff, connections to OSIsoft’s PI servers with Python.
+  https://github.com/bzshang/piwebapi-python-examples
+  https://pisquare.osisoft.com/community/developers-club/blog/2015/06/04/using-pi-web-api-with-python
   
   
 ### IDEs and editors
@@ -239,6 +241,8 @@ TODO: Create sub-pages of these.
 - [Atom](Atom.md)
 - Sublime http://www.sublimetext.com/
 - LiteIDE
+- PyCharm (For Python, from Jetbrains)
+- Spyder (for Python)
 
 
 ### Networking
@@ -307,6 +311,11 @@ TODO: Create sub-pages of these.
 
 - Nice AI human animation
   https://www.facebook.com/techinsider/videos/814455945419430/
+  
+- Weka, neat data mining tool from a university
+  https://www.cs.waikato.ac.nz/~ml/weka/
+  
+- datascience.ibm.com
 
 ### Algorithms and Data Structures
 
@@ -358,6 +367,9 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 - [SSH](SSH.md)
 - [TLS, Transport Layer Security](TLS.md)
 - [Obfuscators](Obfuscators.md)
+- JWT JSON Web Tokens
+  https://jwt.io/ - interactive tool
+  https://tools.ietf.org/html/rfc7519 - RFC for it.
 
 
 ## Photography, Video, and optics in general
