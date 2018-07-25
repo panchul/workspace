@@ -20,6 +20,14 @@ https://www.linkedin.com/pulse/wework-effect-ageism-tech-lindsay-boyajian - inte
 https://www.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals TED talk about stoicism
 https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-and-more-want-you-to-ask
 
+
+
+---
+
+Alternatives to resumes. AI questions about how hungry you are.
+https://www.inc.com/melanie-curtin/resumes-dont-help-you-hire-innovative-people-but-this-does-hint-teslas-doing-it.html
+
+
 ---
 
 Great podcast on starting a business 
@@ -59,6 +67,9 @@ www.numbeo.com
 
 Another salary calculator w2 vs 1099
 https://www.viewthenumbers.com/w2-vs-1099
+
+Some compensation statistics for engineers, from a job site
+https://triplebyte.com/software-engineer-salary
 
 ---
 

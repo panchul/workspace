@@ -5,6 +5,11 @@
 
 ---
 
+Meaningful Exits for Founders
+https://medium.com/strong-words/meaningful-exits-for-founders-4c3b2baba6b4
+
+---
+
 Great interview, has a podcast too.
 http://knowledge.wharton.upenn.edu/article/great-entrepreneurs-really/
 
