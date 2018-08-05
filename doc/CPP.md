@@ -8,6 +8,11 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Creating and using console i/o from win32 gui application
+http://dslweb.nwnexus.com/~ast/dload/guicon.htm
+
+---
+
 Nice overview of the iterators
 http://thispointer.com/c-different-ways-to-iterate-over-a-list-of-objects/
 

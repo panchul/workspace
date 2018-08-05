@@ -3,7 +3,16 @@
 
 # Python
 
+https://www.python.org/
+
+
 My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/panchul/sb_python).
+
+
+---
+
+Why Python is slow.
+https://hackernoon.com/why-is-python-so-slow-e5074b6fe55b
 
 ---
 

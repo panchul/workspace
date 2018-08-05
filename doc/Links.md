@@ -243,7 +243,8 @@ TODO: Create sub-pages of these.
 - LiteIDE
 - PyCharm (For Python, from Jetbrains)
 - Spyder (for Python)
-
+- BeyondCompare  https://www.scootersoftware.com/download.php
+- WinMerge  https://sourceforge.net/projects/winmerge/?source=typ_redirect
 
 ### Networking
 

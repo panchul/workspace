@@ -4,6 +4,10 @@
 # Windows
 
 
+---
+
+Neat snippet about using console i/o for a win32 gui application in C++
+http://dslweb.nwnexus.com/~ast/dload/guicon.htm
 
 ---
 

@@ -4,10 +4,22 @@
 
 # R language
 
+https://cran.r-project.org/doc/manuals/r-release/R-intro.html
+
+
 // TODO: make an R sandbox
 
 
 Misc Links
+---
+
+R IDE ( MS Visual Studio has R plugins, etc.)
+https://support.rstudio.com/hc/en-us
+
+---
+
+An overview
+https://www.johndcook.com/blog/r_language_for_programmers/
 
 ---
 
