@@ -234,7 +234,7 @@ TODO: Create sub-pages of these.
 ### IDEs and editors
   
 - MS Visual Studio  
-- Eclipse  
+- [Eclipse](Eclipse.md)  
 - [IntelliJ](Intellij.md)  
 - [vi/vim](Vim.md)  
 - [emacs](Emacs.md) 

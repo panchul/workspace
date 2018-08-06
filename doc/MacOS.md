@@ -10,6 +10,14 @@ See also
 
 ---
 
+Automake tools on Mac:
+
+    $ ﻿brew install automake
+
+(At some point I needed autoreconf, this helped)
+
+---
+
 #### To add PATH on Mac
 
 Simple way is to add PATH to file ```~/.bash_profile```. Like so:

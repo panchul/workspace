@@ -6,6 +6,20 @@
 http://en.wikipedia.org/wiki/Secure_Shell
 http://www.ssh.com/
 
+---
+
+Quick and dirty way to fix 'ssh permission denied(publicey)':
+
+1. update in ```/etc/ssh/sshd_config```:
+```
+    ... 
+    PasswordAuthentication yes
+    ...
+```
+
+2. Restart ssh service 
+
+    $ sudo systemctl restart sshd
 
 ---
 

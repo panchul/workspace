@@ -101,3 +101,7 @@
 192.168.10.90 snmp1.vm snmp1
 192.168.10.91 snmp2.vm snmp2
 192.168.10.92 snmp3.vm snmp3
+
+192.168.10.93 elixir1.vm elixir1
+192.168.10.94 elixir2.vm elixir2
+192.168.10.95 elixir3.vm elixir3

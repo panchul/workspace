@@ -8,21 +8,29 @@ VAGRANTFILE_API_VERSION = "2"
 #WORKSPACE_VM_BOX_WITH_GUI = "ubuntu/bionic64"
 ##WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
 
-WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1404-desktop"
-WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
-
 #WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1604-desktop"
 ##WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1610-desktop"
 #WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1604-desktop"
 ##WORKSPACE_VM_BOX_WITH_GUI_URL = "https://app.vagrantup.com/box-cutter/boxes/ubuntu1604-desktop"
 
 # 14.04
-WORKSPACE_VM_BOX_NO_GUI = "ubuntu/trusty64"
-WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/trusty64.box"
+# WORKSPACE_VM_BOX_NO_GUI = "ubuntu/trusty64"
+# WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/trusty64.box"
+# this was ok
+# WORKSPACE_VM_BOX_WITH_GUI = "box-cutter/ubuntu1404-desktop"
+# WORKSPACE_VM_BOX_WITH_GUI_URL = "https://atlas.hashicorp.com/box-cutter/ubuntu1404-desktop"
 
 # 16.04
-#WORKSPACE_VM_BOX_NO_GUI = "ubuntu/xenial64"
-#WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/xenial64.box"
+# WORKSPACE_VM_BOX_NO_GUI = "ubuntu/xenial64"
+# WORKSPACE_VM_BOX_NO_GUI_URL = "http://files.vagrantup.com/xenial64.box"
+
+# 18
+WORKSPACE_VM_BOX_WITH_GUI = "ubuntu/bionic64"
+WORKSPACE_VM_BOX_NO_GUI = "ubuntu/bionic64"
+# maybe upgrade to 18 too
+#WORKSPACE_VM_BOX_WITH_GUI_URL = "https://app.vagrantup.com/box-cutter/boxes/ubuntu1604-desktop"
+
+
 
 WORKSPACE_VM_BOOT_TIMEOUT = 2400
 
@@ -102,6 +110,9 @@ N_WP = 3
 
 WS_IP_SPACE_SMTP_START = 89
 N_SMTP = 3
+
+WS_IP_SPACE_ELIXIR_START = 92
+N_ELIXIR = 3
 
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
@@ -232,14 +243,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
 
     #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
-    box.ssh.forward_agent = true
+    #box.ssh.forward_agent = true
     box.vm.host_name = "gen#{machine_id}.vm"
     box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_GENERIC_START+machine_id}", netmask: "255.255.255.0", virtual_box__intnet: "{#WS_NETWORK_NAME}"
     box.vm.synced_folder  "projects", "/projects"
 
     box.vm.provider "virtualbox" do |vb|
       # We do not have to have gui, we can save some memory if we don't.
-      vb.gui = true
+      vb.gui = false # true
       vb.memory = "3048"
       vb.customize ["modifyvm", :id, "--vram", "16"]
       vb.cpus = 2
@@ -263,7 +274,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "gen3", autostart: false do |box|
     machine_id = 3
     box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+    # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
     #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_GENERIC_START+machine_id}"
     box.ssh.forward_agent = true
@@ -320,7 +331,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provider "virtualbox" do |vb|
         # We do not have to have gui, we can save some memory if we don't.
-        vb.gui = true
+        vb.gui = false # true
         vb.memory = "1024"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
@@ -355,7 +366,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.define "ycli#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_YARC_CLIENT_START+machine_id}"
       box.vm.host_name = "ycli#{machine_id}.vm"
@@ -363,7 +374,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.synced_folder  "projects", "/projects"
 
       box.vm.provider "virtualbox" do |vb|
-        vb.gui = true
+        vb.gui = false # true
         vb.memory = "1024"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2
@@ -392,7 +403,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.define "cpp#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
     #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_CPP_START+machine_id}"
       box.vm.host_name = "cpp#{machine_id}.vm"
@@ -437,7 +448,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.define "erlang#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
     #  box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ERL_START+machine_id}"
       box.vm.host_name = "erlang#{machine_id}.vm"
@@ -672,7 +683,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "perl1", autostart: false do |box|
     machine_id = 1
     box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-    box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+    # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
     box.ssh.forward_agent = true
     box.vm.host_name = "perl#{machine_id}.vm"
@@ -704,7 +715,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.define "javascript#{machine_id}", autostart: false do |box|
 
       box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
-      box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
 
       # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_JAVASCRIPT_START+machine_id}"
       box.vm.host_name = "javascript#{machine_id}.vm"
@@ -1292,5 +1303,55 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       SHELL
     end
   end
+  
+  (1..N_ELIXIR).each do |machine_id|
+    config.vm.define "elixir#{machine_id}", autostart: false do |box|
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+      # box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      # box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_ELIXIR_START+machine_id}"
+      # box.ssh.forward_agent = true
+      # box.ssh.insert_key = false
+      box.vm.boot_timeout = WORKSPACE_VM_BOOT_TIMEOUT
+      
+      box.vm.host_name = "elixir#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_ELIXIR_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+
+      box.vm.provider "virtualbox" do |vb|
+        # TODO: The desktop version of the vm is screwed up. :-( It would be nice to repair for using IntelliJ
+        #vb.gui = true
+        #vb.memory = "4096"
+        vb.memory = "2048"
+        #vb.customize ["modifyvm", :id, "--vram", "16"]
+        vb.cpus = 2
+        #vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+        export DEBIAN_FRONTEND=noninteractive
+       #apt-get install -y dos2unix 
+        mkdir -p /home/vagrant/tmp_provisioning
+        cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+       #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/bootstrap.sh
+        /home/vagrant/tmp_provisioning/postfix_install.sh
+      SHELL
+
+      box.vm.provision "dev_generic", type: "ansible" do |ansible|
+         ansible.playbook = "ansible/playbooks/generic/bootstrap.yml"
+         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.verbose = true
+         ansible.host_key_checking = false
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+         /home/vagrant/tmp_provisioning/elixir_install.sh "#{machine_id}"
+      SHELL
+    end
+  end
+  
 end
 
