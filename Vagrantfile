@@ -332,9 +332,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       box.vm.provider "virtualbox" do |vb|
         # We do not have to have gui, we can save some memory if we don't.
         vb.gui = false # true
-        vb.memory = "1024"
+        #vb.memory = "1024"
+        vb.memory = "4096"
         vb.customize ["modifyvm", :id, "--vram", "16"]
-        vb.cpus = 2
+        vb.cpus = 4
         vb.customize ["modifyvm", :id, "--audio", 'coreaudio']
         #vb.customize ["modifyvm", :id, '--audio', 'coreaudio', '--audiocontroller', 'hda'] # choices: hda sb16 ac97
         ##if RUBY_PLATFORM =~ /darwin/
@@ -412,7 +413,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       # box.vm.synced_folder  "projects_sbcpp#{machine_id}", "/projects_sbcpp#{machine_id}"
 
       box.vm.provider "virtualbox" do |vb|
-        vb.gui = true
+        vb.gui = false # true
         vb.memory = "2048"
         vb.customize ["modifyvm", :id, "--vram", "16"]
         vb.cpus = 2

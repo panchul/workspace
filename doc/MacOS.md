@@ -10,6 +10,17 @@ See also
 
 ---
 
+About getting appleid without credit cards:
+https://appletoolbox.com/2016/01/how-to-create-an-apple-id-without-credit-card/
+https://support.apple.com/en-us/HT204034
+
+---
+
+RDP client:
+https://itunes.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12
+
+---
+
 Automake tools on Mac:
 
     $ ﻿brew install automake
@@ -18,8 +29,7 @@ Automake tools on Mac:
 
 ---
 
-#### To add PATH on Mac
-
+To add PATH on Mac
 Simple way is to add PATH to file ```~/.bash_profile```. Like so:
 
     ﻿export PATH="/usr/local/someprogramijustwrote/bin:$PATH"
@@ -43,7 +53,7 @@ http://www.loopinsight.com/2014/01/08/your-macs-built-in-screen-recorder/
 
 ---
 
-to get `http`(the comannd line http client):
+to get `http`(the command line http client):
 
     $ brew install httpie
 

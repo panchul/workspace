@@ -235,3 +235,9 @@ There is a feature in git, to make easier merging:
 It saves left and right for the merge and caches the resolution.
 
 ---
+
+Unstageing an added file in Git(and keeping local changes):
+
+    $ git reset HEAD path/to/file
+
+---

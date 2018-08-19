@@ -19,6 +19,20 @@ See Also:
  
 ---
 
+To write to syslog, ```/var/log/syslog```:
+
+```
+   #include <syslog.h>
+   int main(int argc, char *argv[])
+   {
+        openlog("mytestlog", LOG_PERROR, LOG_USER);
+        syslog(LOG_INFO, "something %d", 123);
+       	closelog();
+  	} 
+```
+ 
+---
+
 How to compile Linux kernel
 https://www.linux.com/learn/intro-to-linux/2018/4/how-compile-linux-kernel-0
  

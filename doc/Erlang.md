@@ -7,9 +7,37 @@
 My Erlang sandbox is [https://github.com/panchul/sb_erlang](https://github.com/panchul/sb_erlang).
 
 
-### Installing
+---
 
-#### Installing from pre-built binary packages
+A refresher on exceptions
+
+```
+-module(test_throw).
+-compile([export_all, debug_info]).
+
+
+gen_exception(1) -> a;
+gen_exception(2) -> throw(a);
+gen_exception(3) -> exit(a);
+gen_exception(4) -> {'EXIT', a};
+gen_exception(5) -> erlang:error(a).
+
+demo1() ->
+	[catcher(I) || I <- [1,2,3,4,5]].
+
+catcher(N) ->
+	try gen_exception(N) of
+		Val -> {N, normal, Val}
+	catch
+		throw:X -> {N, caught, thrown, X};
+		exit:X -> {N, caught, exited, X};
+		error:X -> {N, caught, error, X}
+	end.
+```
+
+---
+
+Installing from pre-built binary packages
 
 Pre-built packages are probably lagging behind with their versions, and
 lack some of the additional functionality. If it is ok, get them like so:  
@@ -20,7 +48,8 @@ For Ubuntu and Debian: ```apt-get install erlang```
 For Fedora: ```yum install erlang```  
 For FreeBSD: ```pkg install erlang```  
 
-#### Building and Installing from the souce codes  
+Building and Installing from the souce codes
+  
 [https://github.com/erlang/otp/blob/maint/HOWTO/INSTALL.md](https://github.com/erlang/otp/blob/maint/HOWTO/INSTALL.md)
 
 Tarball is also available like so:  http://erlang.org/download/otp_src_18.3.tar.gz  
@@ -29,7 +58,7 @@ Pre-requisites are needed, depending on what you want to do with it.
 
 ---
 
-Simple steps that seem to do it:
+Another way to install, with recompiling:
 
     $ tar xzf otp_src_20.0.tar.gz 
     $ cd otp_src_20.0/
@@ -42,25 +71,28 @@ Simple steps that seem to do it:
 It skips several components, like wxWidgets, disables OpenSSL and ODBC, uses fakefop instead of the real one.
 
 
-#### IDE support
+---
+ 
+ IDE support
 
 http://ignatov.github.io/intellij-erlang/ IntelliJ plug-in
 
+---
 
-### Popular open-source system that use Erlang
+Popular open-source system that use Erlang
 
 Popular XMPP server implementation is ejabberd, it has a vagrant dev environment repo:
     https://github.com/processone/ejabberd-vagrant-dev
 
 
-### Tools
+---
 
-#### rebar  
-#### meck  
-#### common test(CT)  
-#### eunit  
+Tools
 
-#### Misc snippets in no particular order
+- rebar  
+- meck  
+- common test(CT)  
+- eunit  
 
 ---
 
@@ -79,7 +111,7 @@ Simple Erlang script template
     
 ---
 
-###  Links
+Links
 
 [https://www.erlang.org/](https://www.erlang.org/)  
 [http://erlang.org/mailman/listinfo/erlang-questions](http://erlang.org/mailman/listinfo/erlang-questions) - mailing list  
@@ -90,6 +122,4 @@ Simple Erlang script template
 
 
 [Yaws](Yaws.md) - a dynamic web server in Erlang
-  
-  
   

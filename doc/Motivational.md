@@ -12,6 +12,37 @@ http://psychologytoday.ru/public/urovni-slozhnosti-v-otstaivanii-svoikh-granits/
 
 ---
 
+This one os for girls, but parts could be applied to any relationship,
+including employer-employee.
+"10 Stupid Things Women Do to Mess Up Their Lives" by Dr. Laura Schlessinger
+
+- Stupid Attachment – Looking to the context of a man to find and define yourself
+- Stupid Courtship – Becoming a beggar, not a chooser, in the dating ritual because you are desperate.
+- Stupid Devotion – Finding yourself driven to love, and suffer, and succor (or is that “sucker”?) in vain.
+- Stupid Passion – Having sex too soon and setting yourself up to be burned
+- Stupid Cohabitation – Lying to yourself and living with him because you hope he’ll want you
+- Stupid Expectations – Using marriage as a quick fix for low or no self-esteem
+- Stupid Conception – Using biology misguidedly as a jump-start for love, personal growth, and commitment
+- Stupid Subjugation – Allowing you and your children to be held hostage by your own obsessive need for security and attachment
+- Stupid Helplessness – Being too scared and insecure to deal with your rage and turning it into wimpyness instead.
+- Stupid Forgiving – Not knowing when to break off a no-win relationship or how to not get involved in the first place.
+
+---
+
+Neat thoughts about rejection, from
+https://www.elephantjournal.com/2017/06/what-it-really-means-if-youve-been-ghosted-dumped-unfriended-or-blocked/
+
+A quote from there:
+"There is nothing wrong with you. We are all guilty of taking rejection
+ personally, especially when we rely on the outside validation of other
+ people’s opinions. Someone else’s actions have nothing to do with us.
+ What someone else thinks or does, or how they choose to treat us, is
+ separate from us, and should not be used as confirmation for the way
+ we feel about ourselves—good or bad. So rest assured, you’re still
+ wonderful, worthy, real, good, and important…no matter what."
+
+---
+
 "Before success comes in any man's life, he's sure to meet with
  much temporary defeat and, perhaps some failures. When defeat
  overtakes a man, the easiest and the most logical thing to do

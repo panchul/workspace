@@ -372,6 +372,47 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
   https://jwt.io/ - interactive tool
   https://tools.ietf.org/html/rfc7519 - RFC for it.
 
+## BI, Business Intelligence 
+
+- PowerBI https://powerbi.microsoft.com/en-us/desktop/
+- Tableau
+- Google Analytics
+- icCube
+- Qlik Sense, QlikView
+- Sisense BI
+- IBM Cognos Analytics
+- Looker
+- Domo
+- SAP Crystal Reports
+- Board Management Intelligence Toolkit
+- Dundas BI
+- Woopra
+- Hevo Data
+- Active Intelligence Server
+- Actuate Business Intelligence and Reporting Tools (BIRT)
+- Ducen
+- Gooddata
+- Insightsquared
+- JasperSoft
+- MicroStrategy
+- MITS
+- OpenI
+- Oracle BI
+- Oracle Hyperion System
+- Palo OLAP Server (online analytical processing (OLAP) or multidimensional online analytical processing (MOLAP))
+- Pentaho
+- Profit base
+- Rapid insight
+- Silvon
+- Solver
+- Spago BI
+- Style Intelligence
+- Syntell solutions
+- Targit
+- Vismatica
+- WebFOCUS
+- Yellowfin BI
+
 
 ## Photography, Video, and optics in general
 
