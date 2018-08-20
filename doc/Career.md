@@ -20,7 +20,10 @@ https://www.linkedin.com/pulse/wework-effect-ageism-tech-lindsay-boyajian - inte
 https://www.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals TED talk about stoicism
 https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-and-more-want-you-to-ask
 
+---
 
+Neat article about office politics (including remote teams)
+https://techcrunch.com/2018/08/18/distributed-teams-are-rewriting-the-rules-of-officeless-politics/
 
 ---
 
@@ -49,7 +52,19 @@ Signs a narcissist is manipulating you
 
 ---
 
-### Location, Locaion, Location
+10 Tricks to Appear Smart During Meetings.
+https://thecooperreview.com/10-tricks-to-appear-smart-during-meetings/
+
+---
+
+How to Grow, Manage and Work with Remote Teams
+https://zapier.com/learn/remote-work/
+
+Or this one, it is shorter:
+
+https://techcrunch.com/2018/08/18/distributed-teams-are-rewriting-the-rules-of-officeless-politics/
+
+---
 
 States without state income tax([full info](http://www.money-zine.com/financial-planning/tax-shelter/state-income-tax-rates/)):
 - Alaska
@@ -81,6 +96,16 @@ Remember to ask these before jumping in.
 - Tell me about my most important internal clients and other contacts. What do I need to know about working with each of them -- their particular requirements, quirks, communication styles, etc?
 - What do you think will be the most challenging part of the role? What is your advice for surmounting that hurdle?
 - What else do I need to know about the culture, the management team and the company?
+
+
+---
+
+Re-phrasing dating advices(from﻿Laura Schlessinger) and applying the same attitude to job searching, do fewer of these mistakes:
+
+- Stupid Attachment - Looking for the context of a company to find and define yourself.
+- Stupid Courtship - Become a beggar, not a chooser, in the job search ritual because you are desperate.
+- Stupid Helplessness – Being too scared and insecure to deal with your rage and turning it into wimpyness instead.
+- Stupid Forgiving – Not knowing when to break off a no-win relationship or how to not get involved in the first place.
 
 ---
 
