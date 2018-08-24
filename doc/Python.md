@@ -28,6 +28,7 @@ https://www.jetbrains.com/help/pycharm/meet-pycharm.html
 
 Spyder IDE (Anaconda, WinPython, Python(x,y) )
 Conda
+TFDebug, TensorBoard, Jupiter
 
 ---
 

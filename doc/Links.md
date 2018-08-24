@@ -7,24 +7,25 @@ TODO: Create sub-pages of these.
 
 ### Virtualization, clustering, provisioning, and monitoring
 
-- [Vagrant](Vagrant.md)  
+- [AWS](AWS.md)
 - [Ansible](Ansible.md)  
+- Cacti
 - [Docker](Docker.md)
   - [Docker-Compose](DockerCompose.md)
   - [Docker Swarm](Swarm.md)
-- [Kubernetes](Kubernetes.md)  
-- [VirtualBox](VirtualBox.md)  
-- [VMWare](VMWare.md)  
-- [AWS](AWS.md)
-- [OpenStack](OpenStack.md)
 - Fabric
+- [Google Cloud](GoogleCloud.md)
+- [Kubernetes](Kubernetes.md)  
+- [VMWare](VMWare.md)  
+- [OpenStack](OpenStack.md)
 - Otto
 - [Mesos](Mesos.md)
 - [Triton,Joyent](Triton.md)
 - Nagios
 - Munin
-- Cacti
 - [Rex-Ray](RexRay.md)
+- [Vagrant](Vagrant.md)  
+- [VirtualBox](VirtualBox.md)  
 
 
 ### Programming languages, scripts, etc.
@@ -318,16 +319,26 @@ TODO: Create sub-pages of these.
   
 - datascience.ibm.com
 
-### Algorithms and Data Structures
+- http://setosa.io/ev/markov-chains/ neat Markov Chains visualization
 
+### Algorithms and Data Structures
 
 Nice MIT OCW:
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
 
-Overview of Heaps: https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
+Overview of Heaps: 
+https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
 
 Nice collection of algorithms and solutions
 https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-problems-and-their-solutions-b45a83d803f0
+
+https://www.youtube.com/watch?v=B7hVxCmfPtM Heap presentation
+
+Nice collection for the topic of Distributed Systems and Parallel Computing
+https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
+
+Scalable web architecture
+http://www.aosabook.org/en/distsys.html
 
 
 ### Computer Graphics, Computer Vision, Visualization, etc

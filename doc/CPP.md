@@ -46,6 +46,25 @@ Overview of C++ trends and guidelines
 https://github.com/isocpp/CppCoreGuidelines
 Neat collection of C++ guidelines
 
+---
+
+Refresher on big-O() notation, and sorting algorithms
+http://bigocheatsheet.com/
+
+---
+
+Stanford Professor YouTube Channel
+https://www.youtube.com/channel/UCcH4Ga14Y4ELFKrEYM1vXCg
+
+---
+
+Great algorithm refresher
+https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+
+---
+
+GNU C manual
+https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
 
 ---
 
