@@ -3,10 +3,23 @@
 
 Misc stuff related to psychology and motivation
 
+---
+
+"It is foolish and wrong to mourn the men who died. Rather, we should thank God that such men lived." Gen. George S. Patton
+
+---
+
+"You are never as weak as they want you to think you are."
+
+---
+
 [16-things-your-successful-friends-have-given-up-tim-denning](https://www.linkedin.com/pulse/16-things-your-successful-friends-have-given-up-tim-denning)
 
+---
 
 https://www.youtube.com/watch?v=du035tg-SwY - How to Remain Calm With People.
+
+---
 
 http://psychologytoday.ru/public/urovni-slozhnosti-v-otstaivanii-svoikh-granits/ - Ways to stand up for yourself.
 

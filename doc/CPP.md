@@ -8,6 +8,17 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Interesting notes about push_back() vs. emplace(). Boils down to "don't be a smart-pants, and use push_back() for better readability"
+https://abseil.io/tips/112
+
+---
+
+Compiler support for C++17 features and others
+https://en.cppreference.com/w/cpp/compiler_support
+
+
+---
+
 Creating and using console i/o from win32 gui application
 http://dslweb.nwnexus.com/~ast/dload/guicon.htm
 
@@ -72,6 +83,13 @@ Cute collection of tricks. Most are pretty old, but nice to never forget.
 
 http://www.gowrikumar.com/c/index.php
 
+---
+
+Idiomatic assigning char array a string:
+
+    std::string mystring("govno");
+    char p[20];
+    p[mystring.copy(p,19)] = '\0';
 
 ---
 
@@ -146,6 +164,17 @@ needed to run these to fix it:
 
 Snippet share website:
 coliru.stacked-crooked.com/a/5aa89a65e3a86c98
+
+---
+
+Demo of ```new``` vs. ```new[]```
+
+    int *i = new int;
+    Object *array = new Object[100];
+
+    delete i; // ok
+    delete[] array; //ok
+    delete array; // all destructors may not be called
 
 ---
 
@@ -250,6 +279,7 @@ This would also work:
 ---
  
  Merging and sorting of two files
+ (more at my C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp) )
  
     //
     // in1.txt:

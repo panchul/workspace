@@ -13,3 +13,19 @@ https://developer.codeclimate.com/#overview
 
 ---
 
+API security standards and implementation
+ - Oauth
+ - OpenId
+ - ...
+
+API Management system
+
+ - Swagger
+ - APIGEE,
+ - Akana,
+ - CA APIM (Layer7),
+ - IBM Connect,
+ - Mulesoft,
+ - ...
+
+---

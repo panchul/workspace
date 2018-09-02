@@ -161,10 +161,11 @@ TODO: Create sub-pages of these.
 ### Operating systems
   
 - [Linux](Linux.md)  
-  -- [Ubuntu](Ubuntu.md)
-  -- RedHat  
-  -- CentOS
   -- [Alpine](Alpine.md)
+  -- [CentOS](CentOS.md)
+  -- [Debian](Debian.md)
+  -- [RedHat](RedHat.md)  
+  -- [Ubuntu](Ubuntu.md)
 - SunOS  
 - [Windows](Windows.md)  
 - Symbian OS  
@@ -323,6 +324,10 @@ TODO: Create sub-pages of these.
 
 ### Algorithms and Data Structures
 
+
+Summary of containers:
+https://en.cppreference.com/w/cpp/container
+
 Nice MIT OCW:
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
 
@@ -368,8 +373,8 @@ http://www.aosabook.org/en/distsys.html
 - www.websequencediagrams.com
 - www.lucidchart.com
 - [Code Review](CodeReview.md)
- - monosnap utility, for video capture on Windows
-
+- monosnap utility, for video capture on Windows
+- [Univied Modeling Language(UML)](UML.md)
 
 ## Cryptography, Network Security, etc.
 
