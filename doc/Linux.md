@@ -114,7 +114,7 @@ Pretty neat for the summary of what is out there:
 
 ---
 
-#### cowsay, cowthink, xcowsay
+Cute utilities ```cowsay, cowthink, xcowsay```
 
 ```sudo apt-get install xcowsay``` - installs it (Ubuntu)
 
@@ -145,7 +145,7 @@ See Also [Ubuntu](Ubuntu.md)
 
 ---
 
-#### grub issues, broken packager 
+grub issues, broken packager 
 
 On Ubuntu vm setup in VirtualBox on MacOS via Vagrant.
 Had something wrong with ```grub``` on a vm, needed to run ```sudo dpkg --configure -a``` to get
@@ -153,7 +153,7 @@ the packager work better.
 
 ---
 
-#### html5, flash, etc.
+html5, flash, etc.
 
 Here is how you could get html5 working on ubuntu:
 
@@ -163,7 +163,7 @@ Here is how you could get html5 working on ubuntu:
 
 ---
 
-#### To update the OS, run these:
+To update the OS, run these:
 
     sudo apt-get -y update
     sudo apt-get -y upgrade
@@ -180,7 +180,7 @@ For Gnome there is also:
     
 ---
     
-#### OpenVPN
+OpenVPN
 
 Build a Real VPN with OpenVPN:
 
@@ -532,7 +532,7 @@ https://www.rootusers.com/how-to-change-log-rate-limiting-in-linux/
 
 ---
 
-Change the lineendings in the vi:
+Change the line endings in the vi:
 
     :e ++ff=dos
     :e ++ff=mac

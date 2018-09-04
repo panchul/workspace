@@ -118,3 +118,24 @@ Using Vim as a Hexadecimal editor:
 5. Save.
 
 ---
+
+Change the line endings in the vi:
+
+    :e ++ff=dos
+    :e ++ff=mac
+    :e ++ff=unix
+
+This can also be used as saving operation (:w alone will not save using the lineendings you see on screen):
+
+    :w ++ff=dos
+    :w ++ff=mac
+    :w ++ff=unix
+
+And you can use it from the command-line:
+
+    for file in $(ls *.txt)
+    do 
+      vi +":w ++ff=unix" +":q" ${file}
+    done
+
+--

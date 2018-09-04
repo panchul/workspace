@@ -31,8 +31,9 @@ TODO: Create sub-pages of these.
 ### Programming languages, scripts, etc.
 
 - [C/C++](CPP.md)
-  - STL
   - [Boost](Boost.md)
+  - [STL](STL.md)
+  - [Multithreading](Multithreading.md)
 - [C#](CSharp.md)   
 - [Erlang/OTP](Erlang.md)  
   - Kerl
@@ -66,16 +67,17 @@ TODO: Create sub-pages of these.
 
 #### Frameworks Libraries, Static code analyse, architecture approaches, etc.
 
- - ReactiveX http://reactivex.io/intro.html
+ - [ASCIIDoc](asciidoc.md]
  - [Apache Spark](ApacheSpark.md)
  - Codeclimate https://developer.codeclimate.com/#overview
  - [Confluent](Confluent.md)
  - Domain Driven Design (DDD)
- - [Zlib](ZLib.md)
  - [M4](M4.md)
- - [ASCIIDoc](asciidoc.md]
+ - [STL](STL.md) 
+ - ReactiveX http://reactivex.io/intro.html
  - [xmlto](xmlto.md)
- 
+ - [Zlib](ZLib.md)
+
   Nice about fundamentals:
   https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
   
@@ -324,6 +326,7 @@ TODO: Create sub-pages of these.
 
 ### Algorithms and Data Structures
 
+- [Algorithms and Data Structures](AlgorithmsDataStructures.md)
 
 Summary of containers:
 https://en.cppreference.com/w/cpp/container
