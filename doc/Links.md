@@ -33,6 +33,11 @@ TODO: Create sub-pages of these.
 - [C/C++](CPP.md)
   - [Boost](Boost.md)
   - [STL](STL.md)
+    - [Deque](Deque.md) 
+    - [List](List.md) 
+    - [Map](Map.md) 
+    - [Set](Set.md) 
+    - [Vector](Vector.md) 
   - [Multithreading](Multithreading.md)
 - [C#](CSharp.md)   
 - [Erlang/OTP](Erlang.md)  
@@ -327,20 +332,7 @@ TODO: Create sub-pages of these.
 ### Algorithms and Data Structures
 
 - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
-
-Summary of containers:
-https://en.cppreference.com/w/cpp/container
-
-Nice MIT OCW:
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
-
-Overview of Heaps: 
-https://www.cpp.edu/~ftang/courses/CS241/notes/heap.htm
-
-Nice collection of algorithms and solutions
-https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-problems-and-their-solutions-b45a83d803f0
-
-https://www.youtube.com/watch?v=B7hVxCmfPtM Heap presentation
+- [Graphs](Graphs.md)
 
 Nice collection for the topic of Distributed Systems and Parallel Computing
 https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
@@ -463,6 +455,8 @@ http://www.aosabook.org/en/distsys.html
 - http://www.ercot.com/news/mediakit/maps
 – http://www.energychoicematters.com/ The guy that scoops everyone
 – https://www.snl.com/  The most comprehensive energy news
+- rotor sail demos https://www.youtube.com/watch?v=XAztqxq2z9k
+
 
 ## Manufacturing, IoT, etc.
 

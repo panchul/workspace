@@ -25,6 +25,11 @@ http://psychologytoday.ru/public/urovni-slozhnosti-v-otstaivanii-svoikh-granits/
 
 ---
 
+Neat rules of working on your own personality as the main objective of life.
+http://gravitysport.pro/erix-fromm-neschastnaya-sudba-lyudej-sledstvie-nesdelannogo-imi-vybora/
+
+---
+
 This one os for girls, but parts could be applied to any relationship,
 including employer-employee.
 "10 Stupid Things Women Do to Mess Up Their Lives" by Dr. Laura Schlessinger
