@@ -4,9 +4,11 @@
 Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](﻿https://www.linkedin.com/in/panchul)
 
 
-TODO: List courses I took
+TODO: Add the list courses I took
 
-TODO: List interests, etc.
+TODO: Add list interests, etc.
+
+
 
 ### Misc Links in no particular order, loosely related to career.
 

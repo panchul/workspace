@@ -370,6 +370,8 @@ http://www.aosabook.org/en/distsys.html
 - [Code Review](CodeReview.md)
 - monosnap utility, for video capture on Windows
 - [Univied Modeling Language(UML)](UML.md)
+- Golden Triangle Cost/Quality/TimeToMarket
+  https://blog.feabhas.com/2018/08/technical-debt/
 
 ## Cryptography, Network Security, etc.
 

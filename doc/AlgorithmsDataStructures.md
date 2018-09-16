@@ -12,6 +12,37 @@ My sandbox for data structures is here:
 
 https://github.com/panchul/sb_cpp/tree/master/data_structures
 
+Free Programming Books:
+
+https://github.com/panchul/free-programming-books
+
+More material for interview preparation:
+
+https://github.com/panchul/interviews
+
+
+---
+
+Big-O Complexity Chart
+http://bigocheatsheet.com/
+
+And partial source code for the tables there:
+https://github.com/ericdrowell/BigOCheatSheet
+
+---
+
+500 Data Structures and Algorithms interview questions and their solutions
+https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions
+
+---
+
+About cyclomatic complexity
+https://blog.feabhas.com/2018/07/code-quality-cyclomatic-complexity/
+
+---
+
+About l-values and r-values
+https://blog.feabhas.com/2018/04/handy-cut-keep-guide-stdforward-stdmove/
 
 ---
 

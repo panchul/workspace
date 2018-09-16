@@ -5,6 +5,15 @@
 
 ---
 
+Nice talk, from Dan Cobley, Google (Inspiring Entrepreneurs - Startup Stars)
+https://www.youtube.com/watch?v=xwMnvuloZvg
+
+Mentions the necessity of showmanship.
+
+Also seem to have stolen my haircut. :-)
+
+---
+
 Meaningful Exits for Founders
 https://medium.com/strong-words/meaningful-exits-for-founders-4c3b2baba6b4
 
@@ -42,6 +51,5 @@ https://www.youtube.com/watch?v=xb8idEf-Iak
 
 And a wider discussion about branding:
 https://www.fastcodesign.com/90164213/3-essential-branding-lessons-from-a-rare-steve-jobs-interview
-
 
 ---

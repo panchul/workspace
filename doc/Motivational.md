@@ -3,6 +3,18 @@
 
 Misc stuff related to psychology and motivation
 
+
+---
+
+"Intuition is something that is ahead of exact knowledge. Our brain has very sensitive nerve
+cells, which allows us to feel the truth, even when it is not yet available to logical
+conclusions."— Nikola Tesla.
+
+---
+
+About inherent corruption of society, great summary, by Jacques Fresco.
+https://www.youtube.com/watch?v=oHcsM1Iq-w4
+
 ---
 
 "It is foolish and wrong to mourn the men who died. Rather, we should thank God that such men lived." Gen. George S. Patton

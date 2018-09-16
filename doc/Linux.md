@@ -22,6 +22,28 @@ See Also:
  
 ---
 
+Mutexes vs semaphores demo:
+
+    // Task 1
+    pthread_mutex_lock(mutex_thing);
+    // Safely use shared resource
+    pthread_mutex_unlock(mutex_thing);
+ 
+    // Task 2
+    pthread_mutex_lock(mutex_thing);
+    // Safely use shared resource
+    pthread_mutex_lock(mutex_thing);
+
+The semaphore scenario is more like signalling between the processes:
+
+    /* Task 1 - Producer */
+    sema_post(&sem);   // Send the signal
+
+    /* Task 2 - Consumer */
+    sema_wait(&sem);   // Wait for signal
+  
+---
+
 To write to syslog, ```/var/log/syslog```:
 
 ```

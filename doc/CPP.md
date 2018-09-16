@@ -13,6 +13,63 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+About exceptions (changed from C++11 to C++17)
+https://en.cppreference.com/w/cpp/language/noexcept
+
+---
+
+Nice about shared_ptr<>, and !!! About lock_guard<>
+https://en.cppreference.com/w/cpp/memory/shared_ptr
+
+    void del(void(*)()) {}
+    void fun() {}
+    int main(){
+        std::shared_ptr<void()> ee(fun, del);
+        (*ee)();
+    }
+
+
+---
+
+About ‘explicit’ keyword from here:
+https://en.cppreference.com/w/cpp/language/explicit
+
+    struct A
+    {
+        A(int) { }      // converting constructor
+        A(int, int) { } // converting constructor (C++11)
+        operator bool() const { return true; }
+    };
+
+    struct B
+    {
+        explicit B(int) { }
+        explicit B(int, int) { }
+        explicit operator bool() const { return true; }
+    };
+
+    int main()
+    {
+        A a1 = 1;      // OK: copy-initialization selects A::A(int)
+        A a2(2);       // OK: direct-initialization selects A::A(int)
+        A a3 {4, 5};   // OK: direct-list-initialization selects A::A(int, int)
+        A a4 = {4, 5}; // OK: copy-list-initialization selects A::A(int, int)
+        A a5 = (A)1;   // OK: explicit cast performs static_cast
+        if (a1) ;      // OK: A::operator bool()
+        bool na1 = a1; // OK: copy-initialization selects A::operator bool()
+        bool na2 = static_cast<bool>(a1); // OK: static_cast performs direct-initialization
+    //  B b1 = 1;      // error: copy-initialization does not consider B::B(int)
+        B b2(2);       // OK: direct-initialization selects B::B(int)
+        B b3 {4, 5};   // OK: direct-list-initialization selects B::B(int, int)
+    //  B b4 = {4, 5}; // error: copy-list-initialization does not consider B::B(int,int)
+        B b5 = (B)1;   // OK: explicit cast performs static_cast
+        if (b2) ;      // OK: B::operator bool()
+    //  bool nb1 = b2; // error: copy-initialization does not consider B::operator bool()
+        bool nb2 = static_cast<bool>(b2); // OK: static_cast performs direct-initialization
+    }
+
+---
+
 Interesting notes about push_back() vs. emplace(). Boils down to "don't be a smart-pants, and use push_back() for better readability"
 https://abseil.io/tips/112
 
