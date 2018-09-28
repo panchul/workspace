@@ -22,7 +22,9 @@ help:
 	@echo "         $$ vagrant ssh gen1"
 	@echo " "
 	@echo " Git helpers: "
-	@echo "     $$ make git_status    - runs 'git status' in the sandboxes. "
+	@echo "     $$ make git_status    - runs 'git status' in the sandboxes and private repositories. "
+	@echo "                             Optional list, containing one repository per line, in file"
+	@echo "                             private_repo_list.txt should be placed in private/ folder"
 	@echo " "
 	@echo " HAProxy playground: "
 	@echo "     $$ make haproxy_up       - creates a vms for HAProxy and Apache web servers. "
@@ -50,6 +52,11 @@ git_status:
 	@ for repo in `ls projects | grep sb_` ; \
 	do sh -c "echo \"Checking projects/$$repo...\" ; cd projects/$$repo ; git status -sb ; cd ../.. " ; \
 	done ;
+	@ if [ -e private/private_repo_list.txt ] ; then \
+	for repo in `cat private/private_repo_list.txt` ; \
+	do sh -c "echo \"Checking PRIVATE projects/$$repo...\" ; cd projects/$$repo ; git status -sb ; cd ../.. " ; \
+	done ; \
+	fi
 	@ git status -sb
 
 kafka: kafka_up

@@ -11,6 +11,17 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+Top Python Data Science Libraries 
+https://medium.com/activewizards-machine-learning-company/top-20-python-libraries-for-data-science-in-2018-2ae7d1db8049
+
+
+---
+
+Python vs R vs SAS
+https://www.datanami.com/2018/07/19/python-gains-traction-among-data-scientists/
+
+---
+
 Why Python is slow.
 https://hackernoon.com/why-is-python-so-slow-e5074b6fe55b
 

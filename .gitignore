@@ -9,6 +9,11 @@ private
 projects
 !projects/.git_keep
 
+# The projects that are not under version control, and of a lesser
+# value - experimenting, trying out, running quick demos, etc.
+projects_sandbox
+!projects_sandbox/.git_keep
+
 # The directory where installation files are downloaded.
 # It acts as a cache to not need to download the same files unnecessarily.
 install

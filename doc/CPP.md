@@ -13,8 +13,23 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Neat collection of style guides, C++ in particular:
+https://google.github.io/styleguide/cppguide.html
+
+---
+
 About exceptions (changed from C++11 to C++17)
 https://en.cppreference.com/w/cpp/language/noexcept
+
+---
+
+About ‘noexcept’ specifier
+https://en.cppreference.com/w/cpp/language/noexcept_spec
+
+---
+
+About lvalues, rvalues, prvalues, etc.
+https://en.cppreference.com/w/cpp/language/value_category
 
 ---
 
@@ -28,6 +43,10 @@ https://en.cppreference.com/w/cpp/memory/shared_ptr
         (*ee)();
     }
 
+---
+
+Nice C++ series, about smart pointers
+https://www.youtube.com/watch?v=UOB7-B2MfwA
 
 ---
 
@@ -378,12 +397,5 @@ This would also work:
         while(fin1 >> n1) fout << n1 << ' ';
         while(fin2 >> n2) fout << n2 << ' ';
     }   
-
----
-
-
-
-
-
 
 ---

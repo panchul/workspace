@@ -6,7 +6,7 @@
 
 See Also:
 - [Graphs](Graphs.md)
-
+- [Sorting](Sorting.md)
 
 My sandbox for data structures is here:
 
@@ -20,6 +20,15 @@ More material for interview preparation:
 
 https://github.com/panchul/interviews
 
+---
+
+Misc summaries
+
+ - 
+ - Skip-list https://en.wikipedia.org/wiki/Skip_list
+ - [List](List.md)
+ - [Vector](Vector.md)
+ - 
 
 ---
 

@@ -24,6 +24,16 @@ https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-an
 
 ---
 
+Interview hints
+https://www.fastcompany.com/90234645/phone-interview-coming-up-dont-make-these-mistakes
+
+---
+
+How do I prepare to answer design questions in a technical interview?
+https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview
+
+---
+
 Neat article about office politics (including remote teams)
 https://techcrunch.com/2018/08/18/distributed-teams-are-rewriting-the-rules-of-officeless-politics/
 
@@ -87,6 +97,9 @@ https://www.viewthenumbers.com/w2-vs-1099
 
 Some compensation statistics for engineers, from a job site
 https://triplebyte.com/software-engineer-salary
+
+salary expectations, etc.
+https://biginterview.com/blog/2015/10/salary-expectations.html
 
 ---
 

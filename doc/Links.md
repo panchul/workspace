@@ -319,6 +319,12 @@ TODO: Create sub-pages of these.
 - CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
 - popular Python modules include NumPy, Pandas, Seaborn, Scikit-Learn, open source toolkits Apache MXNet, Caffe2, Keras, Microsoft Cognitive Toolkit, TensorFlow, PyTorch.
 
+- Kaggle https://www.kaggle.com/ Neat platform to do data science, etc.
+
+- Top Python Data Science Libraries 
+  https://medium.com/activewizards-machine-learning-company/top-20-python-libraries-for-data-science-in-2018-2ae7d1db8049
+  
+
 - Nice AI human animation
   https://www.facebook.com/techinsider/videos/814455945419430/
   
@@ -333,6 +339,7 @@ TODO: Create sub-pages of these.
 
 - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
 - [Graphs](Graphs.md)
+- [Sorting](Sorting.md)
 
 Nice collection for the topic of Distributed Systems and Parallel Computing
 https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
@@ -375,12 +382,13 @@ http://www.aosabook.org/en/distsys.html
 
 ## Cryptography, Network Security, etc.
 
-- [Cryptography and Network Security](Cryptography.md)
 - [IPSec](IPSec.md)
+- [Cryptography and Network Security](Cryptography.md)
+- [MD5.md](MD5.md)
+- [Obfuscators](Obfuscators.md)
 - [SASL](SASL.md)
 - [SSH](SSH.md)
 - [TLS, Transport Layer Security](TLS.md)
-- [Obfuscators](Obfuscators.md)
 - JWT JSON Web Tokens
   https://jwt.io/ - interactive tool
   https://tools.ietf.org/html/rfc7519 - RFC for it.
