@@ -13,8 +13,14 @@ Here is the manual in .html : [https://www.gnu.org/software/make/manual/make.htm
 
 ---
 
-Miscellaneous remarks in no particular order:
-- The long lines could be split with ```\```
+The long lines split with ```\``` works in Makefile
+
+---
+
+To get output of commands into vars in Makefile:
+
+    MYTIMESTAMP=$(shell date)
+    
 
 ---
 

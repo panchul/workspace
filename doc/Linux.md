@@ -22,6 +22,26 @@ See Also:
  
 ---
 
+About setting SO_LINGER in socket networking
+http://alas.matf.bg.ac.rs/manuals/lspe/snode=105.html
+
+ ...
+ 
+    struct linger so_linger;
+	so_linger.l_onoff = 1;	//TRUE;
+	so_linger.l_linger = 0; // timeout sec
+	int z = setsockopt(connfd,
+	SOL_SOCKET,
+	SO_LINGER, &so_linger, sizeof(so_linger));
+	if (z)
+		perror("setsockopt(2)");
+	
+	close(connfd);
+ 
+ ...
+ 
+---
+
 Mutexes vs semaphores demo:
 
     // Task 1

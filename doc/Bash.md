@@ -287,3 +287,22 @@ Quick script to append the line numbers and possibly offset.
         done 
     
 ---    
+
+To get the return code from a command:
+
+file.txt exists:
+
+    $cat file.txt
+    hello world
+    echo $?
+    0
+
+In case of error:
+
+    cat doesnotexist.txt
+    cat: doesnotexist.txt: No such file or directory
+    echo $?
+    1
+
+---
+

@@ -65,6 +65,11 @@ sudo /home/vagrant/tmp_provisioning/pip_install.sh
 
 sudo pip install docker-compose
 
+# or
+# $ sudo apt install docker-compose 
+#
+
+
 # Alternatively, you can download it from the github:
 #if [ ! -f "/usr/local/bin/docker-compose" ]; then
 #    sudo curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose

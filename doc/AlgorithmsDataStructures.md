@@ -83,3 +83,8 @@ Another basics refresher
 http://bit.ly/2CzlaBD
 
 ---
+
+Hash table benchmarks
+incise.org/hash-table-benchmarks.html
+
+---

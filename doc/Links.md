@@ -78,6 +78,7 @@ TODO: Create sub-pages of these.
  - [Confluent](Confluent.md)
  - Domain Driven Design (DDD)
  - [M4](M4.md)
+ - [MapReduce](MapReduce.md)
  - [STL](STL.md) 
  - ReactiveX http://reactivex.io/intro.html
  - [xmlto](xmlto.md)
@@ -129,14 +130,15 @@ TODO: Create sub-pages of these.
 
 ### Databases
 
+- [Cassandra](Cassandra.md)
+- [Couchbase](Couchbase.md)
+- [CouchDB](CouchDB.md)
+- [Hadoop](Hadoop.md)
+- [MongoDB](MongoDB.md)
 - [MySQL](MySQL.md)
-- PostGRE
-- MongoDB
+- [PostGRE](PostGRE.md)
 - [Redis](Redis.md)
 - Riak
-- [Hadoop](Hadoop.md)
-- CouchDB http://couchdb.apache.org/
-- [Couchbase](Couchbase.md)
 - A blog with comparison: http://highscalability.com/blog/2015/12/30/how-to-choose-an-in-memory-nosql-solution-performance-measur.html
 
 
@@ -269,6 +271,42 @@ TODO: Create sub-pages of these.
 - [OpenVPN](OpenVPN.md)
 
 
+Aggregated List of C++ networking libraries
+
+- Boost.Asio is really good.
+- ACE is also good, a bit more mature and has a couple of books to support it.
+- Asio is also available as a stand-alone library.
+- C++ Network Library
+- POCO
+- Qt
+- Raknet
+- ZeroMQ (C++)
+- nanomsg (C Library)
+- nng (C Library)
+- Berkeley Sockets
+- libevent
+- Apache APR
+- yield
+- Winsock2(Windows only)
+- wvstreams
+- zeroc
+- libcurl
+- libuv (Cross-platform C library)
+- SFML's Network Module
+- C++ Rest SDK (Casablanca)
+- RCF
+- Restbed (HTTP Asynchronous Framework)
+- SedNL
+- SDL_net
+- OpenSplice|DDS
+- facil.io (C, with optional HTTP and Websockets, Linux / BSD / macOS)
+- GLib Networking
+- grpc from Google
+- GameNetworkingSockets from Valve
+
+
+
+
 ### Testing Frameworks
 
 - Common Test (CT)
@@ -323,6 +361,9 @@ TODO: Create sub-pages of these.
 
 - Top Python Data Science Libraries 
   https://medium.com/activewizards-machine-learning-company/top-20-python-libraries-for-data-science-in-2018-2ae7d1db8049
+
+- OpenGM C++ ML stuff
+  http://hciweb2.iwr.uni-heidelberg.de/opengm/doxygen/opengm-2.1.1/index.html
   
 
 - Nice AI human animation
@@ -335,11 +376,15 @@ TODO: Create sub-pages of these.
 
 - http://setosa.io/ev/markov-chains/ neat Markov Chains visualization
 
+- https://towardsdatascience.com/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3
+
+
 ### Algorithms and Data Structures
 
 - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
 - [Graphs](Graphs.md)
 - [Sorting](Sorting.md)
+
 
 Nice collection for the topic of Distributed Systems and Parallel Computing
 https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing

@@ -3,6 +3,13 @@
 
 Misc stuff related to psychology and motivation
 
+---
+
+“If he [Thomas Edison] had a needle to find in a haystack, he would not stop
+to reason where it was most likely to be, but would proceed at once with the
+feverish diligence of a bee, to examine straw after straw until he found the
+object of his search. … Just a little theory and calculation would have saved
+him ninety percent of his labor.” ― Nikola Tesla ( July 10, 1856 —January 7, 1943 )
 
 ---
 

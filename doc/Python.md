@@ -67,3 +67,12 @@ http://devarea.com/python-writing-functions-complete-guide
 
 ---
 
+Pattern matching
+
+    import re
+    Test_String = raw_input()
+    Regex_Pattern = r'sometext'	
+    match = re.findall(Regex_Pattern, Test_String)
+    print "Number of matches :", len(match)
+
+---
