@@ -18,6 +18,7 @@ See Also:
   - [tar](tar.md)
   - [tcpdump](tcpdump.md)
   - [nohup](nohup.md)
+  - [bash](bash.md)
  
  
 ---
@@ -593,5 +594,26 @@ And you can use it from the command-line:
       vi +":w ++ff=unix" +":q" ${file}
     done
 
---
+---
 
+Exit status of a command:
+
+    $ ls -l /tmp
+    $ status=$?
+    $ echo "ls command exit stats - $status"
+
+Exit status is 0 if OK, 1 if minor problems(warnings), 2 if serious errors. 
+
+Another example:
+
+    ...
+    if grep "^$username:" /etc/passwd >/dev/null
+    then
+	  echo "User '$username' found in $PASSWD_FILE file."
+    else
+	  echo "User '$username' not found in $PASSWD_FILE file."
+    fi
+    
+See more in [bash](bash.md)
+
+---

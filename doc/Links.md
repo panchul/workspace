@@ -228,10 +228,11 @@ TODO: Create sub-pages of these.
 
 
   
-### Micorcontrollers
+### Micorcontrollers and Embedded programming
 
 - [Arduino](Arduino.md)  
 - [CNC Machines](CNC.md)
+- [EmbeddedProgramming](EmbeddedProgramming.md)
 - Misc Manufacturing and hardware, etc. https://www.designworldonline.com/iot-owe-advances-power-ethernet-cabling/
 - Brushless motors, etc.  https://www.alliedmotion.com/whitepaper-differences-brush-brushless-motors/
 - Sensors, and misc hardware: https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
@@ -437,6 +438,9 @@ http://www.aosabook.org/en/distsys.html
 - JWT JSON Web Tokens
   https://jwt.io/ - interactive tool
   https://tools.ietf.org/html/rfc7519 - RFC for it.
+  
+- nice collection of papers on Security https://cloud.google.com/beyondcorp/#researchPapers  
+  
 
 ## BI, Business Intelligence 
 

@@ -12,6 +12,11 @@ https://github.com/panchul/sb_cpp/tree/master/data_structures
   
 ---
 
+The reference page for set:
+
+http://www.cplusplus.com/reference/set/set/
+
+---
 
 
   

@@ -124,3 +124,7 @@ https://www.youtube.com/watch?v=lLEiT9PeHSg
 
 ---
 
+TED Talk about how harmful the fear of stress is, but not the stress itself.
+https://www.ted.com/talks/kelly_mcgonigal_how_to_make_stress_your_friend
+
+---
