@@ -529,6 +529,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
        #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         /home/vagrant/tmp_provisioning/bootstrap.sh
+        
+        /home/vagrant/tmp_provisioning/gcc_install.sh
+        /home/vagrant/tmp_provisioning/m4_install.sh
+        /home/vagrant/tmp_provisioning/autotools_install.sh
+        /home/vagrant/tmp_provisioning/python_install.sh
+                
         /home/vagrant/tmp_provisioning/git_install.sh
         /home/vagrant/tmp_provisioning/jdk_install.sh
         /home/vagrant/tmp_provisioning/sbt_install.sh
@@ -537,14 +543,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
-         #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false
       end
    
       box.vm.provision "dev_scala", type: "ansible" do |ansible|
          ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
-        #ansible.inventory_path = "ansible/ansible.vmhosts"
+         ansible.inventory_path = "ansible/ansible.vmhosts"
          ansible.verbose = true
          ansible.host_key_checking = false
       end

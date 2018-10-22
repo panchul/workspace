@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+scala -version
+
+if [[ $? -eq 0 ]] ; then 
+    # Already installed
+    echo "Detected that scala has already been installed"
+    return 0;
+else
+    echo "Detected that scala has NOT already been installed"
+fi
+
+
 # sync the list
 # sudo apt-get -y update
 # sudo apt-get -y install scala

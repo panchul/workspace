@@ -7,6 +7,16 @@ export DEBIAN_FRONTEND=noninteractive
 # sudo apt-get -y install git 
 #
 
+git --version
+
+if [[ $? -eq 0 ]] ; then 
+    # Already installed
+    echo "Detected that git has already been installed"
+    return 0;
+else
+    echo "Detected that git has NOT already been installed"
+fi
+
 
 GIT_INSTALLER_DIR="/vagrant/install"
 GIT_VERSION="2.9.5"

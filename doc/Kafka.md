@@ -332,3 +332,23 @@ Rebalancing topics (partition leaders, etc) in Kafka cluster:
 https://blog.imaginea.com/how-to-rebalance-topics-in-kafka-cluster/
 
 ---
+
+To see old messages:
+Using Old consumer API:
+
+    $  bin/kafka-console-consumer.sh --zookeeper <zk_host>:2181 --topic test --from-beginning
+
+Using New consumer API:
+
+    $ bin/kafka-console-consumer.sh --bootstrap-server <broker_host>:6667 --topic test --from-beginnin
+
+To see just one oldest message:
+Using Old consumer API:
+
+    $ bin/kafka-console-consumer.sh --zookeeper <zk_host>:2181 --topic test --from-beginning --max-messages 1
+
+Using New consumer API:
+
+    $ bin/kafka-console-consumer.sh --bootstrap-server <broker_host>:6667 --topic test --from-beginning --max-messages 1 
+
+---

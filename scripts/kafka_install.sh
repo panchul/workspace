@@ -2,7 +2,29 @@
 
 WHERE_I_STARTED_PWD=`pwd`
 
-source $(dirname $0)/kafka_env.sh
+ls $(dirname $0)/kafka_env.sh
+mystatus=$?
+
+if test $mystatus -eq 0 ; then
+echo " "
+echo "kafkf_env.sh found, getting definitions from it..."
+    source $(dirname $0)/kafka_env.sh
+else
+echo " "
+echo "WARNING: kafkf_env.sh is NOT found, using default values instead..."
+#KAFKA_VERSION="0.8.2.2"
+#KAFKA_VERSION="0.10.0.1"
+KAFKA_VERSION="0.11.0.0"
+KAFKA_NAME="kafka_2.11-$KAFKA_VERSION"
+KAFKA_INSTALLER_DIR="/vagrant/install"
+KAFKA_DEPLOYMENT_DIR="/home/vagrant"
+KAFKA_CONFIG_DIR="/vagrant/config"
+# If we spread them around, we might also want to spread around the ports
+#KAFKA_RUN_DIR="/tmp/kafka$1"
+KAFKA_RUN_DIR="/data/kafka"
+
+fi
+
 
 if [[ -z ${KAFKA_INSTALLER_DIR} ]] ; then
     echo " "

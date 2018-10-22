@@ -88,3 +88,8 @@ Hash table benchmarks
 incise.org/hash-table-benchmarks.html
 
 ---
+
+Neat review of Find Median problem(integers are coming in, we need to approximate the median)
+https://leetcode.com/problems/find-median-from-data-stream/solution/
+
+---

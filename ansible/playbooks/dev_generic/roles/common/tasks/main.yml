@@ -31,6 +31,8 @@
     - curl
     - screen
 
+    - python
+
     # ejabberd doc generator wanted this
     - ruby-full
     # - ruby-rvm

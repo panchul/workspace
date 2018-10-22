@@ -2,6 +2,17 @@
 
 # gnu m4
 
+m4 --version
+
+if [[ $? -eq 0 ]] ; then 
+    # Already installed
+    echo "Detected that m4 has already been installed"
+    return 0;
+else
+    echo "Detected that m4 has NOT already been installed"
+fi
+
+
 M4_INSTALLER_DIR="/vagrant/install"
 M4_VERSION=1.4.17
 M4_NAME="m4-${M4_VERSION}"
