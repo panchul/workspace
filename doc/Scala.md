@@ -10,13 +10,21 @@ See Also:
  [ScalaTest](ScalaTest.md) - for unit-testing, etc.  
  [Scalameter](Scalameter.md) - for benchmarking, etc.  
 
-
 My Scala sandbox is [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala).
 
 
 [http://www.scala-lang.org/](http://www.scala-lang.org/)
 [http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines 
 [http://danielwestheide.com/scala/neophytes.html](http://danielwestheide.com/scala/neophytes.html) - The Neophyte's Guide to Scala
+
+---
+
+Refresher links:
+
+- Futures https://docs.scala-lang.org/overviews/core/futures.html (e.g. what's the role of ExecutionContext)
+- ORMs, for example, Slick http://slick.lightbend.com/doc/3.2.0/dbio.html (e.g. what is an ORM, how does it work, what's a DBIO)
+- AKKA, http and streams https://akka.io/docs/
+- GraphQL and generally api design. REST apis, how that works, what are the limits there, alternatives to rest. E.g. Sangria in Scala, Graphene in Python and Apollo in typescript https://sangria-graphql.org/learn/
 
 ---
 
@@ -33,19 +41,16 @@ Giter8
 Here are some nice templates:
 https://github.com/foundweekends/giter8/wiki/giter8-templates
 
-
 ---
 
 Eclipse
 There is a package of Eclipse that already has the Scala additions, downolad url:
 [http://scala-ide.org/download/sdk.html](http://scala-ide.org/download/sdk.html)
-    
 
 --- 
 
 Nice Akka distributed  transaction processing example:
 [https://github.com/anicolaspp/distributd-transaction-processor](https://github.com/anicolaspp/distributd-transaction-processor)
-
 
 ---
 
@@ -70,7 +75,6 @@ https://books.google.com/books?id=2PWzDQAAQBAJ&pg=PA159&lpg=PA159&dq=scalameter+
 http://doc.akka.io/docs/akka/current/scala/routing.html  
 http://doc.akka.io/docs/akka/current/scala/actors.html#Extending_Actors_using_PartialFunction_chaining  
 http://stackoverflow.com/questions/18124643/how-to-use-stackable-trait-pattern-with-akka-actors  
-
 
 http://www.smartjava.org/content/akka-typed-actors-exploring-receptionist-pattern  
 http://stackoverflow.com/questions/18339082/how-to-create-routers-in-akka-with-parameterized-actors  
@@ -114,15 +118,7 @@ http://doc.scalatest.org/1.8/org/scalatest/FlatSpec.html
 
 ---
 
-Testing frameworks
-
-[ScalaTest](ScalaTest.md) - for unit-testing, etc.
-[Scalameter](Scalameter.md) - for benchmarking, etc.
-
----
-
 [https://github.com/typelevel/cats](https://github.com/typelevel/cats) - Nice testing link for Scala
-
 
 Nice scala link with quick demo of runtime info:
 http://alvinalexander.com/scala/how-show-memory-ram-use-scala-application-used-free-total-max
@@ -156,7 +152,6 @@ Camel
 Nice book: Camel in Action (has preview and good links)
 
 https://www.manning.com/books/camel-in-action
-
 
 ---
 
@@ -237,4 +232,54 @@ About variant/invariant, etc.
 http://blog.tmorris.net/posts/functors-and-things-using-scala/index.html
 http://typelevel.org/blog/2016/02/04/variance-and-functors.html
 
+---
+
+Summary of using ```yield```
+https://docs.scala-lang.org/tutorials/FAQ/yield.html
+
+
+    for (x <- List.range(1, 10); if x % 2 == 1 && !found)
+        if (x == 5) found = true else println(x)
+
+That is same as:
+
+    scala> var found = false
+    found: Boolean = false
+
+    scala> List.range(1,10).filter(_ % 2 == 1 && !found).foreach(x => if (x == 5) found = true else println(x))
+    1
+    3
+    7
+    9
+
+    scala> found = false
+    found: Boolean = false
+    
+    scala> List.range(1,10).withFilter(_ % 2 == 1 && !found).foreach(x => if (x == 5) found = true else println(x))
+    1
+    3
+
+---
+
+Future Monads
+
+    import scala.concurrent.duration._
+    import scala.concurrent.{Future,ExecutionContext,Await}
+    import ExecutionContext.Implicits.global
+    val f1=Future{
+        Thread.sleep(10000)
+        1 }
+    val f2=Future{
+        Thread.sleep(10000)
+        2 }
+    val f3=for {
+        v1 <- f1
+        v2 <- f2
+        } yield (v1+v2)
+    println(Await.result(f3,30.second))
+
+When you do that in the REPL, you'll get:
+
+    3
+    
 ---

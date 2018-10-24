@@ -143,3 +143,7 @@ elixir1 ansible_host=192.168.10.93
 elixir2 ansible_host=192.168.10.94
 elixir3 ansible_host=192.168.10.95
 
+[postgres_sandboxes]
+postgres1 ansible_host=192.168.10.96
+postgres2 ansible_host=192.168.10.97
+postgres3 ansible_host=192.168.10.98

@@ -105,3 +105,7 @@
 192.168.10.93 elixir1.vm elixir1
 192.168.10.94 elixir2.vm elixir2
 192.168.10.95 elixir3.vm elixir3
+
+192.168.10.96 postgres1.vm postgres1
+192.168.10.97 postgres2.vm postgres2
+192.168.10.98 postgres3.vm postgres3

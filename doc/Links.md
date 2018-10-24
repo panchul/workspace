@@ -136,7 +136,7 @@ TODO: Create sub-pages of these.
 - [Hadoop](Hadoop.md)
 - [MongoDB](MongoDB.md)
 - [MySQL](MySQL.md)
-- [PostGRE](PostGRE.md)
+- [PostgreSQL](PostgreSQL.md)
 - [Redis](Redis.md)
 - Riak
 - A blog with comparison: http://highscalability.com/blog/2015/12/30/how-to-choose-an-in-memory-nosql-solution-performance-measur.html
