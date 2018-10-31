@@ -245,12 +245,13 @@ TODO: Create sub-pages of these.
   
 ### IDEs and editors
   
-- MS Visual Studio  
-- [Eclipse](Eclipse.md)  
-- [IntelliJ](Intellij.md)  
-- [vi/vim](Vim.md)  
-- [emacs](Emacs.md) 
 - [Atom](Atom.md)
+- [Eclipse](Eclipse.md)  
+- [emacs](Emacs.md) 
+- [gdb](gdb.md)
+- [IntelliJ](Intellij.md)  
+- MS Visual Studio  
+- [vi/vim](Vim.md)  
 - Sublime http://www.sublimetext.com/
 - LiteIDE
 - PyCharm (For Python, from Jetbrains)
@@ -490,8 +491,14 @@ http://www.aosabook.org/en/distsys.html
 -﻿Shot Lists and Script Lining. https://nofilmschool.com/2018/02/shot-lists-and-script-lining-how-prepare-your-screenplay-shoot
 - ﻿https://pixabay.com/ Free bank of photos.
 
+## Biology, Medicine, Gerontology, etc.
 
-
+- Trends in Biotechnology
+  https://www.sciencedirect.com/science/article/pii/S0167779917301713
+- Who's Who in Gerontology: Companies
+  whoswho.senescence.info/companies.php
+  
+  
 ## Career etc.
 
 
@@ -526,7 +533,7 @@ http://www.aosabook.org/en/distsys.html
 - https://github.com/osisoft/PI-Web-API-Programming-Online-Course - neat course they made
 - PI SDK online videos https://pisquare.osisoft.com/community/Learn-PI/developing-applications-with-PI-AF-SDK
 
-
+- https://www.tinkercad.com - open-source 3d printing models, like GitHub for misc design(electronic, 3d printing, etc.) 
 
 
 ## Motivational

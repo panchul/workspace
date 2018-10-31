@@ -123,3 +123,39 @@ Links
 
 [Yaws](Yaws.md) - a dynamic web server in Erlang
   
+
+---
+
+Snippet adding two numbers from the input:
+
+    -module(solution).
+    -export([main/0]).
+
+    sum_it_up(A, B) ->
+        A + B.
+
+    main() -> 
+        {ok, [A, B]} = io:fread("", "~d~d"),
+        Res = sum_it_up(A,B),
+        io:format("~p~n",[Res]).
+    
+---    
+
+Snippet printing something N times
+
+    -module(solution).
+    -export([main/0]).
+
+    myprint(0) ->
+        io:format("");
+    myprint(N) ->
+        io:format("Hello World~n"),
+        myprint(N-1).
+
+    main() ->
+        {N, _} = string:to_integer(string:chomp(io:get_line(""))),
+        myprint(N),
+        ok.
+    
+---    
+    

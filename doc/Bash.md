@@ -372,3 +372,19 @@ User input is via ```read```:
     echo "Welcome" $myname
 
 ---
+
+Conditionals example. Reading two numbers from the input, printing their relationship.
+
+    read X
+    read Y
+
+    if [ $X -gt $Y ]; then
+      echo "X is greater than Y"
+    else if [ $X -lt $Y ]; then
+         echo "X is less than Y"
+       else 
+          echo "X is equal to Y"
+       fi
+    fi
+
+---

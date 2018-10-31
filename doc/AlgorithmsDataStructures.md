@@ -92,4 +92,10 @@ incise.org/hash-table-benchmarks.html
 Neat review of Find Median problem(integers are coming in, we need to approximate the median)
 https://leetcode.com/problems/find-median-from-data-stream/solution/
 
+more on medians:
+https://stackoverflow.com/questions/10657503/find-running-median-from-a-stream-of-integers
+
+The P^2 Algorithm for Dynamic Calculation of Quantiles and Histograms Without Storing Observations 
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.74.2672&rep=rep1&type=pdf
+
 ---

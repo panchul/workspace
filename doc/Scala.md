@@ -283,3 +283,29 @@ When you do that in the REPL, you'll get:
     3
     
 ---
+
+Basic template. Reads numbers, adds them up.
+
+    object Solution {
+        def main(args: Array[String]) {
+        println(io.Source.stdin.getLines().take(2).map(_.toInt).sum)
+        }
+    }
+
+---
+
+Printing something n times:
+
+    object Solution extends App {
+      def f(n:Int): Unit = {
+        if(n > 0) {
+           println("Hello World");
+           f(n-1)
+         }
+      }
+      var n = scala.io.StdIn.readInt
+      f(n)
+    }
+
+---
+

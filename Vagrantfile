@@ -1404,6 +1404,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
        #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         /home/vagrant/tmp_provisioning/bootstrap.sh
        # /home/vagrant/tmp_provisioning/postfix_install.sh
+        /home/vagrant/tmp_provisioning/python_install.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|
