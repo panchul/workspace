@@ -414,3 +414,18 @@ Class template specialization for a particular type:
     };
 
 ---
+
+Funny pattern I actually saw in a production code.
+
+    …
+    char ABC[4] = { "ABC" };
+    char * tzchars = NULL;
+    …
+
+And then
+
+    …
+    tzchars = &ABC[0];
+    …
+
+---

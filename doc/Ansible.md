@@ -124,3 +124,28 @@ Ansible'ized setup for Kafka on AWS EC2 using Galaxy:
 https://galaxy.ansible.com/giladju/setup-kafka-cluster-ec2/
 
 ---
+
+Ansible link
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#latest-releases-via-pip
+ 
+Latest Releases Via Pip
+
+Ansible can be installed via “pip”, the Python package manager. If ‘pip’ isn’t already available in your version of Python, you can get pip by:
+
+    $ sudo easy_install pip
+
+Then install Ansible with [1]:
+
+    $ sudo pip install ansible
+
+Or if you are looking for the latest development version:
+
+    pip install git+https://github.com/ansible/ansible.git@devel
+
+If you are installing on OS X Mavericks, you may encounter some noise from your compiler. A workaround is to do the following:
+
+    $ sudo CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install ansible
+
+Readers that use virtualenv can also install Ansible under virtualenv, though we’d recommend to not worry about it and just install Ansible globally. Do not use easy_install to install ansible directly.
+
+---

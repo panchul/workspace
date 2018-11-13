@@ -28,6 +28,11 @@ Refresher links:
 
 ---
 
+Kyiv Scala meetup v9 - Implementing a game using FP concepts by John A De Goes
+https://www.youtube.com/watch?v=XONTFZ4afY0
+
+---
+
 Nice article on enums and case classes:
 http://stackoverflow.com/questions/1898932/case-objects-vs-enumerations-in-scala
 

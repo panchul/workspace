@@ -84,6 +84,9 @@ TODO: Create sub-pages of these.
  - [xmlto](xmlto.md)
  - [Zlib](ZLib.md)
 
+ - Nice about microservices:
+   https://dwmkerr.com/the-death-of-microservice-madness-in-2018/
+
   Nice about fundamentals:
   https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
   
@@ -95,6 +98,9 @@ TODO: Create sub-pages of these.
 
   Neat presentation, similar to what I wanted to record, about how to organize dev properly:
   https://www.youtube.com/watch?v=S4ez739fles
+  
+  "What is CQRS+Event Sourcing and Why Should Java Developers Care?"
+  https://www.youtube.com/watch?v=lBu1Mnc1Nz4
   
   Another CQRS talk:
   https://www.youtube.com/watch?v=A0goyZ9F4bg
@@ -109,7 +115,8 @@ TODO: Create sub-pages of these.
   Link about Automated testing. DevOps fundamentals, etc. 
   https://www.linux.com/blog/learn/chapter/dev-ops/2017/8/devops-fundamentals-part-6-automated-testing
   
-  
+- Installing Chocolatey
+   https://chocolatey.org/install  
 
 ### Data formats, APIs, Protocols
 
@@ -217,6 +224,15 @@ TODO: Create sub-pages of these.
 - [sysdig](sysdig.md)
 - ...
 
+### Quantum Computing, etc.
+
+List of quantum computing simulators
+https://www.quantiki.org/wiki/list-qc-simulators
+
+http://quantum-studio.net/, etc.
+
+An article on DWave open source quantum computing
+https://www.wired.com/2017/01/d-wave-turns-open-source-democratize-quantum-computing/
     
 ### GUI Frameworks
 
@@ -241,7 +257,37 @@ TODO: Create sub-pages of these.
 - Embedded stuff, connections to OSIsoft’s PI servers with Python.
   https://github.com/bzshang/piwebapi-python-examples
   https://pisquare.osisoft.com/community/developers-club/blog/2015/06/04/using-pi-web-api-with-python
-  
+
+- Interesting Open-source alternatives to OSIsoft’s PI Processbook, etc.
+http://www.nimbits.com/index.jsp
+http://opentsdb.net/
+https://infiniteautomation.com/
+https://infiniteautomation.com/energy-dashboards
+http://seandippold.com/2017/09/24/toyota-prius-refrigerant-charging/
+
+-Clone time series database
+https://github.com/OpenTSDB/opentsdb
+- Has nice way to handle makefile includes, and dependencies(.jar files, I think)
+- The crc wikipedia link has simple implementations of crc stuff (with or without tables)
+https://en.wikipedia.org/wiki/Cyclic_redundancy_check
+
+Protocols for IoT, etc:
+Modbus
+BACnet (http://www.bacnet.org/)
+To paraphrase Sir Winston Churchill, "BACnet is undoubtedly the worst protocol on the face of the earth - except for all the others!"
+Mango is similar to PI Processbook
+https://infiniteautomation.com/mango-overview
+add link to Wireshark:
+https://www.wireshark.org/docs/wsug_html/
+
+Compare it to fiddler and others
+- Wireshark captures any kind of a network packet. It can capture packet details below TCP/IP(Http is at the top). It does have filters to reduce the noise it captures.
+- Firebug tracks each request the browser page makes and captures the associated headers and the time taken for each stage of the request (DNS, receiving, sending, ...).
+- Fiddler works as a http/https proxy. It captures each http request the computer makes and records everything associated with it. Does allow things like converting post varibles to a table form and editing/replaying requests. It doesn't, by default, capture localhost traffic in IE, see the FAQ for the workaround. 
+   
+Arduino wireless network sensor(and gateway) vendor (has some libraries, and docs)
+https://www.tartssensors.com/libraries/arduino/
+
   
 ### IDEs and editors
   
@@ -359,6 +405,12 @@ Aggregated List of C++ networking libraries
 - CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
 - popular Python modules include NumPy, Pandas, Seaborn, Scikit-Learn, open source toolkits Apache MXNet, Caffe2, Keras, Microsoft Cognitive Toolkit, TensorFlow, PyTorch.
 
+- Chat bot comparisons: https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff
+
+- Rasa open-source chat bot https://rasa.com/
+- Google Dialogflow
+- Microsoft LUIS
+
 - Kaggle https://www.kaggle.com/ Neat platform to do data science, etc.
 
 - Top Python Data Science Libraries 
@@ -380,6 +432,36 @@ Aggregated List of C++ networking libraries
 
 - https://towardsdatascience.com/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3
 
+
+
+
+- Weka https://www.cs.waikato.ac.nz/ml/weka/
+
+presentation with overview of keras
+https://www.youtube.com/watch?v=45MbmHQ5iMY
+
+Some R links:
+
+    https://cran.r-project.org/doc/manuals/r-release/R-intro.html
+    https://support.rstudio.com/hc/en-us
+    https://www.johndcook.com/blog/r_language_for_programmers/
+
+Some Python links:
+
+    https://www.python.org/
+    https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot
+    https://keras.io/
+    https://keras.io/#getting-started-30-seconds-to-keras
+    https://keras.io/getting-started/sequential-model-guide/#getting-started-with-the-keras-sequential-model
+    https://www.tensorflow.org/install/
+
+Miscellaneous other links:
+
+    http://www.asimovinstitute.org/neural-network-zoo/
+    https://www.tensorflow.org/
+    https://keras.io
+    https://pytorch.org/
+    
 
 ### Algorithms and Data Structures
 
@@ -426,6 +508,11 @@ http://www.aosabook.org/en/distsys.html
 - [Univied Modeling Language(UML)](UML.md)
 - Golden Triangle Cost/Quality/TimeToMarket
   https://blog.feabhas.com/2018/08/technical-debt/
+  
+ - Holacracy and Open Book Management
+ https://www.holacracy.org/
+ - Open Book Management - we share the exact details of our Balance Sheet and P&L Statement with our entire team in
+  real-time, ensuring that our staff has the data they need to treat the business as if it were their own.
 
 ## Cryptography, Network Security, etc.
 

@@ -11,6 +11,12 @@ Repository: https://github.com/scalatra/scalatra
 
 Good examples: https://github.com/scalatra/scalatra-website-examples
 
+---
+
+About standalone deployment:
+http://scalatra.org/guides/2.6/deployment/standalone.html
+
+---
 
 Here are some nice templates using g8:
 https://github.com/foundweekends/giter8/wiki/giter8-templates

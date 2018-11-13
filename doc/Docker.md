@@ -184,3 +184,10 @@ Nice meetup talk about container monitoring. Sysdig, Datadog and Prometheus, etc
 https://www.youtube.com/watch?v=XiC6Dy38HnA
 
 ---
+
+VMs vs. Containers. Refresher
+https://www.backblaze.com/blog/vm-vs-containers/
+
+Basically, containers have containter daemon on host instead of hypervisor on host and guest OS per vm.
+
+---

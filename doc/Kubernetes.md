@@ -156,3 +156,114 @@ https://github.com/coreos/coreos-kubernetes
 
 Has deployment instructions for Vagrant stack too.
 
+
+---
+
+The link to RKT, an application container engine, coupled with Kubernetes
+https://coreos.com/rkt/
+
+Add this to Go doc:
+https://coreos.com/rkt/docs/latest/getting-started-guide.html
+
+acbuild
+
+
+From Kubernetes interactive tutorial:
+https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
+
+
+quick server, a NodeJS application(run as ‘node server.js’, or, better yet, ‘/bin/sh –c node server.js’):
+
+```
+# cat server.js
+var http = require('http');
+var requests=0;
+var podname= process.env.HOSTNAME;
+var startTime;
+var host;
+var handleRequest = function(request, response) {
+  response.setHeader('Content-Type', 'text/plain');
+  response.writeHead(200);
+  response.write("Hello Kubernetes bootcamp! | Running on: ");
+  response.write(host);
+  response.end(" | v=1\n");
+  console.log("Running On:" ,host, "| Total Requests:", ++requests,"| App Uptime:", (new Date() - startTime)/1000 , "seconds", "| Log Time:",new Date());
+}
+
+var www = http.createServer(handleRequest);
+www.listen(8080,function () {
+    startTime = new Date();;
+    host = process.env.HOSTNAME;
+    console.log ("Kubernetes Bootcamp App Started At:",startTime, "| Running On: " ,host, "\n" );
+});
+```
+
+-------------
+Quick server in go:
+
+    package main
+    import (
+        "log"
+        "net/http"
+    )
+
+    func main() {
+        http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+                log.Printf("request from %v\n", r.RemoteAddr)
+               w.Write([]byte("hello\n"))
+        })
+        log.Fatal(http.ListenAndServe(":5000", nil))
+    }
+
+ 
+Build a statically linked Go binary (no external dependencies)
+
+    $ CGO_ENABLED=0 go build -ldflags '-extldflags "-static"'
+
+verify that the produced binary is statically linked:
+
+    $ file hello
+
+    hello: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
+
+    $ ldd hello
+
+        not a dynamic executable
+
+---------------------
+
+    $ minikube version
+
+    minikube version: v0.25.0
+
+    $ minikube start
+    There is a newer version of minikube available (v0.26.1).  Download it here:
+    https://github.com/kubernetes/minikube/releases/tag/v0.26.1
+    To disable this notification, run the following:
+    minikube config set WantUpdateNotification false
+    Starting local Kubernetes v1.9.0 cluster...
+    Starting VM...
+    Getting VM IP address...
+    Moving files into cluster...
+    Setting up certs...
+    Connecting to cluster...
+    Setting up kubeconfig...
+    Starting cluster components...
+    Kubectl is now configured to use the cluster.
+    Loading cached images from config file.
+
+    $ kubectl version
+    Client Version: version.Info{Major:"1", Minor:"9", GitVersion:"v1.9.0", GitCommit:"925c127ec6b946659ad0fd596fa959be43f0cc05", GitTreeState:"clean", BuildDate:"2017-12-15T21:07:38Z", GoVersion:"go1.9.2", Compiler:"gc", Platform:"linux/amd64"}
+    Server Version: version.Info{Major:"", Minor:"", GitVersion:"v1.9.0", GitCommit:"925c127ec6b946659ad0fd596fa959be43f0cc05", GitTreeState:"clean", BuildDate:"2018-01-26T19:04:38Z", GoVersion:"go1.9.1", Compiler:"gc", Platform:"linux/amd64"}
+
+    $ kubectl cluster-info
+    Kubernetes master is running at https://172.17.0.128:8443
+    To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+    (‘kubectl cluster-info dump’ produces a long json with all sorts of data and api self-description)
+
+    $ kubectl get nodes
+    NAME      STATUS    ROLES     AGE       VERSION
+    host01    Ready     <none>    6m        v1.9.0
+ 
+---
+
