@@ -117,6 +117,10 @@ N_ELIXIR = 3
 WS_IP_SPACE_POSTGRES_START = 95
 N_POSTGRES = 3
 
+WS_IP_SPACE_CONFLUENT_KAFKA_BROKER_START = 98
+N_CONFLUENT_KAFKA_BROKER = 5
+
+
 # NOTE: ! Do not use those Starts over 99 - we are re-using it for port forwarding.
 
 #######################################################################
@@ -884,6 +888,66 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       box.vm.provision "shell", inline: <<-SHELL
          /home/vagrant/tmp_provisioning/kafka_start.sh "#{machine_id}"
+      SHELL
+      
+    end
+  end
+
+  (1..N_CONFLUENT_KAFKA_BROKER).each do |machine_id|
+    config.vm.define "conf_kafka_broker#{machine_id}", autostart: false do |box|
+
+      config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+
+      box.vm.box = "#{WORKSPACE_VM_BOX_NO_GUI}"
+      #box.vm.box = "#{WORKSPACE_VM_BOX_WITH_GUI}"
+      #box.vm.box_url = "#{WORKSPACE_VM_BOX_WITH_GUI_URL}"
+      
+      # box.vm.network :forwarded_port, guest: 22, host: "21#{WS_IP_SPACE_CONFLUENT_KAFKA_BROKER_START+machine_id}"
+      box.vm.host_name = "conf-kafka-broker#{machine_id}.vm"
+      box.vm.network :private_network, ip: "#{WS_IP_FIRST_24BITS}#{WS_IP_SPACE_CONFLUENT_KAFKA_BROKER_START+machine_id}"
+      box.vm.synced_folder  "projects", "/projects"
+#      box.vm.synced_folder  "projects_sbsc#{machine_id}", "/projects_sbsc#{machine_id}"
+
+      box.vm.provider "virtualbox" do |vb|
+        vb.memory = "2048"
+        vb.cpus = 2
+      end
+
+      box.vm.provision "shell", inline: <<-SHELL
+             export DEBIAN_FRONTEND=noninteractive
+            #  apt-get install -y dos2unix 
+             mkdir -p /home/vagrant/tmp_provisioning
+             cp /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
+            #  dos2unix -q /home/vagrant/tmp_provisioning/bootstrap.sh
+             /home/vagrant/tmp_provisioning/bootstrap.sh
+            #  source /home/vagrant/tmp_provisioning/git_install.sh
+             /home/vagrant/tmp_provisioning/jdk_install.sh
+             /home/vagrant/tmp_provisioning/conf_kafka_install.sh
+       SHELL
+            
+      box.vm.provision "generic", type: "ansible" do |ansible|
+           ansible.playbook = "ansible/playbooks/generic/bootstrap.yml"
+           #ansible.inventory_path = "ansible/ansible.vmhosts"
+           ansible.verbose = true
+           ansible.host_key_checking = false
+      end
+            
+      #box.vm.provision "dev_generic", type: "ansible" do |ansible|
+      #   ansible.playbook = "ansible/playbooks/dev_generic/bootstrap.yml"
+      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
+      #   ansible.verbose = true
+      #   ansible.host_key_checking = false
+      #end
+
+      #box.vm.provision "dev_scala", type: "ansible" do |ansible|
+      #   ansible.playbook = "ansible/playbooks/dev_scala/bootstrap.yml"
+      #   #ansible.inventory_path = "ansible/ansible.vmhosts"
+      #   ansible.verbose = true
+      #   ansible.host_key_checking = false
+      #end
+
+      box.vm.provision "shell", inline: <<-SHELL
+         /home/vagrant/tmp_provisioning/conf_kafka_start.sh "#{machine_id}"
       SHELL
       
     end

@@ -13,6 +13,15 @@ https://docs.docker.com/compose/install/#upgrading
 
 ---
 
+Docker-machine install as a one-liner from here:
+https://docs.docker.com/machine/install-machine/#install-machine-directly
+
+    base=https://github.com/docker/machine/releases/download/v0.16.0 &&
+        curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
+        sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+
+---
+
 Getting started:
 
 https://docs.docker.com/compose/gettingstarted/

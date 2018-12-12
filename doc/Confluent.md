@@ -4,6 +4,17 @@
 
 # Confluent platform
 
+
+
+---
+
+Confluent kafka download:
+https://docs.confluent.io/current/installation/installing_cp/zip-tar.html
+
+Open-source:
+
+    $ curl -O http://packages.confluent.io/archive/5.0/confluent-oss-5.0.1-2.11.tar.gz
+
 ---
 
 The Common package:

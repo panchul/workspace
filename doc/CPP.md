@@ -429,3 +429,32 @@ And then
     …
 
 ---
+
+Some preprocessor tricks. More at https://stackoverflow.com/questions/1562074/how-do-i-show-the-value-of-a-define-at-compile-time
+
+    /* Some test definition here */
+    #define DEFINED_BUT_NO_VALUE
+    #define DEFINED_INT 3
+    #define DEFINED_STR "ABC"
+    
+    /* definition to expand macro then apply to pragma message */
+    #define VALUE_TO_STRING(x) #x
+    #define VALUE(x) VALUE_TO_STRING(x)
+    #define VAR_NAME_VALUE(var) #var "="  VALUE(var)
+    
+    /* Some example here */
+    #pragma message(VAR_NAME_VALUE(NOT_DEFINED))
+    #pragma message(VAR_NAME_VALUE(DEFINED_BUT_NO_VALUE))
+    #pragma message(VAR_NAME_VALUE(DEFINED_INT))
+    #pragma message(VAR_NAME_VALUE(DEFINED_STR))
+    
+Above definitions result in:
+    
+    test.c:10:9: note: #pragma message: NOT_DEFINED=NOT_DEFINED
+    test.c:11:9: note: #pragma message: DEFINED_BUT_NO_VALUE=
+    test.c:12:9: note: #pragma message: DEFINED_INT=3
+    test.c:13:9: note: #pragma message: DEFINED_STR="ABC"
+
+There is also BOOST_PP_STRINGIZE, etc.
+
+---

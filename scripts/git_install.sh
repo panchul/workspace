@@ -12,7 +12,7 @@ git --version
 if [[ $? -eq 0 ]] ; then 
     # Already installed
     echo "Detected that git has already been installed"
-    return 0;
+    exit 0; # return 0;
 else
     echo "Detected that git has NOT already been installed"
 fi

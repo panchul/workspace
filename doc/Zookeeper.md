@@ -48,4 +48,27 @@ Or longer version(I wrapped it up, the output is one long line per node):
      Latency min/avg/max: 0/0/0 Received: 6 Sent: 5 Connections: 1 Outstanding: 0 Zxid: 0x400000017
      Mode: leader Node count: 42
 
---
+---
+
+Getting Zookeeper status:
+
+    $ echo ruok | nc localhost 2181
+    imok
+
+Or, more informative:
+
+    $ echo stat | nc localhost 2181
+    Zookeeper version: 3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+    Clients:
+     /127.0.0.1:35558[0](queued=0,recved=1,sent=0)
+    
+    Latency min/avg/max: 0/0/0
+    Received: 2
+    Sent: 1
+    Connections: 1
+    Outstanding: 0
+    Zxid: 0xc9
+    Mode: standalone
+    Node count: 146
+
+---

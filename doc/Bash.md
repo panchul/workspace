@@ -388,3 +388,67 @@ Conditionals example. Reading two numbers from the input, printing their relatio
     fi
 
 ---
+
+Idiomatic check on configurations
+
+    #!/bin/bash
+    USERNAME=myuser
+    HOSTS="1.2.3.4 1.2.3.5"
+    SCRIPT="sudo cat /etc/docker/key.json"
+    for HOSTNAME in ${HOSTS} ; do
+        ssh -i mykeyname.pem ${USERNAME}@${HOSTNAME}  "${SCRIPT}"
+    done
+
+---
+
+```set -e``` makes errors fatal for the script:
+ 
+    #!/bin/bash
+    cd /project1
+    make
+    if [[ $? -ne 0 ]] ; then
+        exit 1
+    fi
+
+    cd /project2
+    make
+    if [[ $? -ne 0 ]] ; then
+        exit 1
+    fi
+
+With set -e it would look like:
+
+    #!/bin/bash
+    set -e
+
+    cd /project1
+    make
+
+    cd /project2
+    make
+
+---
+
+Nice idiomatic error handling
+
+    yell() { echo "$0: $*" >&2; }
+    die() { yell "$*"; exit 111; }
+    try() { "$@" || die "cannot $*"; }
+
+So, it works like so:
+
+    $ try() { "$@" || die "cannot $*"; } ; try date
+    Tue Dec  4 16:56:44 EST 2018
+    
+    $ try() { "$@" || die "cannot $*"; } ; try echo $[2/0]
+    -bash: 2/0: division by 0 (error token is "0")
+
+Or, another simple idiom:
+    
+    echo $[1*2]
+    echo $[2/0]              # division by 0 but execution of script proceeds
+    echo $[3+3]
+    (echo $[4/0]) || exit $? # script halted with code 1 returned from `echo`
+    echo $[5+1]
+
+--

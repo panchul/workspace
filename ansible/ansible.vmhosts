@@ -93,6 +93,13 @@ kafka-broker3 ansible_host=192.168.10.63
 kafka-broker4 ansible_host=192.168.10.64
 kafka-broker5 ansible_host=192.168.10.65
 
+[conf_kafka_brokers]
+conf-kafka-broker1 ansible_host=192.168.10.99
+conf-kafka-broker2 ansible_host=192.168.10.100
+conf-kafka-broker3 ansible_host=192.168.10.101
+conf-kafka-broker4 ansible_host=192.168.10.102
+conf-kafka-broker5 ansible_host=192.168.10.103
+
 [golang_sandboxes]
 golang1 ansible_host=192.168.10.66
 golang2 ansible_host=192.168.10.67

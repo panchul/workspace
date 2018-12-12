@@ -58,6 +58,7 @@ TODO: Create sub-pages of these.
 - [Racket](Racket.md)  
 - [Go](Go.md)  
 - [Java](Java.md)  
+  - [Spring](Spring.md)
 - [Matlab/Simulink](Matlab.md)  
 - [R](R.md)
 - PostScript
@@ -216,6 +217,7 @@ TODO: Create sub-pages of these.
 - [Find](Find.md)
 - [hostname](hostname.md)
 - [Ipvsadm](ipvsadm.md)
+- [mail](mail.md)
 - [N2W](N2W.md)
 - [netcat(nc)](Netcat.md)
 - [Postman](Postman.md)
@@ -374,6 +376,7 @@ Aggregated List of C++ networking libraries
 - [RabbitMQ](RabbitMQ.md)
 - [Kafka](Kafka.md)
 - [Zookeeper](Zookeeper.md)
+- [Burrow](Burrow.md)
 
 
 ### Conferencing systems and protocols
@@ -400,6 +403,7 @@ Aggregated List of C++ networking libraries
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
 - Splunk https://www.splunk.com/
 - TensorFlow
+- [PyTorch](PyTorch.md)
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
 - Octave
 - CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
@@ -418,13 +422,13 @@ Aggregated List of C++ networking libraries
 
 - OpenGM C++ ML stuff
   http://hciweb2.iwr.uni-heidelberg.de/opengm/doxygen/opengm-2.1.1/index.html
-  
 
 - Nice AI human animation
   https://www.facebook.com/techinsider/videos/814455945419430/
   
 - Weka, neat data mining tool from a university
   https://www.cs.waikato.ac.nz/~ml/weka/
+  https://www.cs.waikato.ac.nz/ml/weka/
   
 - datascience.ibm.com
 
@@ -432,10 +436,7 @@ Aggregated List of C++ networking libraries
 
 - https://towardsdatascience.com/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3
 
-
-
-
-- Weka https://www.cs.waikato.ac.nz/ml/weka/
+- Free Blockchain courses online: https://learndisruptprofitrepeat.com/learn-to-develop-blockchain-decentralized-apps-5-free-programmer-training-courses/
 
 presentation with overview of keras
 https://www.youtube.com/watch?v=45MbmHQ5iMY
@@ -625,10 +626,9 @@ http://www.aosabook.org/en/distsys.html
 
 ## Motivational
 
-All sorts of profound statements, rules of life and
-advises are piled up here:
-
 - [Motivational](Motivational.md)
+
+- Psychological manipulation of the masses: https://lifter.com.ua/10-strashnyh-tryukov-s-pomoshchyu-kotoryh-kontroliruyut-massy-rasskazyvaet-noam-homskiy-5293
 
 
 ## Fun.

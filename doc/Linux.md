@@ -19,6 +19,7 @@ See Also:
   - [tcpdump](tcpdump.md)
   - [nohup](nohup.md)
   - [bash](bash.md)
+  - [mail](mail.md)
  
  
 ---
@@ -615,5 +616,11 @@ Another example:
     fi
     
 See more in [bash](bash.md)
+
+---
+
+Quick way to see what is going on at the host, e.g. process comes up or down:
+
+    $ watch -d "ps -ef | grep myprogram"
 
 ---
