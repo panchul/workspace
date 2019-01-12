@@ -3,6 +3,10 @@
 
 # automake
 
+See also:
+ [Autoconf](Autoconf.md)
+ [Automake](Automake.md)
+ [Libtool](Libtool.md)
 
 https://www.gnu.org/software/automake/automake.html
 
@@ -35,10 +39,6 @@ To get the autoconf, etc.:
     ./configure --prefix=$build/autotools-bin
     make
     make install
-
-See also: [Autoconf](Autoconf.md)
-See also: [Automake](Automake.md)
-See also: [Libtool](Libtool.md)
 
 ---
 

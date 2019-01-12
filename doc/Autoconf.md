@@ -4,9 +4,15 @@
 
 # autoconf
 
+See also:
+ [Autoconf](Autoconf.md)
+ [Automake](Automake.md)
+ [Libtool](Libtool.md)
+
 
 https://www.gnu.org/software/autoconf/autoconf.html
 
+---
 
 To get the autoconf, etc.:
 
@@ -38,7 +44,5 @@ To get the autoconf, etc.:
     make
     make install
 
-See also: [Autoconf](Autoconf.md)
-See also: [Automake](Automake.md)
-See also: [Libtool](Libtool.md)
+---
 

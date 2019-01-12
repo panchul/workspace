@@ -235,6 +235,10 @@ http://quantum-studio.net/, etc.
 
 An article on DWave open source quantum computing
 https://www.wired.com/2017/01/d-wave-turns-open-source-democratize-quantum-computing/
+
+Article "New Quantum Paradox Clarifies Where Our Views of Reality Go Wrong"
+https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-views-of-reality-go-wrong-20181203/
+
     
 ### GUI Frameworks
 
@@ -438,6 +442,10 @@ Aggregated List of C++ networking libraries
 
 - Free Blockchain courses online: https://learndisruptprofitrepeat.com/learn-to-develop-blockchain-decentralized-apps-5-free-programmer-training-courses/
 
+- https://phys.org/news/2018-12-amoeba-approximate-solutions-np-hard-problem.html 
+  Amoeba finds approximate solutions to NP-hard problem in linear time
+Jcm  
+
 presentation with overview of keras
 https://www.youtube.com/watch?v=45MbmHQ5iMY
 
@@ -515,6 +523,9 @@ http://www.aosabook.org/en/distsys.html
  - Open Book Management - we share the exact details of our Balance Sheet and P&L Statement with our entire team in
   real-time, ensuring that our staff has the data they need to treat the business as if it were their own.
 
+- Why Programmers should be managers: https://habr.com/sandbox/125674/
+
+
 ## Cryptography, Network Security, etc.
 
 - [IPSec](IPSec.md)
@@ -585,6 +596,11 @@ http://www.aosabook.org/en/distsys.html
   https://www.sciencedirect.com/science/article/pii/S0167779917301713
 - Who's Who in Gerontology: Companies
   whoswho.senescence.info/companies.php
+
+- Mice experiment. In 1968, an expert on animal behaviour and population control
+  called John B. Calhoun built what was essentially a utopia for mice that was
+  purpose built to satisfy their every need.
+  www.todayifoundout.com/index.php/2018/12/that-time-a-guy-tried-to-build-a-utopia-for-mice-and-it-all-went-to-hell
   
   
 ## Career etc.
@@ -611,6 +627,19 @@ http://www.aosabook.org/en/distsys.html
 – https://www.snl.com/  The most comprehensive energy news
 - rotor sail demos https://www.youtube.com/watch?v=XAztqxq2z9k
 
+## Misc business and finances
+
+- About deposit money. How the rich get richer – money in the world economy. DW Documentary
+  https://www.youtube.com/watch?v=t6m49vNjEGs
+
+- Shale cowboys: fracking under Trump - Docu - 2017
+  https://www.youtube.com/watch?v=-IzgyM1r1y8
+
+- History Channel Documentary-How Big Oil Conquered the World
+  https://www.youtube.com/watch?v=gOs8Cbo_KYk
+
+- DEFCON talk about fake conferences. DEF CON 26 - Svea, Suggy, Till - Inside the Fake Science Factory
+  https://www.youtube.com/watch?v=ras_VYgA77Q
 
 ## Manufacturing, IoT, etc.
 

@@ -28,6 +28,11 @@ Refresher links:
 
 ---
 
+Scale By The Bay 2018: Martin Odersky, Opening Keynote: New Functional Constructs in Scala 3
+https://www.youtube.com/watch?v=6P06YHc8faw
+
+---
+
 Kyiv Scala meetup v9 - Implementing a game using FP concepts by John A De Goes
 https://www.youtube.com/watch?v=XONTFZ4afY0
 

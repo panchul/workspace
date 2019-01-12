@@ -52,10 +52,19 @@ There were some issues with the credentials on Cygwin.
 
 ---
 
-### Undoing pushes, the hard way
+### Undoing things
 
 https://rtyley.github.io/bfg-repo-cleaner/
 https://jorin.me/clean-git-history/
+
+
+To keep the changes:
+
+    $ git reset --soft HEAD~1
+
+Do the things the hard way abandoning the changes:
+    
+    $ git reset --hard HEAD~1
 
 ---
 

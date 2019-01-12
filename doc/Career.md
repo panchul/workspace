@@ -24,6 +24,20 @@ https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-an
 
 ---
 
+Casual Friday on the Death Star. SNL
+https://www.youtube.com/watch?v=WiMKbiZRhCQ
+
+---
+
+TED talk about inferiority and rasism. KKK
+https://www.youtube.com/watch?v=Y4gly9n9RBo
+
+---
+
+Как говаривал старый портной Ефим Моисеевич: "Вам быстро или шоб рукава одинаковые?"
+
+---
+
 Interview hints
 https://www.fastcompany.com/90234645/phone-interview-coming-up-dont-make-these-mistakes
 
@@ -134,3 +148,7 @@ https://journal.thriveglobal.com/want-automatic-motivation-and-wealth-do-this-on
 
 ---
 
+Job Seekers, You Will Be Lied To And Misled -- Here Is How You Can Protect Yourself
+https://www.forbes.com/sites/jackkelly/2018/12/17/job-seekers-beware-you-will-be-lied-to-and-misled-here-is-how-you-can-protect-yourself
+
+---

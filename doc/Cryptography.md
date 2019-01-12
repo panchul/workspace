@@ -9,6 +9,11 @@ See Also:
 
 ---
 
+35C3 - How Facebook tracks you on Android
+https://www.youtube.com/watch?v=y0vlD7r-kTc
+
+---
+
 In line with crypto hipe.
 Adam Ruins Everything - How the Fine Art Market is a Scam | truTV
 ﻿https://www.youtube.com/watch?v=Dw5kme5Q_Yo
