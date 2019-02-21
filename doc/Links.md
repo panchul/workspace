@@ -49,6 +49,7 @@ TODO: Create sub-pages of these.
   - CT
   - MochiWeb
 - [Scala](Scala.md)  
+  - [Lagom](Lagom.md)    
 - [F#](FSharp.md)  
 - [Perl](Perl.md)  
 - [Python](Python.md)  
@@ -74,17 +75,20 @@ TODO: Create sub-pages of these.
 #### Frameworks Libraries, Static code analyse, architecture approaches, etc.
 
  - [ASCIIDoc](asciidoc.md]
+ - [Apache Log4j](Log4J.md)
  - [Apache Spark](ApacheSpark.md)
  - Codeclimate https://developer.codeclimate.com/#overview
  - [Confluent](Confluent.md)
  - Domain Driven Design (DDD)
+ - [Lagom](Lagom.md)
  - [M4](M4.md)
  - [MapReduce](MapReduce.md)
+ - [Splunk](Splunk.md)
  - [STL](STL.md) 
  - ReactiveX http://reactivex.io/intro.html
  - [xmlto](xmlto.md)
  - [Zlib](ZLib.md)
-
+ - [CQRS](CQRS.md) Command Query Responsibility Segregation
  - Nice about microservices:
    https://dwmkerr.com/the-death-of-microservice-madness-in-2018/
 
@@ -99,20 +103,7 @@ TODO: Create sub-pages of these.
 
   Neat presentation, similar to what I wanted to record, about how to organize dev properly:
   https://www.youtube.com/watch?v=S4ez739fles
-  
-  "What is CQRS+Event Sourcing and Why Should Java Developers Care?"
-  https://www.youtube.com/watch?v=lBu1Mnc1Nz4
-  
-  Another CQRS talk:
-  https://www.youtube.com/watch?v=A0goyZ9F4bg
-  
-  Axon CQRS demo:
-  https://www.youtube.com/watch?v=Jp-rW-XOYzA
-  github.com/abuijze/bootiful-axon
-  
-  Spring Boot CQRS Example:
-  https://github.com/jinternals/demo-cqrs
-   
+     
   Link about Automated testing. DevOps fundamentals, etc. 
   https://www.linux.com/blog/learn/chapter/dev-ops/2017/8/devops-fundamentals-part-6-automated-testing
   
@@ -194,6 +185,7 @@ TODO: Create sub-pages of these.
 - [Ajax](Ajax.md)
 - [Apache](Apache.md)
 - [Disqus](Disqus.md)
+- [Heroku](Heroku.md)
 - [JQuery](JQuery.md)
 - [nginx](nginx.md)
 - [PlayFramework](PlayFramework.md)
@@ -247,6 +239,11 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - GTK+ http://www.gtk.org/
 - Qt http://qt-project.org
 - Open-source UI Automation library https://github.com/TestStack/White
+
+
+### Social media frameworks
+
+- [Facebook](Facebook.md)
 
 
   
@@ -405,7 +402,7 @@ Aggregated List of C++ networking libraries
 - Nirvana Cloud
 - Speech generation
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
-- Splunk https://www.splunk.com/
+- [Splunk](Splunk.md)
 - TensorFlow
 - [PyTorch](PyTorch.md)
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
@@ -470,6 +467,10 @@ Miscellaneous other links:
     https://www.tensorflow.org/
     https://keras.io
     https://pytorch.org/
+
+10 statistical techniques to use    
+https://www.datasciencecentral.com/profiles/blogs/the-10-statistical-techniques-data-scientists-need-to-master-10
+    
     
 
 ### Algorithms and Data Structures
@@ -493,6 +494,10 @@ http://www.aosabook.org/en/distsys.html
 - Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
 - [PNG](png.md)
 - video recording for terminal ```asciinema.org``` ```gohugo.io``` web content
+- Unity https://unity3d.com/
+- UnrealEngine https://www.unrealengine.com/en-US/studio
+- MagicLeap https://www.magicleap.com/
+- Nice summary about colors https://agraphicsguy.wordpress.com/2018/11/29/basic-color-science-for-graphics-engineers/
 
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.

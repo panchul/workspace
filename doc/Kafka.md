@@ -16,6 +16,11 @@ https://cwiki.apache.org/confluence/display/KAFKA/Clients
 
 ---
 
+Kafka on Heroku
+https://www.heroku.com/kafka
+
+---
+
 Commonly assigned ports:
 
 - Zookeeper: 2181 (client-facing)
@@ -41,9 +46,18 @@ https://github.com/confluentinc/examples - Kafka examples
 
 ---
 
+Kafka Connect.
+https://kafka.apache.org/documentation/#connect
+
+---
+
 https://github.com/Eneco/kafka-connect-ftp - Kafka ftp connect
 
 ---
+
+https://blog.upala.com/2017/11/09/kafka-security/ - Kafka Security blog
+
+--
 
 https://www.youtube.com/watch?v=QkDYkB6Q16Q - More Kafka Streams demos.
 
@@ -350,5 +364,10 @@ Using Old consumer API:
 Using New consumer API:
 
     $ bin/kafka-console-consumer.sh --bootstrap-server <broker_host>:6667 --topic test --from-beginning --max-messages 1 
+
+---
+
+    Splunk Connect for Kafka
+    https://docs.splunk.com/Documentation/KafkaConnect
 
 ---

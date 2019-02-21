@@ -47,3 +47,8 @@ kafka (apache/kafka fork)
 https://github.com/confluentinc/kafka.git
 
 ---
+
+Kafka Connectors
+https://www.confluent.io/connectors/
+
+---

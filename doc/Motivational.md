@@ -3,6 +3,26 @@
 
 Misc stuff related to psychology and motivation
 
+---
+
+8 methods to deal with stress, based on the tricks psychologists use themselves.
+www.tutkatamka.com.ua/nathnennya/psihologiya/8-metodiv-pozbavlennya-vid-stresu-yakimi-koristuyutsya-sami-psixologi/
+
+---
+
+Как не опускать руки и не сдаваться? 3 работающих средства от беспомощности
+https://lifedeeper.ru/post/2321-kak-ne-opuskat-ruki-i-ne-sdavatsja-3-rabotajushhih-sredstva-ot-bespomoshhnosti/
+
+---
+(March 29, 2010) Stanford professor Robert Sapolsky gave the opening lecture
+ of the course entitled Human Behavioral Biology and explains the basic premise
+ of the course and how he aims to avoid categorical thinking.
+
+https://www.youtube.com/watch?v=NNnIGh9g6fA&list=PL150326949691B199
+
+Stanford University http://www.stanford.edu
+Stanford Department of Biology http://biology.stanford.edu/
+Stanford University Channel on YouTube http://www.youtube.com/stanford
 
 ---
 

@@ -45,6 +45,14 @@ $*	All of current command's parameters (not preserving whitespace and quoting)	e
 
 ---
 
+Here's how to get the nanosecond time('N' is nanoseconds) in bash:
+
+    $ while true; do echo $(($(date "+%s%N")/1000000)); done;
+ 
+ More at https://stackoverflow.com/questions/16548528/command-to-get-time-in-milliseconds
+
+---
+
 Idiomatic passing parameters in bash, flag ‘-e’ for echo and ‘@-‘ for curl:
 
     $ echo -e "[MYSETTING_1]\nsomeValue=123" | curl --data-binary @- http://128.0.0.1/myapi/consume

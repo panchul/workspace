@@ -77,6 +77,14 @@ To write to syslog, ```/var/log/syslog```:
        	closelog();
   	} 
 ```
+
+---
+
+Here's how to get the nanosecond time('N' is nanoseconds) in bash:
+
+    $ while true; do echo $(($(date "+%s%N")/1000000)); done;
+ 
+ More at https://stackoverflow.com/questions/16548528/command-to-get-time-in-milliseconds
  
 ---
 

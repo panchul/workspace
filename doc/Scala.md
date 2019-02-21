@@ -8,7 +8,8 @@ See Also:
  [Sbt.md](Sbt.md)  
  [Scaladoc](Scaladoc.md)  
  [ScalaTest](ScalaTest.md) - for unit-testing, etc.  
- [Scalameter](Scalameter.md) - for benchmarking, etc.  
+ [Scalameter](Scalameter.md) - for benchmarking, etc.
+ [Lagom](Lagom.md) - Lagom framework  
 
 My Scala sandbox is [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala).
 

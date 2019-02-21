@@ -24,6 +24,11 @@ https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-an
 
 ---
 
+Why the Best Things in Life Are All Backwards
+https://markmanson.net/why-the-best-things-in-life-are-all-backwards
+
+---
+
 Casual Friday on the Death Star. SNL
 https://www.youtube.com/watch?v=WiMKbiZRhCQ
 
