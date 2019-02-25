@@ -209,7 +209,7 @@ html5, flash, etc.
 
 Here is how you could get html5 working on ubuntu:
 
-    sudo apt-get install ubuntu-restricted-extras
+    $ sudo apt-get install ubuntu-restricted-extras
     
 (http://askubuntu.com/questions/475351/firefox-html5-video-support )
 
@@ -217,18 +217,18 @@ Here is how you could get html5 working on ubuntu:
 
 To update the OS, run these:
 
-    sudo apt-get -y update
-    sudo apt-get -y upgrade
+    $ sudo apt-get -y update
+    $ sudo apt-get -y upgrade
 
 ---
 
 #### Install languages from command line
 
-    sudo apt-get install language-pack-[cod] language-pack-gnome-[cod] language-pack-[cod]-base language-pack-gnome-[cod]-base 
+    $ sudo apt-get install language-pack-[cod] language-pack-gnome-[cod] language-pack-[cod]-base language-pack-gnome-[cod]-base 
 
 For Gnome there is also:
 
-    gnome-language-selector --install [cod]
+    $ gnome-language-selector --install [cod]
     
 ---
     
@@ -286,6 +286,10 @@ This worked better:
 
     $ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
 
+And it is nice to keep quiet, so the progress bar is not spamming the terminal in a shell script execution
+
+    $ wget --no-verbose http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+    
 ---
 
 Sample usage of xargs:

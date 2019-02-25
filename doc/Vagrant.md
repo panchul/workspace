@@ -279,3 +279,16 @@ https://dzone.com/articles/automatically-download-and
 (not sure if it works, tried it out)
 
 --- 
+
+Some old links, probably when I just started using Vagrant
+
+just following up some tutorials
+from http://docs.vagrantup.com/v2/getting-started/project_setup.html
+
+Nice example how to configure the Vagrant file
+http://stackoverflow.com/questions/17845637/vagrant-default-name
+
+Here is the doc how to configure UI:
+http://docs.vagrantup.com/v2/virtualbox/configuration.html
+
+---

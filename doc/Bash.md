@@ -459,4 +459,83 @@ Or, another simple idiom:
     (echo $[4/0]) || exit $? # script halted with code 1 returned from `echo`
     echo $[5+1]
 
---
+---
+
+pushd popd example
+
+    ~$ mkdir navigate
+    ~/navigate$ mkdir dir1
+    ~/navigate$ mkdir dir2
+    ~/navigate$ mkdir dir3
+
+adding all to the stack:
+
+    ~/navigate$ pushd dir1/
+    ~/navigate/dir1 ~/navigate
+    ~/navigate/dir1$ pushd ../dir2/
+    ~/navigate/dir2 ~/navigate/dir1 ~/navigate
+    ~/navigate/dir2$ pushd ../dir3/
+    ~/navigate/dir3 ~/navigate/dir2 ~/navigate/dir1 ~/navigate
+
+looking up:
+
+    ~/navigate/dir3$ dirs -v
+     0  ~/navigate/dir3
+     1  ~/navigate/dir2
+     2  ~/navigate/dir1
+     3  ~/navigate
+
+To navigate safely, you need to add the last (zero) folder twice, since it will be always rewritten:
+
+    ~/navigate/dir3$ pushd .
+    ~/navigate/dir3$ dirs -v
+     0  ~/navigate/dir3
+     1  ~/navigate/dir3
+     2  ~/navigate/dir2
+     3  ~/navigate/dir1
+     4  ~/navigate
+
+
+    ~/navigate/dir3$ cd ~4
+    ~/navigate$ dirs -v
+     0  ~/navigate
+     1  ~/navigate/dir3
+     2  ~/navigate/dir2
+     3  ~/navigate/dir1
+     4  ~/navigate
+    ~/navigate$ cd ~3
+    ~/navigate/dir1$ dirs -v
+     0  ~/navigate/dir1
+     1  ~/navigate/dir3
+     2  ~/navigate/dir2
+     3  ~/navigate/dir1
+     4  ~/navigate
+    ~/navigate/dir1$ touch text.txt
+    ~/navigate/dir1$ cp text.txt ~2
+    ~/navigate/dir1$ ls ~2
+    text.txt
+    ~/navigate/dir1$ dirs -v
+     0  ~/navigate/dir1
+     1  ~/navigate/dir3
+     2  ~/navigate/dir2
+     3  ~/navigate/dir1
+     4  ~/navigate    
+
+---
+
+I used to have these macros in .bashrc all the time:
+
+    # Source global definitions
+    if [ -f /etc/bashrc ]; then
+	    . /etc/bashrc
+    fi
+
+    export PS1="\t \u@\h: \w\n>"
+    alias ll='ls -la'
+    #alias ll='ls -l --color=tty'
+
+in .profile to make normal Back Space:
+
+    stty erase ^H
+
+---

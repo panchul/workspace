@@ -62,6 +62,7 @@ TODO: Create sub-pages of these.
   - [Spring](Spring.md)
 - [Matlab/Simulink](Matlab.md)  
 - [R](R.md)
+- [ObjectiveC++](ObjectiveCPP.md)
 - PostScript
 - [Elixir](Elixir.md)
 - Lua
@@ -489,14 +490,14 @@ http://www.aosabook.org/en/distsys.html
 
 ### Computer Graphics, Computer Vision, Visualization, etc
 
-- OpenCV  https://opencv.org/
+- [OpenCV](OpenCV.md)
 - [SVG](SVG.md)
 - Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
 - [PNG](png.md)
 - video recording for terminal ```asciinema.org``` ```gohugo.io``` web content
-- Unity https://unity3d.com/
-- UnrealEngine https://www.unrealengine.com/en-US/studio
-- MagicLeap https://www.magicleap.com/
+- [Unity](Unity.md)
+- [Unreal Engine](UnreadlEngine.md)
+- [MagicLeap](MagicLeap.md)
 - Nice summary about colors https://agraphicsguy.wordpress.com/2018/11/29/basic-color-science-for-graphics-engineers/
 
 
@@ -613,6 +614,12 @@ http://www.aosabook.org/en/distsys.html
 
 - [Career](Career.md)
 - [Startup](Startup.md)
+- Kaggle, misc. projects. https://www.kaggle.com/
+- triplebyte.com
+- codefights.com
+- toptal.com
+- https://www.hackerrank.com/
+- https://app.codility.com/programmers/
 
 
 ## GPS, Meteorology, Alternative energy, and related

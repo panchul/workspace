@@ -23,3 +23,12 @@ Idiomatic mount of a shared drive with the host(once you call your share ```MY_S
 
 ---
 
+List virtual machines:
+
+    $ VBoxManage list vms
+
+or only the ones running:
+
+    $ VBoxManage list runningvms
+
+---

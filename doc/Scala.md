@@ -5,18 +5,18 @@
 
 See Also:
 
- [Sbt.md](Sbt.md)  
- [Scaladoc](Scaladoc.md)  
- [ScalaTest](ScalaTest.md) - for unit-testing, etc.  
- [Scalameter](Scalameter.md) - for benchmarking, etc.
- [Lagom](Lagom.md) - Lagom framework  
+- [Sbt.md](Sbt.md)  
+- [Scaladoc](Scaladoc.md)  
+- [ScalaTest](ScalaTest.md) - for unit-testing, etc.  
+- [Scalameter](Scalameter.md) - for benchmarking, etc.  
+- [Lagom](Lagom.md) - Lagom framework  
 
 My Scala sandbox is [https://github.com/panchul/sb_scala](https://github.com/panchul/sb_scala).
 
 
-[http://www.scala-lang.org/](http://www.scala-lang.org/)
-[http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines 
-[http://danielwestheide.com/scala/neophytes.html](http://danielwestheide.com/scala/neophytes.html) - The Neophyte's Guide to Scala
+- [http://www.scala-lang.org/](http://www.scala-lang.org/)  
+- [http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines  
+- [http://danielwestheide.com/scala/neophytes.html](http://danielwestheide.com/scala/neophytes.html) - The Neophyte's Guide to Scala  
 
 ---
 
@@ -236,6 +236,11 @@ File operations (from my sandbox, [https://github.com/panchul/sb_scala](https://
 
 Link about Monads and Functors:
 http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+
+---
+
+Demystifying the monad in Scala
+https://medium.com/@sinisalouc/demystifying-the-monad-in-scala-cc716bb6f534
 
 ---
 

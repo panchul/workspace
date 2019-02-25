@@ -3,6 +3,10 @@
 
 # Java
 
+---
+
+Tons of nice ways to install JDK on Ubuntu
+https://stackoverflow.com/questions/14788345/how-to-install-the-jdk-on-ubuntu-linux
 
 ---
 
