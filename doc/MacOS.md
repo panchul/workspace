@@ -58,3 +58,12 @@ to get `http`(the command line http client):
     $ brew install httpie
 
 ---
+
+To get the number of CPUs
+    
+    $ sysctl hw.physicalcpu hw.logicalcpu
+    hw.physicalcpu: 4
+    hw.logicalcpu: 8
+
+---
+

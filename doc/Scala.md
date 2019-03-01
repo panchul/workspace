@@ -29,6 +29,14 @@ Refresher links:
 
 ---
 
+Nice tour somebody made to go deeper into Scala
+https://github.com/dcapwell/scala-tour
+
+About Functor, for example:
+http://dcapwell.github.io/scala-tour/Functor.html
+
+---
+
 Scale By The Bay 2018: Martin Odersky, Opening Keynote: New Functional Constructs in Scala 3
 https://www.youtube.com/watch?v=6P06YHc8faw
 

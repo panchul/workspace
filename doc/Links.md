@@ -168,7 +168,8 @@ TODO: Create sub-pages of these.
 
   
 ### Operating systems
-  
+
+- [Android](Android.md)  
 - [Linux](Linux.md)  
   -- [Alpine](Alpine.md)
   -- [CentOS](CentOS.md)
@@ -233,15 +234,6 @@ Article "New Quantum Paradox Clarifies Where Our Views of Reality Go Wrong"
 https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-views-of-reality-go-wrong-20181203/
 
     
-### GUI Frameworks
-
-- [wxWidgets](wxWidgets.md)
-- [OpenGL](OpenGL.md)
-- GTK+ http://www.gtk.org/
-- Qt http://qt-project.org
-- Open-source UI Automation library https://github.com/TestStack/White
-
-
 ### Social media frameworks
 
 - [Facebook](Facebook.md)
@@ -447,6 +439,11 @@ Jcm
 presentation with overview of keras
 https://www.youtube.com/watch?v=45MbmHQ5iMY
 
+
+Integrating Keras (TensorFlow) YOLOv3 Into Apache NiFi Workflows
+https://community.hortonworks.com/articles/193868/integrating-keras-tensorflow-yolov3-into-apache-ni.html
+
+
 Some R links:
 
     https://cran.r-project.org/doc/manuals/r-release/R-intro.html
@@ -472,7 +469,6 @@ Miscellaneous other links:
 10 statistical techniques to use    
 https://www.datasciencecentral.com/profiles/blogs/the-10-statistical-techniques-data-scientists-need-to-master-10
     
-    
 
 ### Algorithms and Data Structures
 
@@ -487,10 +483,22 @@ https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
 Scalable web architecture
 http://www.aosabook.org/en/distsys.html
 
+### GUI Frameworks
+
+- [wxWidgets](wxWidgets.md)
+- GTK+ http://www.gtk.org/
+- Qt http://qt-project.org
+- Open-source UI Automation library https://github.com/TestStack/White
 
 ### Computer Graphics, Computer Vision, Visualization, etc
 
+- [CUDA](CUDA.md)
+- [DirectX](DirectX.md)
+- [GoogleGlass](GoogleGlass.md)
+- [OpenCL](OpenCL.md)
 - [OpenCV](OpenCV.md)
+- [OpenGL](OpenGL.md)
+- [OpenVX](OpenVX.md)
 - [SVG](SVG.md)
 - Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
 - [PNG](png.md)

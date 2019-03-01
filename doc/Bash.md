@@ -539,3 +539,36 @@ in .profile to make normal Back Space:
     stty erase ^H
 
 ---
+
+About bitwise and:
+
+    $ echo $(( 2 & 3 )) # 00000010 AND 00000011 = 00000010
+    2
+
+    $ echo $(( 120 & 97 )) # 01111000 AND 01100001 = 01100000
+    96
+
+The same with OR (|):
+
+    $ echo $(( 2 | 3 )) # 00000010 OR 00000011 = 00000011
+    3
+
+    $ echo $(( 120 | 97 )) # 01111000 OR 01100001 = 01111001
+    121
+
+
+    $ bc <<< "obase=2; 97"
+    1100001
+    
+will convert 97 to binary (the o in obase stands for output), and ...
+
+    $ bc <<< "ibase=2; 11001011"
+    203
+
+---
+
+Using bc to calculate things a() is arctangent
+
+    $ pi=$(echo "scale=10; 4*a(1)" | bc -l)
+
+---
