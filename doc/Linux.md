@@ -13,6 +13,7 @@ See Also:
   - [RedHat](RedHat.md)
   - [Ubuntu](Ubuntu.md)
      
+  - [cron](cron.md)
   - [Curl](Curl.md)
   - [Ipvsadm](ipvsadm.md)
   - [tar](tar.md)
@@ -634,5 +635,17 @@ See more in [bash](bash.md)
 Quick way to see what is going on at the host, e.g. process comes up or down:
 
     $ watch -d "ps -ef | grep myprogram"
+
+---
+
+    $ repeat 100 echo "I will not automate this punishment."
+
+Will echo 100 times and then stop.
+
+A similar command –  pause between repeats, and it repeats forever. For example,
+
+% repeat 100 0 echo "I will not automate this punishment."
+% repeat -1 5 echo "This will get echoed every 5 seconds forever."
+
 
 ---

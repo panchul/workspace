@@ -48,6 +48,8 @@ help:
 	@echo " If you are reading this, your system seems to have the necessary pre-requisites "
 	@echo " "
 
+status_all: git_status
+
 git_status:
 	@ for repo in `ls projects | grep sb_` ; \
 	do sh -c "echo \"Checking projects/$$repo...\" ; cd projects/$$repo ; git status -sb ; cd ../.. " ; \

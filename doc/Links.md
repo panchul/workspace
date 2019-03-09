@@ -207,6 +207,7 @@ TODO: Create sub-pages of these.
 
 ### Misc Utilities and Commands
 
+- [cron](cron.md)
 - [Curl](Curl.md)
 - [Find](Find.md)
 - [hostname](hostname.md)
@@ -507,6 +508,8 @@ http://www.aosabook.org/en/distsys.html
 - [Unreal Engine](UnreadlEngine.md)
 - [MagicLeap](MagicLeap.md)
 - Nice summary about colors https://agraphicsguy.wordpress.com/2018/11/29/basic-color-science-for-graphics-engineers/
+- Another motion capture program, similar to what I wanted to do: https://www.swri.org/biomechanics-human-performance-sensing-perception/human-performance-solutions
+
 
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
