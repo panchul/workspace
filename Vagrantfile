@@ -85,7 +85,7 @@ WS_IP_SPACE_KAFKA_BROKER_START = 60
 N_KAFKA_BROKER = 5
 
 WS_IP_SPACE_GOLANG_START = 65
-N_GOLANG = 1
+N_GOLANG = 2
 
 WS_IP_SPACE_DOCKER_START = 70
 N_DOCKER = 1
@@ -987,7 +987,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
        #dos2unix -q -n /vagrant/scripts/bootstrap.sh /home/vagrant/tmp_provisioning/bootstrap.sh
         /home/vagrant/tmp_provisioning/bootstrap.sh
         /home/vagrant/tmp_provisioning/git_install.sh
-        /home/vagrant/tmp_provisioning/golang.sh
+        /home/vagrant/tmp_provisioning/python_install.sh
+        /home/vagrant/tmp_provisioning/golang_install.sh
       SHELL
 
       box.vm.provision "dev_generic", type: "ansible" do |ansible|

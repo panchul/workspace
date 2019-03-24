@@ -115,6 +115,7 @@ TODO: Create sub-pages of these.
 
 - [APIs](APIs.md)
 - [Base64](Base64.md)
+- [gRPC](gRPC.md)
 - [HTML](HTML.md)
 - Jiffy (JSON converting)
 - [JSON](JSON.md)
@@ -241,9 +242,10 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 
 
   
-### Micorcontrollers and Embedded programming
+### Micorcontrollers, Embedded programming, hardware
 
-- [Arduino](Arduino.md)  
+- [Arduino](Arduino.md)
+- [BIOS](BIOS.md)  
 - [CNC Machines](CNC.md)
 - [EmbeddedProgramming](EmbeddedProgramming.md)
 - Misc Manufacturing and hardware, etc. https://www.designworldonline.com/iot-owe-advances-power-ethernet-cabling/
@@ -285,6 +287,8 @@ Compare it to fiddler and others
 Arduino wireless network sensor(and gateway) vendor (has some libraries, and docs)
 https://www.tartssensors.com/libraries/arduino/
 
+- UDF drive format, ssd/hdd https://en.wikipedia.org/wiki/Universal_Disk_Format#Compatibility
+  
   
 ### IDEs and editors
   
@@ -397,7 +401,7 @@ Aggregated List of C++ networking libraries
 - Speech generation
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
 - [Splunk](Splunk.md)
-- TensorFlow
+- [TensorFlow](TensorFlow.md)
 - [PyTorch](PyTorch.md)
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
 - Octave
@@ -491,11 +495,12 @@ http://www.aosabook.org/en/distsys.html
 - Qt http://qt-project.org
 - Open-source UI Automation library https://github.com/TestStack/White
 
-### Computer Graphics, Computer Vision, Visualization, etc
+### Computer Graphics, Computer Vision, Visualization, Image Processing, etc
 
 - [CUDA](CUDA.md)
 - [DirectX](DirectX.md)
 - [GoogleGlass](GoogleGlass.md)
+- OpenALPR - Automatic License Plate Recognition https://www.openalpr.com/
 - [OpenCL](OpenCL.md)
 - [OpenCV](OpenCV.md)
 - [OpenGL](OpenGL.md)
@@ -631,6 +636,7 @@ http://www.aosabook.org/en/distsys.html
 - toptal.com
 - https://www.hackerrank.com/
 - https://app.codility.com/programmers/
+- Teach yourself programming in ten years: http://norvig.com/21-days.html
 
 
 ## GPS, Meteorology, Alternative energy, and related

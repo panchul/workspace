@@ -191,3 +191,10 @@ https://www.backblaze.com/blog/vm-vs-containers/
 Basically, containers have containter daemon on host instead of hypervisor on host and guest OS per vm.
 
 ---
+
+Neat step-by-step demos for basic usage of Docker:
+http://engineering.hipolabs.com/understand-docker-without-losing-your-shit/
+
+---
+
+

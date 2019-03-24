@@ -8,12 +8,14 @@
 
 ---
 
-Pretty print for JSON:
+For JSON pretty-printing, `jsonpp` works fine, can fetch with `brew`.
+
+Another utility:
 
     $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
     $ curl http://some_api_url/ | python -m json.tool
    
-This last one might get crapped up with the ```curl```'s progress bar, to keep it silent:
+This last one might get crapped up with the `curl`'s progress bar, to keep it silent:
     
     $ curl -s http://some_api_url/ | python -m json.tool
 
