@@ -24,6 +24,11 @@ https://www.fastcompany.com/40406730/7-questions-recruiters-at-amazon-spotify-an
 
 ---
 
+High-Performing Teams Need Psychological Safety. Here’s How to Create It
+https://hbr.org/2017/08/high-performing-teams-need-psychological-safety-heres-how-to-create-it
+
+---
+
 Why the Best Things in Life Are All Backwards
 https://markmanson.net/why-the-best-things-in-life-are-all-backwards
 
@@ -155,5 +160,27 @@ https://journal.thriveglobal.com/want-automatic-motivation-and-wealth-do-this-on
 
 Job Seekers, You Will Be Lied To And Misled -- Here Is How You Can Protect Yourself
 https://www.forbes.com/sites/jackkelly/2018/12/17/job-seekers-beware-you-will-be-lied-to-and-misled-here-is-how-you-can-protect-yourself
+
+---
+
+"Culture is more important than vision. Some leaders have great vision, but have created a toxic
+culture where that vision will never happen." Phil Cooke
+
+Signs you work in a toxic environment:
+
+1) Disrespect and belittlement
+2) Unreasonable pressure to get short term results at expense of the long term strategy
+3) Inequity, unfairness, favoritism, injustice
+4) Any kind of harassment and bullying
+5) Lack of empathy, of appreciation, of support
+6) Excessive control known as micromanagement
+7) Morally questionable environments, lack of integrity, encouragement of dishonesty
+
+In an environment like this, no matter how great a vision and strategy are - they will never be executed on.
+Great leaders fix toxic cultures.
+
+They empower, involve, listen, appreciate, challenge, support, mentor. They value hard work and
+job well done, honesty, integrity, commitment and dedication.
+They know "Culture eats strategy for breakfast." Peter Drucker
 
 ---

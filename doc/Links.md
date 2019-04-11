@@ -211,6 +211,7 @@ TODO: Create sub-pages of these.
 - [cron](cron.md)
 - [Curl](Curl.md)
 - [Find](Find.md)
+- [gpg.md](Gpg.md)
 - [hostname](hostname.md)
 - [Ipvsadm](ipvsadm.md)
 - [mail](mail.md)
@@ -474,6 +475,9 @@ Miscellaneous other links:
 10 statistical techniques to use    
 https://www.datasciencecentral.com/profiles/blogs/the-10-statistical-techniques-data-scientists-need-to-master-10
     
+Neat compilation of cheat sheets for machine learning (mostly Python)
+https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-for-machine-learning-and-deep-learning-engineers
+    
 
 ### Algorithms and Data Structures
 
@@ -550,8 +554,9 @@ http://www.aosabook.org/en/distsys.html
 
 ## Cryptography, Network Security, etc.
 
-- [IPSec](IPSec.md)
 - [Cryptography and Network Security](Cryptography.md)
+- [IPSec](IPSec.md)
+- [gpg.md](Gpg.md)
 - [MD5.md](MD5.md)
 - [Obfuscators](Obfuscators.md)
 - [SASL](SASL.md)
