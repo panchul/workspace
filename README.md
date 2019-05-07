@@ -156,6 +156,7 @@ Other sandbox repositories could be provisioned on these boxes. For example,
 * [https://github.com/panchul/sb_ansible](https://github.com/panchul/sb_ansible)
 * [https://github.com/panchul/sb_arduino](https://github.com/panchul/sb_arduino)
 * [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp)
+* [https://github.com/panchul/sb_csharp](https://github.com/panchul/sb_csharp)
 * [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker)
 * [https://github.com/panchul/sb_erl](https://github.com/panchul/sb_erl)
 * [https://github.com/panchul/sb_fsharp](https://github.com/panchul/sb_fsharp)

@@ -5,6 +5,18 @@ Misc stuff related to psychology and motivation
 
 ---
 
+"The hardest thing is: How does that fit into a cohesive,
+ larger vision, that's going to allow you to sell eight
+ billion dollars, 10 billion dollars of product a year?
+ And one of the things I've always found is that you've
+ got to start with the customer experience and work backwards
+ to the technology. You can't start with the technology and
+ try to figure out where you're going to try to sell it."
+
+Steve Jobs
+
+---
+
 Шри Шри Рави Шанкар, индийский гуру
 
 - любовь, мудрость и внутренняя гармония  торжествуют над ненавистью и страданием.

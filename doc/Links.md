@@ -518,7 +518,10 @@ http://www.aosabook.org/en/distsys.html
 - [MagicLeap](MagicLeap.md)
 - Nice summary about colors https://agraphicsguy.wordpress.com/2018/11/29/basic-color-science-for-graphics-engineers/
 - Another motion capture program, similar to what I wanted to do: https://www.swri.org/biomechanics-human-performance-sensing-perception/human-performance-solutions
-
+- libav (library)
+- ffmpeg (library)
+- Oculus 
+  https://next.reality.news/news/facebook-searching-for-more-troops-work-oculus-ar-product-design-marketing-0196400/
 
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
@@ -687,16 +690,24 @@ http://www.aosabook.org/en/distsys.html
 - https://www.tinkercad.com - open-source 3d printing models, like GitHub for misc design(electronic, 3d printing, etc.) 
 
 
-## Motivational
+## Motivational and Psychology
 
 - [Motivational](Motivational.md)
 
 - Psychological manipulation of the masses: https://lifter.com.ua/10-strashnyh-tryukov-s-pomoshchyu-kotoryh-kontroliruyut-massy-rasskazyvaet-noam-homskiy-5293
+
+- Nice summary of well-known experiments:
+  https://medium.com/@mikaileliyah/how-your-mind-can-be-hijacked-and-your-will-seized-ae71141f6996
+- Interesting study on weekdays(publicly-available)
+  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134555
 
 
 ## Fun.
 
 - [misc fun, youtube, etc.](misc_fun.html)
 - [misc historic links](misc_historic.html)
+- Dog registration in Seattle area
+ https://kingcounty.gov/depts/regional-animal-services/license-your-pet/purchase-renew-license.aspx
+
 
 - The price of being single. http://ideas.ted.com/the-price-of-being-single/

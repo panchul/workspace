@@ -10,6 +10,11 @@ See Also:
 
 ---
 
+A Crash Course in Everything Cryptographic
+https://blog.usejournal.com/a-crash-course-in-everything-cryptographic-50daa0fda482
+
+---
+
 35C3 - How Facebook tracks you on Android
 https://www.youtube.com/watch?v=y0vlD7r-kTc
 
