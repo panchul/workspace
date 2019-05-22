@@ -522,7 +522,10 @@ http://www.aosabook.org/en/distsys.html
 - ffmpeg (library)
 - Oculus 
   https://next.reality.news/news/facebook-searching-for-more-troops-work-oculus-ar-product-design-marketing-0196400/
-
+- http://voka.io Neat AR/VR for medical applications using Hololens
+- www.optitrack.com Nice options for optical motion capture:
+- github.com/isetbio - nice vision libraries and tools, mostly Matlab.
+- 
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
 
@@ -618,7 +621,10 @@ http://www.aosabook.org/en/distsys.html
 
 - Lunar Eclipse photography tips: https://www.bhphotovideo.com/explora/photography/tips-and-solutions/22-tips-for-photographing-a-lunar-eclipse
 -﻿Shot Lists and Script Lining. https://nofilmschool.com/2018/02/shot-lists-and-script-lining-how-prepare-your-screenplay-shoot
-- ﻿https://pixabay.com/ Free bank of photos.
+- https://pixabay.com/ Free bank of photos.
+- http://www.imageval.com/ - image processing consulting firm that
+  supports some of the open-source libraries.
+- https://www.zemax.com/ - simulatinf optics, similar to what I tried to do with YARC.   
 
 ## Biology, Medicine, Gerontology, etc.
 
