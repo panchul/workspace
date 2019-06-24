@@ -75,7 +75,7 @@ TODO: Create sub-pages of these.
 
 #### Frameworks Libraries, Static code analyse, architecture approaches, etc.
 
- - [ASCIIDoc](asciidoc.md]
+ - [ASCIIDoc](Asciidoc.md]
  - [Apache Log4j](Log4J.md)
  - [Apache Spark](ApacheSpark.md)
  - Codeclimate https://developer.codeclimate.com/#overview
@@ -87,7 +87,7 @@ TODO: Create sub-pages of these.
  - [Splunk](Splunk.md)
  - [STL](STL.md) 
  - ReactiveX http://reactivex.io/intro.html
- - [xmlto](xmlto.md)
+ - [xmlto](Xmlto.md)
  - [Zlib](ZLib.md)
  - [CQRS](CQRS.md) Command Query Responsibility Segregation
  - Nice about microservices:
@@ -115,7 +115,7 @@ TODO: Create sub-pages of these.
 
 - [APIs](APIs.md)
 - [Base64](Base64.md)
-- [gRPC](gRPC.md)
+- [gRPC](GRPC.md)
 - [HTML](HTML.md)
 - Jiffy (JSON converting)
 - [JSON](JSON.md)
@@ -127,7 +127,7 @@ TODO: Create sub-pages of these.
 - [UTF-8](UTF-8)  
 - [XML](XML.md)
 - [YAML](YAML.md)
--﻿[QR code](qr_code.md)
+-﻿[QR code](Qr_code.md)
 
 ### Databases
 
@@ -145,7 +145,7 @@ TODO: Create sub-pages of these.
 
 ### Version control systems and configuration tools 
 
-- [aptitude](aptitude.md)
+- [aptitude](Aptitude.md)
 - [Autoconf](Autoconf.md)
 - autoconfig
 - [Automake](Automake.md)
@@ -158,14 +158,14 @@ TODO: Create sub-pages of these.
 - [Gradle](Gradle.md)
 - [Homebrew](Homebrew.md)
 - [Libtool](Libtool.md)
-- [make](make.md)
+- [make](Make.md)
 - [Maven](Maven.md)
 - [Mercurial](Mercurial.md)
-- [Pip](pip.md)  
+- [Pip](Pip.md)  
 - [Rake](Rake.md)  
 - [Sbt](Sbt.md)  
 - [Subversion](Subversion.md)  
-- [yum](yum.md)
+- [yum](Yum.md)
 
   
 ### Operating systems
@@ -190,7 +190,7 @@ TODO: Create sub-pages of these.
 - [Disqus](Disqus.md)
 - [Heroku](Heroku.md)
 - [JQuery](JQuery.md)
-- [nginx](nginx.md)
+- [nginx](Nginx.md)
 - [PlayFramework](PlayFramework.md)
 - [Scalatra](Scalatra.md)
 - [WordPress](WordPress.md)
@@ -208,19 +208,19 @@ TODO: Create sub-pages of these.
 
 ### Misc Utilities and Commands
 
-- [cron](cron.md)
+- [cron](Cron.md)
 - [Curl](Curl.md)
 - [Find](Find.md)
 - [gpg.md](Gpg.md)
-- [hostname](hostname.md)
-- [Ipvsadm](ipvsadm.md)
-- [mail](mail.md)
+- [hostname](Hostname.md)
+- [Ipvsadm](Ipvsadm.md)
+- [mail](Mail.md)
 - [N2W](N2W.md)
 - [netcat(nc)](Netcat.md)
 - [Postman](Postman.md)
-- [screen](screen.md)
-- [tar](tar.md)
-- [sysdig](sysdig.md)
+- [screen](Screen.md)
+- [tar](Tar.md)
+- [sysdig](Sysdig.md)
 - ...
 
 ### Quantum Computing, etc.
@@ -296,7 +296,7 @@ https://www.tartssensors.com/libraries/arduino/
 - [Atom](Atom.md)
 - [Eclipse](Eclipse.md)  
 - [emacs](Emacs.md) 
-- [gdb](gdb.md)
+- [gdb](Gdb.md)
 - [IntelliJ](Intellij.md)  
 - MS Visual Studio  
 - [vi/vim](Vim.md)  
@@ -315,7 +315,7 @@ https://www.tartssensors.com/libraries/arduino/
   - Firewalls
   - Load balancers
 - [HAProxy](HAProxy.md)
-- [nginx](nginx.md)
+- [nginx](Nginx.md)
 - [DNS](DNS.md)
   - BIND
 - [OpenVPN](OpenVPN.md)
@@ -494,7 +494,7 @@ http://www.aosabook.org/en/distsys.html
 
 ### GUI Frameworks
 
-- [wxWidgets](wxWidgets.md)
+- [wxWidgets](WxWidgets.md)
 - GTK+ http://www.gtk.org/
 - Qt http://qt-project.org
 - Open-source UI Automation library https://github.com/TestStack/White
@@ -511,7 +511,7 @@ http://www.aosabook.org/en/distsys.html
 - [OpenVX](OpenVX.md)
 - [SVG](SVG.md)
 - Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
-- [PNG](png.md)
+- [PNG](Png.md)
 - video recording for terminal ```asciinema.org``` ```gohugo.io``` web content
 - [Unity](Unity.md)
 - [Unreal Engine](UnreadlEngine.md)
@@ -525,7 +525,9 @@ http://www.aosabook.org/en/distsys.html
 - http://voka.io Neat AR/VR for medical applications using Hololens
 - www.optitrack.com Nice options for optical motion capture:
 - github.com/isetbio - nice vision libraries and tools, mostly Matlab.
-- 
+- Blender used for sequencing: https://www.youtube.com/watch?v=OGapXgrLOnI
+- Blender and stuff, about photorealism https://www.youtube.com/watch?v=m9AT7H4GGrA
+
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
 
@@ -710,8 +712,8 @@ http://www.aosabook.org/en/distsys.html
 
 ## Fun.
 
-- [misc fun, youtube, etc.](misc_fun.html)
-- [misc historic links](misc_historic.html)
+- [misc fun, youtube, etc.](Misc_fun.html)
+- [misc historic links](Misc_historic.html)
 - Dog registration in Seattle area
  https://kingcounty.gov/depts/regional-animal-services/license-your-pet/purchase-renew-license.aspx
 

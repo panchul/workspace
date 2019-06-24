@@ -5,7 +5,7 @@
 
 See Also:
 - [Linux](Linux.md)
-- [yum](yum.md)
+- [yum](Yum.md)
 
 
 ```aptitude```, that is, ```apt-get```, etc. is a Debian packaging tool.

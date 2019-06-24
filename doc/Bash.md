@@ -5,14 +5,14 @@
 
 See Also:
      
-  - [cron](cron.md)
+  - [cron](Cron.md)
   - [Curl](Curl.md)
-  - [Ipvsadm](ipvsadm.md)
+  - [Ipvsadm](Ipvsadm.md)
   - [Linux](Linux.md)
-  - [tar](tar.md)
-  - [tcpdump](tcpdump.md)
-  - [nohup](nohup.md)
-  - [mail](mail.md)
+  - [tar](Tar.md)
+  - [tcpdump](Tcpdump.md)
+  - [nohup](Nohup.md)
+  - [mail](Mail.md)
 
 My shell sandbox is [https://github.com/panchul/sb_shell](https://github.com/panchul/sb_shell).
 

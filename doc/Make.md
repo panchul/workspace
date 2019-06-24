@@ -35,7 +35,7 @@ From the make manual: http://www.gnu.org/software/make/manual/make.html
 
 ---
 
-The long lines split with ```\``` works in Makefile
+The long lines split with ```\``` work in Makefile
 
 ---
 
@@ -49,5 +49,23 @@ To get output of commands into vars in Makefile:
 On Mac, make is here if you are using XCode:
 
 /Applications/Xcode.app/Contents/Developer/usr/bin/
+
+---
+
+To define a wildcard, you need to explicitly say that it is a wildcard:
+    
+    objects := $(wildcard *.o)
+
+Or it will be just a string variable.
+
+---
+
+Automatic variables:
+https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables
+
+    $^ - pre-requisites
+    $< - name of the first prerequisite
+    $? - names of all prerequisites that are newer than the target
+    
 
 ---

@@ -13,14 +13,14 @@ See Also:
   - [RedHat](RedHat.md)
   - [Ubuntu](Ubuntu.md)
      
-  - [cron](cron.md)
+  - [cron](Cron.md)
   - [Curl](Curl.md)
-  - [Ipvsadm](ipvsadm.md)
-  - [tar](tar.md)
-  - [tcpdump](tcpdump.md)
-  - [nohup](nohup.md)
+  - [Ipvsadm](Ipvsadm.md)
+  - [tar](Tar.md)
+  - [tcpdump](Tcpdump.md)
+  - [nohup](Nohup.md)
   - [bash](bash.md)
-  - [mail](mail.md)
+  - [mail](Mail.md)
  
  
 ---
@@ -246,7 +246,7 @@ Linux Kernel
 
 https://kernelnewbies.org/FAQ  - nice FAQ
 
-See Also [ipvsadm](ipvsadm.md)
+See Also [ipvsadm](Ipvsadm.md)
 
 ---
 
