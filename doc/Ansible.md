@@ -9,6 +9,12 @@ See Also:
 
 ---
 
+Neat summary of Ansible for Ubuntu 18.04lts
+
+https://www.cyberciti.biz/faq/how-to-install-ansible-on-ubuntu-18-04-for-it-automation/
+
+---
+
 To run a playbook at a Vagrant box one can use:  
 
     $ ansible-playbook --connection ssh -u vagrant -i ansible/ansible.vmhosts ansible/playbooks/mybook/mythings2do.yml

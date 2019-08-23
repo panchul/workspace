@@ -8,9 +8,15 @@ TODO: Add the list courses I took
 
 TODO: Add list interests, etc.
 
+---
+
+"TALENT hits the target no one else can HIT, GENIUS hits the target no one else can SEE"
+
+---
 
 
-### Misc Links in no particular order, loosely related to career.
+---
+Misc Links in no particular order, loosely related to career.
 
 https://capitalfactory.apps.umbel.com/6d6/2016-pre-sxsw-startup-crawl/  
 https://austinstartups.com/bbva-pre-sxsw-startup-crawl-stops-8ed1002b8e92#.elta46dmt  

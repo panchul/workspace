@@ -141,6 +141,7 @@ TODO: Create sub-pages of these.
 - [Redis](Redis.md)
 - Riak
 - A blog with comparison: http://highscalability.com/blog/2015/12/30/how-to-choose-an-in-memory-nosql-solution-performance-measur.html
+- [Haystack](Haystack.md)
 
 
 ### Version control systems and configuration tools 
@@ -394,7 +395,7 @@ Aggregated List of C++ networking libraries
 
 - AppDynamics https://www.appdynamics.com/
 - [Alexa](Alexa.md)
-- Caffe
+- Caffe and Caffe2
 - Chat bots
 - MXNet
 - Neon
@@ -407,7 +408,22 @@ Aggregated List of C++ networking libraries
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
 - Octave
 - CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
-- popular Python modules include NumPy, Pandas, Seaborn, Scikit-Learn, open source toolkits Apache MXNet, Caffe2, Keras, Microsoft Cognitive Toolkit, TensorFlow, PyTorch.
+- popular Python modules include 
+    - NumPy,
+    - Pandas,
+    - Seaborn,
+    - Scikit-Learn,
+- open source toolkits
+    - Apache MXNet,
+- [Keras](Keras.md),
+    - Microsoft Cognitive Toolkit,
+    - TensorFlow,
+    - PyTorch.
+
+Neat command-line tricks:
+- https://www.datascienceatthecommandline.com/chapter-7-exploring-data.html#creating-visualizations
+
+- gnuplot, freegnuplot, etc.
 
 - Chat bot comparisons: https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff
 
@@ -442,34 +458,19 @@ Aggregated List of C++ networking libraries
   Amoeba finds approximate solutions to NP-hard problem in linear time
 Jcm  
 
-presentation with overview of keras
-https://www.youtube.com/watch?v=45MbmHQ5iMY
-
-
 Integrating Keras (TensorFlow) YOLOv3 Into Apache NiFi Workflows
 https://community.hortonworks.com/articles/193868/integrating-keras-tensorflow-yolov3-into-apache-ni.html
 
-
-Some R links:
-
-    https://cran.r-project.org/doc/manuals/r-release/R-intro.html
-    https://support.rstudio.com/hc/en-us
-    https://www.johndcook.com/blog/r_language_for_programmers/
 
 Some Python links:
 
     https://www.python.org/
     https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot
-    https://keras.io/
-    https://keras.io/#getting-started-30-seconds-to-keras
-    https://keras.io/getting-started/sequential-model-guide/#getting-started-with-the-keras-sequential-model
     https://www.tensorflow.org/install/
 
 Miscellaneous other links:
 
     http://www.asimovinstitute.org/neural-network-zoo/
-    https://www.tensorflow.org/
-    https://keras.io
     https://pytorch.org/
 
 10 statistical techniques to use    
@@ -527,6 +528,8 @@ http://www.aosabook.org/en/distsys.html
 - github.com/isetbio - nice vision libraries and tools, mostly Matlab.
 - Blender used for sequencing: https://www.youtube.com/watch?v=OGapXgrLOnI
 - Blender and stuff, about photorealism https://www.youtube.com/watch?v=m9AT7H4GGrA
+- https://www.kickstarter.com/projects/1714585446/chronos-14-high-speed-camera
+- https://www.patentlyapple.com/patently-apple/face-object-recognition/ - a bunch of AR/VR-related patents.
 
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
@@ -694,7 +697,8 @@ http://www.aosabook.org/en/distsys.html
 - https://pisquare.osisoft.com/community/Learn-PI/programming-in-pi-web-api OSIsoft website about PI programming
 - https://github.com/osisoft/PI-Web-API-Programming-Online-Course - neat course they made
 - PI SDK online videos https://pisquare.osisoft.com/community/Learn-PI/developing-applications-with-PI-AF-SDK
-
+- https://www.physikinstrumente.com/en/
+- https://www.thorlabs.com/navigation.cfm?guide_id=2251
 - https://www.tinkercad.com - open-source 3d printing models, like GitHub for misc design(electronic, 3d printing, etc.) 
 
 
