@@ -58,7 +58,7 @@ Here's how to get the nanosecond time('N' is nanoseconds) in bash:
 
     $ while true; do echo $(($(date "+%s%N")/1000000)); done;
  
- More at https://stackoverflow.com/questions/16548528/command-to-get-time-in-milliseconds
+More at https://stackoverflow.com/questions/16548528/command-to-get-time-in-milliseconds
 
 ---
 
@@ -579,5 +579,112 @@ will convert 97 to binary (the o in obase stands for output), and ...
 Using bc to calculate things a() is arctangent
 
     $ pi=$(echo "scale=10; 4*a(1)" | bc -l)
+
+---
+
+Examples of using {}, brace expansion:
+    
+    $ echo file.txt{,.bak}
+    file.txt file.bak
+    
+    $ echo file-{a..d}.txt
+    file-a.txt file-b.txt file-c.txt file-d.txt
+    
+and so on:
+    
+    $ mkdir -p /apache-jail/{usr,bin,lib64,dev}
+    $ cp httpd.conf{,.backup}
+    $ mv delta.{txt,doc}
+
+
+update all CentOS/RHEL boxes named with the pattern: 
+
+    for server in aws-{prod,backup-prod}-{db,www}-0{1..4}
+    do
+        ssh -t myusername@${server} sudo -- sh -c 'yum update'
+    done
+
+---
+
+To fix the display from non-text garbage:
+
+    $ reset
+
+or
+    
+    $ tput reset
+
+if that failed, try resetting stty session like so:
+
+    $ stty sane
+
+Press Ctrl+L should work too, or command:
+
+    $ clear
+
+ANSI escape sequence can clear the bash terminal too:
+
+    $ clear
+    $ echo -e "\033c"
+
+---
+
+Sometimes a command with pattern has an error "Argument list too long"
+Here are some work-arounds.
+
+Using `xargs`:
+
+    $ find . -name "*tmp" -print | xargs rm -f
+
+Or simply:
+
+    $ find . -name "*tmp" -exec rm -f {} \;
+
+or
+
+    $ find . -type f -name "*tmp" -exec rm -f {} \;
+
+---
+
+Option `-J` will do the string replacement, effectively moving the
+argument from the end of the command to wherever.
+
+    $ /bin/ls -1d [A-Z]* | xargs -J % cp -rp % destdir
+    
+---
+
+    var="This is a test"
+    echo "${var~~}" # Reverse var #
+    echo "${var^^}" # UPPERCASE var #
+    echo "${var,,}" # lowercase var #
+
+---
+
+Idiomatic alias for `sudo`ing multiple commands:
+
+    alias update="sudo sh -c 'apt update && apt upgrade -y'"
+
+Other alternatives:
+
+    $ sudo sh -c 'command1 && command2'
+    $ sudo -- sh -c 'command1 && command2'
+    $ sudo -u userNameHere -- sh -c 'command1; command2'
+    $ sudo -- sh -c 'command1; command2'
+    $ sudo -- bash -c 'command1; command2'
+    $ sudo -i -- 'command1; command2; command3'
+    $ sudo -i -- sh -c 'command1 && command2 && command3'
+
+Sample of how to use one sudo for several commands in a script
+
+    #!/bin/bash
+    echo "Running commands as a root user..."
+    sudo -- -sh -c <<EOF
+    apt-get update
+    apt-get -y upgrade
+    apt-get -y install nginx 
+    apt-get -y remove nano
+    apt-get clean
+    echo "All done."
+    EOF
 
 ---

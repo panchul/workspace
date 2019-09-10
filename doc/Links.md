@@ -39,6 +39,8 @@ TODO: Create sub-pages of these.
     - [Set](Set.md) 
     - [Vector](Vector.md) 
   - [Multithreading](Multithreading.md)
+    - [Semaphore](Semaphore.md)
+    - [Mutex](Mutex.md) 
 - [C#](CSharp.md)   
 - [Erlang/OTP](Erlang.md)  
   - Kerl
@@ -73,9 +75,10 @@ TODO: Create sub-pages of these.
 - [RegEx](RegEx.md)
 - [Bash](Bash.md)
 
+
 #### Frameworks Libraries, Static code analyse, architecture approaches, etc.
 
- - [ASCIIDoc](Asciidoc.md]
+ - [ASCIIDoc](Asciidoc.md)
  - [Apache Log4j](Log4J.md)
  - [Apache Spark](ApacheSpark.md)
  - Codeclimate https://developer.codeclimate.com/#overview
@@ -90,6 +93,8 @@ TODO: Create sub-pages of these.
  - [xmlto](Xmlto.md)
  - [Zlib](ZLib.md)
  - [CQRS](CQRS.md) Command Query Responsibility Segregation
+ - [Qt](Qt.md)
+ 
  - Nice about microservices:
    https://dwmkerr.com/the-death-of-microservice-madness-in-2018/
 
@@ -111,6 +116,7 @@ TODO: Create sub-pages of these.
 - Installing Chocolatey
    https://chocolatey.org/install  
 
+
 ### Data formats, APIs, Protocols
 
 - [APIs](APIs.md)
@@ -128,6 +134,7 @@ TODO: Create sub-pages of these.
 - [XML](XML.md)
 - [YAML](YAML.md)
 -﻿[QR code](Qr_code.md)
+
 
 ### Databases
 
@@ -183,6 +190,7 @@ TODO: Create sub-pages of these.
 - Symbian OS  
 - [MacOS](MacOS.md)
 
+
 ### Web Frameworks, servers, etc
 
 - MochiWeb
@@ -224,6 +232,7 @@ TODO: Create sub-pages of these.
 - [sysdig](Sysdig.md)
 - ...
 
+
 ### Quantum Computing, etc.
 
 List of quantum computing simulators
@@ -241,8 +250,8 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 ### Social media frameworks
 
 - [Facebook](Facebook.md)
-
-
+- Disqus
+- Twitter
   
 ### Micorcontrollers, Embedded programming, hardware
 
@@ -278,6 +287,7 @@ BACnet (http://www.bacnet.org/)
 To paraphrase Sir Winston Churchill, "BACnet is undoubtedly the worst protocol on the face of the earth - except for all the others!"
 Mango is similar to PI Processbook
 https://infiniteautomation.com/mango-overview
+
 add link to Wireshark:
 https://www.wireshark.org/docs/wsug_html/
 
@@ -290,7 +300,6 @@ Arduino wireless network sensor(and gateway) vendor (has some libraries, and doc
 https://www.tartssensors.com/libraries/arduino/
 
 - UDF drive format, ssd/hdd https://en.wikipedia.org/wiki/Universal_Disk_Format#Compatibility
-  
   
 ### IDEs and editors
   
@@ -307,6 +316,7 @@ https://www.tartssensors.com/libraries/arduino/
 - Spyder (for Python)
 - BeyondCompare  https://www.scootersoftware.com/download.php
 - WinMerge  https://sourceforge.net/projects/winmerge/?source=typ_redirect
+
 
 ### Networking
 
@@ -329,7 +339,6 @@ Aggregated List of C++ networking libraries
 - Asio is also available as a stand-alone library.
 - C++ Network Library
 - POCO
-- Qt
 - Raknet
 - ZeroMQ (C++)
 - nanomsg (C Library)
@@ -354,8 +363,6 @@ Aggregated List of C++ networking libraries
 - GLib Networking
 - grpc from Google
 - GameNetworkingSockets from Valve
-
-
 
 
 ### Testing Frameworks
@@ -419,6 +426,7 @@ Aggregated List of C++ networking libraries
     - Microsoft Cognitive Toolkit,
     - TensorFlow,
     - PyTorch.
+- Google Handtracking library: https://github.com/google/mediapipe/blob/master/mediapipe/docs/hand_tracking_mobile_gpu.md
 
 Neat command-line tricks:
 - https://www.datascienceatthecommandline.com/chapter-7-exploring-data.html#creating-visualizations
@@ -464,7 +472,6 @@ https://community.hortonworks.com/articles/193868/integrating-keras-tensorflow-y
 
 Some Python links:
 
-    https://www.python.org/
     https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot
     https://www.tensorflow.org/install/
 
@@ -486,21 +493,23 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
 - [Graphs](Graphs.md)
 - [Sorting](Sorting.md)
 
-
 Nice collection for the topic of Distributed Systems and Parallel Computing
 https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
 
 Scalable web architecture
 http://www.aosabook.org/en/distsys.html
 
+
 ### GUI Frameworks
 
 - [wxWidgets](WxWidgets.md)
 - GTK+ http://www.gtk.org/
-- Qt http://qt-project.org
+- [Qt](Qt.md)
 - Open-source UI Automation library https://github.com/TestStack/White
 
 ### Computer Graphics, Computer Vision, Visualization, Image Processing, etc
+
+- [Graphics](Graphics.md) all sort of miscellaneous snippets.
 
 - [CUDA](CUDA.md)
 - [DirectX](DirectX.md)
@@ -517,19 +526,7 @@ http://www.aosabook.org/en/distsys.html
 - [Unity](Unity.md)
 - [Unreal Engine](UnreadlEngine.md)
 - [MagicLeap](MagicLeap.md)
-- Nice summary about colors https://agraphicsguy.wordpress.com/2018/11/29/basic-color-science-for-graphics-engineers/
-- Another motion capture program, similar to what I wanted to do: https://www.swri.org/biomechanics-human-performance-sensing-perception/human-performance-solutions
-- libav (library)
-- ffmpeg (library)
-- Oculus 
-  https://next.reality.news/news/facebook-searching-for-more-troops-work-oculus-ar-product-design-marketing-0196400/
-- http://voka.io Neat AR/VR for medical applications using Hololens
-- www.optitrack.com Nice options for optical motion capture:
-- github.com/isetbio - nice vision libraries and tools, mostly Matlab.
-- Blender used for sequencing: https://www.youtube.com/watch?v=OGapXgrLOnI
-- Blender and stuff, about photorealism https://www.youtube.com/watch?v=m9AT7H4GGrA
-- https://www.kickstarter.com/projects/1714585446/chronos-14-high-speed-camera
-- https://www.patentlyapple.com/patently-apple/face-object-recognition/ - a bunch of AR/VR-related patents.
+- [Fractals](Fractals.md)
 
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
@@ -705,16 +702,9 @@ http://www.aosabook.org/en/distsys.html
 ## Motivational and Psychology
 
 - [Motivational](Motivational.md)
+- [Psychology](Psychology.md)
 
-- Psychological manipulation of the masses: https://lifter.com.ua/10-strashnyh-tryukov-s-pomoshchyu-kotoryh-kontroliruyut-massy-rasskazyvaet-noam-homskiy-5293
-
-- Nice summary of well-known experiments:
-  https://medium.com/@mikaileliyah/how-your-mind-can-be-hijacked-and-your-will-seized-ae71141f6996
-- Interesting study on weekdays(publicly-available)
-  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134555
-
-
-## Fun.
+## Fun and useful.
 
 - [misc fun, youtube, etc.](Misc_fun.html)
 - [misc historic links](Misc_historic.html)

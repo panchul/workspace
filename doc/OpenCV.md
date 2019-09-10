@@ -35,7 +35,7 @@ https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-
 
 ---
 
-Whole lot of dependencies are needed for opancv to work, for example:
+Whole lot of dependencies are needed for OpenCV to work, for example:
 
     sudo apt update
     sudo apt install tesseract-ocr

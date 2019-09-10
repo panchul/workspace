@@ -43,3 +43,12 @@ Example of the HTML with geolocation:
     </html>
 
 ---
+
+Auto-refreshing via meta setting in the header:
+
+    <head>
+       <meta http-equiv="refresh" content="30>
+    </head>
+
+---
+

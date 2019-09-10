@@ -151,4 +151,56 @@ Pandas Dataframe.
 
 https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
 
+---
 
+A simple demo of pre-defined things in a Python script.
+(from https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+
+File `one.py`
+    
+    def func():
+        print("func() in one.py")
+
+    print("top-level in one.py")
+
+    if __name__ == "__main__":
+        print("one.py is being run directly")
+    else:
+        print("one.py is being imported into another module")
+
+File `two.py`
+
+    import one
+
+    print("top-level in two.py")
+    one.func()
+
+    if __name__ == "__main__":
+        print("two.py is being run directly")
+    else:
+        print("two.py is being imported into another module")
+    
+Now, if you invoke the interpreter as
+
+    $ python one.py
+
+The output will be
+
+    top-level in one.py
+    one.py is being run directly
+
+If you run two.py instead:
+
+    $ python two.py
+
+You get
+
+    top-level in one.py
+    one.py is being imported into another module
+    top-level in two.py
+    func() in one.py
+    two.py is being run directly
+
+Thus, when module one gets loaded, its __name__ equals "one" instead of "__main__".
+
+---

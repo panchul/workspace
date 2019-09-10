@@ -67,3 +67,26 @@ To get the number of CPUs
 
 ---
 
+Issues with gdb and Eclipse.
+
+https://www.thomasvitale.com/how-to-setup-gdb-and-eclipse-to-debug-c-files-on-macos-sierra/
+
+https://apple.stackexchange.com/questions/309017/unknown-error-2-147-414-007-on-creating-certificate-with-certificate-assist
+
+https://apple.stackexchange.com/questions/302866/keychain-access-error-when-creating-new-system-certificate
+
+https://gist.github.com/hlissner/898b7dfc0a3b63824a70e15cd0180154
+
+Another one, from some course.
+https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/mac-gdb-install.html
+            
+About codesign, etc.            
+https://stackoverflow.com/questions/20875927/how-to-undo-codesign
+    
+    $ codesign -s gdb-cert gdb
+
+To re-sign, you have to remove the signature first:
+
+    $ codesign --remove-signature gdb
+
+---

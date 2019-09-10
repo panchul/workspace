@@ -5,6 +5,25 @@ Misc stuff related to psychology and motivation
 
 ---
 
+У вас никогда не будет лучшего шанса, чем сейчас.
+
+---
+
+Be careful of what you think is right and true ... is merely what you prefer to be.
+
+---
+
+Inreresting tips on phychological.
+CharismaOnDemand
+https://www.youtube.com/watch?v=lykvHGNo9yE
+
+---
+
+"Не стоит винить клоуна за то, что он ведёт себя как клоун. Стоит задать
+ себе вопрос: почему ты до сих пор ходишь в цирк?"
+
+---
+
 "The hardest thing is: How does that fit into a cohesive,
  larger vision, that's going to allow you to sell eight
  billion dollars, 10 billion dollars of product a year?
