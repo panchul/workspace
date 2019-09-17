@@ -688,3 +688,16 @@ Sample of how to use one sudo for several commands in a script
     EOF
 
 ---
+
+Discussion about how bash logical operands are screwed up.
+https://stackoverflow.com/questions/7656425/makefile-ifeq-logical-or
+
+---
+
+How to count lines of .cpp and .h files in the current directory and its subdirectories.
+
+    $ find . -type f \( -name "*.h" -or -name "*.cpp" \) -exec wc -l {} \; | awk '{total += $1} END{print total}'
+
+A longer discussion on that: https://unix.stackexchange.com/questions/260630/how-do-you-list-number-of-lines-of-every-file-in-a-directory-in-human-readable-f 
+
+---

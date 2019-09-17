@@ -60,6 +60,14 @@ Or it will be just a string variable.
 
 ---
 
+From https://www.gnu.org/software/make/manual/html_node/File-Name-Functions.html
+
+Joining lists.
+
+    $(join list1,list2)
+
+---
+
 Automatic variables:
 https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables
 
@@ -67,5 +75,7 @@ https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Auto
     $< - name of the first prerequisite
     $? - names of all prerequisites that are newer than the target
     
+    $@ - name of the target of the rule
+    etc.
 
 ---

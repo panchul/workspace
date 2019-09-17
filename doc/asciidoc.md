@@ -10,7 +10,7 @@ http://asciidoc.org/
 
 Simple options I used for old templates:
 
-    $ asciidoc -a data-uri -a icons -a toc -a max-width=55em --out-file - template1.txt
+    $ asciidoc --no-header-footer -a data-uri -a icons -a toc -a max-width=55em --out-file - template1.txt
 
 For more, see the `sb_asciidoc` repo.
 

@@ -33,7 +33,7 @@ https://en.cppreference.com/w/cpp/language/value_category
 
 ---
 
-Nice about shared_ptr<>, and !!! About lock_guard<>
+About shared_ptr<>, and !!! About lock_guard<>
 https://en.cppreference.com/w/cpp/memory/shared_ptr
 
     void del(void(*)()) {}
@@ -186,9 +186,11 @@ Good summarizing public/protected/private
 
     class Base {
     public:
-        int publicMember; // Everything that is aware of Base is also aware that Base contains publicMember.
+        int publicMember; // Everything that is aware of Base is also
+                          // aware that Base contains publicMember.
     protected:
-        int protectedMember; // Only the children (and their children) are aware that Base contains protectedMember.
+        int protectedMember; // Only the children (and their children)
+                            // are aware that Base contains protectedMember.
     private:
         int privateMember; //No one but Base is aware of privateMember.
     };
@@ -199,7 +201,6 @@ Let's consider a class Base and a class Child that inherits from Base.
 - If the inheritance is public, everything that is aware of Base and Child is also aware that Child inherits from Base.
 - If the inheritance is protected, only Child, and its children, are aware that they inherit from Base.
 - If the inheritance is private, no one other than Child is aware of the inheritance.
-
 
     class A 
     {

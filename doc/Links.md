@@ -230,6 +230,7 @@ TODO: Create sub-pages of these.
 - [screen](Screen.md)
 - [tar](Tar.md)
 - [sysdig](Sysdig.md)
+- [Xargs](Xargs.md)
 - ...
 
 

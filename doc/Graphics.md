@@ -35,6 +35,11 @@
 
 ---
 
+About people in AR/VR community
+https://next.reality.news/news/nr30-next-realitys-30-people-watch-augmented-reality-for-2019-0204727/
+
+---
+
 GnuPlot
 http://gnuplot.sourceforge.net/demo/
 
