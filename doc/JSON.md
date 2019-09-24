@@ -3,7 +3,6 @@
 
 # JSON
 
-
 [http://www.json.org/](http://www.json.org/)
 
 ---
@@ -62,7 +61,6 @@ http://stackoverflow.com/questions/29203069/format-nullable-seq-or-list-of-objec
     println("boom. done.")
     }
 
-
 ---
 
 JSON validation using Scala-base lib on PLAY.
@@ -73,3 +71,49 @@ json-schema-validator - https://github.com/daveclayton/json-schema-validator
 
 ---
 
+My fork of "JSON for Modern C++ https://nlohmann.github.io/json/":
+https://github.com/panchul/json
+
+```
+#include <iostream>
+#include <iomanip>
+#include <nlohmann/json.hpp>
+
+using json = nlohmann::json;
+
+int main()
+{
+    // create a JSON object
+    json j =
+    {
+        {"pi", 3.141},
+        {"happy", true},
+        {"name", "Niels"},
+        {"nothing", nullptr},
+        {
+            "answer", {
+                {"everything", 42}
+            }
+        },
+        {"list", {1, 0, 2}},
+        {
+            "object", {
+                {"currency", "USD"},
+                {"value", 42.99}
+            }
+        }
+    };
+
+    // add new values
+    j["new"]["key"]["value"] = {"another", "list"};
+
+    // count elements
+    auto s = j.size();
+    j["size"] = s;
+
+    // pretty print with indent of 4 spaces
+    std::cout << std::setw(4) << j << '\n';
+}
+```
+
+---

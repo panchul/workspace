@@ -19,7 +19,7 @@ https://docs.opencv.org/4.1.1/d7/d16/tutorial_linux_eclipse.html
 
 ---
 
-Nice step-by-step install on Ubuntu is here:
+Nice step-by-step install on Ubuntu is here(!!! for CentOs see below):
 https://www.learnopencv.com/install-opencv3-on-ubuntu/
 
 Or at OpenCV's doc:
@@ -112,5 +112,48 @@ Neat face recognition sample code
 
 Liveness Detection with OpenCV
 https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/
+
+---
+
+Installing on CentOS.
+From here: https://www.vultr.com/docs/how-to-install-opencv-on-centos-7
+
+Step 1: Install dependencies for OpenCV
+
+    $ yum groupinstall "Development Tools" -y
+    $ yum install cmake gcc gtk2-devel numpy pkconfig -y
+
+Step 2: Download the OpenCV 3.3.0 archive
+
+    $ cd
+    $ wget https://github.com/opencv/opencv/archive/3.3.0.zip
+    $ unzip 3.3.0.zip
+
+Step 3: Compile and install OpenCV 3.3.0
+
+    $ cd opencv-3.3.0
+    $ mkdir build
+    $ cd build
+    $ cmake -D CMAKE_BUILD_TYPE=DEBUG -D CMAKE_INSTALL_PREFIX=/usr/local ..
+    $ make
+    $ make install
+
+Step 4: Configure required variables
+
+    $ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
+    $ echo '/usr/local/lib/' >> /etc/ld.so.conf.d/opencv.conf
+    $ ldconfig
+
+Step 5 (optional): Run tests
+
+    $ cd
+    $ git clone https://github.com/opencv/opencv_extra.git
+    $ export OPENCV_TEST_DATA_PATH=/root/opencv_extra/testdata
+
+Run these opencv_test_* :
+
+    $ cd /root/opencv-3.3.0/build/bin
+    $ ls
+    $ ./opencv_test_photo
 
 ---

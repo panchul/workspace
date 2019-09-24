@@ -184,13 +184,11 @@ Scalatra, a webserver in Scala
 
 [Scalatra](Scalatra.md)
 
-
 ---
 
 JSON in Scala
 
 See [Json](JSON.md) for sample snippets.
-
 
 ---
 

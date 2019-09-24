@@ -1,7 +1,5 @@
 
-
 ## UNDER CONSTRUCTION
-
 
 # Base64.md
 
@@ -24,5 +22,3 @@ Here's the idiomatic snippet of usage(add ```base64.cpp``` to the project):
     std::cout << "decoded:   " << text_decoded << std::endl << std::endl;
 
 ---
-
-

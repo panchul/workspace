@@ -94,7 +94,8 @@ TODO: Create sub-pages of these.
  - [Zlib](ZLib.md)
  - [CQRS](CQRS.md) Command Query Responsibility Segregation
  - [Qt](Qt.md)
- 
+ - [Syslog](Syslog.md)
+  
  - Nice about microservices:
    https://dwmkerr.com/the-death-of-microservice-madness-in-2018/
 
@@ -134,6 +135,7 @@ TODO: Create sub-pages of these.
 - [XML](XML.md)
 - [YAML](YAML.md)
 -﻿[QR code](Qr_code.md)
+- DJVU converter(web) https://djvu2pdf.com/
 
 
 ### Databases
@@ -151,7 +153,7 @@ TODO: Create sub-pages of these.
 - [Haystack](Haystack.md)
 
 
-### Version control systems and configuration tools 
+### Version control systems, configuration, build tools 
 
 - [aptitude](Aptitude.md)
 - [Autoconf](Autoconf.md)
@@ -174,7 +176,7 @@ TODO: Create sub-pages of these.
 - [Sbt](Sbt.md)  
 - [Subversion](Subversion.md)  
 - [yum](Yum.md)
-
+- [ldconfig](Ldconfig.md)
   
 ### Operating systems
 
@@ -276,7 +278,7 @@ https://infiniteautomation.com/
 https://infiniteautomation.com/energy-dashboards
 http://seandippold.com/2017/09/24/toyota-prius-refrigerant-charging/
 
--Clone time series database
+- Clone time series database
 https://github.com/OpenTSDB/opentsdb
 - Has nice way to handle makefile includes, and dependencies(.jar files, I think)
 - The crc wikipedia link has simple implementations of crc stuff (with or without tables)
@@ -289,13 +291,15 @@ To paraphrase Sir Winston Churchill, "BACnet is undoubtedly the worst protocol o
 Mango is similar to PI Processbook
 https://infiniteautomation.com/mango-overview
 
-add link to Wireshark:
-https://www.wireshark.org/docs/wsug_html/
 
 Compare it to fiddler and others
-- Wireshark captures any kind of a network packet. It can capture packet details below TCP/IP(Http is at the top). It does have filters to reduce the noise it captures.
-- Firebug tracks each request the browser page makes and captures the associated headers and the time taken for each stage of the request (DNS, receiving, sending, ...).
-- Fiddler works as a http/https proxy. It captures each http request the computer makes and records everything associated with it. Does allow things like converting post varibles to a table form and editing/replaying requests. It doesn't, by default, capture localhost traffic in IE, see the FAQ for the workaround. 
+- Wireshark captures any kind of a network packet. It can capture packet details below TCP/IP(Http is at the top).
+  It does have filters to reduce the noise it captures.
+- Firebug tracks each request the browser page makes and captures the associated headers and the time taken for each
+  stage of the request (DNS, receiving, sending, ...).
+- Fiddler works as a http/https proxy. It captures each http request the computer makes and records everything
+  associated with it. Does allow things like converting post varibles to a table form and editing/replaying
+  requests. It doesn't, by default, capture localhost traffic in IE, see the FAQ for the workaround. 
    
 Arduino wireless network sensor(and gateway) vendor (has some libraries, and docs)
 https://www.tartssensors.com/libraries/arduino/
@@ -318,7 +322,6 @@ https://www.tartssensors.com/libraries/arduino/
 - BeyondCompare  https://www.scootersoftware.com/download.php
 - WinMerge  https://sourceforge.net/projects/winmerge/?source=typ_redirect
 
-
 ### Networking
 
 - Cisco
@@ -331,7 +334,9 @@ https://www.tartssensors.com/libraries/arduino/
 - [DNS](DNS.md)
   - BIND
 - [OpenVPN](OpenVPN.md)
-
+- [Wireshark](Wireshark.md)
+- Fiddler
+- Firebug
 
 Aggregated List of C++ networking libraries
 
@@ -428,11 +433,10 @@ Aggregated List of C++ networking libraries
     - TensorFlow,
     - PyTorch.
 - Google Handtracking library: https://github.com/google/mediapipe/blob/master/mediapipe/docs/hand_tracking_mobile_gpu.md
+- [gnuplot](Gnuplot.md)
 
 Neat command-line tricks:
 - https://www.datascienceatthecommandline.com/chapter-7-exploring-data.html#creating-visualizations
-
-- gnuplot, freegnuplot, etc.
 
 - Chat bot comparisons: https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff
 

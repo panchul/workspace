@@ -1,5 +1,4 @@
 
-
 ## UNDER CONSTRUCTION
 
 # Burrow
@@ -9,7 +8,6 @@ https://github.com/linkedin/Burrow
 ---
 
 Wants Dep as a pre-requisite:
-
 https://github.com/golang/dep
 
 ---
@@ -35,4 +33,3 @@ Adding this to the Dockerfile helped:
     ...
 
 ---
-

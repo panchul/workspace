@@ -19,12 +19,21 @@ See Also:
   - [tar](Tar.md)
   - [tcpdump](Tcpdump.md)
   - [nohup](Nohup.md)
+  - [syslog](Syslog.md)
   - [bash](bash.md)
   - [mail](Mail.md)
- 
+  
+  - [Wireshark](Wireshark.md)
+  - [Postman](Postman.md)
+
  - [Semaphore](Semaphore.md) 
  - [Mutex](Mutex.md) 
 
+ 
+ ---
+ 
+ Nice summary of networking utilities:
+ https://www.tecmint.com/linux-networking-commands/
  
 ---
 
@@ -79,7 +88,7 @@ To write to syslog, ```/var/log/syslog```:
         openlog("mytestlog", LOG_PERROR, LOG_USER);
         syslog(LOG_INFO, "something %d", 123);
        	closelog();
-  	} 
+    }
 ```
 
 ---
@@ -530,7 +539,7 @@ See the data stream in.
 
 You can observe the offsets using a command like this:
 
-    $kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list kafka-broker1.vm:9092,kafka-broker2.vm:9092,kafka-broker3.vm:9092 --topic mytopic --time -1
+    $ kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list kafka-broker1.vm:9092,kafka-broker2.vm:9092,kafka-broker3.vm:9092 --topic mytopic --time -1
     mytopic:0:109
 
 where -1 means the latest offset. And then '0' is the first partition, '109' is the latest offset (if we fed 102 messages)
@@ -647,8 +656,7 @@ Will echo 100 times and then stop.
 
 A similar command –  pause between repeats, and it repeats forever. For example,
 
-% repeat 100 0 echo "I will not automate this punishment."
-% repeat -1 5 echo "This will get echoed every 5 seconds forever."
-
+    $ repeat 100 0 echo "I will not automate this punishment."
+    $ repeat -1 5 echo "This will get echoed every 5 seconds forever."
 
 ---

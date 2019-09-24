@@ -2,7 +2,6 @@
 
 # CNC
 
-
 ---
 
 $350 CNC machine, Arduino-based, compact and seem to be functional.
