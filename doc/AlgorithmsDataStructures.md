@@ -1,20 +1,23 @@
 
-
-## UNDER CONSTRUCTION
-
 # Algorithms and Data Structures
 
-See Also:
 - [Graphs](Graphs.md)
 - [Sorting](Sorting.md)
+- [List](List.md)
+- [Vector](Vector.md)
+
 
 My sandbox for data structures is here:
 
 https://github.com/panchul/sb_cpp/tree/master/data_structures
 
+---
+
 Free Programming Books:
 
 https://github.com/panchul/free-programming-books
+
+---
 
 More material for interview preparation:
 
@@ -22,13 +25,8 @@ https://github.com/panchul/interviews
 
 ---
 
-Misc summaries
-
- - 
- - Skip-list https://en.wikipedia.org/wiki/Skip_list
- - [List](List.md)
- - [Vector](Vector.md)
- - 
+Skip-list
+https://en.wikipedia.org/wiki/Skip_list
 
 ---
 
@@ -97,5 +95,22 @@ https://stackoverflow.com/questions/10657503/find-running-median-from-a-stream-o
 
 The P^2 Algorithm for Dynamic Calculation of Quantiles and Histograms Without Storing Observations 
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.74.2672&rep=rep1&type=pdf
+
+---
+
+TODO: write summaries for these
+ 
+- Random forests
+- naïve Bayesian estimators
+- RESTful services
+- gossip protocols
+- eventual consistency
+- data sharding
+- anti-entropy
+- Byzantine quorum
+- erasure coding
+- vector clocks
+- traversals(breadth-first, depth-first)
+- divide and conquer
 
 ---

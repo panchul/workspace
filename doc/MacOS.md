@@ -1,12 +1,9 @@
-
 ## UNDER CONSTRUCTION
 
 # MacOS
 
-
 See also
 - [Homebrew](Homebrew.md)
-
 
 ---
 

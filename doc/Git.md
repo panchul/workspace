@@ -68,9 +68,7 @@ Do the things the hard way abandoning the changes:
 
 ---
 
-### .gitignore notes
-
-to exclude a file from bing ignored, use ```!filename```, for example:
+In `.gitignore`, to exclude a file from bing ignored, use ```!filename```, for example:
 
     ...
     some_local_folder
@@ -97,7 +95,7 @@ When ready, commit the files into the remote feature branch:
 
 At the Github create the pull request.
 When ready, at Github:
- - merge the pull retuest
+ - merge the pull request
  - delete the feature branch
  - delete local feature branch
     
@@ -206,9 +204,6 @@ To let others push into this repository, add to the git repository's config file
 
 This seems to be more useful:
 https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
-
-
-
 
 
 ---

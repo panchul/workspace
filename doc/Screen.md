@@ -1,15 +1,10 @@
-
-
 ## UNDER CONSTRUCTION
 
 # screen
+A terminal utility.
 
 See Also:
  - [Linux](Linux.md)
-
-
-A terminal utility.
-
 
 ---
 

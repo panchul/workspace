@@ -1,6 +1,4 @@
 
-## UNDER CONSTRUCTION
-
 # Find
 
 Standard Unix command.
@@ -14,8 +12,6 @@ Sample usage of ```find``` with ```xargs```:
     $ find . -name "*.txt" | xargs dos2unix
 
 The quotation marks are important - may not work without them.
-
-See also [Linux](Linux.md)
 
 ---
 

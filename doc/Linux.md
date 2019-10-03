@@ -22,6 +22,7 @@ See Also:
   - [syslog](Syslog.md)
   - [bash](bash.md)
   - [mail](Mail.md)
+  - [Firewall](Firewall.md)
   
   - [Wireshark](Wireshark.md)
   - [Postman](Postman.md)
@@ -29,7 +30,29 @@ See Also:
  - [Semaphore](Semaphore.md) 
  - [Mutex](Mutex.md) 
 
- 
+---
+
+Installing misc tools
+https://www.cyberciti.biz/faq/how-to-install-whois-on-rhel-8-centos-8/
+
+On CentOS 8:
+
+    $ sudo yum install epel-release
+    $ sudo yum config-manager --set-enabled PowerTools
+    $ sudo yum repolist
+    $ sudo yum search whois
+    $ sudo yum info whois
+    $ sudo yum install whois
+
+On RHEL:
+     
+    $ sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+    $ sudo subscription-manager repos --enable "codeready-builder-for-rhel-8-*-rpms"
+    $ sudo yum repolist
+    $ sudo yum search whois
+    $ sudo yum info whois
+    $ sudo yum install whois
+
  ---
  
  Nice summary of networking utilities:
@@ -658,5 +681,38 @@ A similar command –  pause between repeats, and it repeats forever. For exampl
 
     $ repeat 100 0 echo "I will not automate this punishment."
     $ repeat -1 5 echo "This will get echoed every 5 seconds forever."
+
+---
+
+Install .rpm File on Linux(CentOS, Fedora, etc.):
+
+    $ sudo rpm –i sample_file.rpm
+
+Alternately, you can use the yum package manager to install .rpm files(`localinstall`
+makes `yum` lood into the current working directory for the install file.
+
+    $ sudo yum localinstall sample_file.rpm
+    
+---
+
+`hostnamectl` gives some interesting info:
+
+    alexp@mybox33:~$ hostnamectl
+     Static hostname: mybox33
+           Icon name: computer-vm
+             Chassis: vm
+          Machine ID: 234657abc25df23451346234623467257
+             Boot ID: cab236257324572457fe1234235252523
+      Virtualization: oracle
+    Operating System: Ubuntu 18.04.3 LTS
+              Kernel: Linux 4.15.0-64-generic
+        Architecture: x86-64
+
+---
+
+How to setup `firewalld` on CentOS 8 
+https://www.cyberciti.biz/faq/how-to-set-up-a-firewall-using-firewalld-on-centos-8/
+
+See [Firewall](Firewall.md)
 
 ---

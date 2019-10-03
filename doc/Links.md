@@ -1,6 +1,4 @@
 
-## Under Construction
-
 ## Technology
 
 TODO: Create sub-pages of these.
@@ -140,17 +138,7 @@ TODO: Create sub-pages of these.
 
 ### Databases
 
-- [Cassandra](Cassandra.md)
-- [Couchbase](Couchbase.md)
-- [CouchDB](CouchDB.md)
-- [Hadoop](Hadoop.md)
-- [MongoDB](MongoDB.md)
-- [MySQL](MySQL.md)
-- [PostgreSQL](PostgreSQL.md)
-- [Redis](Redis.md)
-- Riak
-- A blog with comparison: http://highscalability.com/blog/2015/12/30/how-to-choose-an-in-memory-nosql-solution-performance-measur.html
-- [Haystack](Haystack.md)
+[Databases](Databases.md)
 
 
 ### Version control systems, configuration, build tools 
@@ -233,7 +221,7 @@ TODO: Create sub-pages of these.
 - [tar](Tar.md)
 - [sysdig](Sysdig.md)
 - [Xargs](Xargs.md)
-- ...
+- fc-list - list all available fonts
 
 
 ### Quantum Computing, etc.
@@ -271,25 +259,28 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
   https://github.com/bzshang/piwebapi-python-examples
   https://pisquare.osisoft.com/community/developers-club/blog/2015/06/04/using-pi-web-api-with-python
 
+- SystemC
+- TLM2
+
 - Interesting Open-source alternatives to OSIsoft’s PI Processbook, etc.
-http://www.nimbits.com/index.jsp
-http://opentsdb.net/
-https://infiniteautomation.com/
-https://infiniteautomation.com/energy-dashboards
-http://seandippold.com/2017/09/24/toyota-prius-refrigerant-charging/
+  http://www.nimbits.com/index.jsp
+  http://opentsdb.net/
+  https://infiniteautomation.com/
+  https://infiniteautomation.com/energy-dashboards
+  http://seandippold.com/2017/09/24/toyota-prius-refrigerant-charging/
 
 - Clone time series database
-https://github.com/OpenTSDB/opentsdb
+  https://github.com/OpenTSDB/opentsdb
 - Has nice way to handle makefile includes, and dependencies(.jar files, I think)
 - The crc wikipedia link has simple implementations of crc stuff (with or without tables)
-https://en.wikipedia.org/wiki/Cyclic_redundancy_check
+  https://en.wikipedia.org/wiki/Cyclic_redundancy_check
 
 Protocols for IoT, etc:
-Modbus
-BACnet (http://www.bacnet.org/)
+- Modbus
+- BACnet (http://www.bacnet.org/)
 To paraphrase Sir Winston Churchill, "BACnet is undoubtedly the worst protocol on the face of the earth - except for all the others!"
-Mango is similar to PI Processbook
-https://infiniteautomation.com/mango-overview
+- Mango is similar to PI Processbook
+  https://infiniteautomation.com/mango-overview
 
 
 Compare it to fiddler and others
@@ -337,6 +328,7 @@ https://www.tartssensors.com/libraries/arduino/
 - [Wireshark](Wireshark.md)
 - Fiddler
 - Firebug
+- [Firewall](Firewall.md)
 
 Aggregated List of C++ networking libraries
 
@@ -497,13 +489,13 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
 - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
 - [Graphs](Graphs.md)
 - [Sorting](Sorting.md)
-
-Nice collection for the topic of Distributed Systems and Parallel Computing
-https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
-
-Scalable web architecture
-http://www.aosabook.org/en/distsys.html
-
+- Nice collection for the topic of Distributed Systems and Parallel Computing
+  https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
+- Scalable web architecture http://www.aosabook.org/en/distsys.html
+- service oriented architectures
+- map-reduce
+- distributed caching
+- load balancing
 
 ### GUI Frameworks
 
@@ -515,24 +507,6 @@ http://www.aosabook.org/en/distsys.html
 ### Computer Graphics, Computer Vision, Visualization, Image Processing, etc
 
 - [Graphics](Graphics.md) all sort of miscellaneous snippets.
-
-- [CUDA](CUDA.md)
-- [DirectX](DirectX.md)
-- [GoogleGlass](GoogleGlass.md)
-- OpenALPR - Automatic License Plate Recognition https://www.openalpr.com/
-- [OpenCL](OpenCL.md)
-- [OpenCV](OpenCV.md)
-- [OpenGL](OpenGL.md)
-- [OpenVX](OpenVX.md)
-- [SVG](SVG.md)
-- Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
-- [PNG](Png.md)
-- video recording for terminal ```asciinema.org``` ```gohugo.io``` web content
-- [Unity](Unity.md)
-- [Unreal Engine](UnreadlEngine.md)
-- [MagicLeap](MagicLeap.md)
-- [Fractals](Fractals.md)
-
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
 
@@ -556,13 +530,15 @@ http://www.aosabook.org/en/distsys.html
 - [Univied Modeling Language(UML)](UML.md)
 - Golden Triangle Cost/Quality/TimeToMarket
   https://blog.feabhas.com/2018/08/technical-debt/
-  
- - Holacracy and Open Book Management
+- Holacracy and Open Book Management
  https://www.holacracy.org/
- - Open Book Management - we share the exact details of our Balance Sheet and P&L Statement with our entire team in
+- Open Book Management - we share the exact details of our Balance Sheet and P&L Statement with our entire team in
   real-time, ensuring that our staff has the data they need to treat the business as if it were their own.
-
 - Why Programmers should be managers: https://habr.com/sandbox/125674/
+- SWOT stands for Strengths, Weaknesses, Opportunities, and Threats.
+  Strengths and weaknesses are internal to your company—things that
+  you have some control over and can change. (e.g. who is on your team,
+  your patents and intellectual property, your location, etc.)
 
 
 ## Cryptography, Network Security, etc.
@@ -648,7 +624,6 @@ http://www.aosabook.org/en/distsys.html
   
 ## Career etc.
 
-
 - [Career](Career.md)
 - [Startup](Startup.md)
 - Kaggle, misc. projects. https://www.kaggle.com/
@@ -657,6 +632,7 @@ http://www.aosabook.org/en/distsys.html
 - toptal.com
 - https://www.hackerrank.com/
 - https://app.codility.com/programmers/
+- leetcode.com
 - Teach yourself programming in ten years: http://norvig.com/21-days.html
 
 
@@ -715,6 +691,5 @@ http://www.aosabook.org/en/distsys.html
 - [misc historic links](Misc_historic.html)
 - Dog registration in Seattle area
  https://kingcounty.gov/depts/regional-animal-services/license-your-pet/purchase-renew-license.aspx
-
 
 - The price of being single. http://ideas.ted.com/the-price-of-being-single/

@@ -1,25 +1,28 @@
 
-## UNDER CONSTRUCTION
-
 # Graphics
 
 - [Blender](Blender.md)
 - [CUDA](CUDA.md)
 - [DirectX](DirectX.md)
+- [Fractals](Fractals.md)
 - [gnuplot](Gnuplot.md)
 - [GoogleGlass](GoogleGlass.md)
 - [MagicLeap](MagicLeap.md)
+- OpenALPR - Automatic License Plate Recognition https://www.openalpr.com/
 - [OpenCL](OpenCL.md)
 - [OpenCV](OpenCV.md)
 - [OpenGL](OpenGL.md)
 - [OpenVX](OpenVX.md)
 - [SVG](SVG.md)
+- Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
 - [PNG](Png.md)
 - [Qt](Qt.md)
+- video recording for terminal ```asciinema.org``` ```gohugo.io``` web content
 - [Unity](Unity.md)
 - [Unreal Engine](UnreadlEngine.md)
-- [GnuPlot](Gnuplot.md)
 
+
+---
 
 - Nice summary about colors https://agraphicsguy.wordpress.com/2018/11/29/basic-color-science-for-graphics-engineers/
 - Another motion capture program, similar to what I wanted to do: https://www.swri.org/biomechanics-human-performance-sensing-perception/human-performance-solutions

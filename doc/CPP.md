@@ -10,6 +10,15 @@ See Also:
 
 My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp).
 
+---
+
+CppCon 2019: “The One-Decade Task: Putting std::atomic in CUDA.”
+https://www.youtube.com/watch?v=VogqOscJYvk
+
+---
+
+An interview with Bjarne Stroustrup 2019
+https://news.codecademy.com/bjarne-stroustrup-interview/
 
 ---
 

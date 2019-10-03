@@ -9,6 +9,9 @@
 
 For JSON pretty-printing, `jsonpp` works fine, can fetch with `brew`.
 
+    $ brew install jsonpp
+    $ curl -s 'http://twitter.com/users/coderwall.json' | jsonpp
+
 Another utility:
 
     $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool

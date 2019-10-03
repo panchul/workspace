@@ -1,12 +1,16 @@
-
-## UNDER CONSTRUCTION
-
 # cron
 
 See Also:
 
   - [bash](bash.md)
   - [Linux](Linux.md)
+
+---
+
+TODO: do the summary of the link.
+
+Neat refresher on creating cron jobs:
+https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
 ---
 

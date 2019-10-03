@@ -1,8 +1,14 @@
 
-
 ## UNDER CONSTRUCTION
 
 # Psychology
+
+---
+
+The Dr. Fox effect is a correlation observed between teacher expressiveness, content coverage, student evaluation
+and student achievement. This effect also allows insight to other related effects and relationships between student
+achievement and evaluations of the teacher. 
+https://en.wikipedia.org/wiki/Dr._Fox_effect
 
 ---
 
