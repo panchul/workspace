@@ -8,6 +8,13 @@ http://www.ssh.com/
 
 ---
 
+Setting up sshd and using ufw
+https://www.cyberciti.biz/faq/ufw-allow-incoming-ssh-connections-from-a-specific-ip-address-subnet-on-ubuntu-debian
+
+TODO: do the summary
+
+---
+
 Quick and dirty way to fix 'ssh permission denied(publicey)':
 
 1. update in ```/etc/ssh/sshd_config```:

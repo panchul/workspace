@@ -1,12 +1,10 @@
 
-## Under Construction
-
 # C++
 
 See Also:
  - [Multithreading](Multithreading.md) 
  - [STL](STL.md) 
-
+ - [AlgorithmsDataStructures](AlgorithmsDataStructures.md) 
 
 My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp).
 
@@ -466,5 +464,28 @@ Above definitions result in:
     test.c:13:9: note: #pragma message: DEFINED_STR="ABC"
 
 There is also BOOST_PP_STRINGIZE, etc.
+
+---
+
+Refresher on basic i/o (good for programming contests)
+
+    int a, b; string x;
+    cin >> a >> b >> x;
+    
+    int a = 123, b = 456; string x = "monkey";
+    cout << a << " " << b << " " << x << "\n";
+    
+    ios::sync_with_stdio(0); //
+    cin.tie(0);              // This will make faster i/o
+    
+    string s;
+    getline(cin, s); // Whole line
+    
+    while (cin >> x) { // Until there is data
+        // code
+    }
+    
+    freopen("input.txt", "r", stdin);   //
+    freopen("output.txt", "w", stdout); // redirect of std i/o
 
 ---

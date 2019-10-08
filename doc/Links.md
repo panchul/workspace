@@ -170,6 +170,7 @@ TODO: Create sub-pages of these.
 
 - [Android](Android.md)  
 - [Linux](Linux.md)  
+  -- [Kernel](Kernel.md)
   -- [Alpine](Alpine.md)
   -- [CentOS](CentOS.md)
   -- [Debian](Debian.md)
@@ -693,3 +694,11 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
  https://kingcounty.gov/depts/regional-animal-services/license-your-pet/purchase-renew-license.aspx
 
 - The price of being single. http://ideas.ted.com/the-price-of-being-single/
+
+Misc resources on competitive programming and algorithmic problem solving:
+- S. S. Skiena and M. A. Revilla: Programming Challenges: The Programming Contest Training Manual
+- S. Halim and F. Halim: Competitive Programming 3: The New Lower Bound of Programming Contests
+- K. Diks et al.: Looking for a Challenge? The Ultimate Problem Set from the University of Warsaw Programming Competitions
+- T. H. Cormen, C. E. Leiserson, R. L. Rivest and C. Stein: Introduction to Algorithms
+- J. Kleinberg and É. Tardos: Algorithm Design
+- S. S. Skiena: The Algorithm Design Manual

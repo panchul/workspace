@@ -1,9 +1,4 @@
-
-
-## UNDER CONSTRUCTION
-
 #Linux
-
 
 See Also:
 
@@ -12,6 +7,8 @@ See Also:
   - [Debian](Debian.md)
   - [RedHat](RedHat.md)
   - [Ubuntu](Ubuntu.md)
+
+  - [Kernel](Kernel.md)
      
   - [cron](Cron.md)
   - [Curl](Curl.md)
@@ -29,6 +26,13 @@ See Also:
 
  - [Semaphore](Semaphore.md) 
  - [Mutex](Mutex.md) 
+
+
+---
+
+Neat review of basic commands
+https://www.tecmint.com/linux-commands-cheat-sheet/
+TODO: do the summary
 
 ---
 
@@ -714,5 +718,10 @@ How to setup `firewalld` on CentOS 8
 https://www.cyberciti.biz/faq/how-to-set-up-a-firewall-using-firewalld-on-centos-8/
 
 See [Firewall](Firewall.md)
+
+---
+
+About Linux services
+https://www.cyberciti.biz/tips/check-unix-linux-configuration-file-for-syntax-errors.html
 
 ---

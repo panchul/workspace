@@ -11,7 +11,6 @@
     individually, either using a different sorting algorithm, or by recursively
     applying the bucket sorting algorithm."
  
- 
  - Insertion Sort https://en.wikipedia.org/wiki/Insertion_sort
  
  - Merge Sort https://en.wikipedia.org/wiki/Merge_sort
@@ -30,12 +29,10 @@
  - Breadth-first Search https://en.wikipedia.org/wiki/Breadth-first_search
  - Depth-first Search https://en.wikipedia.org/wiki/Depth-first_search
  
- 
 ## Graph sorting
 
 - https://en.wikipedia.org/wiki/Topological_sorting
 -
-
 
 ## Classification
 
@@ -43,5 +40,3 @@
 
 A sorting algorithm is said to be stable if two objects with equal keys appear in the same order in sorted output
 as they appear in the input unsorted array.
-
-

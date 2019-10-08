@@ -211,11 +211,19 @@ More inline elements
 --------------------
   footnote:[footnote text]    (document footnote)
 
-
 ```
 
 ---
 
+About resizing images:
+https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/image-sizing.adoc
 
+    image::filename.jpg[alt,640,480]
+    
+that is, in long form:
+
+    image::filename.jpg[alt=Flower,width=640,height=480]    
+
+---
 
 

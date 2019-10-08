@@ -73,7 +73,13 @@ https://medium.com/@kingrayhan/500-data-structures-and-algorithms-practice-probl
 
 ---
 
-https://www.youtube.com/watch?v=B7hVxCmfPtM Heap presentation
+MIT lecture about Heap and Heap Sort
+https://www.youtube.com/watch?v=B7hVxCmfPtM
+
+---
+
+MIT Knapsack lecture 
+https://www.youtube.com/watch?v=ocZMDMZwhCY&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=21
 
 ---
 
