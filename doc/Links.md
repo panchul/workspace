@@ -405,6 +405,8 @@ Aggregated List of C++ networking libraries
 - Chat bots
 - MXNet
 - Neon
+- [Neural Network](NeuralNetwork.md)
+  - [GAN](GAN.md), (Generative Adversarial networks)
 - Nirvana Cloud
 - Speech generation
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
@@ -489,6 +491,7 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
 
 - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
 - [Graphs](Graphs.md)
+- [Map](Map.md)
 - [Sorting](Sorting.md)
 - Nice collection for the topic of Distributed Systems and Parallel Computing
   https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing

@@ -1,5 +1,4 @@
 
-
 ## UNDER CONSTRUCTION
 
 # OpenCV
@@ -10,7 +9,6 @@ See also:
 - [CUDA](CUDA.md)
 
 https://opencv.org/
-
 
 ---
 
@@ -155,5 +153,18 @@ Run these opencv_test_* :
     $ cd /root/opencv-3.3.0/build/bin
     $ ls
     $ ./opencv_test_photo
+
+---
+
+Writing a Mat into a file:
+https://answers.opencv.org/question/134419/from-cvmat-to-saving-image-in-a-given-formatpngjpeg/
+
+This seem to work on a caputred frame:
+
+    ...
+    cap.read(frame);
+    imwrite("next_frame.png", frame); // can use other formats.
+    imshow("Live", frame);
+    ...
 
 ---

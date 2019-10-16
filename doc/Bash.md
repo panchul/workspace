@@ -1,6 +1,4 @@
 
-## UNDER CONSTRUCTION
-
 # Bash
 
 See Also:
@@ -15,6 +13,12 @@ See Also:
   - [mail](Mail.md)
 
 My shell sandbox is [https://github.com/panchul/sb_shell](https://github.com/panchul/sb_shell).
+
+---
+
+To change shell, to, for example, `zsh`:
+
+    $ chsh -s /bin/zsh
 
 ---
 
@@ -105,8 +109,7 @@ B.t.w. if you want to have parameters in that body, use EOF without quotes:
 
 ---
 
-## Unit testing of bash scripts
-
+Unit testing of bash scripts
 I forked shunit2: https://github.com/panchul/shunit2
 
 There is another similar framework at https://github.com/djui/bashunit
@@ -699,5 +702,11 @@ How to count lines of .cpp and .h files in the current directory and its subdire
     $ find . -type f \( -name "*.h" -or -name "*.cpp" \) -exec wc -l {} \; | awk '{total += $1} END{print total}'
 
 A longer discussion on that: https://unix.stackexchange.com/questions/260630/how-do-you-list-number-of-lines-of-every-file-in-a-directory-in-human-readable-f 
+
+---
+
+Interesting usage of `!!` in bash:
+https://www.tecmint.com/mysterious-uses-of-symbol-or-operator-in-linux-commands/
+TODO: make summary
 
 ---

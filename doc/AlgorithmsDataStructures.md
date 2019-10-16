@@ -1,26 +1,37 @@
 
 # Algorithms and Data Structures
 
-- [Graphs](Graphs.md)
-- [Sorting](Sorting.md)
-- [List](List.md)
-- [Vector](Vector.md)
-
-
 My sandbox for data structures is here:
-
 https://github.com/panchul/sb_cpp/tree/master/data_structures
+
+STL and related
+
+- [List](List.md)
+- [Map](Map.md)
+- [Sorting](Sorting.md)
+- [Vector](Vector.md)
+- [Graphs](Graphs.md)
+- Random forests
+- naïve Bayesian estimators
+- RESTful services
+- gossip protocols
+- eventual consistency
+- data sharding
+- anti-entropy
+- Byzantine quorum
+- erasure coding
+- vector clocks
+- traversals(breadth-first, depth-first)
+- divide and conquer
 
 ---
 
 Free Programming Books:
-
 https://github.com/panchul/free-programming-books
 
 ---
 
 More material for interview preparation:
-
 https://github.com/panchul/interviews
 
 ---
@@ -104,19 +115,15 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.74.2672&rep=rep1&type=p
 
 ---
 
-TODO: write summaries for these
- 
-- Random forests
-- naïve Bayesian estimators
-- RESTful services
-- gossip protocols
-- eventual consistency
-- data sharding
-- anti-entropy
-- Byzantine quorum
-- erasure coding
-- vector clocks
-- traversals(breadth-first, depth-first)
-- divide and conquer
+Horner's rule - the rule to compute polinomials without having to get powers of x.
+Sum(a[i]*x^i) for i from 0 to n:
+
+    int Horner(int a[], unsigned int n, int x) {
+        int result = a[n];
+        for(int i=n-1; i>=0; --i)
+            result = result * n + a [i];
+    
+        return result;
+    }
 
 ---

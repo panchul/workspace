@@ -5,12 +5,13 @@ See Also:
   - [Alpine](Alpine.md)
   - [CentOS](CentOS.md)
   - [Debian](Debian.md)
+  - [Fedora](Fedora.md)
   - [RedHat](RedHat.md)
   - [Ubuntu](Ubuntu.md)
 
   - [Kernel](Kernel.md)
      
-  - [cron](Cron.md)
+  - [Cron](Cron.md)
   - [Curl](Curl.md)
   - [Ipvsadm](Ipvsadm.md)
   - [tar](Tar.md)

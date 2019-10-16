@@ -159,3 +159,59 @@ Option -f brings ssh into background, and the remote command 'sleep 10' allows t
 which is to be tunnelled.
 
 ---
+
+Neat Ubuntu install OpenSSH server, from https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
+
+Login to remote server using bmc/ipmi/kvm over IP (optional)
+
+    $ ssh root@power9-bmc
+    $ sudo apt update
+    $ sudo apt upgrade
+    $ sudo apt install openssh-server
+
+Verify that ssh service running
+
+    $ sudo systemctl status ssh
+
+If not running enable the ssh server and start it:
+
+    $ sudo systemctl enable ssh
+    $ sudo systemctl start ssh
+
+    Synchronizing state of ssh.service with SysV service script with /lib/systemd/systemd-sysv-install.
+    Executing: /lib/systemd/systemd-sysv-install enable ssh
+    Created symlink /etc/systemd/system/sshd.service > /lib/systemd/system/ssh.service.
+
+Here is how open or allow port 22 when using ufw on Ubuntu:
+
+    $ sudo ufw allow ssh
+    $ sudo ufw enable
+    $ sudo ufw status
+
+Test ssh:
+
+    $ ssh vivek@server-ip
+    $ ssh vivek@power9
+
+How to Enable and test SSH in Ubuntu Linux server
+You can install copy and install the public key using ssh-copy-id command for password less login:
+
+    $ ssh-copy-id vivek@power9
+
+One can create shortcuts for ssh login / client options. For example create a file named ~/.ssh/config as follows:
+
+    $ nano ~/.ssh/config
+
+Append the following to login into my EC2 Ubuntu server at AWS cloud:
+
+    Host web01
+        HostName aws-ec2-www-server1.cyberciti.biz
+        Port 22
+        IdentityFile  ~/.ssh/AWS_EC2_Virginia_US_East_Ubuntu_Boxes.pem
+        User ubuntu
+
+To log in simply type:
+
+    $ ssh web01
+    
+---

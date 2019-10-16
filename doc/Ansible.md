@@ -9,8 +9,22 @@ See Also:
 
 ---
 
-Neat summary of Ansible for Ubuntu 18.04lts
+Installing and testing Ansible on CentOS RHEL 8
+Neat step-by-step
+https://www.tecmint.com/install-ansible-on-centos-rhel-8/
 
+Part 2(or similar):
+https://www.tecmint.com/install-and-configure-an-ansible-control-node/
+
+TODO: do the summary
+
+
+
+
+ 
+---
+
+Neat summary of Ansible for Ubuntu 18.04lts
 https://www.cyberciti.biz/faq/how-to-install-ansible-on-ubuntu-18-04-for-it-automation/
 
 ---
