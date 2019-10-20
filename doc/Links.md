@@ -210,6 +210,7 @@ TODO: Create sub-pages of these.
 
 - [cron](Cron.md)
 - [Curl](Curl.md)
+- [Etcher](Etcher.md) , USB-writing util
 - [Find](Find.md)
 - [gpg.md](Gpg.md)
 - [hostname](Hostname.md)
@@ -218,7 +219,7 @@ TODO: Create sub-pages of these.
 - [N2W](N2W.md)
 - [netcat(nc)](Netcat.md)
 - [Postman](Postman.md)
-- [screen](Screen.md)
+- [screen](Screen.md) , session-persistence util
 - [tar](Tar.md)
 - [sysdig](Sysdig.md)
 - [Xargs](Xargs.md)
@@ -259,7 +260,7 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - Embedded stuff, connections to OSIsoft’s PI servers with Python.
   https://github.com/bzshang/piwebapi-python-examples
   https://pisquare.osisoft.com/community/developers-club/blog/2015/06/04/using-pi-web-api-with-python
-
+- SCADA (Supervisory Control and Data Acquisition) 
 - SystemC
 - TLM2
 
@@ -279,10 +280,9 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 Protocols for IoT, etc:
 - Modbus
 - BACnet (http://www.bacnet.org/)
-To paraphrase Sir Winston Churchill, "BACnet is undoubtedly the worst protocol on the face of the earth - except for all the others!"
+  To paraphrase Sir Winston Churchill, "BACnet is undoubtedly the worst protocol on the face of the earth - except for all the others!"
 - Mango is similar to PI Processbook
   https://infiniteautomation.com/mango-overview
-
 
 Compare it to fiddler and others
 - Wireshark captures any kind of a network packet. It can capture packet details below TCP/IP(Http is at the top).

@@ -1,6 +1,10 @@
 
 # Fedora
 
+---
+
+Archieves, like Fedora 25 for legacy CUDA drivers:
+https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/
 
 ---
 
@@ -13,4 +17,12 @@ use `passed` from under the regular login(that is a sudoer):
 
 Cuda seems to have the repositories for Fedora 29 latest.
 
+---
+
+Networing CLI interface
+https://fedoraproject.org/wiki/Networking/CLI
+e.g.
+
+    $ nmcli general status
+    
 ---

@@ -8,6 +8,7 @@
 - [gnuplot](Gnuplot.md)
 - [GoogleGlass](GoogleGlass.md)
 - [MagicLeap](MagicLeap.md)
+- [PCL](PCL.md), Point Cloud Library
 - OpenALPR - Automatic License Plate Recognition https://www.openalpr.com/
 - [OpenCL](OpenCL.md)
 - [OpenCV](OpenCV.md)

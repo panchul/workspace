@@ -710,3 +710,14 @@ https://www.tecmint.com/mysterious-uses-of-symbol-or-operator-in-linux-commands/
 TODO: make summary
 
 ---
+
+You can edit remote files via scp:
+
+    $ vim scp://box-1//path/to/file
+    $ vim scp://vivek@server1//etc/nginx/nginx.conf
+     
+Also, you can open the file from within Vim in a new buffer:
+ 
+    :e scp://vivek@centos7//etc/resolv.conf
+                                                             
+---

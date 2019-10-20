@@ -26,3 +26,19 @@ https://access.redhat.com/solutions/10154
     $ yumdownloader <package>
     
 ---
+
+Repositories are in `/etc/yum.repos.d/` directory.
+
+To disable, you can change `enabled=1` to `enabled=0`
+
+See if the package was installed using `rpm`:
+
+    $ rpm -qa | grep -i mypackage
+    
+If there are no packages like that, it is ok to rust remove the files(with `rm`).    
+
+Otherwise:
+
+    $ rpm -e mypackage
+    
+---

@@ -1,5 +1,4 @@
 
-## UNDER CONSTRUCTION
 
 # CUDA
 
@@ -8,6 +7,22 @@ See also:
 - [OpenGL](OpenGL.md)
 - [OpenCV](OpenCV.md)
 - [DirectX](DirectX.md)
+
+---
+
+CUDA compatibility matrix, etc.  
+https://docs.nvidia.com/deploy/cuda-compatibility/index.html
+
+For the Compute Capability, see here:  
+https://developer.nvidia.com/cuda-gpus
+
+github.com/fireice-uk/xmr-stak-nvidia/issue/159  
+arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/
+
+cuda 10.1 >= 418.36  
+cuda 9.1 >= 390.46
+
+Actually, I think 390 is for cuda 8.0, e.g. Fedora 23
 
 ---
 
@@ -21,11 +36,20 @@ https://github.com/panchul/sb_cpp/tree/master/cuda
 
 ---
 
-Installing on Fedora 29
+Installing on Fedora 29 (presuming will work the same on 30)
 https://linuxconfig.org/how-to-install-nvidia-cuda-toolkit-on-fedora-29-linux
 
     $ wget https://developer.download.nvidia.com/compute/cuda/repos/fedora27/x86_64/cuda-repo-fedora27-10.0.130-1.x86_64.rpm
+
+Or, for CentOS 7
+
+    $ wget https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-10.0.130-1.x86_64.rpm
+    
+    
     $ sudo rpm -i cuda-repo-*.rpm
+
+    $ sudo dnf update
+    
     $ dnf install cuda
 
 Add these to ~/.bashrc    
@@ -69,14 +93,17 @@ which might need to have the kernel source location specified:
 Example of the drivers from NVIDIA
 https://www.geforce.com/drivers/results/151568
 
-NVIDIA-Linux-x86_64-430.50.run is the latest right now for 20 series.
-NVIDIA-Linux-x86_64-390.129.run is the latest for 500 series
+- `NVIDIA-Linux-x86_64-430.50.run` is the latest right now for 20 series.
+- `NVIDIA-Linux-x86_64-390.129.run` is the latest for 500 series
 
-Installing on CentOS7:
+## Installing on CentOS7:
+
 https://www.cyberciti.biz/faq/how-to-install-nvidia-driver-on-centos-7-linux/
 
 
-Installing on Fedora 29:
+
+
+## Installing on Fedora 29:
 https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-fedora-29-linux
 another one, probably NICER:
 https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/
@@ -86,12 +113,21 @@ https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/
     $ dnf update
     $ reboot
 
+To see the existing pci cards:
+
+    $ lspci | grep -i --color 'vga\|3d\|2d'
+
+To see the current drivers, one can use:
+
+    $ sudo lshw -class display
+
+
     $ dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig
 
 Create or edit /etc/modprobe.d/blacklist.conf
 Append ‘blacklist nouveau’
 
-    $ echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
+    $ echo "blacklist nouveau" >> /etcte/modprobe.d/blacklist.conf
 
 Edit /etc/sysconfig/grub
 
@@ -179,6 +215,10 @@ Switching to text mode:
 
     $ sudo  systemctl isolate multi-user.target
 
+For Fedora 25 this is what I needed to do:
+
+    $ sudo yum remove xorg-x11-drv-nvidia\* kmod-nvidia\*
+    
 Install the drivers. When prompted answer YES to installation of NVIDIA's
 32-bit compatibility libraries, overwrite existing libglvnd files and
 automatic update of your X configuration file: 

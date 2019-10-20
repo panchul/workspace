@@ -138,4 +138,15 @@ And you can use it from the command-line:
       vi +":w ++ff=unix" +":q" ${file}
     done
 
---
+---
+
+You can edit remote files via scp:
+
+    $ vim scp://myserver//path/to/file
+    $ vim scp://myusername@myerver//etc/apache/apache.conf
+     
+Also, you can open the file from within Vim in a new buffer:
+ 
+    :e scp://myusername@myerver//etc/apache/apache.conf
+                                                             
+---
