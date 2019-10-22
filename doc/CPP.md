@@ -52,6 +52,46 @@ https://en.cppreference.com/w/cpp/memory/shared_ptr
 
 ---
 
+Nice summary of lambdas.
+
+https://dev.to/visheshpatel/all-about-lambda-function-in-c-j4e
+
+C++ Lambda expressions.
+
+    [&i] ( ) { std::cout << i; }
+     
+is equivalent to
+     
+    struct anonymous
+    {
+        int &m_i;
+        anonymous(int &i) : m_i(i) {}
+        inline auto operator()() const
+        {
+            std::cout << i;
+        }
+    };
+
+---
+
+Higher order lambda, returning a lambda: 
+
+    const auto less_than = [](auto x) {
+        return [x](auto y) {
+            return y < x;
+        };
+    };
+     
+    int main(void)
+    {
+       auto less_than_five = less_than(5);
+       std::cout << less_than_five(3) << std::endl;
+       std::cout << less_than_five(10) << std::endl;
+       return 0;
+    }
+
+---
+
 Nice C++ series, about smart pointers
 https://www.youtube.com/watch?v=UOB7-B2MfwA
 
@@ -487,5 +527,27 @@ Refresher on basic i/o (good for programming contests)
     
     freopen("input.txt", "r", stdin);   //
     freopen("output.txt", "w", stdout); // redirect of std i/o
+
+---
+
+A way to input an array of numbers.
+We expect <number>\n<number> <number> ... <number>
+ 
+    int n;
+    cin >> n;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    string c_temp_temp;
+    getline(cin, c_temp_temp);
+
+    vector<string> c_temp = split_string(c_temp_temp);
+    vector<int> c(n);
+
+    for (int i = 0; i < n; i++) {
+        int c_item = stoi(c_temp[i]);
+        c[i] = c_item;
+    }
+    int result = MyFuncThatExpectsVectorINT(c);
+    ...
 
 ---

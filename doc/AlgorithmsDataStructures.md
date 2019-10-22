@@ -11,9 +11,15 @@ STL and related
 - [Sorting](Sorting.md)
 - [Vector](Vector.md)
 - [Graphs](Graphs.md)
+- splay tree
+- cartesian tree
+- b-tree
+- red-black tree
+- avl tree
+- kd tree
+- skip list
 - Random forests
 - naïve Bayesian estimators
-- RESTful services
 - gossip protocols
 - eventual consistency
 - data sharding

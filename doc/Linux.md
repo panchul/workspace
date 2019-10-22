@@ -28,6 +28,32 @@ See Also:
  - [Semaphore](Semaphore.md) 
  - [Mutex](Mutex.md) 
 
+---
+
+Seem to work on different distributions (Ubuntu, Fedora, etc.)
+To boot without X one time, add `systemd.unit=multi-user.target` to the linux command line in GRUB.
+To make this the default, use
+    
+    $ sudo systemctl set-default multi-user.target
+ 
+To return to default booting into X, use
+
+    $ sudo systemctl set-default graphical.target
+     
+To see the current default target,
+
+    $ sudo systemctl get-default
+
+For those who don't know how to edit GRUB command: press `Shift` during boot,
+ and press `e` to edit selected boot command.
+ 
+    $ sudo vi /etc/default/grub
+
+Comment out `GRUB_CMD_LINE_LINUX_DEFAULT` line by adding prefix `#`,
+modify `GRUB_CMD_LINE_LINUX` to `"text"`, and uncomment `GRUB_TERMINAL=console`.
+Then save and 
+
+    $ sudo update-grub
 
 ---
 

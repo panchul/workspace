@@ -192,6 +192,7 @@ TODO: Create sub-pages of these.
 - [JQuery](JQuery.md)
 - [nginx](Nginx.md)
 - [PlayFramework](PlayFramework.md)
+- [RESTful services](REST.md)
 - [Scalatra](Scalatra.md)
 - [WordPress](WordPress.md)
 - [Yaws](Yaws.md)

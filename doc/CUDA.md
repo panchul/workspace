@@ -281,3 +281,28 @@ This might work for some of the drivers:
     $ sudo apt-get install nvidia-367
 
 ---
+
+Cut/paste from some thread on internet about Ubuntu and CUDA:
+
+Is the problem that you can not see what is going on on the desktop while installing? If so you could try with a text based network installer https://www.ubuntu.com/download/alternative-downloads
+then install ubuntu-desktop with
+
+    $ sudo tasksel
+ 
+and for the nvidia driver you need a newer one that what comes with 18.04 so add the graphics-driver ppa
+
+    $ sudo add-apt-repository ppa:graphics-drivers/ppa
+
+and install it with
+
+    $ sudo ubuntu-drivers install
+
+Or if you do not mind not having a LTS version so you have to upgrade every half year and do not mind installing it before the release in a couple of weeks you could go with 19.04 which has the newest 418.56 drivers already. The installer from the live disc there probably does display correctly.
+
+---
+
+Installing NVidia drivers and CUDA on Ubuntu
+https://www.pugetsystems.com/labs/hpc/The-Best-Way-To-Install-Ubuntu-18-04-with-NVIDIA-Drivers-and-any-Desktop-Flavor-1178/
+https://www.pugetsystems.com/labs/hpc/How-to-install-CUDA-9-2-on-Ubuntu-18-04-1184/
+
+---
