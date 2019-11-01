@@ -1,3 +1,4 @@
+
 #Linux
 
 See Also:
@@ -27,6 +28,11 @@ See Also:
 
  - [Semaphore](Semaphore.md) 
  - [Mutex](Mutex.md) 
+
+---
+
+Flowchart and diagram drawing software for Linux
+https://www.tecmint.com/best-flowchart-and-diagramming-software-for-linux/
 
 ---
 
@@ -750,5 +756,16 @@ See [Firewall](Firewall.md)
 
 About Linux services
 https://www.cyberciti.biz/tips/check-unix-linux-configuration-file-for-syntax-errors.html
+
+---
+
+About disk utilities. Not sure if you care about defragmentation on SSDs, but might still make sense:
+https://www.tecmint.com/defragment-linux-system-partitions-and-directories
+
+---
+
+Repeat execution using `watch`
+
+    $ watch free -m
 
 ---

@@ -1,12 +1,16 @@
 
-## Under Construction
-
 # Apache
 
-See also [Linux.md](Linux.md)
-
+See also
+ [Linux.md](Linux.md)
 
 https://httpd.apache.org/
+
+---
+
+Basics of starting/stopping, getting status, etc. For different distros
+https://www.cyberciti.biz/faq/how-do-i-stop-apache-from-starting-on-linux/
+TODO: summarize
 
 ---
 
@@ -27,5 +31,3 @@ Different ways to restart the server(depends on versions):
     $ sudo reload apache2
         
 ---
-
-    

@@ -1,5 +1,3 @@
-
-
 # CUDA
 
 See also:
@@ -7,6 +5,11 @@ See also:
 - [OpenGL](OpenGL.md)
 - [OpenCV](OpenCV.md)
 - [DirectX](DirectX.md)
+
+---
+
+Nice intro .pdf from NVidia  
+https://www.nvidia.com/docs/IO/116711/sc11-cuda-c-basics.pdf
 
 ---
 
@@ -118,6 +121,7 @@ To see the existing pci cards:
     $ lspci | grep -i --color 'vga\|3d\|2d'
 
 To see the current drivers, one can use:
+(might have to install package `lshw`)
 
     $ sudo lshw -class display
 
@@ -301,8 +305,8 @@ Or if you do not mind not having a LTS version so you have to upgrade every half
 
 ---
 
-Installing NVidia drivers and CUDA on Ubuntu
-https://www.pugetsystems.com/labs/hpc/The-Best-Way-To-Install-Ubuntu-18-04-with-NVIDIA-Drivers-and-any-Desktop-Flavor-1178/
-https://www.pugetsystems.com/labs/hpc/How-to-install-CUDA-9-2-on-Ubuntu-18-04-1184/
+Installing NVidia drivers and CUDA on Ubuntu  
+https://www.pugetsystems.com/labs/hpc/The-Best-Way-To-Install-Ubuntu-18-04-with-NVIDIA-Drivers-and-any-Desktop-Flavor-1178/  
+https://www.pugetsystems.com/labs/hpc/How-to-install-CUDA-9-2-on-Ubuntu-18-04-1184/  
 
 ---

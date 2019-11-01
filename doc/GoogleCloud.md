@@ -22,3 +22,8 @@ About Trusted Execution Environments(TEE), etc.
 https://cloudplatform.googleblog.com/2018/05/Introducing-Asylo-an-open-source-framework-for-confidential-computing.html
 
 ---
+
+Nice overviews and resources about Google Architecture
+http://highscalability.com/google-architecture
+
+---

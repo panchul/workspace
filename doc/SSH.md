@@ -1,6 +1,4 @@
 
-## UNDER CONSTRUCTION
-
 # SSH protocol
 
 http://en.wikipedia.org/wiki/Secure_Shell
@@ -214,4 +212,9 @@ To log in simply type:
 
     $ ssh web01
     
+---
+
+Another summary of the ssh-related operations.
+https://dev.to/djangotricks/things-i-want-to-remember-about-ssh-21el
+
 ---

@@ -302,6 +302,8 @@ https://www.tartssensors.com/libraries/arduino/
 ### IDEs and editors
   
 - [Atom](Atom.md)
+- http://www.codeblocks.org
+- http://www.codelite.org
 - [Eclipse](Eclipse.md)  
 - [emacs](Emacs.md) 
 - [gdb](Gdb.md)
@@ -689,6 +691,11 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
 
 - [Motivational](Motivational.md)
 - [Psychology](Psychology.md)
+
+## Languages
+
+- [French](French.md)
+
 
 ## Fun and useful.
 

@@ -551,3 +551,30 @@ We expect <number>\n<number> <number> ... <number>
     ...
 
 ---
+
+The priority queue with the oppostite sorting ( not `less`, but `greater`)
+
+    std::priority_queue<int, std::vector<int>, std::greater<int> > newone;
+
+---
+
+Converting int to string.        
+    
+    int a = 123;
+    std::string sa(to_string(a)); 
+
+and back
+
+    int b = stoa(sa);
+
+---
+
+    string sa = "something";
+    size_t i = sa.find("some");
+
+    if(i != string::npos)
+        sa.erase(i, 4); // remove 4 bytes starting form that index
+
+    std::reverse(sa.begin(), sa.end());
+    
+---

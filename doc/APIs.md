@@ -1,9 +1,8 @@
 
-## UNDER CONSTRUCTION
-
 # APIs
 See Also:
  [JSON-API](JSON-API.md)
+ [Rest](REST.md)
  [Swagger](Swagger.md)
 
 ---
