@@ -11,6 +11,30 @@ https://www.cyberciti.biz/faq/ufw-allow-incoming-ssh-connections-from-a-specific
 
 TODO: do the summary
 
+
+---
+
+Setting up sshd on fedora  
+https://linuxconfig.org/how-to-install-start-and-connect-to-ssh-server-on-fedora-linux
+
+(Fedora network manager cli might be helpful)
+
+    $ dnf install opensh-server
+    $ systemctl enable sshd
+    $ systemctl start sshd
+    
+Check that it is up:    
+    
+    $ systemctl status sshd
+    
+Socket scan should show that we are listening to port 22:    
+    
+    $ ss -lt
+
+This is it, we are reado to connect from another machine:
+
+    $ ssh username@thehost
+    
 ---
 
 Quick and dirty way to fix 'ssh permission denied(publicey)':

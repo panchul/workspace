@@ -1,8 +1,13 @@
 
-
 ## UNDER CONSTRUCTION
 
 # Facebook
+
+
+---
+
+De-centralized alternative social media.
+https://tech.liga.net/technology/article/samoubiytsy-facebook-srazu-neskolko-ukraintsev-reshili-potyagatsya-s-tsukerbergom
 
 ---
 

@@ -19,13 +19,19 @@ https://www.tecmint.com/install-and-configure-an-ansible-control-node/
 TODO: do the summary
 
 
+---
 
+Using static and dynamic inventories
+https://www.tecmint.com/use-static-and-dynamic-inventory-in-ansible
+
+TODO: write a summary
 
  
 ---
 
 Neat summary of Ansible for Ubuntu 18.04lts
 https://www.cyberciti.biz/faq/how-to-install-ansible-on-ubuntu-18-04-for-it-automation/
+TODO: a walk-through
 
 ---
 

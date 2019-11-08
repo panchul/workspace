@@ -66,6 +66,7 @@ TODO: Create sub-pages of these.
 - PostScript
 - [Elixir](Elixir.md)
 - Lua
+- [LLVM](LLVM.md)
 - [Awk](Awk.md)
 - [Sed](Sed.md)
 - [JavaScript](JavaScript.md)  
@@ -81,19 +82,20 @@ TODO: Create sub-pages of these.
  - [Apache Spark](ApacheSpark.md)
  - Codeclimate https://developer.codeclimate.com/#overview
  - [Confluent](Confluent.md)
+ - [CQRS](CQRS.md) Command Query Responsibility Segregation
  - Domain Driven Design (DDD)
+ - GraphQL https://dev.to/hexrcs/graphql-crash-course-in-10-pics-3b04
  - [Lagom](Lagom.md)
  - [M4](M4.md)
  - [MapReduce](MapReduce.md)
  - [Splunk](Splunk.md)
  - [STL](STL.md) 
  - ReactiveX http://reactivex.io/intro.html
- - [xmlto](Xmlto.md)
- - [Zlib](ZLib.md)
- - [CQRS](CQRS.md) Command Query Responsibility Segregation
  - [Qt](Qt.md)
  - [Syslog](Syslog.md)
-  
+ - [xmlto](Xmlto.md)
+ - [Zlib](ZLib.md)
+   
  - Nice about microservices:
    https://dwmkerr.com/the-death-of-microservice-madness-in-2018/
 
@@ -219,7 +221,6 @@ TODO: Create sub-pages of these.
 - [mail](Mail.md)
 - [N2W](N2W.md)
 - [netcat(nc)](Netcat.md)
-- [Postman](Postman.md)
 - [screen](Screen.md) , session-persistence util
 - [tar](Tar.md)
 - [sysdig](Sysdig.md)
@@ -246,6 +247,10 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - [Facebook](Facebook.md)
 - Disqus
 - Twitter
+- De-centralized alternative social media.
+  https://tech.liga.net/technology/article/samoubiytsy-facebook-srazu-neskolko-ukraintsev-reshili-potyagatsya-s-tsukerbergom
+  
+
   
 ### Micorcontrollers, Embedded programming, hardware
 
@@ -327,8 +332,9 @@ https://www.tartssensors.com/libraries/arduino/
 - [HAProxy](HAProxy.md)
 - [nginx](Nginx.md)
 - [DNS](DNS.md)
-  - BIND
+- BIND
 - [OpenVPN](OpenVPN.md)
+- [Postman](Postman.md)
 - [Wireshark](Wireshark.md)
 - Fiddler
 - Firebug
@@ -488,6 +494,11 @@ https://www.datasciencecentral.com/profiles/blogs/the-10-statistical-techniques-
     
 Neat compilation of cheat sheets for machine learning (mostly Python)
 https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-for-machine-learning-and-deep-learning-engineers
+
+ - Interesting article from Francois Cholett(Keras, Google), about Measure of Intelligence
+   https://arxiv.org/abs/1911.01547.pdf
+   https://github.com/fchollet/ARC
+
     
 
 ### Algorithms and Data Structures

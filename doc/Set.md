@@ -1,5 +1,3 @@
-## UNDER CONSTRUCTION
-
 # Set
 
 See Also:
@@ -25,6 +23,32 @@ https://github.com/panchul/sb_cpp/tree/master/data_structures
 
 The reference page for set:
 http://www.cplusplus.com/reference/set/set/
+
+---
+
+Discussions about failing lambda inside of the set definition, and work-arounds to fix it:
+https://stackoverflow.com/questions/14896032/c11-stdset-lambda-comparison-function
+
+    #include <iostream>
+    #include <iterator>
+    #include <algorithm>
+    int main() {
+       auto comp = [](int x, int y){ return x < y; };
+       auto set  = std::set<int,decltype(comp)>( comp );
+    
+       set.insert(1);
+       set.insert(10);
+       set.insert(1); // Dupe!
+       set.insert(2);
+    
+       std::copy( set.begin(), set.end(), std::ostream_iterator<int>(std::cout, "\n") );
+    }
+    
+Which prints:
+    
+    1
+    2
+    10
 
 ---
   

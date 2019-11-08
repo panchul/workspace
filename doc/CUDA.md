@@ -8,8 +8,21 @@ See also:
 
 ---
 
+The CUDA C reference
+https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
+
+---
+
 Nice intro .pdf from NVidia  
 https://www.nvidia.com/docs/IO/116711/sc11-cuda-c-basics.pdf
+
+Another, basics:
+https://www.youtube.com/watch?v=nvrEDBcbaDM
+
+Learn CUDA in an Afternoon: an Online Hands-on Tutorial
+https://www.youtube.com/watch?v=_41LCMFpsFs
+Slides from that talk:
+http://www.epcc.ed.ac.uk/online-training/learnCUDA
 
 ---
 
@@ -308,5 +321,29 @@ Or if you do not mind not having a LTS version so you have to upgrade every half
 Installing NVidia drivers and CUDA on Ubuntu  
 https://www.pugetsystems.com/labs/hpc/The-Best-Way-To-Install-Ubuntu-18-04-with-NVIDIA-Drivers-and-any-Desktop-Flavor-1178/  
 https://www.pugetsystems.com/labs/hpc/How-to-install-CUDA-9-2-on-Ubuntu-18-04-1184/  
+
+---
+
+For profiling, you need to set the access:
+
+https://developer.nvidia.com/nvidia-development-tools-solutions-ERR_NVGPUCTRPERM-permission-issue-performance-counters#SolnAdminTag
+
+    $ systemctl set-default multi-user.target
+    $ shutdown -r now
+
+Unload dependent modules
+    
+    $ modprobe -r nvidia_uvm nvidia_drm nvidia_modeset nvidia-vgpu-vfio nvidia 
+      
+Specify the access you desire: Insert the modules with the registry key set/unset.:
+To require administrative privileges (CAP_SYS_ADMIN capability set) to profile using NVIDIA GPU performance counters
+      
+    $ modprobe nvidia NVreg_RestrictProfilingToAdminUsers=1
+      
+Or, to allow any user to profile using NVIDIA GPU performance counters
+      
+    $ modprobe nvidia NVreg_RestrictProfilingToAdminUsers=0
+
+    $ systemctl set-default graphical.target
 
 ---

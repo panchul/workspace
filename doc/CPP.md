@@ -10,6 +10,15 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Comparison of IDEs for C++ for Linux.
+https://www.tecmint.com/best-linux-ide-editors-source-code-editors/
+
+26 of them:
+
+
+
+---
+
 CppCon 2019: “The One-Decade Task: Putting std::atomic in CUDA.”
 https://www.youtube.com/watch?v=VogqOscJYvk
 
@@ -577,4 +586,11 @@ and back
 
     std::reverse(sa.begin(), sa.end());
     
+---
+
+C++ Parameter Pack
+https://en.cppreference.com/w/cpp/language/parameter_pack
+
+
+
 ---

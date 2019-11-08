@@ -1,9 +1,5 @@
 
-
-## UNDER CONSTRUCTION
-
 # Jenkins
-
 
 https://jenkins.io/
 
@@ -25,5 +21,14 @@ The initial admin password was at /var/lib/jenkins/secrets
 
 Installing Jenkins on AWS:
 https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
+
+---
+
+Installing Jenkins on CentOS 8
+
+
+
+
+
 
 ---

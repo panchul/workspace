@@ -1,19 +1,16 @@
 
-## Under Construction
-
 # Cryptography and Network Security
 
 See Also:
 
  - [MD5.md](MD5.md)
  - [gpg.md](Gpg.md)
-
+  - [OAuth](OAuth.md)
 
 ---
 
 Neat exercise about setting up https on CentOS 8:
 https://www.cyberciti.biz/faq/apache-with-lets-encrypt-certificates-on-centos-8/
-
 
 
 

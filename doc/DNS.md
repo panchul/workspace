@@ -18,3 +18,10 @@ dig - DNS lookup utility
     $ dig panchul.us
      
 ---
+
+Setting up DNS DHCP server using dnsmasq on CentOS/Rhel
+https://www.tecmint.com/setup-a-dns-dhcp-server-using-dnsmasq-on-centos-rhel
+
+TODO: do a walk-through.
+
+---

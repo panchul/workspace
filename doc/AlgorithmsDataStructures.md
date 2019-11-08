@@ -133,3 +133,23 @@ Sum(a[i]*x^i) for i from 0 to n:
     }
 
 ---
+
+Floyd's cycle-finding algorithm (Tortoice and Hare)
+https://en.wikipedia.org/wiki/Cycle_detection
+
+---
+
+Longest Common Subsequence problem
+https://en.wikipedia.org/wiki/Longest_common_subsequence_problem
+
+---
+
+Breadth-First Search
+https://en.wikipedia.org/wiki/Breadth-first_search
+
+---
+
+Nice website with a lot of well-written material for interview preps, etc.
+https://www.techiedelight.com/find-cost-longest-path-dag/
+
+---
