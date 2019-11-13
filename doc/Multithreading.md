@@ -1,13 +1,10 @@
 
-## UNDER CONSTRUCTION
-
 # Multithreading
 
 See Also:
 
  - [Linux](Linux.md) 
  - [Semaphore](Semaphore.md) 
-
 
 ---
 
@@ -17,24 +14,16 @@ Basic usage, from my sandbox https://github.com/panchul/sb_cpp :
     #include <iostream>
     #include <thread>
     #include <mutex>
-
     using namespace std;
-
     void tfunc(int aaa, char bbb, string sss) {
         cout << "aaa " << aaa << " bbb " << bbb << " sss " << sss << "\n";
     }
-
     int main() {
             thread a(tfunc, 1,'3', "govno1" ), b(tfunc, 2, '7', "govno2");
-        
             a.join();
             b.join();
-            
             return 0;
     }
-    
-    
-    
 
 ---
 
@@ -88,7 +77,6 @@ https://en.wikipedia.org/wiki/Semaphore_(programming)
 
 Semaphore example:
 
-
 ```
 #include <stdio.h> 
 #include <pthread.h> 
@@ -97,8 +85,7 @@ Semaphore example:
   
 sem_t mysem; 
   
-void* thread(void* arg) 
-{ 
+void* thread(void* arg) { 
     //wait 
     sem_wait(&mysem); 
     printf("\nEntered..\n"); 
@@ -110,10 +97,7 @@ void* thread(void* arg)
     printf("\nJust Exiting...\n"); 
     sem_post(&mysem); 
 } 
-  
-  
-int main() 
-{ 
+int main() { 
     sem_init(&mysem, 0, 1); 
     pthread_t t1,t2; 
     pthread_create(&t1,NULL,thread,NULL); 

@@ -153,3 +153,26 @@ Nice website with a lot of well-written material for interview preps, etc.
 https://www.techiedelight.com/find-cost-longest-path-dag/
 
 ---
+
+Dijkstra, for minimal spanning tree:
+https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Using_a_priority_queue
+
+Bellman-Ford
+
+---
+
+Binary Indexed Tree (Fenwick Tree)
+https://en.wikipedia.org/wiki/Fenwick_tree
+https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/
+https://www.youtube.com/watch?v=v_wj_mOAlig  --- video
+
+Segment Tree Range
+https://en.wikipedia.org/wiki/Segment_tree
+https://www.youtube.com/watch?v=Oq2E2yGadnU
+
+---
+
+Maximum subarray sum, Kadane's algorithm
+https://en.wikipedia.org/wiki/Maximum_subarray_problem
+
+---

@@ -150,3 +150,15 @@ Also, you can open the file from within Vim in a new buffer:
     :e scp://myusername@myerver//etc/apache/apache.conf
                                                              
 ---
+
+To open vim at a certain location, line number 123, or
+at the first occurence of 'some':
+
+    $ vi +123 file.txt
+    $ vi +/some file.txt
+
+Inside vim, to go to line 100: press `10G`, or `:10` + Enter
+   
+`set number` and `set nonumber` turn line numbers on/off
+    
+---
