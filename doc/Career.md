@@ -5,12 +5,16 @@ Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](﻿https:
 
 
 TODO: Add the list courses I took
-
 TODO: Add list interests, etc.
 
 ---
 
 "TALENT hits the target no one else can HIT, GENIUS hits the target no one else can SEE"
+
+---
+
+Software Engineering Salaries in 2020.
+https://www.youtube.com/watch?v=Btbvv9kfLqo
 
 ---
 

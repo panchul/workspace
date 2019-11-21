@@ -4,11 +4,17 @@
 See Also:
  - [Mercurial](Mercurial.md)
  - [Subversion](Subversion.md)
+ - [npm](Npm.md)
 
 
 [https://git-scm.com/](https://git-scm.com/)
 
 https://git-scm.com/downloads
+
+---
+
+Github package manager:
+https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages
 
 ---
 
@@ -322,3 +328,90 @@ If your local branch didn't have any unique commits, Git will instead perform a 
 
 ---
 
+To completely remove a file from git repo.
+(from here: https://dev.to/moshe/remove-accidentally-pushed-file-from-a-git-repository-history-in-4-simple-steps-18cg)
+
+Step #1: Backup your repo!
+
+    $ cp -r myproject backup
+
+Step #2: Identify the commit that introduced the new file
+
+e.g. for `client/public/favicons/red/hugefile.ova`
+
+    $ git log client/public/favicons/red/hugefile.ova
+    Sat Aug 17 19:16:17 2019 +0300 7ff66fa Add favicons  [Moshe Zada]
+
+As you can see, it seems like commit 7ff66fa introduced the big file,
+let's rewrite the history!
+
+Step #3: Go back in time
+
+    $ git rebase --interactive 7ff66fa~1
+
+Right after running this command, your editor will open up with the
+ commit history from 7ff66fa to the last commit, for example:
+
+    pick 7ff66fa Add favicons
+    pick 48d9cc0 Readme (#84)
+    pick b9f23fd GitBook: [master] 17 pages modified
+    pick 1e0f4f1 move to docs
+    pick 23adabf GitBook: [master] 4 pages modified
+    pick 237c792 revert readme
+    pick 9418698 Continue reload if had exception
+    pick 3723c3c Add Copy option to index
+    pick 1ff0ec1 Add filter for manage aliases
+    pick 8a8770d Better null message
+    pick 4d8b64c Subscribe to input change
+    pick 9bc31b6 Save more data for node stats
+    pick 546e10b Small fixes
+    # Rebase 5058e82..eafa06e onto 5058e82 (193 commands)
+    #
+    # Commands:
+    # p, pick <commit> = use commit
+    # r, reword <commit> = use commit, but edit the commit message
+    # e, edit <commit> = use commit, but stop for amending
+    # s, squash <commit> = use commit, but meld into previous commit
+    # f, fixup <commit> = like "squash", but discard this commit's log message
+    # x, exec <command> = run command (the rest of the line) using shell
+    # b, break = stop here (continue rebase later with 'git rebase --continue')
+    # d, drop <commit> = remove commit
+    # l, label <label> = label current HEAD with a name
+    # t, reset <label> = reset HEAD to a label
+    # m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+    # .       create a merge commit using the original merge commit's
+    # .       message (or the oneline, if no original merge commit was
+    # .       specified). Use -c <commit> to reword the commit message.
+    #
+    # These lines can be re-ordered; they are executed from top to bottom.
+    #
+    # If you remove a line here THAT COMMIT WILL BE LOST.
+    #
+    # However, if you remove everything, the rebase will be aborted.
+    #
+    # Note that empty commits are commented out
+
+go to the first line, the one that starts with your git commit and change the
+first word to the letter `e` - for edit (vimmiers: cwe<ESC>) and
+exit your editor (:wq)
+
+Step #4: Rewrite the history and push your changes
+
+Now git will start replaying the last commits and give you shell
+just before the bad commit delete the file:
+
+    $ rm client/public/favicons/red/hugefile.ova
+
+Add the change to git
+
+    $ git add client/public/favicons/red/hugefile.ova
+    
+Commit and continue the rebase
+
+    $ git commit --amend '-S' && git rebase --continue
+
+Verify changes and force-push your changes
+
+    $ git push --force
+
+---

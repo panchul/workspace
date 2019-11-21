@@ -1,5 +1,3 @@
-## UNDER CONSTRUCTION
-
 # MacOS
 
 See also
@@ -85,5 +83,9 @@ https://stackoverflow.com/questions/20875927/how-to-undo-codesign
 To re-sign, you have to remove the signature first:
 
     $ codesign --remove-signature gdb
+
+---
+
+`Command-Shift-.` in the file browser shows hidden files(like `.bashrc`, etc.) 
 
 ---

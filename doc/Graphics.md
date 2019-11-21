@@ -9,6 +9,7 @@
 - [GoogleGlass](GoogleGlass.md)
 - [MagicLeap](MagicLeap.md)
 - [PCL](PCL.md), Point Cloud Library
+- [OpenACC](OpenACC.md)
 - OpenALPR - Automatic License Plate Recognition https://www.openalpr.com/
 - [OpenCL](OpenCL.md)
 - [OpenCV](OpenCV.md)
@@ -46,5 +47,10 @@ https://next.reality.news/news/nr30-next-realitys-30-people-watch-augmented-real
 
 GnuPlot
 http://gnuplot.sourceforge.net/demo/
+
+---
+
+.obj 3D file format
+https://en.wikipedia.org/wiki/Wavefront_.obj_file
 
 ---

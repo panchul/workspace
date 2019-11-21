@@ -293,3 +293,29 @@ TODO: write a summary
     
     
 ---    
+
+Port forwarding
+
+    $ ssh -L{port on your PC}:localhost:{database's port} root@{server IP}
+
+The command will open port 3308 on your laptop and everything
+will be forwarded to 192.168.1.2:3306
+
+    $ ssh -L3308:localhost:3306 root@192.168.1.2
+
+localhost means that database is listening on 192.168.1.2.
+You can type for example 192.168.3.77 and everything will be
+forwarded to .3.77 server via .1.2.
+
+---
+
+To see who is using a port:
+
+    $ netstat -tulpn | grep 80
+    tcp6       0      0 :::80                 :::*                   LISTEN     10177/java
+
+10177 is a pid you are looking for. Now execute
+
+    $ ps aux | grep 10177
+
+---

@@ -162,3 +162,11 @@ Inside vim, to go to line 100: press `10G`, or `:10` + Enter
 `set number` and `set nonumber` turn line numbers on/off
     
 ---
+
+Edit without sudo, but save with sudo:
+
+`:w !sudo tee %`
+
+https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work/7078429#7078429
+
+---

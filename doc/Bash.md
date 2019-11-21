@@ -721,3 +721,21 @@ Also, you can open the file from within Vim in a new buffer:
     :e scp://vivek@centos7//etc/resolv.conf
                                                              
 ---
+
+Create `sl`, a reverse-`ls`:
+
+    LEN=$(ls "$@"|wc -L)
+    ls "$@"|rev| while read -r line
+    do
+    printf "%${LEN}.${LEN}s\\n" "$line" | sed 's/^\(\s\+\)\(\S\+\)/\2\1/'
+    done
+
+Now:
+
+    $ sl
+    pmt
+    
+    $ ls
+    tmp
+    
+---

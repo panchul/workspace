@@ -1,7 +1,17 @@
 
-## Under Construction
+# Misc stuff related to psychology and motivation
 
-Misc stuff related to psychology and motivation
+---
+
+"Beware of the man who works hard to learn something, learns it, and finds
+himself no wiser than before. He is full of murderous resentment of people
+who are ignorant without having come by their ignorance the hard way."
+Kurt Vonnegut, Cat's Cradle
+
+---
+
+“As stupid and vicious as men are, this is a lovely day.” 
+Kurt Vonnegut, Cat's Cradle
 
 ---
 
@@ -36,7 +46,6 @@ https://www.youtube.com/watch?v=lykvHGNo9yE
  got to start with the customer experience and work backwards
  to the technology. You can't start with the technology and
  try to figure out where you're going to try to sell it."
-
 Steve Jobs
 
 ---
@@ -91,7 +100,7 @@ You are killing yourself for a job that would replace you within a week if you d
 
 ---
 
-My contempt for others is evidence of my smallness, not theirs
+My contempt for others is evidence of my smallness, not theirs.
 
 ---
 

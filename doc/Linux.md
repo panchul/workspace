@@ -32,6 +32,11 @@ See Also:
 
 ---
 
+Neat overview/catalog of all sorts of applications on Linux
+https://www.fossmint.com/awesome-linux-software/
+
+---
+
 Flowchart and diagram drawing software for Linux
 https://www.tecmint.com/best-flowchart-and-diagramming-software-for-linux/
 
@@ -768,5 +773,42 @@ https://www.tecmint.com/defragment-linux-system-partitions-and-directories
 Repeat execution using `watch`
 
     $ watch free -m
+
+This will run every 1 second:
+
+    $ watch -n 1 date
+
+---
+
+Show top 3 processes sorted by CPU usage
+
+    $ ps aux --sort=-pcpu | head -n 4
+
+Show top 3 processes sorted by memory usage
+
+    $ ps aux --sort=-rss | head -n 4
+
+---
+
+Create log files for scripts executed by crontab:
+
+    0 22 * * 1-5 /opt/scripts/send-report.sh 2>/var/log/scripts/report-error.log
+
+---
+
+bash fork bomb:
+
+    :(){ :|:& };:
+
+Which is an obfuscated:
+
+    bomb(){
+      bomb | bomb &
+    }
+    bomb
+
+To kill it:
+    
+    $ killall -STOP -u someuser
 
 ---

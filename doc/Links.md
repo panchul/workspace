@@ -1,30 +1,7 @@
 
 ## Technology
 
-TODO: Create sub-pages of these.
-
-### Virtualization, clustering, provisioning, and monitoring
-
-- [AWS](AWS.md)
-- [Ansible](Ansible.md)  
-- Cacti
-- [Docker](Docker.md)
-  - [Docker-Compose](DockerCompose.md)
-  - [Docker Swarm](Swarm.md)
-- Fabric
-- [Google Cloud](GoogleCloud.md)
-- [Kubernetes](Kubernetes.md)  
-- [VMWare](VMWare.md)  
-- [OpenStack](OpenStack.md)
-- Otto
-- [Mesos](Mesos.md)
-- [Triton,Joyent](Triton.md)
-- Nagios
-- Munin
-- [Rex-Ray](RexRay.md)
-- [Vagrant](Vagrant.md)  
-- [VirtualBox](VirtualBox.md)  
-
+TODO: Create sub-pages for the ones that do not have it yet.
 
 ### Programming languages, scripts, etc.
 
@@ -71,9 +48,31 @@ TODO: Create sub-pages of these.
 - [Sed](Sed.md)
 - [JavaScript](JavaScript.md)  
 - [CSS](CSS.md)
+- [PHP](Php.md)
 - [RegEx](RegEx.md)
 - [Bash](Bash.md)
 
+### Virtualization, clustering, provisioning, and monitoring
+
+- [AWS](AWS.md)
+- [Ansible](Ansible.md)  
+- Cacti
+- [Docker](Docker.md)
+  - [Docker-Compose](DockerCompose.md)
+  - [Docker Swarm](Swarm.md)
+- Fabric
+- [Google Cloud](GoogleCloud.md)
+- [Kubernetes](Kubernetes.md)  
+- [VMWare](VMWare.md)  
+- [OpenStack](OpenStack.md)
+- Otto
+- [Mesos](Mesos.md)
+- [Triton,Joyent](Triton.md)
+- Nagios
+- Munin
+- [Rex-Ray](RexRay.md)
+- [Vagrant](Vagrant.md)  
+- [VirtualBox](VirtualBox.md)  
 
 #### Frameworks Libraries, Static code analyse, architecture approaches, etc.
 
@@ -88,6 +87,10 @@ TODO: Create sub-pages of these.
  - [Lagom](Lagom.md)
  - [M4](M4.md)
  - [MapReduce](MapReduce.md)
+ - [OpenACC](OpenACC.md)
+ - [OpenCL](OpenCL.md)
+ - [OpenCV](OpenCV.md)
+ - [OpenGL](OpenGL.md)
  - [Splunk](Splunk.md)
  - [STL](STL.md) 
  - ReactiveX http://reactivex.io/intro.html
@@ -161,12 +164,14 @@ TODO: Create sub-pages of these.
 - [make](Make.md)
 - [Maven](Maven.md)
 - [Mercurial](Mercurial.md)
+- [npm](Npm.md)
 - [Pip](Pip.md)  
 - [Rake](Rake.md)  
 - [Sbt](Sbt.md)  
 - [Subversion](Subversion.md)  
 - [yum](Yum.md)
 - [ldconfig](Ldconfig.md)
+
   
 ### Operating systems
 
@@ -249,7 +254,8 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - Twitter
 - De-centralized alternative social media.
   https://tech.liga.net/technology/article/samoubiytsy-facebook-srazu-neskolko-ukraintsev-reshili-potyagatsya-s-tsukerbergom
-  
+- WT:Social https://wt.social/ - Alternative social network from Wikipedia founders.
+
 
   
 ### Micorcontrollers, Embedded programming, hardware
