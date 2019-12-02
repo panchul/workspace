@@ -1,12 +1,9 @@
-
-
-## Under Construction
-
 # VirtualBox
+
 See Also:
-- [Vagrant](Vagrant.md)
-- [Ansible](Ansible.md)
-- [VMWare](VMWare.md)
+  - [Vagrant](Vagrant.md)
+  - [Ansible](Ansible.md)
+  - [VMWare](VMWare.md)
 
 ---
 
@@ -30,5 +27,22 @@ List virtual machines:
 or only the ones running:
 
     $ VBoxManage list runningvms
+
+---
+
+Setting up a network between vm and host
+https://www.tecmint.com/network-between-guest-vm-and-host-virtualbox/
+
+---
+
+For the guest additions, kernel headers
+
+On Ubuntu:
+
+    $ apt-get install build-essentials
+    
+On Fedora 29:
+
+    $ yum install kernel-develop-...    
 
 ---

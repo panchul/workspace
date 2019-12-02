@@ -739,3 +739,19 @@ Now:
     tmp
     
 ---
+
+You can use C-style printf formatting in bash:
+
+    $ printf "%s\n" "$now"
+    Wed Apr 5 00:55:45 IST 2019
+
+    $ echo "Today is $now"
+    Today is Wed Apr 5 00:55:45 IST 2019
+
+You can do command substitution in an echo command itself (no need to use shell variable):
+
+    $ echo "Today is $(date)"
+    $ printf "Today is %s\n" "$(date)"
+    Today is Wed Apr 5 00:57:58 IST 2019
+    
+--

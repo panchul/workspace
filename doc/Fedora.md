@@ -1,4 +1,3 @@
-
 # Fedora
 
 ---
@@ -25,4 +24,9 @@ e.g.
 
     $ nmcli general status
     
+---
+
+Fedora has a few desktops by default.
+Switching using Alt-F1, Alt-F2, ..., and Alt-Tab works.
+
 ---

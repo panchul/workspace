@@ -64,3 +64,15 @@ An article about cryptocurrency hipe.
 https://hackernoon.com/24-lessons-i-learned-from-interviewing-over-45-cryptocurrency-projects-in-two-months-680dfa213aa6
 
 ---
+
+Shutting down a fraud call center
+https://www.youtube.com/watch?v=RHHzoDqZL8M
+
+Downloading scammer's files
+https://www.youtube.com/watch?v=DFRbUhhQmZs
+
+Scammer sends a virus
+https://www.youtube.com/watch?v=Ooh6bV8FwTo
+https://www.youtube.com/watch?v=uXrACl03dIw
+
+---

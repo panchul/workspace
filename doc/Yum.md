@@ -1,12 +1,26 @@
-
-## Under Construction
-
 # Yum
 
 See Also:
  [Linux](Linux.md)
  [aptitude](aptitude.md)
 
+---
+
+List and backup all installed packages:
+
+    $ rpm -qa --qf "%{NAME}\n" |\
+    sort > /nas/installed-software-mm-dd-yyyy.log
+
+Use the cat command to review list:
+
+    $ cat /nas/installed-software-mm-dd-yyyy.log
+
+To restore:
+
+    $ yum -y install $(cat /nas/installed-software-mm-dd-yyyy.log)
+
+More on backuping:
+https://www.cyberciti.biz/tips/linux-get-list-installed-software-reinstallation-restore.html
 
 ---
 

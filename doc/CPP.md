@@ -1,4 +1,3 @@
-
 # C++
 
 See Also:
@@ -15,6 +14,9 @@ https://www.tecmint.com/best-linux-ide-editors-source-code-editors/
 
 26 of them:
 
+
+Visual Studio Code has nice extensions. Here is a Go extension, for example:
+https://github.com/Microsoft/vscode-go
 
 
 ---

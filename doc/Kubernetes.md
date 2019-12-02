@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Kubenetes
 
 https://kubernetes.io/
@@ -267,3 +264,7 @@ verify that the produced binary is statically linked:
  
 ---
 
+Another step-by-step tutorial:
+https://dev.to/azure/learn-kubernetes-with-this-5-part-series-29km
+
+---

@@ -1,17 +1,9 @@
-
-
-## UNDER CONSTRUCTION
-
 # JavaScript
-
-
 
 A sandbox with some templates:
 [https://github.com/panchul/sb_javascript](https://github.com/panchul/sb_javascript)
 
-
 [https://www.javascript.com/](https://www.javascript.com/)
-
 
 ---
 
@@ -37,5 +29,10 @@ Simple fizzBuzz solution
      
      return output;
     }
+
+---
+
+A simple slider in html/.css/javascript:
+https://dev.to/ibrahima92/fullscreen-slider-with-html-css-and-javascript-4odn
 
 ---

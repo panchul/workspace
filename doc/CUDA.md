@@ -14,6 +14,11 @@ https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
 
 ---
 
+Funny demo of GPU vs. CPU
+https://www.youtube.com/watch?v=-P28LKWTzrI
+
+---
+
 Nice intro .pdf from NVidia  
 https://www.nvidia.com/docs/IO/116711/sc11-cuda-c-basics.pdf
 

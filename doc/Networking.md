@@ -309,7 +309,7 @@ forwarded to .3.77 server via .1.2.
 
 ---
 
-To see who is using a port:
+To see who is using a port(and there is also utility `ss`):
 
     $ netstat -tulpn | grep 80
     tcp6       0      0 :::80                 :::*                   LISTEN     10177/java

@@ -219,6 +219,7 @@ TODO: Create sub-pages for the ones that do not have it yet.
 - [cron](Cron.md)
 - [Curl](Curl.md)
 - [Etcher](Etcher.md) , USB-writing util
+- [ffmpeg](FfMpeg.md)
 - [Find](Find.md)
 - [gpg.md](Gpg.md)
 - [hostname](Hostname.md)

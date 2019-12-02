@@ -219,3 +219,13 @@ They know "Culture eats strategy for breakfast." Peter Drucker
  на ведение бизнеса в дополнение к любым необходимым профессиональным лицензиям.
 
 ---
+
+From Internet a fresh Ph.D. compansation package Pensylvania 2019.
+    Experience - 2-3 internships
+    Base - $130k
+    Relocation/Signon - $13k
+    Stocks - $200k (over 4 years)
+    Perks - free food, 20 days off + 2 weeks winter break + $1000 transit + $5000 home purchase, 401 (k) match upto 4% (~$5.5k)
+    Total (stocks + 401(k)+base+relocation) - $198k (first year then $185k)
+
+---

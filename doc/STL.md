@@ -1,7 +1,4 @@
 
-
-## UNDER CONSTRUCTION
-
 # STL
 
 See Also:
@@ -9,11 +6,11 @@ See Also:
   - [List](List.md) 
   - [Vector](Vector.md) 
   - [Map](Map.md) 
+  - [Stack](Stack.md)
 
 My sandbox for data structures is here:
 
 https://github.com/panchul/sb_cpp/tree/master/data_structures
-
 
 ---
 
@@ -45,4 +42,3 @@ Another basics refresher
 http://bit.ly/2CzlaBD
 
 ---
-

@@ -4,6 +4,7 @@
 - [Blender](Blender.md)
 - [CUDA](CUDA.md)
 - [DirectX](DirectX.md)
+- [ffmpeg](FfMpeg.md)
 - [Fractals](Fractals.md)
 - [gnuplot](Gnuplot.md)
 - [GoogleGlass](GoogleGlass.md)
@@ -52,5 +53,11 @@ http://gnuplot.sourceforge.net/demo/
 
 .obj 3D file format
 https://en.wikipedia.org/wiki/Wavefront_.obj_file
+
+---
+
+To extract frames from a video, you can use ffmpeg:
+
+    $ ffmpeg -i somevideo.mp4 myframe%03d.jpg
 
 ---

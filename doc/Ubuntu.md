@@ -1,10 +1,6 @@
-
-
 # Ubuntu
 
-
 http://www.ubuntu.com
-
 
 ---
 
@@ -24,3 +20,8 @@ Idiomatic installation sequence. (download, install, update, install more)
     sudo apt-get install libcouchbase-dev libcouchbase2-bin build-essential
 
 ---
+
+Installing email server on Ubuntu.
+https://www.tecmint.com/setup-postfix-mail-server-in-ubuntu-debian/
+
+--

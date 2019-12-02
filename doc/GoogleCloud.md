@@ -7,11 +7,19 @@ https://cloud.google.com/
 
 ---
 
+demo of cloud identification on the cloud with AutoML Vision
+https://youtu.be/_2eG8xpRYZ4
+
+Another one
+https://www.youtube.com/watch?v=_a9VyXhPnrM
+
+And even better one:
+https://www.youtube.com/watch?v=kgxfdTh9lz0
+
+---
+
 The repo with the samples
 https://github.com/GoogleCloudPlatform/cloudml-samples.git
-
-
-
 
 
 

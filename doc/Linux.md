@@ -812,3 +812,48 @@ To kill it:
     $ killall -STOP -u someuser
 
 ---
+
+Check if a process is running
+
+    $ pgrep -x mysqld >/dev/null && echo "Process found" || echo "Process not found"
+    $ pgrep -x httpd >/dev/null && echo "Process found" || echo "Process not found"
+
+    $ pidof httpd >/dev/null && echo "Service is running" || echo "Service NOT running"
+    $ pidof nginx >/dev/null && echo "Service is running" || echo "Service NOT running"
+
+    $ ps -C httpd >/dev/null && echo "Running" || echo "Not running"
+    $ ps -C nginx >/dev/null && echo "Running" || echo "Not running"
+
+    $ systemctl status {service}
+    $ systemctl status sshd
+    $ systemctl status nginx
+
+Older alternative to systemctl is `$sudo service {service} status`
+
+A script to us it:
+
+    #!/bin/bash
+    SERVICE="nginx"
+    if pgrep -x "$SERVICE" >/dev/null
+    then
+        echo "$SERVICE is running"
+    else
+        echo "$SERVICE stopped"
+        # uncomment to start nginx if stopped
+        # systemctl start nginx
+        # mail
+    fi
+    
+---
+
+Utility `script` can record the terminal sessions:
+
+    $ script mysession
+    do whatever
+    $ exit
+    
+To play it back:
+
+    $ script -p mysession
+    
+---
