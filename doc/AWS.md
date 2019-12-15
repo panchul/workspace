@@ -1,7 +1,3 @@
-
-
-## Under Construction
-
 #AWS
 
 ---
@@ -151,5 +147,11 @@ You might want to run "aws configure" to use proper AWS access credentials.
 
 For Python work, install boto3, run "pip install boto3" on a system where you want to run it,
 Boto3 repo: https://github.com/boto/boto3
+
+---
+
+How to deploy your frontend application on aws s3
+https://dev.to/oyetoket/how-to-deploy-your-frontend-application-on-aws-s3-31m9
+(discusses S3 and react hooks)
 
 ---

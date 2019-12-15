@@ -1,9 +1,8 @@
-
-## Technology
+# Links: Technology
 
 TODO: Create sub-pages for the ones that do not have it yet.
 
-### Programming languages, scripts, etc.
+## Programming languages, scripts, etc.
 
 - [C/C++](CPP.md)
   - [Boost](Boost.md)
@@ -52,7 +51,7 @@ TODO: Create sub-pages for the ones that do not have it yet.
 - [RegEx](RegEx.md)
 - [Bash](Bash.md)
 
-### Virtualization, clustering, provisioning, and monitoring
+## Virtualization, clustering, provisioning, and monitoring
 
 - [AWS](AWS.md)
 - [Ansible](Ansible.md)  
@@ -74,7 +73,7 @@ TODO: Create sub-pages for the ones that do not have it yet.
 - [Vagrant](Vagrant.md)  
 - [VirtualBox](VirtualBox.md)  
 
-#### Frameworks Libraries, Static code analyse, architecture approaches, etc.
+### Frameworks Libraries, Static code analyse, architecture approaches, etc.
 
  - [ASCIIDoc](Asciidoc.md)
  - [Apache Log4j](Log4J.md)
@@ -311,22 +310,23 @@ https://www.tartssensors.com/libraries/arduino/
 
 - UDF drive format, ssd/hdd https://en.wikipedia.org/wiki/Universal_Disk_Format#Compatibility
   
-### IDEs and editors
+### IDEs, editors, and related
   
 - [Atom](Atom.md)
-- http://www.codeblocks.org
-- http://www.codelite.org
+- BeyondCompare  https://www.scootersoftware.com/download.php
+- Codeblocks http://www.codeblocks.org
+- CodeLite http://www.codelite.org
 - [Eclipse](Eclipse.md)  
 - [emacs](Emacs.md) 
 - [gdb](Gdb.md)
 - [IntelliJ](Intellij.md)  
-- MS Visual Studio  
-- [vi/vim](Vim.md)  
-- Sublime http://www.sublimetext.com/
 - LiteIDE
+- MS Visual Studio  
+- nbdev https://www.fast.ai/2019/12/02/nbdev/
 - PyCharm (For Python, from Jetbrains)
 - Spyder (for Python)
-- BeyondCompare  https://www.scootersoftware.com/download.php
+- Sublime http://www.sublimetext.com/
+- [vi/vim](Vim.md)  
 - WinMerge  https://sourceforge.net/projects/winmerge/?source=typ_redirect
 
 ### Networking
@@ -506,7 +506,11 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
    https://arxiv.org/abs/1911.01547.pdf
    https://github.com/fchollet/ARC
 
-    
+ - Nice Computer Vision summary, Spectral Graph Convolution step-by-step.
+   https://towardsdatascience.com/spectral-graph-convolution-explained-and-implemented-step-by-step-2e495b57f801
+  
+ - Great Google ML Crash Course:
+   https://developers.google.com/machine-learning/crash-course/ml-intro    
 
 ### Algorithms and Data Structures
 

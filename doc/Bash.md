@@ -754,4 +754,47 @@ You can do command substitution in an echo command itself (no need to use shell 
     $ printf "Today is %s\n" "$(date)"
     Today is Wed Apr 5 00:57:58 IST 2019
     
---
+---
+
+Example of drawing in a terminal:
+
+    P=(' ' █ ░ ▒ ▓)
+    while :;do printf "\e[$[RANDOM%LINES+1];$[RANDOM%COLUMNS+1]f${P[$RANDOM%5]}";done
+
+---
+
+How to setup an auto-completetion:
+https://www.cyberciti.biz/faq/add-bash-auto-completion-in-centos-8-linux
+
+    $ complete -W '192.168.1.11 mydomain.com another.com' ping
+
+Now type ping and press the [TAB] key to use any one of the domain names/IP address for ping command:
+
+    $ ping [TAB]
+    192.168.1.11 mydomain.com another.com
+
+Auto-completion is done using auto-complete package:
+
+    $ dnf install bash-completion
+
+Here's how it is defined by default:
+
+    $ cat /etc/profile.d/bash_completion.sh
+    # Check for interactive bash and that we haven't already been sourced in CentOS server
+    if [ -n "${BASH_VERSION-}" -a -n "${PS1-}" -a -z "${BASH_COMPLETION_VERSINFO-}" ]; then
+     
+        # Check for recent enough version of bash.
+        if [ ${BASH_VERSINFO[0]} -gt 4 ] || \
+           [ ${BASH_VERSINFO[0]} -eq 4 -a ${BASH_VERSINFO[1]} -ge 1 ]; then
+            [ -r "${XDG_CONFIG_HOME:-$HOME/.config}/bash_completion" ] && \
+                . "${XDG_CONFIG_HOME:-$HOME/.config}/bash_completion"
+            if shopt -q progcomp && [ -r /usr/share/bash-completion/bash_completion ]; then
+                # Source completion code.
+                . /usr/share/bash-completion/bash_completion
+            fi
+        fi
+     
+    fi
+    fi
+    
+---

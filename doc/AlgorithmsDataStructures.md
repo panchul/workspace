@@ -11,6 +11,7 @@ STL and related
 - [Sorting](Sorting.md)
 - [Vector](Vector.md)
 - [Graphs](Graphs.md)
+- [BFS](BFS.md)
 - splay tree
 - cartesian tree
 - b-tree

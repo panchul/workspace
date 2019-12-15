@@ -1,12 +1,14 @@
-
-## UNDER CONSTRUCTION
-
 # Python
 
 https://www.python.org/
 
 
 My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/panchul/sb_python).
+
+---
+
+Comparison of Python IDEs
+https://www.tecmint.com/best-python-ides-for-linux-programmers/
 
 ---
 

@@ -1,4 +1,3 @@
-
 # Neural Network
 
 See Also
@@ -9,6 +8,11 @@ See Also
   
 Nice Stanford class on NLP
 http://web.stanford.edu/class/cs224n/
+
+---
+
+Ukrainian project about Ukrainian language-based NLP
+http://lang.org.ua/en/about/
 
 ---
   

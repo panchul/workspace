@@ -1,5 +1,14 @@
-
 # Misc stuff related to psychology and motivation
+
+---
+
+Много и так хероты, а тут еще ты.
+
+---
+
+The negative voice in your head saying "you can't" be successful was put there
+by somebody else. If somebody judges you for trying to do what you love
+and chasing what makes you happy, avoid these people.
 
 ---
 

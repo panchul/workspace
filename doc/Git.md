@@ -415,3 +415,177 @@ Verify changes and force-push your changes
     $ git push --force
 
 ---
+
+Nice cheat sheet (from here https://dev.to/usmslm102/git-cheat-sheet-4f5a)
+
+Initialize local git repository
+
+    $ git init
+
+Check files to commits and branch name
+    
+    $ git status
+
+add files to staging area.
+
+    $ git add FileName.txt
+
+add all modified and new files to staging area
+
+    > git add -all
+
+add all files of directory to staging area
+
+    > git add folder/
+
+Commit changes to local repository
+
+    > git commit -m "Message to commit"
+
+history of commits
+
+    > git log --
+
+Get help for any command
+
+    > git help <Command>
+
+set global user name
+
+    > git config --global user.name "Name"
+
+Show un-staged differences since last commit
+
+    > git diff
+
+View staged differences
+
+    > git diff --staged
+
+Un-stage files and HEAD Refers to last commit
+
+    > git reset HEAD FileName
+
+Blow away all changes since last commit
+
+    > git checkout -- FileName
+
+SKIP STAGING AND COMMIT and Add changes from all tracked files. this Doesn’t add new (untracked) files
+
+    > git commit -a -m "Modify readme"
+
+Reset into staging and Move to commit before ‘HEAD’
+
+    > git reset --soft HEAD^
+
+Add to the last commit with new commit message
+
+    > git commit --amend -m "New Message"
+
+Undo last commit and all changes
+
+    > git reset --hard HEAD^
+
+Undo last 2 commits and all changes
+
+    > git reset --hard HEAD^^
+
+ADDING A REMOTE
+
+    $ git remote add <name>origin <address>https://giturl
+
+show remote repositories
+
+    $ git remote -v
+
+To push to remotes
+
+    $ git push -u <name>origin <branch>master
+
+Remove remote
+
+    $ git remote rm <name>
+
+Clone remote repository
+
+    $ git clone <address>https://giturl
+
+Create branch
+
+    $ git branch <BrancName>
+
+create and checkout branch
+
+    $ git checkout -b <BrancName>
+
+list available branches
+
+    $ git branch
+
+list remote available branches
+
+    $ git branch -r
+
+Switching between branches
+
+    $ git checkout <branch name>
+
+merge 2 branches
+
+    $ git merge <branch name>
+
+Delete branch
+
+    $ git branch -d <branch name>
+
+Force delete branch
+
+    $ git branch -D <branch name>
+
+get remote changes
+
+    $ git pull
+
+get the remote changes to local remote branch
+
+    $ git fetch
+
+merge local remote branch changes to local master branch
+ 
+    $ git merge <local branch>
+
+shows branches alignments
+
+    $ git remote show origin
+
+remove remote branch
+
+    $ git push origin :<branch name>
+
+To clean up deleted remote branches
+
+    $ git remote prune origin
+
+List all tags
+
+    $ git tag
+
+Create tag
+
+    $ git tag -a <Tag Name> -m "Tag message"
+
+Push new tags to remote
+
+    $ git push --tags
+
+Revert to existing tag.
+
+    $ git checkout <tag name>
+
+---
+
+To push from a different account without config(if password matters, skip it to enter separately):
+
+    $ git push https://username:password@github.com/username/reponame.git
+    
+---

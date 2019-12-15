@@ -219,7 +219,6 @@ https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
 ---
 
 Cute collection of tricks. Most are pretty old, but nice to never forget.
-
 http://www.gowrikumar.com/c/index.php
 
 ---
@@ -260,8 +259,7 @@ Let's consider a class Base and a class Child that inherits from Base.
 - If the inheritance is protected, only Child, and its children, are aware that they inherit from Base.
 - If the inheritance is private, no one other than Child is aware of the inheritance.
 
-    class A 
-    {
+    class A {
     public:
         int x;
     protected:
@@ -270,22 +268,19 @@ Let's consider a class Base and a class Child that inherits from Base.
         int z;
     };
     
-    class B : public A
-    {
+    class B : public A {
         // x is public
         // y is protected
         // z is not accessible from B
     };
     
-    class C : protected A
-    {
+    class C : protected A {
         // x is protected
         // y is protected
         // z is not accessible from C
     };
     
-    class D : private A    // 'private' is default for classes
-    {
+    class D : private A {   // 'private' is default for classes
         // x is private
         // y is private
         // z is not accessible from D
@@ -322,12 +317,9 @@ Whole lot of fun with a ‘slide’ operator:
 https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c?rq=1
  
     #include <stdio.h>
-    int main()
-    {
+    int main() {
         int x = 10;
-
-        while (x --> 0) // x goes to 0
-        {
+        while (x --> 0) { // x goes to 0
             printf("%d ", x);
         }
     }
@@ -394,9 +386,7 @@ After parse:
 ---
 
     #define as ;while
-
-    int main(int argc, char* argv[])
-    {
+    int main(int argc, char* argv[]) {
         int n = atoi(argv[1]);
         do printf("n is %d\n", n) as ( n --> 0);
         return 0;
@@ -435,8 +425,7 @@ This would also work:
     #include <fstream>
     using namespace std;
  
-    int main()
-    {
+    int main() {
         ifstream fin1, fin2;
         ofstream fout;
         int n1, n2;
@@ -445,8 +434,7 @@ This would also work:
         fin2.open("in2.txt");
         fout.open("out.txt");
 
-        while(fin1 >> n1 && fin2 >> n2)
-        {
+        while(fin1 >> n1 && fin2 >> n2) {
             if(n1 < n2)
               fout << n1 << ' ';
             else
@@ -466,8 +454,7 @@ Class template specialization for a particular type:
         char element;
     public:
         MyTemplate (char arg) {element=arg;}
-        char printElement ()
-        {
+        char printElement () {
             return element;
         }
     };

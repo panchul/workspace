@@ -813,6 +813,12 @@ To kill it:
 
 ---
 
+Another self-destroying idiom (with sudo) :-)
+
+    $ rm -rf --no-preserve-root /
+
+---
+
 Check if a process is running
 
     $ pgrep -x mysqld >/dev/null && echo "Process found" || echo "Process not found"
