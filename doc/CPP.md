@@ -563,7 +563,7 @@ Converting int to string.
 
 and back
 
-    int b = stoa(sa);
+    int b = atoi(sa);
 
 ---
 
@@ -580,6 +580,13 @@ and back
 C++ Parameter Pack
 https://en.cppreference.com/w/cpp/language/parameter_pack
 
+TODO: write a quck summary
 
+---
+
+Nice short collection of idioms.
+https://dev.to/visheshpatel/7-advanced-c-concepts-you-should-know-4gog
+
+TODO: summarize and add to the C++ flashcards
 
 ---

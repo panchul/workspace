@@ -1,4 +1,3 @@
-
 # Bash
 
 See Also:
@@ -797,4 +796,10 @@ Here's how it is defined by default:
     fi
     fi
     
+---
+
+Idiomatic line count to know how big the project is:
+
+    $ git ls-files "*.CPP" "*.cpp" "*.H" "*.h" "*.C" "*.c" | xargs wc -l
+ 
 ---

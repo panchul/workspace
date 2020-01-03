@@ -4,6 +4,7 @@
 - [Blender](Blender.md)
 - [CUDA](CUDA.md)
 - [DirectX](DirectX.md)
+- [FBX](FBX.md)
 - [ffmpeg](FfMpeg.md)
 - [Fractals](Fractals.md)
 - [gnuplot](Gnuplot.md)
@@ -20,10 +21,11 @@
 - Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
 - [PNG](Png.md)
 - [Qt](Qt.md)
+- [Quaternions](Quaternions.md)
 - video recording for terminal ```asciinema.org``` ```gohugo.io``` web content
 - [Unity](Unity.md)
 - [Unreal Engine](UnreadlEngine.md)
-
+- Autodesk FBX SDK
 
 ---
 

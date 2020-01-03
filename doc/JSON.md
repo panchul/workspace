@@ -120,3 +120,13 @@ int main()
 ```
 
 ---
+
+To properly define json object from a string:
+
+    std::string mystring="{\"myarray_of_strings\":[\"a\",\"b\"]};
+    json myjson;
+    std::vector<std::string> myvector;
+    std::stringstream(mystring) >> myjson;
+    myjson["myarray_of_strings"].get_to(myvector);
+
+---

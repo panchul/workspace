@@ -112,13 +112,13 @@ int main() {
 
 ---
 
+```
 // baseline is from here: http://www.cplusplus.com/reference/mutex/mutex/
 // $ g++ -std=c++1z mutex_trylock.cpp -lpthread 
 #include <iostream>       // std::cout
 #include <thread>         // std::thread
 #include <mutex>          // std::mutex
 
-```
 volatile int counter (0); // non-atomic counter
 std::mutex mtx;           // locks access to counter
 

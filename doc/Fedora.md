@@ -2,6 +2,12 @@
 
 ---
 
+For the kernel modules:
+
+    $ sudo yum install kernel-devel
+
+---
+
 Archieves, like Fedora 25 for legacy CUDA drivers:
 https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/
 

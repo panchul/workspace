@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Sorting 
 
 ## Array/list sorting

@@ -1,10 +1,6 @@
-
-## Under Construction
-
 # Go (Golang)
 
 My Golang sandbox is [https://github.com/panchul/sb_golang](https://github.com/panchul/sb_golang).
-
 
 ---
 
@@ -246,3 +242,80 @@ Output:
 
 ---
 
+Deploying to Heroku: Docker, Go and React
+https://dev.to/cishiv/deploying-to-heroku-docker-go-and-react-38hh
+
+    package main
+    import (
+        "log"
+        "net/http"
+        "os"
+    )
+    func main() {
+        /*
+            Grab the environment variable that has been hopefully set, but also set up a default
+        */
+        port := os.Getenv("PORT")
+        defaultPort := "8080"
+        /*
+            Serve the contents of the build directory that was produced as a part of `npm run build` on the root `/`
+        */
+        http.Handle("/", http.FileServer(http.Dir("./build")))
+    
+        /*
+            Check if the port environment variable has been set and if so, use that, otherwise let's use a reasonable default
+        */
+        if !(port == "") {
+            log.Fatal(http.ListenAndServe(":"+port, nil))
+        } else {
+            log.Fatal(http.ListenAndServe(":"+defaultPort, nil))
+        }
+    }
+
+And the Dockerfile for it:
+
+    # Stage 1
+    FROM golang:alpine as builder
+    RUN apk update && apk add --no-cache git
+    RUN mkdir /build
+    ADD . /build/
+    WORKDIR /build
+    RUN go get -d -v
+    RUN go build -o deployment-demo .
+    # Stage 2
+    FROM alpine
+    RUN adduser -S -D -H -h /app appuser
+    USER appuser
+    COPY --from=builder /build/ /app/
+    WORKDIR /app
+    CMD ["./deployment-demo"]
+    
+---
+
+A post about TDD in GO
+https://dev.to/jankaritech/demonstrating-tdd-test-driven-development-in-go-27b0
+
+---
+
+Example `for` loop with channels
+
+    package main
+    import "fmt"
+    func main() {
+        ch := make(chan int) // Create a channel
+        go send123(ch)       // Start send123() in a new goroutine
+    
+        // Receive and print integers from channel
+        for i := range ch {
+            fmt.Println(i)
+        }
+    }
+    func send123(ch chan int) {
+        // Send 3 integers through channel
+        for i := 1; i <= 3; i++ {
+            ch <- i
+        }
+        close(ch) // Close channel
+    }
+
+---
