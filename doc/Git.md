@@ -1,11 +1,9 @@
-
 # Git
 
 See Also:
  - [Mercurial](Mercurial.md)
  - [Subversion](Subversion.md)
  - [npm](Npm.md)
-
 
 [https://git-scm.com/](https://git-scm.com/)
 
@@ -588,4 +586,15 @@ To push from a different account without config(if password matters, skip it to 
 
     $ git push https://username:password@github.com/username/reponame.git
     
+---
+
+To cache the password for operations over https:
+
+https://www.tecmint.com/fix-git-user-credentials-for-https
+
+---
+
+Another intro to Git. Simple examples.
+https://dev.to/john2220/basic-git-commands-you-should-know-51ij
+
 ---

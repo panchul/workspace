@@ -319,3 +319,8 @@ Example `for` loop with channels
     }
 
 ---
+
+A state machine in Go (for a simple game and using a 2d library)
+https://dev.to/steelx/state-machine-in-go-for-a-2d-game-198l
+
+---

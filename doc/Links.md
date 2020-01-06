@@ -322,12 +322,13 @@ https://www.tartssensors.com/libraries/arduino/
 - [gdb](Gdb.md)
 - [IntelliJ](Intellij.md)  
 - LiteIDE
-- MS Visual Studio  
 - nbdev https://www.fast.ai/2019/12/02/nbdev/
 - PyCharm (For Python, from Jetbrains)
 - Spyder (for Python)
 - Sublime http://www.sublimetext.com/
-- [vi/vim](Vim.md)  
+- [vi/vim](Vim.md)
+- Visual Studio  
+- [Visual Studio Code](VisualStudioCode.md)  
 - WinMerge  https://sourceforge.net/projects/winmerge/?source=typ_redirect
 
 ### Networking

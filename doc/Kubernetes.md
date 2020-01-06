@@ -268,3 +268,8 @@ Another step-by-step tutorial:
 https://dev.to/azure/learn-kubernetes-with-this-5-part-series-29km
 
 ---
+
+Practical Kubernetes Stories for Developers.
+https://dev.to/pavanbelagatti/practical-kubernetes-stories-for-developers-330d
+
+---
