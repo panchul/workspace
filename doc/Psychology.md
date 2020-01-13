@@ -1,7 +1,9 @@
-
-## UNDER CONSTRUCTION
-
 # Psychology
+
+---
+
+Rats free trapped companions, even when given choice of chocolate instead.
+https://news.uchicago.edu/story/helping-your-fellow-rat-rodents-show-empathy-driven-behavior
 
 ---
 

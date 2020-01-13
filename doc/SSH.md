@@ -1,8 +1,12 @@
-
 # SSH protocol
 
 http://en.wikipedia.org/wiki/Secure_Shell
 http://www.ssh.com/
+
+---
+
+Top 20 OpenSSH server best security practices 
+https://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html
 
 ---
 

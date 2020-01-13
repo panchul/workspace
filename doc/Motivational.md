@@ -310,3 +310,8 @@ Where there is no hope, it is up to us to make it.
 Albert Camus
 
 ---
+
+About forgiveness. Why it is good for those ho forgive(taking control from whoever wronged them).
+https://www.ted.com/talks/sarah_montana_the_real_risk_of_forgiveness_and_why_it_s_worth_it
+
+---
