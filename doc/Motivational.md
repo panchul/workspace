@@ -2,6 +2,21 @@
 
 ---
 
+Kurt Vonnegut tells his wife he's going out to buy an envelope:
+“Oh, she says, well, you're not a poor man. You know, why don't you go online and buy
+ a hundred envelopes and put them in the closet? And so I pretend not to hear her. And
+ go out to get an envelope because I'm going to have a hell of a good time in the process
+ of buying one envelope. I meet a lot of people. And see some great looking babies. And a
+ fire engine goes by. And I give them the thumbs up. And I'll ask a woman what kind of dog
+ that is. And, and I don't know. The moral of the story is – we're here on Earth to fart
+ around. And, of course, the computers will do us out of that. And what the computer people
+ don't realize, or they don't care, is we're dancing animals. You know, we love to move
+ around. And it's like we're not supposed to dance at all anymore."
+—
+Btw, this is from the book “A Man Without a Country” (by Kurt Vonnegut), which ideally you buy walking to a local book store.
+
+---
+
 Много и так хероты, а тут еще ты.
 
 ---
@@ -37,7 +52,7 @@ Be careful of what you think is right and true ... is merely what you prefer to 
 
 ---
 
-Inreresting tips on phychological.
+Interesting tips on phychological.
 CharismaOnDemand
 https://www.youtube.com/watch?v=lykvHGNo9yE
 
@@ -228,7 +243,7 @@ https://www.youtube.com/watch?v=lLEiT9PeHSg
 
 ---
 
-﻿“Satisfaction lies in the effort, not in the attainment, full effort is full victory.” ― Mahatma Gandhi
+“Satisfaction lies in the effort, not in the attainment, full effort is full victory.” ― Mahatma Gandhi
 
 ---
 

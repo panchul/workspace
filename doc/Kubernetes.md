@@ -7,6 +7,14 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ---
 
+Kubernetes cluster on CentOS 8
+https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
+
+Kubernetes cluster on CentOS 7
+https://www.tecmint.com/install-kubernetes-cluster-on-centos-7/
+
+---
+
 Docker on Windows:
 https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon
 

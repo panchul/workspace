@@ -24,8 +24,6 @@ https://www.youtube.com/watch?v=ZgdS0EUmn70&list=PL73KFetZlkJSZ9vTDSJ1swZhe6CIYk
 ---
 Misc Links in no particular order, loosely related to career.
 
-https://capitalfactory.apps.umbel.com/6d6/2016-pre-sxsw-startup-crawl/  
-https://austinstartups.com/bbva-pre-sxsw-startup-crawl-stops-8ed1002b8e92#.elta46dmt  
 http://www.keepaustinbeautiful.org  
 http://www.southwestshowdown.com
 https://remote4.me/free-remote-work-freelance-services/
@@ -93,6 +91,7 @@ https://www.wsj.com/graphics/how-does-your-pay-stack-up/
 
 A different link with some resources is here:
 https://www.pandadoc.com/consulting-proposal-templates/
+
 ---
 
 Signs a narcissist is manipulating you

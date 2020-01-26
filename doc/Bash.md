@@ -803,3 +803,12 @@ Idiomatic line count to know how big the project is:
     $ git ls-files "*.CPP" "*.cpp" "*.H" "*.h" "*.C" "*.c" | xargs wc -l
  
 ---
+
+A neat way to compare two files at different hosts, using `diff`
+https://www.tecmint.com/compare-local-and-remote-files-in-linux/
+
+    $ ssh user@host "cat /home/user/file_remote" | diff - file_local
+    
+    $ diff <(ssh user@host1 `cat /path/to/file1`) <(ssh user@remote2 `cat /path/to/file2`)
+
+---

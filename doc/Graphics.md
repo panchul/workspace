@@ -1,4 +1,3 @@
-
 # Graphics
 
 - [Blender](Blender.md)
@@ -26,6 +25,21 @@
 - [Unity](Unity.md)
 - [Unreal Engine](UnreadlEngine.md)
 - Autodesk FBX SDK
+
+---
+
+Small screen tech, first look at new smart contact lens.
+https://techxplore.com/news/2020-01-small-screen-tech-smart-contact.html
+
+---
+
+Filament is a real-time physically based rendering engine for Android, iOS, Windows, Linux, macOS and WASM/WebGL
+https://github.com/panchul/filament
+
+---
+
+Physically-based WebGL 3D model viewer
+marmoset.co/viewer
 
 ---
 
@@ -61,5 +75,10 @@ https://en.wikipedia.org/wiki/Wavefront_.obj_file
 To extract frames from a video, you can use ffmpeg:
 
     $ ffmpeg -i somevideo.mp4 myframe%03d.jpg
+
+---
+
+Good review of tangent/binormals for the uv-mapping in graphics:
+learnopengl.com/Advanced-Lighting/Normal-Mapping
 
 ---

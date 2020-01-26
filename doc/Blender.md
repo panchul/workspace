@@ -1,7 +1,11 @@
 
-## UNDER CONSTRUCTION
-
 # Blender
+
+
+---
+
+Neat overview:
+https://www.blender.org/support/tutorials/
 
 ---
 

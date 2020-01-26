@@ -1,10 +1,11 @@
-
-## UNDER CONSTRUCTION
-
 # OpenSSL
 
-
 https://www.openssl.org/
+
+---
+
+Neat walk-through how to Secure Apache with SSL certificate on CentOS8
+https://www.tecmint.com/secure-apache-with-lets-encrypt-ssl-certificate-on-centos-8/
 
 ---
 
