@@ -1,4 +1,3 @@
-
 # Algorithms and Data Structures
 
 My sandbox for data structures is here:
@@ -6,14 +5,15 @@ https://github.com/panchul/sb_cpp/tree/master/data_structures
 
 STL and related
 
+- cartesian tree
+- [Graphs](Graphs.md)
+- [Hash Table](HashTable.md)
 - [List](List.md)
 - [Map](Map.md)
 - [Sorting](Sorting.md)
 - [Vector](Vector.md)
-- [Graphs](Graphs.md)
 - [BFS](BFS.md)
 - splay tree
-- cartesian tree
 - b-tree
 - red-black tree
 - avl tree
@@ -30,6 +30,12 @@ STL and related
 - vector clocks
 - traversals(breadth-first, depth-first)
 - divide and conquer
+- [Markov Chains](MarkovChains.md)
+
+---
+
+Another Bit O Notation overview
+https://www.youtube.com/watch?v=5yJ_QLec0Lc
 
 ---
 

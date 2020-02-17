@@ -2,6 +2,43 @@
 
 ---
 
+The Bystander Effect: The Death of Kitty Genovese
+https://www.youtube.com/watch?v=BdpdUbW8vbw
+
+---
+
+Confirming with the group experiment. Standing up when there is a beep.
+https://www.youtube.com/watch?v=Ia9aE3RH1Uc
+
+---
+
+About leaving in the right time, early.
+fit4brain.com/10266
+
+---
+
+Humans are hardwired to dismiss facts that don’t fit their worldview
+https://theconversation.com/humans-are-hardwired-to-dismiss-facts-that-dont-fit-their-worldview-127168
+
+(See it in Motivation.md)
+
+---
+
+Experimentally Produced Social Problems in Rats 1939
+https://www.youtube.com/watch?v=si4uof3Y-Wo
+
+---
+
+Bobo Doll Experiment, about observation of violence
+https://www.youtube.com/watch?м=zerCK0lRjp8
+
+---
+
+Nunchi, a Korean concept of fitting in.
+https://en.wikipedia.org/wiki/Nunchi
+
+---
+
 Rats free trapped companions, even when given choice of chocolate instead.
 https://news.uchicago.edu/story/helping-your-fellow-rat-rodents-show-empathy-driven-behavior
 

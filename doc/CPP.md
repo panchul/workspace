@@ -6,15 +6,115 @@ See Also:
  - [AlgorithmsDataStructures](AlgorithmsDataStructures.md) 
  - [Visual Studio Code](VisualStudioCode.md) 
 
+ - [RAII](RAII.md) 
+ - [Return Type Resolver](ReturnTypeResolver.md) 
+ - [Futures](Futures.md) 
+
 My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp).
 
+---
+
+The snippet about futures:
+
+    // $ g++ -std=c++1z filename.cpp 
+    // future example
+    // see more at http://www.cplusplus.com/reference/future/future/
+    
+    #include <iostream>       // std::cout
+    #include <future>         // std::async, std::future
+    #include <chrono>         // std::chrono::milliseconds
+    
+    // a non-optimized way of checking for prime numbers:
+    bool is_prime (int x) {
+      for (int i=2; i<x; ++i) if (x%i==0) return false;
+      return true;
+    }
+    
+    int main ()
+    {
+      // call function asynchronously:
+      std::future<bool> fut = std::async (is_prime,444444443); 
+    
+      // do something while waiting for function to set future:
+      std::cout << "checking, please wait";
+      std::chrono::milliseconds span (100);
+      while (fut.wait_for(span)==std::future_status::timeout)
+        std::cout << '.' << std::flush;
+    
+      bool x = fut.get();     // retrieve return value
+    
+      std::cout << "\n444444443 " << (x?"is":"is not") << " prime.\n";
+    
+      return 0;
+    }
+
+---
+
+Nice summary about when use `const` and when `constexpr`
+http://www.vishalchovatiya.com/when-to-use-const-vs-constexpr-in-cpp/
+
+    using ull = unsigned long long;
+    constexpr ull operator"" _KB(ull no)
+    {
+        return no * 1024;
+    }
+    constexpr ull operator"" _MB(ull no)
+    {
+        return no * (1024_KB);
+    }
+    int main()
+    {
+        cout << 1_KB << endl;
+        cout << hex << 1_MB << endl;
+    }
+
+Or, more basic usage:
+
+    int varA = 3;
+    const int varB = 5;
+    constexpr int varC = 7;
+
+These are all compile-time known.
+
+    int getRandomNo()
+    {
+        return rand() % 10;
+    }
+    int main()
+    {
+        const int varB = getRandomNo();       // OK
+        constexpr int varC = getRandomNo();   // not OK! compilation error
+        return 0;
+    }
+    
+Value of varB would not anymore compile time. While statement with varC will
+throw compilation error. The reason is constexpr will always accept a strictly
+compile-time value.
+    
+    constexpr int sum(int x, int y)
+    {
+        return x + y;
+    }
+    int main()
+    {
+        const int result = sum(10, 20);     // Here, you can use constexpr as well
+        cout << result;
+        return 0;
+    }
+   
+---
+
+7 Best practices for exception handling in C++ with examples
+http://www.vishalchovatiya.com/7-best-practices-for-exception-handling-in-cpp-with-example/
+
+TODO: summarize.
+    
 ---
 
 Comparison of IDEs for C++ for Linux.
 https://www.tecmint.com/best-linux-ide-editors-source-code-editors/
 
 26 of them:
-
 
 Visual Studio Code has nice extensions. Here is a Go extension, for example:
 https://github.com/Microsoft/vscode-go

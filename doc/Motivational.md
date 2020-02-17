@@ -2,6 +2,64 @@
 
 ---
 
+Humans are hardwired to dismiss facts that don’t fit their worldview
+https://theconversation.com/humans-are-hardwired-to-dismiss-facts-that-dont-fit-their-worldview-127168
+
+Our ancestors evolved in small groups, where cooperation and persuasion had at least as much
+to do with reproductive success as holding accurate factual beliefs about the world.
+Assimilation into one’s tribe required assimilation into the group’s ideological belief system.
+An instinctive bias in favor of one’s “in-group” and its worldview is deeply ingrained in human
+psychology.
+A human being’s very sense of self is intimately tied up with his or her identity group’s status
+and beliefs. Unsurprisingly, then, people respond automatically and defensively to information
+that threatens their ideological worldview. We respond with rationalization and selective
+assessment of evidence – that is, we engage in “confirmation bias,” giving credit to expert
+testimony we like and find reasons to reject the rest.
+
+---
+
+https://nesnilos.com/ljudi/poka-zhizn-vam-ne-nravitsja-ona-prohodit-legendarnaja-rech-kurta-vonneguta-kotoruju-sleduet-vremja-ot-vremeni-perechityvat/
+
+Это речь Курта Воннегута, произнесённая в Массачусетском технологическом институте. Даже если вы уже давно не выпускник, всё равно найдёте в его словах что-то полезное для себя.
+
+«Уважаемые выпускники, мажьтесь солнцезащитными кремами!
+
+- Если бы я мог дать вам только один совет на будущее, он был бы как раз про солнцезащитные кремы. Выгода их использования была доказана учеными, в то время как остальные мои рекомендации не имеют более надежной основы, чем собственный путаный опыт, эти советы я вам сейчас изложу.
+- Наслаждайтесь силой и красотой своей юности, пока жизнь вам не нравится, она проходит. Поверьте мне, через 20 лет вы посмотрите на свои фотографии и вспомните с чувством, которое вы сейчас не можете понять. Сколько возможностей было открыто перед вами, и как же сказочно вы на самом деле выглядели.
+- Вы не так много весите, как вам кажется.
+- Не беспокойтесь о будущем. Или хорошо, беспокойтесь, но знайте, что эти беспокойства так же эффективны, как попытка решить алгебраическое уравнение с помощью пережевывания жевательной резинки. Реальными неприятностями в вашей жизни случаются события, которые никогда не трогали ваш беспокойный ум, такие, например, что застают вас врасплох в четыре часа ночи, в какой-нибудь обычный вторник.
+- Ежедневно делайте что-нибудь из того, что вас пугает.
+- Пойте.
+- Относитесь бережно к сердцам других людей.
+- Не миритесь с теми, кто равнодушен к вашему сердцу.
+- Не забывайте чистить зубы.
+- Не тратьте время на зависть, иногда вы впереди, иногда позади, гонка длинна, и, в конце концов, вы ее ведете только с самим собой.
+- Помните комплименты, которые вы получаете, но забывайте оскорбления, и если вы преуспеете в этом, то расскажите мне как.
+- Храните ваши старые любовные письма, выбрасывайте старые банковские выписки.
+- Периодически подтягивайтесь.
+- Не чувствуйте себя виноватым, если не знаете, что вы хотите делать с вашей жизнью.
+- Самые интересные люди из тех, кого я знаю, в 22 года понятия не имели, как они хотят прожить свою жизнь, причем некоторые из наиболее интересных мне знакомых сорокалетних не знают до сих пор.
+- Потребляйте кальций. Бережно относитесь к своим коленям, вам их будет не хватать, когда они выйдут из строя.
+- Может быть, вы вступите в брак, может быть, нет. Может быть, у вас будут дети, может быть, нет. Может быть, вы разведетесь в сорок, а может быть, вы будете отплясывать танец маленьких утят на семьдесят пятой годовщине своей свадьбы. Что бы вы ни делали, не хвалите себя слишком много, но и не ругайте тоже. Ваш выбор, как и у всех, наполовину во власти случая.
+- Наслаждайтесь своим телом, используйте его, как только можете, и не бойтесь того, что другие люди думают об этом. Тело — это самый прекрасный инструмент, которым вы когда-либо будете обладать.
+- Танцуйте, даже если вам негде этого делать, кроме вашей гостиной.
+- И пожалуйста, не читайте журналы о красивой жизни, они только заставят вас чувствовать себя отвратительно.
+- Будьте благодушны со своими братьями и сестрами, они ваша лучшая связь с прошлым и те, кто, скорее всего, будут рядом с вами в будущем.
+- Поймите, что друзья приходят и уходят, но за нескольких драгоценных нужно держаться.
+- Прилагайте все усилия, чтобы преодолеть разрывы в географии и в жизни, потому что чем старше вы становитесь, тем больше вам нужны будут люди, которых вы знали, когда были молоды.
+- Поживите немного в Нью-Йорке (или другом мегаполисе), но покиньте его, прежде чем он сделает вас твердым. Поживите на острове Бали, но покиньте его, прежде чем он сделает вас мягким. И, вообще, путешествуйте.
+- Примите несколько неизбежных истин: цены будут расти, политики будут изменять своим женам. Вы тоже будете стареть, и, когда состаритесь, вы будете фантазировать, что когда вы были молоды, цены были разумными, политики были благородными и дети уважали своих стариков.
+- Кстати, уважайте своих стариков, вы никогда не знаете, когда они уйдут навсегда.
+- Не рассчитывайте, что кто-нибудь будет обеспечивать вас. Может быть, у вас есть свой инвестиционный фонд, может быть, у вас есть богатый супруг или супруга, но вы никогда не знаете, когда каждый из них может покинуть вас.
+- Не экспериментируйте слишком много с вашими волосами, или к тому времени, когда вам стукнет сорок, они будут выглядеть на восемьдесят пять.
+- Все мы когда-нибудь уйдем, но важно продержаться до конца, во что-то веря. В этом самая большая трудность, потому что, кажется, что нет ни черта такого, во что действительно стоило бы верить.
+
+Вот такие вот советы, уважаемые выпускники. Но будьте осторожны и терпеливы с теми, кто вам их дает, совет — это форма ностальгии,
+это способ выуживания прошлого из мусорной кучи, закрашивание свежими красками нелицеприятных моментов и переработки его в нечто более дорогое,
+чем оно было. Но то, что солнцезащитные кремы действительно спасают вашу кожу от ожогов, доказано учеными, так что смело мажьтесь».
+
+---
+
 Kurt Vonnegut tells his wife he's going out to buy an envelope:
 “Oh, she says, well, you're not a poor man. You know, why don't you go online and buy
  a hundred envelopes and put them in the closet? And so I pretend not to hear her. And
@@ -14,6 +72,11 @@ Kurt Vonnegut tells his wife he's going out to buy an envelope:
  around. And it's like we're not supposed to dance at all anymore."
 —
 Btw, this is from the book “A Man Without a Country” (by Kurt Vonnegut), which ideally you buy walking to a local book store.
+
+---
+
+"If my critics saw me walking over the Thames they would say it was because I couldn't swim."
+Margaret Thatcher
 
 ---
 
@@ -326,7 +389,49 @@ Albert Camus
 
 ---
 
-About forgiveness. Why it is good for those ho forgive(taking control from whoever wronged them).
+About forgiveness. Why it is good for those who forgive(taking control from whoever wronged them).
 https://www.ted.com/talks/sarah_montana_the_real_risk_of_forgiveness_and_why_it_s_worth_it
+
+---
+
+https://iheartintelligence.com/things-about-you-that-will-change-when-you-lose-your-parents/
+
+Here are 11 things that you will experience when you lose your parents:
+1. You will come to fully appreciate the importance of family
+Nobody will love you so strongly and so timelessly. No matter how many times you felt they judged you unfairly, they never turned you away.
+We used to roll our eyes when they would say, “I only want what’s best for you.” Now we understand they really meant it.
+
+2. You won’t have the power to function properly for a while
+You will feel as if a vital part of your being has been ripped out of you. Because as soon as they are gone, a part of your heart will die with them, never to return. You will never be the same person you once were.
+This crushing experience will change your life and affect both your emotional and physical states. It will take a while for you to heal and see life with a clear vision again. But, in time, you will be alright.
+
+3. You will feel broken and alone
+The pain will always stay in your heart, to remind you how cruel and unfair life truly is. It will never leave you. No matter how hard you try to break free from the chains of sadness, you will not find enough strength to do it permanently. But in time, you will accept it.
+
+4. You won’t be able to move for a while
+You will experience physical sickness, and you will wish more than anything that your parents were there to make you a warm dinner and care for you.
+
+5. You will feel uncomfortable listening to other people complain about their parents
+Listening to friends or acquaintances complaining about their parents and taking them for granted will drive you insane. It will push you towards confronting them and telling them they should be glad that they still have a family.
+
+6. In fact, you will envy them because they still have parents to spend time with
+You won’t ever understand them because you would give anything to have your mother hug you once again and tell you that all will be well. You will be jealous of their blessing, and you will secretly curse them for complaining about having to spend time with their mom and dad.
+
+7. The sadness will never truly go away
+There will be times when you will cry your eyes out just like you did when they passed away. The pain transforms with time, but it is never fully gone.
+
+8. The holidays will never be the same
+The lights of Christmas will be dimmed. Your father won’t be there to call you up and remind you to get a bottle of wine. Your mother will no longer be there to let you know that the table is all set and everyone is waiting for you. Your parents won’t be around to play with your children and share their own funny childhood stories with them. The holiday seasons will never be the same again.
+
+9. You will still feel an urge to call them when you have important news
+Each time something exciting happens to you, you will get that pressing feeling to call your parents and share the news with them. Sometimes, you may even catch yourself pressing the call button to see if anyone will pick up. The soul-crushing pain of having to come to terms with the fact that your parents will never pick up the phone again will always haunt you.
+
+10. You will learn secrets
+You will uncover things about your parents’ past that may make you uncomfortable. You will understand that they were actual people, not just parents and will never know how to handle that because you cannot talk to them about it.
+
+11. You will realize how much you truly loved them
+That is the sad thing about loss. You only realize how strongly you loved someone when they are not in your life any longer.
+They will no longer be there to see you succeed and grow into the person they inspired you to become.
+If you are lucky enough to still have parents, do not forget to tell them how much they truly mean to you. Visit them regularly, spend quality time with them, call them often to let them know you care for them. Simply be there for them and cherish every moment you get to spend as a family.
 
 ---

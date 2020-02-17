@@ -3,9 +3,18 @@
 
 Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](﻿https://www.linkedin.com/in/panchul)
 
-
 TODO: Add the list courses I took
 TODO: Add list interests, etc.
+
+---
+
+4 ‘ballsy questions’ everyone should ask in job interviews—but most don’t, says hiring CEO of 10 years
+https://www.cnbc.com/2020/02/13/hiring-ceo-4-ballsy-questions-everyone-should-ask-in-job-interviews-but-most-dont.html
+
+---
+
+Nice advices on networking, preferred ways to communicate, etc.
+https://mc.today/pishut-privet-i-zhdut-otveta-11-pravil-kak-ne-vyglyadet-zhlobom-v-delovoj-perepiske/
 
 ---
 
@@ -207,15 +216,15 @@ They know "Culture eats strategy for breakfast." Peter Drucker
 2. Стоимость услуги диктует подрядчик, а не наниматель.
 
 3. Подрядчик не может использовать офис компании, как свой офис, у него должно быть отдельное
- место работы (которое может включать место жительства), но обязательно отделено от объекта найма. 
+   место работы (которое может включать место жительства), но обязательно отделено от объекта найма. 
 
 4. Наниматель не имеет право диктовать часы работы. В условиях контракта может быть оговорена
- только дата завершения проекта.
+   только дата завершения проекта.
 
 5. Подрядчику нельзя диктовать как выполнять работу.
 
 6. Если зараз на услугу длиться более чем через шесть месяцев, у подрядчика должна быть лицензия
- на ведение бизнеса в дополнение к любым необходимым профессиональным лицензиям.
+   на ведение бизнеса в дополнение к любым необходимым профессиональным лицензиям.
 
 ---
 

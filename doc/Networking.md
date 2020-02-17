@@ -1,4 +1,3 @@
-
 # Networking
 
 See Also:
@@ -6,7 +5,20 @@ See Also:
   - [DNS](DNS.md)
   - [OAuth](OAuth.md)
   - [Postman](Postman.md)
+  - [SDN](SDN.md)
   - [Wireshark](Wireshark.md)
+  
+---
+
+SDN overview from VMware:
+https://www.vmware.com/topics/glossary/content/software-defined-networking
+
+NSX Data centers
+
+- Open SDN: admins use protocol like OpenFlow to control virtual and physical switches at data panel level
+- SDN by APIs: defining interfaces to control the flow
+- Overlay Model: virtual on top of existing physical, dynamic tunnels
+- Hybrid SDN: combination of sdn and traditional networking.
   
 ---
 

@@ -15,6 +15,22 @@ My shell sandbox is [https://github.com/panchul/sb_shell](https://github.com/pan
 
 ---
 
+Simple way to make multi-line comments is to use operator `:` :
+
+    #!/bin/bash
+    something=somethingelse
+    : '
+    here goes a multi-line comment
+    another line
+    more
+    '
+    echo "hi htere"
+
+Command `:` has no effect. The command does nothing beyond expanding
+arguments and performing andy specified redirections. A zero exit code is returned.    
+
+---
+
 To change shell, to, for example, `zsh`:
 
     $ chsh -s /bin/zsh

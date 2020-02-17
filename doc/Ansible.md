@@ -1,4 +1,3 @@
-
 # Ansible
 
 [https://www.ansible.com/](https://www.ansible.com/)
@@ -6,6 +5,11 @@
 See Also:
 
 - [https://github.com/panchul/sb_ansible](https://github.com/panchul/sb_ansible)
+
+---
+
+Another demo, updating all packages on ubuntu.
+https://www.cyberciti.biz/faq/ansible-apt-update-all-packages-on-ubuntu-debian-linux/
 
 ---
 

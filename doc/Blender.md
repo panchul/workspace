@@ -1,6 +1,14 @@
-
 # Blender
 
+---
+
+Neat tutorial how to make and use 360 images in Blender.
+https://www.youtube.com/watch?v=rXpyNDAt6ok
+
+---
+
+Stereoscopic workflow
+https://www.youtube.com/watch?v=v4tR33Ry4GY
 
 ---
 

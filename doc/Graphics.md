@@ -28,6 +28,26 @@
 
 ---
 
+Another hologram system, PORTL
+https://portlhologram.com/
+
+---
+
+Interesting talk on photorealism
+https://www.youtube.com/watch?v=R1-Ef54uTeU
+
+---
+
+Nice talk about AI and procedural level design. Sort of like infrastructure-as-code for DevOps, but for desing in 3d.
+https://youtu.be/FlgLxSLsYWQ
+
+---
+
+Popular Graphics APIs DirectX, 12, Vulkan, Metal, OpenGL ES
+GPGPU, OpenCL, DirectCompute
+
+---
+
 Small screen tech, first look at new smart contact lens.
 https://techxplore.com/news/2020-01-small-screen-tech-smart-contact.html
 

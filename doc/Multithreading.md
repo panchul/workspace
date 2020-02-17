@@ -8,6 +8,16 @@ See Also:
 
 ---
 
+Long and nice discussion on locks, mutexes, semaphores, etc:
+https://stackoverflow.com/questions/2332765/lock-mutex-semaphore-whats-the-difference
+
+
+
+
+
+
+---
+
 Basic usage, from my sandbox https://github.com/panchul/sb_cpp :
 
     // $ g++ -std=c++1z thread_args.cpp -lpthread

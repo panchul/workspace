@@ -32,6 +32,11 @@ See Also:
 
 ---
 
+Screen recorders for desktop screen recording in Linux
+https://www.tecmint.com/best-linux-screen-recorders-for-desktop-screen-recording/
+
+---
+
 Neat overview/catalog of all sorts of applications on Linux
 https://www.fossmint.com/awesome-linux-software/
 

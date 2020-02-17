@@ -421,6 +421,7 @@ Aggregated List of C++ networking libraries
 - [Alexa](Alexa.md)
 - Caffe and Caffe2
 - Chat bots
+- [MarkovChains](MarkovChains.md)
 - MXNet
 - Neon
 - [Neural Network](NeuralNetwork.md)
@@ -474,8 +475,6 @@ Neat command-line tricks:
   
 - datascience.ibm.com
 
-- http://setosa.io/ev/markov-chains/ neat Markov Chains visualization
-
 - https://towardsdatascience.com/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3
 
 - Free Blockchain courses online: https://learndisruptprofitrepeat.com/learn-to-develop-blockchain-decentralized-apps-5-free-programmer-training-courses/
@@ -524,6 +523,7 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
   https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
 - Scalable web architecture http://www.aosabook.org/en/distsys.html
 - service oriented architectures
+- [MarkovChains](MarkovChains.md)
 - map-reduce
 - distributed caching
 - load balancing
@@ -697,6 +697,10 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
 
 - DEFCON talk about fake conferences. DEF CON 26 - Svea, Suggy, Till - Inside the Fake Science Factory
   https://www.youtube.com/watch?v=ras_VYgA77Q
+
+- Very nice collection of renewable energy examples, Canadian well, hydropower, etc.
+  https://building-tech.org/kanadskij-kolodec-ispolzovanie-tepla-zemli-dlya-otopleniya-zimoj-i-ohlazhdeniya-letom/
+
 
 ## Manufacturing, IoT, etc.
 
