@@ -1,10 +1,8 @@
-
 # Exceptions (C++)
 
 See Also:
   - [Cpp](CPP.md)
   - [STL](STL.md)
-
 
 ---
 

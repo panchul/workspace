@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Burrow
 
 https://github.com/linkedin/Burrow

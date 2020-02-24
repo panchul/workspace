@@ -1,10 +1,61 @@
+# Career
 
-## UNDER CONSTRUCTION
+See Also:
+
+  - [Business](Business.md)
 
 Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](﻿https://www.linkedin.com/in/panchul)
 
 TODO: Add the list courses I took
 TODO: Add list interests, etc.
+
+---
+
+Richard Branson's article on how to delegate.
+
+When starting out, entrepreneurs face seemingly never-ending lists of tasks. I had
+to be a jack-of-all-trades at Virgin Records. I had at least 10 job titles (depending
+on who I was talking to) – marketing, PR, operations, business development… you name
+it, I did it.
+
+Working across so many areas is great because it enables you to learn quickly, broaden
+your skill set, and tackle challenges head on with confidence – but we could never
+have evolved from a mail-order record retailer to a global brand if I hadn’t learnt
+how to delegate early on.
+
+With that in mind, I decided to write up a five-step delegation guide that I’ve
+followed over the years. Hopefully you find it helpful too.
+
+1. Identify your strengths and weaknesses. Reflect on the tasks that come naturally
+   to you. What elements of the business do you find enjoyable and stress-free? What
+   do you find demanding and time-consuming? Ask your friends, family and peers for
+   their honest observations too. Once you’ve collected your thoughts and findings,
+   write them down and take note of any patterns and themes.
+
+2. Do the same for your business as a whole. Identify any areas where improvement
+   is needed, as well as any existing challenges and missing elements that you
+   need to attain for your business toscale. This will determine the kind of skill
+   sets, assets, experience levels and personal attributes that your business and
+   team is lacking.
+
+3. Use your findings to guide recruitment and evaluate your existing team. You need
+   to build a dynamic and diverse team if you are going to be able to delegate and
+   succeed. Seek out characteristics in people that balance out your less effective
+   areas. Take the time to find people who understand the business and can envision
+   ways to improve it without losing sight of your vision.
+
+4. Shift the hierarchy and establish a company culture where every idea is welcome,
+   communicationis open and collaboration is embedded in every decision. It’s
+   important to remember that people are your greatest asset and you need to invest
+   in them.
+
+5. Now that you have established a loyal and trustful team with talent in the right
+   places, you can sit back and start looking at the big picture. Nevertheless,
+   it’s important to remain visible, approachable and connected to all of the
+   moving parts of the business.
+
+Delegation is a balancing act but when you get it right, that’s when growth
+happens. I hope these steps help you get there.
 
 ---
 

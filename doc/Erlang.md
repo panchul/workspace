@@ -1,11 +1,14 @@
-
-
-## UNDER CONSTRUCTION
-
 # Erlang
 
-My Erlang sandbox is [https://github.com/panchul/sb_erlang](https://github.com/panchul/sb_erlang).
+See Also:
 
+  - rebar  
+  - meck  
+  - common test(CT)  
+  - eunit  
+  - [Yaws](Yaws.md) - a dynamic web server in Erlang
+
+My Erlang sandbox is [https://github.com/panchul/sb_erlang](https://github.com/panchul/sb_erlang).
 
 ---
 
@@ -14,7 +17,6 @@ A refresher on exceptions
 ```
 -module(test_throw).
 -compile([export_all, debug_info]).
-
 
 gen_exception(1) -> a;
 gen_exception(2) -> throw(a);
@@ -70,10 +72,9 @@ Another way to install, with recompiling:
 
 It skips several components, like wxWidgets, disables OpenSSL and ODBC, uses fakefop instead of the real one.
 
-
 ---
  
- IDE support
+IDE support
 
 http://ignatov.github.io/intellij-erlang/ IntelliJ plug-in
 
@@ -82,17 +83,7 @@ http://ignatov.github.io/intellij-erlang/ IntelliJ plug-in
 Popular open-source system that use Erlang
 
 Popular XMPP server implementation is ejabberd, it has a vagrant dev environment repo:
-    https://github.com/processone/ejabberd-vagrant-dev
-
-
----
-
-Tools
-
-- rebar  
-- meck  
-- common test(CT)  
-- eunit  
+https://github.com/processone/ejabberd-vagrant-dev
 
 ---
 
@@ -119,10 +110,6 @@ Links
   
 [10 Essential Erlang Tools for Erlang Developers](http://tutorials.pluralsight.com/erlang/10-essential-erlang-tools-for-erlang-developers#9OxH46USdVKq2dQw.99)  
 [Nice refresher about guards](https://medium.com/@elbrujohalcon/there-are-guards-and-guards-71e67d4975d7#.ey1nnyrvf)  
-
-
-[Yaws](Yaws.md) - a dynamic web server in Erlang
-  
 
 ---
 
@@ -158,4 +145,3 @@ Snippet printing something N times
         ok.
     
 ---    
-    

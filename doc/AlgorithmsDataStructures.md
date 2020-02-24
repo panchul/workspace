@@ -5,7 +5,9 @@ https://github.com/panchul/sb_cpp/tree/master/data_structures
 
 STL and related
 
+- A-star
 - cartesian tree
+- [Dijkstra(minimum spanning graph)](Dijkstra.md)
 - [Graphs](Graphs.md)
 - [Hash Table](HashTable.md)
 - [List](List.md)
@@ -36,6 +38,15 @@ STL and related
 
 Another Bit O Notation overview
 https://www.youtube.com/watch?v=5yJ_QLec0Lc
+
+---
+
+A* algorithm overview, a modification on Dijcstra
+https://www.youtube.com/watch?v=vP5TkF0xJgI
+slightly-longer
+https://www.youtube.com/watch?v=ySN5Wnu88nE
+
+https://en.wikipedia.org/wiki/A*_search_algorithm
 
 ---
 

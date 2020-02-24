@@ -12,9 +12,12 @@ Long and nice discussion on locks, mutexes, semaphores, etc:
 https://stackoverflow.com/questions/2332765/lock-mutex-semaphore-whats-the-difference
 
 
-
-
-
+- What should the acquire()/release() be called? -- [Varies massively]
+- Does your lock/semaphore use a "queue" or a "set" to remember the threads waiting?
+- Can your lock/semaphore be shared with threads of other processes?
+- Is your lock "reentrant"? -- [Usually yes].
+- Is your lock "blocking/non-blocking"? -- [Normally non-blocking are used as blocking locks (aka spin-locks) cause busy waiting].
+- How do you ensure the operations are "atomic"?
 
 ---
 

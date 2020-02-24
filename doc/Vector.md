@@ -10,6 +10,58 @@ https://github.com/panchul/sb_cpp/tree/master/data_structures
 
 ---
 
+The simplest ways to define a vector:
+
+    int main() { 
+        vector<int> vect{ 10, 20, 30 }; 
+      
+        for (int x : vect) 
+            cout << x << " "; 
+
+        //---------------------------------
+        int n = 3; 
+        // Create a vector of size n with 
+        // all values as 10. 
+        vector<int> vect2(n, 10); 
+  
+        for (int x : vect2) 
+            cout << x << " ";
+            
+        //--------------------------------
+        // Create an empty vector 
+        vector<int> vect3;  
+             
+        vect3.push_back(10); 
+        vect3.push_back(20); 
+        vect3.push_back(30); 
+          
+        for (int x : vect3) 
+            cout << x << " "; 
+                                   
+        //--------------------------------
+        // via an array:
+        int arr[] = { 10, 20, 30 }; 
+        int n2 = sizeof(arr) / sizeof(arr[0]); 
+          
+        vector<int> vect4(arr, arr + n2); 
+          
+        for (int x : vect4) 
+            cout << x << " "; 
+
+        //--------------------------------
+        // via another vector:
+        vector<int> vectA1{ 10, 20, 30 }; 
+        vector<int> vectA2(vectA1.begin(), vectA1.end()); 
+          
+        for (int x : vectA2) 
+            cout << x << " "; 
+                
+        return 0; 
+    } 
+
+
+---
+
 // vector::begin/end
 
     #include <iostream>

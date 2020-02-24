@@ -1,10 +1,4 @@
-
-
-## UNDER CONSTRUCTION
-
 # Confluent platform
-
-
 
 ---
 

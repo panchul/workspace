@@ -14,6 +14,27 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+A discussion with options on curl wrappers and C++ networking libraries.
+https://stackoverflow.com/questions/1011339/how-do-you-make-a-http-request-with-c
+
+---
+
+Neat features from new C++ standards:
+https://dev.to/visheshpatel/21-new-features-of-modern-c-to-use-in-your-project-3f87
+
+For example:
+
+    template <typename X, typename Y>
+    auto add(X x, Y y) -> decltype(x + y)
+    {
+        return x + y;
+    }
+    add(1, 2);     // == 3
+    add(1, 2.0);   // == 3.0
+    add(1.5, 1.5); // == 3.0
+
+---
+
 The snippet about futures:
 
     // $ g++ -std=c++1z filename.cpp 
@@ -655,6 +676,9 @@ The priority queue with the oppostite sorting ( not `less`, but `greater`)
 
     std::priority_queue<int, std::vector<int>, std::greater<int> > newone;
 
+    if default is 9,8,7,6...0
+    then with 'greater' : 0,1,2...8,9
+    
 ---
 
 Converting int to string.        
@@ -685,9 +709,45 @@ TODO: write a quck summary
 
 ---
 
+Recursive variadic function:
+
+    #include <iostream>
+    void tprintf(const char* format) // base function
+    {
+        std::cout << format;
+    }
+     
+    template<typename T, typename... Targs>
+    void tprintf(const char* format, T value, Targs... Fargs) // recursive variadic function
+    {
+        for ( ; *format != '\0'; format++ ) {
+            if ( *format == '%' ) {
+               std::cout << value;
+               tprintf(format+1, Fargs...); // recursive call
+               return;
+            }
+            std::cout << *format;
+        }
+    }
+     
+    int main() {
+        tprintf("% world% %\n","Hello",'!',123);
+        return 0;
+    }
+
+---
+
 Nice short collection of idioms.
 https://dev.to/visheshpatel/7-advanced-c-concepts-you-should-know-4gog
 
 TODO: summarize and add to the C++ flashcards
+
+---
+
+LibCurl and list of its competitors. C++ libraries for HTTP, FTP, etc. 
+https://curl.haxx.se/libcurl/competitors.html
+
+
+
 
 ---

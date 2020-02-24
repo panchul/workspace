@@ -1,7 +1,3 @@
-
-
-## Under Construction
-
 # DockerCompose
 
 My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker).

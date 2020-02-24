@@ -67,7 +67,6 @@ Or, for CentOS 7
 
     $ wget https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-10.0.130-1.x86_64.rpm
     
-    
     $ sudo rpm -i cuda-repo-*.rpm
 
     $ sudo dnf update

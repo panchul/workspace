@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Splunk framework
 
 https://www.splunk.com/
@@ -12,7 +9,6 @@ Best of Conf 2018: https://www.splunk.com/pdfs/ebooks/top-five-highlights-from-s
 How-to Videos: https://www.splunk.com/view/education-videos/SP-CAAAGB6
 Splunk Applications: https://splunkbase.splunk.com
 Installation Guide:  http://docs.splunk.com/Documentation/Splunk/latest/Installation/Whatsinthismanual
-
     
 ---
 
@@ -64,4 +60,3 @@ Some examples:
 https://docs.splunk.com/Documentation/Splunk/7.2.0/Data/HECExamples
 
 ---
-

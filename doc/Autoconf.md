@@ -1,13 +1,10 @@
-
-
-## UNDER CONSTRUCTION
-
 # autoconf
 
 See also:
- [Autoconf](Autoconf.md)
- [Automake](Automake.md)
- [Libtool](Libtool.md)
+
+  - [Autoconf](Autoconf.md)
+  - [Automake](Automake.md)
+  - [Libtool](Libtool.md)
 
 
 https://www.gnu.org/software/autoconf/autoconf.html

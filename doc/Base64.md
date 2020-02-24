@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Base64.md
 
 ---

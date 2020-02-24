@@ -655,6 +655,7 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
   
 ## Career etc.
 
+- [Business](Business.md)
 - [Career](Career.md)
 - [Startup](Startup.md)
 - Kaggle, misc. projects. https://www.kaggle.com/

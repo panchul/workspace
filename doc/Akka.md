@@ -1,6 +1,3 @@
-
-## Under Construction
-
 # Akka
 
 See Also:

@@ -2,6 +2,12 @@
 
 My Golang sandbox is [https://github.com/panchul/sb_golang](https://github.com/panchul/sb_golang).
 
+
+---
+
+Using DDD in Golang. Skeleton code for a db-handling app
+https://dev.to/stevensunflash/using-domain-driven-design-ddd-in-golang-3ee5
+
 ---
 
 The best refresher of the basics I have seen so far:
