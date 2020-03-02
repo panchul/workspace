@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Scala
 
 See Also:
@@ -330,4 +327,3 @@ Printing something n times:
     }
 
 ---
-

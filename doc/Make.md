@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # make
 
 ---
@@ -43,7 +40,6 @@ To get output of commands into vars in Makefile:
 
     MYTIMESTAMP=$(shell date)
     
-
 ---
 
 On Mac, make is here if you are using XCode:

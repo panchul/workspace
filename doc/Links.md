@@ -62,16 +62,17 @@ TODO: Create sub-pages for the ones that do not have it yet.
 - Fabric
 - [Google Cloud](GoogleCloud.md)
 - [Kubernetes](Kubernetes.md)  
-- [VMWare](VMWare.md)  
+- [LXD, Linux Containers](LXD.md)
+- [Mesos](Mesos.md)
+- Munin
+- Nagios
 - [OpenStack](OpenStack.md)
 - Otto
-- [Mesos](Mesos.md)
-- [Triton,Joyent](Triton.md)
-- Nagios
-- Munin
 - [Rex-Ray](RexRay.md)
+- [Triton,Joyent](Triton.md)
 - [Vagrant](Vagrant.md)  
 - [VirtualBox](VirtualBox.md)  
+- [VMWare](VMWare.md)  
 
 ### Frameworks Libraries, Static code analyse, architecture approaches, etc.
 
@@ -186,7 +187,8 @@ TODO: Create sub-pages for the ones that do not have it yet.
 - [Windows](Windows.md)  
 - Symbian OS  
 - [MacOS](MacOS.md)
-
+- RTOS
+  -- VxWorks
 
 ### Web Frameworks, servers, etc
 
@@ -194,6 +196,7 @@ TODO: Create sub-pages for the ones that do not have it yet.
 - [Ajax](Ajax.md)
 - [Apache](Apache.md)
 - [Disqus](Disqus.md)
+- [Django](Django.md)
 - [Heroku](Heroku.md)
 - [JQuery](JQuery.md)
 - [nginx](Nginx.md)
@@ -258,7 +261,6 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - WT:Social https://wt.social/ - Alternative social network from Wikipedia founders.
 
 
-  
 ### Micorcontrollers, Embedded programming, hardware
 
 - [Arduino](Arduino.md)
@@ -310,6 +312,12 @@ Arduino wireless network sensor(and gateway) vendor (has some libraries, and doc
 https://www.tartssensors.com/libraries/arduino/
 
 - UDF drive format, ssd/hdd https://en.wikipedia.org/wiki/Universal_Disk_Format#Compatibility
+
+### RTOS
+
+- VxWorks
+- Green Hills Integrity (GH)
+
   
 ### IDEs, editors, and related
   
@@ -338,6 +346,7 @@ https://www.tartssensors.com/libraries/arduino/
   - Routers
   - Firewalls
   - Load balancers
+- [Cryptography](Cryptography.md)
 - [HAProxy](HAProxy.md)
 - [nginx](Nginx.md)
 - [DNS](DNS.md)
@@ -348,6 +357,9 @@ https://www.tartssensors.com/libraries/arduino/
 - Fiddler
 - Firebug
 - [Firewall](Firewall.md)
+- [RTP](RTP.md)
+- [Zero-Knowledge-Proof](ZNP.md)
+
 
 Aggregated List of C++ networking libraries
 

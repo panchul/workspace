@@ -7,6 +7,14 @@ A sandbox with some templates:
 
 ---
 
+Another Javascript framework:
+https://github.com/sveltejs
+
+Here's how to create a TODO app with this:
+https://dev.to/areknawo/making-a-todo-app-in-svelte-57l3
+
+---
+
 Simple fizzBuzz solution
 
     function fizzBuzz(n) {

@@ -1,12 +1,10 @@
-
-## Under Construction
-
 # Docker
 
 See also:
+
  - [DockerCompose](DockerCompose.md)
  - [DockerCSwarm](DockerSwarm.md)
-
+ - [LXD, Linux Containers](LXD.md)
 
 My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker).
 

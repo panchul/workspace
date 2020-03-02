@@ -36,6 +36,11 @@ STL and related
 
 ---
 
+Very good benchmark case of vector vs list vs deque
+https://baptiste-wicht.com/posts/2012/12/cpp-benchmark-vector-list-deque.html
+
+---
+
 Another Bit O Notation overview
 https://www.youtube.com/watch?v=5yJ_QLec0Lc
 

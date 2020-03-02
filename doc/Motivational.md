@@ -2,6 +2,20 @@
 
 ---
 
+TED talk on isolation and loneliness.
+https://www.ted.com/talks/grace_kim_how_cohousing_can_make_us_happier_and_live_longer
+
+---
+
+Another list of life rules.
+https://fit4brain.com/4853
+
+---
+
+People will start questioning the usual only when they see the unusual.
+
+---
+
 "Everything you need is already within you. The beauty of life is htat your destiny lies always in your
 hands. The time has come for you to step up and be great."
 
@@ -12,6 +26,25 @@ People hate to think about bad things happening, so they underesimate their like
 ---
 
 Failure is just another word for education.
+
+---
+
+Article about Musk and reaction on critisizm
+https://www.cluber.com.ua/lifestyle/samorazvitie-lifestyle/2020/02/vsego-3-slova-kotorymi-ilonu-masku-udalos-prepodat-otlichnyj-urok-emoczionalnogo-intellekta/
+
+Критика чем-то похожа на неограненный алмаз. Для неопытного взгляда он непривлекателен.
+Но его истинная ценность становится видна лишь тогда, когда его огранят. Точно так же мы
+изначально воспринимаем критику, как что-то негативное и уродливое, но, огранив ее в своем
+разуме, мы можем научить себя видеть всю ее красоту.
+
+Так что попросите окружающих покритиковать вас, произнеся три волшебных слова…
+«Любая критика приветствуется».
+
+Когда вас кто-то критикует, особенно если эта критика обоснована, старайтесь не воспринимать
+ее в качестве личных нападок. Вместо этого попробуйте увидеть ее в качестве дара — возможности
+узнать что-то новое.
+
+Если получится, то вы сможете заставить эмоции работать на вас, а не против вас.
 
 ---
 

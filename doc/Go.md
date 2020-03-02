@@ -2,7 +2,6 @@
 
 My Golang sandbox is [https://github.com/panchul/sb_golang](https://github.com/panchul/sb_golang).
 
-
 ---
 
 Using DDD in Golang. Skeleton code for a db-handling app

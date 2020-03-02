@@ -3,10 +3,16 @@
 See Also:
   - [STL](STL.md)
   - [AlgorithmsDataStructures](AlgorithmsDataStructures.md) 
+  - [Deque](Deque.md)
   
 My sandbox for data structures is here:
 
 https://github.com/panchul/sb_cpp/tree/master/data_structures
+
+---
+
+Very good benchmark case of vector vs list vs deque
+https://baptiste-wicht.com/posts/2012/12/cpp-benchmark-vector-list-deque.html
 
 ---
 

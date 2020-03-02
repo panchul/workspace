@@ -1,9 +1,11 @@
-
 # APIs
+
 See Also:
- [JSON-API](JSON-API.md)
- [Rest](REST.md)
- [Swagger](Swagger.md)
+
+ - [JSON-API](JSON-API.md)
+ - [OAuth](OAuth.md)
+ - [Rest](REST.md)
+ - [Swagger](Swagger.md)
 
 ---
 
@@ -13,7 +15,7 @@ https://developer.codeclimate.com/#overview
 ---
 
 API security standards and implementation
- - Oauth
+ - OAuth
  - OpenId
  - ...
 

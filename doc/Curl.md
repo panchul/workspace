@@ -1,7 +1,8 @@
 # curl
 
 See Also:
-    `http`(utility)
+
+  - `http`(utility)
 
 ---
 

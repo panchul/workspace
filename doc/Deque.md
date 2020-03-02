@@ -1,8 +1,7 @@
-## UNDER CONSTRUCTION
-
 # Deque
 
 See Also:
+
   - [STL](STL.md)
   
 My sandbox for data structures is here:
@@ -39,4 +38,8 @@ Empty
 
 ---
 
-  
+Very good benchmark case of vector vs list vs deque
+https://baptiste-wicht.com/posts/2012/12/cpp-benchmark-vector-list-deque.html
+
+---
+ 

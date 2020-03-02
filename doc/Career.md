@@ -279,6 +279,25 @@ They know "Culture eats strategy for breakfast." Peter Drucker
 
 ---
 
+Amazon, Google, Microsoft Salaries
+https://insights.dice.com/2020/02/25/google-microsoft-amazon-salaries-revealed-pays-most/
+
+Senior Engineer Salaries:
+.       Amazon SDE III Google L5 Microsoft Principal SDE
+Salary	$158,267	$178,212	$187,000
+Bonus	$8,351      $35,682     $46,718
+Stock	$140,097	$125,669	$68,462
+TOTAL	$306,715	$339,563	$302,180
+
+Entry-level Engineer Salaries:
+.        Amazon SDE I Google L3  Microsoft SDE
+Salary	$116,639	$121,825	$106,150
+Bonus	$21,822	    $20,993	    $21,844
+Stock	$15,891	    $40,825	    $29,891
+TOTAL	$154,352	$183,643	$157,885
+
+--- 
+
 From Internet a fresh Ph.D. compansation package Pensylvania 2019.
     Experience - 2-3 internships
     Base - $130k
