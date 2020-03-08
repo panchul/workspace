@@ -2,6 +2,33 @@
 
 ---
 
+What happens if you leave Facebook:
+https://www.calnewport.com/blog/2020/02/29/top-economists-study-what-happens-when-you-stop-using-facebook/
+
+- “Deactivating Facebook freed up 60 minutes per day for the average person in our Treatment group.”
+  Much of this time was reinvested in offline activities, including, notably, socializing with friends and family.  
+- “Deactivation caused small but significant improvements in well-being, and in particular in self-reported
+ happiness, life satisfaction, depression, and anxiety.” The researchers report this effect to be around 25-40%
+ of the effect typically attributed to participating in therapy.  
+- “As the experiment ended, participants reported planning to use Facebook much less in the future.” Five percent
+ of the Treatment group went even farther and declined to reactivate their account after the experiment ended.  
+- “The Treatment group was less likely to say they follow news about politics or the President, and less able
+ to correctly answer factual questions about recent news events.” This was not surprising given that this group
+ spent 15% less time reading any type of online news during the experiment.
+- “Deactivation significantly reduced polarization of views on policy issues and a measure of exposure to
+ polarizing news.” On the other hand, it didn’t significantly reduce negative feelings about the other political party.
+
+This study validates many of the ideas from Digital Minimalism (indeed, the paper even cites the book in its
+ introduction). People spend more time on social media than they realize, and stepping away frees up time for
+ more rewarding offline activities, leading, in turn, to an increase in self-reported happiness and a decrease
+ in self-reported anxiety.
+
+Perhaps most interesting was the disconnect between the subjects’ experience with deactivating Facebook and
+their prediction about how other people would react. “About 80 percent of the Treatment group agreed that
+deactivation was good for them,”
+
+---
+
 The Bystander Effect: The Death of Kitty Genovese
 https://www.youtube.com/watch?v=BdpdUbW8vbw
 

@@ -4,6 +4,11 @@ My Golang sandbox is [https://github.com/panchul/sb_golang](https://github.com/p
 
 ---
 
+About io.Reader in Go, with some nice and simple demos.
+https://dev.to/andyhaskell/what-is-the-io-reader-in-go-48co
+
+---
+
 Using DDD in Golang. Skeleton code for a db-handling app
 https://dev.to/stevensunflash/using-domain-driven-design-ddd-in-golang-3ee5
 

@@ -9,6 +9,21 @@ See Also:
 
 ---
 
+Intel x86 Root of Trust: loss of trust. An article about ROM vulnerability.
+https://blog.ptsecurity.com/2020/03/intelx86-root-of-trust-loss-of-trust.html
+
+---
+
+Popular Information Security Certification programs:
+
+ - CEH: Certified Ethical Hacker
+ - CISM: Certified Information Security Manager
+ - CompTIA Security+
+ - CISSP: Certified Information Systems Security Professional
+ - CISA: Certified Information Security Auditor
+
+---
+
 Neat exercise about setting up https on CentOS 8:
 https://www.cyberciti.biz/faq/apache-with-lets-encrypt-certificates-on-centos-8/
 

@@ -2,6 +2,14 @@
 
 ---
 
+AWS playlist, with useful how-tos and tutorials
+https://egghead.io/playlists/learn-aws-lambda-from-scratch-d29d
+
+And a bunch of random notes somebody was taking to get aws certificate.
+https://dev.to/tlakomy/random-notes-taken-while-preparing-for-aws-certified-developer-associate-exam-2h4p
+
+---
+
 A useful utility to get the info from aws:
 
 https://thehftguy.com/2016/03/10/how-to-export-amazon-ec2-instances-to-a-csv-file/

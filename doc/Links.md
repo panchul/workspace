@@ -279,6 +279,8 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - SystemC
 - TLM2
 
+- Summary of safety-critical systems: https://dev.to/bosepchuk/safety-critical-software-15-things-every-developer-should-know-1kdh
+
 - Interesting Open-source alternatives to OSIsoft’s PI Processbook, etc.
   http://www.nimbits.com/index.jsp
   http://opentsdb.net/
@@ -524,6 +526,11 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
   
  - Great Google ML Crash Course:
    https://developers.google.com/machine-learning/crash-course/ml-intro    
+
+A paper on some Spy Shop selling their cameras with face recognition to police.
+https://onezero.medium.com/exclusive-live-facial-recognition-is-coming-to-u-s-police-body-cameras-bc9036918ae0
+
+
 
 ### Algorithms and Data Structures
 

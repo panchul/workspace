@@ -1,8 +1,9 @@
+# Cascading Style Sheet
 
+---
 
-## Under Construction
-
-Cascading Style Sheet
+Intro to CSS Cascade - the "C" in CSS.
+https://dev.to/5t3ph/intro-to-the-css-cascade-the-c-in-css-1kh0
 
 ---
 

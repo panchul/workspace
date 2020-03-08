@@ -5,6 +5,11 @@ See also
 
 ---
 
+MacOS Security and Privacy Guide. Neat compilation of tricks and practices.
+https://github.com/drduh/macOS-Security-and-Privacy-Guide
+
+---
+
 About getting appleid without credit cards:
 https://appletoolbox.com/2016/01/how-to-create-an-apple-id-without-credit-card/
 https://support.apple.com/en-us/HT204034

@@ -307,3 +307,15 @@ From Internet a fresh Ph.D. compansation package Pensylvania 2019.
     Total (stocks + 401(k)+base+relocation) - $198k (first year then $185k)
 
 ---
+
+How to negotiate for a better salary - Tips for Developers
+https://dev.to/shivenigma/salary-negotiation-tips-for-developers-1bhe
+
+1) Know your value (Market research)
+2) Don't reveal your current salary
+3) Don't mention the expected number first
+4) Learn the demand of the position
+5) Market yourself as a brand
+6) Using an offer to get better offers
+
+---

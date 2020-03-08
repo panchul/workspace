@@ -32,6 +32,60 @@ See Also:
 
 ---
 
+Neat utility `cloc` - Count Lines Of Code, in many programming languages, and per folder recursively.
+https://www.tecmint.com/cloc-count-lines-of-code-in-linux/
+
+For example the old pxl repo:
+
+    $ cloc .
+    github.com/AlDanial/cloc v 1.84  T=88.97 s (161.2 files/s, 48350.3 lines/s)
+    ---------------------------------------------------------------------------------------
+    Language                             files          blank        comment           code
+    ---------------------------------------------------------------------------------------
+    C++                                   5226         510646         362469        1444362
+    HTML                                  3182         125937          17126         717098
+    C/C++ Header                          3566          96693         101503         288808
+    make                                   376          19409          13557          73250
+    Prolog                                 517          10417          16555          73110
+    C                                      214          13820          21069          61356
+    XML                                    306          32237             46          61052
+    Perl                                   244          11847           2290          44906
+    Windows Resource File                   89           3869           3128          41413
+    MSBuild script                         125              0              0          40602
+    Java                                   189           2837           1911          14181
+    JavaScript                              32           1247            258          13308
+    SWIG                                     4           3940              0           9875
+    Markdown                                23           2515              0           8833
+    Python                                  40           2142           3845           7713
+    XMI                                      2              0              0           6578
+    Bourne Shell                            30            342            713           1769
+    CSS                                      8             89             48           1640
+    Assembly                                 6            283            511           1045
+    MATLAB                                  14            298            168            915
+    D                                        9              0              0            591
+    m4                                       6             77             61            543
+    Pascal                                   2            106             59            538
+    CMake                                    4            115            264            488
+    Windows Module Definition               39            118             30            473
+    Bourne Again Shell                       4            109            234            392
+    INI                                     45              0              0            311
+    XSLT                                     1             28              2            202
+    SVG                                      3              1              1            184
+    SAS                                      3             50             90            174
+    Smalltalk                                4              9              0            162
+    DOS Batch                               15             44             16            161
+    Mathematica                              6             77              0            156
+    YAML                                     2             21             17            140
+    WebAssembly                              1             27              0             76
+    yacc                                     1             14              2             33
+    Patran Command Language                  1              0              0             22
+    C Shell                                  1              5              0             14
+    ---------------------------------------------------------------------------------------
+    SUM:                                 14340         839369         545973        2916474
+    ---------------------------------------------------------------------------------------
+
+---
+
 Screen recorders for desktop screen recording in Linux
 https://www.tecmint.com/best-linux-screen-recorders-for-desktop-screen-recording/
 
