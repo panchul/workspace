@@ -4,6 +4,13 @@ https://unity3d.com/
 
 ---
 
+Uploading WebGL deployments:
+
+https://docs.unity3d.com/Manual/webgl-building.html
+https://www.youtube.com/watch?v=s9kpPI-_QDA
+
+---
+
 Idiomatic Unity singleton
 https://wiki.unity3d.com/index.php/Singleton
 

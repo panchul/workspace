@@ -1,14 +1,8 @@
-
-
-## UNDER CONSTRUCTION
-
 # Arduino
 
 [https://www.arduino.cc/](https://www.arduino.cc/)
 
-
 My Arduino sandbox is [https://github.com/panchul/sb_arduino](https://github.com/panchul/sb_arduino).
-
 
 ---
 

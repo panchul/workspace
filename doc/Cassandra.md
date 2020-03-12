@@ -1,12 +1,6 @@
-
-
-## UNDER CONSTRUCTION
-
 # Cassandra
 
-
 http://cassandra.apache.org/
-
 
 ---
 

@@ -2,6 +2,11 @@
 
 ---
 
+We stay in the same age where we did not have enough attention.
+https://fit4brain.com/9210
+
+---
+
 What happens if you leave Facebook:
 https://www.calnewport.com/blog/2020/02/29/top-economists-study-what-happens-when-you-stop-using-facebook/
 

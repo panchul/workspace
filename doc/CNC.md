@@ -1,5 +1,3 @@
-## UNDER CONSTRUCTION
-
 # CNC
 
 ---

@@ -4,6 +4,19 @@ https://www.unrealengine.com/en-US/studio
 
 ---
 
+Redesign audio in Unreal Engine Single Shooter Game Sample Project
+https://www.unrealengine.com/en-US/tech-blog/redesigning-audio-in-unreal-engine-s-shooter-game-sample-project
+
+---
+
+Blender to Unreal Tools
+https://www.youtube.com/watch?v=c3_xUMQ6hhs   part 1
+https://www.youtube.com/watch?v=JwRPDCetfcc   part 2
+
+https://forums.unrealengine.com/unreal-engine/events/1715661-blender-to-unreal-tools-part-1-february-6-live-from-hq
+
+---
+
 Network Multiplayer Fundamentals | Live from HQ | Inside Unreal
 https://www.youtube.com/watch?v=09yWANtKmC8
 

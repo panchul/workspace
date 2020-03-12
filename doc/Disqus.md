@@ -1,7 +1,3 @@
-
-
-## UNDER CONSTRUCTION
-
 # Disqus
 
 Seems like a neat quick-and-dirty comment engine for web pages.

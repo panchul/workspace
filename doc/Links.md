@@ -558,6 +558,11 @@ https://onezero.medium.com/exclusive-live-facial-recognition-is-coming-to-u-s-po
 
 - [Graphics](Graphics.md) all sort of miscellaneous snippets.
 
+### Moviemaking
+
+How to write a scene in your screenplay
+https://nofilmschool.com/how-to-write-a-scene
+
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
 
 - [Jenkins](Jenkins.md)

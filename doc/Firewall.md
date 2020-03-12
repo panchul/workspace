@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Firewall
 
 See Also:

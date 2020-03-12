@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # CQRS (Command Query Responsibility Segregation)
 
 ---

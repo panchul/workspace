@@ -7,6 +7,11 @@ A sandbox with some templates:
 
 ---
 
+11 ways to iterate an array in Javascript
+https://dev.to/misterkevin_js/11-ways-to-iterate-an-array-javascript-3mjg
+
+---
+
 Another Javascript framework:
 https://github.com/sveltejs
 

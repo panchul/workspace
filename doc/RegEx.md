@@ -1,9 +1,13 @@
-
 # RegEx (a cookbook for Regular Expressions)
 
 See Also:
 - [Sed](Sed.md)
 - [Awk](Awk.md)
+
+---
+
+C++ RegEx, ECMAScript
+http://www.cplusplus.com/reference/regex/ECMAScript/
 
 ---
 

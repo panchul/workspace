@@ -59,6 +59,17 @@ happens. I hope these steps help you get there.
 
 ---
 
+The three month rule of a new job
+https://dev.to/harri_etty/the-three-month-rule-of-a-new-job-ao3
+
+It takes three months to:
+- the need to learn the problem domain
+- figure out the team dynamics
+- learning the codebase
+- learning new tools or technologies
+
+---
+
 4 ‘ballsy questions’ everyone should ask in job interviews—but most don’t, says hiring CEO of 10 years
 https://www.cnbc.com/2020/02/13/hiring-ceo-4-ballsy-questions-everyone-should-ask-in-job-interviews-but-most-dont.html
 

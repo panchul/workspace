@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # CentOS
 
 https://www.centos.org/

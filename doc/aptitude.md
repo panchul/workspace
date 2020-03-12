@@ -1,6 +1,3 @@
-
-## Under Construction
-
 # Aptitude
 
 See Also:
@@ -8,12 +5,12 @@ See Also:
 - [yum](Yum.md)
 
 
-```aptitude```, that is, ```apt-get```, etc. is a Debian packaging tool.
+`aptitude`, that is, `apt-get`, etc. is a Debian packaging tool.
  (Advanced Package Tool)
 
 ---
 
-To skip the stdin's asking for key 'y', use ```'-y'```:
+To skip the stdin's asking for key 'y', use `'-y'`:
 
     sudo apt-get install -y somenicepackage
     

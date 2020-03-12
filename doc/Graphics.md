@@ -12,6 +12,7 @@
 - [PCL](PCL.md), Point Cloud Library
 - [OpenACC](OpenACC.md)
 - OpenALPR - Automatic License Plate Recognition https://www.openalpr.com/
+- [Open3D](Open3D.md)
 - [OpenCL](OpenCL.md)
 - [OpenCV](OpenCV.md)
 - [OpenGL](OpenGL.md)
@@ -21,7 +22,7 @@
 - [PNG](Png.md)
 - [Qt](Qt.md)
 - [Quaternions](Quaternions.md)
-- video recording for terminal ```asciinema.org``` ```gohugo.io``` web content
+- video recording for terminal `asciinema.org` `gohugo.io` web content
 - [Unity](Unity.md)
 - [Unreal Engine](UnreadlEngine.md)
 - Autodesk FBX SDK

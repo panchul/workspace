@@ -1,7 +1,3 @@
-
-
-## UNDER CONSTRUCTION
-
 # Alpine Linux
 
 See Also:
@@ -10,7 +6,6 @@ See Also:
   - [Ubuntu](Ubuntu.md)
   - [Debian](Debian.md)
  
-
 https://alpinelinux.org/
 
 https://en.wikipedia.org/wiki/Alpine_Linux

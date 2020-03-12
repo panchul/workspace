@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # C#
 
 ---
@@ -49,5 +46,3 @@ To execute a command from within .cs file:
     process.WaitForExit(); // if we want to wait for it to finish
 
 ---
-
-

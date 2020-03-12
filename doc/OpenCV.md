@@ -4,6 +4,7 @@ See also:
 
 - [CUDA](CUDA.md)
 - [OpenACC](OpenACC.md)
+- [Open3D](Open3D.md)
 - [OpenGL](OpenGL.md)
 
 https://opencv.org/

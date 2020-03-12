@@ -1,6 +1,3 @@
-
-## Under Construction
-
 # F#
 
 ---

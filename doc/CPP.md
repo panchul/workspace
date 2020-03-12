@@ -14,6 +14,39 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Neat summary on concattenation of sequence containers:
+http://www.martinbroadhurst.com/concatenate-two-vectors-in-c.html
+
+Method 1: Use std::vector::insert()
+
+    vector1.insert(vector1.end(), vector2.begin(), vector2.end());
+    
+Method 2: Use std::copy with a std::back_inserter()
+
+    std::copy(vector2.begin(), vector2.end(), std::back_inserter(vector1));
+    
+Method 3: Use std::reserve() and then std::copy()
+This means that the vector won’t need to be reallocated during the
+copy, so may be faster.
+
+    vector1.reserve(vector1.size() + vector2.size());
+    std::copy(vector2.begin(), vector2.end(), vector1.end());
+
+Method 4: Use std::transform() with std::back_inserter()
+This means you can use a functor on the elements of vector2 to modify
+them or change their type before adding them.
+
+    std::transform(vector2.begin(), vector2.end(), vector1.begin(), transformer());
+
+Method 5: Use std::reserve() and then std::transform()
+
+    vector1.reserve(vector1.size() + vector2.size());
+    std::transform(vector2.begin(), vector2.end(), vector1.begin(), transformer());
+
+In all cases you can use the new C++11 std::begin() and std::end() functions to get the beginnings and endings of the vectors.
+
+---
+
 A discussion with options on curl wrappers and C++ networking libraries.
 https://stackoverflow.com/questions/1011339/how-do-you-make-a-http-request-with-c
 
