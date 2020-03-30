@@ -7,6 +7,14 @@ A sandbox with some templates:
 
 ---
 
+Neat sample projects with variety of features.
+https://dev.to/behnamazimi/collection-of-simple-web-projects-532f
+
+A minimalistic web portfolio source codes
+https://dev.to/sivaneshs/a-minimalistic-web-portfolio-for-all-devs-37gh
+
+---
+
 11 ways to iterate an array in Javascript
 https://dev.to/misterkevin_js/11-ways-to-iterate-an-array-javascript-3mjg
 

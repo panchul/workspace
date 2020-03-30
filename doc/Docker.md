@@ -82,7 +82,7 @@ https://circleci.com/blog/its-the-future/ An article about Docker and Vagrant
 ---
 
 Quick and simple Dockerfile.
-Write this into file name ```Dockerfile```
+Write this into file name `Dockerfile`
 
     FROM ubuntu:trusty
     RUN echo 'I like Docker, and it works!'

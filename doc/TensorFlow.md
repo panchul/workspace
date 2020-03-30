@@ -1,12 +1,13 @@
-
-
-## UNDER CONSTRUCTION
-
 # TensorFlow
 
 https://www.tensorflow.org/
 
 https://github.com/tensorflow/tensorflow
+
+---
+
+A tapestry of Q&A
+https://www.javatpoint.com/tensorflow-interview-questions
 
 ---
 

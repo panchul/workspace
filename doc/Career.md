@@ -9,6 +9,21 @@ Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](﻿https:
 TODO: Add the list courses I took
 TODO: Add list interests, etc.
 
+
+---
+
+Surround yourself with people who are not affraid to disagree with you.
+
+---
+
+Expert blind spot in software development.
+https://thevaluable.dev/expert-blind-spot-software-development/
+
+---
+
+"Управляемое разрушение, или Как развалить организацию."
+http://www.management.com.ua/cm/cm208.html
+
 ---
 
 Richard Branson's article on how to delegate.
@@ -67,6 +82,11 @@ It takes three months to:
 - figure out the team dynamics
 - learning the codebase
 - learning new tools or technologies
+
+---
+
+A few thoughts on software consulting, commodity labor, etc.
+https://dev.to/daedtech/positioning-strategy-for-the-aspiring-software-consultant-2cie
 
 ---
 
@@ -287,6 +307,11 @@ They know "Culture eats strategy for breakfast." Peter Drucker
 
 6. Если зараз на услугу длиться более чем через шесть месяцев, у подрядчика должна быть лицензия
    на ведение бизнеса в дополнение к любым необходимым профессиональным лицензиям.
+
+---
+
+CXO acronyms, etc.
+https://drdianehamilton.com/chief-officer-acronyms-explained-ceo-coo-cfo-and-more/
 
 ---
 

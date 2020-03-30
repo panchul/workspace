@@ -435,6 +435,7 @@ Aggregated List of C++ networking libraries
 - [Alexa](Alexa.md)
 - Caffe and Caffe2
 - Chat bots
+- [Machine Learning](MachineLearning.md)
 - [MarkovChains](MarkovChains.md)
 - MXNet
 - Neon
@@ -529,8 +530,6 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
 
 A paper on some Spy Shop selling their cameras with face recognition to police.
 https://onezero.medium.com/exclusive-live-facial-recognition-is-coming-to-u-s-police-body-cameras-bc9036918ae0
-
-
 
 ### Algorithms and Data Structures
 
@@ -657,12 +656,7 @@ https://nofilmschool.com/how-to-write-a-scene
 
 ## Photography, Video, and optics in general
 
-- Lunar Eclipse photography tips: https://www.bhphotovideo.com/explora/photography/tips-and-solutions/22-tips-for-photographing-a-lunar-eclipse
--﻿Shot Lists and Script Lining. https://nofilmschool.com/2018/02/shot-lists-and-script-lining-how-prepare-your-screenplay-shoot
-- https://pixabay.com/ Free bank of photos.
-- http://www.imageval.com/ - image processing consulting firm that
-  supports some of the open-source libraries.
-- https://www.zemax.com/ - simulatinf optics, similar to what I tried to do with YARC.   
+- [PhotoVideo](PhotoVideo.md)
 
 ## Biology, Medicine, Gerontology, etc.
 

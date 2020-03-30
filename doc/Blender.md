@@ -2,6 +2,11 @@
 
 ---
 
+Simple demo of video editing with Blender, and exporting mpeg4
+https://www.youtube.com/watch?v=xxeP3We4k-A
+
+---
+
 Neat tutorial how to make and use 360 images in Blender.
 https://www.youtube.com/watch?v=rXpyNDAt6ok
 

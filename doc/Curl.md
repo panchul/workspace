@@ -6,6 +6,17 @@ See Also:
 
 ---
 
+libcurl install summary:
+https://unix.stackexchange.com/questions/452515/how-to-install-libcurl
+
+For Mac worked simple:
+
+    $ brew install curl
+
+Includes are in `/usr/local/opt/curl/include`, the libs are in `lib`
+
+---
+
 For JSON, here's a convenient followup for curl:
 
     $ curl http://some_api_url/ | python -m json.tool

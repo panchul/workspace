@@ -2,6 +2,16 @@
 
 ---
 
+Slow and boring, but maybe will help somebody.
+A guy shows a way to share filew using network cable.
+https://www.youtube.com/watch?v=XoKfUXVD1d8
+
+---
+
+Security policies could be changed with `secpol.msc`, which is in C:\Windows\system32
+
+---
+
 Neat snippet about using console i/o for a win32 gui application in C++
 http://dslweb.nwnexus.com/~ast/dload/guicon.htm
 

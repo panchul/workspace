@@ -9,6 +9,14 @@ See Also:
 
 ---
 
+Criptocurrency overview.
+https://www.youtube.com/watch?v=bBC-nXj3Ng4
+
+Nice visual on how complex 256-bit encryption is
+https://www.youtube.com/watch?v=S9JGmA5_unY
+
+---
+
 Intel x86 Root of Trust: loss of trust. An article about ROM vulnerability.
 https://blog.ptsecurity.com/2020/03/intelx86-root-of-trust-loss-of-trust.html
 

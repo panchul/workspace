@@ -7,6 +7,11 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ---
 
+Top 50 Kubernetes Interview questions
+https://www.edureka.co/blog/interview-questions/kubernetes-interview-questions/
+
+---
+
 Kubernetes cluster on CentOS 8
 https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
 
