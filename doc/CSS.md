@@ -2,6 +2,12 @@
 
 ---
 
+The intro in here has useful examples that
+work well for 5 different "skins" of style sheets.
+https://www.w3schools.com/css/css_intro.asp
+
+---
+
 border-collapse properdy demo
 https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse
 

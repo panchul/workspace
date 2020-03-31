@@ -2,6 +2,11 @@
 
 ---
 
+Ubuntu subsystem
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+---
+
 Slow and boring, but maybe will help somebody.
 A guy shows a way to share filew using network cable.
 https://www.youtube.com/watch?v=XoKfUXVD1d8

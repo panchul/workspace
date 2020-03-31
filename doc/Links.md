@@ -54,6 +54,7 @@ TODO: Create sub-pages for the ones that do not have it yet.
 ## Virtualization, clustering, provisioning, and monitoring
 
 - [AWS](AWS.md)
+- [Azure](Azure.md)
 - [Ansible](Ansible.md)  
 - Cacti
 - [Docker](Docker.md)
