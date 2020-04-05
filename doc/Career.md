@@ -9,6 +9,15 @@ Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](﻿https:
 TODO: Add the list courses I took
 TODO: Add list interests, etc.
 
+---
+
+450 free Ivy League university courses you can take online
+https://qz.com/1821327/450-free-ivy-league-university-courses-you-can-take-online/
+
+---
+
+Talk about Local Optimum of Low Expectations
+https://www.youtube.com/watch?v=5qjA8HPJl_0
 
 ---
 
@@ -331,6 +340,16 @@ Salary	$116,639	$121,825	$106,150
 Bonus	$21,822	    $20,993	    $21,844
 Stock	$15,891	    $40,825	    $29,891
 TOTAL	$154,352	$183,643	$157,885
+
+---
+
+Useful anonymous data:
+https://www.levels.fyi/#
+
+---
+
+Another video "How I Negotiated My $350k Facebook Offer (software engineer salary negotiation)"
+https://www.youtube.com/watch?v=DSxhgejP0u4
 
 --- 
 

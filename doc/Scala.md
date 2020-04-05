@@ -15,6 +15,12 @@ My Scala sandbox is [https://github.com/panchul/sb_scala](https://github.com/pan
 - [http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines  
 - [http://danielwestheide.com/scala/neophytes.html](http://danielwestheide.com/scala/neophytes.html) - The Neophyte's Guide to Scala  
 
+
+---
+
+Learn Reactive, Akka, and Scala with free online training from Lightbend:
+https://www.lightbend.com/learn-reactive-akka-and-scala-with-free-online-training-from-lightbend
+
 ---
 
 Refresher links:

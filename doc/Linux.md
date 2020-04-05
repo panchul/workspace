@@ -32,6 +32,11 @@ See Also:
 
 ---
 
+How to reset forgotten root password in CentOS 8.
+https://www.tecmint.com/reset-forgotten-root-password-in-centos-8/
+
+---
+
 Neat utility `cloc` - Count Lines Of Code, in many programming languages, and per folder recursively.
 https://www.tecmint.com/cloc-count-lines-of-code-in-linux/
 
