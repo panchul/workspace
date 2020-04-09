@@ -62,6 +62,7 @@ TODO: Create sub-pages for the ones that do not have it yet.
   - [Docker Swarm](Swarm.md)
 - Fabric
 - [Google Cloud](GoogleCloud.md)
+- [Kubeflow](Kubeflow.md)
 - [Kubernetes](Kubernetes.md)  
 - [LXD, Linux Containers](LXD.md)
 - [Mesos](Mesos.md)

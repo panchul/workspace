@@ -9,6 +9,11 @@ See also:
 
 ---
 
+Another useful link for troubleshooting of Docker issues with GPUs:
+https://medium.com/@aaronpolhamus/nvidia-powered-ml-station-with-fedora-29-docker-a8e4bd6a80ae
+
+---
+
 The CUDA C reference
 https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
 
