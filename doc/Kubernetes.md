@@ -5,7 +5,14 @@ https://kubernetes.io/
 See Also:
 
     - [Kubeflow](Kubeflow.md)
+    - [CUDA](CUDA.md)
 
+---
+
+Using GPUs for compute-intensive workoads on Azure Kubernetes Service(AKS)
+https://docs.microsoft.com/en-us/azure/aks/gpu-cluster#create-an-aks-cluster
+
+---
 
 Installing kubectl
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
