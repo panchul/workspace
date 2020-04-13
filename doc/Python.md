@@ -2,8 +2,12 @@
 
 https://www.python.org/
 
-
 My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/panchul/sb_python).
+
+---
+
+Another link with useful resources on Image processing and ML
+https://www.pyimagesearch.com
 
 ---
 
@@ -13,7 +17,6 @@ https://www.tecmint.com/best-python-ides-for-linux-programmers/
 ---
 
 Matplotlib
-
 https://matplotlib.org
 
 ---

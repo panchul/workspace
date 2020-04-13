@@ -2,6 +2,8 @@
 
 See Also:
 
+  - [AWS](AWS.md)
+  - [GCP, GoogleCloud](GoogleCloud.md)
   - [Kubernetes](Kubernetes.md)
   - [Kubeflow](Kubeflow.md)
 
@@ -20,6 +22,9 @@ Then you can login to your account:
 
     $ az login    
     
+Azure Cloud Shell is even simplier:
+https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart?view=azure-cli-latest
+
 ---
 
 Simple Linux VM on Azure using Portal.

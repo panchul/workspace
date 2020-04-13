@@ -8,6 +8,14 @@ See Also:
 
 ---
 
+End-to-End Pipeline Example on Azure
+https://www.kubeflow.org/docs/azure/azureendtoend/
+
+Introduction to the Pipelines SDK
+https://www.kubeflow.org/docs/pipelines/sdk/sdk-overview/
+
+---
+
 Azure Kubeflow tutorials
 https://github.com/Azure/kubeflow-labs
 
