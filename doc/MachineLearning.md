@@ -13,6 +13,11 @@ See Also:
 
 ---
 
+Fake Facebook conversations using OpenAI GPT-2
+https://dev.to/t04glovern/fake-facebook-conversations-using-openai-gpt-2-48od
+
+---
+
 Another link with useful resources on Image processing and ML
 https://www.pyimagesearch.com
 

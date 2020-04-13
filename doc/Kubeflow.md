@@ -8,6 +8,11 @@ See Also:
 
 ---
 
+Azure Kubeflow setup
+https://www.kubeflow.org/docs/azure/deploy/install-kubeflow/
+
+---
+
 End-to-End Pipeline Example on Azure
 https://www.kubeflow.org/docs/azure/azureendtoend/
 
