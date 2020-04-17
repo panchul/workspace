@@ -11,6 +11,12 @@ https://opencv.org/
 
 ---
 
+1,5 hour video, with a tutorial:
+Digits Classification/Regocgnition Using Convolution Neural Networks CNN/OpenCV Python.
+https://www.youtube.com/watch?v=y1ZrOs9s2QA
+
+---
+
 Nice overview of using with Eclipse:
 https://docs.opencv.org/4.1.1/d7/d16/tutorial_linux_eclipse.html
 

@@ -18,6 +18,11 @@ https://dev.to/t04glovern/fake-facebook-conversations-using-openai-gpt-2-48od
 
 ---
 
+GCP keras-idiomatic-programmer ML primer .pdf
+https://github.com/GoogleCloudPlatform/keras-idiomatic-programmer/blob/master/books/deep-learning-design-patterns/Deep%20Learning%20Design%20Patterns%20Primer.pdf
+
+---
+
 Another link with useful resources on Image processing and ML
 https://www.pyimagesearch.com
 

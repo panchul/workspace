@@ -4,8 +4,12 @@ https://kubernetes.io/
 
 See Also:
 
-    - [Kubeflow](Kubeflow.md)
     - [CUDA](CUDA.md)
+    - [Docker](Docker.md)
+    - [DockerCompose](DockerCompose.md)
+    - [DockerSwarm](DockerSwarm.md)
+    - [Kubeflow](Kubeflow.md)
+    - [LXD, Linux Containers](LXD.md)
 
 ---
 
@@ -29,6 +33,11 @@ https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
 
 Kubernetes cluster on CentOS 7
 https://www.tecmint.com/install-kubernetes-cluster-on-centos-7/
+
+---
+
+Somebody recommended this course online:
+https://www.pluralsight.com/courses/kubernetes-developers-core-concepts
 
 ---
 
