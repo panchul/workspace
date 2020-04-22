@@ -2,6 +2,11 @@
 
 ---
 
+Making the very first PoC brings such a wonderful feeling, that
+I wish I could bottle it and re-experience it in later years.
+
+---
+
 Talk about Local Optimum of Low Expectations
 https://www.youtube.com/watch?v=5qjA8HPJl_0
 

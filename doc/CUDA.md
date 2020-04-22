@@ -9,6 +9,19 @@ See also:
 
 ---
 
+Tesla V100 Server: On-Prem vs AWS Cost Comparison
+https://lambdalabs.com/blog/8-v100-server-on-prem-vs-p3-instance-tco-analysis-cost-comparison/
+
+RTX 2080 Ti Deep Learning Benchmarks with TensorFlow - 2019
+https://lambdalabs.com/blog/2080-ti-deep-learning-benchmarks/
+
+---
+
+Might be scpecific to their own package, but still interesting link:
+https://lambdalabs.com/blog/install-cuda-10-on-ubuntu-18-04/
+
+---
+
 Another useful link for troubleshooting of Docker issues with GPUs:
 https://medium.com/@aaronpolhamus/nvidia-powered-ml-station-with-fedora-29-docker-a8e4bd6a80ae
 

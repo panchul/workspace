@@ -31,6 +31,38 @@ See Also:
 
 ---
 
+To see the distribution id, release name, codename, etc.:
+
+    $ lsb_release -a
+    No LSB modules are available.
+    Distributor ID:	Ubuntu
+    Description:	Ubuntu 18.04.4 LTS
+    Release:	18.04
+    Codename:	bionic
+
+Or,
+
+    $ cat /etc/*rel*
+    DISTRIB_ID=Ubuntu
+    DISTRIB_RELEASE=18.04
+    DISTRIB_CODENAME=bionic
+    DISTRIB_DESCRIPTION="Ubuntu 18.04.4 LTS"
+    NAME="Ubuntu"
+    VERSION="18.04.4 LTS (Bionic Beaver)"
+    ID=ubuntu
+    ID_LIKE=debian
+    PRETTY_NAME="Ubuntu 18.04.4 LTS"
+    VERSION_ID="18.04"
+    HOME_URL="https://www.ubuntu.com/"
+    SUPPORT_URL="https://help.ubuntu.com/"
+    BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+    PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+    VERSION_CODENAME=bionic
+    UBUNTU_CODENAME=bionic
+
+
+---
+
 How to reset forgotten root password in CentOS 8.
 https://www.tecmint.com/reset-forgotten-root-password-in-centos-8/
 
@@ -275,12 +307,10 @@ https://mmonit.com/monit/
 
 ---
 
-### Graphics
- 
 Command-line untilities for image processing:
 https://www.linux.com/learn/cool-linux-command-line-image-management-hacks
 
-#### ```feh```
+`feh`
 
 ```sudo apt-get install feh``` - installs it (Ubuntu)
 
@@ -290,16 +320,16 @@ To list the files with the dimentions:
     NUM	FORMAT	WIDTH	HEIGHT	PIXELS	SIZE	ALPHA	FILENAME
     1	jpeg	2187	1458	  3M	  2M	-	./IMG_8408.JPG    
 
-#### ```identify``` from imagemagick
+`identify` from imagemagick
 
-```sudo apt-get install imagemagick``` - installs it (Ubuntu)
+`sudo apt-get install imagemagick` - installs it (Ubuntu)
 
 To get information about a file:
 
     $ identify ./IMG_8455.JPG 
     ./IMG_8455.JPG JPEG 2592x1728 2592x1728+0+0 8-bit DirectClass 4.338MB 0.000u 0:00.000
 
-```identify -verbose ./IMG_8455.JPG``` gives much more info. 
+`identify -verbose ./IMG_8455.JPG` gives much more info. 
 
 Pretty neat for the summary of what is out there:
 
@@ -308,9 +338,9 @@ Pretty neat for the summary of what is out there:
 
 ---
 
-Cute utilities ```cowsay, cowthink, xcowsay```
+Cute utilities `cowsay, cowthink, xcowsay`
 
-```sudo apt-get install xcowsay``` - installs it (Ubuntu)
+`sudo apt-get install xcowsay` - installs it (Ubuntu)
 
 To get a temporary pop-up with a cute picture saying your line:
 
@@ -364,7 +394,7 @@ To update the OS, run these:
 
 ---
 
-#### Install languages from command line
+Install languages from command line
 
     $ sudo apt-get install language-pack-[cod] language-pack-gnome-[cod] language-pack-[cod]-base language-pack-gnome-[cod]-base 
 
