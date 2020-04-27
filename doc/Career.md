@@ -11,6 +11,11 @@ TODO: Add list interests, etc.
 
 ---
 
+3-hour overview of Sillicon Valley roots.
+https://www.youtube.com/watch?v=9lO06Zxhu88
+
+---
+
 450 free Ivy League university courses you can take online
 https://qz.com/1821327/450-free-ivy-league-university-courses-you-can-take-online/
 
@@ -22,6 +27,11 @@ https://www.youtube.com/watch?v=5qjA8HPJl_0
 ---
 
 Surround yourself with people who are not affraid to disagree with you.
+
+---
+
+Lay-off tracker for startups.
+https://layoffs.fyi/tracker/
 
 ---
 

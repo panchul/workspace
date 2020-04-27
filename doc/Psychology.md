@@ -7,6 +7,11 @@ https://fit4brain.com/9210
 
 ---
 
+10+ Habits of Toxic Parents and How They Ruin Children Without Realizing It.
+https://www.higherperspectives.com/toxic-parent-2493937590.html
+
+---
+
 What happens if you leave Facebook:
 https://www.calnewport.com/blog/2020/02/29/top-economists-study-what-happens-when-you-stop-using-facebook/
 

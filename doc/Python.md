@@ -1,5 +1,9 @@
 # Python
 
+See also:
+
+  - [Jupyter](Jupyter.md)
+
 https://www.python.org/
 
 My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/panchul/sb_python).

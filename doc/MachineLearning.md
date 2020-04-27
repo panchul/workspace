@@ -76,6 +76,9 @@ https://www.youtube.com/watch?v=mz87VydnCIw
 Deep Learning Design Patterns Primer - Part 4 - Data Engineering
 https://www.youtube.com/watch?v=gaG9xwJOyEk
 
+Deep Learning Design Patterns - Jr Data Scientist - Part 5 - AutoEncoders
+https://youtu.be/tUWG_fBP2rw
+
 
 ---
 

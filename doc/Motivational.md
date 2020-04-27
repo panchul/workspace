@@ -2,6 +2,11 @@
 
 ---
 
+6 facts that will make you better.
+www.cluber.com.ua/lifestyle/samorazvitie-lifestyle/2013/08/6-zhestokih-istin-kotoryie-sdelayut-vas-luchshe/
+
+---
+
 Making the very first PoC brings such a wonderful feeling, that
 I wish I could bottle it and re-experience it in later years.
 
