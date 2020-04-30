@@ -5,7 +5,6 @@ See Also:
   - [Sed](Sed.md)
   - [RegEx](RegEx.md)
 
-
 ---
 
 Simple word manipulation demo.

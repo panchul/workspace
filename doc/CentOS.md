@@ -2,12 +2,16 @@
 
 https://www.centos.org/
 
-
 See Also:
 
   - [Linux](Linux.md)
   - [Ubuntu](Ubuntu.md)
   - [Alpine](Alpine.md)
+
+---
+
+Installing Kubernetes on CentOS
+https://phoenixnap.com/kb/how-to-install-kubernetes-on-centos
   
 ---
 

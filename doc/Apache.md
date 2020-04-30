@@ -9,6 +9,10 @@ https://httpd.apache.org/
 
 Basics of starting/stopping, getting status, etc. For different distros
 https://www.cyberciti.biz/faq/how-do-i-stop-apache-from-starting-on-linux/
+
+A very similar link, with `systemctl` and basic installing snippets.
+https://www.tecmint.com/manage-apache-web-server-in-linux
+
 TODO: summarize
 
 ---

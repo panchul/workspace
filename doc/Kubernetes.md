@@ -13,6 +13,28 @@ See Also:
 
 ---
 
+Installing Kubernetes on Ubuntu
+https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
+
+Installing Kubernetes on CentOS
+https://phoenixnap.com/kb/how-to-install-kubernetes-on-centos
+
+---
+
+Kubernetes Dashboard
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl/
+https://github.com/kubernetes/dashboard
+https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/README.md
+
+https://www.replex.io/blog/how-to-install-access-and-add-heapster-metrics-to-the-kubernetes-dashboard
+https://www.thegeekdiary.com/how-to-access-kubernetes-dashboard-externally/
+https://tjth.co/setting-up-externally-available-kubernetes-dashboard/
+
+https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-solution-template-kubernetes-dashboard?view=azs-1910
+
+---
+
 Using GPUs for compute-intensive workoads on Azure Kubernetes Service(AKS)
 https://docs.microsoft.com/en-us/azure/aks/gpu-cluster#create-an-aks-cluster
 

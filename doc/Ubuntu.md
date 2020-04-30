@@ -2,10 +2,23 @@
 
 http://www.ubuntu.com
 
+See Also:
+
+  - [Linux](Linux.md)
+  - [Alpine](Alpine.md)
+  - [CentOS](CentOS.md)
+  - [Debian](Debian.md)
+  - [Fedora](Fedora.md)
+  - [RedHat](RedHat.md)
+
+---
+
+Installing Kubernetes on Ubuntu
+https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
+
 ---
 
 Some HowTOs:
-
 http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
 
 ---

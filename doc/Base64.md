@@ -19,3 +19,13 @@ Here's the idiomatic snippet of usage(add `base64.cpp` to the project):
     std::cout << "decoded:   " << text_decoded << std::endl << std::endl;
 
 ---
+
+Encoding and decoding using the utility:
+
+    $ echo something | base64
+    c29tZXRoaW5nCg==
+    
+    $ echo c29tZXRoaW5nCg==  | base64 -d
+    something
+
+---

@@ -1,0 +1,18 @@
+# XWindows
+
+---
+
+Simple xwin server(if you are using RDP, open port 3389):
+
+    $ apt-get update
+    $ apt-get install xfce4
+    $ apt-get install xrdp
+    $ echo xfce4-session > ~/.xsession
+    $ service xrdp restart
+
+If you did not explicitly set the login/password on that server
+(for example, you spawned it on the cloud with a key), set the password:
+
+    $ sudo passwd whatever_your_login_is
+
+---
