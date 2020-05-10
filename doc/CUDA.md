@@ -2,6 +2,7 @@
 
 See also:
 
+- [ComputerVision](ComputerVision.md)
 - [OpenACC](OpenACC.md)
 - [OpenGL](OpenGL.md)
 - [OpenCV](OpenCV.md)

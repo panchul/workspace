@@ -1,6 +1,20 @@
 # Go (Golang)
 
+
 My Golang sandbox is [https://github.com/panchul/sb_golang](https://github.com/panchul/sb_golang).
+
+
+Tutorials and refreshers:
+
+https://play.golang.org/p/NeviD0awXjt
+https://gobyexample.com/
+https://www.youtube.com/watch?v=XCsL89YtqCs - great refresher of the basics!
+https://golang.org/doc/effective_go.html Effective Go
+
+---
+
+Neat multi-player game demo, on terminal, with protobufs, etc.
+https://github.com/mortenson/grpc-game-example
 
 ---
 
@@ -11,11 +25,6 @@ https://dev.to/andyhaskell/what-is-the-io-reader-in-go-48co
 
 Using DDD in Golang. Skeleton code for a db-handling app
 https://dev.to/stevensunflash/using-domain-driven-design-ddd-in-golang-3ee5
-
----
-
-The best refresher of the basics I have seen so far:
-https://www.youtube.com/watch?v=XCsL89YtqCs
 
 ---
 

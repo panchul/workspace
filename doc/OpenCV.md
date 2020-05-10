@@ -2,12 +2,31 @@
 
 See also:
 
+- [ComputerVision](ComputerVision.md)
 - [CUDA](CUDA.md)
 - [OpenACC](OpenACC.md)
 - [Open3D](Open3D.md)
 - [OpenGL](OpenGL.md)
 
 https://opencv.org/
+
+
+---
+
+Installing OpenCV4 on MacOS
+https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
+
+---
+
+For Computer Vision there is a good resource, 
+course CS231N by Stanford University.
+
+https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv
+
+---
+
+Open CV playlist with overview:
+https://www.youtube.com/playlist?list=PLfPtpZzK2Z_Tt1UaK7LipnbNCb_VR4Sv_
 
 ---
 

@@ -1,7 +1,5 @@
-
-## UNDER CONSTRUCTION
-
 # OpenStack
+
 
 ---
 
@@ -11,4 +9,3 @@ https://docs.openstack.org/devstack/latest/
 https://git.openstack.org/openstack-dev/devstack
 
 ---
-

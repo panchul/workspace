@@ -433,16 +433,18 @@ Aggregated List of C++ networking libraries
 
 ### Data mining, Machine Learning, Artificial Intelligence, etc.
 
+- Apache MXNet,
 - AppDynamics https://www.appdynamics.com/
 - [Alexa](Alexa.md)
 - Caffe and Caffe2
 - Chat bots
+- [ComputerVision](ComputerVision.md)
+- [GAN](GAN.md), (Generative Adversarial networks)
+- [Keras](Keras.md),
 - [Machine Learning](MachineLearning.md)
 - [MarkovChains](MarkovChains.md)
-- MXNet
 - Neon
 - [Neural Network](NeuralNetwork.md)
-  - [GAN](GAN.md), (Generative Adversarial networks)
 - Nirvana Cloud
 - Speech generation
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
@@ -452,17 +454,11 @@ Aggregated List of C++ networking libraries
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
 - Octave
 - CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
-- popular Python modules include 
-    - NumPy,
-    - Pandas,
-    - Seaborn,
-    - Scikit-Learn,
-- open source toolkits
-    - Apache MXNet,
-- [Keras](Keras.md),
-    - Microsoft Cognitive Toolkit,
-    - TensorFlow,
-    - PyTorch.
+- NumPy,
+- Pandas,
+- Seaborn,
+- Scikit-Learn,
+- Microsoft Cognitive Toolkit,
 - Google Handtracking library: https://github.com/google/mediapipe/blob/master/mediapipe/docs/hand_tracking_mobile_gpu.md
 - [gnuplot](Gnuplot.md)
 
@@ -500,20 +496,14 @@ Neat command-line tricks:
   Amoeba finds approximate solutions to NP-hard problem in linear time
 Jcm  
 
-Integrating Keras (TensorFlow) YOLOv3 Into Apache NiFi Workflows
-https://community.hortonworks.com/articles/193868/integrating-keras-tensorflow-yolov3-into-apache-ni.html
-
-
 Some Python links:
 
     https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot
     https://www.tensorflow.org/install/
 
 Miscellaneous other links:
-
     http://www.asimovinstitute.org/neural-network-zoo/
-    https://pytorch.org/
-
+  
 10 statistical techniques to use    
 https://www.datasciencecentral.com/profiles/blogs/the-10-statistical-techniques-data-scientists-need-to-master-10
     
@@ -524,9 +514,6 @@ https://www.houseofbots.com/news-detail/3783-1-10-plus-essential-cheat-sheets-fo
    https://arxiv.org/abs/1911.01547.pdf
    https://github.com/fchollet/ARC
 
- - Nice Computer Vision summary, Spectral Graph Convolution step-by-step.
-   https://towardsdatascience.com/spectral-graph-convolution-explained-and-implemented-step-by-step-2e495b57f801
-  
  - Great Google ML Crash Course:
    https://developers.google.com/machine-learning/crash-course/ml-intro    
 
@@ -677,6 +664,7 @@ https://nofilmschool.com/how-to-write-a-scene
 
 - [Business](Business.md)
 - [Career](Career.md)
+- [Education](Education.md)
 - [Startup](Startup.md)
 - Kaggle, misc. projects. https://www.kaggle.com/
 - triplebyte.com
@@ -686,6 +674,9 @@ https://nofilmschool.com/how-to-write-a-scene
 - https://app.codility.com/programmers/
 - leetcode.com
 - Teach yourself programming in ten years: http://norvig.com/21-days.html
+
+- Free online Harvard courses: https://online-learning.harvard.edu/catalog/free
+
 
 
 ## GPS, Meteorology, Alternative energy, and related
@@ -734,6 +725,8 @@ https://nofilmschool.com/how-to-write-a-scene
 - https://www.physikinstrumente.com/en/
 - https://www.thorlabs.com/navigation.cfm?guide_id=2251
 - https://www.tinkercad.com - open-source 3d printing models, like GitHub for misc design(electronic, 3d printing, etc.) 
+- A guide for slecting a camera for computer vision projects
+  http://guide.directindustry.com/choosing-the-right-machine-vision-camera/
 
 
 ## Motivational and Psychology

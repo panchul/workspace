@@ -2,6 +2,7 @@
 
 - [Blender](Blender.md)
 - [CUDA](CUDA.md)
+- [ComputerVision](ComputerVision.md)
 - [DirectX](DirectX.md)
 - [FBX](FBX.md)
 - [ffmpeg](FfMpeg.md)
@@ -26,6 +27,17 @@
 - [Unity](Unity.md)
 - [Unreal Engine](UnreadlEngine.md)
 - Autodesk FBX SDK
+
+---
+
+AA-project, ASCII image viewer
+http://aa-project.sourceforge.net/gallery/
+https://sourceforge.net/projects/aa-project/
+
+---
+
+A guide for slecting a camera for computer vision projects
+http://guide.directindustry.com/choosing-the-right-machine-vision-camera/
 
 ---
 

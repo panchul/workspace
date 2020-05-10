@@ -2,6 +2,8 @@
 
 See Also:
 
+  - [Education](Education.md)
+  - [Startup](Startup.md)
   - [Business](Business.md)
 
 Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](﻿https://www.linkedin.com/in/panchul)

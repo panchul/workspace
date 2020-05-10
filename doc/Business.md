@@ -3,6 +3,8 @@
 See Also:
 
   - [Career](Career.md)
+  - [Education](Education.md)
+  - [Startup](Startup.md)
 
 ---
 

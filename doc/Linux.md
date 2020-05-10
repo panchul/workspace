@@ -33,6 +33,11 @@ See Also:
 
 ---
 
+A Collection of windows managers
+https://www.tecmint.com/best-tiling-window-managers-for-linux/
+
+---
+
 To see the distribution id, release name, codename, etc.:
 
     $ lsb_release -a

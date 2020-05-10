@@ -10,6 +10,58 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+Other pure Python vs NumPy, vs TensorFlow, vs Keras links
+https://realpython.com/numpy-tensorflow-performance/
+https://towardsdatascience.com/numpy-vs-tensorflow-speed-on-matrix-calculations-9cbff6b3ce04 
+
+---
+
+To install anaconda3, I downloaded it,
+
+    $ chmod 755 Anaconda...
+    $ ./Anaconda...
+    
+Added it to .zshrc    
+    
+    $ conda update --all --yes
+
+From https://stackoverflow.com/questions/38109270/cv2-import-error-on-jupyter-notebook :
+
+By default: Anaconda (jupyter notebook) has its own version of Python & packages once it has been installed on your PC.
+If you have Python x.x installed on your PC, and you installed OpenCV or -whatever packages- using the package manager of this python version, it does NOT mean your jupyter notebook will get access to these python packages you installed earlier. They are not living in the same folder.
+To illustrate this, open your windows CMD and write :
+
+    $ python 
+
+then write:
+
+    $ import os
+    $ os.path
+
+you will get the path of your python. in my case (C:\Python35)
+
+Now open the Anaconda Prompt and write the same commands again:
+
+    $ python 
+
+then write:
+
+    $ import os
+    $ os.path
+
+you will get the anaconda's python path. In my case (C:\Users\MY_NAME\Anaconda3).
+
+As you can see, there are two different paths of python, so make sure that your first step in diagnosing such error (No module named x) is to ask yourself whether you installed the package in the right place or not!
+
+N.B: within Anaconda itself you can create environments, each environment may have different packages installed in it, so you also have to make sure you're in the right environment and it is the active one.
+
+---
+
+Best ways to add to sys.path relative to the current running script
+https://stackoverflow.com/questions/8663076/python-best-way-to-add-to-sys-path-relative-to-the-current-running-script
+
+---
+
 Another link with useful resources on Image processing and ML
 https://www.pyimagesearch.com
 

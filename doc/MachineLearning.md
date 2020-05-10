@@ -3,6 +3,7 @@
 See Also:
 
  - [Alexa](Alexa.md)
+ - [ComputerVision](ComputerVision.md)
  - [MarkovChains](MarkovChains.md)
  - [Neural Network](NeuralNetwork.md)
    - [GAN](GAN.md), (Generative Adversarial networks)
@@ -10,6 +11,11 @@ See Also:
  - [Splunk](Splunk.md)
  - [TensorFlow](TensorFlow.md)
  - [PyTorch](PyTorch.md)
+
+---
+
+Curated list of Monte Carlo tree search papers
+https://github.com/benedekrozemberczki/awesome-monte-carlo-tree-search-papers
 
 ---
 
