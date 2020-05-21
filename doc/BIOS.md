@@ -1,5 +1,9 @@
 # BIOS
 
+See Also:
+
+ - [Hardware](Hardware.md)
+
 ---
 
 ```

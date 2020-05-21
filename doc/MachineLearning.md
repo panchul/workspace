@@ -14,6 +14,11 @@ See Also:
 
 ---
 
+A collection of useful tutorials, and practical step-by-step implementations.
+https://github.com/panchul/Tutorials-1/tree/master/Tensorflow%20Object%20Detection
+
+---
+
 Curated list of Monte Carlo tree search papers
 https://github.com/benedekrozemberczki/awesome-monte-carlo-tree-search-papers
 

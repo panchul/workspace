@@ -3,6 +3,7 @@
 See also:
 
   - [Jupyter](Jupyter.md)
+  - [Anaconda](Anaconda.md)
 
 https://www.python.org/
 
@@ -264,4 +265,19 @@ You get
 
 Thus, when module one gets loaded, its __name__ equals "one" instead of "__main__".
 
+---
+
+Simple snippet to shutdown the computer:
+
+    import os
+    os.system("shutdown /s")
+
+or, more elaborate:
+
+    check = input("shutdow? (y/n)")
+    if(check =="n"):
+        exit()
+    else:
+        os.system("shutdown /s")
+        
 ---

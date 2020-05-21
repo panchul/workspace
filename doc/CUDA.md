@@ -10,6 +10,11 @@ See also:
 
 ---
 
+Nice article about considerations when buying a GPU board.
+https://timdettmers.com/2019/04/03/which-gpu-for-deep-learning/
+
+---
+
 Tesla V100 Server: On-Prem vs AWS Cost Comparison
 https://lambdalabs.com/blog/8-v100-server-on-prem-vs-p3-instance-tco-analysis-cost-comparison/
 

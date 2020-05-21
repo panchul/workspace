@@ -13,6 +13,35 @@ See Also:
 
 ---
 
+Projects from Cloud Native Computing Foundation (CNCF)
+
+- Kubernetes for container orchestration
+- Prometheus for monitoring
+- Envoy for service mesh
+- CoreDNS for service discovery
+- containerd for container runtime
+- Fluentd for logging
+- rkt and CRI-O for container runtime
+- Linkerd for service mesh
+- etcd for key/value store
+- gRPC for remote procedure call (RPC)
+- CNI for networking API
+- Harbor for registry
+- Helm for package management
+- Rook and Vitess for cloud-native storage
+- Notary for security
+- TUF for software updates
+- NATS for messaging
+- Jaeger and OpenTracing for distributed tracing
+- Open Policy Agent for policy.
+
+---
+
+50 days from zero to hero with Kubernetes
+https://azure.microsoft.com/mediahandler/files/resourcefiles/kubernetes-learning-path/Kubernetes%20Learning%20Path_Version%202.0.pdf
+
+---
+
 Installing Kubernetes on Ubuntu
 https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
 

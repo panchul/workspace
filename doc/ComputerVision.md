@@ -6,8 +6,8 @@ See Also:
 
  - [Graphics](Graphics.md)
  - [CUDA](CUDA.md)
- 
-  
+ - [Yolo](Yolo.md)
+
 ---
 
 Computer Vision courses from Stanford University 
@@ -120,5 +120,34 @@ A Python script to extract the codes from the camera feed:
     
     if __name__ == '__main__':
         main()
+
+---
+
+One-liner text recognition using PyTesseract:
+(from this post: https://morioh.com/p/177cde94de0e)
+
+Pre-requisites:
+
+    $ pip install opencv-python
+    $ sudo apt-get update
+    $ sudo apt-get install tesseract-ocr
+    $ sudo apt-get install libtesseract-dev
+    $ pip install pytesseract
+
+Might need to add the `tesseract_cmd`, might be for Windows though:
+
+    import cv2
+    import pytesseract
+    pytesseract.pytesseract.tesseract_cmd = r'c:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+
+The Python code itself:
+
+    import cv2
+    import pytesseract
+    
+    img = cv2.imread('somefile.png')
+    text = pytesseract.image_to_string(img)
+    print(text)
+  
 
 ---

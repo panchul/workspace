@@ -14,6 +14,13 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 ---
 
+Neat article, C++ Coroutines: Understanding Symmetric Transfer
+https://lewissbaker.github.io/2020/05/11/understanding_symmetric_transfer
+
+You can see the complete set of code in Compiler Explorer here: https://godbolt.org/z/-Kw6Nf
+
+---
+
 Neat summary on concattenation of sequence containers:
 http://www.martinbroadhurst.com/concatenate-two-vectors-in-c.html
 

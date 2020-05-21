@@ -9,6 +9,14 @@ See Also:
 
 ---
 
+Azure Stack slides:
+https://github.com/Azure-Samples/Azure-Stack-Hub-Foundation-Core/tree/master/ASF-slides
+
+Azure Stack Videos
+https://www.youtube.com/channel/UCCkJEhUc1pWTj84eefLOcRA/videos
+
+---
+
 Azure CLI
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 

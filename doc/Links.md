@@ -269,6 +269,8 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - [BIOS](BIOS.md)  
 - [CNC Machines](CNC.md)
 - [EmbeddedProgramming](EmbeddedProgramming.md)
+- [FPGA](FPGA.md)
+- [Hardware](Hardware.md)
 - Misc Manufacturing and hardware, etc. https://www.designworldonline.com/iot-owe-advances-power-ethernet-cabling/
 - Brushless motors, etc.  https://www.alliedmotion.com/whitepaper-differences-brush-brushless-motors/
 - Sensors, and misc hardware: https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
@@ -715,6 +717,8 @@ https://nofilmschool.com/how-to-write-a-scene
 
 
 ## Manufacturing, IoT, etc.
+
+- [FPGA](FPGA.md)
 
 - neat 3d printer﻿https://ultimaker.com/en/products/ultimaker-s5
 
