@@ -11,6 +11,18 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+Basic matplotlib usage. In Jupyter Notebooks, might want to use `%matplotlib inline`:
+
+    import matplotlib
+    import matplotlib.pyplot as plt
+    plt.plot([0, 1, 2, 3, 4], [0, 3, 5, 9, 11])
+    plt.xlabel('Months')
+    plt.ylabel('Books Read')
+    plt.show()
+    plt.savefig('books_read.png')
+
+---
+
 Other pure Python vs NumPy, vs TensorFlow, vs Keras links
 https://realpython.com/numpy-tensorflow-performance/
 https://towardsdatascience.com/numpy-vs-tensorflow-speed-on-matrix-calculations-9cbff6b3ce04 
