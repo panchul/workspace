@@ -13,6 +13,12 @@ My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/p
 
 ---
 
+Nice article on how to optimize Docker containers (to not duplicate already stored content,
+to avoid creating unnecessary layers, etc.)
+https://dev.to/sammyvimes/docker-on-a-diet-1n6j
+
+---
+
 https://www.docker.com/
 
 Installation:

@@ -29,6 +29,12 @@ http://sergiomsilva.com/pubs/alpr-unconstrained/
 
 ---
 
+Cute project of identifying objects on a conveyor belt.
+https://pysource.com/2020/05/19/identify-objects-moving-on-a-conveyor-belt-using-opencv-with-python/
+https://morioh.com/p/f2254262e3e1
+
+---
+
 Depth estimation
 https://github.com/saeid-h/bts-fully-tf
 

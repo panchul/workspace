@@ -5,6 +5,12 @@ See also
 
 ---
 
+Resetting the system management controller (SMC) can resolve certain
+issues related to power, battery, and other features.
+https://support.apple.com/en-us/HT201295
+
+---
+
 MacOS Security and Privacy Guide. Neat compilation of tricks and practices.
 https://github.com/drduh/macOS-Security-and-Privacy-Guide
 

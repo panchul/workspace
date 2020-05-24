@@ -1,9 +1,12 @@
-## UNDER CONSTRUCTION
-
 # Google Cloud
 
-
 https://cloud.google.com/
+
+---
+
+If you enter prefix `-ad:` in the search string of Google.com, the adds will be surpressed:
+
+    -ad: something without ads
 
 ---
 
@@ -20,7 +23,6 @@ https://www.youtube.com/watch?v=kgxfdTh9lz0
 
 The repo with the samples
 https://github.com/GoogleCloudPlatform/cloudml-samples.git
-
 
 
 

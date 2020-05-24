@@ -15,6 +15,25 @@ See Also:
 
 ---
 
+10 popular datasets for Machine Learning
+
+- Boston Housing Prices Dataset -  https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html, there is another one
+  http://lib.stat.cmu.edu/datasets/boston
+- Iris Dataset - https://archive.ics.uci.edu/ml/datasets/iris
+- Wisconsin Breast Cancer Dataset -  https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
+- MNIST - https://en.wikipedia.org/wiki/MNIST_database
+- Fashion MNIST - https://github.com/zalandoresearch/fashion-mnist
+- CIFAR-10 - https://www.cs.toronto.edu/~kriz/cifar.html
+- ImageNet - http://www.image-net.org/
+- YouTube-8M - https://research.google.com/youtube8m/
+- Twitter Sentiment Analysis - http://www.sentiment140.com/
+- 20 Newsgroups - http://qwone.com/~jason/20Newsgroups/
+- Google Public Datasets - https://research.google/tools/datasets/
+- Kaggle Datasets - https://www.kaggle.com/datasets
+- UCI Datasets - https://archive.ics.uci.edu/ml/index.php
+
+---
+
 A collection of useful tutorials, and practical step-by-step implementations.
 https://github.com/panchul/Tutorials-1/tree/master/Tensorflow%20Object%20Detection
 
@@ -112,6 +131,34 @@ Source Paper https://aliaksandrsiarohin.github.io/first-order-model-website/
 
 Nautical AI. IBM and ProMare announce AI Captain
 https://news.developer.nvidia.com/mayflower-autonomous-ship-to-retrace-the-famous-historical-voyage-powered-by-nvidia-jetson/
+
+---
+
+Some cute samples
+Basic linear regression vs polynomial regression example:
+https://medium.com/@shuklapratik22/complete-guide-on-linear-regression-vs-polynomial-regression-with-implementation-in-python-964c64c28aa8
+https://medium.com/@shuklapratik22/multivariable-linear-regression-using-normal-equation-707d19f1c325
+
+(1) Simple Linear Regression Explained With It’s Derivation: https://youtu.be/1M2-Fq6wl4M
+(2)How to Calculate The Accuracy Of A Model In Linear Regression From Scratch : https://youtu.be/bM3KmaghclY
+(3) Simple Linear Regression Using Sklearn : https://youtu.be/_VGjHF1X9oU
+(4) Machine Learning Mathematic (Matrices) Explained : https://youtu.be/1MASyeyAydw
+(5) Complete Mathematical Derivation Of Normal Equation: https://youtu.be/E7Q4UP6bNmc
+(6) Simple Linear Regression Implementation Using Normal Equation: https://youtu.be/wmmUJnmwQho
+
+(1) Linear Regression From Scratch : https://medium.com/@shuklapratik22/linear-regression-from-scratch-a3d21eff4e7c
+(2) Linear Regression Through Brute Force : https://medium.com/@shuklapratik22/linear-regression-line-through-brute-force-1bb6d8514712
+(3) Linear Regression Complete Derivation: https://medium.com/@shuklapratik22/linear-regression-complete-derivation-406f2859a09a
+(4) Simple Linear Regression Implementation From Scratch: https://medium.com/@shuklapratik22/simple-linear-regression-implementation-from-scratch-cb4a478c42bc
+(5) Simple Linear Regression From Scratch : https://medium.com/@shuklapratik22/simple-linear-regression-implementation-2fa88cd03e67
+(6) Gradient Descent With it’s Mathematics : https://medium.com/@shuklapratik22/what-is-gradient-descent-7eb078fd4cdd
+(7) Linear Regression With Gradient Descent From Scratch : https://medium.com/@shuklapratik22/linear-regression-with-gradient-descent-from-scratch-d03dfa90d04c
+(8) Error Calculation Techniques For Linear Regression : https://medium.com/@shuklapratik22/error-calculation-techniques-for-linear-regression-ae436b682f90
+(9) Introduction to Matrices For Machine Learning : https://medium.com/@shuklapratik22/introduction-to-matrices-for-machine-learning-8aa0ce456975
+(10) Understanding Mathematics Behind Normal Equation In Linear Regression (Complete Derivation)
+https://medium.com/@shuklapratik22/understanding-mathematics-behind-normal-equation-in-linear-regression-aa20dc5a0961
+(11)Implementation Of Simple Linear Regression Using Normal Equation(Matrices)
+https://medium.com/@shuklapratik22/implementation-of-simple-linear-regression-using-normal-equation-matrices-f9021c3590da
 
 ---
 
