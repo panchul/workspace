@@ -18,6 +18,45 @@ TODO: do the summary
 
 ---
 
+Enabling SSH on Ubuntu 18.04
+https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/
+
+
+    $ sudo apt update
+	$ sudo apt install openssh-server
+    $ sudo systemctl status ssh
+    $ sudo ufw allow ssh
+
+You can find out your own public ip using
+
+    $ ip a
+
+Or visiting https://ifconfig.co/ip
+
+    $ curl ifconfig.co/ip
+
+Here is where you can refresh the instructions to setup the keys:
+https://linuxize.com/post/how-to-setup-passwordless-ssh-login/
+
+
+To start:
+
+    $ sudo systemctl start ssh
+
+To make it start automatically upon booting:
+
+    $ sudo systemctl enable ssh
+
+To stop:
+
+    $ sudo systemctl stop ssh
+
+To disable the automatic start when booting:
+
+    $ sudo systemctl disable ssh
+
+---
+
 Setting up sshd on fedora  
 https://linuxconfig.org/how-to-install-start-and-connect-to-ssh-server-on-fedora-linux
 
