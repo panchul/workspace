@@ -10,6 +10,11 @@ See also:
 
 ---
 
+An article about installing both CUDA 10 and 9 on the same machine (Ubuntu 18.04)
+https://medium.com/thecyphy/multi-version-cuda-and-tensorflow-gpu-on-ubuntu-18-04-lts-22cfcd32f06a
+
+---
+
 Nice article about considerations when buying a GPU board.
 https://timdettmers.com/2019/04/03/which-gpu-for-deep-learning/
 

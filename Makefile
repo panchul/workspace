@@ -52,12 +52,14 @@ status_all: git_status
 
 git_status:
 	@ for repo in `ls projects | grep sb_` ; \
-	do sh -c "echo \"Checking projects/$$repo...\" ; cd projects/$$repo ; git status -sb ; cd ../.. " ; \
+	do sh -c "echo \"Checking projects/$$repo...\" ; cd projects/$$repo ; git fetch ; git status -sb ; cd ../.. " ; \
 	done ;
 	@ if [ -e private/private_repo_list.txt ] ; then \
 	for repo in `cat private/private_repo_list.txt` ; \
-	do sh -c "echo \"Checking PRIVATE projects/$$repo...\" ; cd projects/$$repo ; git status -sb ; cd ../.. " ; \
+	do sh -c "echo \"Checking PRIVATE projects/$$repo...\" ; cd projects/$$repo ; git fetch ; git status -sb ; cd ../.. " ; \
 	done ; \
+	else \
+	@echo "HINT: You might want to run 'ls -l1 projects > private/private_repo_list.txt' to create private repo list." ; \
 	fi
 	@ git status -sb
 

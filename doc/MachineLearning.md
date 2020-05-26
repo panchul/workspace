@@ -39,6 +39,11 @@ https://github.com/panchul/Tutorials-1/tree/master/Tensorflow%20Object%20Detecti
 
 ---
 
+Some biomed tutorials, many lectures on YouTube, code, but seems to have some specific libraries, not sure it is generic enough.
+https://www.youtube.com/watch?v=qWVTxfLq2ak
+
+---
+
 Curated list of Monte Carlo tree search papers
 https://github.com/benedekrozemberczki/awesome-monte-carlo-tree-search-papers
 

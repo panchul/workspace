@@ -2,6 +2,11 @@
 
 ---
 
+How to lie with statistics
+https://www.youtube.com/watch?v=bVG2OQp6jEQ
+
+---
+
 Baye's Theorem
 https://en.wikipedia.org/wiki/Bayes%27_theorem
 

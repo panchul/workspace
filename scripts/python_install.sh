@@ -10,6 +10,6 @@ else
     echo "Detected that python has NOT already been installed"
 fi
 
-
 sudo apt-get -y install python
+sudo apt-get -y install python-pip
 

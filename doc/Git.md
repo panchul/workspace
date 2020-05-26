@@ -56,7 +56,7 @@ There were some issues with the credentials on Cygwin.
 
 ---
 
-### Undoing things
+## Undoing things
 
 https://rtyley.github.io/bfg-repo-cleaner/
 https://jorin.me/clean-git-history/
@@ -591,6 +591,12 @@ To push from a different account without config(if password matters, skip it to 
 To cache the password for operations over https:
 
 https://www.tecmint.com/fix-git-user-credentials-for-https
+
+And this discussion is also useful:
+https://stackoverflow.com/questions/14762034/push-to-github-without-a-password-using-ssh-key
+
+And, maybe this:
+https://medium.com/@amanze.ogbonna/accessing-pushing-to-github-without-username-and-password-3022feb077fb
 
 ---
 
