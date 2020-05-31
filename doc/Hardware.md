@@ -11,6 +11,8 @@ See Also:
 ---
 
 Very detailed write-up about a self-built deep learning machine.
+https://l7.curtisnorthcutt.com/the-best-4-gpu-deep-learning-rig
+and the earlie post, that went viral and made Lambda cut the price:
 https://l7.curtisnorthcutt.com/build-pro-deep-learning-workstation
 
 ---

@@ -13,6 +13,28 @@ My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/p
 
 ---
 
+Nice way to connect to the host network from ouside of a Docker container.
+https://dev.to/natterstefan/docker-tip-how-to-get-host-s-ip-address-inside-a-docker-container-5anh
+
+You can use a Linux-scecific `docker-compose.override.yml`, https://docs.docker.com/compose/extends/
+Or set the gatewateway via environment. E.g. in `~/.bashrc`:
+
+    export DOCKER_GATEWAY_HOST=172.17.0.1
+
+and the .yaml:
+
+    # docker-compose.yml
+    version: '3.7'
+    services:
+      app:
+        image: your-app:latest
+        ports:
+          - "8080:8080"
+        environment:
+          DB_UPSTREAM: http://${DOCKER_GATEWAY_HOST:-host.docker.internal}:3000
+
+---
+
 Nice article on how to optimize Docker containers (to not duplicate already stored content,
 to avoid creating unnecessary layers, etc.)
 https://dev.to/sammyvimes/docker-on-a-diet-1n6j

@@ -11,6 +11,33 @@ See Also:
 
 ---
 
+Neat tricks to extend the configurations.
+https://docs.docker.com/compose/extends/
+
+E.g. Start with a `docker-compose.yml`:
+     
+    web:
+      image: example/my_web_app:latest
+      depends_on:
+        - db
+    db:
+      image: postgres:latest
+     
+In a `docker-compose.admin.yml` add a new service to run the database export or backup:
+     
+    dbadmin:
+      build: database_admin/
+      depends_on:
+        - db
+     
+To start a normal environment run `docker-compose up -d`. To run a database backup,
+include the `docker-compose.admin.yml` as well:
+     
+    $ docker-compose -f docker-compose.yml -f docker-compose.admin.yml \
+         run dbadmin db-backup
+
+---
+
 Installing:
 https://docs.docker.com/compose/install/#upgrading
 

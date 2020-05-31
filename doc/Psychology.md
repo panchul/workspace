@@ -2,6 +2,20 @@
 
 ---
 
+8 Congnitive Biases in Software Development
+https://thevaluable.dev/cognitive-bias-software-development/
+
+- The optimistic bias
+- The overconfidence bias
+- The confirmation bias
+- Wishful thinking
+- The anchoring bias
+- The bandwagon effect
+- The cargo cult
+- The correspondence bias
+
+---
+
 We stay in the same age where we did not have enough attention.
 https://fit4brain.com/9210
 

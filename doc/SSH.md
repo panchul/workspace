@@ -55,6 +55,28 @@ To disable the automatic start when booting:
 
     $ sudo systemctl disable ssh
 
+At the server from which you wan to access it, create an identity and do `ssh-copy-id`
+(it appends it to the `authorized_keys` file:
+
+    $ ssh-keygen
+    
+Save the key to `id_rsa_mykey`. Then
+
+    $ ssh-copy-id -i ~/.ssh/id_rsa_mykey myusername@myhost
+
+you can also connect as:
+
+    $ ssh -i ~/.ssh/id_rs_mykey myusername@myhost
+
+And you might need to create an identity in ~/.ssh/config:
+    
+    Host machinea
+    Hostname myhost
+    IdentityFile ~/.ssh/id_rsa_mykey
+    User myusername
+
+See below, I had more on this.
+
 ---
 
 Setting up sshd on fedora  
@@ -174,9 +196,9 @@ This is it. You can now login without entering a password:
 Some old notes on Identity files, etc. Not sure how accurate that was, to lazy to check.
 To login from machine A to machine B:
 
-1. run ```ssh-keygen``` on host A ```machinea```. Do not enter the password for the key, save it in
- a file ```id_rsa_keya```
-2. append ```id_rsa_keya.pub``` to ```~/.ssh/authorized_keys``` on host B (```machineb```).
+1. run `ssh-keygen` on host A `machinea`. Do not enter the password for the key, save it in
+ a file `id_rsa_keya`
+2. append `id_rsa_keya.pub` to `~/.ssh/authorized_keys` on host B (`machineb`).
 
 That is it. Connect from host A to host B using, for example:
 
