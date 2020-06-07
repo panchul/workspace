@@ -5,6 +5,13 @@ See also
 
 ---
 
+The docs about Mac's file types.
+https://support.apple.com/guide/disk-utility/file-system-formats-available-in-disk-utility-dsku19ed921c/mac
+
+Bottom line is that `APFS case-sensitive` is what you want.
+
+---
+
 Resetting the system management controller (SMC) can resolve certain
 issues related to power, battery, and other features.
 https://support.apple.com/en-us/HT201295
