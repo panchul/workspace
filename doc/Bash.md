@@ -828,3 +828,28 @@ https://www.tecmint.com/compare-local-and-remote-files-in-linux/
     $ diff <(ssh user@host1 `cat /path/to/file1`) <(ssh user@remote2 `cat /path/to/file2`)
 
 ---
+
+User input pattern:
+
+    #!/bin/bash
+    while
+    do
+      echo "hi"
+      read -r -p "what is your answer? [Y/n] " input
+      case $input in
+        [yY][eE][sS]|[yY])
+             echo "it was yes"
+             break
+             ;;
+        [nN][oO]|[nN])
+             echo "it was no"
+             break
+             ;;
+        *)
+        echo "Invalid input..."
+       exit 1
+       ;;
+      esac
+    done
+      
+---
