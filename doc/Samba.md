@@ -176,6 +176,18 @@ the pods could be instantiated anywhere and will try to access the local storage
 
 Create a .yaml with pv and pvc definitions pointing to the created shared folder:
 
+The storage class:
+
+    kind: StorageClass
+    apiVersion: storage.k8s.io/v1
+    metadata:
+      name: local-storage
+    provisioner: kubernetes.io/no-provisioner
+    reclaimPolicy: Retain
+    volumeBindingMode: WaitForFirstConsumer
+
+The persistent volume:
+
     apiVersion: v1
     kind: PersistentVolume
     metadata:
@@ -183,7 +195,7 @@ Create a .yaml with pv and pvc definitions pointing to the created shared folder
       labels:
         type: local
     spec:
-      storageClassName: manual
+      storageClassName: local-storage
       capacity:
         storage: 2Gi
       accessModes:
@@ -198,7 +210,7 @@ and a claim,
     metadata:
       name: samba-share-claim
     spec:
-      storageClassName: manual
+      storageClassName: local-storage
       accessModes:
         - ReadWriteMany
       resources:
@@ -226,9 +238,9 @@ and assigned the claim to the application.
             - containerPort: 80
             volumeMounts:
             - mountPath: "/usr/share/nginx/html"
-              name: samba-share-volume
+              name: samba-share-volume2
           volumes:
-          - name: samba-share-volume
+          - name: samba-share-volume2
             persistentVolumeClaim:
               claimName: samba-share-claim
 
@@ -240,4 +252,132 @@ You can now see the pv being `Bound`:
     samba-share-volume   10Gi       RWX           Retain           Bound    default/local-storage  local-storage            3m54s
     ...
 
+---
+
+Another example, from here: https://github.com/DanWahlin/DockerAndKubernetesCourseCode
+
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      labels:
+        app: mongo-secrets-env
+      name: mongo-secrets-env
+    data:
+      MONGODB_DBNAME: codeWithDan
+      MONGO_INITDB_ROOT_USERNAME: admin
+    
+    ---
+    
+    kind: StorageClass
+    apiVersion: storage.k8s.io/v1
+    metadata:
+      name: local-storage
+    provisioner: kubernetes.io/no-provisioner
+    # The reclaim policy applies to the persistent volumes not the storage class itself. 
+    # pvs and pvcs that are created using that storage class will inherit the reclaim policy set here.
+    reclaimPolicy: Retain
+    volumeBindingMode: WaitForFirstConsumer
+    
+    ---
+    
+    # Note: While a local storage PV works, going with a more durable solution (NFS, cloud option, etc.) is recommended
+    # Adding this for demo purposes to run on Docker Desktop Kubernetes since it only supports a single Node
+    # https://kubernetes.io/blog/2018/04/13/local-persistent-volumes-beta/
+    apiVersion: v1
+    kind: PersistentVolume
+    metadata:
+      name: mongo-pv
+    spec:
+      capacity:
+        storage: 1Gi
+      # volumeMode block feature gate enabled by default with 1.13+
+      volumeMode: Filesystem
+      accessModes:
+      - ReadWriteOnce
+      # StorageClass has a reclaim policy default so it'll be "inherited" by the PV
+      # persistentVolumeReclaimPolicy: Retain
+      storageClassName: local-storage
+      local:
+        path: /tmp/data/db
+      nodeAffinity:
+        required:
+          nodeSelectorTerms:
+          - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+              - docker-desktop
+    
+    ---
+    
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      name: mongo-pvc
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      storageClassName: local-storage
+      resources:
+        requests:
+          storage: 1Gi
+    
+    ---
+    
+    apiVersion: apps/v1
+    kind: StatefulSet
+    metadata:
+      labels:
+        app: mongo
+      name: mongo
+    spec:
+      serviceName: mongo
+      replicas: 1
+      selector:
+        matchLabels:
+          app: mongo
+      template:
+        metadata:
+          labels:
+            app: mongo
+        spec:
+          volumes:
+          - name: mongo-volume
+            persistentVolumeClaim:
+              claimName: mongo-pvc
+            # Example only - environment vars actually used here
+          - name: secrets
+            secret:
+              secretName: db-passwords
+          containers:
+          - env:
+            - name: MONGODB_DBNAME
+              valueFrom:
+                configMapKeyRef:
+                  key: MONGODB_DBNAME
+                  name: mongo-secrets-env
+            - name: MONGO_INITDB_ROOT_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: mongo-secrets-env
+                  key: MONGO_INITDB_ROOT_USERNAME
+            # Pull password from secrets
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-passwords
+                  key: db-password
+            image: mongo
+            name: mongo
+            ports:
+            - containerPort: 27017
+            resources: {}        
+            volumeMounts:
+            - name: mongo-volume
+              mountPath: /data/db
+            # Example only - environment vars actually used here
+            - name: secrets
+              mountPath: /etc/db-passwords
+              readOnly: true
+    
 ---
