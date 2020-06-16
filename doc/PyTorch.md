@@ -21,3 +21,12 @@ https://discuss.pytorch.org/t/loading-weights-for-cpu-model-while-trained-on-gpu
     cpu_model.load_state_dict(torch.load(path_to_your_saved_gpu_model, map_location=DEVICE)
 
 ---
+
+Example of saving  a checkpoint using state dictionary (.pth)
+
+    
+  
+
+
+---
+

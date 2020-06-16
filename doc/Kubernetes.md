@@ -10,6 +10,7 @@ See Also:
     - [DockerSwarm](DockerSwarm.md)
     - [Kubeflow](Kubeflow.md)
     - [LXD, Linux Containers](LXD.md)
+    - [Samba](Samba.md)
 
 ---
 
@@ -148,7 +149,6 @@ Optional, creating the config file
 Getting and running Minikube, a CLI tool that provisions and manages single-node Kubernetes clusters optimized for development workflows.
 
     $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.21.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
-    
     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                    Dload  Upload   Total   Spent    Left  Speed
     100 81.9M  100 81.9M    0     0  6845k      0  0:00:12  0:00:12 --:--:-- 6519k
@@ -157,13 +157,11 @@ Getting and running Minikube, a CLI tool that provisions and manages single-node
     [here goes help, read it]
      
     $ minikube status
-    
     minikube: Stopped
     localkube: 
     kubectl: 
 
     $ minikube start
-    
     Starting local Kubernetes v1.7.0 cluster...
     Starting VM...
     Getting VM IP address...
@@ -175,7 +173,6 @@ Getting and running Minikube, a CLI tool that provisions and manages single-node
     Kubectl is now configured to use the cluster.
     
     $ minikube status
-    
     minikube: Running
     localkube: Running
     kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.100
@@ -189,7 +186,6 @@ Deploying an echoserver
     $ minikube dashboard
     $ kubectl cluster-info
     $ kubectl cluster-info dump
-
 
 Some info from kubectl
 
@@ -280,7 +276,8 @@ www.listen(8080,function () {
 });
 ```
 
--------------
+---
+
 Quick server in go:
 
     package main
@@ -296,7 +293,6 @@ Quick server in go:
         })
         log.Fatal(http.ListenAndServe(":5000", nil))
     }
-
  
 Build a statically linked Go binary (no external dependencies)
 
@@ -305,17 +301,14 @@ Build a statically linked Go binary (no external dependencies)
 verify that the produced binary is statically linked:
 
     $ file hello
-
     hello: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
 
     $ ldd hello
-
         not a dynamic executable
 
----------------------
+--------
 
     $ minikube version
-
     minikube version: v0.25.0
 
     $ minikube start
@@ -356,5 +349,77 @@ https://dev.to/azure/learn-kubernetes-with-this-5-part-series-29km
 
 Practical Kubernetes Stories for Developers.
 https://dev.to/pavanbelagatti/practical-kubernetes-stories-for-developers-330d
+
+---
+
+Kubernetes volumes:
+
+https://github.com/kubernetes/examples/tree/master/staging/volumes
+
+Mounting a local folder on a node(should be on all nodes, because the deployment is not deterministic)
+
+Here is an example: https://stackoverflow.com/questions/48747538/using-windows-smb-shares-from-kubernetes-deployment-app
+    
+    kind: PersistentVolume
+    apiVersion: v1
+    metadata:
+      name: samba-share-volume
+      labels:
+        type: local
+    spec:
+      storageClassName: manual
+      capacity:
+        storage: 2Gi
+      accessModes:
+        - ReadWriteMany
+      hostPath:
+        path: "/data/share1"
+    
+and a claim,
+    
+    kind: PersistentVolumeClaim
+    apiVersion: v1
+    metadata:
+      name: samba-share-claim
+    spec:
+      storageClassName: manual
+      accessModes:
+        - ReadWriteMany
+      resources:
+        requests:
+          storage: 1Gi
+    
+and assigned the claim to the application.
+    
+    apiVersion: extensions/v1beta1
+    kind: Deployment
+    metadata:
+      name: samba-share-deployment
+    spec:
+      replicas: 2
+      template:
+        metadata:
+          labels:
+            app: samba-share-deployment
+            tier: backend
+        spec:
+          containers:
+          - name: samba-share-deployment
+            image: nginx
+            ports:
+            - containerPort: 80
+            volumeMounts:
+            - mountPath: "/usr/share/nginx/html"
+              name: samba-share-volume
+          volumes:
+          - name: samba-share-volume
+            persistentVolumeClaim:
+              claimName: samba-share-claim
+
+---
+
+Another option for distributed storage:
+
+https://deploy-to-kubernetes.readthedocs.io/en/latest/ceph.html
 
 ---

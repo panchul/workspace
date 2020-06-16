@@ -12,6 +12,8 @@ See Also:
   - [XWindows](XWindows.md)
   
   - [Kernel](Kernel.md)
+  - [Samba](Samba.md)
+
      
   - [Cron](Cron.md)
   - [Curl](Curl.md)
