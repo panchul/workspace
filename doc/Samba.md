@@ -12,11 +12,13 @@ See Also:
 
 ---
 
-I created a How-To for hybrid cloud, extracting some useful steps that could be useful without Kubernetes.
-This is also useful:
+I created a How-To for hybrid cloud, extracting some useful steps that could be
+useful without Kubernetes. This is also useful:
  
 - https://stackoverflow.com/questions/48747538/using-windows-smb-shares-from-kubernetes-deployment-app
 - https://github.com/kubernetes/examples/tree/master/staging/volumes
+
+At the vm that will be a Samba server:
 
     $ sudo apt update
     $ sudo apt -y install samba
@@ -232,7 +234,7 @@ and assigned the claim to the application.
 
 You can now see the pv being `Bound`:
     
-    $ kubectl -n kubeflow get pv
+    $ kubectl get pv -A
     NAME                 CAPACITY   ACCESS MODES  RECLAIM POLICY   STATUS   CLAIM                  STORAGECLASS    REASON   AGE
     ...
     samba-share-volume   10Gi       RWX           Retain           Bound    default/local-storage  local-storage            3m54s
