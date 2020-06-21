@@ -10,6 +10,27 @@ See Also:
 
 ---
 
+Sceenshot taking using Python and `pyautogui`
+https://www.youtube.com/watch?v=ZfoDtD9xEvw
+
+---
+
+An example of Semantic Segmentation + Background Removal + Style Transfer:
+https://colab.research.google.com/drive/1-TdFn92AynDLqOvRfZHbDeljZOC0XwIp
+
+---
+
+Simple Motion detector using OpenCV 
+https://www.youtube.com/watch?v=aqxVCisTRDg
+https://gist.github.com/Pawandeep-prog/17e064386bde8b97b16d8ee5c91de26a
+
+---
+
+Mask RCNN using Tensorflow and Cuda
+https://www.immersivelimit.com/tutorials/mask-rcnn-for-windows-10-tensorflow-2-cuda-101
+
+---
+
 Computer Vision courses from Stanford University 
 course CS231N by Stanford University.
 https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv

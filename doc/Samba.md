@@ -136,6 +136,7 @@ On the client side, if you have to do it yourself, install a Samba client:
 Create a folder for mounting:
 
     $ sudo mkdir /mnt/shares
+    $ sudo chown azureuser:azureuser /mnt/shares
 
 Put your share drive information to `/etc/samba`:
 
@@ -152,6 +153,8 @@ Define the mount in your `fstab` file, pointing to your .sbmabcreds file and the
     ...
     //12.34.259.89/sambauser1        /mnt/shares     cifs    rw,uid=azureuser,guest,noperm,credentials=/etc/samba/.sambacreds        0 0
     ...
+
+    $ sudo mount /mnt/shares
 
 Verify the mounting, you should see your server's ip and Samba user:
 
