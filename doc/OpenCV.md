@@ -12,6 +12,16 @@ https://opencv.org/
 
 ---
 
+Another video with a tutorial, says learn it in 3 hours.
+https://www.youtube.com/watch?v=WQeoO7MI0Bs
+
+---
+
+Neat samples for i/o of videos using cpp or python
+https://www.learnopencv.com/read-write-and-display-a-video-using-opencv-cpp-python/
+
+---
+
 Simple Motion detector using OpenCV 
 https://www.youtube.com/watch?v=aqxVCisTRDg
 

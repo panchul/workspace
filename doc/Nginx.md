@@ -9,6 +9,11 @@ See also:
 
 ---
 
+Installing nginx with virtual hosts and ssl certificate (on Ubuntu and CentOX)
+https://www.tecmint.com/install-nginx-with-virtual-hosts-and-ssl-certificate/
+
+---
+
 Redirecting HTTP traffic to HTTPS
 https://www.cyberciti.biz/faq/linux-unix-nginx-redirect-all-http-to-https/
  

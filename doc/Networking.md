@@ -2,6 +2,7 @@
 
 See Also:
 
+  - [DHCP](DHCP.md)
   - [DNS](DNS.md)
   - [NetworkSecurity](NetworkSecurity.md)
   - [OAuth](OAuth.md)
@@ -321,9 +322,16 @@ will be forwarded to 192.168.1.2:3306
 
     $ ssh -L3308:localhost:3306 root@192.168.1.2
 
-localhost means that database is listening on 192.168.1.2.
-You can type for example 192.168.3.77 and everything will be
+`localhost` means that database is listening on 192.168.1.2.
+You can type, for example, 192.168.3.77 and everything will be
 forwarded to .3.77 server via .1.2.
+
+Another similar example. Run this on your desktop:
+
+    $ ssh -NfL 6006:localhost:6006 -i id_rsa_my user@123.45.67.89
+
+Then you can access locally(as localhost) the port that is served at 123.45.67.89
+even if that is a cluster_port of a pod in Kubernetes cluster.    
 
 ---
 

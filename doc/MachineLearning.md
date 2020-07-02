@@ -15,6 +15,16 @@ See Also:
 
 ---
 
+Self Driving Simulation using CNN NVIDIA's MODEL Tensorflow (2020)
+https://www.youtube.com/watch?v=oLi6mWDXRGM
+
+---
+
+Growing Neural Cellular Automata
+https://distill.pub/2020/growing-ca/
+
+---
+
 10 popular datasets for Machine Learning
 
 - Boston Housing Prices Dataset -  https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html, there is another one

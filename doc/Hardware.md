@@ -10,6 +10,11 @@ See Also:
 
 ---
 
+camera-module.com had neat cameras, the shopping cart is buggy,
+e-mail to contact them is info@camera-module.com
+
+---
+
 Jetson Nano Developer Kit
 https://developer.nvidia.com/embedded/jetson-nano-developer-kit
 

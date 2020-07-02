@@ -175,6 +175,5 @@ The Python code itself:
     img = cv2.imread('somefile.png')
     text = pytesseract.image_to_string(img)
     print(text)
-  
 
 ---

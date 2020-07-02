@@ -35,6 +35,15 @@ See Also:
 
 ---
 
+A few nice tricks to monitor memory.
+https://www.tecmint.com/find-processes-by-memory-usage-top-batch-mode/
+
+For example, to use `top`'s batch mode, get top memory-using apps:
+
+    $ top -b -o +%MEM | head -n 22 > topreport.txt
+    
+---
+
 A Collection of windows managers
 https://www.tecmint.com/best-tiling-window-managers-for-linux/
 

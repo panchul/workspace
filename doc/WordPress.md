@@ -9,6 +9,11 @@ https://wp-cli.org/ - CLI
 
 ---
 
+Installing WordPress with nginx in ubuntu 20.04
+https://www.tecmint.com/install-wordpress-with-nginx-in-ubuntu-20-04/
+
+---
+
 Neat multi-site setup:
 https://hostpresto.com/community/tutorials/how-to-deploy-multiple-wordpress-sites-on-a-single-ubuntu-16-04-host/
 

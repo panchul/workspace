@@ -11,6 +11,23 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+Interesting nuance between a string and a list:
+
+    >>> first="python"
+    >>> second="python"
+    >>> print(first is second)
+    True
+    >>> print(first == second)
+    True
+    >>> list1=[1,2,3,4]
+    >>> list2=[1,2,3,4]
+    >>> print(list1 is list2)
+    False
+    >>> print(list1==list2)
+    True
+
+---
+
 Basic matplotlib usage. In Jupyter Notebooks, might want to use `%matplotlib inline`:
 
     import matplotlib
