@@ -15,6 +15,22 @@ See Also:
 
 ---
 
+An article about web-scraping for data. Some pandas samples.
+https://towardsdatascience.com/web-scraping-make-your-own-dataset-cc973a9f0ee5
+
+---
+
+Identifying emotions from walking using affective and deep features.
+https://www.youtube.com/watch?v=mIgo6eMlgZg
+
+Random forest classifier based on 3d human poses,
+
+- arm swinging
+- posture
+- etc
+
+---
+
 Self Driving Simulation using CNN NVIDIA's MODEL Tensorflow (2020)
 https://www.youtube.com/watch?v=oLi6mWDXRGM
 

@@ -732,6 +732,7 @@ https://nofilmschool.com/how-to-write-a-scene
 - A guide for slecting a camera for computer vision projects
   http://guide.directindustry.com/choosing-the-right-machine-vision-camera/
 
+- [Metalworks](Metalworks.md) (melting metals, etc.)
 
 ## Motivational and Psychology
 

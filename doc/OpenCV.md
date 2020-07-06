@@ -10,6 +10,15 @@ See also:
 
 https://opencv.org/
 
+
+---
+
+Installing from the source codes on MacOS Catalina
+https://medium.com/analytics-vidhya/installing-opencv-3-from-source-on-macos-catalina-cefc71e2fda
+
+Another link:
+https://www.pyimagesearch.com/2019/01/30/macos-mojave-install-tensorflow-and-keras-for-deep-learning/
+
 ---
 
 Another video with a tutorial, says learn it in 3 hours.

@@ -14,6 +14,41 @@ https://thevaluable.dev/cognitive-bias-software-development/
 - The cargo cult
 - The correspondence bias
 
+12 hurtful cognitive biases and how to overcome them. (VERY NICE read)
+https://dev.to/x-team/12-hurtful-cognitive-biases-and-how-to-overcome-them-2m9j
+
+- confirmation bias (favor what confirms to your pre-existing beliefs)
+- availability heuristic (placing greater value on what comes to mind quickly)
+- self-server bias (blaming external forces when something bad happens, but take credit when something good happens)
+- anchoring bias (relying too heavily on the first piece of information you receive)
+- survivorship bias (the focus on what remains standing, instead of taking into account that which you cannot see)
+- zero-risk bias (focusing on eliminating all the rist on one aspect of a problem instead of reducing the overall risk
+  in the entire problem)
+- the bandwagon effect (favoring certain things or beliefs simply because other people do or believe the same things)
+- loss aversion (losing something hurts people more than winning the same thing makes people happy; the endowment effect:
+  we give something greater value simply because we own it)
+- sunk cost fallacy (continuing on an irrational path of action, just because we've invested so much time and/or money in it already)
+- the law of triviality, bikeshedding (the tendency of people in an organization to spend disproportionate amounts of time on
+  trivial issues and details instead of spending that time on what will make a big difference in the organization.
+- cluster illusion (tendency to see patterns in random events, when correlation does not mean causation)
+- conservatism bias (tendencey to favor prior evidence over new evidence, to revise our beliefs insufficiently in the
+  face of new evidence.
+
+More on cognitive bias
+https://en.wikipedia.org/wiki/Cognitive_bias
+
+---
+
+Nice analysis of the Mouse Utopia experiment
+https://www.youtube.com/watch?v=bkpCf2YILCc
+
+- single female mice with no companions move upstairs,
+- single male mice with no companions move to the center and fight.
+- Brzezinski's term "tittytainment" is to distract the 80% of
+  population from realizing they are being used by 20% elite.
+
+People are to become a domestic animal raised by elites.
+
 ---
 
 We stay in the same age where we did not have enough attention.

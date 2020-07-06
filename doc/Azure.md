@@ -15,6 +15,9 @@ https://github.com/Azure-Samples/Azure-Stack-Hub-Foundation-Core/tree/master/ASF
 Azure Stack Videos
 https://www.youtube.com/channel/UCCkJEhUc1pWTj84eefLOcRA/videos
 
+Azure Stack videos about AKSe
+https://www.youtube.com/watch?v=KitQ2X0GBD0
+
 ---
 
 Azure CLI
