@@ -2,6 +2,12 @@
 
 https://cloud.google.com/
 
+
+---
+
+How to create Google Map in Python using Gmaps
+https://morioh.com/p/a9bdee14b0d2
+
 ---
 
 If you enter prefix `-ad:` in the search string of Google.com, the adds will be surpressed:

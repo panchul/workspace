@@ -177,3 +177,15 @@ The Python code itself:
     print(text)
 
 ---
+
+Basic interview questions
+
+- Basic filters (high pass, low pass)
+- difference between convolution and correlation
+- edge detection methods (Sobel filter etc)
+- image smoothing and what is noise?
+- image transformation like Fourier.
+- Hough transform
+- segmentation basics only.
+
+---

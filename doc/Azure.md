@@ -18,6 +18,11 @@ https://www.youtube.com/channel/UCCkJEhUc1pWTj84eefLOcRA/videos
 Azure Stack videos about AKSe
 https://www.youtube.com/watch?v=KitQ2X0GBD0
 
+The certification examps, with some free tutorials:
+https://docs.microsoft.com/en-us/learn/certifications/exams/az-300
+https://docs.microsoft.com/en-us/learn/certifications/exams/70-537
+https://docs.microsoft.com/en-us/learn/certifications/exams/az-301
+
 ---
 
 Azure CLI

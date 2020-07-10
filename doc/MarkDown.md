@@ -1,6 +1,3 @@
-
-** UNDER CONSTRUCTION **
-
 # Markdown
 
 --
@@ -14,7 +11,6 @@ Three or more dashes turn into the horizontal dividing lines ( ```<hr>```)
     ---
 
 ---
-
 
 ### Font formatting
 
@@ -86,6 +82,14 @@ Reference-style:
 ![alt text][some_icon]
 
 [some_icon]: URI_TO_IMAGE "Image title text"
+
+To scale, you can replace it with html-like format:
+
+    ![mypic.png](mypic.png)
+
+to
+
+    <img src="mypic.png" width="40%" height="40%">
 
 ---
 
