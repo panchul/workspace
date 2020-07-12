@@ -2,6 +2,8 @@
 
 https://opencv.org/
 
+- [Installing](#Installing)
+
 See also:
 
   - [ComputerVision](ComputerVision.md)
@@ -11,18 +13,93 @@ See also:
   - [OpenGL](OpenGL.md)
   - [PIL](PIL.md)
 
----
-
-Converting from PyTorch to TF to speeup, using ONNX
-https://www.learnopencv.com/how-to-convert-a-model-from-pytorch-to-tensorrt-and-speed-up-inference
-
----
+## Installing
 
 Installing from the source codes on MacOS Catalina
 https://medium.com/analytics-vidhya/installing-opencv-3-from-source-on-macos-catalina-cefc71e2fda
 
 Another link:
 https://www.pyimagesearch.com/2019/01/30/macos-mojave-install-tensorflow-and-keras-for-deep-learning/
+
+Here's the 4.3.0 (latest stable tag righ now)
+https://docs.opencv.org/4.3.0/d0/db2/tutorial_macos_install.html
+
+On Mac I did with and c examples:
+
+    $ git clone <opencv>
+    $ git clone <opencv_contrib>
+    $ cd opencv
+    $ mkdir build
+    $ cd build
+    $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/Users/iam/OpenCV/opencv/build -D INSTALL_C_EXAMPLES=ON \
+     -D BUILD_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=/Users/iam/OpenCV/opencv_contrib/modules ../
+
+Also needs `-D OPENCV_GENERATE_PKGCONFIG=YES`, like so:
+
+    $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/Users/iam/OpenCV/opencv/build \
+     -D INSTALL_C_EXAMPLES=ON  -D BUILD_EXAMPLES=OFF -D OPENCV_EXTRA_MODULES_PATH=/Users/iam/OpenCV/opencv_contrib/modules \
+     -D OPENCV_GENERATE_PKGCONFIG=ON ../
+
+Now the package file shows up in `unix-install/opencv4.pc`
+
+On Ubuntu I also had to add `-D CMAKE_SHARED_LINKER_FLAGS=-W1,Bsymbolic`, as described in 
+https://answers.opencv.org/question/63331/opencv-30-wont-compile-with-ffmpeg-support/
+
+It will take a while. Do NOT use `-j` without a number - it may overflood your cpu and system memory. Use whatever cores you have.     
+     
+    $ make -j8
+    ...
+
+Might need `sudo` for Linux, worked without sudo in our configuration(local, with sudo only for copying .pc):    
+        
+    $ make install
+    ...
+    
+Update the path to dlls, in `.bash_profile`(or .bashrc, or.zshrc, etc.) add:
+    
+    export DYLD_LIBRARY_PATH=/Users/iam/OpenCV/opencv/build/lib:$DYLD_LIBRARY_PATH
+
+On Mac, copy .pc file (THIS PART DID NOT WORK):
+
+    $ cp /Users/iam/OpenCV/opencv/build/lib/pkgconfig/opencv.pc /usr/local/lib/pkgconfig/opencv4.pc
+
+This works:    
+    
+    $ cp /Users/iam/OpenCV/opencv/build/unix-install/opencv4.pc /usr/local/lib/pkgconfig/opencv4.pc
+
+From here: https://prateekvjoshi.com/2013/10/18/package-opencv-not-found-lets-find-it/
+
+You can fake it, by creating your own opencv.pc file in `/usr/local/lib/pkgconfig`, or wherever the
+`PKG_CONFIG_PATH` points to:
+
+    prefix=/usr
+    exec_prefix=${prefix}
+    includedir=${prefix}/include
+    libdir=${exec_prefix}/lib
+    
+    Name: opencv
+    Description: The opencv library
+    Version: 2.x.x
+    Cflags: -I${includedir}/opencv -I${includedir}/opencv2
+    Libs: -L${libdir} -lopencv_calib3d -lopencv_imgproc -lopencv_contrib -lopencv_legacy
+
+And add this to the .bash_profile:
+
+    export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/:$PKG_CONFIG_PATH   
+
+Reload or `source` the .bash_profile, and try compiling a sample:
+
+    $ g++ -ggdb `pkg-config --cflags --libs opencv3` -stdlib=libstdc++ opencv_version.cpp -o /tmp/opencv_version && /tmp/opencv_version
+
+This one worked(on Mac, and linux):
+
+    $ g++ -std=c++1z `pkg-config --cflags --libs opencv4` opencv_version.cpp -o ~/tmp/opencv_version && ~/tmp/opencv_version
+      Welcome to OpenCV 4.3.0
+
+---
+
+Converting from PyTorch to TF to speeup, using ONNX
+https://www.learnopencv.com/how-to-convert-a-model-from-pytorch-to-tensorrt-and-speed-up-inference
 
 ---
 
@@ -245,9 +322,9 @@ or, with modules
     
     $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules/ ..
 
-`make -j` blew up the memory in the VM on VirtualBox, used non-parallel:
+`make -j` blew up the memory in the VM on VirtualBox, used non-parallel, or limiting the number of threads:
 
-    $ make
+    $ make -j4
   
  Had an error:
  

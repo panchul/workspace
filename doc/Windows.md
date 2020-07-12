@@ -47,3 +47,9 @@ More on batch paramaters:
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/call#batch-parameters
 
 ---
+
+Aparently, you can use `setx` to set environment variables too:
+
+    C:\>setx -m SOMEVAR somevalue
+
+---

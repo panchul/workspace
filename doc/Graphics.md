@@ -30,6 +30,31 @@
 
 ---
 
+A neat collection of image-processing links
+
+About color mapping
+https://en.wikipedia.org/wiki/RGB_color_model
+https://en.wikipedia.org/wiki/HSL_and_HSV
+
+Image thresholding
+https://en.wikipedia.org/wiki/Thresholding_(image_processing)
+
+Bluring and smoothing
+https://en.wikipedia.org/wiki/Gaussian_blur
+https://www.tutorialspoint.com/dip/concept_of_blurring.htm
+
+https://en.wikipedia.org/wiki/Mathematical_morphology
+https://homepages.inf.ed.ac.uk/rbf/HIPR2/morops.htm  --- Great link!
+
+Image Gradient
+https://en.wikipedia.org/wiki/Image_gradient
+https://en.wikipedia.org/wiki/Sobel_operator
+
+Color Histograms
+https://en.wikipedia.org/wiki/Color_histogram
+
+---
+
 AA-project, ASCII image viewer
 http://aa-project.sourceforge.net/gallery/
 https://sourceforge.net/projects/aa-project/
