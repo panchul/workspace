@@ -51,6 +51,10 @@ TODO: Create sub-pages for the ones that do not have it yet.
 - [RegEx](RegEx.md)
 - [Bash](Bash.md)
 
+A more conceptual links, still related to Programming Languages and Math
+
+  - [Functional Programming](FunctionalProgramming.md)
+
 ## Virtualization, clustering, provisioning, and monitoring
 
 - [AWS](AWS.md)

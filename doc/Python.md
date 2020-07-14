@@ -13,6 +13,11 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+How to publish a package on PyPI
+https://www.youtube.com/watch?v=QgZ7qv4Cd0Y
+
+---
+
 About starred expressions
 http://yaoyao.codes/python/2016/09/25/python-starred-expression
 

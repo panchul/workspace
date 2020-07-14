@@ -13,6 +13,8 @@ See also:
   - [OpenGL](OpenGL.md)
   - [PIL](PIL.md)
 
+See my Python and C++ sandboxes for useful snippets, https://github.com/panchul/sb_python and https://github.com/panchul/sb_cpp 
+
 ## Installing
 
 Installing from the source codes on MacOS Catalina

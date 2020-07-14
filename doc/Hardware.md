@@ -10,6 +10,11 @@ See Also:
 
 ---
 
+OpenAI Kit project on Kickstarter
+https://www.kickstarter.com/projects/opencv/opencv-ai-kit
+
+---
+
 camera-module.com had neat cameras, the shopping cart is buggy,
 e-mail to contact them is info@camera-module.com
 
