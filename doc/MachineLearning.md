@@ -7,11 +7,25 @@ See Also:
  - [MarkovChains](MarkovChains.md)
  - [Neural Network](NeuralNetwork.md)
    - [GAN](GAN.md), (Generative Adversarial networks)
- - [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
  - [Splunk](Splunk.md)
  - [TensorFlow](TensorFlow.md)
  - [ONNX](ONNX.md)
  - [PyTorch](PyTorch.md)
+
+---
+
+Political Speech Generator
+https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?
+ 
+---
+
+Training a Custom Image Classifier with Tensorflow, Converting to ONNX and using it in OpenCV DNN module
+https://bleedai.com/training-a-custom-image-classifier-with-tensorflow-converting-to-onnx-and-using-it-in-opencv-dnn-module/
+
+---
+
+A collection of open-source speech-regonition tools for Linux:
+https://www.ubuntupit.com/best-open-source-speech-recognition-tools-for-linux/
 
 ---
 
