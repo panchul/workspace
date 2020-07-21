@@ -6,6 +6,11 @@ https://developer.android.com/guide/app-bundle/in-app-updates
 
 ---
 
+Android courses, some about Kotlin.
+https://developer.android.com/courses/
+
+---
+
 Running C mobile apps with no Java or Kotlin, etc.
 https://github.com/cnlohr/rawdrawandroid
 https://hackaday.com/2020/05/13/writing-android-apps-in-c-no-java-required/

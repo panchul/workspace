@@ -7,6 +7,13 @@ See Also:
 
 ---
 
+This repo has a lot of other useful material, aside from OpenCV:
+https://github.com/PacktPublishing/OpenCV-4-Computer-Vision-Application-Programming-Cookbook-Fourth-Edition
+
+https://github.com/PacktPublishing
+
+---
+
 Free Harvard courses:
 https://online-learning.harvard.edu/catalog/free
 

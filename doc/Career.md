@@ -13,6 +13,11 @@ TODO: Add list interests, etc.
 
 ---
 
+My Company Sold for $100 Million And I Got Zilch. How Can That Be?
+https://marker.medium.com/my-company-sold-for-100-million-and-i-got-zilch-how-can-that-be-f7be0563f1f8
+
+---
+
 3-hour overview of Sillicon Valley roots.
 https://www.youtube.com/watch?v=9lO06Zxhu88
 

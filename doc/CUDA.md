@@ -2,6 +2,7 @@
 
 See also:
 
+- [AMP](AMP.md)
 - [ComputerVision](ComputerVision.md)
 - [OpenACC](OpenACC.md)
 - [OpenGL](OpenGL.md)

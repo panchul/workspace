@@ -4,6 +4,9 @@ TODO: Create sub-pages for the ones that do not have it yet.
 
 ## Programming languages, scripts, etc.
 
+- Assembler  
+- [Awk](Awk.md)
+- [Bash](Bash.md)
 - [C/C++](CPP.md)
   - [Boost](Boost.md)
   - [STL](STL.md)
@@ -16,6 +19,8 @@ TODO: Create sub-pages for the ones that do not have it yet.
     - [Semaphore](Semaphore.md)
     - [Mutex](Mutex.md) 
 - [C#](CSharp.md)   
+- [CSS](CSS.md)
+- [Elixir](Elixir.md)
 - [Erlang/OTP](Erlang.md)  
   - Kerl
   - emake
@@ -24,32 +29,28 @@ TODO: Create sub-pages for the ones that do not have it yet.
   - Rebar
   - CT
   - MochiWeb
-- [Scala](Scala.md)  
-  - [Lagom](Lagom.md)    
 - [F#](FSharp.md)  
-- [Perl](Perl.md)  
-- [Python](Python.md)  
-- Assembler  
-- [Ruby](Ruby.md)  
-- ML  
-- [Racket](Racket.md)  
 - [Go](Go.md)  
 - [Java](Java.md)  
   - [Spring](Spring.md)
-- [Matlab/Simulink](Matlab.md)  
-- [R](R.md)
-- [ObjectiveC++](ObjectiveCPP.md)
-- PostScript
-- [Elixir](Elixir.md)
-- Lua
-- [LLVM](LLVM.md)
-- [Awk](Awk.md)
-- [Sed](Sed.md)
 - [JavaScript](JavaScript.md)  
-- [CSS](CSS.md)
+- [LLVM](LLVM.md)
+- Lua
+- [Matlab/Simulink](Matlab.md)  
+- ML  
+- [ObjectiveC++](ObjectiveCPP.md)
+- [Perl](Perl.md)  
 - [PHP](Php.md)
+- PostScript
+- [Python](Python.md)  
+- [R](R.md)
+- [Racket](Racket.md)  
 - [RegEx](RegEx.md)
-- [Bash](Bash.md)
+- [Ruby](Ruby.md)  
+- [Scala](Scala.md)  
+  - [Lagom](Lagom.md)    
+- [Sed](Sed.md)
+- [Sporth](Sporth.md)
 
 A more conceptual links, still related to Programming Languages and Math
 

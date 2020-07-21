@@ -14,6 +14,28 @@ See Also:
 
 ---
 
+Top Python Libraries for Data Science
+
+- pandas
+- NumPy
+- SciPy
+- Scikit-learn
+- Statsmodels
+- Spacy
+- seaborn
+- Matplotlib
+- Tensorflow
+- Keras
+- Plotly
+- NLTK
+- gensim
+
+---
+
+A recommended ML book "Introduction to Statistical Learning" by Gareth James
+
+---
+
 Political Speech Generator
 https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?
  

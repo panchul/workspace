@@ -39,6 +39,11 @@ https://en.wikipedia.org/wiki/Cognitive_bias
 
 ---
 
+Documentary about Jejune project, The Institute. About alternative reality for the thrill seekers.
+https://tubitv.com/movies/136727/the_institute
+
+---
+
 Nice analysis of the Mouse Utopia experiment
 https://www.youtube.com/watch?v=bkpCf2YILCc
 
