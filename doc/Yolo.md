@@ -5,7 +5,21 @@ See Also:
  - [ComputerVision](ComputerVision.md)
  - [CUDA](CUDA.md)
  - [Graphics](Graphics.md)
+
+---
+
+And another write up about custom sets for YOLO4
+https://towardsdatascience.com/yolov4-in-google-colab-train-your-custom-dataset-traffic-signs-with-ease-3243ca91c81d
+
+https://github.com/quangnhat185/darknet_for_colab
+
+https://colab.research.google.com/drive/1VNc-Ywrs1XmfHcsq-BWpXZ5Zv_A2FcFn
   
+---
+
+Identify Eight types of Indian Classical Dance forms with YOLOv4
+https://dsbyprateekg.blogspot.com/2020/06/identify-eight-types-of-indian.html
+
 ---
 
 Another tutorial about Yolo(no repo, only print-outs):

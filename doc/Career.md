@@ -13,6 +13,11 @@ TODO: Add list interests, etc.
 
 ---
 
+Amazon Met With Startups About Investing, Then Launched Competing Products
+https://www.wsj.com/amp/articles/amazon-tech-startup-echo-bezos-alexa-investment-fund-11595520249
+
+---
+
 My Company Sold for $100 Million And I Got Zilch. How Can That Be?
 https://marker.medium.com/my-company-sold-for-100-million-and-i-got-zilch-how-can-that-be-f7be0563f1f8
 

@@ -13,6 +13,17 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+Python app skeleton, with tests and Github Action pipeline
+https://github.com/panchul/Pytest-Actions-Demo
+
+https://vak.dreamwidth.org/657802.html
+https://vak.dreamwidth.org/658470.html
+
+And this one for BitBucket:
+https://bitbucket.org/serge-vakulenko/pytest-pipelines-demo/src/master/
+
+---
+
 How to publish a package on PyPI
 https://www.youtube.com/watch?v=QgZ7qv4Cd0Y
 

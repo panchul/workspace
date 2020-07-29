@@ -551,6 +551,7 @@ https://onezero.medium.com/exclusive-live-facial-recognition-is-coming-to-u-s-po
 
 ### Computer Graphics, Computer Vision, Visualization, Image Processing, etc
 
+- [AugmentedReality](AugmentedReality.md) all sort of miscellaneous snippets.
 - [Graphics](Graphics.md) all sort of miscellaneous snippets.
 
 ### Moviemaking

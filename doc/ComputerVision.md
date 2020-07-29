@@ -10,6 +10,20 @@ See Also:
 
 ---
 
+COCO-WholeBody dataset is the first large-scale benchmark for whole-body pose estimation.
+It is an extension of COCO 2017 dataset with the same train/val split as COCO.
+For project and code/API/expert requests: https://www.catalyzex.com/paper/arxiv:2007.11858
+
+https://github.com/jin-s13/COCO-WholeBody
+
+For each person, they annotate 4 types of bounding boxes (person box, face box, left-hand
+box, and right-hand box) and 133 keypoints (17 for body, 6 for feet, 68 for face and 42 for hands).
+Get the free ML code finder browser extension:
+Chrome https://bit.ly/code_finder_chrome
+Firefox https://bit.ly/code_finder_firefox.
+
+---
+
 Sceenshot taking using Python and `pyautogui`
 https://www.youtube.com/watch?v=ZfoDtD9xEvw
 
