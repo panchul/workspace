@@ -2,17 +2,24 @@
 
 See also:
 
-- [AMP](AMP.md)
-- [ComputerVision](ComputerVision.md)
-- [OpenACC](OpenACC.md)
-- [OpenGL](OpenGL.md)
-- [OpenCV](OpenCV.md)
-- [DirectX](DirectX.md)
+  - [AMP](AMP.md)
+  - [ComputerVision](ComputerVision.md)
+  - [OpenACC](OpenACC.md)
+  - [OpenGL](OpenGL.md)
+  - [OpenCV](OpenCV.md)
+  - [DirectX](DirectX.md)
 
----
+**Table of contents**
 
-An article about installing both CUDA 10 and 9 on the same machine (Ubuntu 18.04)
-https://medium.com/thecyphy/multi-version-cuda-and-tensorflow-gpu-on-ubuntu-18-04-lts-22cfcd32f06a
+ - [Hardware](#Hardware)
+ - [Installation](#Installation)
+   - [Installing on Ubuntu](#Installing-on-Ubuntu)
+   - [Installing on CentOS7](#Installing-on-CentOS7)
+   - [Installing on Fedora 29](#Installing-on-Fedora-29)
+ - [C/C++ programming](#C/C++-programming)
+ - [Miscellaneous](#Miscellaneous)
+
+## Hardware  
 
 ---
 
@@ -29,36 +36,7 @@ https://lambdalabs.com/blog/2080-ti-deep-learning-benchmarks/
 
 ---
 
-Might be scpecific to their own package, but still interesting link:
-https://lambdalabs.com/blog/install-cuda-10-on-ubuntu-18-04/
-
----
-
-Another useful link for troubleshooting of Docker issues with GPUs:
-https://medium.com/@aaronpolhamus/nvidia-powered-ml-station-with-fedora-29-docker-a8e4bd6a80ae
-
----
-
-The CUDA C reference
-https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
-
----
-
-Funny demo of GPU vs. CPU
-https://www.youtube.com/watch?v=-P28LKWTzrI
-
----
-
-Nice intro .pdf from NVidia  
-https://www.nvidia.com/docs/IO/116711/sc11-cuda-c-basics.pdf
-
-Another, basics:
-https://www.youtube.com/watch?v=nvrEDBcbaDM
-
-Learn CUDA in an Afternoon: an Online Hands-on Tutorial
-https://www.youtube.com/watch?v=_41LCMFpsFs
-Slides from that talk:
-http://www.epcc.ed.ac.uk/online-training/learnCUDA
+## Installation 
 
 ---
 
@@ -78,83 +56,47 @@ Actually, I think 390 is for cuda 8.0, e.g. Fedora 23
 
 ---
 
-Quick how-to and getting-started
-https://devblogs.nvidia.com/even-easier-introduction-cuda/
+### Installing on Ubuntu
 
 ---
 
-My own sandbox with some snippets:
-https://github.com/panchul/sb_cpp/tree/master/cuda
+To see cards, it is better to filter out not for `VGA`, but for `[03':
+
+    $ lspci -vnn | grep '\[03'
+
+    [0300] VGA compatible controller
+    [0380] Display controller
+    [0302] 3D controller
 
 ---
 
-Installing on Fedora 29 (presuming will work the same on 30)
-https://linuxconfig.org/how-to-install-nvidia-cuda-toolkit-on-fedora-29-linux
+Is the nvidia kernel module loaded?
 
-    $ wget https://developer.download.nvidia.com/compute/cuda/repos/fedora27/x86_64/cuda-repo-fedora27-10.0.130-1.x86_64.rpm
+    $ lsmod | grep nvidia
 
-Or, for CentOS 7
+If not, load it with
 
-    $ wget https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-10.0.130-1.x86_64.rpm
-    
-    $ sudo rpm -i cuda-repo-*.rpm
+    $ sudo modprobe nvidia
 
-    $ sudo dnf update
-    
-    $ dnf install cuda
+If it helps then you might want to automatically load it at boot time by appending nvidia (on a new line) to `/etc/modules`
 
-Add these to ~/.bashrc    
-    
-    export PATH=/usr/local/cuda/bin:$PATH
-    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+Can also use `lshw` instead:
 
-See `nvcc` is there and the device is visiable:
-
-    $ nvcc --version
-    $ nvidia-smi
-
-See the samples work:
-
-    $ mkdir cuda-samples
-    $ cuda-install-samples-10.0.sh cuda-samples/
-    $ cd cuda-samples/NVIDIA_CUDA-10.0_Samples/0_Simple/clock
-    $ make
-
-The gcc version issue goes away if you get gcc 7 - the latest cuda supports.
-
-    $ sudo dnf --releasever=27 install gcc-7.3.1-6.fc27
-
-Or, actually, get and install whatever the number the driver wants:
-
-    $ wget http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/29/Everything/x86_64/Packages/g/gcc-8.3.1-2.fc29.x86_64.rpm
- 
-(from https://fedora.pkgs.org/29/fedora-updates-x86_64/gcc-8.3.1-2.fc29.x86_64.rpm.html)
-
-    $ yum localinstall gcc-8.3.1-2.fc29.x86_64.rpm 
-
-There seem to be a GeForce drivers here:
-http://us.download.nvidia.com/XFree86/Linux-x86_64/390.87/NVIDIA-Linux-x86_64-390.87.run
-
-which might need to have the kernel source location specified:
-
-    $ ./NVIDIA-Linux-x86_64-390.87.run --kernel-source-path /usr/src/kernels/5.2.11-10.fc29.x86_64
+    $ lshw
 
 ---
 
-Example of the drivers from NVIDIA
-https://www.geforce.com/drivers/results/151568
+Might be specific to their own package, but still interesting link:
+https://lambdalabs.com/blog/install-cuda-10-on-ubuntu-18-04/
 
-- `NVIDIA-Linux-x86_64-430.50.run` is the latest right now for 20 series.
-- `NVIDIA-Linux-x86_64-390.129.run` is the latest for 500 series
+---
 
-## Installing on CentOS7:
+## Installing on CentOS7
 
 https://www.cyberciti.biz/faq/how-to-install-nvidia-driver-on-centos-7-linux/
 
+## Installing on Fedora 29
 
-
-
-## Installing on Fedora 29:
 https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-fedora-29-linux
 another one, probably NICER:
 https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/
@@ -292,37 +234,126 @@ Just in case there is still a black screen, change the display manager:
     $ sudo systemctl enable sddm
     $ sudo reboot
 
+### Multiple versions
+
+---
+
+An article about installing both CUDA 10 and 9 on the same machine (Ubuntu 18.04)
+https://medium.com/thecyphy/multi-version-cuda-and-tensorflow-gpu-on-ubuntu-18-04-lts-22cfcd32f06a
+
+---
+
+## C/C++ programming
+
+---
+
+My own sandbox with some snippets:
+https://github.com/panchul/sb_cpp/tree/master/cuda
+
+---
+
+The CUDA C reference
+https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
+
+---
+
+## Miscellaneous
+
+---
+
+Another useful link for troubleshooting of Docker issues with GPUs:
+https://medium.com/@aaronpolhamus/nvidia-powered-ml-station-with-fedora-29-docker-a8e4bd6a80ae
+
+---
+
+Funny demo of GPU vs. CPU
+https://www.youtube.com/watch?v=-P28LKWTzrI
+
+---
+
+Nice intro .pdf from NVidia  
+https://www.nvidia.com/docs/IO/116711/sc11-cuda-c-basics.pdf
+
+Another, basics:
+https://www.youtube.com/watch?v=nvrEDBcbaDM
+
+Learn CUDA in an Afternoon: an Online Hands-on Tutorial
+https://www.youtube.com/watch?v=_41LCMFpsFs
+
+Slides from that talk:
+http://www.epcc.ed.ac.uk/online-training/learnCUDA
+
+---
+
+Quick how-to and getting-started
+https://devblogs.nvidia.com/even-easier-introduction-cuda/
+
+---
+
+Installing on Fedora 29 (presuming will work the same on 30)
+https://linuxconfig.org/how-to-install-nvidia-cuda-toolkit-on-fedora-29-linux
+
+    $ wget https://developer.download.nvidia.com/compute/cuda/repos/fedora27/x86_64/cuda-repo-fedora27-10.0.130-1.x86_64.rpm
+
+Or, for CentOS 7
+
+    $ wget https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-10.0.130-1.x86_64.rpm
+    
+    $ sudo rpm -i cuda-repo-*.rpm
+
+    $ sudo dnf update
+    
+    $ dnf install cuda
+
+Add these to ~/.bashrc    
+    
+    export PATH=/usr/local/cuda/bin:$PATH
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
+See `nvcc` is there and the device is visiable:
+
+    $ nvcc --version
+    $ nvidia-smi
+
+See the samples work:
+
+    $ mkdir cuda-samples
+    $ cuda-install-samples-10.0.sh cuda-samples/
+    $ cd cuda-samples/NVIDIA_CUDA-10.0_Samples/0_Simple/clock
+    $ make
+
+The gcc version issue goes away if you get gcc 7 - the latest cuda supports.
+
+    $ sudo dnf --releasever=27 install gcc-7.3.1-6.fc27
+
+Or, actually, get and install whatever the number the driver wants:
+
+    $ wget http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/29/Everything/x86_64/Packages/g/gcc-8.3.1-2.fc29.x86_64.rpm
+ 
+(from https://fedora.pkgs.org/29/fedora-updates-x86_64/gcc-8.3.1-2.fc29.x86_64.rpm.html)
+
+    $ yum localinstall gcc-8.3.1-2.fc29.x86_64.rpm 
+
+There seem to be a GeForce drivers here:
+http://us.download.nvidia.com/XFree86/Linux-x86_64/390.87/NVIDIA-Linux-x86_64-390.87.run
+
+which might need to have the kernel source location specified:
+
+    $ ./NVIDIA-Linux-x86_64-390.87.run --kernel-source-path /usr/src/kernels/5.2.11-10.fc29.x86_64
+
+---
+
+Example of the drivers from NVIDIA
+https://www.geforce.com/drivers/results/151568
+
+- `NVIDIA-Linux-x86_64-430.50.run` is the latest right now for 20 series.
+- `NVIDIA-Linux-x86_64-390.129.run` is the latest for 500 series
+
 ---
 
 When running driver .run file:
 For error message the error message "ERROR: Temporary directory /tmp is not executable - use the  --tmpdir option to specify a different one." 
 add the --tmpdir argument to the command line pointing to a path/directory that is chmod executable.
-
----
-
-To see cards, it is better to filter out not for `VGA`, but for `[03':
-
-    $ lspci -vnn | grep '\[03'
-
-    [0300] VGA compatible controller
-    [0380] Display controller
-    [0302] 3D controller
-
----
-
-Is the nvidia kernel module loaded?
-
-    $ lsmod | grep nvidia
-
-If not, load it with
-
-    $ sudo modprobe nvidia
-
-If it helps then you might want to automatically load it at boot time by appending nvidia (on a new line) to `/etc/modules`
-
-Can also use `lshw` instead:
-
-    $ lshw
 
 ---
 
@@ -334,7 +365,7 @@ This might work for some of the drivers:
 
 ---
 
-Cut/paste from some thread on internet about Ubuntu and CUDA:
+Cut/paste from some thread on Internet about Ubuntu and CUDA:
 
 Is the problem that you can not see what is going on on the desktop while installing? If so you could try with a text based network installer https://www.ubuntu.com/download/alternative-downloads
 then install ubuntu-desktop with

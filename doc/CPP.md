@@ -180,7 +180,6 @@ https://www.tecmint.com/best-linux-ide-editors-source-code-editors/
 Visual Studio Code has nice extensions. Here is a Go extension, for example:
 https://github.com/Microsoft/vscode-go
 
-
 ---
 
 CppCon 2019: “The One-Decade Task: Putting std::atomic in CUDA.”
@@ -316,7 +315,6 @@ https://abseil.io/tips/112
 
 Compiler support for C++17 features and others
 https://en.cppreference.com/w/cpp/compiler_support
-
 
 ---
 
