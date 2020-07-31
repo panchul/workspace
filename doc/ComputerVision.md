@@ -4,9 +4,46 @@ The things that did not fit the pages for the libraries/frameworks.
 
 See Also:
 
- - [Graphics](Graphics.md)
- - [CUDA](CUDA.md)
- - [Yolo](Yolo.md)
+  - [CUDA](CUDA.md)
+  - [Graphics](Graphics.md)
+  - [OpenCV](OpenCV.md)
+  - [Yolo](Yolo.md)
+
+---
+
+Contents
+
+- [LIDAR](#LIDAR)
+- [Miscellaneous](#Miscellaneous)
+
+---
+
+## LIDAR
+
+---
+
+https://gitlab.kitware.com/keu-computervision/slam/
+
+Our SLAM algorithm computes the vehicle motion solely based on Lidar
+data from Velodyne Lidar, Inc. #VLP16 here). No GNSS/IMU involved.
+I still find this mesmerizing, even after years working with such data.
+The rendered video shows the viewpoint from the (computed) Lidar position,
+it shows the reconstructed surroundings, as well as the vehicle motion.
+(We show points 5 seconds ahead for better visualization)
+Yes, we've quite some speed bumper in #Lyon, #France, where Kitware Europe
+is.
+
+The code is here: https://lnkd.in/ghNKsyp
+It's Apache 2.0, standalone C++, with wrappers for |ROS and LidarView
+ParaView VeloView
+
+If it seems a useful base for collaboration, contact our Kitware Inc.
+team via our web site https://lnkd.in/eCW5WGK or directly me.
+lidar mapping
+
+---
+
+## Miscellaneous
 
 ---
 

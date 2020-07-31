@@ -39,3 +39,8 @@ Frameworks:
 - ARCore
 
 ---
+
+FRL update on varifocal lenses
+https://www.roadtovr.com/facebook-reality-labs-lanman-spie-xr-2020-varifocal-hdr/
+
+---
