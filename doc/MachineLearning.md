@@ -32,6 +32,14 @@ Top Python Libraries for Data Science
 
 ---
 
+ML Engineer roadmap. Nice diagram outlining options.
+https://github.com/chris-chris/ml-engineer-roadmap
+
+There is also interesting Web Developer Roadmap
+https://github.com/kamranahmedse/developer-roadmap
+
+---
+
 A recommended ML book "Introduction to Statistical Learning" by Gareth James
 
 ---

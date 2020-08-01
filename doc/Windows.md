@@ -48,7 +48,7 @@ https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/
 
 ---
 
-Aparently, you can use `setx` to set environment variables too:
+Apparently, you can use `setx` to set environment variables too:
 
     C:\>setx -m SOMEVAR somevalue
 

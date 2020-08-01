@@ -7,7 +7,7 @@ See Also:
 - [CUDA](CUDA.md)
 - [ComputerVision](ComputerVision.md)
 - [DirectX](DirectX.md)
-- [FBX](FBX.md)
+- [FBX, Autodesk SDK](FBX.md)
 - [ffmpeg](FfMpeg.md)
 - [Fractals](Fractals.md)
 - [gnuplot](Gnuplot.md)
@@ -28,8 +28,8 @@ See Also:
 - [Quaternions](Quaternions.md)
 - video recording for terminal `asciinema.org` `gohugo.io` web content
 - [Unity](Unity.md)
-- [Unreal Engine](UnreadlEngine.md)
-- Autodesk FBX SDK
+- [Unreal Engine](UnrealEngine.md)
+- [WebGL](WebGL.md)
 
 ---
 

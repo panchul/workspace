@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Wireshark
 
 See Also:
