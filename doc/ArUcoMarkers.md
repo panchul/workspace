@@ -1,5 +1,7 @@
 # ArUco Markers
 
+---
+
 https://docs.opencv.org/trunk/d5/dae/tutorial_aruco_detection.html
 
 Basic marker detector from a video:
@@ -52,8 +54,6 @@ You can also esimate the position:
         if (key == 27)
             break;
     }
-    
-    
-    
-    
+
+---
         
