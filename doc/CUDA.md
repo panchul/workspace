@@ -40,6 +40,20 @@ https://lambdalabs.com/blog/2080-ti-deep-learning-benchmarks/
 
 ---
 
+Had some issues with Python projects, linked the run-time environment from 10.2 to 10.1 that it wanted.
+
+    $ sudo ln -s /usr/local/cuda-10.2/targets/x86_64-linux/lib/libcudart.so.10.2 /usr/lib/x86_64-linux-gnu/libcudart.so.10.1
+
+And added the lib folders to the `LD_LIBRARY_PATH` in `~/.bashrc`:
+
+    ...
+    export LD_LIBRARY_PATH=/home/username/OpenCV/opencv/build/lib:/home/username/anaconda3/lib/:$LD_LIBRARY_PATH
+    ...
+
+!!! The configuration is rather finiki - aome other things broke, the nvcc crashed with segmentation fault.
+
+---
+
 CUDA compatibility matrix, etc.  
 https://docs.nvidia.com/deploy/cuda-compatibility/index.html
 

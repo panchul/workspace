@@ -5,6 +5,12 @@ http://www.ssh.com/
 
 ---
 
+Another link on creating and using the identities with git, this one is at gitlab.com
+
+https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair
+
+---
+
 Top 20 OpenSSH server best security practices 
 https://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html
 
