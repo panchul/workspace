@@ -3,11 +3,75 @@
 http://en.wikipedia.org/wiki/Secure_Shell
 http://www.ssh.com/
 
+**Table of Content**
+
+- [ssh configuring](#SSH-configuring)
+- [Open SSH server](#Open-SSH-server)
+- [Tunneling](#Tunneling)
+- [Miscallaneous](#Miscallaneous)
+
+## SSH configuring
+
 ---
 
 Another link on creating and using the identities with git, this one is at gitlab.com
 
 https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair
+
+Generate the key pair.
+
+    $ ssh-keygen -t ed25519 -C "<comment>"
+    Generating public/private ed25519 key pair.
+    Enter file in which to save the key (/home/user/.ssh/id_ed25519):
+    ...
+
+(Same for RSA would be something like `ssh-keygen -t rsa -b 2048 -C "email@example.com"`)
+
+Copy the .pub data to the 'SSH keys' at gitlab.com
+
+See that you can login:
+
+    $ ssh -T git@gitlab.com
+
+(for more verbose diagnostics, `ssh -Tvvv git@gitlab.com`)
+
+You can also check your ssh agent, and add your key if it is not in default location:
+
+    $ eval $(ssh-agent -s)
+    $ ssh-add <path to private SSH key>
+
+Configure ~/.ssh/config like so:
+
+    # User1 Account Identity
+    Host <user_1.gitlab.com>
+      Hostname gitlab.com
+      PreferredAuthentications publickey
+      IdentityFile ~/.ssh/<example_ssh_key1>
+    
+    # User2 Account Identity
+    Host <user_2.gitlab.com>
+      Hostname gitlab.com
+      PreferredAuthentications publickey
+      IdentityFile ~/.ssh/<example_ssh_key2>
+      ## can also have:
+      # User someusername
+
+Cloning the gitlab repository normally looks like this:
+
+    $ git clone git@gitlab.com:gitlab-org/gitlab.git
+    
+To clone it for user_1, replace gitlab.com with the SSH alias user_1.gitlab.com:
+
+    $ git clone git@<user_1.gitlab.com>:gitlab-org/gitlab.git
+    
+Fix a previously cloned repository using the git remote command.
+The example below assumes the remote repository is aliased as origin.
+
+    $ git remote set-url origin git@<user_1.gitlab.com>:gitlab-org/gitlab.git
+  
+---
+
+## Open SSH server
 
 ---
 
@@ -108,6 +172,25 @@ This is it, we are reado to connect from another machine:
     
 ---
 
+## Tunneling
+
+---
+
+This tunnels an IRC session from client machine ```127.0.0.1``` (local-host) to
+remote server ```server.example.com```:
+
+    $ ssh -f -L 1234:localhost:6667 server.example.com sleep 10
+    $ irc -c '#users' -p 1234 pinky 127.0.0.1
+
+Option -f brings ssh into background, and the remote command 'sleep 10' allows to start the service
+which is to be tunnelled.
+
+---
+
+## Miscallaneous
+
+---
+
 Quick and dirty way to fix 'ssh permission denied(publicey)':
 
 1. update in ```/etc/ssh/sshd_config```:
@@ -137,7 +220,7 @@ Quick and dirty way to fix 'ssh permission denied(publicey)':
 Here is a closer look with the sandboxes ```ssh1```(server) and ```ssh2```(client).
 They have the virtual network and host names ```ssh1.vm``` and ```ssh2.vm``` respectively.
 
-### on ```ssh1.vm``` for Alice:
+On ```ssh1.vm``` for Alice:
 
 Create a group ```alicegroup```, and user ```alice```, unlock the account password:
 
@@ -150,7 +233,7 @@ Or as one line:
 
     vagrant@ssh1:~$ sudo groupadd -f alicegroup ; sudo useradd -m -g alicegroup alice ; sudo passwd alice 
 
-### Similar thing on ```ssh2.vm``` for Bob:
+Similar thing on ```ssh2.vm``` for Bob:
 
     vagrant@ssh2:~$ sudo groupadd -f bobgroup ; sudo useradd -m -g bobgroup bob ; sudo passwd bob 
     (Enter the password)
@@ -239,17 +322,6 @@ keys. Insert this to .bashrc:
 To trick ssh into using empty known_hosts and not check for host. (not asking to enter 'yes')
 
     $ ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/mykey.pem myuser@some.host.address.com
-
----
-
-This tunnels an IRC session from client machine ```127.0.0.1``` (local-host) to
-remote server ```server.example.com```:
-
-    $ ssh -f -L 1234:localhost:6667 server.example.com sleep 10
-    $ irc -c '#users' -p 1234 pinky 127.0.0.1
-
-Option -f brings ssh into background, and the remote command 'sleep 10' allows to start the service
-which is to be tunnelled.
 
 ---
 

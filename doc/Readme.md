@@ -1,6 +1,45 @@
-# Links: Technology
+# Docs (links, etc.)
 
-TODO: Create sub-pages for the ones that do not have it yet.
+**Table of Content**
+
+- [Programming languages, scripts, etc.](#Programming-languages,-scripts,-etc.)
+- [Virtualization, clustering, provisioning, and monitoring](#Virtualization,-clustering,-provisioning,-and-monitoring)
+- [Frameworks Libraries, Static code analyse, architecture approaches, etc.](#Frameworks-Libraries,-Static-code-analyse,-architecture-approaches,-etc.)
+- [Data formats, APIs, Protocols](#Data-formats,-APIs,-Protocols)
+- [Databases](#Databases)
+- [Version control systems, configuration, build tools](#Version-control-systems,-configuration,-build-tools) 
+- [Operating systems](#Operating-systems)
+- [Web Frameworks, servers, etc](#Web-Frameworks,-servers,-etc)
+- [Misc Utilities and Commands](#Misc Utilities and Commands)
+- [Quantum Computing, etc.](#Quantum-Computing,-etc.)
+- [Social media frameworks](#Social-media-frameworks)
+- [Micorcontrollers, Embedded programming, hardware](#Micorcontrollers,-Embedded-programming,-hardware)
+- [RTOS](#RTOS)
+- [IDEs, editors, and related](#IDEs,-editors,-and-related)
+- [Networking](#Networking)
+- [Testing Frameworks](#Testing-Frameworks)
+- [Message brokers and distributed environment coordinators.](#Message brokers and distributed environment coordinators.) 
+- [Conferencing systems and protocols](#Conferencing-systems-and-protocols)
+- [Data mining, Machine Learning, Artificial Intelligence, etc.](#Data-mining,-Machine-Learning,-Artificial-Intelligence,-etc.)
+- [Algorithms and Data Structures](#Algorithms-and-Data-Structures)
+- [GUI Frameworks](#GUI-Frameworks)
+- [Computer Graphics, Computer Vision, Visualization, Image Processing, etc](#Computer-Graphics,-Computer-Vision,-Visualization,-Image-Processing,-etc)
+- [Moviemaking](#Moviemaking)
+- [Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.](#Continuous-Delivery,-Continuous-Integration,-Automatic-Deployment,-DevOps,-etc.)
+- [Process management and misc software lifecycle issues](#Process-management-and-misc-software-lifecycle-issues)
+- [Cryptography, Network Security, etc.](#Cryptography,-Network-Security,-etc.)
+- [BI, Business Intelligence ](#BI,-Business-Intelligence) 
+- [Photography, Video, and optics in general](#Photography,-Video,-and-optics-in-general)
+- [Biology, Medicine, Gerontology, etc.](#Biology,-Medicine,-Gerontology,-etc.)
+- [Career etc.](#Career-etc.)
+- [GPS, Meteorology, Alternative energy, and related](#GPS,-Meteorology,-Alternative-energy,-and-related)
+- [Misc business and finances](#Misc-business-and-finances)
+- [Manufacturing, IoT, etc.](#Manufacturing,-IoT,-etc.)
+- [Motivational and Psychology](#Motivational-and-Psychology)
+- [Languages](#Languages)
+- [Fun and useful.](#Fun-and-useful.)
+
+---
 
 ## Programming languages, scripts, etc.
 

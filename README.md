@@ -1,4 +1,3 @@
-
 # Workspace
 
 If you are familiar with Virtual Box, Vagrant, Ansible, etc., you would know what
@@ -6,7 +5,7 @@ this repository is. If you do not, you should - virtualization and
 all sorts of orchestration and provisioning are hard to void regardless of
 what kind of software-related activity you are involved in.
 
-This repository contains all you need to setup a convenient development
+This repository contains all you need to set up a convenient development
 environment on your machine for distributed programming.
 It spawns and provisions virtual machines that have their own network
 configured, making it easy to apply and host any code you want to run.
@@ -14,14 +13,13 @@ configured, making it easy to apply and host any code you want to run.
 I created it as a simple way to have templates and pre-made samples
 of relatively complicated things like distributed Erlang nodes on separate
 servers, trying out prof-of-concept demos for proxies and big-data tools.
-It is intended to be a starting point for prototypes on variety of
-technologies.
-More information is in ```doc``` folder, [doc/Links.md](doc/Links.md).
+It could be a starting point for prototypes on variety of technologies.
+More information is in `doc` folder, [doc/Links.md](doc/Links.md).
 
 Pre-requisites include VirtualBox, Vagrant, and Ansible.
 Once you have those on your host machine, you can spin off the vms listed below
-in the order they are defined in ```ansible.vmhosts```.
-File ```hosts_append.txt``` is apended to each VM's ```/etc/hosts``` to
+in the order they are defined in `ansible.vmhosts`.
+File `hosts_append.txt` is apended to each VM's `/etc/hosts` to
 eliminate the need for dns server.
 
 ```
@@ -146,9 +144,9 @@ eliminate the need for dns server.
 |==================+=================+======================================================|==========|  
 ```                                                                                          
 
-The VMs have a mapped folder to the host, ```/vagrant```, and ```projects```,
+The VMs have a mapped folder to the host, `/vagrant`, and `projects`,
 but as a general rule, they fetch and deploy everything in their own ephemeral space,
-for example, cloning a sandbox git repository in the home forlder of user 'vagrant'.
+for example, cloning a sandbox git repository in the home folder of user 'vagrant'.
 
 
 Other sandbox repositories could be provisioned on these boxes. For example,
