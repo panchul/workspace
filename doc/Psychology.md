@@ -39,6 +39,11 @@ https://en.wikipedia.org/wiki/Cognitive_bias
 
 ---
 
+How to change someone's mind.
+https://hbr.org/2020/07/how-to-actually-change-someones-mind
+
+---
+
 Documentary about Jejune project, The Institute. About alternative reality for the thrill seekers.
 https://tubitv.com/movies/136727/the_institute
 
