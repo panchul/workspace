@@ -10,7 +10,7 @@
 - [Version control systems, configuration, build tools](#Version-control-systems,-configuration,-build-tools) 
 - [Operating systems](#Operating-systems)
 - [Web Frameworks, servers, etc](#Web-Frameworks,-servers,-etc)
-- [Misc Utilities and Commands](#Misc Utilities and Commands)
+- [Misc Utilities and Commands](#Misc-Utilities-and-Commands)
 - [Quantum Computing, etc.](#Quantum-Computing,-etc.)
 - [Social media frameworks](#Social-media-frameworks)
 - [Micorcontrollers, Embedded programming, hardware](#Micorcontrollers,-Embedded-programming,-hardware)
@@ -18,7 +18,7 @@
 - [IDEs, editors, and related](#IDEs,-editors,-and-related)
 - [Networking](#Networking)
 - [Testing Frameworks](#Testing-Frameworks)
-- [Message brokers and distributed environment coordinators.](#Message brokers and distributed environment coordinators.) 
+- [Message brokers and distributed environment coordinators.](#Message-brokers-and-distributed-environment-coordinators.) 
 - [Conferencing systems and protocols](#Conferencing-systems-and-protocols)
 - [Data mining, Machine Learning, Artificial Intelligence, etc.](#Data-mining,-Machine-Learning,-Artificial-Intelligence,-etc.)
 - [Algorithms and Data Structures](#Algorithms-and-Data-Structures)
@@ -722,8 +722,9 @@ https://nofilmschool.com/how-to-write-a-scene
 - leetcode.com
 - Teach yourself programming in ten years: http://norvig.com/21-days.html
 
-- Free online Harvard courses: https://online-learning.harvard.edu/catalog/free
+Another nice resource:
 
+- Free online Harvard courses: https://online-learning.harvard.edu/catalog/free
 
 
 ## GPS, Meteorology, Alternative energy, and related
@@ -793,8 +794,8 @@ https://nofilmschool.com/how-to-write-a-scene
 
 - [misc fun, youtube, etc.](Misc_fun.html)
 - [misc historic links](Misc_historic.html)
-- Dog registration in Seattle area
- https://kingcounty.gov/depts/regional-animal-services/license-your-pet/purchase-renew-license.aspx
+
+- Dog registration in Seattle area https://kingcounty.gov/depts/regional-animal-services/license-your-pet/purchase-renew-license.aspx
 
 - The price of being single. http://ideas.ted.com/the-price-of-being-single/
 

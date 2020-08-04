@@ -51,15 +51,18 @@ help:
 status_all: git_status
 
 git_status:
+	@echo "Checking sandboxes..."
 	@ for repo in `ls projects | grep sb_` ; \
-	do sh -c "echo \"Checking projects/$$repo...\" ; cd projects/$$repo ; git fetch ; git status -sb ; cd ../.. " ; \
+	   do sh -c "echo \"Checking \\\"projects/$$repo\\\"...\" ; cd \"projects/$$repo\" ; git fetch ; git status -sb ; cd ../.. " ; \
 	done ;
+	@echo "Checking private_repo_list items..."
+	@ oldpath=`pwd`
 	@ if [ -e private/private_repo_list.txt ] ; then \
-	for repo in `cat private/private_repo_list.txt` ; \
-	do sh -c "echo \"Checking PRIVATE projects/$$repo...\" ; cd projects/$$repo ; git fetch ; git status -sb ; cd ../.. " ; \
-	done ; \
+	    for repo in `cat private/private_repo_list.txt` ; \
+	      do sh -c "echo \"Checking PRIVATE \\\"$$repo\\\"...\" ; cd \"$$repo\" ; git fetch ; git status -sb ; cd $$oldpath " ; \
+	      done ; \
 	else \
-	@echo "HINT: You might want to run 'ls -l1 projects > private/private_repo_list.txt' to create private repo list." ; \
+	  @echo "HINT: You might want to run 'ls -l1 projects > private/private_repo_list.txt' to create private repo list." ; \
 	fi
 	@ git status -sb
 
