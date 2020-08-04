@@ -1,4 +1,3 @@
-
 # GnuPlot, FreeGnuPlot
 
 See Also:

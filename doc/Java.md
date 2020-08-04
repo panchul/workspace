@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Java
 
 ---
@@ -58,6 +55,6 @@ $ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acce
 
 ---
 
-A bunch of tools expect variable ```JAVA_HOME``` defined. With a jdk, it is jdk dir plus Content/Home
+A bunch of tools expects variable `JAVA_HOME` defined. With a jdk, it is jdk dir plus Content/Home.
 
 ---

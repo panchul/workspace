@@ -2,7 +2,6 @@
 
 https://cloud.google.com/
 
-
 ---
 
 How to create Google Map in Python using Gmaps

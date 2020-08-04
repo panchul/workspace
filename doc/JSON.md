@@ -2,6 +2,9 @@
 
 [http://www.json.org/](http://www.json.org/)
 
+- [Scala implementation](#Scala-implementation)
+- [C++ implementation](#C++-implementation)
+
 ---
 
 For JSON pretty-printing, `jsonpp` works fine, can fetch with `brew`.
@@ -28,7 +31,7 @@ Make it an alias:
 
 ---
 
-## Using JSON in Scala
+## Scala implementation
 
 Quick and dirty json formatting, from here:
 http://stackoverflow.com/questions/29203069/format-nullable-seq-or-list-of-objects-with-play-json-and-salat
@@ -68,6 +71,10 @@ play-json-schema-validator - https://github.com/eclipsesource/play-json-schema-v
  
 Java-based Schema validation, Jackson library 
 json-schema-validator - https://github.com/daveclayton/json-schema-validator
+
+---
+
+## C++ implementation
 
 ---
 

@@ -1,12 +1,10 @@
-
-## UNDER CONSTRUCTION
-
 # libtool
 
 See also:
- [Autoconf](Autoconf.md)
- [Automake](Automake.md)
- [Libtool](Libtool.md)
+ - [Autoconf](Autoconf.md)
+ - [Automake](Automake.md)
+ - [CMake](CMake.md)
+ - [Libtool](Libtool.md)
 
 ---
 

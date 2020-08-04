@@ -2,10 +2,9 @@
 
 MapReduce is a programming model and an associated implementation for processing
 and generating big data sets with a parallel, distributed algorithm on a cluster.
-Basically, what all folding is about. Google papers made it a popular concept
+Basically, what all folding is about. Google papers made it a popular concept:
 
 https://en.wikipedia.org/wiki/MapReduce
-
 
 MapReduce tasks must be written as acyclic dataflow programs, i.e. a stateless
 mapper followed by a stateless reducer, that are executed by a batch job scheduler.

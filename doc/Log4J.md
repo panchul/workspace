@@ -1,7 +1,3 @@
-
-
-## UNDER CONSTRUCTION
-
 # Log4j
 
 ---

@@ -10,7 +10,15 @@ Here is the manual in .html : [https://www.gnu.org/software/make/manual/make.htm
 
 ---
 
-Idiomatic example of using addsuffix to place obj files one directory below the source.
+`pushd` and `popd` are not available in makefile - the context is messy. A workaround is to use:
+
+    oldpath=`pwd`
+    ...hack, hack, hack...
+    cd $oldpath
+
+---
+
+Idiomatic example of using `addsuffix` to place obj files one directory below the source.
 
     SOURCE += MainThread.cpp
     SOURCE += Blah.cpp

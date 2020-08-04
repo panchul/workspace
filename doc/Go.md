@@ -1,8 +1,6 @@
 # Go (Golang)
 
-
 My Golang sandbox is [https://github.com/panchul/sb_golang](https://github.com/panchul/sb_golang).
-
 
 Tutorials and refreshers:
 

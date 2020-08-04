@@ -5,9 +5,7 @@ See Also:
 - [Sorting](Sorting.md)
 - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
 
-
 https://en.wikipedia.org/wiki/Hash_table
-
 
 Hash table (`unordered_map` in C++)
 Algorithm	Average	Worst case
