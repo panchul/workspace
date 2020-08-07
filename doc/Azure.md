@@ -9,6 +9,11 @@ See Also:
 
 ---
 
+Linear Regression Model || Microsoft Azure Machine learning || Drag and Drop
+https://www.youtube.com/watch?v=ZY0y4o-Ta-4
+
+---
+
 Azure Stack slides:
 https://github.com/Azure-Samples/Azure-Stack-Hub-Foundation-Core/tree/master/ASF-slides
 

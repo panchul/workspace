@@ -2,6 +2,11 @@
 
 ---
 
+Difference between spherical vs. anamorphic lenses.
+https://www.youtube.com/watch?v=hzuFRgSUIyU
+
+---
+
 How to disinfect camera equipment and spaces.
 https://wordpress.lensrentals.com/blog/2020/03/how-to-disinfect-camera-equipment-and-spaces
 
