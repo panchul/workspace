@@ -1,8 +1,9 @@
-
 # sed
+
 See Also:
-- [Awk](Awk.md)
-- [RegEx](RegEx.md)
+
+  - [Awk](Awk.md)
+  - [RegEx](RegEx.md)
 
 ---
 
@@ -20,6 +21,12 @@ On MacOS, you need to provide the extention for the backup:
 
     $ sed -i ".orig" 's/myfrom/myto/' aaa.txt 
 
+---
+
+Basic usage, as a regex:
+
+    $ sed 's/Unix/Linux' somefile.txt > the_output_file.txt
+    
 ---
 
 A quick search-and-replace, to use "<PATH_TO_CONFIG>" in the template file:

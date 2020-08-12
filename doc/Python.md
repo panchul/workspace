@@ -13,6 +13,19 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+Some .pdfs with Python books:
+https://github.com/siddiquiamir/Python-Books
+
+Loading a .csv from a web server(or github user content)
+
+    import pandas as pd
+    df = pd.read_csv("http://raw.githubusercontent.../my.csv")
+    df.read()
+
+And you can now use this data frame as you wish. 
+
+---
+
 Python app skeleton, with tests and Github Action pipeline
 https://github.com/panchul/Pytest-Actions-Demo
 

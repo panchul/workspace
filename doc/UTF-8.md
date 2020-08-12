@@ -1,6 +1,3 @@
-
-## Under Construction
-
 # UTF-8
 
 ---
@@ -30,4 +27,3 @@ converts to
 &#9658;
 
 ---
-

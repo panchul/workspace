@@ -2,37 +2,38 @@
 
 See Also:
 
-  - [Alpine](Alpine.md)
-  - [CentOS](CentOS.md)
-  - [Debian](Debian.md)
-  - [Fedora](Fedora.md)
-  - [RedHat](RedHat.md)
-  - [Ubuntu](Ubuntu.md)
-
+  - Distributions
+    - [Alpine](Alpine.md)
+    - [CentOS](CentOS.md)
+    - [Debian](Debian.md)
+    - [Fedora](Fedora.md)
+    - [RedHat](RedHat.md)
+    - [Ubuntu](Ubuntu.md)
   - [XWindows](XWindows.md)
-  
   - [Kernel](Kernel.md)
   - [Samba](Samba.md)
-
-     
-  - [Cron](Cron.md)
-  - [Curl](Curl.md)
-  - [Ipvsadm](Ipvsadm.md)
-  - [tar](Tar.md)
-  - [tcpdump](Tcpdump.md)
-  - [nohup](Nohup.md)
-  - [syslog](Syslog.md)
-  - [bash](bash.md)
-  - [mail](Mail.md)
-  - [Firewall](Firewall.md)
-  - [watch](Watch.md)
-  
-  - [DNS](DNS.md)
-  - [Postman](Postman.md)
-  - [Wireshark](Wireshark.md)
-
- - [Semaphore](Semaphore.md) 
- - [Mutex](Mutex.md) 
+  - Shells 
+    - [bash](bash.md)
+  - Commands and utilities
+    - [Cron](Cron.md)
+    - [Curl](Curl.md)
+    - [grep](Grep.md)
+    - [Ipvsadm](Ipvsadm.md)
+    - [mail](Mail.md)
+    - [nohup](Nohup.md)
+    - [sed](Sed.md)
+    - [syslog](Syslog.md)
+    - [tar](Tar.md)
+    - [tcpdump](Tcpdump.md)
+    - [watch](Watch.md)
+  - Networking-related
+    - [Firewall](Firewall.md)
+    - [DNS](DNS.md)
+    - [Postman](Postman.md)
+    - [Wireshark](Wireshark.md)
+  - Programming concepts
+    - [Semaphore](Semaphore.md) 
+    - [Mutex](Mutex.md) 
 
 ---
 

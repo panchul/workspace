@@ -23,3 +23,9 @@ Run simple awk command on it:
 
 ---
 
+Date formatting sample:
+
+    $ date | awk '{print $1,$2,$3}'
+    Tue 11 Sep
+
+---

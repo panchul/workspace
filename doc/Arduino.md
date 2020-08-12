@@ -21,6 +21,11 @@ Microcontroller	ATmega1280
   - SRAM	8 KB
   - EEPROM	4 KB
   - Clock Speed	16 MHz
+
+---
+
+A project to do indoor positioning using wifi library.
+https://eloquentarduino.github.io/2020/08/the-ultimate-guide-to-wifi-indoor-positioning-using-arduino-and-machine-learning
  
 ---
 
