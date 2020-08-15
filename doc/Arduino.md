@@ -4,6 +4,20 @@
 
 My Arduino sandbox is [https://github.com/panchul/sb_arduino](https://github.com/panchul/sb_arduino).
 
+See Also:
+
+  - [CNC Machines](CNC.md)
+  - [EmbeddedProgramming](EmbeddedProgramming.md)
+  - [FPGA](FPGA.md)
+  - [Hardware](Hardware.md)
+  - [PCB](PCB.md)
+
+---
+
+Neat ball-balancing project, PID+CV
+
+https://www.instructables.com/id/Ball-Balancing-PID-System/
+
 ---
 
 From here: https://www.arduino.cc/en/Main/ArduinoBoardMega

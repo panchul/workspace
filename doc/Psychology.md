@@ -2,6 +2,13 @@
 
 ---
 
+Interesting article saying that human brain can only deal with 5-9 things at a time.
+
+Brain Compatible Programming
+https://tobeva.com/articles/brain-compatible-code/
+
+---
+
 8 Congnitive Biases in Software Development
 https://thevaluable.dev/cognitive-bias-software-development/
 
