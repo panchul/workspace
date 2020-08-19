@@ -10,6 +10,10 @@ See Also:
    - [Hardware](Hardware.md)
    - [PCB](PCB.md)
 
+---
+
+CV cameras, bundles with embedded Jetson Nano, etc.
+https://shop-en.notavis.com/starter-pack-for-embedded-vision-projects-with-mipi.html
 
 ---
 

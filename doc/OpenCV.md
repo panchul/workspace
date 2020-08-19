@@ -3,6 +3,8 @@
 https://opencv.org/
 
 - [Installing](#Installing)
+- [Tutorials and Demos](#Tutorials-and-Demos)
+- [Integration with IDEs](#Integration-with-IDEs)
 
 See also:
 
@@ -13,7 +15,10 @@ See also:
   - [OpenGL](OpenGL.md)
   - [PIL](PIL.md)
 
-See my Python and C++ sandboxes for useful snippets, https://github.com/panchul/sb_python and https://github.com/panchul/sb_cpp 
+See my Python and C++ sandboxes for useful snippets:
+
+ - https://github.com/panchul/sb_python
+ - https://github.com/panchul/sb_cpp 
 
 ## Installing
 
@@ -100,8 +105,125 @@ This one worked(on Mac, and linux):
 
 ---
 
+Nice step-by-step install on Ubuntu is here(!!! for CentOs see below):
+https://www.learnopencv.com/install-opencv3-on-ubuntu/
+
+Or at OpenCV's doc:
+https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
+
+pre-reqs
+
+    $ sudo apt-get install build-essential
+    $ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+    $ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+
+The repo. (get the .zip for the latest stable), [https://github.com/opencv/opencv](https://github.com/opencv/opencv):
+
+    $ cd ~/<my_working_directory>
+    $ git clone https://github.com/opencv/opencv.git
+    $ git clone https://github.com/opencv/opencv_contrib.git
+
+Get the extras right away too, for the test data[https://github.com/opencv/opencv_extra](https://github.com/opencv/opencv_extra):
+
+    $ git clone https://github.com/opencv/opencv_extra.git 
+
+I did not use the one they mention at the doc, used my own
+
+    $ cd ~/opencv
+    $ mkdir build
+    $ cd build
+
+    $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
+
+or, with modules
+    
+    $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules/ ..
+
+`make -j` blew up the memory in the VM on VirtualBox, used non-parallel, or limiting the number of threads:
+
+    $ make -j4
+  
+ Had an error:
+ 
+    cmake_symlink_library: System Error: Read-only file system   
+
+A work-around is to tweak the VirtualBox:
+
+    $ VBoxManage setextradata VM_NAME VBoxInternal2/SharedFoldersEnableSymlinksCreate/SHARE_NAME 1
+
+---
+
+Some troubleshooting for sample files came down to:
+"CV_LOAD_IMAGE_COLOR" has been replaced with "cv::IMREAD_COLOR"
+
+---
+
+Installing on MacOS
+https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
+
+---
+
+---
+
+Installing on CentOS.
+From here: https://www.vultr.com/docs/how-to-install-opencv-on-centos-7
+
+Step 1: Install dependencies for OpenCV
+
+    $ yum groupinstall "Development Tools" -y
+    $ yum install cmake gcc gtk2-devel numpy pkconfig -y
+
+Step 2: Download the OpenCV 3.3.0 archive
+
+    $ cd
+    $ wget https://github.com/opencv/opencv/archive/3.3.0.zip
+    $ unzip 3.3.0.zip
+
+Step 3: Compile and install OpenCV 3.3.0
+
+    $ cd opencv-3.3.0
+    $ mkdir build
+    $ cd build
+    $ cmake -D CMAKE_BUILD_TYPE=DEBUG -D CMAKE_INSTALL_PREFIX=/usr/local ..
+    $ make
+    $ make install
+
+Step 4: Configure required variables
+
+    $ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
+    $ echo '/usr/local/lib/' >> /etc/ld.so.conf.d/opencv.conf
+    $ ldconfig
+
+Step 5 (optional): Run tests
+
+    $ cd
+    $ git clone https://github.com/opencv/opencv_extra.git
+    $ export OPENCV_TEST_DATA_PATH=/root/opencv_extra/testdata
+
+Run these opencv_test_* :
+
+    $ cd /root/opencv-3.3.0/build/bin
+    $ ls
+    $ ./opencv_test_photo
+
+---
+
+Installing OpenCV4 on MacOS
+https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
+
+---
+
+## Tutorials and Demos
+
+---
+
 Converting from PyTorch to TF to speeup, using ONNX
 https://www.learnopencv.com/how-to-convert-a-model-from-pytorch-to-tensorrt-and-speed-up-inference
+
+---
+
+Another tutorial, smile detection. 
+https://morioh.com/p/91b4314ae79d
 
 ---
 
@@ -257,13 +379,15 @@ Another MNIST sample, with a cute gui, from https://www.youtube.com/watch?v=qmY3
 
 ---
 
-How to use OpenCV's "dnn" module with NVidia GPUs CUDA and cuDNN
-https://www.pyimagesearch.com/2020/02/03/how-to-use-opencvs-dnn-module-with-nvidia-gpus-cuda-and-cudnn/
+Neat face recognition sample code
+
+Liveness Detection with OpenCV
+https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/
 
 ---
 
-Installing OpenCV4 on MacOS
-https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
+How to use OpenCV's "dnn" module with NVidia GPUs CUDA and cuDNN
+https://www.pyimagesearch.com/2020/02/03/how-to-use-opencvs-dnn-module-with-nvidia-gpus-cuda-and-cudnn/
 
 ---
 
@@ -285,66 +409,12 @@ https://www.youtube.com/watch?v=y1ZrOs9s2QA
 
 ---
 
+## Integration with IDEs
+
+---
+
 Nice overview of using with Eclipse:
 https://docs.opencv.org/4.1.1/d7/d16/tutorial_linux_eclipse.html
-
----
-
-Nice step-by-step install on Ubuntu is here(!!! for CentOs see below):
-https://www.learnopencv.com/install-opencv3-on-ubuntu/
-
-Or at OpenCV's doc:
-https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
-
-pre-reqs
-
-    $ sudo apt-get install build-essential
-    $ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
-    $ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
-
-The repo. (get the .zip for the latest stable), [https://github.com/opencv/opencv](https://github.com/opencv/opencv):
-
-    $ cd ~/<my_working_directory>
-    $ git clone https://github.com/opencv/opencv.git
-    $ git clone https://github.com/opencv/opencv_contrib.git
-
-Get the extras right away too, for the test data[https://github.com/opencv/opencv_extra](https://github.com/opencv/opencv_extra):
-
-    $ git clone https://github.com/opencv/opencv_extra.git 
-
-I did not use the one they mention at the doc, used my own
-
-    $ cd ~/opencv
-    $ mkdir build
-    $ cd build
-
-    $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
-
-or, with modules
-    
-    $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules/ ..
-
-`make -j` blew up the memory in the VM on VirtualBox, used non-parallel, or limiting the number of threads:
-
-    $ make -j4
-  
- Had an error:
- 
-    cmake_symlink_library: System Error: Read-only file system   
-
-A work-around is to tweak the VirtualBox:
-
-    $ VBoxManage setextradata VM_NAME VBoxInternal2/SharedFoldersEnableSymlinksCreate/SHARE_NAME 1
-
----
-
-Some troubleshooting for sample files came down to:
-"CV_LOAD_IMAGE_COLOR" has been replaced with "cv::IMREAD_COLOR"
-
----
-
-Installing on MacOS
-https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
 
 ---
 
@@ -377,55 +447,7 @@ Or, with the list:
 
 About Tesseract, it uses http://leptonica.com/
 
----
-
-Neat face recognition sample code
-
-Liveness Detection with OpenCV
-https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/
-
----
-
-Installing on CentOS.
-From here: https://www.vultr.com/docs/how-to-install-opencv-on-centos-7
-
-Step 1: Install dependencies for OpenCV
-
-    $ yum groupinstall "Development Tools" -y
-    $ yum install cmake gcc gtk2-devel numpy pkconfig -y
-
-Step 2: Download the OpenCV 3.3.0 archive
-
-    $ cd
-    $ wget https://github.com/opencv/opencv/archive/3.3.0.zip
-    $ unzip 3.3.0.zip
-
-Step 3: Compile and install OpenCV 3.3.0
-
-    $ cd opencv-3.3.0
-    $ mkdir build
-    $ cd build
-    $ cmake -D CMAKE_BUILD_TYPE=DEBUG -D CMAKE_INSTALL_PREFIX=/usr/local ..
-    $ make
-    $ make install
-
-Step 4: Configure required variables
-
-    $ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
-    $ echo '/usr/local/lib/' >> /etc/ld.so.conf.d/opencv.conf
-    $ ldconfig
-
-Step 5 (optional): Run tests
-
-    $ cd
-    $ git clone https://github.com/opencv/opencv_extra.git
-    $ export OPENCV_TEST_DATA_PATH=/root/opencv_extra/testdata
-
-Run these opencv_test_* :
-
-    $ cd /root/opencv-3.3.0/build/bin
-    $ ls
-    $ ./opencv_test_photo
+or subpage [Tesseract.md](Tesseract.md)
 
 ---
 

@@ -6,10 +6,15 @@ See Also:
   - [Startup](Startup.md)
   - [Business](Business.md)
 
-Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](﻿https://www.linkedin.com/in/panchul)
+Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](https://www.linkedin.com/in/panchul)
 
 TODO: Add the list courses I took
 TODO: Add list interests, etc.
+
+---
+
+Another batch of sample interview questions.
+https://mashable.com/2014/06/09/job-interview-questions
 
 ---
 

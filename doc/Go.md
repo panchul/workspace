@@ -11,6 +11,55 @@ https://golang.org/doc/effective_go.html Effective Go
 
 ---
 
+Why Go modules are faster than GOPATH
+https://dev.to/tbpalsulich/why-go-modules-are-faster-than-gopath-blj
+
+    $ mkdir /tmp/tmp.GOPATH
+    $ export GOPATH=/tmp/tmp.GOPATH
+    $ go env GOPATH # Just to confirm.
+    /tmp/tmp.GOPATH
+
+    # Force GOPATH mode. Be sure the current directory
+    # doesn't have a go.mod.
+    $ export GO111MODULES=off
+    $ time go get cloud.google.com/go/storage
+    real    9m33.845s
+    user    4m1.197s
+    sys     0m18.079s
+    
+    $ mkdir proxy-testing
+    $ cd proxy-testing
+    $ unset GO111MODULES # Back to the default.
+    $ go mod init example.com/proxy-testing
+    
+    $ go clean -modcache # Careful!
+    $ go env -w GOPROXY=direct # direct means go directly to the source.
+    $ go env GOPROXY
+    direct
+    $ time go get cloud.google.com/go/storage
+    go: finding cloud.google.com/go/storage v1.10.0
+    ...
+    
+    real    2m6.396s
+    user    1m51.447s
+    sys     0m18.311s
+    
+    
+    $ go env -w GOPROXY=
+    $ go env GOPROXY
+    https://proxy.golang.org,direct
+    $ go clean -modcache # Careful!
+    $ go mod tidy # To start from the same state as before.
+    $ time go get cloud.google.com/go/storage
+    go: finding cloud.google.com/go/storage v1.10.0
+    ...
+    
+    real    0m10.185s
+    user    0m9.610s
+    sys     0m1.961s
+    
+---
+
 Neat multi-player game demo, on terminal, with protobufs, etc.
 https://github.com/mortenson/grpc-game-example
 
