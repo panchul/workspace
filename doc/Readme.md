@@ -2,9 +2,9 @@
 
 **Table of Content**
 
-- [Programming languages, scripts, etc.](#Programming-languages,-scripts,-etc.)
+- [Programming languages, scripts, etc.](#Programming-languages-scripts-etc)
 - [Virtualization, clustering, provisioning, and monitoring](#Virtualization,-clustering,-provisioning,-and-monitoring)
-- [Frameworks Libraries, Static code analyse, architecture approaches, etc.](#Frameworks-Libraries,-Static-code-analyse,-architecture-approaches,-etc.)
+- [Frameworks Libraries, Static code analysis, architecture approaches, etc.](#Frameworks-Libraries-Static-code-analysis-architecture-approaches-etc)
 - [Data formats, APIs, Protocols](#Data-formats,-APIs,-Protocols)
 - [Databases](#Databases)
 - [Version control systems, configuration, build tools](#Version-control-systems,-configuration,-build-tools) 
@@ -120,7 +120,7 @@ A more conceptual links, still related to Programming Languages and Math
 - [VirtualBox](VirtualBox.md)  
 - [VMWare](VMWare.md)  
 
-### Frameworks Libraries, Static code analyse, architecture approaches, etc.
+## Frameworks Libraries, Static code analysis, architecture approaches, etc.
 
  - [ASCIIDoc](Asciidoc.md)
  - [Apache Log4j](Log4J.md)
@@ -139,6 +139,7 @@ A more conceptual links, still related to Programming Languages and Math
  - [OpenGL](OpenGL.md)
  - [Splunk](Splunk.md)
  - [STL](STL.md) 
+ - [Streamlit](Streamlit.md) web-app ui, Python, etc. 
  - ReactiveX http://reactivex.io/intro.html
  - [Qt](Qt.md)
  - [Syslog](Syslog.md)
@@ -766,7 +767,7 @@ Another nice resource:
 
 - [FPGA](FPGA.md)
 
-- neat 3d printer﻿https://ultimaker.com/en/products/ultimaker-s5
+- neat 3d printer https://ultimaker.com/en/products/ultimaker-s5
 
 - https://www.youtube.com/watch?v=NuPMIUWbPsQ  Tutorials about OSIsoft’s PI Server HA configuration
 - https://pisquare.osisoft.com/community/Learn-PI/programming-in-pi-web-api OSIsoft website about PI programming

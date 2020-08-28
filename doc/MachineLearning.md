@@ -32,6 +32,25 @@ Top Python Libraries for Data Science
 
 ---
 
+A bunch of models and pipelines, e.g. object detection
+https://github.com/Tessellate-Imaging/Monk_Object_Detection
+
+Jupyter notebook tutorial on hand segmentation in images over EgoHands Dataset - 
+https://github.com/Tessellate-Imaging/Monk_Object_Detection/tree/master/application_model_zoo
+(Example 27th)
+
+---
+
+Neat example with `streamlit` and random forest regressor, on Boston House Price dataset:
+https://github.com/dataprofessor/code/blob/master/streamlit/part6/boston-house-ml-app.py
+
+---
+
+AlphaDogfight Trials Final Event
+https://www.youtube.com/watch?v=NzdhIA2S35w
+
+---
+
 ML Engineer roadmap. Nice diagram outlining options.
 https://github.com/chris-chris/ml-engineer-roadmap
 

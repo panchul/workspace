@@ -31,6 +31,17 @@ See Also:
 - [Unreal Engine](UnrealEngine.md)
 - [WebGL](WebGL.md)
 
+
+---
+
+Interesting nuances of The Real Fake Cameras of Toy Story 4
+https://youtu.be/AcZ2OY5-TeM
+
+---
+
+Another Visualization library. Neat, with good dockerized pre-builds.
+https://github.com/3b1b/manim
+
 ---
 
 A neat collection of image-processing links

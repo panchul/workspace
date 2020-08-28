@@ -14,6 +14,7 @@ See Also:
 
 CV cameras, bundles with embedded Jetson Nano, etc.
 https://shop-en.notavis.com/starter-pack-for-embedded-vision-projects-with-mipi.html
+https://www.vision-components.com/en/service-support/knowledge-base-faq/arm-linux/
 
 ---
 

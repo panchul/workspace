@@ -26,7 +26,7 @@ You can see the complete set of code in Compiler Explorer here: https://godbolt.
 
 ---
 
-Neat summary on concattenation of sequence containers:
+Neat summary on concatenation of sequence containers:
 http://www.martinbroadhurst.com/concatenate-two-vectors-in-c.html
 
 Method 1: Use std::vector::insert()
@@ -467,7 +467,7 @@ coliru.stacked-crooked.com/a/5aa89a65e3a86c98
 
 ---
 
-Demo of ```new``` vs. ```new[]```
+Demo of `new` vs. `new[]`
 
     int *i = new int;
     Object *array = new Object[100];

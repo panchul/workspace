@@ -13,6 +13,13 @@ https://git-scm.com/downloads
 
 ---
 
+Switching from one default branch to another(`master` to `main`:
+https://dev.to/swyx/move-primary-git-branch-from-master-to-main-m7c
+
+TODO
+
+---
+
 Deleting tags (from https://stackoverflow.com/questions/5480258/how-to-delete-a-remote-tag)
 
 You just need to push an 'empty' reference to the remote tag name:
