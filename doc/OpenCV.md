@@ -217,6 +217,13 @@ https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
 
 ---
 
+This one says it uses nothing but OpenCV Python for Object Detection.
+https://www.youtube.com/watch?v=HXDD7-EnGBY
+
+TODO: check out what he is actually doing in there.
+
+---
+
 Converting from PyTorch to TF to speeup, using ONNX
 https://www.learnopencv.com/how-to-convert-a-model-from-pytorch-to-tensorrt-and-speed-up-inference
 

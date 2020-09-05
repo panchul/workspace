@@ -2,6 +2,11 @@
 
 ---
 
+Не всякое внешнее оценочное суждение должно служить модификатором поведения.
+Not every external judgment should serve as a behavior modifier.
+
+---
+
 Did you know that when Einstein gave some lecture at the numerous US universities, the recurring
 question that students asked him was "Do you believe in God?"
 And he always answered "I believe in the God of Spinoza."

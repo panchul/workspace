@@ -13,6 +13,53 @@ TODO: Add list interests, etc.
 
 ---
 
+51 Essential Machine Learning Interview Questions and Answers
+https://www.springboard.com/blog/machine-learning-interview-questions/
+
+---
+
+When acquaintances ask for my mentoring advice on their career path, the very first thing
+I always do is discourage them from individual-contributor contracts. 
+
+I tried it in the past, and I was actually lucky to have met good teams and stay in touch with
+colleagues I met through consulting, but, on average, it is a commodity-labor sweat-shop environment,
+you might end up doing the bulk of the work, underpaid, underappreciated, and discarded
+the moment your client's short-sighted roadmap hits the last page of the PowerPoint presentation.
+
+I always emphasize contracting is not Computer Science. It is a mundane dead-end blue-collar transaction.
+Nobody bothers discussing supersonic hydrodynamics with a plumber who fixes a broken toilet, right?
+You will not be invited to co-author journal papers and patents - sharing intellectual
+property with vendors is a legal headache.
+
+Because you are not a professional salary negotiator, your staffing company can easily be
+taking 1/3 of what client pays and do nothing in return except for the initial presenting of your profile.
+You will have very limited control over what you do and how you do it. It is not uncommon to have to
+shadow write for your bosses and then see them taking all the credit without mentioning you exist.
+
+It is ok to explore and make the best of it, but what will be in YOUR best interests is to
+find a direc-hire FTE job somewhere else and leave faster than your middleman could spell 'counteroffer'.
+
+One more thing, once you are the boss, try being honest and compassionate to the contractors if
+you do need to hire them. 
+
+Aleksandr Panchul, 2020
+
+---
+
+The 10 Types of Programmers you'll encounter.
+https://www.youtube.com/watch?v=OU55PWXm2rg
+
+- H1B
+- model programmer
+- intern
+- Linux programmer
+- Manager
+- the dinosaur
+- the "youtube" programmer
+- ...
+
+---
+
 Another batch of sample interview questions.
 https://mashable.com/2014/06/09/job-interview-questions
 
@@ -277,7 +324,7 @@ Remember to ask these before jumping in.
 
 ---
 
-Re-phrasing dating advices(from﻿Laura Schlessinger) and applying the same attitude to job searching, do fewer of these mistakes:
+Re-phrasing dating advices(from Laura Schlessinger) and applying the same attitude to job searching, do fewer of these mistakes:
 
 - Stupid Attachment - Looking for the context of a company to find and define yourself.
 - Stupid Courtship - Become a beggar, not a chooser, in the job search ritual because you are desperate.

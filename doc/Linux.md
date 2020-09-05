@@ -18,6 +18,7 @@ See Also:
   - Commands and utilities
     - [Cron](Cron.md)
     - [Curl](Curl.md)
+    - file
     - [grep](Grep.md)
     - [Ipvsadm](Ipvsadm.md)
     - [mail](Mail.md)
@@ -35,6 +36,13 @@ See Also:
   - Programming concepts
     - [Semaphore](Semaphore.md) 
     - [Mutex](Mutex.md) 
+
+---
+
+Using `file`, to find the types of files.
+https://www.tecmint.com/find-file-types-in-linux/
+
+TODO: make a summary
 
 ---
 
