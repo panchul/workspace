@@ -63,6 +63,12 @@ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requireme
 
 ---
 
+Use this to force a fresh rebuild(`--no-cache` for rebuild, and `--pull` for FROM):
+
+    $ docker build --pull --no-cache --tag myimage:version .
+
+---
+
 Nice way to connect to the host network from outside of a Docker container.
 https://dev.to/natterstefan/docker-tip-how-to-get-host-s-ip-address-inside-a-docker-container-5anh
 

@@ -17,6 +17,12 @@ Includes are in `/usr/local/opt/curl/include`, the libs are in `lib`
 
 ---
 
+HTTP Evasions Explained - Part 1 - Evading Using HTTP 0.9 
+https://noxxi.de/research/http-evader-explained-1-http09.html
+
+
+---
+
 For JSON, here's a convenient followup for curl:
 
     $ curl http://some_api_url/ | python -m json.tool
