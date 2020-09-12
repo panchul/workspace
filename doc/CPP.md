@@ -748,7 +748,7 @@ and back
 C++ Parameter Pack
 https://en.cppreference.com/w/cpp/language/parameter_pack
 
-TODO: write a quck summary
+TODO: write a quick summary
 
 ---
 

@@ -9,6 +9,11 @@ See Also:
 
 ---
 
+A lot of blood sweat and tears went into this one, many commits were under my alter ego github account `alek8106`.
+https://github.com/Azure-Samples/azure-intelligent-edge-patterns
+
+---
+
 Linear Regression Model || Microsoft Azure Machine learning || Drag and Drop
 https://www.youtube.com/watch?v=ZY0y4o-Ta-4
 

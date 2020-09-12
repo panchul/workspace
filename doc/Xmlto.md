@@ -1,7 +1,3 @@
-
-
-## UNDER CONSTRUCTION
-
 # XMLTo
 
 https://fedoraproject.org/wiki/Infrastructure/Fedorahosted-retirement

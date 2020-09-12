@@ -1,5 +1,5 @@
 
-This Wiki was created to describe the intended usage of the ```workspace```
+This Wiki was created to describe the intended usage of the `workspace`
 repository, and of those sandboxes that are mature enough to be useful for
 the ousiders.
 
@@ -9,7 +9,6 @@ years, organizing them by topic, making cross-references and revising
 the content.
 
 ## UNDER CONSTRUCTION
-
 
 [Links](Links)  
 [Career](Career)  

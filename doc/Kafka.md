@@ -1,7 +1,5 @@
-
-## Under Construction
-
 # Kafka
+
 See Also:
  [Zookeeper](Zookeeper.md)
 

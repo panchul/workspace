@@ -2,9 +2,6 @@
 
 http://couchdb.apache.org/
 
-
 ---
-
-
 
 ---

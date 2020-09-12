@@ -29,7 +29,7 @@ This last one might get crapped up with the ```curl```'s progress bar, to keep i
     
 ---
 
-to fetch and build on Mac, ```brew install``` would be sufficient. 
+to fetch and build on Mac, `brew install` would be sufficient. 
 
 ---
 
@@ -41,7 +41,7 @@ It can infer that it is a POST, so it is same as:
 
     $ curl -H "Content-Type: application/json" -d '{"name":"Something","author":"Someody"}' localhost:8181/Books
 
-And if the server can figure out the content type, you can drop that too:
+If the server can figure out the content type, you can drop that too:
 
     $ curl localhost:8181/Books -d '{"name":"Something","author":"Someody"}'
 
@@ -61,7 +61,7 @@ And if the server can figure out the content type, you can drop that too:
 
 ---
       
-Option `-C -` allows to resume previously-interrupted download:
+Option `-C -` allows resuming previously-interrupted download:
 
     $ curl -C - -O http://yourdomain.com/yourfile.tar.gz
     ^C
@@ -78,7 +78,7 @@ Using lists of files:
     
 ---     
 
-Use Proxy with or without Aurthentication
+Use Proxy with or without Authentication
 
     $ curl -x proxy.yourdomain.com:8080 -U user:password -O http://yourdomain.com/yourfile.tar.gz
     $ curl -x proxy.yourdomain.com:8080 -O http://yourdomain.com/yourfile.tar.gz
@@ -107,7 +107,7 @@ Uploading to FTP server:
     
 ---
     
-Specifying the user agent(it is "curl/version" by defauld:
+Specifying the user agent(it is "curl/version" by default:
 
     $ curl -I http://localhost --user-agent "I am a new web browser"
     

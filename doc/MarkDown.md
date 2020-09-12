@@ -1,18 +1,15 @@
 # Markdown
 
 --
+## Miscellaneous
 
-## Quick-n-dirty notes and what they produce
-
-### Miscellaneous
-
-Three or more dashes turn into the horizontal dividing lines ( ```<hr>```)
+Three or more dashes turn into the horizontal dividing lines ( `<hr>`)
 
     ---
 
 ---
 
-### Font formatting
+## Font formatting
 
     **bold text**
     `code snippet`
@@ -26,7 +23,7 @@ Three or more dashes turn into the horizontal dividing lines ( ```<hr>```)
 
 ---
 
-### Lists
+## Lists
 
     1. List item one
         * sublist, not numbered
@@ -47,7 +44,7 @@ Three or more dashes turn into the horizontal dividing lines ( ```<hr>```)
 
 ---
 
-### Links
+## Links
 
     [link text](https://www.somestuff.com/more_stuff "here goes the page")
 
@@ -55,7 +52,7 @@ Three or more dashes turn into the horizontal dividing lines ( ```<hr>```)
 
 ---
 
-### Video links
+## Video links
 
 It is basically links to videos, it is nice to fetch the image youtube provides:
 
@@ -65,7 +62,7 @@ It is basically links to videos, it is nice to fetch the image youtube provides:
 
 ---
 
-### Images
+## Images
 
      Inline-style: 
     ![alt text](URI_TO_IMAGE "Image title text")
@@ -99,4 +96,4 @@ No need to re-invent the wheel. Here are some nice ones:
 
 [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-
+---

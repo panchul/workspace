@@ -1,5 +1,11 @@
 # Psychology
 
+--
+
+PBS series about implicit bias.
+Hacking Your Mind. Living on Autopilot. 09/09/2020 
+https://www.pbs.org/video/living-on-auto-pilot-5p5jct/
+
 ---
 
 Социальное программирование на примере трех экспериментов 

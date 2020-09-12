@@ -1,4 +1,3 @@
-
 # Databases
 
 - [Cassandra](Cassandra.md)

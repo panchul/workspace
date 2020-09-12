@@ -12,6 +12,136 @@ See Also:
     - [LXD, Linux Containers](LXD.md)
     - [Samba](Samba.md)
 
+**Table of contents**
+
+ - [Installation](#Installation)
+ - [Kubernetes Dashboard](#Kubernetes-Dashboard)
+ - [Kubernetes storage](#Kubernetes-storage)
+ - [Miscellaneous](#Miscellaneous)
+
+## Installation
+
+---
+
+Installing kubectl
+https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
+---
+
+Installing Kubernetes on Ubuntu
+https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
+
+Installing Kubernetes on CentOS
+https://phoenixnap.com/kb/how-to-install-kubernetes-on-centos
+
+---
+
+Kubernetes cluster on CentOS 8
+https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
+
+Kubernetes cluster on CentOS 7
+https://www.tecmint.com/install-kubernetes-cluster-on-centos-7/
+
+---
+
+Docker on Windows:
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon
+
+Kubernetes on Windows:
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/kubernetes/getting-started-kubernetes-windows
+
+---
+
+## Kubernetes Dashboard
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl/
+https://github.com/kubernetes/dashboard
+https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/README.md
+
+https://www.replex.io/blog/how-to-install-access-and-add-heapster-metrics-to-the-kubernetes-dashboard
+https://www.thegeekdiary.com/how-to-access-kubernetes-dashboard-externally/
+https://tjth.co/setting-up-externally-available-kubernetes-dashboard/
+
+https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-solution-template-kubernetes-dashboard?view=azs-1910
+
+---
+
+## Kubernetes storage
+
+---
+
+https://github.com/kubernetes/examples/tree/master/staging/volumes
+
+Mounting a local folder on a node(should be on all nodes, because the deployment is not deterministic)
+
+Here is an example: https://stackoverflow.com/questions/48747538/using-windows-smb-shares-from-kubernetes-deployment-app
+    
+    kind: PersistentVolume
+    apiVersion: v1
+    metadata:
+      name: samba-share-volume
+      labels:
+        type: local
+    spec:
+      storageClassName: manual
+      capacity:
+        storage: 2Gi
+      accessModes:
+        - ReadWriteMany
+      hostPath:
+        path: "/data/share1"
+    
+and a claim,
+    
+    kind: PersistentVolumeClaim
+    apiVersion: v1
+    metadata:
+      name: samba-share-claim
+    spec:
+      storageClassName: manual
+      accessModes:
+        - ReadWriteMany
+      resources:
+        requests:
+          storage: 1Gi
+    
+and assigned the claim to the application.
+    
+    apiVersion: extensions/v1beta1
+    kind: Deployment
+    metadata:
+      name: samba-share-deployment
+    spec:
+      replicas: 2
+      template:
+        metadata:
+          labels:
+            app: samba-share-deployment
+            tier: backend
+        spec:
+          containers:
+          - name: samba-share-deployment
+            image: nginx
+            ports:
+            - containerPort: 80
+            volumeMounts:
+            - mountPath: "/usr/share/nginx/html"
+              name: samba-share-volume
+          volumes:
+          - name: samba-share-volume
+            persistentVolumeClaim:
+              claimName: samba-share-claim
+
+---
+
+Another option for distributed storage:
+
+https://deploy-to-kubernetes.readthedocs.io/en/latest/ceph.html
+
+---
+
+## Miscellaneous
+
 ---
 
 Projects from Cloud Native Computing Foundation (CNCF)
@@ -43,35 +173,8 @@ https://azure.microsoft.com/mediahandler/files/resourcefiles/kubernetes-learning
 
 ---
 
-Installing Kubernetes on Ubuntu
-https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
-
-Installing Kubernetes on CentOS
-https://phoenixnap.com/kb/how-to-install-kubernetes-on-centos
-
----
-
-Kubernetes Dashboard
-
-https://kubernetes.io/docs/tasks/tools/install-kubectl/
-https://github.com/kubernetes/dashboard
-https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/README.md
-
-https://www.replex.io/blog/how-to-install-access-and-add-heapster-metrics-to-the-kubernetes-dashboard
-https://www.thegeekdiary.com/how-to-access-kubernetes-dashboard-externally/
-https://tjth.co/setting-up-externally-available-kubernetes-dashboard/
-
-https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-solution-template-kubernetes-dashboard?view=azs-1910
-
----
-
 Using GPUs for compute-intensive workoads on Azure Kubernetes Service(AKS)
 https://docs.microsoft.com/en-us/azure/aks/gpu-cluster#create-an-aks-cluster
-
----
-
-Installing kubectl
-https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ---
 
@@ -80,24 +183,8 @@ https://www.edureka.co/blog/interview-questions/kubernetes-interview-questions/
 
 ---
 
-Kubernetes cluster on CentOS 8
-https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
-
-Kubernetes cluster on CentOS 7
-https://www.tecmint.com/install-kubernetes-cluster-on-centos-7/
-
----
-
 Somebody recommended this course online:
 https://www.pluralsight.com/courses/kubernetes-developers-core-concepts
-
----
-
-Docker on Windows:
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon
-
-Kubernetes on Windows:
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/kubernetes/getting-started-kubernetes-windows
 
 ---
 
@@ -349,77 +436,5 @@ https://dev.to/azure/learn-kubernetes-with-this-5-part-series-29km
 
 Practical Kubernetes Stories for Developers.
 https://dev.to/pavanbelagatti/practical-kubernetes-stories-for-developers-330d
-
----
-
-Kubernetes volumes:
-
-https://github.com/kubernetes/examples/tree/master/staging/volumes
-
-Mounting a local folder on a node(should be on all nodes, because the deployment is not deterministic)
-
-Here is an example: https://stackoverflow.com/questions/48747538/using-windows-smb-shares-from-kubernetes-deployment-app
-    
-    kind: PersistentVolume
-    apiVersion: v1
-    metadata:
-      name: samba-share-volume
-      labels:
-        type: local
-    spec:
-      storageClassName: manual
-      capacity:
-        storage: 2Gi
-      accessModes:
-        - ReadWriteMany
-      hostPath:
-        path: "/data/share1"
-    
-and a claim,
-    
-    kind: PersistentVolumeClaim
-    apiVersion: v1
-    metadata:
-      name: samba-share-claim
-    spec:
-      storageClassName: manual
-      accessModes:
-        - ReadWriteMany
-      resources:
-        requests:
-          storage: 1Gi
-    
-and assigned the claim to the application.
-    
-    apiVersion: extensions/v1beta1
-    kind: Deployment
-    metadata:
-      name: samba-share-deployment
-    spec:
-      replicas: 2
-      template:
-        metadata:
-          labels:
-            app: samba-share-deployment
-            tier: backend
-        spec:
-          containers:
-          - name: samba-share-deployment
-            image: nginx
-            ports:
-            - containerPort: 80
-            volumeMounts:
-            - mountPath: "/usr/share/nginx/html"
-              name: samba-share-volume
-          volumes:
-          - name: samba-share-volume
-            persistentVolumeClaim:
-              claimName: samba-share-claim
-
----
-
-Another option for distributed storage:
-
-https://deploy-to-kubernetes.readthedocs.io/en/latest/ceph.html
 
 ---

@@ -1,4 +1,3 @@
-
 # Jenkins
 
 https://jenkins.io/
@@ -25,10 +24,6 @@ https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
 ---
 
 Installing Jenkins on CentOS 8
-
-
-
-
 
 
 ---

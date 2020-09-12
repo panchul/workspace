@@ -1,5 +1,7 @@
 # Docker
 
+https://www.docker.com/
+
 See Also:
 
     - [CUDA](CUDA.md)
@@ -11,12 +13,60 @@ See Also:
 
 My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker).
 
+**Table of contents**
+
+ - [Installation](#Installation)
+ - [Miscellaneous](#Miscellaneous)
+
 ---
 
-Nice way to connect to the host network from ouside of a Docker container.
+## Installation  
+
+https://docs.docker.com/engine/installation/
+
+---
+
+Installing on Ubuntu:
+
+    $ sudo apt install docker.io
+
+To start the daemon:
+    
+    $ sudo systemctl start docker
+    
+To make it start automatically:
+    
+    $ sudo systemctl enable docker
+
+To not need run it as `sudo`:    
+    
+    $ sudo usermod -aG docker $USER
+    
+In some cases you might need this:
+
+    $ sudo chmod g+rwx "$HOME/.docker" -R
+    
+You might want to re-login to apply your new group memebership
+
+Testing that docker works:
+
+    $ docker run hello-world
+  
+---
+
+Docker for Ubuntu:
+https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requirements
+
+---
+
+## Miscellaneous
+
+---
+
+Nice way to connect to the host network from outside of a Docker container.
 https://dev.to/natterstefan/docker-tip-how-to-get-host-s-ip-address-inside-a-docker-container-5anh
 
-You can use a Linux-scecific `docker-compose.override.yml`, https://docs.docker.com/compose/extends/
+You can use a Linux-specific `docker-compose.override.yml`, https://docs.docker.com/compose/extends/
 Or set the gatewateway via environment. E.g. in `~/.bashrc`:
 
     export DOCKER_GATEWAY_HOST=172.17.0.1
@@ -41,18 +91,6 @@ https://dev.to/sammyvimes/docker-on-a-diet-1n6j
 
 ---
 
-https://www.docker.com/
-
-Installation:
-
-https://docs.docker.com/engine/installation/
-
-To start the daemon:
-
-    $ sudo  systemctl start docker
-
----
-
 One of the ways to see the disk usage:
 
     $ docker system df -v
@@ -73,13 +111,7 @@ One of the ways to see the disk usage:
 
 ---
 
-Docker for Ubuntu:
-
-https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requirements
-
----
-
-Nice summary of ```Entrypoint``` vs ```CMD```
+Nice summary of `Entrypoint` vs `CMD`
 
 https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/
 
@@ -93,7 +125,6 @@ To run a stdout redirect in a sudo line, this helped:
 Without "sh -c" did not work:
 
     $ sudo echo $1 > /tmp/zookeeper$1/myid         <----- is not allowed.
-
 
 ---
 
@@ -225,5 +256,3 @@ Neat step-by-step demos for basic usage of Docker:
 http://engineering.hipolabs.com/understand-docker-without-losing-your-shit/
 
 ---
-
-

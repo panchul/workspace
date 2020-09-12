@@ -1,4 +1,3 @@
-
 # ejabberd (Jabber server in Erlang)
 
 There is a dev environment maintained by the people who work on ejabberd:  

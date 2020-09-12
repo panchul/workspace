@@ -13,6 +13,11 @@ https://git-scm.com/downloads
 
 ---
 
+Another example of using Github as host for a resume. Digital CV in Markdown on GitHub.
+https://dev.to/carolstran/creating-a-digital-cv-in-markdown-on-github-1b3l
+
+---
+
 Switching from one default branch to another(`master` to `main`:
 https://dev.to/swyx/move-primary-git-branch-from-master-to-main-m7c
 

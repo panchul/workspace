@@ -1,11 +1,7 @@
-
-## UNDER CONSTRUCTION
-
 # netcat (nc)
 
 See Also:
  [Linux](Linux.md)
- 
  
 ---
 

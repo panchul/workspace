@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Mercurial
 
 https://www.mercurial-scm.org/

@@ -7,7 +7,7 @@ See Also:
 
 ---
 
-How to setup `firewalld` on CentOS 8 
+How to set up `firewalld` on CentOS 8 
 https://www.cyberciti.biz/faq/how-to-set-up-a-firewall-using-firewalld-on-centos-8/
 
 ---
