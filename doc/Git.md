@@ -13,6 +13,22 @@ https://git-scm.com/downloads
 
 ---
 
+Insane collection of Github profile tricks.
+https://github.com/abhisheknaiidu/awesome-github-profile-readme
+
+Github profile activity generator
+https://github.com/omidnikrah/profile-activity-generator
+
+Static re-generation with Rust
+https://dev.to/aralroca/static-readme-regeneration-4pf2
+
+---
+
+Custom Github profile
+https://dev.to/rado_mayank/have-you-built-your-github-profile-readme-yet-27nh
+
+---
+
 Another example of using Github as host for a resume. Digital CV in Markdown on GitHub.
 https://dev.to/carolstran/creating-a-digital-cv-in-markdown-on-github-1b3l
 

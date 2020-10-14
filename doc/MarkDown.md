@@ -48,7 +48,16 @@ Three or more dashes turn into the horizontal dividing lines ( `<hr>`)
 
     [link text](https://www.somestuff.com/more_stuff "here goes the page")
 
-[link text](https://www.somestuff.com/more_stuff "here goes the page")
+[link text](https://www.example.com/more_stuff "here goes the page")
+
+## Internal Links
+    
+    ### links with spaces
+    [link text](#links-with-spaces)
+
+### links with spaces
+[link text](#links-with-spaces)
+
 
 ---
 

@@ -12,6 +12,14 @@ See Also:
 
 My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp).
 
+**Content**
+
+  - [Miscellaneous](#Miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Another website with a collection of community-created snippets.
@@ -55,7 +63,8 @@ Method 5: Use std::reserve() and then std::transform()
     vector1.reserve(vector1.size() + vector2.size());
     std::transform(vector2.begin(), vector2.end(), vector1.begin(), transformer());
 
-In all cases you can use the new C++11 std::begin() and std::end() functions to get the beginnings and endings of the vectors.
+In all cases you can use the new C++11 std::begin() and std::end() functions to get the beginnings and
+endings of the vectors.
 
 ---
 
@@ -313,7 +322,8 @@ https://en.cppreference.com/w/cpp/language/explicit
 
 ---
 
-Interesting notes about push_back() vs. emplace(). Boils down to "don't be a smart-pants, and use push_back() for better readability"
+Interesting notes about push_back() vs. emplace(). Boils down to "don't be
+a smart-pants, and use push_back() for better readability"
 https://abseil.io/tips/112
 
 ---
@@ -420,9 +430,11 @@ Good summarizing public/protected/private
 The same happens with public, private and protected inheritance.
 Let's consider a class Base and a class Child that inherits from Base.
 
-- If the inheritance is public, everything that is aware of Base and Child is also aware that Child inherits from Base.
+- If the inheritance is public, everything that is aware of Base and Child is also aware that Child inherits
+  from Base.
 - If the inheritance is protected, only Child, and its children, are aware that they inherit from Base.
 - If the inheritance is private, no one other than Child is aware of the inheritance.
+
 
     class A {
     public:
@@ -454,7 +466,9 @@ Let's consider a class Base and a class Child that inherits from Base.
 ---
 
 Had an issue with compiling relatively basic code:
-```gcc: error trying to exec 'cc1plus': execvp: No such file or directory``` 
+
+`gcc: error trying to exec 'cc1plus': execvp: No such file or directory`
+ 
 needed to run these to fix it:
 
     $ sudo apt-get update
@@ -641,7 +655,8 @@ And then
 
 ---
 
-Some preprocessor tricks. More at https://stackoverflow.com/questions/1562074/how-do-i-show-the-value-of-a-define-at-compile-time
+Some preprocessor tricks. More at
+ https://stackoverflow.com/questions/1562074/how-do-i-show-the-value-of-a-define-at-compile-time
 
     /* Some test definition here */
     #define DEFINED_BUT_NO_VALUE

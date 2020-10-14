@@ -13,6 +13,11 @@ TODO: Add list interests, etc.
 
 ---
 
+You weren't meant to have a boss.
+http://paulgraham.com/boss.html
+
+---
+
 51 Essential Machine Learning Interview Questions and Answers
 https://www.springboard.com/blog/machine-learning-interview-questions/
 

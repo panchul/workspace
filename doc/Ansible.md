@@ -13,6 +13,9 @@ https://www.cyberciti.biz/faq/ansible-apt-update-all-packages-on-ubuntu-debian-l
 
 ---
 
+Installing Ansible on Fedora.
+https://www.cyberciti.biz/faq/how-to-install-ansible-on-fedora-for-it-and-server-automation/
+
 Installing and testing Ansible on CentOS RHEL 8
 Neat step-by-step
 https://www.tecmint.com/install-ansible-on-centos-rhel-8/

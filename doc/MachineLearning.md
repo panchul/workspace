@@ -12,6 +12,17 @@ See Also:
  - [ONNX](ONNX.md)
  - [PyTorch](PyTorch.md)
 
+
+**Content**
+
+ - [Labs and tutorials](#Labs-and-tutorials)
+ - [Miscellaneous](#Miscellaneous)
+
+
+
+
+## Miscellaneous
+
 ---
 
 Top Python Libraries for Data Science
@@ -278,3 +289,5 @@ Timelines of Machine Learning:
 2017-19 - Transformers
 
 ---
+
+## Labs and tutorials

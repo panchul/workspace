@@ -4,10 +4,10 @@ See also:
 
   - [AMP](AMP.md)
   - [ComputerVision](ComputerVision.md)
-  - [OpenACC](OpenACC.md)
-  - [OpenGL](OpenGL.md)
-  - [OpenCV](OpenCV.md)
   - [DirectX](DirectX.md)
+  - [OpenACC](OpenACC.md)
+  - [OpenCV](OpenCV.md)
+  - [OpenGL](OpenGL.md)
 
 **Table of contents**
 

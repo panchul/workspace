@@ -14,10 +14,29 @@ See Also:
 
 **Table of contents**
 
+ - [Idioms and tricks](#Idioms-and-tricks)
  - [Installation](#Installation)
  - [Kubernetes Dashboard](#Kubernetes-Dashboard)
  - [Kubernetes storage](#Kubernetes-storage)
  - [Miscellaneous](#Miscellaneous)
+
+## Idioms and tricks
+
+---
+
+If you get a service, for example:
+
+    $ kubectl get svc istio-ingressgateway -n istio-system
+    NAME                   TYPE           CLUSTER-IP       EXTERNAL-IP      PORT(S)   AGE
+    istio-ingressgateway   LoadBalancer   172.21.109.129   130.211.10.121   ...       17h
+
+You can extract `EXTERNAL-IP` like so:
+
+    export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+    export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
+    
+---
+ 
 
 ## Installation
 
