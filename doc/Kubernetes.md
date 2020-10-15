@@ -73,6 +73,27 @@ https://docs.microsoft.com/en-us/virtualization/windowscontainers/kubernetes/get
 
 ## Kubernetes Dashboard
 
+---
+
+Web UI (Dashboard)
+https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
+Form that link:
+
+You can access Dashboard using the kubectl command-line tool by running the following command:
+
+    $ kubectl proxy
+
+Kubectl will make Dashboard available at 
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/.
+
+The UI can only be accessed from the machine where the command is executed.
+See kubectl proxy --help for more options.
+
+Note: Kubeconfig Authentication method does NOT support external identity providers or x509 certificate-based authentication
+    
+---
+
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
 https://github.com/kubernetes/dashboard
 https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/README.md

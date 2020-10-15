@@ -176,6 +176,17 @@ This is it, we are reado to connect from another machine:
 
 ---
 
+How to use SSH as a VPN with sshuttle
+https://www.techrepublic.com/article/how-to-use-ssh-as-a-vpn-with-sshuttle/
+
+---
+
+Магия SSH
+https://habr.com/ru/post/331348/
+
+
+---
+
 This tunnels an IRC session from client machine ```127.0.0.1``` (local-host) to
 remote server ```server.example.com```:
 
