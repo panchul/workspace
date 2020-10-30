@@ -1,22 +1,36 @@
 # VirtualBox
 
-See Also:
-  - [Vagrant](Vagrant.md)
-  - [Ansible](Ansible.md)
-  - [VMWare](VMWare.md)
-
----
-
 [https://www.virtualbox.org/](https://www.virtualbox.org/)  
 
 Vagrant is a better way to use VirtualBox. However, if you have to,
 there is a command-line api to VirtualBox inventory.
 
+See Also:
+  - [Vagrant](Vagrant.md)
+  - [Ansible](Ansible.md)
+  - [VMWare](VMWare.md)
+
+**Content**
+
+ - [Installing](#installing)
+ - [Miscellaneous](#miscellaneous)
+
+## Installing
+
 ---
 
-Idiomatic mount of a shared drive with the host(once you call your share ```MY_SHARE``` on the host):
+Installing VirtualBox on Ubuntu 20.04 LTS
+https://www.cyberciti.biz/faq/how-to-install-virtualbox-on-ubuntu-20-04-linux-lts/
+
+---
+
+Idiomatic mount of a shared drive with the host(once you call your share `MY_SHARE` on the host):
 
     $ sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) MY_SHARED ~/MY_SHARED
+
+---
+
+## Miscellaneous
 
 ---
 

@@ -13,6 +13,16 @@ TODO: Add list interests, etc.
 
 ---
 
+Thank-you note templates, for after interviews
+https://blog.hubspot.com/sales/interview-thank-you-email
+
+---
+
+Bill Gates' mom helped him progress his raise to power
+https://www.cnbc.com/2020/08/05/how-bill-gates-mother-influenced-the-success-of-microsoft.html
+
+---
+
 You weren't meant to have a boss.
 http://paulgraham.com/boss.html
 

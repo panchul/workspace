@@ -3,6 +3,7 @@
 See also:
 
   - [Anaconda](Anaconda.md)
+  - [Cython](Cython.md)
   - [Jupyter](Jupyter.md)
   - [Numpy](Numpy.md)
   - [PIL](PIL.md)

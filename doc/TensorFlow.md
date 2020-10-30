@@ -6,6 +6,11 @@ https://github.com/tensorflow/tensorflow
 
 ---
 
+A podcast where the guy says tensorflow is crap.
+https://www.youtube.com/watch?v=XHyASP49ses
+
+---
+
 Distributed TensofFlow
 https://github.com/tensorflow/examples/blob/master/community/en/docs/deploy/distributed.md
 

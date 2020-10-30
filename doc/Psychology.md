@@ -2,6 +2,16 @@
 
 ---
 
+8 great things that happen when you lose control
+https://www.cluber.com.ua/lifestyle/psihologiya-lifestyle/2019/11/8-zamehatelnyh-veshej-kotorye-proishodyat-posle-togo-kak-vy-otpuskaete-kontrol/
+
+---
+
+5 sex conversations to have before you date
+https://www.elephantjournal.com/2019/10/5-sex-conversations-to-have-before-starting-a-new-relationship-adult-benjamin-davis/
+
+---
+
 11 СПОСОБОВ НЕ ЗАБЫВАТЬ ПРОЧИТАННОЕ 
 Когда мы читаем что-то интересное, хочется удержать в памяти все детали. Но проходит время — и мы обнаруживаем, что не можем вспомнить не только детали, но даже суть. 
 Провалы в памяти? Склероз? Ничего подобного. Просто читать и запоминать — это два разных процесса. Чтобы удержать информацию в голове, память нужно включить. Вот 11 способов, которые помогут это сделать.

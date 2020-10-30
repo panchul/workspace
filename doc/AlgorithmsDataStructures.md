@@ -36,6 +36,24 @@ STL and related
 
 ---
 
+Neat compilation and review.
+
+How to Learn Data Structures and Algorithms. 20 Problem-Solving Techniques You Must Know.
+https://www.yourdevopsguy.com/how-to-learn-data-structures-and-algorithms-20-problem-solving-techniques-you-must-know/
+
+    Pointer based
+    Recursion based
+    Sorting and searching
+    Extending basic data structures
+    Miscellanea
+
+---
+
+Recursion vs Iteration: 13 Ways to Traverse a Tree.
+https://dev.to/codinglanguages/recursion-vs-iteration-13-ways-to-traverse-a-tree-2n89
+
+---
+
 50 Data structure and algorithm interview questions
 https://www.hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
 
