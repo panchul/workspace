@@ -14,6 +14,14 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
+Neat benchmarking library I noticed here:
+https://stackoverflow.com/questions/3790848/fastest-way-to-convert-an-iterator-to-a-list
+
+My own fork:
+https://github.com/panchul/simple_benchmark
+
+---
+
 Drawing COVID19 shaped virus using Turtle Library
  
     import turtle

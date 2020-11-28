@@ -6,6 +6,25 @@ See Also:
 
 ---
 
+Interesting way to get the id, a snippet from a pipelineing script for kubeflow
+https://www.kubeflow.org/docs/pipelines/tutorials/api-pipelines/
+
+    RUN_ID=$((
+    curl -H "Content-Type: application/json" -X POST ${SVC}/apis/v1beta1/runs \
+    -d @- << EOF
+    {
+       "name":"${PIPELINE_NAME}_run",
+       "pipeline_spec":{
+          "pipeline_id":"${PIPELINE_ID}"
+       }
+    }
+    EOF
+    ) | jq -r .run.id)
+    
+
+
+---
+
 libcurl install summary:
 https://unix.stackexchange.com/questions/452515/how-to-install-libcurl
 
@@ -19,7 +38,6 @@ Includes are in `/usr/local/opt/curl/include`, the libs are in `lib`
 
 HTTP Evasions Explained - Part 1 - Evading Using HTTP 0.9 
 https://noxxi.de/research/http-evader-explained-1-http09.html
-
 
 ---
 

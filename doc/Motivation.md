@@ -2,6 +2,49 @@
 
 ---
 
+From Internet:
+
+This old lady handed her bank card to the teller and said “I would like to withdraw $10”. The
+teller told her “for withdrawals less than $100, please use the ATM.
+
+The old lady wanted to know why... The teller returned her bank card and irritably told her
+“these are the rules, please leave if there is no further matter. There is a line of customers
+behind you”.
+
+The old lady remained silent for a few seconds and handed her card back to the teller and said
+“please help me withdraw all the money I have.” The teller was astonished when she checked the
+account balance. She nodded her head, leaned down and respectfully told her “you have
+$1,300,000 in your account but the bank doesn’t have that much cash currently. Could you make
+ an appointment and come back again tomorrow?
+ 
+The old lady then asked how much she could withdraw immediately. The teller told her any
+amount up to $3000. “Well please let me have $3000 now.” The teller kindly handed $3000
+very friendly and with a smile to her.
+
+The old lady put $10 in her purse and asked the teller to deposit $2,990 back into her
+account.
+
+The moral of this story is....
+
+Don’t be difficult with old people, they spent a lifetime learning the skill.
+
+---
+
+In his book “Personality Isn’t Permanent,” Dr. Benjamin Hardy says:
+
+Your view of the world says more about you than it does about the world. Your view of
+the past says more about you than it does about the past. Consequently, you should formulate
+meaning based on your desired future self. This requires being intentional about your
+interpretation of your experiences, even your hard ones … Your past can and must change.
+
+Another quote from a similar source:
+   
+Telling yourself you can do something is called a limiting belief. Would you
+tell your child “You’re just not good at math, so let’s just not take math anymore”?
+If not, why would you tell yourself the same thing?
+    
+---
+
 Дейл Карнеги
 
 - Каждый человек хотя бы пять минут в день бывает дураком. Настоящая мудрость состоит в том, чтобы не превышать этот временной лимит.

@@ -13,6 +13,11 @@ See Also:
 
 ---
 
+Encryption etc.
+https://dev.to/goutomroy/encryption-2kkl
+
+---
+
 Criptocurrency overview.
 https://www.youtube.com/watch?v=bBC-nXj3Ng4
 

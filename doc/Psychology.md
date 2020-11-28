@@ -2,6 +2,12 @@
 
 ---
 
+Interesting facts about people not remembering how 'g' is drawn
+https://www.iflscience.com/brain/most-people-cant-recognize-a-letter-they-see-every-day-and-you-probably-cant-either/
+https://psycnet.apa.org/record/2018-13691-001
+
+---
+
 8 great things that happen when you lose control
 https://www.cluber.com.ua/lifestyle/psihologiya-lifestyle/2019/11/8-zamehatelnyh-veshej-kotorye-proishodyat-posle-togo-kak-vy-otpuskaete-kontrol/
 

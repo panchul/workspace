@@ -8,6 +8,7 @@ See Also:
     - [Docker](Docker.md)
     - [DockerCompose](DockerCompose.md)
     - [DockerSwarm](DockerSwarm.md)
+    - [Istio](Istio.md)
     - [Kubeflow](Kubeflow.md)
     - [LXD, Linux Containers](LXD.md)
     - [Samba](Samba.md)
@@ -39,6 +40,21 @@ You can extract `EXTERNAL-IP` like so:
  
 
 ## Installation
+
+---
+
+microk8s (super simple one-node Kubernetes)
+https://thenewstack.io/deploy-a-single-node-kubernetes-instance-in-seconds-with-microk8s/
+
+---
+
+Neat one-node kubernetes
+https://raaaimund.github.io/tech/2018/10/23/create-single-node-k8s-cluster/
+
+---
+
+NVIDIA gpu how-to:
+https://docs.nvidia.com/datacenter/kubernetes/kubernetes-upstream/index.html
 
 ---
 

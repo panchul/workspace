@@ -4,6 +4,11 @@ https://cloud.google.com/
 
 ---
 
+GCP to Azure services comparison
+https://docs.microsoft.com/en-us/azure/architecture/gcp-professional/services
+
+---
+
 How to create Google Map in Python using Gmaps
 https://morioh.com/p/a9bdee14b0d2
 

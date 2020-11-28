@@ -8,11 +8,13 @@ See also:
   - [OpenACC](OpenACC.md)
   - [OpenCV](OpenCV.md)
   - [OpenGL](OpenGL.md)
+  - [Nvidia Triton Inferencing Server](Triton_inference_server.md)
 
 **Table of contents**
 
  - [Hardware](#Hardware)
  - [Installation](#Installation)
+   - [Installing with Kubernetes](#Installing-with-Kubernetes)
    - [Installing on Ubuntu](#Installing-on-Ubuntu)
    - [Installing on CentOS7](#Installing-on-CentOS7)
    - [Installing on Fedora 29](#Installing-on-Fedora-29)
@@ -37,6 +39,43 @@ https://lambdalabs.com/blog/2080-ti-deep-learning-benchmarks/
 ---
 
 ## Installation 
+
+#Installing-with-Kubernetes
+
+---
+
+NVIDIA gpu how-to:
+https://docs.nvidia.com/datacenter/kubernetes/kubernetes-upstream/index.html
+
+---
+
+### Installing on Ubuntu
+
+---
+
+I think I used something like this for V100s:
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup
+
+    $lspci | grep -i NVIDIA
+
+Should see it.    
+    
+    $ CUDA_REPO_PKG=cuda-repo-ubuntu1604_10.0.130-1_amd64.deb
+    $ wget -O /tmp/${CUDA_REPO_PKG} http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/${CUDA_REPO_PKG} 
+    $ sudo dpkg -i /tmp/${CUDA_REPO_PKG}
+    $ sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub 
+    $ rm -f /tmp/${CUDA_REPO_PKG}
+    $ sudo apt-get update
+    $ sudo apt-get install cuda-drivers
+    $ sudo apt-get install cuda
+
+And the updates(!!! might have had to do, I think it did not work without it)
+
+    $ sudo apt-get update
+    $ sudo apt-get upgrade -y
+    $ sudo apt-get dist-upgrade -y
+    $ sudo apt-get install cuda-drivers
+    $ sudo reboot
 
 ---
 
@@ -67,10 +106,6 @@ cuda 10.1 >= 418.36
 cuda 9.1 >= 390.46
 
 Actually, I think 390 is for cuda 8.0, e.g. Fedora 23
-
----
-
-### Installing on Ubuntu
 
 ---
 

@@ -25,6 +25,36 @@ See Also:
 
 ---
 
+Some data science fun
+
+- Artificial Intelligence = linear regression & decision trees
+- Smart Algorithms = random forest
+- Next-Gen machine learning = boosted trees
+- AutoML = import autosklearn
+- Intelligent Automation = Windows scheduler, crontab
+- MLOps = docker
+- Analytics at scale = no more excel
+- Customer-centric data lake = we have customer_id in our database tables
+- Serverless Architecture = I have no idea what a server is
+- Cloud APIs = my dev-ops guy made me click some link
+- Advanced Analytics = SQL
+- DataViz Guru = library(ggplot2)
+- Data Consultant = often draws convenient conclusions from data
+- Advanced ML/DL = Python
+- High Performance Model Training = model.cuda()
+- Image Recognition = MNIST
+- NLP Experts = transfer learning on GTP-3/Bert
+- Reproducible experiments = jupyter notebooks
+- Maintain source code = git add . && git commit -m "yolo" && git push origin master
+- Distributed Analytics = no more MySQL on a laptop
+- Experimentation Framework = z-tests
+- Advanced Statistics = random control groups
+- Customer loyalty focus = we spam them with emails
+- Centre of Excellence = fancy team name to justify payrises
+- HR analytics = people leave, we didn't pay them enough
+
+---
+
 Top Python Libraries for Data Science
 
 - pandas

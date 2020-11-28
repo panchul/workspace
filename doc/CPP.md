@@ -748,6 +748,8 @@ and back
 
     int b = atoi(sa);
 
+There should also be `stoi(sa)`.
+
 ---
 
     string sa = "something";

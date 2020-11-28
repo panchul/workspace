@@ -80,7 +80,7 @@
 - [ObjectiveC++](ObjectiveCPP.md)
 - [Perl](Perl.md)  
 - [PHP](Php.md)
-- PostScript
+- [PostScript](PostScript.md)
 - [Python](Python.md)  
 - [R](R.md)
 - [Racket](Racket.md)  
@@ -137,6 +137,7 @@ A more conceptual links, still related to Programming Languages and Math
  - [OpenCL](OpenCL.md)
  - [OpenCV](OpenCV.md)
  - [OpenGL](OpenGL.md)
+ - [SFML](SFML.md)
  - [Splunk](Splunk.md)
  - [STL](STL.md) 
  - [Streamlit](Streamlit.md) web-app ui, Python, etc. 

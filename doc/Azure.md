@@ -9,6 +9,19 @@ See Also:
 
 ---
 
+AKS GPU-enabling:
+https://docs.microsoft.com/en-us/azure/aks/gpu-cluster#:~:text=Graphical%20processing%20units%20%28GPUs%29%20are%20often%20used%20for%2cVMs%2c%20see%20GPU%20optimized%20VM%20sizes%20in%20Azure.
+
+---
+
+GCP to Azure services comparison
+https://docs.microsoft.com/en-us/azure/architecture/gcp-professional/services
+
+AWS to Azure services comparison
+https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services
+
+---
+
 A lot of blood sweat and tears went into this one, many commits were under my alter ego github account `alek8106`.
 https://github.com/Azure-Samples/azure-intelligent-edge-patterns
 

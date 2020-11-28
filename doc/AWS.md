@@ -6,6 +6,12 @@ See Also:
 - [GoogleCloud](GoogleCloud.md)
 - [Sagemaker](Sagemaker.md)
 
+
+---
+
+AWS to Azure services comparison
+https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services
+
 ---
 
 AWS playlist, with useful how-tos and tutorials

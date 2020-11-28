@@ -22,6 +22,7 @@ See Also:
 - [OpenVX](OpenVX.md)
 - [PCL](PCL.md), Point Cloud Library
 - [PoseEstimation](PoseEstimation.md)
+- [SFML](SFML.md)
 - [SVG](SVG.md)
 - Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
 - [PNG](Png.md)
