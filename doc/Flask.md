@@ -4,6 +4,13 @@
 
 ---
 
+A 2-hour guide how to use Flask.
+https://morioh.com/p/726e0108751a
+
+TODO: write some notes here.
+
+---
+
 Neat using of Flask for inference service.
 
 https://www.cncf.io/blog/2019/07/30/deploy-your-machine-learning-models-with-kubernetes

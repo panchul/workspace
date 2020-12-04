@@ -11,6 +11,41 @@ https://golang.org/doc/effective_go.html Effective Go
 
 ---
 
+Installing Go, several ways to do it on Ubuntu
+https://www.cyberciti.biz/faq/how-to-install-gol-ang-on-ubuntu-linux/
+
+    $ sudo apt install golang-go
+    $ go version
+    go version go1.13.8 linux/amd64
+
+To test it, create `hello.go`:
+
+    package main
+    import ( 
+    	"fmt" 
+    	"os" 
+    )
+    func main() {
+        fmt.Println("Hello, world!")
+        fmt.Println("hi, ", os.Getenv("USER")) 
+    }
+
+Run:
+
+    $ go run hello.go 
+    Hello, world!
+    hi,  myusername
+
+Or to build a binary:
+
+    $ go build hello.go
+    $ ./hello
+    Hello, world!
+    hi,  myusername
+
+    
+---
+
 Why Go modules are faster than GOPATH
 https://dev.to/tbpalsulich/why-go-modules-are-faster-than-gopath-blj
 

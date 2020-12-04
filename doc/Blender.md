@@ -2,6 +2,11 @@
 
 ---
 
+A few tutorials, Blender for AI developers.
+https://www.immersivelimit.com/tutorials/blender-for-ai-developers
+
+---
+
 Simple demo of video editing with Blender, and exporting mpeg4
 https://www.youtube.com/watch?v=xxeP3We4k-A
 

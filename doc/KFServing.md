@@ -4,7 +4,6 @@ See Also:
 
   - [PyTorchServe](PyTorch.md#PyTorchServe)
 
-
 ---
 
 Introducing KFServing: Serverless Model Serving on Kubernetes - Ellis Bigelow & Dan Sun

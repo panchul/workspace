@@ -2,6 +2,63 @@
 
 ---
 
+Another Mikail's article:
+https://mikail-eliyah.medium.com/your-intent-writes-your-life-9883506834c
+
+    Make It Count
+    Concretize Your Base
+    1%
+    Grow Your Intent
+    Escape Velocity and Binding Energy
+    Shift Your Paradigm, Shape Your Context
+    Mood and Mode
+    Collect Ideas and Ideals
+    Preference, Pride and Prejudice
+    Resourcefulness Over Resources
+    Waste into Wonders
+    Substance Over Style
+    Act Not React
+    
+---
+
+To become more productive(from https://www.youtube.com/channel/UChctOfCfk0EW6hKiblbI-3w)
+- Wake up an hour earlier than usual: That's 7 extra hours per week, 30+ extra hours per month,
+  and 365 extra hours per year that you can dedicate to working on projects.
+- Create a daily to-do list: Committing your tasks to paper helps you not only get things done
+  but also avoid forgetting about things that need to get done.
+- Use a calendar to prepare for the future: I admit, I'm horrible at this, but managing a monthly
+  and yearly calendar is essential for filmmakers. It helps you keep track of all of the billions
+  of things that your clients need, as well as what needs to be completed during production.
+- Get rid of distractions: I know you like Facebook and the new season of Shameless and everything
+  else that seems to become super interesting when you're trying to work, but you've gotta put that
+  stuff away. My phone isn't allowed in my office when I'm writing, and I also use SelfControl to keep
+  my dirty eyes off of tantalizing websites. (I've been all about watching Samantha Bee and cringe videos lately.)
+- Complete tasks one at a time: If you're one of those people (like me) who works on multiple tasks
+  at a time, understand that often leads to not completing any of them. Focus all of your energy on
+  one damn thing at a time, finish it, and move on.
+- Complete the biggest task first: This may not be your cup of tea—I know I'm not fond of this all the time,
+  but you might want to try the "avalanche" approach to finishing tasks (as opposed to the "snowball" approach),
+  tackling the biggest, baddest one on your list first so the rest of your workload is nothing but easy stuff.
+- Take short breaks to re-energize: It might be tempting to bulldoze your way through an entire project from
+  start to finish, putting in 18-hour days without a day off, but that's not going to help you in the long
+  run. Giving yourself short breaks throughout the day, as well as a day off here and there, will allow you
+  to re-energize not only your body but your mind and creativity.
+
+---
+
+https://fit4brain.com/10698
+A thought that one should live happily, not necessarily healthily. 
+
+- Научитесь уже, наконец, есть то, что вам нравится, а не то, что полезно. Просто ешьте это, а не жрите.
+- Не можете бросить курить? Не бросайте! Но курите не с угрызением совести, а с удовольствием. Бросать курить вообще не надо. Надо захотеть не курить. А запрет — всегда работает наоборот.
+- Бросайте нелюбимую работу или же учитесь получать от неё удовольствие, какая бы она ни была.
+- Займитесь тем, чем хотели и мечтали заниматься с детства. Освойте гитару, пианино, вокал, горные лыжи, акварель, мозаику, глину и т.д. Нет людей, не обладающих творческими задатками, это я вам как художник говорю. Не мечтайте о мотоцикле, а купите его! Не копите мечты, они тухнут и гниют в закоулках мозга! Всегда мечтали в горы, а паритесь в офисе? Идите в горы! Живёте а горах, а хочется париться в офисе? Идите в город! Всё в ваших руках!
+- Нравится уединение? Уединяйтесь в удовольствие. Боитесь одиночества? Идите к людям.
+- Находите радость и удовольствие во всём. Даже в том, где, казалось бы, этого быть не может.
+- И главное: образ жизни должен быть не здоровым, а СЧАСТЛИВЫМ!
+
+---
+
 From Internet:
 
 This old lady handed her bank card to the teller and said “I would like to withdraw $10”. The

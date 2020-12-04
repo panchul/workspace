@@ -13,6 +13,23 @@ https://git-scm.com/downloads
 
 ---
 
+Using a `no-repy` email for commits (making your email private)
+https://dev.to/codewithfahad/github-tip-of-the-day-keep-your-commit-email-address-private-2eo2
+
+Add `.patch` to the commit web link, and you will see the raw git commit info.
+
+Update the email settings on the web in Settings.
+
+A no-reply email is the user id plus `@users.noreply.github.com`
+
+    $ git config --global user.email <your_noreply_email_address>
+
+Verify it set ok:
+
+    $ git config --global user.email
+
+---
+
 Insane collection of Github profile tricks.
 https://github.com/abhisheknaiidu/awesome-github-profile-readme
 
