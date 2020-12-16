@@ -103,6 +103,37 @@ http://bigocheatsheet.com/
 
 ---
 
+My sandbox about shared libraries:
+https://github.com/panchul/sb_cpp/tree/master/shared_libs
+
+---
+
+Implicit vs. explicit linking for DLLs
+Implicit is when you use a .h and need to link against a .lib and
+explicit when you use LoadLibrary and GetProcAddress respectively.
+
+Determining Which Linking Method to Use
+https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/253b8k2c(v=vs.100)
+
+https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/784bt7z7(v=vs.100)
+
+Search Path Used by Windows to Locate a DLL
+
+With both implicit and explicit linking, Windows first searches for
+"known DLLs", such as Kernel32.dll and User32.dll. Windows then searches
+for the DLLs in the following sequence:
+
+- The directory where the executable module for the current process is
+  located.
+- The current directory.
+- The Windows system directory. The GetSystemDirectory function retrieves
+  the path of this directory.
+- The Windows directory. The GetWindowsDirectory function retrieves
+  the path of this directory.
+- The directories listed in the PATH environment variable.
+
+**Note**
+The `LIBPATH` environment variable is not used.
 
 ---
 
