@@ -2,36 +2,62 @@
 
 See Also:
 
-- [AugmentedReality](AugmentedReality.md)
-- [Blender](Blender.md)
-- [CUDA](CUDA.md)
-- [ComputerVision](ComputerVision.md)
-- [DirectX](DirectX.md)
-- [FBX, Autodesk SDK](FBX.md)
-- [ffmpeg](FfMpeg.md)
-- [Fractals](Fractals.md)
-- [gnuplot](Gnuplot.md)
-- [GoogleGlass](GoogleGlass.md)
-- [MagicLeap](MagicLeap.md)
-- [OpenACC](OpenACC.md)
-- OpenALPR - Automatic License Plate Recognition https://www.openalpr.com/
-- [Open3D](Open3D.md)
-- [OpenCL](OpenCL.md)
-- [OpenCV](OpenCV.md)
-- [OpenGL](OpenGL.md)
-- [OpenVX](OpenVX.md)
-- [PCL](PCL.md), Point Cloud Library
-- [PoseEstimation](PoseEstimation.md)
-- [SFML](SFML.md)
-- [SVG](SVG.md)
-- Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
-- [PNG](Png.md)
-- [Qt](Qt.md)
-- [Quaternions](Quaternions.md)
-- video recording for terminal `asciinema.org` `gohugo.io` web content
-- [Unity](Unity.md)
-- [Unreal Engine](UnrealEngine.md)
-- [WebGL](WebGL.md)
+ - [AugmentedReality](AugmentedReality.md)
+ - [Blender](Blender.md)
+ - [CUDA](CUDA.md)
+ - [ComputerVision](ComputerVision.md)
+ - [DirectX](DirectX.md)
+ - [FBX, Autodesk SDK](FBX.md)
+ - [ffmpeg](FfMpeg.md)
+ - [Fractals](Fractals.md)
+ - [gnuplot](Gnuplot.md)
+ - [GoogleGlass](GoogleGlass.md)
+ - [MagicLeap](MagicLeap.md)
+ - [OBS](OBS.md) Open Broadcaster Software
+ - [OpenACC](OpenACC.md)
+ - OpenALPR - Automatic License Plate Recognition https://www.openalpr.com/
+ - [Open3D](Open3D.md)
+ - [OpenCL](OpenCL.md)
+ - [OpenCV](OpenCV.md)
+ - [OpenGL](OpenGL.md)
+ - [OpenVX](OpenVX.md)
+ - [PCL](PCL.md), Point Cloud Library
+ - [PoseEstimation](PoseEstimation.md)
+ - [SFML](SFML.md)
+ - [SVG](SVG.md)
+ - Philogb. Data visualization libraries, etc. http://philogb.github.io/jit/docs.html
+ - [PNG](Png.md)
+ - [Qt](Qt.md)
+ - [Quaternions](Quaternions.md)
+ - video recording for terminal `asciinema.org` `gohugo.io` web content
+ - [Unity](Unity.md)
+ - [Unreal Engine](UnrealEngine.md)
+ - [WebGL](WebGL.md)
+
+
+**Table of contents**
+
+- [Gaming platforms](#Gaming-platforms)
+- [Miscellaneous](#Miscellaneous)
+
+---
+
+## Gaming-platforms
+
+---
+
+Roblox
+https://en.wikipedia.org/wiki/Roblox
+
+Massively multiplayer online game
+https://en.wikipedia.org/wiki/Massively_multiplayer_online_game
+
+Game creation system
+https://en.wikipedia.org/wiki/Game_creation_system
+
+---
+
+## Miscellaneous
 
 ---
 

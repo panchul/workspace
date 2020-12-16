@@ -14,7 +14,95 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 **Content**
 
+  - [Fundamentals](#Fundamentals)
+  - [Libraries(.so, .dll, .lib, etc.)](#libraries)
   - [Miscellaneous](#Miscellaneous)
+
+---
+
+## Fundamentals
+
+---
+
+*Polymorphism*
+
+C++ polymorphism means that a call to a member function will cause a different function to be executed depending on the type of object that invokes the function.
+
+https://www.cplusplus.com/doc/tutorial/polymorphism/
+
+---
+
+Good summarizing public/protected/private
+
+    class Base {
+    public:
+        int publicMember; // Everything that is aware of Base is also
+                          // aware that Base contains publicMember.
+    protected:
+        int protectedMember; // Only the children (and their children)
+                            // are aware that Base contains protectedMember.
+    private:
+        int privateMember; //No one but Base is aware of privateMember.
+    };
+
+The same happens with public, private and protected inheritance.
+Let's consider a class Base and a class Child that inherits from Base.
+
+- If the inheritance is public, everything that is aware of Base and Child is also aware that Child inherits
+  from Base.
+- If the inheritance is protected, only Child, and its children, are aware that they inherit from Base.
+- If the inheritance is private, no one other than Child is aware of the inheritance.
+
+
+    class A {
+    public:
+        int x;
+    protected:
+        int y;
+    private:
+        int z;
+    };
+    
+    class B : public A {
+        // x is public
+        // y is protected
+        // z is not accessible from B
+    };
+    
+    class C : protected A {
+        // x is protected
+        // y is protected
+        // z is not accessible from C
+    };
+    
+    class D : private A {   // 'private' is default for classes
+        // x is private
+        // y is private
+        // z is not accessible from D
+    };
+
+---
+
+Demo of `new` vs. `new[]`
+
+    int *i = new int;
+    Object *array = new Object[100];
+
+    delete i; // ok
+    delete[] array; //ok
+    delete array; // all destructors may not be called
+
+---
+
+Refresher on big-O() notation, and sorting algorithms
+http://bigocheatsheet.com/
+
+---
+
+## Libraries
+
+---
+
 
 ---
 
@@ -373,11 +461,6 @@ Neat collection of C++ guidelines
 
 ---
 
-Refresher on big-O() notation, and sorting algorithms
-http://bigocheatsheet.com/
-
----
-
 Stanford Professor YouTube Channel
 https://www.youtube.com/channel/UCcH4Ga14Y4ELFKrEYM1vXCg
 
@@ -414,57 +497,6 @@ https://github.com/mfontanini/cppkafka
 
 ---
 
-Good summarizing public/protected/private
-
-    class Base {
-    public:
-        int publicMember; // Everything that is aware of Base is also
-                          // aware that Base contains publicMember.
-    protected:
-        int protectedMember; // Only the children (and their children)
-                            // are aware that Base contains protectedMember.
-    private:
-        int privateMember; //No one but Base is aware of privateMember.
-    };
-
-The same happens with public, private and protected inheritance.
-Let's consider a class Base and a class Child that inherits from Base.
-
-- If the inheritance is public, everything that is aware of Base and Child is also aware that Child inherits
-  from Base.
-- If the inheritance is protected, only Child, and its children, are aware that they inherit from Base.
-- If the inheritance is private, no one other than Child is aware of the inheritance.
-
-
-    class A {
-    public:
-        int x;
-    protected:
-        int y;
-    private:
-        int z;
-    };
-    
-    class B : public A {
-        // x is public
-        // y is protected
-        // z is not accessible from B
-    };
-    
-    class C : protected A {
-        // x is protected
-        // y is protected
-        // z is not accessible from C
-    };
-    
-    class D : private A {   // 'private' is default for classes
-        // x is private
-        // y is private
-        // z is not accessible from D
-    };
-
----
-
 Had an issue with compiling relatively basic code:
 
 `gcc: error trying to exec 'cc1plus': execvp: No such file or directory`
@@ -478,17 +510,6 @@ needed to run these to fix it:
 
 Snippet share website:
 coliru.stacked-crooked.com/a/5aa89a65e3a86c98
-
----
-
-Demo of `new` vs. `new[]`
-
-    int *i = new int;
-    Object *array = new Object[100];
-
-    delete i; // ok
-    delete[] array; //ok
-    delete array; // all destructors may not be called
 
 ---
 
@@ -640,7 +661,7 @@ Class template specialization for a particular type:
 
 ---
 
-Funny pattern I actually saw in a production code.
+A funny pattern I actually saw in a production code.
 
     …
     char ABC[4] = { "ABC" };
@@ -730,7 +751,7 @@ We expect <number>\n<number> <number> ... <number>
 
 ---
 
-The priority queue with the oppostite sorting ( not `less`, but `greater`)
+The priority queue with the opposite sorting ( not `less`, but `greater`)
 
     std::priority_queue<int, std::vector<int>, std::greater<int> > newone;
 
@@ -806,7 +827,6 @@ TODO: summarize and add to the C++ flashcards
 
 LibCurl and list of its competitors. C++ libraries for HTTP, FTP, etc. 
 https://curl.haxx.se/libcurl/competitors.html
-
 
 ---
 

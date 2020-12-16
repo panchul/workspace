@@ -16,11 +16,24 @@ See Also:
 
 **Table of contents**
 
+ - [Kubernifying applications](#Kubernifying-applications)
  - [Idioms and tricks](#Idioms-and-tricks)
  - [Installation](#Installation)
  - [Kubernetes Dashboard](#Kubernetes-Dashboard)
  - [Kubernetes storage](#Kubernetes-storage)
  - [Miscellaneous](#Miscellaneous)
+
+## Kubernifying applications
+
+---
+
+Strategies to "Kubernetify" Legacy Applications
+https://www.youtube.com/watch?v=mMk6hvgv-NI
+
+The demo was based on the kubernetify'd version of Pet Store here:
+https://github.com/IBM-Cloud/jpetstore-kubernetes
+
+---
 
 ## Idioms and tricks
 

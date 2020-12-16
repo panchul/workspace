@@ -2,6 +2,16 @@
 
 ---
 
+6 Signs Someone Isn’t Worth Your Time
+
+https://medium.com/wholistique/6-signs-someone-isnt-worth-your-time-50a0d17fc643
+
+"In my experience, people who make cruel jokes like testing the waters. If you
+react negatively, they’ll take it back and insist they were just joking and you
+should just lighten up. But if you agree, they’ll let the cruelty run free."
+
+---
+
 Interesting facts about people not remembering how 'g' is drawn
 https://www.iflscience.com/brain/most-people-cant-recognize-a-letter-they-see-every-day-and-you-probably-cant-either/
 https://psycnet.apa.org/record/2018-13691-001

@@ -15,13 +15,22 @@ See Also:
 
 **Content**
 
- - [Labs and tutorials](#Labs-and-tutorials)
- - [Miscellaneous](#Miscellaneous)
-
+ - [Labs and tutorials](#labs-and-tutorials)
+ - [Miscellaneous](#miscellaneous)
 
 
 
 ## Miscellaneous
+
+---
+
+Another Vision AI Developer Kit notebook,
+https://github.com/microsoft/vision-ai-developer-kit/blob/master/machine-learning-notebooks/02-mobilenet-transfer-learning.ipynb
+
+---
+
+How to Train a Real-Time Facemask Object Detector With Tensorflow Object Detection API (TFOD2)
+https://medium.com/swlh/how-to-train-a-real-time-facemask-object-detector-with-tensorflow-object-detection-api-tfod2-a4eb9f2c2fae
 
 ---
 

@@ -58,6 +58,20 @@ Three or more dashes turn into the horizontal dividing lines ( `<hr>`)
 ### links with spaces
 [link text](#links-with-spaces)
 
+Github Flavored Markdown for a while and can summarize with four rules:
+
+   - punctuation marks will be dropped
+   - leading white spaces will be dropped
+   - upper case will be converted to lower
+   - spaces between letters will be converted to -
+
+For example, if your section is named this:
+
+   `## 1.1 Hello World`
+
+Create a link to it this way:
+
+   `[Link](#11-hello-world)`
 
 ---
 

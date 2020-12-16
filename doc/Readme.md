@@ -594,6 +594,7 @@ https://onezero.medium.com/exclusive-live-facial-recognition-is-coming-to-u-s-po
 
 - [AugmentedReality](AugmentedReality.md) all sort of miscellaneous snippets.
 - [Graphics](Graphics.md) all sort of miscellaneous snippets.
+- [OBS](OBS.md) Open Broadcaster Software
 
 ### Moviemaking
 
@@ -694,6 +695,7 @@ https://nofilmschool.com/how-to-write-a-scene
 
 ## Photography, Video, and optics in general
 
+- [OBS](OBS.md) Open Broadcaster Software
 - [PhotoVideo](PhotoVideo.md)
 
 ## Biology, Medicine, Gerontology, etc.

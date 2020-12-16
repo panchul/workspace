@@ -13,6 +13,25 @@ TODO: Add list interests, etc.
 
 ---
 
+Why Senior Engineers Hate Coding Interviews
+https://medium.com/swlh/why-senior-engineers-hate-coding-interviews-d583d2855757
+
+---
+
+Elon Musk Advises CEOs to Stop Wasting Time on PowerPoint, Meetings
+https://www.wsj.com/articles/elon-musk-advises-ceos-to-stop-wasting-time-on-powerpoint-meetings-11607470065
+
+---
+
+"An expert is a man who has made all the mistakes which can be made, in a narrow field."
+
+---
+
+How To Deal With Not Being Promoted?
+https://dev.to/eisabai/how-to-deal-with-not-being-promoted-4dl3
+
+---
+
 Thank-you note templates, for after interviews
 https://blog.hubspot.com/sales/interview-thank-you-email
 
