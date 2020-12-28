@@ -4,15 +4,13 @@
 #
 
 DEFAULT_KAFKA_SET=zookeeper{1..2} kafka_broker{1..2}
-
 DEFAULT_HAPROXY_SET=haproxy1 apache{1..3}
-
 ANSIBLE_INVENTORY=.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory
 
-all: help
-# You have to be more specific about the targets
+# all: help
+.DEFAULT_GOAL := help 
 
-help:
+help: # Show this help
 	@echo " For most of the functionality you can use Vagrant commands, for example:"
 	@echo "     To see status          "
 	@echo "         $$ vagrant status   "
@@ -47,10 +45,13 @@ help:
 	ansible --version
 	@echo " If you are reading this, your system seems to have the necessary pre-requisites "
 	@echo " "
+	@echo "Targets for make(there are more, hidden. Look inside of the makefile):"
+	@egrep -h '\s#\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+	@echo " "
 
 status_all: git_status
 
-git_status:
+git_status: # Status of repositories (public and private, from private_repo_list)
 	@echo "Checking sandboxes..."
 	@ for repo in `ls projects | grep sb_` ; \
 	   do sh -c "echo \"Checking \\\"projects/$$repo\\\"...\" ; cd \"projects/$$repo\" ; git fetch ; git status -sb ; cd ../.. " ; \
@@ -68,7 +69,7 @@ git_status:
 
 kafka: kafka_up
 
-kafka_up: 
+kafka_up: # Instantiating a Kafka cluster
 	@echo Bringing up $(DEFAULT_KAFKA_SET)
 	vagrant up $(DEFAULT_KAFKA_SET)
 
@@ -80,7 +81,7 @@ kafka_destroy:
 	@echo Deleting $(DEFAULT_KAFKA_SET)
 	vagrant destroy -f $(DEFAULT_KAFKA_SET)
 
-haproxy_up: 
+haproxy_up:  # Instantiating HAProxy
 	@echo Bringing up $(DEFAULT_HAPROXY_SET)
 	vagrant up $(DEFAULT_HAPROXY_SET)
 
@@ -92,7 +93,7 @@ haproxy_destroy:
 	@echo Deleting $(DEFAULT_HAPROXY_SET)
 	vagrant destroy -f $(DEFAULT_HAPROXY_SET)
 
-test: test_cpp
+test: test_cpp 
 	@echo "Ran all tests"
 
 test_cpp:
