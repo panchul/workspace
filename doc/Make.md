@@ -10,6 +10,20 @@ Here is the manual in .html : [https://www.gnu.org/software/make/manual/make.htm
 
 ---
 
+Nice overview.
+https://dev.to/yankee/streamline-projects-using-makefile-28fe
+
+Neat trick with `help`:
+
+    .DEFAULT_GOAL := help 
+    help: # Show this help
+    @egrep -h '\s#\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
+
+
+
+---
+
 `pushd` and `popd` are not available in makefile - the context is messy. A workaround is to use:
 
     oldpath=`pwd`

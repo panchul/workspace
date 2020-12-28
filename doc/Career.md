@@ -13,6 +13,11 @@ TODO: Add list interests, etc.
 
 ---
 
+Interesting blog post, "Being VP of Engineering is harder than being CEO"
+https://linearb.io/blog/being-vp-of-software-development-is-harder-than-being-ceo/
+
+---
+
 Why Senior Engineers Hate Coding Interviews
 https://medium.com/swlh/why-senior-engineers-hate-coding-interviews-d583d2855757
 

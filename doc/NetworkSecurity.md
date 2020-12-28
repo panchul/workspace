@@ -13,6 +13,14 @@ See Also:
 
 ---
 
+How to secure Lighttpd with Let’s Encrypt TLS/SSL certificate on Debian/Ubuntu
+https://www.cyberciti.biz/faq/how-to-configure-lighttpd-web-server-with-free-lets-encrypt-ssl-certificate-on-debian-or-ubuntu-linux/
+
+How to configure Nginx with Let’s Encrypt on Debian/Ubuntu Linux
+https://www.cyberciti.biz/faq/how-to-configure-nginx-with-free-lets-encrypt-ssl-certificate-on-debian-or-ubuntu-linux/
+
+---
+
 Ransomware that takes the foothold on the victim's machine using VirtualBox VM.
 https://news.sophos.com/en-us/2020/05/21/ragnar-locker-ransomware-deploys-virtual-machine-to-dodge-security/
 

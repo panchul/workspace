@@ -15,6 +15,11 @@ My shell sandbox is [https://github.com/panchul/sb_shell](https://github.com/pan
 
 ---
 
+Neat review of setting variables with simple demos.
+https://www.cyberciti.biz/faq/set-environment-variable-linux/
+
+---
+
 Useful shortcuts, a longer discussion is here: https://stackoverflow.com/questions/9679776/how-do-i-clear-delete-the-current-line-in-terminal 
 
 You can enable vi mode by `echo 'set editing-mode vi' >> ~/.inputrc` too if it is better.
