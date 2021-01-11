@@ -2,6 +2,10 @@
 
 ---
 
+All passion becomes strength when it has an outlet.
+
+---
+
 - is fairness really fair?
 - Would you ever get a tattoo
 - Do you have to be sane to be happy

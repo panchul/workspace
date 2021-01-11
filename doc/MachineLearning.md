@@ -4,6 +4,7 @@ See Also:
 
  - [Alexa](Alexa.md)
  - [ComputerVision](ComputerVision.md)
+ - [Kociemba](Kociemba.md)
  - [MarkovChains](MarkovChains.md)
  - [Neural Network](NeuralNetwork.md)
    - [GAN](GAN.md), (Generative Adversarial networks)
@@ -21,6 +22,10 @@ See Also:
 
 
 ## Miscellaneous
+
+---
+
+[Kociemba](Kociemba.md) - Rubik's Cube library
 
 ---
 

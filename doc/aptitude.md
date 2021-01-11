@@ -10,6 +10,11 @@ See Also:
 
 ---
 
+Nuances between `apt` and `aptitude`
+https://www.tecmint.com/difference-between-apt-and-aptitude
+
+---
+
 To skip the stdin's asking for key 'y', use `'-y'`:
 
     sudo apt-get install -y somenicepackage

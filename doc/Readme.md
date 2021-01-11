@@ -185,7 +185,7 @@ A more conceptual links, still related to Programming Languages and Math
 - [UTF-8](UTF-8)  
 - [XML](XML.md)
 - [YAML](YAML.md)
--﻿[QR code](Qr_code.md)
+- [QR code](Qr_code.md)
 - DJVU converter(web) https://djvu2pdf.com/
 
 
@@ -243,10 +243,11 @@ A more conceptual links, still related to Programming Languages and Math
 - MochiWeb
 - [Ajax](Ajax.md)
 - [Apache](Apache.md)
-- [Disqus](Disqus.md)
+- [Disqus](Disqus.md) Commenting, discussion forums, etc.
 - [Django](Django.md)
 - [Heroku](Heroku.md)
 - [JQuery](JQuery.md)
+- [Kivy](Kivy.md) Python framework for mobile apps
 - [nginx](Nginx.md)
 - [Node](Node.md)
 - [PlayFramework](PlayFramework.md)

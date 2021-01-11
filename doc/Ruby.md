@@ -1,11 +1,13 @@
-
-## Under Construction
-
-# Ruby language
+# Ruby
 
 
 https://www.ruby-lang.org/en/downloads/
 https://rubyinstaller.org/downloads/ - for windows
+
+---
+
+Ruby's public/private/protected overview
+https://dev.to/sunnyb/public-vs-private-vs-protected-9hk
 
 ---
 
