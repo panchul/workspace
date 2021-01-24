@@ -7,9 +7,80 @@ See Also:
  - [Subversion](Subversion.md)
  - [npm](Npm.md)
 
+---
+
+Contents
+
+- [Installing](#installing)
+- [Undoing things](#undoing-things)
+- [Miscellaneous](#miscellaneous)
+
+---
+
+## Installing
+
+---
+
 [https://git-scm.com/](https://git-scm.com/)
 
 https://git-scm.com/downloads
+
+---
+
+## Undoing things
+
+---
+
+Unstageing an added file in Git(and keeping local changes):
+
+    $ git reset HEAD path/to/file
+
+---
+
+Undoing things
+
+https://rtyley.github.io/bfg-repo-cleaner/
+https://jorin.me/clean-git-history/
+
+To keep the changes:
+
+    $ git reset --soft HEAD~1
+
+Do the things the hard way abandoning the changes:
+    
+    $ git reset --hard HEAD~1
+
+---
+
+To cleanup the untracked files, remove local untracked files from the current Git branch
+
+To remove directories, run 
+    
+    git clean -f -d
+
+or
+
+    git clean -fd
+
+To remove ignored files, run 
+
+    git clean -f -X
+    
+or
+    
+    git clean -fX
+
+To remove ignored and non-ignored files, run 
+
+    git clean -f -x 
+
+or
+
+    git clean -fx
+
+---
+
+## Miscellaneous
 
 ---
 
@@ -147,23 +218,7 @@ There were some issues with the credentials on Cygwin.
 
 ---
 
-## Undoing things
-
-https://rtyley.github.io/bfg-repo-cleaner/
-https://jorin.me/clean-git-history/
-
-
-To keep the changes:
-
-    $ git reset --soft HEAD~1
-
-Do the things the hard way abandoning the changes:
-    
-    $ git reset --hard HEAD~1
-
----
-
-In `.gitignore`, to exclude a file from bing ignored, use ```!filename```, for example:
+In `.gitignore`, to exclude a file from bing ignored, use `!filename`, for example:
 
     ...
     some_local_folder
@@ -232,8 +287,8 @@ One way to set up a git-daemon (see another one below)
 https://git-scm.com/book/en/v2/Git-on-the-Server-Git-Daemon
 
 Create git group and git user (restrict them properly).
-Crate folder ```/srv/git/```
-Create file ```/etc/systemd/system/git-daemon.service```:
+Crate folder `/srv/git/`
+Create file `/etc/systemd/system/git-daemon.service`:
 
     ==================
     [Unit]
@@ -303,7 +358,8 @@ https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
 
 ---
 
-If you write a script with name ```git-somename```, and add it to PATH, git will execute it when you run, for example:
+If you write a script with name `git-somename`, and add it to PATH,
+git will execute it when you run, for example:
 
     $ git somename arg1 arg2 whatever
 
@@ -332,12 +388,6 @@ There is a feature in git, to make easier merging:
     $ git config --global rerere.enabled true
 
 It saves left and right for the merge and caches the resolution.
-
----
-
-Unstageing an added file in Git(and keeping local changes):
-
-    $ git reset HEAD path/to/file
 
 ---
 
