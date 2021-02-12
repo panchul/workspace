@@ -4,6 +4,31 @@
 
 ---
 
+Installing Flask on Ubuntu 20. Also demoes using `-m venv`.
+
+https://www.tecmint.com/install-flask-in-ubuntu/
+
+    $ sudo apt update -y
+    $ python3 --version
+
+Get the prereqs
+
+    $ sudo apt install build-essential python3-pip libffi-dev python3-dev python3-setuptools libssl-dev
+    $ sudo apt install python3-venv
+    $ mkdir flask_dir && cd flask_dir
+
+Sandbox it
+
+    $ python3 -m venv venv
+    $ source venv/bin/activate
+    $ pip3 install flask
+
+Check the version
+
+    $ flask --version
+
+---
+
 A 2-hour guide how to use Flask.
 https://morioh.com/p/726e0108751a
 

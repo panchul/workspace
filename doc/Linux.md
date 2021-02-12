@@ -37,6 +37,15 @@ See Also:
     - [Semaphore](Semaphore.md) 
     - [Mutex](Mutex.md) 
 
+
+---
+
+    $ du -sh * | sort -h | tail -4
+    4.0K	Templates
+    8.0K	aaa
+    2.0M	test
+    5.7G	tmp
+
 ---
 
 `timeout` command, you can specify the time duration, the command, and

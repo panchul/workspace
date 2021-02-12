@@ -35,7 +35,7 @@
 - [GPS, Meteorology, Alternative energy, and related](#GPS,-Meteorology,-Alternative-energy,-and-related)
 - [Misc business and finances](#Misc-business-and-finances)
 - [Manufacturing, IoT, etc.](#Manufacturing,-IoT,-etc.)
-- [Motivational and Psychology](#Motivational-and-Psychology)
+- [Motivation and Psychology](#motivation-and-psychology)
 - [Languages](#Languages)
 - [Fun and useful.](#Fun-and-useful.)
 
@@ -785,9 +785,9 @@ Another nice resource:
 
 - [Metalworks](Metalworks.md) (melting metals, etc.)
 
-## Motivational and Psychology
+## Motivation and Psychology
 
-- [Motivational](Motivational.md)
+- [Motivation](Motivation.md)
 - [Psychology](Psychology.md)
 
 ## Languages
