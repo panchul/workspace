@@ -14,9 +14,25 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 **Content**
 
+  - [Samples](#Samples)
   - [Fundamentals](#Fundamentals)
   - [Libraries(.so, .dll, .lib, etc.)](#libraries)
   - [Miscellaneous](#Miscellaneous)
+
+---
+
+## Samples
+
+---
+
+A link to Windows tutorials(windows doc samples (classics, win32, legacy, etc.) Drawing Direct2D):
+https://docs.microsoft.com/en-us/windows/win32/learnwin32/direct2d-circle-sample
+
+A Windows Sample code repo
+https://github.com/microsoft/Windows-classic-samples
+
+More Windows samples
+https://docs.microsoft.com/en-us/samples/browse/?redirectedfrom=MSDN-samples&terms=com
 
 ---
 

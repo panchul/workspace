@@ -2,6 +2,11 @@
 
 ---
 
+More Windows samples
+https://docs.microsoft.com/en-us/samples/browse/?redirectedfrom=MSDN-samples&terms=com
+
+---
+
 Web server in C#
 
     http://codehosting.net/blog/BlogEngine/post/Simple-C-Web-Server
