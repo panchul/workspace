@@ -1,9 +1,78 @@
 # C#
 
+See Also:
+
+- [Multithreading](Multithreading.md)
+- [STL](STL.md)
+- [AlgorithmsDataStructures](AlgorithmsDataStructures.md)
+- [Visual Studio Code](VisualStudioCode.md)
+- [RAII](RAII.md)
+- [Return Type Resolver](ReturnTypeResolver.md)
+- [Futures](Futures.md)
+
+My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panchul/sb_csharp).
+
+---
+
+**Content**
+
+ - [Samples](#Samples)
+ - [Fundamentals](#Fundamentals)
+ - [Libraries and Interop](#libraries-and-interop)
+ - [Miscellaneous](#Miscellaneous)
+
+---
+
+## Samples
+
+---
+
+COM and .NET links
+
+Creating C# UI accessable from C++ MFC application.
+https://docs.microsoft.com/en-us/cpp/dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes?view=msvc-160
+https://docs.microsoft.com/en-us/cpp/dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box?view=msvc-160
+
+Debug in mixed mode
+https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-debug-in-mixed-mode?view=vs-2019
+
+A video about Windows Forms and MFC.
+https://www.youtube.com/watch?v=za09Qu1Upjc
+
 ---
 
 More Windows samples
 https://docs.microsoft.com/en-us/samples/browse/?redirectedfrom=MSDN-samples&terms=com
+
+---
+
+## Fundamentals
+
+---
+
+## Libraries and Interop
+
+---
+
+Dll links
+https://www.red-gate.com/simple-talk/dotnet/visual-studio/build-and-deploy-a-.net-com-assembly/
+
+Utilities to look inside of the dlls:
+
+ - TlbExp
+ - Regasm
+
+https://www.tenouk.com/visualcplusmfc/visualcplusmfc16.html
+
+---
+
+Using C++ Interop (Implicit PInfoke)
+
+https://docs.microsoft.com/en-us/cpp/dotnet/using-cpp-interop-implicit-pinvoke?redirectedfrom=MSDN&view=msvc-160
+
+---
+
+## Miscellaneous
 
 ---
 

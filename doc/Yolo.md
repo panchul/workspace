@@ -8,6 +8,11 @@ See Also:
 
 ---
 
+And another link with overview
+https://machinethink.net/blog/object-detection-with-yolo/
+
+---
+
 And another write up about custom sets for YOLO4
 https://towardsdatascience.com/yolov4-in-google-colab-train-your-custom-dataset-traffic-signs-with-ease-3243ca91c81d
 

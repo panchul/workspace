@@ -37,6 +37,26 @@ See Also:
     - [Semaphore](Semaphore.md) 
     - [Mutex](Mutex.md) 
 
+---
+
+##Content
+
+ - [File System](#file-system)
+ - [Miscellaneous](#miscellaneous)
+
+---
+
+##File System
+
+---
+
+Mounting VirtualBox shared folders
+
+See [VirtualBox/SharedFolders](VirtualBox.md#shared-folders)
+
+---
+
+##Miscellaneous
 
 ---
 

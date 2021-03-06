@@ -10,9 +10,10 @@ See Also:
   - [Ansible](Ansible.md)
   - [VMWare](VMWare.md)
 
-**Content**
+##Content
 
  - [Installing](#installing)
+ - [Shared Folders](#shared-folders)
  - [Miscellaneous](#miscellaneous)
 
 ## Installing
@@ -24,9 +25,25 @@ https://www.cyberciti.biz/faq/how-to-install-virtualbox-on-ubuntu-20-04-linux-lt
 
 ---
 
+## Shared Folders
+
+---
+
 Idiomatic mount of a shared drive with the host(once you call your share `MY_SHARE` on the host):
 
     $ sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) MY_SHARED ~/MY_SHARED
+
+---
+
+Mounting VirtualBox shared folders
+
+https://gist.github.com/estorgio/1d679f962e8209f8a9232f7593683265
+
+
+
+
+
+
 
 ---
 
