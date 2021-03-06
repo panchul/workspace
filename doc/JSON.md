@@ -111,8 +111,26 @@ int main()
         }
     };
 
+    json j_documentR = R"({
+        "a": "b",
+        "c": {
+            "d": "e",
+            "f": "g"
+            }
+    })"_json;
+
+    json j_document = "{\
+        \"a\": 123,\
+        \"c\": {\
+            \"d\": \"e\",\
+            \"f\": \"g\"\
+        },\
+        \"list\": [1, 0, 2] \
+    }"_json;
+
+
     // add new values
-    j["new"]["key"]["value"] = {"another", "list"};
+    j["new"]["key"]["value"] = { "another", "list" };
 
     // count elements
     auto s = j.size();
@@ -120,6 +138,14 @@ int main()
 
     // pretty print with indent of 4 spaces
     std::cout << std::setw(4) << j << '\n';
+
+    int number = j["answer"]["everything"].get<int>();
+
+    std::cout << "j[\"answer\"][\"everything\"].get<int>() is " << number << "\n";
+
+    std::string mydump = j.dump(4);
+
+    std::cout << "mydump: " << mydump << "\n";
 }
 ```
 
