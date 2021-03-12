@@ -50,7 +50,45 @@ https://docs.microsoft.com/en-us/samples/browse/?redirectedfrom=MSDN-samples&ter
 
 ---
 
+List links
+https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listview.items?view=net-5.0
+
+---
+
 ## Libraries and Interop
+
+---
+
+Using managed COM object from C
+https://stackoverflow.com/questions/12429282/using-a-managed-com-object-in-c
+
+---
+
+Trending repos at GitHub
+https://github.com/trending/c%23
+
+---
+
+eShop on Containers
+https://github.com/dotnet-architecture/eShopOnContainers
+
+---
+
+Build and deploy .net com assembly
+https://www.red-gate.com/simple-talk/dotnet/visual-studio/build-and-deploy-a-.net-com-assembly/
+
+---
+
+C++ MFC and DLL tutorials, seems to be very detailed
+https://www.tenouk.com/visualcplusmfc/visualcplusmfc16.html
+
+---
+
+Communication between components, Message sending using a MessageHelper.
+https://boycook.wordpress.com/2008/07/29/c-win32-messaging-with-sendmessage-and-wm_copydata/
+
+The gist of that MessageHelper
+https://gist.github.com/BoyCook/5075907
 
 ---
 
@@ -61,6 +99,7 @@ Utilities to look inside of the dlls:
 
  - TlbExp
  - Regasm
+ - ildasm
 
 https://www.tenouk.com/visualcplusmfc/visualcplusmfc16.html
 

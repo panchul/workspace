@@ -276,6 +276,7 @@ A more conceptual links, still related to Programming Languages and Math
 - [gpg.md](Gpg.md)
 - [hostname](Hostname.md)
 - [Ipvsadm](Ipvsadm.md)
+- ildasm 
 - [mail](Mail.md)
 - [N2W](N2W.md)
 - [netcat(nc)](Netcat.md)
@@ -308,7 +309,7 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - De-centralized alternative social media.
   https://tech.liga.net/technology/article/samoubiytsy-facebook-srazu-neskolko-ukraintsev-reshili-potyagatsya-s-tsukerbergom
 - WT:Social https://wt.social/ - Alternative social network from Wikipedia founders.
-
+- mewe.com
 
 ### Micorcontrollers, Embedded programming, hardware
 
@@ -586,6 +587,7 @@ https://onezero.medium.com/exclusive-live-facial-recognition-is-coming-to-u-s-po
 
 ### GUI Frameworks
 
+- MFC
 - [wxWidgets](WxWidgets.md)
 - GTK+ http://www.gtk.org/
 - [Qt](Qt.md)
@@ -619,6 +621,7 @@ https://nofilmschool.com/how-to-write-a-scene
 - www.planitpoker.com
 - www.websequencediagrams.com
 - www.lucidchart.com
+- https://app.diagrams.net/ - another one for UML and other types of diagrams(licidchart's competitor)
 - [Code Review](CodeReview.md)
 - monosnap utility, for video capture on Windows
 - [Univied Modeling Language(UML)](UML.md)
