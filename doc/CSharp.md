@@ -2,13 +2,13 @@
 
 See Also:
 
-- [Multithreading](Multithreading.md)
-- [STL](STL.md)
 - [AlgorithmsDataStructures](AlgorithmsDataStructures.md)
-- [Visual Studio Code](VisualStudioCode.md)
+- [Futures](Futures.md)
+- [Multithreading](Multithreading.md)
 - [RAII](RAII.md)
 - [Return Type Resolver](ReturnTypeResolver.md)
-- [Futures](Futures.md)
+- [STL](STL.md)
+- [Visual Studio Code](VisualStudioCode.md)
 
 My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panchul/sb_csharp).
 
@@ -19,6 +19,8 @@ My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panch
  - [Samples](#Samples)
  - [Fundamentals](#Fundamentals)
  - [Libraries and Interop](#libraries-and-interop)
+ - [GUI Samples](#gui-samples)
+ - [Windows Messaging](#windows-messaging)
  - [Miscellaneous](#Miscellaneous)
 
 ---
@@ -108,6 +110,30 @@ https://www.tenouk.com/visualcplusmfc/visualcplusmfc16.html
 Using C++ Interop (Implicit PInfoke)
 
 https://docs.microsoft.com/en-us/cpp/dotnet/using-cpp-interop-implicit-pinvoke?redirectedfrom=MSDN&view=msvc-160
+
+---
+
+## GUI Samples
+
+---
+
+DataGridView Link
+https://www.youtube.com/watch?v=GyLlpBZGsrE
+
+---
+
+ListView
+https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listview.items?view=net-5.0
+
+---
+
+## Windows Messaging
+
+---
+
+Windows Messaging example
+https://docs.microsoft.com/en-us/windows/win32/inputdev/using-keyboard-input
+https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendmessage?redirectedfrom=MSDN
 
 ---
 
