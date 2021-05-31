@@ -159,6 +159,17 @@ The `LIBPATH` environment variable is not used.
 
 ---
 
+Exporting and importing using `AFX_EXT_CLASS`
+https://docs.microsoft.com/en-us/cpp/build/exporting-and-importing-using-afx-ext-class?view=msvc-160
+
+---
+
+Discussion on ways to do debug printing in a Windows application:
+
+https://stackoverflow.com/questions/1333527/how-do-i-print-to-the-debug-output-window-in-a-win32-app
+
+---
+
 Another website with a collection of community-created snippets.
 https://cppsecrets.com
 

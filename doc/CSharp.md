@@ -61,6 +61,14 @@ https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listview.items?
 
 ---
 
+Pinvoke samples
+
+https://github.com/rstropek/Samples.git
+
+https://docs.microsoft.com/en-us/dotnet/framework/interop/marshaling-data-with-platform-invoke#pinvokelibdll
+
+---
+
 Using managed COM object from C
 https://stackoverflow.com/questions/12429282/using-a-managed-com-object-in-c
 
@@ -110,6 +118,26 @@ https://www.tenouk.com/visualcplusmfc/visualcplusmfc16.html
 Using C++ Interop (Implicit PInfoke)
 
 https://docs.microsoft.com/en-us/cpp/dotnet/using-cpp-interop-implicit-pinvoke?redirectedfrom=MSDN&view=msvc-160
+
+---
+
+## COM Interface
+
+COM interface data marshalling
+
+https://limbioliong.wordpress.com/2011/07/14/passing-a-safearray-of-managed-structures-to-unmanaged-code/
+
+https://limbioliong.wordpress.com/2011/07/16/marshaling-a-safearray-of-managed-structures-by-com-interop-part-2/
+
+
+https://limbioliong.wordpress.com/2011/06/03/passing-structures-between-managed-and-unmanaged-code/
+
+
+https://limbioliong.wordpress.com/2012/02/28/marshaling-a-safearray-of-managed-structures-by-pinvoke-part-1/
+
+https://limbioliong.wordpress.com/2012/02/29/marshaling-a-safearray-of-managed-structures-by-pinvoke-part-2/
+
+https://limbioliong.wordpress.com/2012/03/01/marshaling-a-safearray-of-managed-structures-by-pinvoke-part-3/
 
 ---
 
