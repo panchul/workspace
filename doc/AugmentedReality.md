@@ -33,6 +33,11 @@ See Also:
 
 ---
 
+Another company with AR entertainment and shopping
+https://stageverse.com/
+
+---
+
 Frameworks:
 
 - ARKit
