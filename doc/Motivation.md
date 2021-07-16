@@ -175,6 +175,12 @@ All passion becomes strength when it has an outlet.
 
 ---
 
+Bhaktivedanta Vedabase (Бхагават Гита и т.п.)
+
+https://vedabase.io/ru/library/bg/3/39/
+
+---
+
 - is fairness really fair?
 - Would you ever get a tattoo
 - Do you have to be sane to be happy
