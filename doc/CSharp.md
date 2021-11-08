@@ -16,12 +16,32 @@ My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panch
 
 **Content**
 
+ - [Dotnet CLI](#Dotnet-CLI)
  - [Samples](#Samples)
  - [Fundamentals](#Fundamentals)
  - [Libraries and Interop](#libraries-and-interop)
  - [GUI Samples](#gui-samples)
  - [Windows Messaging](#windows-messaging)
  - [Miscellaneous](#Miscellaneous)
+
+---
+
+# Dotnet CLI
+
+    Usage: dotnet [sdk-options] [command] [command-options] [arguments]
+
+To create a solution
+
+    $ dotnet new solution
+    $ dotnet new 
+
+To add the project to the solution:
+
+    $ dotnet add projectname.csproj
+
+To run test runner (Xunit, for example):
+
+    $ dotnet test
 
 ---
 

@@ -33,6 +33,12 @@ See Also:
 
 ---
 
+3D Scanning option. Faces, small figures, hand-held stereoscopic thing with image processing.
+
+www.revopoint3d.com
+
+---
+
 Another company with AR entertainment and shopping
 https://stageverse.com/
 

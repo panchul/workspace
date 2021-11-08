@@ -2,15 +2,22 @@
 
 See Also:
 
+  - [Cryptocurrency](Cryptocurrency.md)
+  - [Blockchain](Blockchain.md)
   - [DNS](DNS.md)
   - [gpg.md](Gpg.md)
   - [MD5.md](MD5.md)
   - [Networking](Networking.md)
   - [NetworkSecurity](NetworkSecurity.md)
+  - [NFT](NFT.md)
   - [OAuth](OAuth.md)
   - [Wireshark](Wireshark.md)
   - [Zero-Knowledge-Proof](ZNP.md)
 
+Table of Contents
+
+  - [Cryptocurrency](#cryptocurrency)
+ 
 ---
 
 Encryption etc.
@@ -18,11 +25,13 @@ https://dev.to/goutomroy/encryption-2kkl
 
 ---
 
-Criptocurrency overview.
-https://www.youtube.com/watch?v=bBC-nXj3Ng4
+## Cryptocurrency
 
-Nice visual on how complex 256-bit encryption is
-https://www.youtube.com/watch?v=S9JGmA5_unY
+---
+
+ - [Cryptocurrency](Cryptocurrency.md)
+ - [Blockchain](Blockchain.md)
+ - [NFT](NFT.md)
 
 ---
 
@@ -60,7 +69,7 @@ https://www.youtube.com/watch?v=y0vlD7r-kTc
 
 In line with crypto hipe.
 Adam Ruins Everything - How the Fine Art Market is a Scam | truTV
-﻿https://www.youtube.com/watch?v=Dw5kme5Q_Yo
+https://www.youtube.com/watch?v=Dw5kme5Q_Yo
 
 ---
 

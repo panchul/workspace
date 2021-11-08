@@ -28,6 +28,7 @@
 - [Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.](#Continuous-Delivery,-Continuous-Integration,-Automatic-Deployment,-DevOps,-etc.)
 - [Process management and misc software lifecycle issues](#Process-management-and-misc-software-lifecycle-issues)
 - [Cryptography, Network Security, etc.](#Cryptography,-Network-Security,-etc.)
+- [Blockchain, Cryptocurreicies, NFTs](#Blockchain,-Cryptocurreicies,-NFTs)
 - [BI, Business Intelligence ](#BI,-Business-Intelligence) 
 - [Photography, Video, and optics in general](#Photography,-Video,-and-optics-in-general)
 - [Biology, Medicine, Gerontology, etc.](#Biology,-Medicine,-Gerontology,-etc.)
@@ -168,12 +169,17 @@ A more conceptual links, still related to Programming Languages and Math
 - Installing Chocolatey
    https://chocolatey.org/install  
 
+Microservices design patterns for CTOs: API Gateway, Backend for Frontend and more
+
+- https://tsh.io/blog/design-patterns-in-microservices-api-gateway-bff-and-more/ BFF Design Pattern, etc.
+
 
 ### Data formats, APIs, Protocols
 
 - [APIs](APIs.md)
 - [Base64](Base64.md)
 - [gRPC](GRPC.md)
+- [GraphQL](GraphQL.md)
 - [HTML](HTML.md)
 - Jiffy (JSON converting)
 - [JSON](JSON.md)
@@ -213,6 +219,7 @@ A more conceptual links, still related to Programming Languages and Math
 - [Maven](Maven.md)
 - [Mercurial](Mercurial.md)
 - [npm](Npm.md)
+- [NuGet](NuGet.md)
 - [Pip](Pip.md)  
 - [Rake](Rake.md)  
 - [Sbt](Sbt.md)  
@@ -316,6 +323,7 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - [Arduino](Arduino.md)
 - [BIOS](BIOS.md)  
 - [CNC Machines](CNC.md)
+- Solar, etc. www.DIYSolar.com 
 - [EmbeddedProgramming](EmbeddedProgramming.md)
 - [FPGA](FPGA.md)
 - [Hardware](Hardware.md)
@@ -480,6 +488,11 @@ Aggregated List of C++ networking libraries
 - BOSH
 - [SMTP and mailservers](SMTP.md)
 
+### Blockchain, Cryptocurreicies, NFTs
+
+- [Cryptocurrency](Cryptocurrency.md)
+- [Blockchain](Blockchain.md)
+- [NFT](NFT.md)
 
 ### Data mining, Machine Learning, Artificial Intelligence, etc.
 
@@ -539,8 +552,6 @@ Neat command-line tricks:
 - datascience.ibm.com
 
 - https://towardsdatascience.com/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3
-
-- Free Blockchain courses online: https://learndisruptprofitrepeat.com/learn-to-develop-blockchain-decentralized-apps-5-free-programmer-training-courses/
 
 - https://phys.org/news/2018-12-amoeba-approximate-solutions-np-hard-problem.html 
   Amoeba finds approximate solutions to NP-hard problem in linear time

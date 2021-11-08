@@ -10,6 +10,12 @@ See Also:
 
 ---
 
+3-in-one, laser cutter, CNC, and 3D printer:
+
+www.snapmaker.com
+
+---
+
 $350 CNC machine, Arduino-based, compact and seem to be functional.
 
 http://www.maslowcnc.com/assemblyguide/
