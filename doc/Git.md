@@ -84,6 +84,12 @@ or
 
 ---
 
+About sparse check-out, cloning a subdirectory.
+
+https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository
+
+---
+
 Using a `no-repy` email for commits (making your email private)
 https://dev.to/codewithfahad/github-tip-of-the-day-keep-your-commit-email-address-private-2eo2
 

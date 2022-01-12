@@ -188,10 +188,12 @@ http://www.martinbroadhurst.com/concatenate-two-vectors-in-c.html
 Method 1: Use std::vector::insert()
 
     vector1.insert(vector1.end(), vector2.begin(), vector2.end());
-    
+    // insert <where>, <start> - <end>    
+
 Method 2: Use std::copy with a std::back_inserter()
 
     std::copy(vector2.begin(), vector2.end(), std::back_inserter(vector1));
+    // copy < what: start, end> <where to>   
     
 Method 3: Use std::reserve() and then std::copy()
 This means that the vector won’t need to be reallocated during the
@@ -199,6 +201,7 @@ copy, so may be faster.
 
     vector1.reserve(vector1.size() + vector2.size());
     std::copy(vector2.begin(), vector2.end(), vector1.end());
+    // actually probably needs 'resize', etc. the snippet above does not work. 2020/11/13
 
 Method 4: Use std::transform() with std::back_inserter()
 This means you can use a functor on the elements of vector2 to modify
@@ -324,7 +327,12 @@ compile-time value.
         cout << result;
         return 0;
     }
-   
+
+`const` & `constexpr` both can be applied to member methods. Member methods are
+made const to make sure that there are no accidental changes by the method. On
+the other hand, the idea of using constexpr is to compute expressions at compile
+time so that time can be saved when the code is running.
+
 ---
 
 7 Best practices for exception handling in C++ with examples

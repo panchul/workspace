@@ -45,6 +45,18 @@ To run test runner (Xunit, for example):
 
 ---
 
+Dotnet on Ubuntu, etc.
+
+- https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net60&pivots=development-environment-vs
+- https://www.michaelcrump.net/part3-aspnetcore/
+- https://docs.microsoft.com/en-us/visualstudio/mac/asp-net-core?view=vsmac-2019
+- [troubleshooting ssh on aws](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-linux-fix-permission-denied-errors/)
+- https://www.davidhayden.me/blog/install-net5-on-ubuntu-20-04
+- https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu - good one
+- Dotnet on Ubuntu 20 https://tecadmin.net/how-to-install-net-core-on-ubuntu-20-04/
+
+---
+
 ## Samples
 
 ---
