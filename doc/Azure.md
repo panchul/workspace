@@ -9,6 +9,12 @@ See Also:
 
 ---
 
+Azure App Service
+
+https://docs.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=bash&pivots=python-framework-flask
+
+---
+
 AKS GPU-enabling:
 https://docs.microsoft.com/en-us/azure/aks/gpu-cluster#:~:text=Graphical%20processing%20units%20%28GPUs%29%20are%20often%20used%20for%2cVMs%2c%20see%20GPU%20optimized%20VM%20sizes%20in%20Azure.
 

@@ -2,13 +2,14 @@
 
 ---
 
-MSSQL on Ubuntu:
+MSSQL on Ubuntu. Quickstart: Install SQL Server and create a database on Ubuntu:
 
 https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
 
 About connection string:
 
-https://stackoverflow.com/questions/63434373/connection-string-for-connecting-to-sql-server-on-ubuntu
+- https://stackoverflow.com/questions/63434373/connection-string-for-connecting-to-sql-server-on-ubuntu
+- https://www.connectionstrings.com/microsoft-sql-server-odbc-driver/ - might be a good one
 
 ---
 

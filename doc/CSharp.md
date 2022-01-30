@@ -89,6 +89,11 @@ https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listview.items?
 
 ---
 
+EventHandler Delegate
+https://docs.microsoft.com/en-us/dotnet/api/system.eventhandler?view=net-6.0
+
+---
+
 ## Libraries and Interop
 
 ---
@@ -208,6 +213,72 @@ Web server in C#
 and some adoption of it:
 
     https://bitbucket.org/tevert/tinywebserver
+
+---
+
+SMTP Client, email, etc.
+
+- https://stackoverflow.com/questions/18326738/how-to-send-email-in-asp-net-c-sharp
+- https://social.msdn.microsoft.com/Forums/en-US/10a8f6f5-e924-4044-98c8-91d434c14398/mail-authentication-exception-while-sending-a-mail-with-aspnet
+- https://stackoverflow.com/questions/8628683/how-to-send-html-formatted-email - Formatted
+
+- https://blog.elmah.io/how-to-send-emails-from-csharp-net-the-definitive-tutorial/ - good one, with alternative smtp clients and libs
+
+Basic usage:
+
+    var smtpClient = new SmtpClient("smtp.gmail.com")
+    {
+        Port = 587,
+        Credentials = new NetworkCredential("email", "password"),
+        EnableSsl = true,
+    };
+    smtpClient.Send("email", "recipient", "subject", "body");
+
+Http body:
+
+    var mailMessage = new MailMessage
+    {
+        From = new MailAddress("email"),
+        Subject = "subject",
+        Body = "<h1>Hello</h1>",
+        IsBodyHtml = true,
+    };
+    mailMessage.To.Add("recipient");
+    smtpClient.Send(mailMessage);
+
+For the attachment:
+
+    var mailMessage = new MailMessage
+    {
+    ...
+    };
+    var attachment = new Attachment("profile.jpg", MediaTypeNames.Image.Jpeg);
+    mailMessage.Attachments.Add(attachment);
+
+To use `ConfigurationBuilder`:
+
+declare the info in `appsettings.json`:
+
+    {
+       "Smtp": {
+           "Host": "smtp.gmail.com",
+           "Port": 587,
+           "Username": "email",
+           "Password": "password"
+       }
+    }
+
+and in the code:
+
+    var builder = new ConfigurationBuilder()
+                       .AddJsonFile("appsettings.json");
+    var config = builder.Build();
+    var smtpClient = new SmtpClient(config["Smtp:Host"])
+    {
+        Port = int.Parse(config["Smtp:Port"]),
+        Credentials = new NetworkCredential(config["Smtp:Username"], config["Smtp:Password"]),
+        EnableSsl = true,
+    };
 
 ---
 
