@@ -4,6 +4,8 @@ See Also:
  - [Mercurial](Mercurial.md)
  - [Subversion](Subversion.md)
  - [Git](Git.md)
+ - [Gulp](Gulp.md)
+
 
 npm (Node package manager) is a software registry. It is installed with Node.js.
 npm includes a cli that can be used to download and install packages.

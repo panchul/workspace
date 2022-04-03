@@ -13,6 +13,11 @@ TODO: Add list interests, etc.
 
 ---
 
+Another post about competitive interviewing. "Interviewing is a sport! Lesson 1: Mental Power"
+https://www.linkedin.com/pulse/interviewing-sport-lesson-1-mental-power-eli-fox/
+
+---
+
 Interesting blog post, "Being VP of Engineering is harder than being CEO"
 https://linearb.io/blog/being-vp-of-software-development-is-harder-than-being-ceo/
 

@@ -213,6 +213,7 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
   - github
   - bitbucket
 - [Gradle](Gradle.md)
+- [Gulp](Gulp.md)
 - [Homebrew](Homebrew.md)
 - [Libtool](Libtool.md)
 - [make](Make.md)
@@ -249,6 +250,7 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 
 - MochiWeb
 - [Ajax](Ajax.md)
+- [Angular](Angular.md)
 - [Apache](Apache.md)
 - [Disqus](Disqus.md) Commenting, discussion forums, etc.
 - [Django](Django.md)

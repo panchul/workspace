@@ -1,5 +1,9 @@
 # JavaScript
 
+See Also:
+
+ - [TypeScript](TypeScript.md)
+
 A sandbox with some templates:
 [https://github.com/panchul/sb_javascript](https://github.com/panchul/sb_javascript)
 
