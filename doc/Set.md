@@ -4,8 +4,8 @@ See Also:
   - [STL](STL.md)
   
 My sandbox for data structures is here:
-https://github.com/panchul/sb_cpp/tree/master/data_structures
-  
+https://github.com/panchul/sb_cpp/blob/master/stl_and_data_structures/set/set.cpp
+
 ---
 
     set<int> s;

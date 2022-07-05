@@ -36,6 +36,26 @@ STL and related
 
 ---
 
+The basic list of datastructures interviewers like are:
+
+- Hash maps
+- linked lists
+- stacks
+- queues
+- trees
+- tries
+- graphs
+
+and the classic algorithms
+
+- quicksort
+- merge sort
+- binary search
+- depth-first search
+- breadth-first search
+
+---
+
 Neat compilation and review.
 
 How to Learn Data Structures and Algorithms. 20 Problem-Solving Techniques You Must Know.

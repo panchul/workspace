@@ -5,6 +5,10 @@ See also
 
 ---
 
+Emoji for Mac keyboards: Use CTRL + CMD + Space
+
+---
+
 The docs about Mac's file types.
 https://support.apple.com/guide/disk-utility/file-system-formats-available-in-disk-utility-dsku19ed921c/mac
 
