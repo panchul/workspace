@@ -5,7 +5,75 @@ See Also:
   - [AWS](AWS.md)
   - [GCP, GoogleCloud](GoogleCloud.md)
   - [Kubernetes](Kubernetes.md)
+  - [KEDA](KEDA.md)
   - [Kubeflow](Kubeflow.md)
+
+**Content**
+
+- [Azure Functions](#Azure-Functions)
+- [Azure Web Apps](#Azure-Web-Apps)
+- [Miscellaneous](#Miscellaneous)
+
+---
+
+# Azure Functions
+
+---
+
+The guy from Pluralsight, referencing useful links on Azure Functions
+https://github.com/markheath/azure-functions-links
+
+---
+
+Azure Functions Github repo, with links to other repos, for hosts, ux, etc.
+
+https://github.com/azure/azure-functions
+
+---
+
+Azure Functions in containers, on Kubernetes
+
+KEDA, https://keda.sh
+
+---
+
+# Azure Web Apps
+
+---
+
+Azure Static Web Apps tutorial(workship)
+https://docs.microsoft.com/en-us/learn/modules/publish-app-service-static-web-app-api/
+
+---
+
+# Azure Storage
+
+---
+
+Free Microsoft storage explorer (for blobs, queues, etc.)
+https://azure.microsoft.com/en-us/features/storage-explorer/
+
+---
+
+# Miscellaneous
+
+---
+
+Books on azure, dotnet, etc.
+
+Containerized Docker application lifecycle with Microsoft platform and tools
+https://aka.ms/dockerlifecycleebook
+
+.NET Microservices: Architecture for containerized .NET applications
+https://aka.ms/microservicesebook
+
+Architecting modern web applications with ASP.NET Core and Azure
+https://aka.ms/webappebook
+
+---
+
+Modernize existing .NET applications with Azure cloud and Windows Containers
+https://docs.microsoft.com/en-us/dotnet/architecture/modernize-with-azure-containers/
 
 ---
 

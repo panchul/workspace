@@ -4,15 +4,15 @@ https://kubernetes.io/
 
 See Also:
 
-    - [CUDA](CUDA.md)
-    - [Docker](Docker.md)
-    - [DockerCompose](DockerCompose.md)
-    - [DockerSwarm](DockerSwarm.md)
-    - [Istio](Istio.md)
-    - [Kubeflow](Kubeflow.md)
-    - [LXD, Linux Containers](LXD.md)
-    - [Prometeus](Prometeus.md)
-    - [Samba](Samba.md)
+  - [CUDA](CUDA.md)
+  - [Docker](Docker.md)
+  - [DockerCompose](DockerCompose.md)
+  - [DockerSwarm](DockerSwarm.md)
+  - [Istio](Istio.md)
+  - [Kubeflow](Kubeflow.md)
+  - [LXD, Linux Containers](LXD.md)
+  - [Prometeus](Prometeus.md)
+  - [Samba](Samba.md)
 
 **Table of contents**
 
@@ -21,6 +21,7 @@ See Also:
  - [Installation](#Installation)
  - [Kubernetes Dashboard](#Kubernetes-Dashboard)
  - [Kubernetes storage](#Kubernetes-storage)
+ - [Azure Functions on Kubernetes](#Azure-Functions-on-Kubernetes)
  - [Miscellaneous](#Miscellaneous)
 
 ## Kubernifying applications
@@ -207,6 +208,15 @@ and assigned the claim to the application.
 Another option for distributed storage:
 
 https://deploy-to-kubernetes.readthedocs.io/en/latest/ceph.html
+
+---
+
+## Azure Functions on Kubernetes
+
+---
+
+Azure Functions in containers, on Kubernetes
+KEDA, https://keda.sh
 
 ---
 

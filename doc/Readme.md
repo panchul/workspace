@@ -2,9 +2,9 @@
 
 **Table of Content**
 
-- [Programming languages, scripts, etc.](#Programming-languages-scripts-etc)
+- [Programming languages, scripts, etc.](#Programming-languages,-scripts,-etc.)
 - [Virtualization, clustering, provisioning, and monitoring](#Virtualization,-clustering,-provisioning,-and-monitoring)
-- [Frameworks Libraries, Static code analysis, architecture approaches, etc.](#Frameworks-Libraries-Static-code-analysis-architecture-approaches-etc)
+- [Frameworks Libraries, Static code analysis, architecture approaches, etc.](#Frameworks Libraries,-Static-code-analysis,-architecture-approaches,-etc.)
 - [Data formats, APIs, Protocols](#Data-formats,-APIs,-Protocols)
 - [Databases](#Databases)
 - [Version control systems, configuration, build tools](#Version-control-systems,-configuration,-build-tools) 
@@ -73,7 +73,7 @@
 - [Go](Go.md)  
 - [Java](Java.md)  
   - [Spring](Spring.md)
-- [JavaScript](JavaScript.md)  
+- [JavaScript](Javascript.md)  
 - [LLVM](LLVM.md)
 - Lua
 - [Matlab/Simulink](Matlab.md)  
@@ -104,11 +104,12 @@ A more conceptual links, still related to Programming Languages and Math
 - Cacti
 - [Docker](Docker.md)
   - [Docker-Compose](DockerCompose.md)
-  - [Docker Swarm](Swarm.md)
+  - [Docker Swarm](DockerSwarm.md)
 - Fabric
 - [Google Cloud](GoogleCloud.md)
 - [Kubeflow](Kubeflow.md)
-- [Kubernetes](Kubernetes.md)  
+- [Kubernetes](Kubernetes.md)
+- [KEDA](KEDA.md), Kubernetes Event-Driven Autoscaling
 - [LXD, Linux Containers](LXD.md)
 - [Mesos](Mesos.md)
 - Munin
@@ -116,7 +117,7 @@ A more conceptual links, still related to Programming Languages and Math
 - [OpenStack](OpenStack.md)
 - Otto
 - [Rex-Ray](RexRay.md)
-- [Triton,Joyent](Triton.md)
+- [Triton,Joyent](Triton_private_cloud.md)
 - [Vagrant](Vagrant.md)  
 - [VirtualBox](VirtualBox.md)  
 - [VMWare](VMWare.md)  
@@ -125,7 +126,7 @@ A more conceptual links, still related to Programming Languages and Math
 
  - [ASCIIDoc](Asciidoc.md)
  - [Apache Log4j](Log4J.md)
- - [Apache Spark](ApacheSpark.md)
+ - [Apache Spark](Spark.md)
  - Codeclimate https://developer.codeclimate.com/#overview
  - [Confluent](Confluent.md)
  - [CQRS](CQRS.md) Command Query Responsibility Segregation
@@ -191,7 +192,7 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 - [UTF-8](UTF-8)  
 - [XML](XML.md)
 - [YAML](YAML.md)
-- [QR code](Qr_code.md)
+- [QR code](QRCode.md)
 - DJVU converter(web) https://djvu2pdf.com/
 
 
@@ -364,7 +365,7 @@ Protocols for IoT, etc:
   https://infiniteautomation.com/mango-overview
 
 Compare it to fiddler and others
-- Wireshark captures any kind of a network packet. It can capture packet details below TCP/IP(Http is at the top).
+- Wireshark captures any kind of network packet. It can capture packet details below TCP/IP(Http is at the top).
   It does have filters to reduce the noise it captures.
 - Firebug tracks each request the browser page makes and captures the associated headers and the time taken for each
   stage of the request (DNS, receiving, sending, ...).
@@ -392,7 +393,7 @@ https://www.tartssensors.com/libraries/arduino/
 - [Eclipse](Eclipse.md)  
 - [emacs](Emacs.md) 
 - [gdb](Gdb.md)
-- [IntelliJ](Intellij.md)  
+- [IntelliJ](IntelliJ.md)  
 - LiteIDE
 - nbdev https://www.fast.ai/2019/12/02/nbdev/
 - PyCharm (For Python, from Jetbrains)
@@ -422,12 +423,12 @@ https://www.tartssensors.com/libraries/arduino/
 - Firebug
 - [Firewall](Firewall.md)
 - [RTP](RTP.md)
-- [Zero-Knowledge-Proof](ZNP.md)
+- [Zero-Knowledge-Proof](ZKP.md)
 
 
 Aggregated List of C++ networking libraries
 
-- Boost.Asio is really good.
+- Boost.Asio is good.
 - ACE is also good, a bit more mature and has a couple of books to support it.
 - Asio is also available as a stand-alone library.
 - C++ Network Library
@@ -465,7 +466,7 @@ Aggregated List of C++ networking libraries
 - [Googletest](Googletest.md)
 - Meck
 - [Scalameter](Scalameter.md)
-- [ScalaTest](ScalaTest.md)
+- [ScalaTest](Scalatest.md)
 - Tsung
 - UiPath https://www.uipath.com/studio
 - WinAutomation http://www.winautomation.com/features/
@@ -530,9 +531,9 @@ Aggregated List of C++ networking libraries
 Neat command-line tricks:
 - https://www.datascienceatthecommandline.com/chapter-7-exploring-data.html#creating-visualizations
 
-- Chat bot comparisons: https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff
+- Chatbot comparisons: https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff
 
-- Rasa open-source chat bot https://rasa.com/
+- Rasa open-source chatbot https://rasa.com/
 - Google Dialogflow
 - Microsoft LUIS
 
@@ -776,7 +777,7 @@ Another nice resource:
 - History Channel Documentary-How Big Oil Conquered the World
   https://www.youtube.com/watch?v=gOs8Cbo_KYk
 
-- DEFCON talk about fake conferences. DEF CON 26 - Svea, Suggy, Till - Inside the Fake Science Factory
+- A DEFCON talk about fake conferences. DEF CON 26 - Svea, Suggy, Till - Inside the Fake Science Factory
   https://www.youtube.com/watch?v=ras_VYgA77Q
 
 - Very nice collection of renewable energy examples, Canadian well, hydropower, etc.
@@ -820,7 +821,7 @@ Another nice resource:
 
 - The price of being single. http://ideas.ted.com/the-price-of-being-single/
 
-Misc resources on competitive programming and algorithmic problem solving:
+Misc resources on competitive programming and algorithmic problem-solving:
 - S. S. Skiena and M. A. Revilla: Programming Challenges: The Programming Contest Training Manual
 - S. Halim and F. Halim: Competitive Programming 3: The New Lower Bound of Programming Contests
 - K. Diks et al.: Looking for a Challenge? The Ultimate Problem Set from the University of Warsaw Programming Competitions

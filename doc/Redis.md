@@ -6,6 +6,14 @@ https://github.com/antirez/redis
 
 ---
 
+A Redis library:
+
+https://stackexchange.github.io/StackExchange.Redis/
+
+Pub/Sub message order https://stackexchange.github.io/StackExchange.Redis/PubSubOrder
+
+---
+
 Just play with it, do set/get 
 
     % cd src

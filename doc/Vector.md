@@ -4,6 +4,9 @@ See Also:
   - [STL](STL.md)
   - [AlgorithmsDataStructures](AlgorithmsDataStructures.md) 
   - [Deque](Deque.md)
+  - [List](List.md)
+  - [Map](Map.md)
+  - [Stack](Stack.md)
   
 My sandbox for data structures is here:
 

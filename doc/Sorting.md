@@ -1,5 +1,14 @@
 # Sorting 
 
+See Also:
+  - [STL](STL.md)
+  - [AlgorithmsDataStructures](AlgorithmsDataStructures.md)
+  - [Deque](Deque.md)
+  - [List](List.md)
+  - [Vector](Vector.md)
+  - [Map](Map.md)
+  - [Stack](Stack.md)
+
 ## Array/list sorting
 
  - Bucket https://en.wikipedia.org/wiki/Bucket_sort

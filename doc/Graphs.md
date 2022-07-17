@@ -3,8 +3,8 @@
 See Also:
 
 - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
+- [Dijkstra](Dijkstra.md)
 - [OpenGL](OpenGL.md)
-
 
 My sandbox for data structures is here:
 

@@ -3,8 +3,7 @@
 https://www.kubeflow.org/
 
 See Also:
-
-    - [Kubernetes](Kubernetes.md)
+  - [Kubernetes](Kubernetes.md)
 
 ---
 

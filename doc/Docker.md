@@ -83,6 +83,21 @@ https://dev.to/rinkiyakedad/cross-container-communication-and-networking-in-dock
 
 ---
 
+---
+
+Books on azure, dotnet, etc.
+
+Containerized Docker application lifecycle with Microsoft platform and tools
+https://aka.ms/dockerlifecycleebook
+
+.NET Microservices: Architecture for containerized .NET applications
+https://aka.ms/microservicesebook
+
+Architecting modern web applications with ASP.NET Core and Azure
+https://aka.ms/webappebook
+
+---
+
 Use this to force a fresh rebuild(`--no-cache` for rebuild, and `--pull` for FROM):
 
     $ docker build --pull --no-cache --tag myimage:version .

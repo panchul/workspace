@@ -1,5 +1,11 @@
 # GraphQL
 
+
+---
+
+GraphGL programming, etc.
+https://www.youtube.com/watch?v=U_qAwe2LCx4
+
 ---
 
 Graph QL workshop

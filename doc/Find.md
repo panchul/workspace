@@ -6,7 +6,7 @@ See also [Linux](Linux.md)
 
 ---
 
-Sample usage of ```find``` with ```xargs```:
+Sample usage of `find` with `xargs`:
     
     $ find . -name "*.txt" | xargs dos2unix
 

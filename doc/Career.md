@@ -267,7 +267,7 @@ https://www.youtube.com/watch?v=WiMKbiZRhCQ
 
 ---
 
-TED talk about inferiority and rasism. KKK
+TED Talk about inferiority and racism. KKK
 https://www.youtube.com/watch?v=Y4gly9n9RBo
 
 ---
@@ -294,7 +294,6 @@ https://techcrunch.com/2018/08/18/distributed-teams-are-rewriting-the-rules-of-o
 Alternatives to resumes. AI questions about how hungry you are.
 https://www.inc.com/melanie-curtin/resumes-dont-help-you-hire-innovative-people-but-this-does-hint-teslas-doing-it.html
 
-
 ---
 
 Great podcast on starting a business 
@@ -313,7 +312,7 @@ https://www.pandadoc.com/consulting-proposal-templates/
 ---
 
 Signs a narcissist is manipulating you
-﻿https://www.providr.com/clear-signs-a-narcissist-is-manipulating-you
+https://www.providr.com/clear-signs-a-narcissist-is-manipulating-you
 
 ---
 
@@ -364,7 +363,6 @@ Remember to ask these before jumping in.
 - Tell me about my most important internal clients and other contacts. What do I need to know about working with each of them -- their particular requirements, quirks, communication styles, etc?
 - What do you think will be the most challenging part of the role? What is your advice for surmounting that hurdle?
 - What else do I need to know about the culture, the management team and the company?
-
 
 ---
 
