@@ -127,10 +127,11 @@ A more conceptual links, still related to Programming Languages and Math
  - [ASCIIDoc](Asciidoc.md)
  - [Apache Log4j](Log4J.md)
  - [Apache Spark](Spark.md)
+ - [CLEAN Architecture](CLEAN.md)
  - Codeclimate https://developer.codeclimate.com/#overview
  - [Confluent](Confluent.md)
  - [CQRS](CQRS.md) Command Query Responsibility Segregation
- - Domain Driven Design (DDD)
+ - [Domain Driven Design(DDD)](DDD.md)
  - GraphQL https://dev.to/hexrcs/graphql-crash-course-in-10-pics-3b04
  - [Lagom](Lagom.md)
  - [M4](M4.md)

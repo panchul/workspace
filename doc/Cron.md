@@ -1,9 +1,43 @@
 # cron
 
+Cron jobs scheculing. Also cron expressions used in other places, like Azure Function triggers.
+
 See Also:
 
   - [bash](bash.md)
   - [Linux](Linux.md)
+
+---
+
+The expression has 5 parts:
+
+    minute hour day(month) month day(week)
+
+The modifiers include:
+
+    *	any value
+    ,	value list separator
+    - range of values
+    /	step values
+    @yearly	(non-standard)
+    @annually	(non-standard)
+    @monthly	(non-standard)
+    @weekly	(non-standard)
+    @daily	(non-standard)
+    @hourly	(non-standard)
+    @reboot	(non-standard)
+
+Examples:
+
+    */15 * * * *               --- every 15th minute
+    */15,*/10 * * * *          --- every 15h minute and every 10th minute
+
+
+---
+
+Cron editor
+
+https://crontab.guru/
 
 ---
 
@@ -18,7 +52,7 @@ Nice thread about manipulating cron jobs in bash, etc.
 
 https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor
 
-Some infor here:
+Some info here:
 
 https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
@@ -34,7 +68,7 @@ To remove it from the crontab whatever its current schedule:
 
     ( crontab -l | grep -v -F "$croncmd" ) | crontab -
 
-```grep -F``` matches the string literally(not a regex)
+`grep -F` matches the string literally(not a regex)
 
 Cron line
 

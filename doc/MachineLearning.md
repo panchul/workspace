@@ -4,24 +4,60 @@ See Also:
 
  - [Alexa](Alexa.md)
  - [ComputerVision](ComputerVision.md)
+ - [Keras](Keras.md)
  - [Kociemba](Kociemba.md)
  - [MarkovChains](MarkovChains.md)
  - [Neural Network](NeuralNetwork.md)
    - [GAN](GAN.md), (Generative Adversarial networks)
- - [Splunk](Splunk.md)
- - [TensorFlow](TensorFlow.md)
  - [ONNX](ONNX.md)
  - [PyTorch](PyTorch.md)
-
+ - [Scikit](Scikit.md)
+ - [Splunk](Splunk.md)
+ - [TensorFlow](TensorFlow.md)
 
 **Content**
 
  - [Labs and tutorials](#labs-and-tutorials)
+ - [Frameworks](#Frameworks)(for math and preprocessing) 
  - [Miscellaneous](#miscellaneous)
 
+# Frameworks
 
+Some of these may not be necessarily geared toward ML or AI, but more generic math and I/O.
 
-## Miscellaneous
+## ggplot2
+
+TODO
+
+## Matplotlib
+
+TODO
+
+## Pandas
+
+TODO
+
+## Keras
+- 
+- [Keras](Keras.md)
+
+## NumPy
+
+TODO
+
+## Scikit
+
+TODO
+
+---
+
+# Labs and tutorials
+
+TODO
+
+---
+
+# Miscellaneous
 
 ---
 
@@ -331,7 +367,3 @@ Timelines of Machine Learning:
 2014 - GANs
 2016-17 - AlphaGo, AlphaZero
 2017-19 - Transformers
-
----
-
-## Labs and tutorials

@@ -16,22 +16,23 @@ See Also:
 
 Table of Contents
 
-  - [Cryptocurrency](#cryptocurrency)
- 
+  - [Types of attack](#Types-of-attack)
+
+# Types of attack
+
+---
+
+More types of attack
+
+- Stack smashing
+- Heap imploding
+- Buffer doubling
+- The Venetian exploit (https://flylib.com/books/en/1.545.1.61/1/)
+
 ---
 
 Encryption etc.
 https://dev.to/goutomroy/encryption-2kkl
-
----
-
-## Cryptocurrency
-
----
-
- - [Cryptocurrency](Cryptocurrency.md)
- - [Blockchain](Blockchain.md)
- - [NFT](NFT.md)
 
 ---
 
@@ -52,8 +53,6 @@ Popular Information Security Certification programs:
 
 Neat exercise about setting up https on CentOS 8:
 https://www.cyberciti.biz/faq/apache-with-lets-encrypt-certificates-on-centos-8/
-
-
 
 ---
 
