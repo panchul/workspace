@@ -48,4 +48,3 @@ Use the GPU package for CUDA-enabled GPU cards:
     'Hello, TensorFlow!'
 
 ---
-

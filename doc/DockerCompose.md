@@ -4,10 +4,10 @@ My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/p
 
 See Also:
 
-    - [CUDA](CUDA.md)
-    - [Docker](Docker.md)
-    - [Kubeflow](Kubeflow.md)
-    - [Kubernetes](Kuernetes.md)
+  - [CUDA](CUDA.md)
+  - [Docker](Docker.md)
+  - [Kubeflow](Kubeflow.md)
+  - [Kubernetes](Kuernetes.md)
 
 ---
 

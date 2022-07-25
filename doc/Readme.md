@@ -248,6 +248,12 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 - RTOS
   -- VxWorks
 
+Topics sometimes associated with Operating Systems.
+
+- Deadlock
+- Livelock
+- Starvation
+
 ### Web Frameworks, servers, etc
 
 - MochiWeb
@@ -425,7 +431,6 @@ https://www.tartssensors.com/libraries/arduino/
 - [Firewall](Firewall.md)
 - [RTP](RTP.md)
 - [Zero-Knowledge-Proof](ZKP.md)
-
 
 Aggregated List of C++ networking libraries
 

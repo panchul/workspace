@@ -1,8 +1,6 @@
-
-## UNDER CONSTRCUTION
-
 # tcpdump
 
+Might be deprecated now, `ip` utility is doing a lot now.
 
 ---
 
@@ -15,4 +13,3 @@ To see all incoming traffic for a port, e.g. 9092:
     ...
 
 ---
-

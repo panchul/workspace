@@ -1,7 +1,8 @@
 # Dijkstra (mininum spanning graph)
 
 See Also:
-   - [Graphs](Graphics.md)
+
+   - [Graphs](Graphs.md)
    - 
 
 Dijkstra, for minimal spanning tree:

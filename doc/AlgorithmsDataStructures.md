@@ -3,36 +3,39 @@
 My sandbox for data structures is here:
 https://github.com/panchul/sb_cpp/tree/master/data_structures
 
-STL and related
+See Also:
 
-- A-star
-- cartesian tree
-- [Dijkstra(minimum spanning graph)](Dijkstra.md)
-- [Graphs](Graphs.md)
-- [Hash Table](HashTable.md)
-- [List](List.md)
-- [Map](Map.md)
-- [Sorting](Sorting.md)
-- [Vector](Vector.md)
-- [BFS](BFS.md)
-- splay tree
-- b-tree
-- red-black tree
-- avl tree
-- kd tree
-- skip list
-- Random forests
-- naïve Bayesian estimators
-- gossip protocols
-- eventual consistency
-- data sharding
-- anti-entropy
-- Byzantine quorum
-- erasure coding
-- vector clocks
-- traversals(breadth-first, depth-first)
-- divide and conquer
-- [Markov Chains](MarkovChains.md)
+ - A-star
+ - cartesian tree
+ - [Dijkstra(minimum spanning graph)](Dijkstra.md)
+ - [Graphs](Graphs.md)
+ - [Hash Table](HashTable.md)
+ - [List](List.md)
+ - [Map](Map.md)
+ - [Sorting](Sorting.md)
+ - [Trees](Trees.md)
+ - [Vector](Vector.md)
+ - [BFS](BFS.md)
+ - splay tree
+ - b-tree
+ - red-black tree
+ - avl tree
+ - kd tree
+ - skip list
+ - Random forests
+ - [Math](Math.md)
+ - naïve Bayesian estimators
+ - NP-complete
+ - gossip protocols
+ - eventual consistency
+ - data sharding
+ - anti-entropy
+ - Byzantine quorum
+ - erasure coding
+ - vector clocks
+ - traversals(breadth-first, depth-first)
+ - divide and conquer
+ - [Markov Chains](MarkovChains.md)
 
 ---
 
@@ -53,6 +56,14 @@ and the classic algorithms
 - binary search
 - depth-first search
 - breadth-first search
+
+---
+
+NP-completeness
+
+https://en.wikipedia.org/wiki/NP-completeness
+
+No polynomial complexity solution found.
 
 ---
 

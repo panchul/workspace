@@ -4,12 +4,12 @@ https://www.docker.com/
 
 See Also:
 
-    - [CUDA](CUDA.md)
-    - [DockerCompose](DockerCompose.md)
-    - [DockerSwarm](DockerSwarm.md)
-    - [Kubeflow](Kubeflow.md)
-    - [Kubernetes](Kuernetes.md)
-    - [LXD, Linux Containers](LXD.md)
+  - [CUDA](CUDA.md)
+  - [DockerCompose](DockerCompose.md)
+  - [DockerSwarm](DockerSwarm.md)
+  - [Kubeflow](Kubeflow.md)
+  - [Kubernetes](Kubernetes.md)
+  - [LXD, Linux Containers](LXD.md)
 
 My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker).
 
@@ -18,11 +18,11 @@ My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/p
  - [Installation](#installation)
  - [Introductions and examples](#introductions-and-examples)
  - [Networking](#networking)
- - [Miscellaneous](#miscellaneous)
+ - [Miscellaneous](#Miscellaneous)
 
 ---
 
-## Installation  
+# Installation  
 
 https://docs.docker.com/engine/installation/
 
