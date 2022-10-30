@@ -3,6 +3,7 @@
 See Also:
 
   - `http`(utility)
+  - `wget`(utility)
 
 ---
 

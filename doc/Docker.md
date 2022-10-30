@@ -48,7 +48,7 @@ In some cases you might need this:
 
     $ sudo chmod g+rwx "$HOME/.docker" -R
     
-You might want to re-login to apply your new group memebership
+You might want to re-login to apply your new group membership
 
 Testing that docker works:
 
@@ -108,7 +108,7 @@ Nice way to connect to the host network from outside of a Docker container.
 https://dev.to/natterstefan/docker-tip-how-to-get-host-s-ip-address-inside-a-docker-container-5anh
 
 You can use a Linux-specific `docker-compose.override.yml`, https://docs.docker.com/compose/extends/
-Or set the gatewateway via environment. E.g. in `~/.bashrc`:
+Or set the gateway via environment. E.g. in `~/.bashrc`:
 
     export DOCKER_GATEWAY_HOST=172.17.0.1
 
@@ -229,7 +229,7 @@ And restore in a similar fashion.
 
 Neat trick to use dockerized Kafka instead of the command line.
 ```--rm``` removes the container when exits.
-```-i```  iteractive mode 
+```-i```  interactive mode 
 ```-t```  allocate pseudo tty 
 
     $ docker run --rm -it ches/kafka:0.10.1.0 bin/kafka-topics.sh --zookeeper mykafka.mykafkadomain:2181 --topic testTopic --describe
@@ -289,7 +289,7 @@ https://www.youtube.com/watch?v=XiC6Dy38HnA
 VMs vs. Containers. Refresher
 https://www.backblaze.com/blog/vm-vs-containers/
 
-Basically, containers have containter daemon on host instead of hypervisor on host and guest OS per vm.
+Basically, containers have container daemon on host instead of hypervisor on host and guest OS per vm.
 
 ---
 

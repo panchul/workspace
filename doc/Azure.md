@@ -10,9 +10,9 @@ See Also:
 
 **Content**
 
-- [Azure Functions](#Azure-Functions)
-- [Azure Web Apps](#Azure-Web-Apps)
-- [Miscellaneous](#Miscellaneous)
+- [Azure Functions](Azure.md#Azure-Functions)
+- [Azure Web Apps](Azure.md#Azure-Web-Apps)
+- [Miscellaneous](Azure.md#Miscellaneous)
 
 ---
 

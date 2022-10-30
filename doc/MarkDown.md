@@ -73,6 +73,9 @@ Create a link to it this way:
 
    `[Link](#11-hello-world)`
 
+IntelliJ seems to not implementing the internal links the same way, as a work-around,
+you can use the page's link and `#` with the local link instead of the local link on its own.
+
 ---
 
 ## Video links

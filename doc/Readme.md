@@ -2,43 +2,43 @@
 
 **Table of Content**
 
-- [Programming languages, scripts, etc.](#Programming-languages,-scripts,-etc.)
-- [Virtualization, clustering, provisioning, and monitoring](#Virtualization,-clustering,-provisioning,-and-monitoring)
-- [Frameworks Libraries, Static code analysis, architecture approaches, etc.](#Frameworks Libraries,-Static-code-analysis,-architecture-approaches,-etc.)
-- [Data formats, APIs, Protocols](#Data-formats,-APIs,-Protocols)
-- [Databases](#Databases)
-- [Version control systems, configuration, build tools](#Version-control-systems,-configuration,-build-tools) 
-- [Operating systems](#Operating-systems)
-- [Web Frameworks, servers, etc](#Web-Frameworks,-servers,-etc)
-- [Misc Utilities and Commands](#Misc-Utilities-and-Commands)
-- [Quantum Computing, etc.](#Quantum-Computing,-etc.)
-- [Social media frameworks](#Social-media-frameworks)
-- [Micorcontrollers, Embedded programming, hardware](#Micorcontrollers,-Embedded-programming,-hardware)
-- [RTOS](#RTOS)
-- [IDEs, editors, and related](#IDEs,-editors,-and-related)
-- [Networking](#Networking)
-- [Testing Frameworks](#Testing-Frameworks)
-- [Message brokers and distributed environment coordinators.](#Message-brokers-and-distributed-environment-coordinators.) 
-- [Conferencing systems and protocols](#Conferencing-systems-and-protocols)
-- [Data mining, Machine Learning, Artificial Intelligence, etc.](#Data-mining,-Machine-Learning,-Artificial-Intelligence,-etc.)
-- [Algorithms and Data Structures](#Algorithms-and-Data-Structures)
-- [GUI Frameworks](#GUI-Frameworks)
-- [Computer Graphics, Computer Vision, Visualization, Image Processing, etc](#Computer-Graphics,-Computer-Vision,-Visualization,-Image-Processing,-etc)
-- [Moviemaking](#Moviemaking)
-- [Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.](#Continuous-Delivery,-Continuous-Integration,-Automatic-Deployment,-DevOps,-etc.)
-- [Process management and misc software lifecycle issues](#Process-management-and-misc-software-lifecycle-issues)
-- [Cryptography, Network Security, etc.](#Cryptography,-Network-Security,-etc.)
-- [Blockchain, Cryptocurreicies, NFTs](#Blockchain,-Cryptocurreicies,-NFTs)
-- [BI, Business Intelligence ](#BI,-Business-Intelligence) 
-- [Photography, Video, and optics in general](#Photography,-Video,-and-optics-in-general)
-- [Biology, Medicine, Gerontology, etc.](#Biology,-Medicine,-Gerontology,-etc.)
-- [Career etc.](#Career-etc.)
-- [GPS, Meteorology, Alternative energy, and related](#GPS,-Meteorology,-Alternative-energy,-and-related)
-- [Misc business and finances](#Misc-business-and-finances)
-- [Manufacturing, IoT, etc.](#Manufacturing,-IoT,-etc.)
-- [Motivation and Psychology](#motivation-and-psychology)
-- [Languages](#Languages)
-- [Fun and useful.](#Fun-and-useful.)
+- [Programming languages, scripts, etc.](Readme.md#Programming-languages,-scripts,-etc.)
+- [Virtualization, clustering, provisioning, and monitoring](Readme.md#Virtualization,-clustering,-provisioning,-and-monitoring)
+- [Frameworks Libraries, Static code analysis, architecture approaches, etc.](Readme.md#Frameworks Libraries,-Static-code-analysis,-architecture-approaches,-etc.)
+- [Data formats, APIs, Protocols](Readme.md#Data-formats,-APIs,-Protocols)
+- [Databases](Readme.md#Databases)
+- [Version control systems, configuration, build tools](Readme.md#Version-control-systems,-configuration,-build-tools) 
+- [Operating systems](Readme.md#Operating-systems)
+- [Web Frameworks, servers, etc](Readme.md#Web-Frameworks,-servers,-etc)
+- [Misc Utilities and Commands](Readme.md#Misc-Utilities-and-Commands)
+- [Quantum Computing, etc.](Readme.md#Quantum-Computing,-etc.)
+- [Social media frameworks](Readme.md#Social-media-frameworks)
+- [Micorcontrollers, Embedded programming, hardware](Readme.md#Micorcontrollers,-Embedded-programming,-hardware)
+- [RTOS](Readme.md#RTOS)
+- [IDEs, editors, and related](Readme.md#IDEs,-editors,-and-related)
+- [Networking](Readme.md#Networking)
+- [Testing Frameworks](Readme.md#Testing-Frameworks)
+- [Message brokers and distributed environment coordinators.](Readme.md#Message-brokers-and-distributed-environment-coordinators.) 
+- [Conferencing systems and protocols](Readme.md#Conferencing-systems-and-protocols)
+- [Data mining, Machine Learning, Artificial Intelligence, etc.](Readme.md#Data-mining,-Machine-Learning,-Artificial-Intelligence,-etc.)
+- [Algorithms and Data Structures](Readme.md#Algorithms-and-Data-Structures)
+- [GUI Frameworks](Readme.md#GUI-Frameworks)
+- [Computer Graphics, Computer Vision, Visualization, Image Processing, etc](Readme.md#Computer-Graphics,-Computer-Vision,-Visualization,-Image-Processing,-etc)
+- [Movie making](Readme.md#Movie-making)
+- [Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.](Readme.md#Continuous-Delivery,-Continuous-Integration,-Automatic-Deployment,-DevOps,-etc.)
+- [Process management and misc software lifecycle issues](Readme.md#Process-management-and-misc-software-lifecycle-issues)
+- [Cryptography, Network Security, etc.](Readme.md#Cryptography,-Network-Security,-etc.)
+- [Blockchain, Cryptocurreicies, NFTs](Readme.md#Blockchain,-Cryptocurreicies,-NFTs)
+- [BI, Business Intelligence ](Readme.md#BI,-Business-Intelligence) 
+- [Photography, Video, and optics in general](Readme.md#Photography,-Video,-and-optics-in-general)
+- [Biology, Medicine, Gerontology, etc.](Readme.md#Biology,-Medicine,-Gerontology,-etc.)
+- [Career etc.](Readme.md#Career-etc.)
+- [GPS, Meteorology, Alternative energy, and related](Readme.md#GPS,-Meteorology,-Alternative-energy,-and-related)
+- [Misc business and finances](Readme.md#Misc-business-and-finances)
+- [Manufacturing, IoT, etc.](Readme.md#Manufacturing,-IoT,-etc.)
+- [Motivation and Psychology](Readme.md#motivation-and-psychology)
+- [Languages](Readme.md#Languages)
+- [Fun and useful.](Readme.md#Fun-and-useful.)
 
 ---
 
@@ -132,7 +132,7 @@ A more conceptual links, still related to Programming Languages and Math
  - [Confluent](Confluent.md)
  - [CQRS](CQRS.md) Command Query Responsibility Segregation
  - [Domain Driven Design(DDD)](DDD.md)
- - GraphQL https://dev.to/hexrcs/graphql-crash-course-in-10-pics-3b04
+ - [GraphQL](GraphQL.md)
  - [Lagom](Lagom.md)
  - [M4](M4.md)
  - [MapReduce](MapReduce.md)
@@ -146,6 +146,7 @@ A more conceptual links, still related to Programming Languages and Math
  - [Streamlit](Streamlit.md) web-app ui, Python, etc. 
  - ReactiveX http://reactivex.io/intro.html
  - [Qt](Qt.md)
+ - [SystemDesign](SystemDesign.md)
  - [Syslog](Syslog.md)
  - [xmlto](Xmlto.md)
  - [Zlib](ZLib.md)
@@ -280,7 +281,7 @@ Topics sometimes associated with Operating Systems.
  Feathers.js seems to be a nice one. Self-hosted, free, very capable. Email/password OAuth authentication
  https://feathersjs.com/comparison
  Firebase (closed-source, paid hosted service, paid shared dev environment)
- Meteor (some venture-backed stuff, its own eco-system)
+ Meteor (some venture-backed stuff, its own ecosystem)
  Sails
 
 ### Misc Utilities and Commands
@@ -364,7 +365,7 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - The crc wikipedia link has simple implementations of crc stuff (with or without tables)
   https://en.wikipedia.org/wiki/Cyclic_redundancy_check
 
-Protocols for IoT, etc:
+Protocols for IoT, etc.:
 - Modbus
 - BACnet (http://www.bacnet.org/)
   To paraphrase Sir Winston Churchill, "BACnet is undoubtedly the worst protocol on the face of the earth - except for all the others!"
@@ -509,7 +510,7 @@ Aggregated List of C++ networking libraries
 - AppDynamics https://www.appdynamics.com/
 - [Alexa](Alexa.md)
 - Caffe and Caffe2
-- Chat bots
+- Chatbots
 - [ComputerVision](ComputerVision.md)
 - [GAN](GAN.md), (Generative Adversarial networks)
 - [Keras](Keras.md),
@@ -619,7 +620,7 @@ https://onezero.medium.com/exclusive-live-facial-recognition-is-coming-to-u-s-po
 - [Graphics](Graphics.md) all sort of miscellaneous snippets.
 - [OBS](OBS.md) Open Broadcaster Software
 
-### Moviemaking
+### Movie making
 
 How to write a scene in your screenplay
 https://nofilmschool.com/how-to-write-a-scene

@@ -37,12 +37,12 @@ See Also:
 
 **Table of contents**
 
-- [Gaming platforms](#Gaming-platforms)
-- [Miscellaneous](#Miscellaneous)
+- [Gaming platforms](Graphics.md#Gaming-platforms)
+- [Miscellaneous](Graphics.md#Miscellaneous)
 
 ---
 
-## Gaming-platforms
+## Gaming platforms
 
 ---
 
@@ -58,6 +58,12 @@ https://en.wikipedia.org/wiki/Game_creation_system
 ---
 
 ## Miscellaneous
+
+---
+
+ASCII art, etc.
+
+https://onlineasciitools.com/convert-text-to-ascii-art
 
 ---
 

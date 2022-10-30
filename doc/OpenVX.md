@@ -1,7 +1,3 @@
-
-
-## UNDER CONSTRUCTION
-
 # OpenVX
 
 See also:

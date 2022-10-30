@@ -16,10 +16,10 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 **Content**
 
-  - [Samples](#Samples)
-  - [Fundamentals](#Fundamentals)
-  - [Libraries(.so, .dll, .lib, etc.)](#libraries)
-  - [Miscellaneous](#Miscellaneous)
+  - [Samples](CPP.md#Samples)
+  - [Fundamentals](CPP.md#Fundamentals)
+  - [Libraries(.so, .dll, .lib, etc.)](CPP.md#libraries)
+  - [Miscellaneous](CPP.md#Miscellaneous)
 
 ---
 

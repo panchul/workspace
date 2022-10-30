@@ -1,7 +1,3 @@
-
-
-## UNDER CONSTRUCTION
-
 # Sysdig
 
 https://sysdig.com/

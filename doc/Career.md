@@ -13,6 +13,36 @@ TODO: Add list interests, etc.
 
 ---
 
+From the CIA’s declassified sabatour guidance, to disrupt an advisory from within is to:
+
+- Insist on doing everything through “channels.” Never permit short-cuts to be taken in order to expedite decisions.
+
+- When possible, refer all matters to committees, for “further study and consideration.” Attempt to make the committee as large as possible — never less than five.
+
+- Bring up irrelevant issues as frequently as possible.
+
+- Haggle over precise wordings of communications, minutes, resolutions.
+
+- Advocate “caution.” Be “reasonable” and urge your fellow-conferees to be “reasonable” and avoid haste which might result in embarrassments or difficulties later on.
+
+- Insist on perfect work in relatively unimportant products; send back for refinishing those which have the least flaw.
+
+- To lower morale and with it, production, be pleasant to inefficient workers; give them undeserved promotions.
+
+- Hold conferences when there is more critical work to be done.
+
+- See that three people have to approve everything where one would do.
+
+- Never pass on your skill and experience to a new or less skillful worker.
+
+- See that important jobs are assigned to inefficient workers.
+
+- Contrive as many interruptions to your work as you can.
+
+- Work slowly
+
+---
+
 Another post about competitive interviewing. "Interviewing is a sport! Lesson 1: Mental Power"
 https://www.linkedin.com/pulse/interviewing-sport-lesson-1-mental-power-eli-fox/
 

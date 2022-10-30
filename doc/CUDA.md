@@ -12,14 +12,14 @@ See also:
 
 **Table of contents**
 
- - [Hardware](#Hardware)
- - [Installation](#Installation)
-   - [Installing with Kubernetes](#Installing-with-Kubernetes)
-   - [Installing on Ubuntu](#Installing-on-Ubuntu)
-   - [Installing on CentOS7](#Installing-on-CentOS7)
-   - [Installing on Fedora 29](#Installing-on-Fedora-29)
- - [C/C++ programming](#C/C++-programming)
- - [Miscellaneous](#Miscellaneous)
+ - [Hardware](CUDA.md#Hardware)
+ - [Installation](CUDA.md#Installation)
+   - [Installing with Kubernetes](CUDA.md#Installing-with-Kubernetes)
+   - [Installing on Ubuntu](CUDA.md#Installing-on-Ubuntu)
+   - [Installing on CentOS7](CUDA.md#Installing-on-CentOS7)
+   - [Installing on Fedora 29](CUDA.md#Installing-on-Fedora-29)
+ - [C/C++ programming](CUDA.md#C/C++-programming)
+ - [Miscellaneous](CUDA.md#Miscellaneous)
 
 ## Hardware  
 

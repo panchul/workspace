@@ -1,5 +1,19 @@
 # YAML
 
+https://yaml.org/
+
+See Also:
+
+- [APIs](APIs.md)
+- [XML](XML.md)
+- [JSON](JSON.md)
+
+---
+
+C# YAML library: https://github.com/aaubry/YamlDotNet
+
+---
+
 [http://symfony.com/doc/current/components/yaml/yaml_format.html](http://symfony.com/doc/current/components/yaml/yaml_format.html) - Format
 
 ---

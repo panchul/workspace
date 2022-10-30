@@ -16,7 +16,7 @@ See Also:
 
 Table of Contents
 
-  - [Types of attack](#Types-of-attack)
+  - [Types of attack](Cryptography.md#Types-of-attack)
 
 # Types of attack
 

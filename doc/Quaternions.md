@@ -1,4 +1,3 @@
-
 # Quaternions
 
 

@@ -1,7 +1,3 @@
-
-
-## UNDER CONSTRUCTION
-
 # REX-Ray
 
 https://rexray.thecodeteam.com/

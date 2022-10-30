@@ -16,13 +16,13 @@ See Also:
 
 **Table of contents**
 
- - [Kubernifying applications](#Kubernifying-applications)
- - [Idioms and tricks](#Idioms-and-tricks)
- - [Installation](#Installation)
- - [Kubernetes Dashboard](#Kubernetes-Dashboard)
- - [Kubernetes storage](#Kubernetes-storage)
- - [Azure Functions on Kubernetes](#Azure-Functions-on-Kubernetes)
- - [Miscellaneous](#Miscellaneous)
+ - [Kubernifying applications](Kubernetes.md#Kubernifying-applications)
+ - [Idioms and tricks](Kubernetes.md#Idioms-and-tricks)
+ - [Installation](Kubernetes.md#Installation)
+ - [Kubernetes Dashboard](Kubernetes.md#Kubernetes-Dashboard)
+ - [Kubernetes storage](Kubernetes.md#Kubernetes-storage)
+ - [Azure Functions on Kubernetes](Kubernetes.md#Azure-Functions-on-Kubernetes)
+ - [Miscellaneous](Kubernetes.md#Miscellaneous)
 
 ## Kubernifying applications
 

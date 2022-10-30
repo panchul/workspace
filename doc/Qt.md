@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Qt
 
 http://qt-project.org
