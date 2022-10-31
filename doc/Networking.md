@@ -26,7 +26,10 @@ http://www.martinbroadhurst.com/tag/servers
 Neat collection of the most important networking tools/commands
 https://www.tecmint.com/linux-networking-commands/
 
+---
 
+How to find my own public ip via cli
+https://www.cyberciti.biz/faq/how-to-find-my-public-ip-address-from-command-line-on-a-linux/
 
 ---
 

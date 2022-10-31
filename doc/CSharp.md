@@ -3,6 +3,7 @@
 See Also:
 
 - [AlgorithmsDataStructures](AlgorithmsDataStructures.md)
+- [Entity Framework](EntityFramework.md)
 - [Futures](Futures.md)
 - [Multithreading](Multithreading.md)
 - [RAII](RAII.md)
@@ -16,13 +17,13 @@ My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panch
 
 **Content**
 
- - [Dotnet CLI](#Dotnet-CLI)
- - [Samples](#Samples)
- - [Fundamentals](#Fundamentals)
- - [Libraries and Interop](#libraries-and-interop)
- - [GUI Samples](#gui-samples)
- - [Windows Messaging](#windows-messaging)
- - [Miscellaneous](#Miscellaneous)
+ - [Dotnet CLI](CSharp.md#Dotnet-CLI)
+ - [Samples](CSharp.md#Samples)
+ - [Fundamentals](CSharp.md#Fundamentals)
+ - [Libraries and Interop](CSharp.md#libraries-and-interop)
+ - [GUI Samples](CSharp.md#gui-samples)
+ - [Windows Messaging](CSharp.md#windows-messaging)
+ - [Miscellaneous](CSharp.md#Miscellaneous)
 
 ---
 
@@ -90,7 +91,14 @@ https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listview.items?
 ---
 
 EventHandler Delegate
+
 https://docs.microsoft.com/en-us/dotnet/api/system.eventhandler?view=net-6.0
+
+---
+
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
+
+https://www.reddit.com/r/csharp/comments/w5idwh/i_hate_var_whats_their_big_benefit/
 
 ---
 
@@ -216,6 +224,14 @@ and some adoption of it:
 
 ---
 
+WebRequest is obsolete and should not be used. HttpClient and HttpClientFactory is the proper way for http communication in .NET.
+
+    https://learn.microsoft.com/en-us/dotnet/core/compatibility/networking/6.0/webrequest-deprecated
+
+    https://dev.azure.com/alpineitw/intelliVIEW-Web/_git/Sandbox?path=/httpclient-aspnetcore
+
+---
+
 SMTP Client, email, etc.
 
 - https://stackoverflow.com/questions/18326738/how-to-send-email-in-asp-net-c-sharp
@@ -314,5 +330,9 @@ To execute a command from within .cs file:
     process.Start();
   
     process.WaitForExit(); // if we want to wait for it to finish
+
+---
+
+For JSON serialization, Newtonsoft.Json is no longer needed with .NET Core/5/6/7. Built-in System.Text.Json namespace is the way to go. 
 
 ---

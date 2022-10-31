@@ -7,11 +7,16 @@ See Also:
   - [Kubernetes](Kubernetes.md)
   - [KEDA](KEDA.md)
   - [Kubeflow](Kubeflow.md)
+  - [OAuth](OAuth.md)
 
 **Content**
 
 - [Azure Functions](Azure.md#Azure-Functions)
 - [Azure Web Apps](Azure.md#Azure-Web-Apps)
+- [App Services](Azure.md#App-Services)
+- [Azure CLI](Azure.md#Azure-CLI)
+- [Azure Service Bus](Azure.md#Azure-Service-Bus)
+- [B2C](Azure.md#B2C)
 - [Miscellaneous](Azure.md#Miscellaneous)
 
 ---
@@ -46,12 +51,106 @@ https://docs.microsoft.com/en-us/learn/modules/publish-app-service-static-web-ap
 
 ---
 
+- https://github.com/dotnet-architecture/eShopOnContainers
+
+- https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/deploy
+
+---
+
 # Azure Storage
 
 ---
 
 Free Microsoft storage explorer (for blobs, queues, etc.)
 https://azure.microsoft.com/en-us/features/storage-explorer/
+
+---
+
+# App Services
+
+---
+
+Step by step tutorial for App Services
+
+https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask
+
+Probably the same thing, Azure App Service
+
+https://docs.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=bash&pivots=python-framework-flask
+
+---
+
+# Azure CLI
+
+---
+
+https://docs.microsoft.com/en-us/cli/azure/
+ 
+---
+
+- Azure CLI download: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+
+---
+
+- Getting Started with Azure CLI: https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli
+
+---
+
+Azure CLI
+
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+
+https://github.com/Azure/azure-cli
+
+Installing on Mac:
+
+    $ brew update && brew install azure-cli
+
+Then you can login to your account:
+
+    $ az login    
+
+Azure Cloud Shell is even simplier:
+https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart?view=azure-cli-latest
+
+
+---
+
+# Azure Service Bus
+
+---
+
+- .Net Azure Service Bus https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues
+
+---
+
+# B2C
+
+---
+
+A Console application for Azure AD B2C User Management the Azure AD Graph
+
+B2C console application (might be older, seems like 5 year old commits)
+
+https://github.com/AzureADQuickStarts/B2C-GraphAPI-DotNet
+
+---
+
+B2C clients
+
+https://github.com/Azure-Samples/active-directory-b2c-dotnet-desktop
+
+---
+
+Adding to b2c via Microsoft Graph POST (probably not the best way to use Graph - there are better client libs)
+
+https://stackoverflow.com/questions/39439830/create-a-new-user-in-azure-active-directory-b2c-with-graph-api-using-http-pos
+
+---
+
+IdentytyServer4 – open-source, can host myself.
+
+https://identityserver4.readthedocs.io/
 
 ---
 
@@ -74,12 +173,6 @@ https://aka.ms/webappebook
 
 Modernize existing .NET applications with Azure cloud and Windows Containers
 https://docs.microsoft.com/en-us/dotnet/architecture/modernize-with-azure-containers/
-
----
-
-Azure App Service
-
-https://docs.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=bash&pivots=python-framework-flask
 
 ---
 
@@ -119,24 +212,6 @@ The certification examps, with some free tutorials:
 https://docs.microsoft.com/en-us/learn/certifications/exams/az-300
 https://docs.microsoft.com/en-us/learn/certifications/exams/70-537
 https://docs.microsoft.com/en-us/learn/certifications/exams/az-301
-
----
-
-Azure CLI
-https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
-
-https://github.com/Azure/azure-cli
-    
-Installing on Mac:
-
-    $ brew update && brew install azure-cli
-    
-Then you can login to your account:
-
-    $ az login    
-    
-Azure Cloud Shell is even simplier:
-https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart?view=azure-cli-latest
 
 ---
 

@@ -1,6 +1,3 @@
-
-## UNDER CONSTRUCTION
-
 # Subversion (SVN)
 
 See Also:

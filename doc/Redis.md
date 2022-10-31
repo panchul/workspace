@@ -6,6 +6,12 @@ https://github.com/antirez/redis
 
 ---
 
+Redis studio, UI for Redis
+
+https://github.com/cinience/RedisStudio/releases
+
+---
+
 A Redis library:
 
 https://stackexchange.github.io/StackExchange.Redis/
