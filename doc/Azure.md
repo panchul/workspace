@@ -124,7 +124,29 @@ https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart?view=azure-cli-lat
 
 ---
 
+ServiceBusAdministration client
+https://docs.microsoft.com/en-us/dotnet/api/azure.messaging.servicebus.administration.servicebusadministrationclient?view=azure-dotnet
+
+---
+
+Azure Service Bus repos
+
+https://github.com/Azure/azure-sdk-for-net
+
+This repository is for active development of the Azure SDK for .NET.
+For consumers of the SDK we recommend visiting our public developer docs at
+https://docs.microsoft.com/dotnet/azure/ or our versioned developer docs at 
+https://azure.github.io/azure-sdk-for-net
+
+---
+
 # B2C
+
+---
+
+Multi-part B2C tutorial, ASP .net Core web app with OpenID Connect
+
+https://github.com/Azure-Samples/active-directory-aspnetcore-webapp-openidconnect-v2/tree/master/1-WebApp-OIDC/1-5-B2C
 
 ---
 
@@ -151,6 +173,40 @@ https://stackoverflow.com/questions/39439830/create-a-new-user-in-azure-active-d
 IdentytyServer4 – open-source, can host myself.
 
 https://identityserver4.readthedocs.io/
+
+---
+
+MSAL.js and token types
+
+(single-page app to api)
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios#scenarios-and-supported-authentication-flows
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-overview
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-js-pass-custom-state-authentication-request
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/identity-platform-integration-checklist
+
+
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens
+
+https://docs.microsoft.com/en-us/graph/auth-v2-service?view=graph-rest-1.0#4-get-an-access-token
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-js-pass-custom-state-authentication-request
+
+---
+
+Video about managed identities, has links to docs and his Github repo:
+
+https://www.youtube.com/watch?v=sA_mXKy_dKU
 
 ---
 

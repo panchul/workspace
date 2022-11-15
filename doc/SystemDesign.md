@@ -23,3 +23,9 @@ Open/close principle
 Open interface principle
 
 ---
+
+Design pattern links
+
+https://docs.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer
+
+---

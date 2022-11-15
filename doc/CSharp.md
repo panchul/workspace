@@ -23,6 +23,7 @@ My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panch
  - [Libraries and Interop](CSharp.md#libraries-and-interop)
  - [GUI Samples](CSharp.md#gui-samples)
  - [Windows Messaging](CSharp.md#windows-messaging)
+ - [Logging](CSharp.md#logging)
  - [Miscellaneous](CSharp.md#Miscellaneous)
 
 ---
@@ -103,6 +104,11 @@ https://www.reddit.com/r/csharp/comments/w5idwh/i_hate_var_whats_their_big_benef
 ---
 
 ## Libraries and Interop
+
+---
+
+Json library
+https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to?pivots=dotnet-6-0
 
 ---
 
@@ -190,6 +196,13 @@ https://limbioliong.wordpress.com/2012/03/01/marshaling-a-safearray-of-managed-s
 
 ---
 
+Creating an HTML UI for Desktop .NET Applications
+https://www.infoq.com/articles/html-desktop-net/
+
+Uses DotNetBrowser, https://www.teamdev.com/dotnetbrowser
+
+---
+
 DataGridView Link
 https://www.youtube.com/watch?v=GyLlpBZGsrE
 
@@ -207,6 +220,16 @@ https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listview.items?
 Windows Messaging example
 https://docs.microsoft.com/en-us/windows/win32/inputdev/using-keyboard-input
 https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendmessage?redirectedfrom=MSDN
+
+---
+
+## Logging
+
+---
+
+Creating your own logging provider to log to text files in net core
+
+https://www.roundthecode.com/dotnet/create-your-own-logging-provider-to-log-to-text-files-in-net-core
 
 ---
 

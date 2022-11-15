@@ -334,6 +334,7 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - [Arduino](Arduino.md)
 - [BIOS](BIOS.md)  
 - [CNC Machines](CNC.md)
+- https://www.automationdirect.com - a neat link with useful automation hardware.
 - Solar, etc. www.DIYSolar.com 
 - [EmbeddedProgramming](EmbeddedProgramming.md)
 - [FPGA](FPGA.md)
@@ -349,6 +350,7 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - SCADA (Supervisory Control and Data Acquisition) 
 - SystemC
 - TLM2
+- https://vitrek.com/ - misc hardware and electronics
 
 - Summary of safety-critical systems: https://dev.to/bosepchuk/safety-critical-software-15-things-every-developer-should-know-1kdh
 
@@ -804,10 +806,11 @@ Another nice resource:
 - https://www.physikinstrumente.com/en/
 - https://www.thorlabs.com/navigation.cfm?guide_id=2251
 - https://www.tinkercad.com - open-source 3d printing models, like GitHub for misc design(electronic, 3d printing, etc.) 
-- A guide for slecting a camera for computer vision projects
+- A guide for selecting a camera for computer vision projects
   http://guide.directindustry.com/choosing-the-right-machine-vision-camera/
 
 - [Metalworks](Metalworks.md) (melting metals, etc.)
+- https://www.zoro.com - metal wire, etc.
 
 ## Motivation and Psychology
 

@@ -42,4 +42,9 @@ Idiomatic installation sequence. (download, install, update, install more)
 Installing email server on Ubuntu.
 https://www.tecmint.com/setup-postfix-mail-server-in-ubuntu-debian/
 
---
+---
+
+Dotnet on Ubuntu 20
+https://tecadmin.net/how-to-install-net-core-on-ubuntu-20-04/
+
+---

@@ -28,3 +28,20 @@ Installing Developer version:
 https://www.guru99.com/download-install-sql-server.html
 
 ---
+
+Link to restoring sql database:
+
+https://docs.microsoft.com/en-us/sql/samples/wide-world-importers-oltp-install-configure?view=sql-server-ver15
+
+https://github.com/Microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0
+
+To restore a backup to a SQL Server instance, you can use Management Studio.
+
+ 1. Open SQL Server Management Studio and connect to the target SQL Server instance.
+ 2. Right-click on the Databases node, and select Restore Database.
+ 3. Select Device and click on the button ...
+ 4. In the dialog Select backup devices, click Add, navigate to the database backup in the filesystem of the server, and select the backup. Click OK.
+ 5. If needed, change the target location for the data and log files, in the Files pane. Note that it is best practice to place data and log files on different drives.
+ 6. Click OK. This will initiate the database restore. After it completes, you will have the database WideWorldImporters installed on your SQL Server instance.
+ 
+---
