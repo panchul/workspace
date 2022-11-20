@@ -15,7 +15,7 @@ https://www.tiktok.com/@cryptoralfy/video/7165385476650781998
 
 ---
 
-Criptocurrency overview.
+Cryptocurrency overview.
 https://www.youtube.com/watch?v=bBC-nXj3Ng4
 
 Nice visual on how complex 256-bit encryption is
