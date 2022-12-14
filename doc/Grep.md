@@ -3,7 +3,11 @@
 See Also:
 
  - [Linux](Linux.md)
- 
+
+---
+
+Apparently, Windows has an analog to grep, `findstr`, you can pipe to it too.
+
 ---
 
 Neat summaries of bracket expressions

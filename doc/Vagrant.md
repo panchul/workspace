@@ -16,12 +16,26 @@ https://circleci.com/blog/its-the-future/ - An article about Docker and Vagrant
 
 ---
 
+Keep an eye on how ~/.vagrant.d folder grows(it may take countless gigabytes)
+
+    $ du -mhs ~/.vagrant.d
+
+To delete unused boxes:
+
+    $ vagrant box prune
+
+To see the existing boxes:
+
+    $ vagrant box list
+
+---
+
 Keeping things up-to-date
 
-Run ```vagrant box update``` to keep the boxes up to date and not
+Run `vagrant box update` to keep the boxes up to date and not
 need to update from within the VMs.
 
-As far as the ```aptitude```-based Linux flavours, run this to update it:
+As far as the `aptitude`-based Linux flavours, run this to update it:
 
       config.vm.provision "shell", inline: <<-SHELL
         sudo apt-get -y update
@@ -58,9 +72,9 @@ Example provisioning section with shell provisioning:
     5        sudo apt-get install -y apache2
     6      SHELL
 
-Line 2 installs the file converter to remove the ```\r``` that Windows may have added.
+Line 2 installs the file converter to remove the `\r` that Windows may have added.
 
-Line 5 uses ```-y``` to make sure the installer does not wait for the user entry.
+Line 5 uses `-y` to make sure the installer does not wait for the user entry.
 
 ---
 
@@ -172,7 +186,7 @@ Actually this worked better, you can get it running the provitioner with '-vvvv'
     ansible-playbook --connection=ssh --timeout=30 --limit="myboxname" \
     --inventory-file=/whereverVagrantfilePathIs/.vagrant/provisioners/ansible/inventory -v mytest.yml
     
-```mytest.yml``` is this:
+`mytest.yml` is this:
 
     ---
     - hosts:  cpp1
@@ -218,7 +232,7 @@ The inventory file has the ```myboxname```:
 
 ---
 
-Nice discussion about known issue of ```stdin: is not a tty```
+Nice discussion about known issue of `stdin: is not a tty`
 https://github.com/hashicorp/vagrant/issues/1673
 
 ---

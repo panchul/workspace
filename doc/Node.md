@@ -109,7 +109,7 @@ The NASA repo they are using: https://github.com/yue-su/get-nasa-photo
 
 ---
 
-Quck into, basics of Socket.io
+Quick into, basics of Socket.io
 https://dev.to/uf4no/understanding-the-basics-of-socket-io-3a0e
 
 ---

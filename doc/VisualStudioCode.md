@@ -100,3 +100,13 @@ Quick 101 on VS (not Code) debugging tricks for multithreading.
 https://www.youtube.com/watch?v=ISDaHM1cHXk
 
 ---
+
+About std input debugging, etc.
+
+https://stackoverflow.com/questions/64786161/use-input-stdin-in-debug-console-vscode
+
+Another, official documentation for different platforms(has samples of launch.json, tasks.json, etc.):
+
+https://code.visualstudio.com/docs/cpp/config-mingw#_debug-helloworldcpp
+
+---

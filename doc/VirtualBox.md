@@ -25,6 +25,14 @@ https://www.cyberciti.biz/faq/how-to-install-virtualbox-on-ubuntu-20-04-linux-lt
 
 ---
 
+Issues with the kernel drivers:
+
+https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/
+
+(let the Oracle do stuff in the privacy tab in system settings)
+
+---
+
 ## Shared Folders
 
 ---

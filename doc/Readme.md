@@ -406,7 +406,7 @@ https://www.tartssensors.com/libraries/arduino/
 - [IntelliJ](IntelliJ.md)  
 - LiteIDE
 - nbdev https://www.fast.ai/2019/12/02/nbdev/
-- PyCharm (For Python, from Jetbrains)
+- [PyCharm](PyCharm.md) (For Python, from Jetbrains)
 - Spyder (for Python)
 - Sublime http://www.sublimetext.com/
 - [vi/vim](Vim.md)

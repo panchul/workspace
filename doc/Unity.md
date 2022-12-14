@@ -4,6 +4,49 @@ https://unity3d.com/
 
 ---
 
+**Content**
+
+- [Audio on Unity](Unity.md#Audio-on-Unity)
+- [Miscellaneous](Unity.md#Miscellaneous)
+
+---
+
+## Audio on Unity
+
+---
+
+https://johnleonardfrench.com/articles/10-unity-audio-tips-that-you-wont-find-in-the-tutorials/
+
+https://github.com/deadlyfingers/UnityWav/blob/master/WavUtility.cs
+
+https://answers.unity.com/questions/354401/save-audio-to-a-file.html
+
+https://johnleonardfrench.com/articles/ultimate-guide-to-playscheduled-in-unity/
+
+---
+
+## Miscellaneous 
+
+---
+
+Neat Unity snippets. Several ways of loading an image at runtime
+
+http://gyanendushekhar.com/2017/07/08/load-image-runtime-unity/
+
+---
+
+A simple implementation of drawing a graph. 
+https://www.youtube.com/watch?v=CmU5-v-v1Qo
+
+--- 
+
+Unity handtracking.
+https://skarredghost.com/2020/01/03/how-to-oculus-quest-hands-sdk-unity/
+
+--- 
+
+---
+
 Unity ML-Agents Release 10, Beginner Walkthrough
 https://www.youtube.com/watch?v=6lilCUCX4ik
 
@@ -53,7 +96,7 @@ https://forum.unity.com/threads/flipping-texture2d-image-within-unity.35974/ - b
 - https://www.youtube.com/watch?v=zCkC5e_Pkz4 – shaders
 - https://www.youtube.com/watch?v=A-GkNM8M5p8 – large tutorial on Unity
 - The shader script assets for the Unity samples: http://bit.ly/firstshader
-            
+
 ---
 
 Neat tutorial about making a Flappy Bird in 3 hours.
@@ -67,7 +110,7 @@ http://www.defectivestudios.com and the github.com for jsonobject project
 
 ---
 
-Unity Singleton 
+Unity Singleton
 
 https://wiki.unity3d.com/index.php/Singleton - UnitySingleton implementation
 
@@ -78,31 +121,3 @@ FileBrowser a la system
 Crosstales.FB.FileBrowser nice FileBrowser plugin for Unity
 
 ---
-
-Audio on Unity
-
-https://johnleonardfrench.com/articles/10-unity-audio-tips-that-you-wont-find-in-the-tutorials/
-
-https://github.com/deadlyfingers/UnityWav/blob/master/WavUtility.cs
-
-https://answers.unity.com/questions/354401/save-audio-to-a-file.html
-
-https://johnleonardfrench.com/articles/ultimate-guide-to-playscheduled-in-unity/
-
----
-
-Neat Unity snippets. Several ways of loading an image at runtime
-
-http://gyanendushekhar.com/2017/07/08/load-image-runtime-unity/
-
----
-
-A simple implementation of drawing a graph. 
-https://www.youtube.com/watch?v=CmU5-v-v1Qo
-
---- 
-
-Unity handtracking.
-https://skarredghost.com/2020/01/03/how-to-oculus-quest-hands-sdk-unity/
-
---- 

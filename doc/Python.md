@@ -7,10 +7,106 @@ See also:
   - [Jupyter](Jupyter.md)
   - [Numpy](Numpy.md)
   - [PIL](PIL.md)
+  - [Pip](Pip.md)
+  - [PyCharm](PyCharm.md)
 
 https://www.python.org/
 
 My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/panchul/sb_python).
+
+---
+
+**Content**
+
+- [Installing](Python.md#Installing)
+- [IDEs Etc](Python.md#IDEs-Etc)
+- [Miscellaneous](Python.md#Miscellaneous)
+
+---
+
+## Installing
+
+---
+
+Good practice is to use virtual environments, e.g. venv
+
+    $ sudo apt install python3-venv
+
+Then you can use virtual environments for the Python projects:
+
+    $ python3 -m venv my_env
+
+Then you can activate it like so:
+
+    $ . my_env/bin/activate
+    (my_env) $
+
+It switched to this environment. Compare local and environment's versions:
+
+    $ pip -V
+    $ python -m pip list
+
+To deactivate, run the script `deactivate`
+
+    $ deactivate
+    $ python -V
+
+---
+
+[Pip](Pip.md) - package manager
+
+---
+
+Virtualenvwrapper - another tool for environment manipulation.
+
+You may need to define `VIRTUALENVWRAPPER_PYTHON`, `WORKON_HOME`, `PROJECT_HOME`, and
+run `source "/home/.../.local/bin/virtualenvwrapper.sh"`
+
+To list environments:
+
+    $ workon
+
+To switch to environment my_env(get the list of them using `python -m pip list`:
+
+    $workon my_env
+
+There are also commands `mkproject` to create, `setvirtualenvproject` to bind to a virtualenv.
+
+And there is a tmp virtual environment creation, `rmvirtualenv`, `mktmpenv`.
+
+---
+
+pipenv - another tool
+
+---
+
+poetry - another tool
+
+---
+
+conda - another tool
+
+---
+
+Package Tox allows testing for different versions of Python.
+
+TODO
+
+---
+
+## IDEs Etc
+
+---
+
+[PyCharm](PyCharm.md) from Jetbrains.
+ 
+---
+
+Visual Studio Code
+
+---
+
+## Miscellaneous
 
 ---
 
@@ -50,7 +146,7 @@ Drawing COVID19 shaped virus using Turtle Library
 Some .pdfs with Python books:
 https://github.com/siddiquiamir/Python-Books
 
-Loading a .csv from a web server(or github user content)
+Loading a .csv from a web server(or GitHub user content)
 
     import pandas as pd
     df = pd.read_csv("http://raw.githubusercontent.../my.csv")
@@ -60,7 +156,7 @@ And you can now use this data frame as you wish.
 
 ---
 
-Python app skeleton, with tests and Github Action pipeline
+Python app skeleton, with tests and GitHub Action pipeline
 https://github.com/panchul/Pytest-Actions-Demo
 
 https://vak.dreamwidth.org/657802.html
@@ -156,8 +252,8 @@ Added it to .zshrc
 
 From https://stackoverflow.com/questions/38109270/cv2-import-error-on-jupyter-notebook :
 
-By default: Anaconda (jupyter notebook) has its own version of Python & packages once it has been installed on your PC.
-If you have Python x.x installed on your PC, and you installed OpenCV or -whatever packages- using the package manager of this python version, it does NOT mean your jupyter notebook will get access to these python packages you installed earlier. They are not living in the same folder.
+By default, Anaconda (jupyter notebook) has its own version of Python & packages once it has been installed on your PC.
+If you have Python x.x installed on your PC, and you installed OpenCV or _whatever_packages_ using the package manager of this python version, it does NOT mean your jupyter notebook will get access to these python packages you installed earlier. They are not living in the same folder.
 To illustrate this, open your windows CMD and write :
 
     $ python 
@@ -227,13 +323,13 @@ However, while this is convenient, you have to manually handle the escaping of s
 as spaces, etc. On the other hand, this also lets you run commands which are simply shell commands
 and not actually external programs.
 
-2.```stream = os.popen("some_command with args")``` will do the same thing as os.system except that
+2.`stream = os.popen("some_command with args")` will do the same thing as os.system except that
   it gives you a file-like object that you can use to access standard input/output for that process.
   There are 3 other variants of popen that all handle the i/o slightly differently. If you pass everything
   as a string, then your command is passed to the shell; if you pass them as a list then you don't need
   to worry about escaping anything. See the documentation.
 
-3. The Popen class of the subprocess module. This is intended as a replacement for os.popen but has
+3.The Popen class of the subprocess module. This is intended as a replacement for os.popen but has
   the downside of being slightly more complicated by virtue of being so comprehensive. For example, you'd say:
 
 ```print subprocess.Popen("echo Hello World", shell=True, stdout=subprocess.PIPE).stdout.read()```
@@ -244,26 +340,26 @@ instead of:
 
 but it is nice to have all of the options there in one unified class instead of 4 different popen functions.
 
-4. The call function from the subprocess module. This is basically just like the Popen class and takes all of
+4.The call function from the subprocess module. This is basically just like the Popen class and takes all of
   the same arguments, but it simply waits until the command completes and gives you the return code. For example:
 
 ```return_code = subprocess.call("echo Hello World", shell=True)```  
 
-5. If you're on Python 3.5 or later, you can use the new subprocess.run function, which is a lot like the above
+5.If you're on Python 3.5 or later, you can use the new subprocess.run function, which is a lot like the above
   but even more flexible and returns a CompletedProcess object when the command finishes executing.
 
-6. The os module also has all of the fork/exec/spawn functions that you'd have in a C program, but I don't
+6.The os module also has all of the fork/exec/spawn functions that you'd have in a C program, but I don't
   recommend using them directly.
 
 The subprocess module should probably be what you use.
 
-Finally please be aware that for all methods where you pass the final command to be executed by the shell
-as a string and you are responsible for escaping it. There are serious security implications if any part of
+Finally, please be aware that for all methods where you pass the final command to be executed by the shell
+as a string, and you are responsible for escaping it. There are serious security implications if any part of
 the string that you pass can not be fully trusted. For example, if a user is entering some/any part of the
 string. If you are unsure, only use these methods with constants. To give you a hint of the implications
 consider this code:
 
-```print subprocess.Popen("echo %s " % user_input, stdout=PIPE).stdout.read()```
+`print subprocess.Popen("echo %s " % user_input, stdout=PIPE).stdout.read()`
 
 and imagine that the user enters "my mama didnt love me && rm -rf /".
 
@@ -410,7 +506,7 @@ Thus, when module one gets loaded, its __name__ equals "one" instead of "__main_
 
 ---
 
-Simple snippet to shutdown the computer:
+Simple snippet to shut down the computer:
 
     import os
     os.system("shutdown /s")
