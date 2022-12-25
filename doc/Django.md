@@ -2,6 +2,7 @@
 
 See Also:
 
+  - [Certbot](Certbot.md)
   - [Pip](Pip.md)
   - [PyCharm](PyCharm.md)
   - [Python](Python.md)
@@ -10,6 +11,15 @@ See Also:
 
 - [Installing](Django.md#Installing)
 - [Creating a project](Django.md#Creating-a-project)
+- [Migrations](Django.md#Migrations)
+- [Templates](Django.md#Templates)
+- [Static](Django.md#Static)
+- [Url patterns](Django.md#Url-patterns)
+- [Model Forms](Django.md#Model-forms)
+- [Deployment and maintenance](Django.md#Deployment-and-maintenance)
+- [Debugging](Django.md#Debugging)
+- [Caching](Django.md#Caching)
+- [Testing](Django.md#Testing)
 - [Miscellaneous](Django.md#Miscellaneous)
 
 ---
@@ -41,11 +51,205 @@ It runs a development server. It shows the url where it hosts it, http://127.0.0
 
     $ python manage.py startapp website
 
-
+There is an admin user you can create:
     
+    $ python manage.py createsuperuser
+
+It will ask for username and password.
+
+## Migrations
+
+You need to have your app in INSTALLED_APS.
+
+First step is to write the model code (or change). The model should inherit from models, and that
+model is also should be registered for admin interface, as `admin.site.register(Mymodelclassname)`.
+You can now open in browser the link /admin, and create or manipulate the objects of that model class.
 
 
+The second step is to generate a migration.
 
+    $ python manage.py makemigrations
+
+To see the migrations(the ones you generated, or from before):
+
+    $ python manage.py showmigrations
+
+Apply migrations
+
+    $ python manage.py migrate
+
+To look at the result of the applying migrations, you can use:
+
+    $ python manage.py dbshell
+
+In case of SQLite, you can type `.tables` to see the tables, etc.
+
+To see what the migration will do in sql(`0001` is a partial migration name, it will look it up):
+
+    $ python manage.py sqlmigrate myappname 0001
+
+---
+
+## Templates
+
+---
+
+Еhe templates should be in `templates` folder. The dictionary keys are in `{{}}`
+
+---
+
+The `for` loop looks something like this:
+
+    <ul>
+        {% for A in As %}
+          whatever, usually <li>
+            {{A}}   ----- the one that has __str__ implemented
+        {% endfor %}
+    </ul>
+
+Template inheritance is using:
+
+    {% extends "base.html" %}
+
+The blocks have names, you can overwrite the content of a block like so:
+
+    {% block block_name %}
+        here goes the stuff
+    {% endblock %}
+
+---
+
+## Static
+
+---
+
+By convention, `static` folder is for the static content, .css, pictures, etc.
+
+    {% load static %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet"
+            href="{% static 'website/style.css' %}">
+
+---
+
+## Url patterns
+
+---
+
+Example of the mapping:
+
+    urlpatterns = [
+        path('<int:id>', detail)
+    ]
+
+You can reference mapping from another location using `include`
+
+    urlpatterns = [
+        path('<int:id>', detail),
+        path('meetings/', include('meetings.urls')),
+    ]
+
+---
+
+## Model forms
+
+---
+
+`ModelForm` class does it.
+
+---
+
+## Deployment and maintenance
+
+---
+
+Running Django with the warnings about deprecation, use `-Wa` flag:
+
+    $ python -Wa manage.py runserver
+
+---
+
+## Debugging
+
+---
+
+Several things to do to get the Django-debug-toolbar.
+
+In the right venv, install the package:
+
+    $ pip install django-debug-toolbar
+
+Add the URL path:
+
+    urlpatterns = [
+        ...
+        path('__debug__/', include(debug_toolbar.urls)),
+    ]
+
+Add the debug toolbar to the INSTALLED_APS list:
+
+    INSTALLED_APPS = [
+        'django.contrib.staticfiles',
+        #...
+        'debug_toolbar',
+    ]
+
+Add MIDDLEWARE:
+
+    MIDDLEWARE = [
+        # ...
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
+    ]
+
+Add internal IPs:
+
+    INTERNAL_IPS = [
+        # ...
+        '127.0.0.1',
+    ]
+
+Add Django toolbar panels:
+
+    DEBUG_TOOLBAR_PANELS = [
+        # ...
+        'debug_toolbar.panels.sql.SQLPanel',
+        'debug_toolbar.panels.templates.TemplatesPanel',
+    ]
+
+---
+
+## Caching
+
+---
+
+Use decorators, and build-in cache.
+
+---
+
+## Testing
+
+---
+
+Built-in test discovery pick up any `test*.py`, but a better practice to create a sub-directory for tests,
+for example a module ModuleName and views/forms for that test:
+
+    ModuleName/tests/__init__.py
+    ModuleName/tests/test_views.py
+    ModuleName/tests/test_form.py
+
+Then you can run tests using:
+
+    $ python manage.py test
+
+Or specify
+
+    $ python manage.py test ModuleName
+
+---
+
+There is a dummy browser package, `django.test.Client`.
 
 
 ---
@@ -56,5 +260,9 @@ It runs a development server. It shows the url where it hosts it, http://127.0.0
 
 Simple tutorial to mix Django, Docker, and PostgreSQL
 https://dev.to/learndjango/django-docker-and-postgresql-tutorial-be3
+
+---
+
+`get_object_or_404()` is a simple way to handle exceptions
 
 ---

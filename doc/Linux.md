@@ -1,4 +1,4 @@
-#Linux
+# Linux
 
 See Also:
 
@@ -14,7 +14,7 @@ See Also:
   - [Kernel](Kernel.md)
   - [Samba](Samba.md)
   - Shells 
-    - [bash](bash.md)
+    - [bash](Bash.md)
   - Commands and utilities
     - [Cron](Cron.md)
     - [Curl](Curl.md)
@@ -39,14 +39,14 @@ See Also:
 
 ---
 
-##Content
+# Content
 
- - [File System](#file-system)
- - [Miscellaneous](#miscellaneous)
+ - [File System](Linux.md#file-system)
+ - [Miscellaneous](Linux.md#miscellaneous)
 
 ---
 
-##File System
+## File System
 
 ---
 
@@ -56,7 +56,7 @@ See [VirtualBox/SharedFolders](VirtualBox.md#shared-folders)
 
 ---
 
-##Miscellaneous
+## Miscellaneous
 
 ---
 
@@ -379,7 +379,7 @@ Idiomatic passing parameters in bash, flag ‘-e’ for echo and ‘@-‘ for cu
  
 ---
 
-Interesting resource on setuid in Unix, and why the shebang symbols should end in ‘-‘:
+Interesting resource on `setuid` in Unix, and why the shebang symbols should end in ‘-‘:
 http://www.faqs.org/faqs/unix-faq/faq/part4/section-7.html
 
 ---
@@ -406,14 +406,14 @@ https://mmonit.com/monit/
 
 ---
 
-Command-line untilities for image processing:
+Command-line utilities for image processing:
 https://www.linux.com/learn/cool-linux-command-line-image-management-hacks
 
 `feh`
 
 ```sudo apt-get install feh``` - installs it (Ubuntu)
 
-To list the files with the dimentions:
+To list the files with the dimensions:
     
     $ feh -l
     NUM	FORMAT	WIDTH	HEIGHT	PIXELS	SIZE	ALPHA	FILENAME
@@ -470,8 +470,8 @@ See Also [Ubuntu](Ubuntu.md)
 
 grub issues, broken packager 
 
-On Ubuntu vm setup in VirtualBox on MacOS via Vagrant.
-Had something wrong with ```grub``` on a vm, needed to run ```sudo dpkg --configure -a``` to get
+On Ubuntu vm setup in VirtualBox on macOS via Vagrant.
+Had something wrong with `grub` on a vm, needed to run `sudo dpkg --configure -a` to get
 the packager work better.
 
 ---
@@ -648,7 +648,7 @@ See also: [Libtool](Libtool.md)
 Example of start/stop scrips on RedHat:
 https://access.redhat.com/discussions/1455613
 
-The Linux Standards Base documents requirements for initscripts:
+The Linux Standards Base documents requirements for init scripts:
     http://refspecs.linuxbase.org/LSB_5.0.0/LSB-Core-generic/LSB-Core-generic/tocsysinit.html
 
 
@@ -766,7 +766,7 @@ Something like this would also work to find what's taking space:
 
 ---
 
-Simple way to see the statistics of the sytem on a vm. The fact that it prints it
+Simple way to see the statistics of the system on a vm. The fact that it prints it
 one by line, could be a good feed for the kafka console producer/consumer:
 
     $ vmstat -a 1 -n 100
@@ -865,7 +865,7 @@ Change the line endings in the vi:
     :e ++ff=mac
     :e ++ff=unix
 
-This can also be used as saving operation (:w alone will not save using the lineendings you see on screen):
+This can also be used as saving operation (:w alone will not save using the line endings you see on screen):
 
     :w ++ff=dos
     :w ++ff=mac
@@ -898,7 +898,7 @@ Another example:
 	  echo "User '$username' not found in $PASSWD_FILE file."
     fi
     
-See more in [bash](bash.md)
+See more in [bash](Bash.md)
 
 ---
 
@@ -924,7 +924,7 @@ Install .rpm File on Linux(CentOS, Fedora, etc.):
     $ sudo rpm –i sample_file.rpm
 
 Alternately, you can use the yum package manager to install .rpm files(`localinstall`
-makes `yum` lood into the current working directory for the install file.
+makes `yum` look into the current working directory for the install file.
 
     $ sudo yum localinstall sample_file.rpm
     

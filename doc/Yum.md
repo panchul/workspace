@@ -1,8 +1,9 @@
 # Yum
 
 See Also:
- [Linux](Linux.md)
- [aptitude](aptitude.md)
+
+ - [Linux](Linux.md)
+ - [aptitude](aptitude.md)
 
 ---
 

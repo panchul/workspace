@@ -4,7 +4,7 @@ https://www.mathworks.com/products/matlab.html
 
 ---
 
-C/C++ ineroperability
+C/C++ interoperability
 
 https://www.mathworks.com/help/matlab/matlab_external/choose-c-or-c-compilers.html
 

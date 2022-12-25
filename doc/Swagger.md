@@ -34,7 +34,7 @@ https://goswagger.io/install.html
 A Quick-Start guide.
 https://github.com/swagger-api/swagger-node/blob/HEAD/docs/quick-start.md
 
-Some notes about configurating
+Some notes about configuring:
 https://github.com/swagger-api/swagger-node/issues/373
 
 ---

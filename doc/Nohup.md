@@ -2,7 +2,7 @@
 
 ---
 
-Redirecting to /dev/null is ok:
+Idiomatic redirecting to `/dev/null` :
 
     $ nohup do_crap.sh > /dev/null &
 

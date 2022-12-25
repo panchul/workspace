@@ -11,9 +11,10 @@ See Also:
 
 Contents
 
-- [Installing](#installing)
-- [Undoing things](#undoing-things)
-- [Miscellaneous](#miscellaneous)
+- [Installing](Git.md#installing)
+- [Undoing things](Git.md#undoing-things)
+- [gitignore](Git.md#gitignore)
+- [Miscellaneous](Git.md#miscellaneous)
 
 ---
 
@@ -77,6 +78,14 @@ To remove ignored and non-ignored files, run
 or
 
     git clean -fx
+
+---
+
+## gitignore
+
+---
+
+A `.gitignore` generator: [gitignore.io](gitignore.io)
 
 ---
 

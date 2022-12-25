@@ -2,6 +2,7 @@
 
 See Also:
 
+  - [Certbot](Certbot.md)
   - [DHCP](DHCP.md)
   - [DNS](DNS.md)
   - [NetworkSecurity](NetworkSecurity.md)
@@ -10,6 +11,22 @@ See Also:
   - [SDN](SDN.md)
   - [Wireshark](Wireshark.md)
   - [Zero-Knowledge-Proof](ZNP.md)
+
+---
+
+For webservers and Nginx, you may also want to enable the firewall port, check the existing config and enable, e.g. like so:
+
+    $ sudo ufw status
+
+    $ sudo ufw enable
+
+or, maybe
+
+    $ sudo ufw allow 'Nginx Full'
+
+Also allow https:
+
+    $ sudo ufw allow 443
 
 ---
 

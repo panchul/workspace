@@ -3,6 +3,7 @@
 See Also:
 
   - [AWS](AWS.md)
+  - [Digital Ocean](DigitalOcean.md)
   - [GCP, GoogleCloud](GoogleCloud.md)
   - [Kubernetes](Kubernetes.md)
   - [KEDA](KEDA.md)
@@ -30,7 +31,7 @@ https://github.com/markheath/azure-functions-links
 
 ---
 
-Azure Functions Github repo, with links to other repos, for hosts, ux, etc.
+Azure Functions GitHub repo, with links to other repos, for hosts, ux, etc.
 
 https://github.com/azure/azure-functions
 
@@ -46,7 +47,7 @@ KEDA, https://keda.sh
 
 ---
 
-Azure Static Web Apps tutorial(workship)
+Azure Static Web Apps tutorial(workshop)
 https://docs.microsoft.com/en-us/learn/modules/publish-app-service-static-web-app-api/
 
 ---
@@ -70,7 +71,7 @@ https://azure.microsoft.com/en-us/features/storage-explorer/
 
 ---
 
-Step by step tutorial for App Services
+Step-by-step tutorial for App Services
 
 https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask
 
@@ -106,11 +107,11 @@ Installing on Mac:
 
     $ brew update && brew install azure-cli
 
-Then you can login to your account:
+Then you can log in to your account:
 
     $ az login    
 
-Azure Cloud Shell is even simplier:
+Azure Cloud Shell is even simpler:
 https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart?view=azure-cli-latest
 
 
@@ -152,7 +153,7 @@ https://github.com/Azure-Samples/active-directory-aspnetcore-webapp-openidconnec
 
 A Console application for Azure AD B2C User Management the Azure AD Graph
 
-B2C console application (might be older, seems like 5 year old commits)
+B2C console application (might be older, seems like 5-year-old commits)
 
 https://github.com/AzureADQuickStarts/B2C-GraphAPI-DotNet
 
@@ -170,7 +171,7 @@ https://stackoverflow.com/questions/39439830/create-a-new-user-in-azure-active-d
 
 ---
 
-IdentytyServer4 – open-source, can host myself.
+IdentityServer4 – open-source, can host myself.
 
 https://identityserver4.readthedocs.io/
 
@@ -204,7 +205,7 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-js-pass-cus
 
 ---
 
-Video about managed identities, has links to docs and his Github repo:
+Video about managed identities, has links to docs and his GitHub repo:
 
 https://www.youtube.com/watch?v=sA_mXKy_dKU
 
@@ -245,7 +246,7 @@ https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services
 
 ---
 
-A lot of blood sweat and tears went into this one, many commits were under my alter ego github account `alek8106`.
+A lot of blood sweat and tears went into this one, many commits were under my alter ego GitHub account `alek8106`.
 https://github.com/Azure-Samples/azure-intelligent-edge-patterns
 
 ---
@@ -264,7 +265,7 @@ https://www.youtube.com/channel/UCCkJEhUc1pWTj84eefLOcRA/videos
 Azure Stack videos about AKSe
 https://www.youtube.com/watch?v=KitQ2X0GBD0
 
-The certification examps, with some free tutorials:
+The certification examples, with some free tutorials:
 https://docs.microsoft.com/en-us/learn/certifications/exams/az-300
 https://docs.microsoft.com/en-us/learn/certifications/exams/70-537
 https://docs.microsoft.com/en-us/learn/certifications/exams/az-301

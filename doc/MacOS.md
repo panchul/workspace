@@ -1,7 +1,8 @@
 # MacOS
 
-See also
-- [Homebrew](Homebrew.md)
+See also:
+
+  - [Homebrew](Homebrew.md)
 
 ---
 

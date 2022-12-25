@@ -1,5 +1,7 @@
 # watch (Linux utility)
 
+Repeatedly runs a command.
+
 See Also:
 
   - [Linux](Linux.md)

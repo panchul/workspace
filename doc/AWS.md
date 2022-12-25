@@ -2,12 +2,13 @@
 
 See Also:
 
-- [Azure](Azure.md)
-- [GoogleCloud](GoogleCloud.md)
-- [Kubernetes](Kubernetes.md)
-- [KEDA](KEDA.md)
-- [Kubeflow](Kubeflow.md)
-- [Sagemaker](Sagemaker.md)
+  - [Azure](Azure.md)
+  - [Digital Ocean](DigitalOcean.md)
+  - [GoogleCloud](GoogleCloud.md)
+  - [Kubernetes](Kubernetes.md)
+  - [KEDA](KEDA.md)
+  - [Kubeflow](Kubeflow.md)
+  - [Sagemaker](Sagemaker.md)
 
 ---
 

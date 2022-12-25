@@ -3,10 +3,12 @@
 https://nginx.org/en/
 
 See also:
- - [Apache](Apache.md)
- - [Envoy](Envoy.md)
- - [HAProxy](HAProxy.md)
- - [Linux](Linux.md)
+
+  - [Apache](Apache.md)
+  - [Certbot](Certbot.md)
+  - [Envoy](Envoy.md)
+  - [HAProxy](HAProxy.md)
+  - [Linux](Linux.md)
 
 ---
 
@@ -27,5 +29,29 @@ https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/
 
 Seting up NGINX on CentOS:
 https://www.cyberciti.biz/faq/how-to-install-and-use-nginx-on-centos-8/
+
+---
+
+To see where the config files are:
+
+    $ sudo nginx -t
+    nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+    nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+---
+
+You may also want to enable the firewall port, check the existing config and enable, e.g. like so:
+
+    $ sudo ufw status
+
+    $ sudo ufw enable
+
+or, maybe
+
+    $ sudo ufw allow 'Nginx Full'
+
+Also allow https:
+
+    $ sudo ufw allow 443
 
 ---

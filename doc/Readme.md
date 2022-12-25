@@ -102,11 +102,13 @@ A more conceptual links, still related to Programming Languages and Math
 - [Azure](Azure.md)
 - [Ansible](Ansible.md)  
 - Cacti
+- [Digital Ocean](DigitalOcean.md)
 - [Docker](Docker.md)
   - [Docker-Compose](DockerCompose.md)
   - [Docker Swarm](DockerSwarm.md)
 - Fabric
 - [Google Cloud](GoogleCloud.md)
+- [Heroku](Heroku.md)
 - [Kubeflow](Kubeflow.md)
 - [Kubernetes](Kubernetes.md)
 - [KEDA](KEDA.md), Kubernetes Event-Driven Autoscaling
@@ -170,7 +172,7 @@ A more conceptual links, still related to Programming Languages and Math
   https://www.linux.com/blog/learn/chapter/dev-ops/2017/8/devops-fundamentals-part-6-automated-testing
   
 - Installing Chocolatey
-   https://chocolatey.org/install  
+  https://chocolatey.org/install  
 
 Microservices design patterns for CTOs: API Gateway, Backend for Frontend and more
 
@@ -416,6 +418,7 @@ https://www.tartssensors.com/libraries/arduino/
 
 ### Networking
 
+- [Certbot](Certbot.md)
 - Cisco
   - Switches
   - Routers
@@ -826,8 +829,8 @@ Another nice resource:
 
 - [misc fun, youtube, etc.](Misc_fun.html)
 - [misc historic links](Misc_historic.html)
-
-- Dog registration in Seattle area https://kingcounty.gov/depts/regional-animal-services/license-your-pet/purchase-renew-license.aspx
+- [misc historic COVID19](Misc_historic_covid19.html)
+- [misc historic Ukraine](Misc_historic_ukraine.html)
 
 - The price of being single. http://ideas.ted.com/the-price-of-being-single/
 
