@@ -2,7 +2,7 @@
 
 ---
 
-To write to syslog, ```/var/log/syslog```:
+To write to syslog, `/var/log/syslog`:
 
 ```
     #include <syslog.h>

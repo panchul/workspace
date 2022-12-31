@@ -1,9 +1,4 @@
-
-
-## UNDER CONSTRUCTION
-
 # Scalatra
-
 
 Main website: http://www.scalatra.org/
 

@@ -6,6 +6,9 @@ See Also:
   - [Pip](Pip.md)
   - [PyCharm](PyCharm.md)
   - [Python](Python.md)
+  - [Flask](Flask.md)
+  - [Gunicorn](Gunicorn.md)
+   
 
 **Content**
 
@@ -34,6 +37,37 @@ If you created your own Pyton environment, which is a best practice, this should
 
 ---
 
+PyCharm has a wizard to do a Django project, but not in the free Community Edition.
+To create a Django process in a Community Edition, you can
+do it with the command line:
+
+Check that Django is there:
+
+    $ python -m django --version
+
+Install if needed:
+
+    $ python -m pip install django
+    $ python -m django --version
+    $ python -m pip install --upgrade pip
+
+Create a project:
+
+    $ django-admin startproject firstproject
+
+Go to that folder and run the server:
+
+    $ cd firstproject
+    $ python manage.py runserver
+    ...
+    Django version 4.1.4, using settings 'firstproject.settings'
+    Starting development server at http://127.0.0.1:8000/
+    Quit the server with CONTROL-C.
+
+See your site in browser in http://127.0.0.1:8000/
+
+---
+
 ## Creating a project
 
 ---
@@ -50,6 +84,10 @@ It will create the needed files and subfolder `myprojectname`. Go there and run:
 It runs a development server. It shows the url where it hosts it, http://127.0.0.1:8000. `Ctrl-C` to stop it.
 
     $ python manage.py startapp website
+
+You need to run the migrations:
+    
+    $ python manage.py migrate
 
 There is an admin user you can create:
     
@@ -165,9 +203,35 @@ You can reference mapping from another location using `include`
 
 ---
 
+Django deployment doc page:
+
+https://docs.djangoproject.com/en/4.1/howto/deployment/
+
+---
+
 Running Django with the warnings about deprecation, use `-Wa` flag:
 
     $ python -Wa manage.py runserver
+
+---
+
+To use a different port:
+
+    $ python manage.py runserver 0.0.0.0:8080
+
+You may need to allow the access to this port, see what the check says: 
+
+    $ python manage.py check --deploy
+
+---
+
+As a quick-and-dirty deployment to port 80, point to the proper venv executable:
+
+    $ sudo /home/alexp/venv/bin/python manage.py runserver 80
+
+A broader discussion on permissions and best practices:
+
+https://stackoverflow.com/questions/37434247/django-error-you-dont-have-permission-to-access-that-port
 
 ---
 

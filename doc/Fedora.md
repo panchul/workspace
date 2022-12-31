@@ -34,7 +34,7 @@ Cuda seems to have the repositories for Fedora 29 latest.
 
 ---
 
-Networing CLI interface
+Networking CLI interface
 https://fedoraproject.org/wiki/Networking/CLI
 e.g.
 

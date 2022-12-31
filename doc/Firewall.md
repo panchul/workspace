@@ -15,7 +15,8 @@ https://www.cyberciti.biz/faq/how-to-set-up-a-firewall-using-firewalld-on-centos
 
 ---
 
-For webservers and [Nginx](Nginx.md), you may also want to enable the firewall port, check the existing config and enable, e.g. like so:
+For webservers and [Nginx](Nginx.md), you may also want to enable the firewall port,
+check the existing config and enable, e.g. like so:
 
     $ sudo ufw status
 

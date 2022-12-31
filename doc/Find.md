@@ -31,4 +31,8 @@ On MacOS,  you might need to do something about the command, some special hoops 
 
     $ find . -name "aa*.txt" -exec sed -i ".orig" 's/myto/myto2/' {} \;
 
---
+---
+
+Windows has an analog for `find`.
+
+---

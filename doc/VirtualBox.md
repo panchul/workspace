@@ -78,7 +78,7 @@ For the guest additions, kernel headers
 
 On Ubuntu:
 
-    $ apt-get install build-essentials
+    $ apt-get install build-essential
     
 On Fedora 29:
 

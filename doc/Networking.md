@@ -14,6 +14,16 @@ See Also:
 
 ---
 
+# Content
+
+- [Miscellaneous](Networking.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 For webservers and Nginx, you may also want to enable the firewall port, check the existing config and enable, e.g. like so:
 
     $ sudo ufw status
@@ -372,7 +382,7 @@ To see who is using a port(and there is also utility `ss`):
     $ netstat -tulpn | grep 80
     tcp6       0      0 :::80                 :::*                   LISTEN     10177/java
 
-`-l` - prints listening stockets
+`-l` - prints listening sockets
 `-n` - shows port number
 `-t` - enables listing of tcp ports
 `-u` - enables listing udp ports.

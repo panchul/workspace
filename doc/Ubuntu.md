@@ -57,6 +57,18 @@ https://tecadmin.net/how-to-install-net-core-on-ubuntu-20-04/
 
 ---
 
+For the Virtual Box guest additions, kernel headers
+
+On Ubuntu, maybe with `--fix-missing`, and maybe with `apt update`:
+
+    $ apt-get install build-essential
+
+On Fedora 29:
+
+    $ yum install kernel-develop-...    
+
+---
+
 ## User Management
 
 ---

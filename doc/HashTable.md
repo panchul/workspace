@@ -1,9 +1,10 @@
 # Hash Table
 
 See Also:
-- [Graphs](Graphs.md)
-- [Sorting](Sorting.md)
-- [Algorithms and Data Structures](AlgorithmsDataStructures.md)
+
+  - [Graphs](Graphs.md)
+  - [Sorting](Sorting.md)
+  - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
 
 https://en.wikipedia.org/wiki/Hash_table
 

@@ -1,7 +1,3 @@
-
-
-## UNDER CONSTRUCTION
-
 # Apache Spark
 
 http://spark.apache.org/

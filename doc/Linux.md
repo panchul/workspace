@@ -42,6 +42,10 @@ See Also:
 # Content
 
  - [File System](Linux.md#file-system)
+ - [Networking](Linux.md#networking)
+ - [Installation](Linux.md#installation)
+ - [Linux Kernel](Linux.md#linux-kernel)
+ - [Security](Linux.md#security)
  - [Miscellaneous](Linux.md#miscellaneous)
 
 ---
@@ -56,252 +60,20 @@ See [VirtualBox/SharedFolders](VirtualBox.md#shared-folders)
 
 ---
 
-## Miscellaneous
+## Networking
 
 ---
 
-    $ du -sh * | sort -h | tail -4
-    4.0K	Templates
-    8.0K	aaa
-    2.0M	test
-    5.7G	tmp
-
----
-
-`timeout` command, you can specify the time duration, the command, and
-the way the process is terminated.
-
-    $ timeout -k=5 2m command1 arg1
-    $ timeout -k=5 -s SIGKILL 2m /path/to/my-app arg1 arg2
-    $ timeout -s 9 YourCommandHere
-    $ timeout --signal=9 YourCommandHere
-    $ timeout -s 15 30s tracepath google.com
-    $ timeout -s 9 2m tail -F /var/log/secure
-    $ timeout -s SIGTERM 5m ping google.com
-      
-The signals available:
-
-    $ kill -l
-     1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
-     6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
-    11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
-    16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP	20) SIGTSTP
-    21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
-    26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
-    31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
-    38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
-    43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
-    48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
-    53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
-    58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
-    63) SIGRTMAX-1	64) SIGRTMAX	
-
-To check it:
-
-    $ date
-    $ timeout 8s ping www.mywebsite.com/slow_api
-    $ date
-    
----
-
-Using `file`, to find the types of files.
-https://www.tecmint.com/find-file-types-in-linux/
-
-TODO: make a summary
-
----
-
-A few nice tricks to monitor memory.
-https://www.tecmint.com/find-processes-by-memory-usage-top-batch-mode/
-
-For example, to use `top`'s batch mode, get top memory-using apps:
-
-    $ top -b -o +%MEM | head -n 22 > topreport.txt
-    
----
-
-A Collection of windows managers
-https://www.tecmint.com/best-tiling-window-managers-for-linux/
-
----
-
-To see the distribution id, release name, codename, etc.:
-
-    $ lsb_release -a
-    No LSB modules are available.
-    Distributor ID:	Ubuntu
-    Description:	Ubuntu 18.04.4 LTS
-    Release:	18.04
-    Codename:	bionic
-
-Or,
-
-    $ cat /etc/*rel*
-    DISTRIB_ID=Ubuntu
-    DISTRIB_RELEASE=18.04
-    DISTRIB_CODENAME=bionic
-    DISTRIB_DESCRIPTION="Ubuntu 18.04.4 LTS"
-    NAME="Ubuntu"
-    VERSION="18.04.4 LTS (Bionic Beaver)"
-    ID=ubuntu
-    ID_LIKE=debian
-    PRETTY_NAME="Ubuntu 18.04.4 LTS"
-    VERSION_ID="18.04"
-    HOME_URL="https://www.ubuntu.com/"
-    SUPPORT_URL="https://help.ubuntu.com/"
-    BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-    PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-    VERSION_CODENAME=bionic
-    UBUNTU_CODENAME=bionic
-
----
-
-The right way to run the infamous rm command is to specify `--no-preserve-root`:
-
-    $ sudo rm -rf --no-preserve-root /
-    
----
-
-How to reset forgotten root password in CentOS 8.
-https://www.tecmint.com/reset-forgotten-root-password-in-centos-8/
-
----
-
-Neat utility `cloc` - Count Lines Of Code, in many programming languages, and per folder recursively.
-https://www.tecmint.com/cloc-count-lines-of-code-in-linux/
-
-For example the old pxl repo:
-
-    $ cloc .
-    github.com/AlDanial/cloc v 1.84  T=88.97 s (161.2 files/s, 48350.3 lines/s)
-    ---------------------------------------------------------------------------------------
-    Language                             files          blank        comment           code
-    ---------------------------------------------------------------------------------------
-    C++                                   5226         510646         362469        1444362
-    HTML                                  3182         125937          17126         717098
-    C/C++ Header                          3566          96693         101503         288808
-    make                                   376          19409          13557          73250
-    Prolog                                 517          10417          16555          73110
-    C                                      214          13820          21069          61356
-    XML                                    306          32237             46          61052
-    Perl                                   244          11847           2290          44906
-    Windows Resource File                   89           3869           3128          41413
-    MSBuild script                         125              0              0          40602
-    Java                                   189           2837           1911          14181
-    JavaScript                              32           1247            258          13308
-    SWIG                                     4           3940              0           9875
-    Markdown                                23           2515              0           8833
-    Python                                  40           2142           3845           7713
-    XMI                                      2              0              0           6578
-    Bourne Shell                            30            342            713           1769
-    CSS                                      8             89             48           1640
-    Assembly                                 6            283            511           1045
-    MATLAB                                  14            298            168            915
-    D                                        9              0              0            591
-    m4                                       6             77             61            543
-    Pascal                                   2            106             59            538
-    CMake                                    4            115            264            488
-    Windows Module Definition               39            118             30            473
-    Bourne Again Shell                       4            109            234            392
-    INI                                     45              0              0            311
-    XSLT                                     1             28              2            202
-    SVG                                      3              1              1            184
-    SAS                                      3             50             90            174
-    Smalltalk                                4              9              0            162
-    DOS Batch                               15             44             16            161
-    Mathematica                              6             77              0            156
-    YAML                                     2             21             17            140
-    WebAssembly                              1             27              0             76
-    yacc                                     1             14              2             33
-    Patran Command Language                  1              0              0             22
-    C Shell                                  1              5              0             14
-    ---------------------------------------------------------------------------------------
-    SUM:                                 14340         839369         545973        2916474
-    ---------------------------------------------------------------------------------------
-
----
-
-Screen recorders for desktop screen recording in Linux
-https://www.tecmint.com/best-linux-screen-recorders-for-desktop-screen-recording/
-
----
-
-Neat overview/catalog of all sorts of applications on Linux
-https://www.fossmint.com/awesome-linux-software/
-
----
-
-Flowchart and diagram drawing software for Linux
-https://www.tecmint.com/best-flowchart-and-diagramming-software-for-linux/
-
----
-
-Seem to work on different distributions (Ubuntu, Fedora, etc.)
-To boot without X one time, add `systemd.unit=multi-user.target` to the linux command line in GRUB.
-To make this the default, use
-    
-    $ sudo systemctl set-default multi-user.target
- 
-To return to default booting into X, use
-
-    $ sudo systemctl set-default graphical.target
-     
-To see the current default target,
-
-    $ sudo systemctl get-default
-
-For those who don't know how to edit GRUB command: press `Shift` during boot,
- and press `e` to edit selected boot command.
- 
-    $ sudo vi /etc/default/grub
-
-Comment out `GRUB_CMD_LINE_LINUX_DEFAULT` line by adding prefix `#`,
-modify `GRUB_CMD_LINE_LINUX` to `"text"`, and uncomment `GRUB_TERMINAL=console`.
-Then save and 
-
-    $ sudo update-grub
-
----
-
-Neat review of basic commands
-https://www.tecmint.com/linux-commands-cheat-sheet/
-TODO: do the summary
-
----
-
-Installing misc tools
-https://www.cyberciti.biz/faq/how-to-install-whois-on-rhel-8-centos-8/
-
-On CentOS 8:
-
-    $ sudo yum install epel-release
-    $ sudo yum config-manager --set-enabled PowerTools
-    $ sudo yum repolist
-    $ sudo yum search whois
-    $ sudo yum info whois
-    $ sudo yum install whois
-
-On RHEL:
-     
-    $ sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-    $ sudo subscription-manager repos --enable "codeready-builder-for-rhel-8-*-rpms"
-    $ sudo yum repolist
-    $ sudo yum search whois
-    $ sudo yum info whois
-    $ sudo yum install whois
-
- ---
- 
- Nice summary of networking utilities:
- https://www.tecmint.com/linux-networking-commands/
+Nice summary of networking utilities:
+https://www.tecmint.com/linux-networking-commands/
  
 ---
 
 About setting SO_LINGER in socket networking
 http://alas.matf.bg.ac.rs/manuals/lspe/snode=105.html
 
- ...
- 
+```
+    ...
     struct linger so_linger;
 	so_linger.l_onoff = 1;	//TRUE;
 	so_linger.l_linger = 0; // timeout sec
@@ -312,151 +84,15 @@ http://alas.matf.bg.ac.rs/manuals/lspe/snode=105.html
 		perror("setsockopt(2)");
 	
 	close(connfd);
- 
- ...
- 
----
-
-Mutexes vs semaphores demo:
-
-    // Task 1
-    pthread_mutex_lock(mutex_thing);
-    // Safely use shared resource
-    pthread_mutex_unlock(mutex_thing);
- 
-    // Task 2
-    pthread_mutex_lock(mutex_thing);
-    // Safely use shared resource
-    pthread_mutex_lock(mutex_thing);
-
-The semaphore scenario is more like signalling between the processes:
-
-    /* Task 1 - Producer */
-    sema_post(&sem);   // Send the signal
-
-    /* Task 2 - Consumer */
-    sema_wait(&sem);   // Wait for signal
-  
----
-
-To write to syslog, ```/var/log/syslog```:
-
+	...
 ```
-   #include <syslog.h>
-   int main(int argc, char *argv[])
-   {
-        openlog("mytestlog", LOG_PERROR, LOG_USER);
-        syslog(LOG_INFO, "something %d", 123);
-       	closelog();
-    }
-```
-
----
-
-Here's how to get the nanosecond time('N' is nanoseconds) in bash:
-
-    $ while true; do echo $(($(date "+%s%N")/1000000)); done;
- 
- More at https://stackoverflow.com/questions/16548528/command-to-get-time-in-milliseconds
  
 ---
 
-How to compile Linux kernel
-https://www.linux.com/learn/intro-to-linux/2018/4/how-compile-linux-kernel-0
- 
----
+How to setup `firewalld` on CentOS 8
+https://www.cyberciti.biz/faq/how-to-set-up-a-firewall-using-firewalld-on-centos-8/
 
-Quick simple demo of using systemd services (I have a better how-to on services in the sandbox)
-https://www.linux.com/blog/learn/intro-to-linux/2018/5/writing-systemd-services-fun-and-profit     
-
----
-
-Idiomatic passing parameters in bash, flag ‘-e’ for echo and ‘@-‘ for curl:
-
-    $ echo -e "[MYSETTING_1]\nsomeValue=123" | curl --data-binary @- http://128.0.0.1/myapi/consume
-
-    OK
- 
----
-
-Interesting resource on `setuid` in Unix, and why the shebang symbols should end in ‘-‘:
-http://www.faqs.org/faqs/unix-faq/faq/part4/section-7.html
-
----
-
-Easily Encrypt your Flash Drives with Linux
-[https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux](https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux)
-
-
-## Installation
-
-### Installing using USB
-
-[https://en.wikipedia.org/wiki/Live_USB](https://en.wikipedia.org/wiki/Live_USB)
-
-LiLi:
-[http://www.linuxliveusb.com/en/download](http://www.linuxliveusb.com/en/download)
-
-
----
-
-Monit
-
-https://mmonit.com/monit/
-
----
-
-Command-line utilities for image processing:
-https://www.linux.com/learn/cool-linux-command-line-image-management-hacks
-
-`feh`
-
-```sudo apt-get install feh``` - installs it (Ubuntu)
-
-To list the files with the dimensions:
-    
-    $ feh -l
-    NUM	FORMAT	WIDTH	HEIGHT	PIXELS	SIZE	ALPHA	FILENAME
-    1	jpeg	2187	1458	  3M	  2M	-	./IMG_8408.JPG    
-
-`identify` from imagemagick
-
-`sudo apt-get install imagemagick` - installs it (Ubuntu)
-
-To get information about a file:
-
-    $ identify ./IMG_8455.JPG 
-    ./IMG_8455.JPG JPEG 2592x1728 2592x1728+0+0 8-bit DirectClass 4.338MB 0.000u 0:00.000
-
-`identify -verbose ./IMG_8455.JPG` gives much more info. 
-
-Pretty neat for the summary of what is out there:
-
-    $ find . -iregex ".*\.\(jpg\|png\)" -exec identify {} \;
-    ./somefolder/anotherone/IMG_8408.JPG JPEG 2187x1458 2187x1458+0+0 8-bit DirectClass 2.61MB 0.000u 0:00.000
-
----
-
-Cute utilities `cowsay, cowthink, xcowsay`
-
-`sudo apt-get install xcowsay` - installs it (Ubuntu)
-
-To get a temporary pop-up with a cute picture saying your line:
-
-    $ xcowsay Hello there, I am using xcowsay. Ok, Moo-o-o-o
-
-The plain text version works fine in the terminal. 
-
-    $ cowsay "Screw you guys I am going home. Moo-o-o-o"
-     _________________________________
-    / Screw you guys I am going home. \
-    \ Moo-o-o-o                       /
-     ---------------------------------
-            \   ^__^
-             \  (oo)\_______
-                (__)\       )\/\
-                    ||----w |
-                    ||     ||
+See [Firewall](Firewall.md)
 
 ---
 
@@ -512,11 +148,16 @@ https://www.linux.com/learn/intro-to-linux/2017/3/build-real-vpn-openvpn
 
 ---
 
-Linux Kernel
+## Linux Kernel
 
 https://kernelnewbies.org/FAQ  - nice FAQ
 
 See Also [ipvsadm](Ipvsadm.md)
+
+---
+
+How to compile Linux kernel
+https://www.linux.com/learn/intro-to-linux/2018/4/how-compile-linux-kernel-0
 
 ---
 
@@ -544,6 +185,32 @@ This also works similarly:
     VERSION_CODENAME=xenial
     UBUNTU_CODENAME=xenial
 
+---
+
+## Security
+
+---
+
+bash fork bomb:
+
+    :(){ :|:& };:
+
+Which is an obfuscated:
+
+    bomb(){
+      bomb | bomb &
+    }
+    bomb
+
+To kill it:
+
+    $ killall -STOP -u someuser
+
+---
+
+Another self-destroying idiom (with sudo) :-)
+
+    $ rm -rf --no-preserve-root /
 
 ---
 
@@ -722,7 +389,7 @@ Alpine Linux is a lightweight distro.
 https://alpinelinux.org/
 https://en.wikipedia.org/wiki/Alpine_Linux
 
-```apk``` packaging tool.
+`apk` packaging tool.
 
 ---
 
@@ -945,13 +612,6 @@ makes `yum` look into the current working directory for the install file.
 
 ---
 
-How to setup `firewalld` on CentOS 8 
-https://www.cyberciti.biz/faq/how-to-set-up-a-firewall-using-firewalld-on-centos-8/
-
-See [Firewall](Firewall.md)
-
----
-
 About Linux services
 https://www.cyberciti.biz/tips/check-unix-linux-configuration-file-for-syntax-errors.html
 
@@ -985,29 +645,6 @@ Show top 3 processes sorted by memory usage
 Create log files for scripts executed by crontab:
 
     0 22 * * 1-5 /opt/scripts/send-report.sh 2>/var/log/scripts/report-error.log
-
----
-
-bash fork bomb:
-
-    :(){ :|:& };:
-
-Which is an obfuscated:
-
-    bomb(){
-      bomb | bomb &
-    }
-    bomb
-
-To kill it:
-    
-    $ killall -STOP -u someuser
-
----
-
-Another self-destroying idiom (with sudo) :-)
-
-    $ rm -rf --no-preserve-root /
 
 ---
 
@@ -1054,4 +691,378 @@ To play it back:
 
     $ script -p mysession
     
+---
+
+## Miscellaneous
+
+---
+
+    $ du -sh * | sort -h | tail -4
+    4.0K	Templates
+    8.0K	aaa
+    2.0M	test
+    5.7G	tmp
+
+---
+
+`timeout` command, you can specify the time duration, the command, and
+the way the process is terminated.
+
+    $ timeout -k=5 2m command1 arg1
+    $ timeout -k=5 -s SIGKILL 2m /path/to/my-app arg1 arg2
+    $ timeout -s 9 YourCommandHere
+    $ timeout --signal=9 YourCommandHere
+    $ timeout -s 15 30s tracepath google.com
+    $ timeout -s 9 2m tail -F /var/log/secure
+    $ timeout -s SIGTERM 5m ping google.com
+
+The signals available:
+
+    $ kill -l
+     1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
+     6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
+    11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
+    16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP	20) SIGTSTP
+    21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
+    26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
+    31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
+    38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
+    43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
+    48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
+    53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
+    58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
+    63) SIGRTMAX-1	64) SIGRTMAX	
+
+To check it:
+
+    $ date
+    $ timeout 8s ping www.mywebsite.com/slow_api
+    $ date
+    
+---
+
+Using `file`, to find the types of files.
+https://www.tecmint.com/find-file-types-in-linux/
+
+TODO: make a summary
+
+---
+
+A few nice tricks to monitor memory.
+https://www.tecmint.com/find-processes-by-memory-usage-top-batch-mode/
+
+For example, to use `top`'s batch mode, get top memory-using apps:
+
+    $ top -b -o +%MEM | head -n 22 > topreport.txt
+    
+---
+
+A Collection of windows managers
+https://www.tecmint.com/best-tiling-window-managers-for-linux/
+
+---
+
+To see the distribution id, release name, codename, etc.:
+
+    $ lsb_release -a
+    No LSB modules are available.
+    Distributor ID:	Ubuntu
+    Description:	Ubuntu 18.04.4 LTS
+    Release:	18.04
+    Codename:	bionic
+
+Or,
+
+    $ cat /etc/*rel*
+    DISTRIB_ID=Ubuntu
+    DISTRIB_RELEASE=18.04
+    DISTRIB_CODENAME=bionic
+    DISTRIB_DESCRIPTION="Ubuntu 18.04.4 LTS"
+    NAME="Ubuntu"
+    VERSION="18.04.4 LTS (Bionic Beaver)"
+    ID=ubuntu
+    ID_LIKE=debian
+    PRETTY_NAME="Ubuntu 18.04.4 LTS"
+    VERSION_ID="18.04"
+    HOME_URL="https://www.ubuntu.com/"
+    SUPPORT_URL="https://help.ubuntu.com/"
+    BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+    PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+    VERSION_CODENAME=bionic
+    UBUNTU_CODENAME=bionic
+
+---
+
+The right way to run the infamous rm command is to specify `--no-preserve-root`:
+
+    $ sudo rm -rf --no-preserve-root /
+    
+---
+
+How to reset forgotten root password in CentOS 8.
+https://www.tecmint.com/reset-forgotten-root-password-in-centos-8/
+
+---
+
+Neat utility `cloc` - Count Lines Of Code, in many programming languages, and per folder recursively.
+https://www.tecmint.com/cloc-count-lines-of-code-in-linux/
+
+For example the old pxl repo:
+
+    $ cloc .
+    github.com/AlDanial/cloc v 1.84  T=88.97 s (161.2 files/s, 48350.3 lines/s)
+    ---------------------------------------------------------------------------------------
+    Language                             files          blank        comment           code
+    ---------------------------------------------------------------------------------------
+    C++                                   5226         510646         362469        1444362
+    HTML                                  3182         125937          17126         717098
+    C/C++ Header                          3566          96693         101503         288808
+    make                                   376          19409          13557          73250
+    Prolog                                 517          10417          16555          73110
+    C                                      214          13820          21069          61356
+    XML                                    306          32237             46          61052
+    Perl                                   244          11847           2290          44906
+    Windows Resource File                   89           3869           3128          41413
+    MSBuild script                         125              0              0          40602
+    Java                                   189           2837           1911          14181
+    JavaScript                              32           1247            258          13308
+    SWIG                                     4           3940              0           9875
+    Markdown                                23           2515              0           8833
+    Python                                  40           2142           3845           7713
+    XMI                                      2              0              0           6578
+    Bourne Shell                            30            342            713           1769
+    CSS                                      8             89             48           1640
+    Assembly                                 6            283            511           1045
+    MATLAB                                  14            298            168            915
+    D                                        9              0              0            591
+    m4                                       6             77             61            543
+    Pascal                                   2            106             59            538
+    CMake                                    4            115            264            488
+    Windows Module Definition               39            118             30            473
+    Bourne Again Shell                       4            109            234            392
+    INI                                     45              0              0            311
+    XSLT                                     1             28              2            202
+    SVG                                      3              1              1            184
+    SAS                                      3             50             90            174
+    Smalltalk                                4              9              0            162
+    DOS Batch                               15             44             16            161
+    Mathematica                              6             77              0            156
+    YAML                                     2             21             17            140
+    WebAssembly                              1             27              0             76
+    yacc                                     1             14              2             33
+    Patran Command Language                  1              0              0             22
+    C Shell                                  1              5              0             14
+    ---------------------------------------------------------------------------------------
+    SUM:                                 14340         839369         545973        2916474
+    ---------------------------------------------------------------------------------------
+
+---
+
+Screen recorders for desktop screen recording in Linux
+https://www.tecmint.com/best-linux-screen-recorders-for-desktop-screen-recording/
+
+---
+
+Neat overview/catalog of all sorts of applications on Linux
+https://www.fossmint.com/awesome-linux-software/
+
+---
+
+Flowchart and diagram drawing software for Linux
+https://www.tecmint.com/best-flowchart-and-diagramming-software-for-linux/
+
+---
+
+Seem to work on different distributions (Ubuntu, Fedora, etc.)
+To boot without X one time, add `systemd.unit=multi-user.target` to the linux command line in GRUB.
+To make this the default, use
+
+    $ sudo systemctl set-default multi-user.target
+
+To return to default booting into X, use
+
+    $ sudo systemctl set-default graphical.target
+
+To see the current default target,
+
+    $ sudo systemctl get-default
+
+For those who don't know how to edit GRUB command: press `Shift` during boot,
+and press `e` to edit selected boot command.
+
+    $ sudo vi /etc/default/grub
+
+Comment out `GRUB_CMD_LINE_LINUX_DEFAULT` line by adding prefix `#`,
+modify `GRUB_CMD_LINE_LINUX` to `"text"`, and uncomment `GRUB_TERMINAL=console`.
+Then save and
+
+    $ sudo update-grub
+
+---
+
+Neat review of basic commands
+https://www.tecmint.com/linux-commands-cheat-sheet/
+TODO: do the summary
+
+---
+
+Installing misc tools
+https://www.cyberciti.biz/faq/how-to-install-whois-on-rhel-8-centos-8/
+
+On CentOS 8:
+
+    $ sudo yum install epel-release
+    $ sudo yum config-manager --set-enabled PowerTools
+    $ sudo yum repolist
+    $ sudo yum search whois
+    $ sudo yum info whois
+    $ sudo yum install whois
+
+On RHEL:
+
+    $ sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+    $ sudo subscription-manager repos --enable "codeready-builder-for-rhel-8-*-rpms"
+    $ sudo yum repolist
+    $ sudo yum search whois
+    $ sudo yum info whois
+    $ sudo yum install whois
+
+--
+
+Mutexes vs semaphores demo:
+
+    // Task 1
+    pthread_mutex_lock(mutex_thing);
+    // Safely use shared resource
+    pthread_mutex_unlock(mutex_thing);
+ 
+    // Task 2
+    pthread_mutex_lock(mutex_thing);
+    // Safely use shared resource
+    pthread_mutex_lock(mutex_thing);
+
+The semaphore scenario is more like signalling between the processes:
+
+    /* Task 1 - Producer */
+    sema_post(&sem);   // Send the signal
+
+    /* Task 2 - Consumer */
+    sema_wait(&sem);   // Wait for signal
+  
+---
+
+To write to syslog, `/var/log/syslog`:
+
+```
+   #include <syslog.h>
+   int main(int argc, char *argv[])
+   {
+        openlog("mytestlog", LOG_PERROR, LOG_USER);
+        syslog(LOG_INFO, "something %d", 123);
+       	closelog();
+    }
+```
+
+---
+
+Here's how to get the nanosecond time('N' is nanoseconds) in bash:
+
+    $ while true; do echo $(($(date "+%s%N")/1000000)); done;
+
+More at https://stackoverflow.com/questions/16548528/command-to-get-time-in-milliseconds
+ 
+---
+
+Quick simple demo of using systemd services (I have a better how-to on services in the sandbox)
+https://www.linux.com/blog/learn/intro-to-linux/2018/5/writing-systemd-services-fun-and-profit
+
+---
+
+Idiomatic passing parameters in bash, flag ‘-e’ for echo and ‘@-‘ for curl:
+
+    $ echo -e "[MYSETTING_1]\nsomeValue=123" | curl --data-binary @- http://128.0.0.1/myapi/consume
+
+    OK
+ 
+---
+
+Interesting resource on `setuid` in Unix, and why the shebang symbols should end in ‘-‘:
+http://www.faqs.org/faqs/unix-faq/faq/part4/section-7.html
+
+---
+
+Easily Encrypt your Flash Drives with Linux
+[https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux](https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux)
+
+
+## Installation
+
+### Installing using USB
+
+[https://en.wikipedia.org/wiki/Live_USB](https://en.wikipedia.org/wiki/Live_USB)
+
+LiLi:
+[http://www.linuxliveusb.com/en/download](http://www.linuxliveusb.com/en/download)
+
+
+---
+
+Monit
+
+https://mmonit.com/monit/
+
+---
+
+Command-line utilities for image processing:
+https://www.linux.com/learn/cool-linux-command-line-image-management-hacks
+
+`feh`
+
+```sudo apt-get install feh``` - installs it (Ubuntu)
+
+To list the files with the dimensions:
+
+    $ feh -l
+    NUM	FORMAT	WIDTH	HEIGHT	PIXELS	SIZE	ALPHA	FILENAME
+    1	jpeg	2187	1458	  3M	  2M	-	./IMG_8408.JPG    
+
+`identify` from imagemagick
+
+`sudo apt-get install imagemagick` - installs it (Ubuntu)
+
+To get information about a file:
+
+    $ identify ./IMG_8455.JPG 
+    ./IMG_8455.JPG JPEG 2592x1728 2592x1728+0+0 8-bit DirectClass 4.338MB 0.000u 0:00.000
+
+`identify -verbose ./IMG_8455.JPG` gives much more info.
+
+Pretty neat for the summary of what is out there:
+
+    $ find . -iregex ".*\.\(jpg\|png\)" -exec identify {} \;
+    ./somefolder/anotherone/IMG_8408.JPG JPEG 2187x1458 2187x1458+0+0 8-bit DirectClass 2.61MB 0.000u 0:00.000
+
+---
+
+Cute utilities `cowsay, cowthink, xcowsay`
+
+`sudo apt-get install xcowsay` - installs it (Ubuntu)
+
+To get a temporary pop-up with a cute picture saying your line:
+
+    $ xcowsay Hello there, I am using xcowsay. Ok, Moo-o-o-o
+
+The plain text version works fine in the terminal.
+
+    $ cowsay "Screw you guys I am going home. Moo-o-o-o"
+     _________________________________
+    / Screw you guys I am going home. \
+    \ Moo-o-o-o                       /
+     ---------------------------------
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
+
 ---

@@ -2,13 +2,13 @@
 
 See Also:
 
-    - [CUDA](CUDA.md)
-    - [Docker](Docker.md)
-    - [DockerCompose](DockerCompose.md)
-    - [DockerSwarm](DockerSwarm.md)
-    - [Kubeflow](Kubeflow.md)
-    - [Kubernetes](Kubernetes.md)
-    - [LXD, Linux Containers](LXD.md)
+  - [CUDA](CUDA.md)
+  - [Docker](Docker.md)
+  - [DockerCompose](DockerCompose.md)
+  - [DockerSwarm](DockerSwarm.md)
+  - [Kubeflow](Kubeflow.md)
+  - [Kubernetes](Kubernetes.md)
+  - [LXD, Linux Containers](LXD.md)
 
 ---
 

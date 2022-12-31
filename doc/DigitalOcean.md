@@ -1,5 +1,7 @@
 # Digital Ocean
 
+digitalocean.com
+
 See Also:
 
   - [Azure](Azure.md)
