@@ -1,19 +1,80 @@
 # Career
 
+This page is a pile of relatively useful links and snippets related to
+job search, on-boarding, working, career-related humour, etc.
+
+I do not have time to curate it properly, the repo in general is more
+about technology rather than career advising.
+
+Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](https://www.linkedin.com/in/panchul)
+
+Have fun.
+
 See Also:
 
   - [Education](Education.md)
   - [Startup](Startup.md)
   - [Business](Business.md)
 
-Here is my LinkedIn.com profile: [https://www.linkedin.com/in/panchul](https://www.linkedin.com/in/panchul)
+---
 
-TODO: Add the list courses I took
-TODO: Add list interests, etc.
+According to Internet reposts, Elon Musk sent an email to the staff at Tesla
+with his 6 rules for productivity:
+
+1) Avoid large meetings. Large meetings waste valuable time and energy.
+- They discourage debate
+- People are more guarded than open
+- There’s not enough time for everyone to contribute
+  Don’t schedule large meetings unless you’re certain they provide value to everyone.
+
+2) Leave a meeting if you’re not contributing. If a meeting doesn't require your:
+- Input
+- Value
+- Decisions
+  Your presence is useless.
+  It’s not rude to leave a meeting.
+  But it’s rude to waste people’s time.
+
+3) Forget the chain of command
+   Communicate with colleagues directly.
+   Not through supervisors or managers.
+   Fast communicators make fast decisions.
+   Fast decisions = competitive advantage.
+
+4) Be clear, not clever. Avoid nonsense words and technical jargon.
+   It slows down communication.
+   Choose words that are:
+- Concise
+- To the point
+- Easy to understand
+  Don’t sound smart. Be efficient.
+
+5) Ditch frequent meetings. There’s no better way to waste everyone’s time.
+   Use meetings to:
+- Collaborate
+- Attack issues head-on
+- Solve urgent problems
+  But once you resolve the issue, frequent meetings are no longer necessary.
+  You can resolve most issues without a meeting.
+  Instead of meetings:
+- Send a text
+- Send an email
+- Communicate on a discord or slack channel
+  Don’t interrupt your team’s workflow if it’s unnecessary.
+
+6) Use common sense. If a company rule doesn't:
+- Make sense
+- Contribute to progress
+- Apply to your specific situation
+  Avoid following the rule with your eyes closed.
+  Don’t follow rules. Follow principles.
 
 ---
 
-From the CIA’s declassified sabatour guidance, to disrupt an advisory from within is to:
+At some companies you look around yourself and see that your co-workers seem to
+be practicing the CIA manual. Stay away from those. :-)
+
+From the CIA’s declassified saboteur guidance, to disrupt an advisory from within is to:
 
 - Insist on doing everything through “channels.” Never permit short-cuts to be taken in order to expedite decisions.
 
@@ -111,7 +172,7 @@ You will have very limited control over what you do and how you do it. It is not
 shadow write for your bosses and then see them taking all the credit without mentioning you exist.
 
 It is ok to explore and make the best of it, but what will be in YOUR best interests is to
-find a direc-hire FTE job somewhere else and leave faster than your middleman could spell 'counteroffer'.
+find a direct-hire FTE job somewhere else and leave faster than your middleman could spell 'counteroffer'.
 
 One more thing, once you are the boss, try being honest and compassionate to the contractors if
 you do need to hire them. 
@@ -473,6 +534,7 @@ https://drdianehamilton.com/chief-officer-acronyms-explained-ceo-coo-cfo-and-mor
 Amazon, Google, Microsoft Salaries
 https://insights.dice.com/2020/02/25/google-microsoft-amazon-salaries-revealed-pays-most/
 
+```
 Senior Engineer Salaries:
 .       Amazon SDE III Google L5 Microsoft Principal SDE
 Salary	$158,267	$178,212	$187,000
@@ -486,6 +548,7 @@ Salary	$116,639	$121,825	$106,150
 Bonus	$21,822	    $20,993	    $21,844
 Stock	$15,891	    $40,825	    $29,891
 TOTAL	$154,352	$183,643	$157,885
+```
 
 ---
 
@@ -499,10 +562,10 @@ https://www.youtube.com/watch?v=DSxhgejP0u4
 
 --- 
 
-From Internet a fresh Ph.D. compansation package Pensylvania 2019.
+From Internet a fresh Ph.D. compensation package Pennsylvania 2019.
     Experience - 2-3 internships
     Base - $130k
-    Relocation/Signon - $13k
+    Relocation/Sign-on - $13k
     Stocks - $200k (over 4 years)
     Perks - free food, 20 days off + 2 weeks winter break + $1000 transit + $5000 home purchase, 401 (k) match upto 4% (~$5.5k)
     Total (stocks + 401(k)+base+relocation) - $198k (first year then $185k)

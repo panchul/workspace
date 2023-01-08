@@ -7,6 +7,13 @@ See Also:
 
 ---
 
+Popular online course hubs:
+
+- www.pluralsight.com
+- 
+
+---
+
 This repo has a lot of other useful material, aside from OpenCV:
 https://github.com/PacktPublishing/OpenCV-4-Computer-Vision-Application-Programming-Cookbook-Fourth-Edition
 
