@@ -71,6 +71,21 @@ with his 6 rules for productivity:
 
 ---
 
+The manifesto that Phil Knight created for Nike in 1980 had 10 simple rules:
+
+1. Our business is change.
+2. We're on offense.
+3. Perfect results > perfect process.
+4. This is as much about battle as about business.
+5. Assume nothing, make sure people keep their promises, push yourselves and others, stretch the possible.
+6. Live off the land.
+7. Your job isn't done until THE job is done.
+8. Dangers: Bureaucracy, personal ambition, energy takers vs. givers, knowing our weaknesses, too many things on the platter.
+9. It won't be pretty.
+10. If we do the right things we'll make money damn near automatic.
+
+---
+
 At some companies you look around yourself and see that your co-workers seem to
 be practicing the CIA manual. Stay away from those. :-)
 

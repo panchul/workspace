@@ -1,4 +1,4 @@
-# Kubenetes
+# Kubernetes
 
 https://kubernetes.io/
 

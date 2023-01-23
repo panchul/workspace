@@ -20,6 +20,7 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 - [Installing](Python.md#Installing)
 - [IDEs Etc](Python.md#IDEs-Etc)
+- [Web-related](Python.md#Web-related)
 - [Miscellaneous](Python.md#Miscellaneous)
 
 ---
@@ -105,6 +106,18 @@ TODO
 Visual Studio Code
 
 ---
+
+## Web-related
+
+Quick and simple HTTP server, this is to serve the folder where you run it:
+
+    $ python -m http.server --cgi
+
+More at https://docs.python.org/3/library/http.server.html
+
+By default, the server uses the current directory. The option -d/--directory specifies a directory to which it should serve the files. For example, the following command uses a specific directory:
+
+    $ python -m http.server --directory /tmp/
 
 ## Miscellaneous
 
