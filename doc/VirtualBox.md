@@ -14,7 +14,8 @@ See Also:
 
  - [Installing](#installing)
  - [Shared Folders](#shared-folders)
- - [Miscellaneous](#miscellaneous)
+ - [Networking](VirtualBox.md#Networking)
+ - [Miscellaneous](VirtualBox.md#miscellaneous)
 
 ## Installing
 
@@ -50,8 +51,21 @@ https://gist.github.com/estorgio/1d679f962e8209f8a9232f7593683265
 
 
 
+---
 
+## Networking
 
+---
+
+How to SSH into VirtualBox on a Mac
+
+https://www.youtube.com/watch?v=SrvPj93acQA
+
+---
+
+How to Create a Network of Machines in VirtualBox with SSH Access
+
+https://www.youtube.com/watch?v=S7jD6nnYJy0
 
 ---
 
