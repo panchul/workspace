@@ -24,6 +24,7 @@ My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panch
  - [GUI Samples](CSharp.md#gui-samples)
  - [Windows Messaging](CSharp.md#windows-messaging)
  - [Logging](CSharp.md#logging)
+ - [Mono](CSharp.md#mono)
  - [Miscellaneous](CSharp.md#Miscellaneous)
 
 ---
@@ -230,6 +231,50 @@ https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendmessag
 Creating your own logging provider to log to text files in net core
 
 https://www.roundthecode.com/dotnet/create-your-own-logging-provider-to-log-to-text-files-in-net-core
+
+---
+
+## Mono
+
+---
+
+To install Mono:
+
+https://www.mono-project.com/download/stable/
+
+
+To verify that Mono has been installed properly:
+
+https://www.mono-project.com/docs/getting-started/mono-basics/
+
+From there, console `Hello World`. Put this into `hello.cs`:
+
+```
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Hello Mono World");
+    }
+}
+```
+
+Compile:
+
+    $ csc hello.cs
+
+Note: csc compiler is not available on all platforms or in very old Mono versions, in such cases use mcs instead.
+
+Run:
+
+    $ mono hello.exe
+
+
+To make sure HTTPS connections work:
+
+    $ csharp -e 'new System.Net.WebClient ().DownloadString ("https://www.nuget.org")'
 
 ---
 
