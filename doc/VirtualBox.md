@@ -12,8 +12,8 @@ See Also:
 
 ##Content
 
- - [Installing](#installing)
- - [Shared Folders](#shared-folders)
+ - [Installing](VirtualBox.md#installing)
+ - [Shared Folders](VirtualBox.md#shared-folders)
  - [Networking](VirtualBox.md#Networking)
  - [Miscellaneous](VirtualBox.md#miscellaneous)
 

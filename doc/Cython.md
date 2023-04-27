@@ -11,5 +11,17 @@ See also:
   - [Numpy](Numpy.md)
   - [PIL](PIL.md)
   - [Python](Python.md)
+  - python binding, etc.
   
 ---
+
+**Contents**
+
+- [Miscellaneous](Cython.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+

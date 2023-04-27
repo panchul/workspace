@@ -13,6 +13,16 @@ See Also:
 
 ---
 
+**Contents**
+
+ - [Miscellaneous](DHCP.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 How to setup DHCP server and client on Ubuntu and CentOS
 https://www.tecmint.com/install-dhcp-server-client-on-centos-ubuntu/
 

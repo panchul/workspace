@@ -16,3 +16,7 @@ If you did not explicitly set the login/password on that server
     $ sudo passwd whatever_your_login_is
 
 ---
+
+For Drake's Meshcat on AWS I had to `chmod 755 $XAUTHORITY` for their server to work.
+
+---

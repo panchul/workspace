@@ -12,6 +12,12 @@ My Erlang sandbox is [https://github.com/panchul/sb_erlang](https://github.com/p
 
 ---
 
+**Contents**
+
+- [Links](Erlang.md#links)
+
+---
+
 A refresher on exceptions
 
 ```
@@ -44,11 +50,11 @@ Installing from pre-built binary packages
 Pre-built packages are probably lagging behind with their versions, and
 lack some of the additional functionality. If it is ok, get them like so:  
 
-For Homebrew on OS X: ```brew install erlang```  
-For MacPorts on OS X: ```port install erlang```  
-For Ubuntu and Debian: ```apt-get install erlang```  
-For Fedora: ```yum install erlang```  
-For FreeBSD: ```pkg install erlang```  
+For Homebrew on OS X: `brew install erlang`  
+For MacPorts on OS X: `port install erlang`  
+For Ubuntu and Debian: `apt-get install erlang`  
+For Fedora: `yum install erlang`  
+For FreeBSD: `pkg install erlang`  
 
 Building and Installing from the souce codes
   
@@ -102,17 +108,6 @@ Simple Erlang script template
     
 ---
 
-Links
-
-[https://www.erlang.org/](https://www.erlang.org/)  
-[http://erlang.org/mailman/listinfo/erlang-questions](http://erlang.org/mailman/listinfo/erlang-questions) - mailing list  
-[http://introducingerlang.com/](http://introducingerlang.com/) - Nice tutorial  
-  
-[10 Essential Erlang Tools for Erlang Developers](http://tutorials.pluralsight.com/erlang/10-essential-erlang-tools-for-erlang-developers#9OxH46USdVKq2dQw.99)  
-[Nice refresher about guards](https://medium.com/@elbrujohalcon/there-are-guards-and-guards-71e67d4975d7#.ey1nnyrvf)  
-
----
-
 Snippet adding two numbers from the input:
 
     -module(solution).
@@ -145,3 +140,17 @@ Snippet printing something N times
         ok.
     
 ---    
+
+## Links
+
+[https://www.erlang.org/](https://www.erlang.org/)
+
+[http://erlang.org/mailman/listinfo/erlang-questions](http://erlang.org/mailman/listinfo/erlang-questions) - mailing list
+
+[http://introducingerlang.com/](http://introducingerlang.com/) - Nice tutorial
+
+[10 Essential Erlang Tools for Erlang Developers](http://tutorials.pluralsight.com/erlang/10-essential-erlang-tools-for-erlang-developers#9OxH46USdVKq2dQw.99)
+
+[Nice refresher about guards](https://medium.com/@elbrujohalcon/there-are-guards-and-guards-71e67d4975d7#.ey1nnyrvf)
+
+---

@@ -12,6 +12,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](AWS.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 AWS to Azure services comparison
 https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services
 

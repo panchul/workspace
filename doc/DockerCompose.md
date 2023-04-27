@@ -11,6 +11,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](DockerCompose.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Neat tricks to extend the configurations.
 https://docs.docker.com/compose/extends/
 

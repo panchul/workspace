@@ -9,6 +9,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](APIs.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Random links on apis
 https://ankitvijay.net/2020/02/25/client-library-for-your-rest-api-is-it-worth-the-pain/
 

@@ -4,13 +4,15 @@ https://yaml.org/
 
 See Also:
 
-- [APIs](APIs.md)
-- [XML](XML.md)
-- [JSON](JSON.md)
+ - [APIs](APIs.md)
+ - [XML](XML.md)
+ - [JSON](JSON.md)
 
 ---
 
 C# YAML library: https://github.com/aaubry/YamlDotNet
+
+In fact, there is a built-in .yaml support in the newer versions.
 
 ---
 
@@ -34,4 +36,3 @@ Formatting of spaces in strings
 For escape characters, use double quotation marks, "".
 
 ---
-

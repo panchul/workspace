@@ -7,8 +7,8 @@ See Also:
   - [APIs](APIs.md)
   - [XML](XML.md)
   - [YAML](YAML.md)
-  - [Scala implementation](#Scala-implementation)
-  - [C++ implementation](#C++-implementation)
+  - [Scala implementation](JSON.md#Scala-implementation)
+  - [C++ implementation](JSON.md#C++-implementation)
 
 ---
 

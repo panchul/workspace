@@ -4,6 +4,22 @@ https://github.com/linkedin/Burrow
 
 ---
 
+See Also:
+
+- [Kafka](Kafka.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Burrow.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Wants Dep as a pre-requisite:
 https://github.com/golang/dep
 

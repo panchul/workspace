@@ -4,6 +4,20 @@ https://developer.android.com/studio
 
 https://developer.android.com/guide/app-bundle/in-app-updates
 
+See Also:
+
+- [Linux](Linux.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Android.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Android courses, some about Kotlin.

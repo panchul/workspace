@@ -13,8 +13,8 @@ See Also:
 
 Contents
 
-- [LIDAR](#LIDAR)
-- [Miscellaneous](#Miscellaneous)
+- [LIDAR](ComputerVision.md#LIDAR)
+- [Miscellaneous](ComputerVision.md#Miscellaneous)
 
 ---
 

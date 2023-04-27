@@ -8,6 +8,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Ansible.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Another demo, updating all packages on ubuntu.
 https://www.cyberciti.biz/faq/ansible-apt-update-all-packages-on-ubuntu-debian-linux/
 

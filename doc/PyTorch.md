@@ -7,8 +7,8 @@ See Also:
 
 **Content**
 
- - [Installing](#Installing)
- - [PyTorchServe](#PyTorchServe)
+ - [Installing](PyTorch.md#Installing)
+ - [PyTorchServe](PyTorch.md#PyTorchServe)
 
 ---
 

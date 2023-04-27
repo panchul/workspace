@@ -15,6 +15,16 @@ My shell sandbox is [https://github.com/panchul/sb_shell](https://github.com/pan
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Bash.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Neat review of setting variables with simple demos.
 https://www.cyberciti.biz/faq/set-environment-variable-linux/
 
@@ -115,32 +125,38 @@ More at https://stackoverflow.com/questions/16548528/command-to-get-time-in-mill
 
 ---
 
-Idiomatic passing parameters in bash, flag ‘-e’ for echo and ‘@-‘ for curl:
+Idiomatic passing parameters in bash, flag `-e` for echo and `@-` for curl(`@` meanst file):
 
     $ echo -e "[MYSETTING_1]\nsomeValue=123" | curl --data-binary @- http://128.0.0.1/myapi/consume
-
     OK
+
+Or from a file:
+
+    $ curl --data-binary @filename https://example.com
+
+See more in [Curl.md](Curl.md)
  
 ---
 
 A collection of snippets
+
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc7
 
 ---
 
 To run a stdout redirect in a sudo line, this helped:
 
-    sudo sh -c "echo $1 > /tmp/myserver$1/myid "
+    $ sudo sh -c "echo $1 > /tmp/myserver$1/myid "
 
 Without "sh -c" did not work:
 
-    sudo echo $1 > /tmp/zookeeper$1/myid         <----- is not allowed.
+    $ sudo echo $1 > /tmp/zookeeper$1/myid         <----- is not allowed.
 
 Similar thing is going on with Dockerfile's CMD and Entrypoint
 
 For multiline content, this would work:
 
-    sudo sh -c "cat >> /etc/hosts " << 'EOF'
+    $ sudo sh -c "cat >> /etc/hosts " << 'EOF'
     1.2.3.41  mydomain1.com  
     1.2.3.42  mydomain2.com  
     1.2.3.43  mydomain3.com  
@@ -148,7 +164,7 @@ For multiline content, this would work:
 
 B.t.w. if you want to have parameters in that body, use EOF without quotes:
 
-    sudo sh -c "cat > /var/www/html/index.html " << EOF
+    $ sudo sh -c "cat > /var/www/html/index.html " << EOF
       <html>
       <body>
       "${HTTP_CONTENT}"
@@ -159,12 +175,12 @@ B.t.w. if you want to have parameters in that body, use EOF without quotes:
 ---
 
 Unit testing of bash scripts
+
 I forked shunit2: https://github.com/panchul/shunit2
 
 There is another similar framework at https://github.com/djui/bashunit
 
 And this project has interesting usage if it: https://github.com/atmoz/sftp
-
 
 ---
 
@@ -174,8 +190,8 @@ Sample usage of xargs:
 
 ---
 
-Speaking of ```find```, I used to have my envelope for it 
-('''-l''' for grep is to output only filenames, sometimes used '''-i''' to ignore case)
+Speaking of `find`, I used to have my envelope for it 
+(`-l` for grep is to output only filenames, sometimes used `-i` to ignore case)
 
 
     $ find . \( \
@@ -209,18 +225,19 @@ Speaking of ```find```, I used to have my envelope for it
 
 ---
 
-A quick search-and-replace, to use "<PATH_TO_CONFIG>" in the template file:
+A quick search-and-replace, to use `<PATH_TO_CONFIG>` in the template file:
 
     $ sed "s|<PATH_TO_CONFIG>|$PATH_TO_CONFIG|g" config.template > config.for_realz
 
 See [Sed.md](Sed.md) for more.
+
 Here is another idiomatic command to make that config visible:
 
     $ export CONFIG_FOR_REALZ=$(pwd)/config.for_realz
     
 ---
 
-Quick example of ```for``` loop
+Quick example of `for` loop
 
     $ for i in $( ls ); do echo item: $i; done
 
@@ -233,7 +250,7 @@ Or, in a file,
 
 ---
 
-Idiomatic ```while``` loop
+Idiomatic `while` loop
 
     #!/bin/bash 
     COUNTER=0
@@ -242,7 +259,7 @@ Idiomatic ```while``` loop
          let COUNTER=COUNTER+1 
     done
     
-similar thing with ```until```
+similar thing with `until`
 
     #!/bin/bash 
     COUNTER=10
@@ -253,7 +270,7 @@ similar thing with ```until```
     
 ---
 
-use ```echo -e "something\n the other line"``` to get multi-line strings
+use `echo -e "something\n the other line"` to get multi-line strings
 
 https://stackoverflow.com/questions/3005963/how-can-i-have-a-newline-in-a-string-in-sh
 
@@ -268,7 +285,7 @@ How to rewrite it using sudo, this snippet might be helpful:
 
     $ sudo bash -v -c "for dcyml in \$(ls -1 *.sh) ; do echo \$dcyml ; done"
  
-```-v``` is just for verbosity. 
+`-v` is just for verbosity. 
  
 ---
 
@@ -283,7 +300,7 @@ Something like this would work too:
 
 ---
 
-Using included files in scripts. Let's say we have ```incl.sh``` and we want its content to be used in ```main.sh```
+Using included files in scripts. Let's say we have `incl.sh` and we want its content to be used in `main.sh`
 
 Included:
 
@@ -347,7 +364,7 @@ http://tldp.org/LDP/abs/html/complexfunct.html
 
 ---
 
-Example of using ```<<<``` and ```read```
+Example of using `<<<` and `read`
 
     $ cat /tmp/ifs.sh
     LINE="7.6.5.4"
@@ -435,7 +452,7 @@ fi
 
 ---
 
-User input is via ```read```:
+User input is via `read`:
 
     read myname
     echo "Welcome" $myname
@@ -470,7 +487,7 @@ Idiomatic check on configurations
 
 ---
 
-```set -e``` makes errors fatal for the script:
+`set -e` makes errors fatal for the script:
  
     #!/bin/bash
     cd /project1
@@ -807,12 +824,12 @@ You can do command substitution in an echo command itself (no need to use shell 
 
 Example of drawing in a terminal:
 
-    P=(' ' █ ░ ▒ ▓)
-    while :;do printf "\e[$[RANDOM%LINES+1];$[RANDOM%COLUMNS+1]f${P[$RANDOM%5]}";done
+    P=(' ' █ ░ ▒ ▓) ; while :;do printf "\e[$[RANDOM%LINES+1];$[RANDOM%COLUMNS+1]f${P[$RANDOM%5]}";done
 
 ---
 
-How to setup an auto-completetion:
+How to setup an auto-completion:
+
 https://www.cyberciti.biz/faq/add-bash-auto-completion-in-centos-8-linux
 
     $ complete -W '192.168.1.11 mydomain.com another.com' ping

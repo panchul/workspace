@@ -10,6 +10,16 @@ https://github.com/panchul/sb_cpp/tree/master/data_structures
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Deque.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Deque Template:
 
     std::deque<value_type>

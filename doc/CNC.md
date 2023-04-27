@@ -10,6 +10,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](CNC.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 3-in-one, laser cutter, CNC, and 3D printer:
 
 www.snapmaker.com

@@ -20,7 +20,8 @@ To restore:
 
     $ yum -y install $(cat /nas/installed-software-mm-dd-yyyy.log)
 
-More on backuping:
+More on backup-ing:
+
 https://www.cyberciti.biz/tips/linux-get-list-installed-software-reinstallation-restore.html
 
 ---

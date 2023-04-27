@@ -6,7 +6,7 @@ See Also:
 
 **Content**
 
-- [Miscellaneous](#miscellaneous)
+- [Miscellaneous](Scikit.md#miscellaneous)
 
 
 # Miscellaneous

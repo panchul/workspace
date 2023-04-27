@@ -16,8 +16,10 @@ A zero-knowledge proof must satisfy three properties:
 
  - Completeness: if the statement is true, the honest verifier (that is, one
    following the protocol properly) will be convinced of this fact by an honest prover.
+   
  - Soundness: if the statement is false, no cheating prover can convince the honest
    verifier that it is true, except with some small probability.
+
  - Zero-knowledge: if the statement is true, no verifier learns anything other than the
    fact that the statement is true. In other words, just knowing the statement (not the
    secret) is sufficient to imagine a scenario showing that the prover knows the

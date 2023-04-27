@@ -1,11 +1,24 @@
 # automake
 
 See also:
- [Autoconf](Autoconf.md)
- [Automake](Automake.md)
- [Libtool](Libtool.md)
+
+ - [Autoconf](Autoconf.md)
+ - [Automake](Automake.md)
+ - [Libtool](Libtool.md)
 
 https://www.gnu.org/software/automake/automake.html
+
+---
+
+**Contents**
+
+- [Miscellaneous](Automake.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
 
 To get the autoconf, etc.:
 
@@ -39,7 +52,7 @@ To get the autoconf, etc.:
 
 ---
 
-Here's a link about the host types for ```configure```:
+Here's a link about the host types for `configure`:
 
 http://hints.macworld.com/article.php?story=20010210014851860
 

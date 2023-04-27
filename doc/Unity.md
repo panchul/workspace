@@ -12,6 +12,7 @@ https://unity3d.com/
 - [Motions](Unity.md#Motions)
 - [Camera controls](Unity.md#Camera-controls)
 - [UI](Unity.md#UI)
+- [AR/VR](Unity.md#arvr)
 - [Miscellaneous](Unity.md#Miscellaneous)
 
 ---
@@ -172,6 +173,14 @@ https://www.youtube.com/watch?v=yUXFHAOXhcA
 
 ---
 
+## AR/VR
+
+---
+
+
+
+---
+
 ## Miscellaneous 
 
 ---
@@ -243,5 +252,11 @@ https://wiki.unity3d.com/index.php/Singleton - UnitySingleton implementation
 FileBrowser a la system
 
 Crosstales.FB.FileBrowser nice FileBrowser plugin for Unity
+
+---
+
+Applying Materials, shaders, textures, etc.
+
+https://www.youtube.com/watch?v=MGIBLPIz4oM
 
 ---

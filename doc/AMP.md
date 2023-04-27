@@ -9,3 +9,16 @@ See also:
 - [OpenCV](OpenCV.md)
 
 ---
+
+**Contents**
+
+- [Miscellaneous](AMP.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
+C++AMP - is supposed to be vendor-agnostic, to work on Nvidia, AMD, and others. 
+

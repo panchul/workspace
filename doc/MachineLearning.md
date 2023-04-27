@@ -17,9 +17,9 @@ See Also:
 
 **Content**
 
- - [Labs and tutorials](#labs-and-tutorials)
- - [Frameworks](#Frameworks)(for math and preprocessing) 
- - [Miscellaneous](#miscellaneous)
+ - [Labs and tutorials](MachineLearning.md#labs-and-tutorials)
+ - [Frameworks](MachineLearning.md#Frameworks)(for math and preprocessing) 
+ - [Miscellaneous](MachineLearning.md#miscellaneous)
 
 # Frameworks
 

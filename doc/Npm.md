@@ -1,11 +1,11 @@
 # npm
 
 See Also:
+
  - [Mercurial](Mercurial.md)
  - [Subversion](Subversion.md)
  - [Git](Git.md)
  - [Gulp](Gulp.md)
-
 
 npm (Node package manager) is a software registry. It is installed with Node.js.
 npm includes a cli that can be used to download and install packages.
@@ -46,7 +46,6 @@ https://dev.to/joeattardi/how-to-publish-an-npm-package-to-npm-and-github-packag
 
 How to use a private git repo as an npm module
 (from here: https://dev.to/gate3/how-to-use-a-private-git-repo-as-an-npm-module-2cl9)
-
 
 
 

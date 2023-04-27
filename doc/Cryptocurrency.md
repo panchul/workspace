@@ -7,6 +7,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Cryptocurrency.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Nick Watts on FTX and 10 romantically involved people who screwed up the world.
 https://www.tiktok.com/@internwatts/video/7164824367329856810
 

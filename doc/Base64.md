@@ -1,8 +1,22 @@
 # Base64
 
+See Also:
+
+- [Graphics](Graphics.md)
+
 ---
 
-Cloned a ok implementeation of the encoder and decoder:
+**Contents**
+
+- [Miscellaneous](Base64.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
+Cloned a ok implementation of the encoder and decoder:
 https://github.com/panchul/cpp-base64
 
 Here's the idiomatic snippet of usage(add `base64.cpp` to the project):

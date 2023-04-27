@@ -1,5 +1,19 @@
 # Confluent platform
 
+See Also:
+
+- ...
+
+---
+
+**Contents**
+
+- [Miscellaneous](Confluent.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Confluent kafka download:

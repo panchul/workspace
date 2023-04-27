@@ -2,9 +2,18 @@
 
 See Also:
 
-  - [Unity](Unity.md)
-  - [Unreal Engine](UnrealEngine.md)
-  - 
+ - [Graphics](Graphics.md)
+ - [Unity](Unity.md)
+ - [Unreal Engine](UnrealEngine.md)
+ 
+---
+
+**Contents**
+
+ - [Miscellaneous](Blender.md#miscellaneous)
+
+
+## Miscellaneous
 
 ---
 
@@ -37,6 +46,6 @@ Blender used for sequencing: https://www.youtube.com/watch?v=OGapXgrLOnI
 
 ---
 
-Blender and stuff, about photorealism https://www.youtube.com/watch?v=m9AT7H4GGrA
+Blender and stuff, about photorealistic imaes https://www.youtube.com/watch?v=m9AT7H4GGrA
 
 ---

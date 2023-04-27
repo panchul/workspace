@@ -1,5 +1,19 @@
 # Cascading Style Sheet
 
+See Also:
+
+- [Graphics](Graphics.md)
+
+---
+
+**Contents**
+
+ - [Miscellaneous](CSS.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 The intro in here has useful examples that
@@ -8,7 +22,7 @@ https://www.w3schools.com/css/css_intro.asp
 
 ---
 
-border-collapse properdy demo
+border-collapse property demo
 https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse
 
 more about CSS:
@@ -22,7 +36,7 @@ https://dev.to/5t3ph/intro-to-the-css-cascade-the-c-in-css-1kh0
 
 ---
 
-Nice environmtnt to try things out.
+Nice environment to try things out.
 https://www.w3schools.com/css/tryit.asp?filename=trycss_default
 
 ---

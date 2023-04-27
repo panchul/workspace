@@ -5,10 +5,10 @@ http://www.ssh.com/
 
 **Table of Content**
 
-- [ssh configuring](#SSH-configuring)
-- [Open SSH server](#Open-SSH-server)
-- [Tunneling](#Tunneling)
-- [Miscallaneous](#Miscallaneous)
+- [ssh configuring](SSH.md#SSH-configuring)
+- [Open SSH server](SSH.md#Open-SSH-server)
+- [Tunneling](SSH.md#Tunneling)
+- [Miscallaneous](SSH.md#Miscallaneous)
 
 ## SSH configuring
 

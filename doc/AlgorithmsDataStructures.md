@@ -39,6 +39,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](AlgorithmsDataStructures.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 The basic list of datastructures interviewers like are:
 
 - Hash maps
@@ -70,6 +80,7 @@ No polynomial complexity solution found.
 Neat compilation and review.
 
 How to Learn Data Structures and Algorithms. 20 Problem-Solving Techniques You Must Know.
+
 https://www.yourdevopsguy.com/how-to-learn-data-structures-and-algorithms-20-problem-solving-techniques-you-must-know/
 
     Pointer based
@@ -81,26 +92,31 @@ https://www.yourdevopsguy.com/how-to-learn-data-structures-and-algorithms-20-pro
 ---
 
 Recursion vs Iteration: 13 Ways to Traverse a Tree.
+
 https://dev.to/codinglanguages/recursion-vs-iteration-13-ways-to-traverse-a-tree-2n89
 
 ---
 
 50 Data structure and algorithm interview questions
+
 https://www.hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
 
 ---
 
 Kirchhoff's theorem (about the number of spanning trees of a graph)
 https://en.wikipedia.org/wiki/Kirchhoff%27s_theorem
-
+```
 t(G) = 1/n * lambda1 * lambda2 * ... * lambda(n-1)
 where lambda(i) is non-zero eigenvalues of its Laplacian matrix.
+```
 
 Laplacian matrix
 https://en.wikipedia.org/wiki/Laplacian_matrix
+```
 L = D - A
 D - degree matrix (on diagonal - the number of connections of a node)
 A - adjacency matrix (0 - not connected, 1 - connected)
+```
 
 LU decomposition
 https://en.wikipedia.org/wiki/LU_decomposition
@@ -110,12 +126,14 @@ https://en.wikipedia.org/wiki/LU_decomposition
 About Negative integers in Modular Arithmetic
 https://www.youtube.com/watch?v=2rbeCUMBYgk
 
+```
 mod m:
 n = q * m + R
 R - remainder
 
  51 mod 10 = 1        5 * 10 + 1
 -51 mod 10 = 9       -6 * 10 + 9
+```
 
 ---
 

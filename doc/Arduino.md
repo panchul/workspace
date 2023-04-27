@@ -14,6 +14,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Arduino.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Neat ball-balancing project, PID+CV
 
 https://www.instructables.com/id/Ball-Balancing-PID-System/

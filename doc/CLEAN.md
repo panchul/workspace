@@ -6,6 +6,16 @@ See Also
 
 ---
 
+**Contents**
+
+- [Miscellaneous](CLEAN.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 CLEAN Architecture overview, and nice tutorial overall:
 
 1. [Common web application architectures](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures)

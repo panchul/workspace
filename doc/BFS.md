@@ -2,6 +2,20 @@
 
 https://en.wikipedia.org/wiki/Breadth-first_search
 
+See Also:
+
+- ...
+
+---
+
+**Contents**
+
+- [Miscellaneous](BFS.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Simple pseudocode of traversing

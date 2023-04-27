@@ -8,6 +8,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Business.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 The into to The Patent Scam documentary:
 https://www.youtube.com/watch?v=sG9UMMq2dz4
 

@@ -9,10 +9,11 @@ https://github.com/envoyproxy/envoy
 https://www.youtube.com/watch?v=RVZX4CwKhGE
 
 See also:
-- [Apache](Apache.md)
-- [Flask](Flask.md)
-- [Nginx](Nginx.md)
-- [HAProxy](HAProxy.md)
-- [Linux](Linux.md)
+
+ - [Apache](Apache.md)
+ - [Flask](Flask.md)
+ - [Nginx](Nginx.md)
+ - [HAProxy](HAProxy.md)
+ - [Linux](Linux.md)
 
 ---

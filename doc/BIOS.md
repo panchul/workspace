@@ -6,6 +6,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](BIOS.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 ```
 AMI BIOS Beep Codes
 

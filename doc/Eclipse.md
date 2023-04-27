@@ -2,6 +2,20 @@
 
 https://www.eclipse.org/downloads/
 
+See Also:
+
+- ...
+
+---
+
+**Contents**
+
+- [Miscellaneous](Eclipse.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Nice overview of using with OpenCV:

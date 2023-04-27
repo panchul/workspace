@@ -95,6 +95,7 @@
 A more conceptual links, still related to Programming Languages and Math
 
   - [Functional Programming](FunctionalProgramming.md)
+  - [Design Patterns](DesignPatterns.md)
 
 ## Virtualization, clustering, provisioning, and monitoring
 

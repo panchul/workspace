@@ -1,29 +1,32 @@
-# Alpine Linux
+# Arch Linux
 
 See Also:
 
- - [Arch](Arch.md)
+ - [Alpine](Alpine.md)
  - [CentOS](CentOS.md)
  - [Debian](Debian.md)
  - [Fedora](Fedora.md)
  - [Linux](Linux.md)
  - [RedHat](RedHat.md)
  - [Ubuntu](Ubuntu.md)
- 
-https://alpinelinux.org/
-
-https://en.wikipedia.org/wiki/Alpine_Linux
-
-`apk` is the packaging tool.
 
 ---
 
 **Contents**
 
-- [Miscellaneous](Alpine.md#miscellaneous)
+- [Miscellaneous](Arch.md#miscellaneous)
 
 ---
 
 ## Miscellaneous
+
+---
+
+---
+
+To install `sudo`(may not be by default in the packages)
+
+    $ packman -Sy sudo
+
 
 ---

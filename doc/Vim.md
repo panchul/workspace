@@ -1,4 +1,3 @@
-
 # Vi/Vim
 
 ---
@@ -9,25 +8,25 @@
 
 On some distributions of Linux the keys are messed up.
 
-Add this to ```~/.vimrc``` to make sure the arrows work as expected:
+Add this to `~/.vimrc` to make sure the arrows work as expected:
 
-```set esckeys```
+`set esckeys`
 
 I think this works too:
 
-```set nocp```
+`set nocp`
 
 ---
 
-This turns on the line numbers, in ```~/.vimrc```:
+This turns on the line numbers, in `~/.vimrc`:
 
-```set number```
+`set number`
 
-To turn them off, '''set nonumber``` 
+To turn them off, `set nonumber` 
 
 ---
 
-Bottom line, just cut and paste this to ```~/.vimrc```:
+Bottom line, just cut and paste this to `~/.vimrc`:
 
 ```
 set esckeys
@@ -112,9 +111,9 @@ See :help {command} (for example, :help g_) for all of the above if you want mor
 Using Vim as a Hexadecimal editor:
     
 1. Open the file in Vim.
-2. Run the command ```:% ! xxd```
+2. Run the command `:% ! xxd`
 3. Edit.
-4. Once done, run ```:% ! xxd -r```
+4. Once done, run `:% ! xxd -r`
 5. Save.
 
 ---
@@ -125,7 +124,7 @@ Change the line endings in the vi:
     :e ++ff=mac
     :e ++ff=unix
 
-This can also be used as saving operation (:w alone will not save using the lineendings you see on screen):
+This can also be used as saving operation (:w alone will not save using the line endings you see on screen):
 
     :w ++ff=dos
     :w ++ff=mac
@@ -152,7 +151,7 @@ Also, you can open the file from within Vim in a new buffer:
 ---
 
 To open vim at a certain location, line number 123, or
-at the first occurence of 'some':
+at the first occurrence of 'some':
 
     $ vi +123 file.txt
     $ vi +/some file.txt

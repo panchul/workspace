@@ -1,12 +1,28 @@
-# Aptitude
-
-See Also:
-- [Linux](Linux.md)
-- [yum](Yum.md)
-
+# Aptitude and APT
 
 `aptitude`, that is, `apt-get`, etc. is a Debian packaging tool.
- (Advanced Package Tool)
+(Advanced Package Tool)
+
+See Also:
+
+ - dpkg 
+ - [Linux](Linux.md)
+ - [npm](Npm.md)
+ - packman
+ - snap
+ - [yum](Yum.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Aptitude.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
 
 ---
 
@@ -15,7 +31,7 @@ https://www.tecmint.com/difference-between-apt-and-aptitude
 
 ---
 
-To skip the stdin's asking for key 'y', use `'-y'`:
+To skip the stdin's asking for key `y`, use `'-y'`:
 
     sudo apt-get install -y somenicepackage
     

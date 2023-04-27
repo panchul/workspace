@@ -7,6 +7,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Curl.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Interesting way to get the id, a snippet from a pipelineing script for kubeflow
 https://www.kubeflow.org/docs/pipelines/tutorials/api-pipelines/
 

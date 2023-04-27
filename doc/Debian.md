@@ -4,10 +4,24 @@ http://www.debian.org
 
 See Also:
 
-  - [Linux](Linux.md)
-  - [Ubuntu](Ubuntu.md)
-  - [Alpine](Alpine.md)
-  
+ - [Alpine](Alpine.md)
+ - [Arch](Arch.md)
+ - [CentOS](CentOS.md)
+ - [Fedora](Fedora.md)
+ - [Linux](Linux.md)
+ - [RedHat](RedHat.md)
+ - [Ubuntu](Ubuntu.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Debian.md#miscellaneous)
+
+---
+
+## Miscellaneous
+ 
 ---
 
 Options for .deb packages installing, etc.:

@@ -16,6 +16,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Certbot.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 To run certbot on [Ubuntu](Ubuntu.md) to use with [Nginx](Nginx.md):
 
     $ sudo certbot --nginx -d nameofapp

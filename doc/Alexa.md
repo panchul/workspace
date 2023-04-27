@@ -2,6 +2,20 @@
 
 https://github.com/alexa/avs-device-sdk
 
+See Also:
+
+- ...
+
+---
+
+**Contents**
+
+- [Miscellaneous](Alexa.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Some guides how to connect stuff

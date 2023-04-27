@@ -7,6 +7,15 @@ See Also:
  - [Subversion](Subversion.md)
  - [npm](Npm.md)
 
+---
+
+**Contents**
+
+- [Miscellaneous](DVC.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

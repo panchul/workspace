@@ -4,6 +4,17 @@ See Also:
 
   - [Sed](Sed.md)
   - [RegEx](RegEx.md)
+  - [vi](Vim.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Awk.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

@@ -18,6 +18,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Career.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 According to Internet reposts, Elon Musk sent an email to the staff at Tesla
 with his 6 rules for productivity:
 
@@ -83,6 +93,33 @@ The manifesto that Phil Knight created for Nike in 1980 had 10 simple rules:
 8. Dangers: Bureaucracy, personal ambition, energy takers vs. givers, knowing our weaknesses, too many things on the platter.
 9. It won't be pretty.
 10. If we do the right things we'll make money damn near automatic.
+
+---
+
+Freelancer websites.
+
+1. freelancer.com
+2. freelancehunt.com
+3. weblancer.net
+4. guru.com
+5. upwork.com
+7. peopleperhour.com
+8. freelance.ua
+9. rubrain.com
+11. work-zilla.com
+12. fiverr.com
+14. freelancermap.com
+15. freelance-info.fr
+16. authenticjobs.com
+17. toptal.com
+18. remoteok.io
+19. remotive.io
+20. remote.com
+21. weworkremotely.com
+22. remote4me.com
+23. flexjobs.com
+24. jobmote.com
+25. skipthedrive.com
 
 ---
 

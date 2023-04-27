@@ -97,7 +97,7 @@ It will ask for username and password.
 
 ## Migrations
 
-You need to have your app in INSTALLED_APS.
+You need to have your app in `INSTALLED_APS`.
 
 First step is to write the model code (or change). The model should inherit from models, and that
 model is also should be registered for admin interface, as `admin.site.register(Mymodelclassname)`.
@@ -314,7 +314,6 @@ Or specify
 ---
 
 There is a dummy browser package, `django.test.Client`.
-
 
 ---
 

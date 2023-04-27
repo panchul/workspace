@@ -1,9 +1,22 @@
 # Apache
 
 See also
- [Linux.md](Linux.md)
+
+ - [Linux.md](Linux.md)
 
 https://httpd.apache.org/
+
+---
+
+**Contents**
+
+- [Miscellaneous](Apache.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
 
 ---
 

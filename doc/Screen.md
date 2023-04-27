@@ -12,7 +12,7 @@ Start screen:
 
     $ screen
 
-To detauch press `Ctrl-A` and `d`.
+To detach press `Ctrl-A` and `d`.
 To re-attach:
 
     $ screen -r
@@ -29,6 +29,7 @@ To pick one of them:
 ---
 
 More on `screen`:
+
 https://www.tecmint.com/screen-command-examples-to-manage-linux-terminals/
 
 ---

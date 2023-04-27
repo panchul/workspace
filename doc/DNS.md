@@ -1,5 +1,19 @@
 # DNS
 
+See Also:
+
+- [Networking](Networking.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](DNS.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 THe dns servers are in `/etc/resolv.conf`, something like

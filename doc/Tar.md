@@ -19,7 +19,7 @@ or
 
     $ ssh user@box 'cd /dir1/ && tar -cf - file | gzip -9' >file.tar.gz
 
-The following command backups /wwwdata directory to dumpserver.nixcraft.in (IP 192.168.1.201) host over ssh session:
+The following command backups `/wwwdata` directory to `dumpserver.nixcraft.in` (IP 192.168.1.201) host over ssh session:
 
     $ tar zcvf - /wwwdata | ssh user@dumpserver.nixcraft.in "cat > /backup/wwwdata.tar.gz"
 

@@ -4,6 +4,7 @@ See Also:
 
   - Distributions
     - [Alpine](Alpine.md)
+    - [Arch](Arch.md)
     - [CentOS](CentOS.md)
     - [Debian](Debian.md)
     - [Fedora](Fedora.md)

@@ -6,3 +6,12 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](DDD.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---

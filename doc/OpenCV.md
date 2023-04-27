@@ -2,9 +2,9 @@
 
 https://opencv.org/
 
-- [Installing](#Installing)
-- [Tutorials and Demos](#Tutorials-and-Demos)
-- [Integration with IDEs](#Integration-with-IDEs)
+- [Installing](OpenCV.md#Installing)
+- [Tutorials and Demos](OpenCV.md#Tutorials-and-Demos)
+- [Integration with IDEs](OpenCV.md#Integration-with-IDEs)
 
 See also:
 

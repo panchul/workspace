@@ -1,7 +1,6 @@
 # GraphQL
 
 See Also:
-
   - 
 
 Table of Content
@@ -94,7 +93,7 @@ https://graphql.org/code/#c-net
 
 ---
 
-# Strawberry Shake
+## Strawberry Shake
 
 ---
 

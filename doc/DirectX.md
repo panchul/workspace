@@ -2,9 +2,20 @@
 
 See also:
 
-- [CUDA](CUDA.md)
-- [OpenGL](OpenGL.md)
-- [OpenCV](OpenCV.md)
+ - [CUDA](CUDA.md)
+ - [Graphics](Graphics.md)
+ - [OpenGL](OpenGL.md)
+ - [OpenCV](OpenCV.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](DirectX.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

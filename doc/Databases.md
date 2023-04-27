@@ -20,3 +20,13 @@ See also:
   - [Haystack](Haystack.md)
 
 ---
+
+**Contents**
+
+- [Miscellaneous](Databases.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---

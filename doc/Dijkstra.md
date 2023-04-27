@@ -5,6 +5,18 @@ See Also:
    - [Graphs](Graphs.md)
    - 
 
+---
+
+**Contents**
+
+- [Miscellaneous](Dijkstra.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Dijkstra, for minimal spanning tree:
 
 https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Using_a_priority_queue

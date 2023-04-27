@@ -4,9 +4,23 @@ https://www.centos.org/
 
 See Also:
 
-  - [Linux](Linux.md)
-  - [Ubuntu](Ubuntu.md)
-  - [Alpine](Alpine.md)
+ - [Alpine](Alpine.md)
+ - [Arch](Arch.md)
+ - [Debian](Debian.md)
+ - [Fedora](Fedora.md)
+ - [Linux](Linux.md)
+ - [RedHat](RedHat.md)
+ - [Ubuntu](Ubuntu.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](CentOS.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

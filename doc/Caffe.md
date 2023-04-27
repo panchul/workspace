@@ -15,4 +15,12 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Caffe.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---

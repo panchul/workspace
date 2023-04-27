@@ -1,5 +1,19 @@
 # CQRS (Command Query Responsibility Segregation)
 
+See Also:
+
+- ...
+
+---
+
+**Contents**
+
+- [Miscellaneous](CQRS.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
   "What is CQRS+Event Sourcing and Why Should Java Developers Care?"
