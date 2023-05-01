@@ -30,6 +30,14 @@ https://git-scm.com/downloads
 
 ---
 
+### On MacOS
+
+Git is part of Xcode, but also, as per [https://git-scm.com/download/mac](https://git-scm.com/download/mac) :
+
+ $ brew install git
+
+---
+
 ## Configuring ssh
 
 ---

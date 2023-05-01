@@ -13,6 +13,12 @@ https://unity3d.com/
 - [Camera controls](Unity.md#Camera-controls)
 - [UI](Unity.md#UI)
 - [AR/VR](Unity.md#arvr)
+- [Compiling](Unity.md#Compiling)
+- [Testing](Unity.md#testing)
+- [Deployment](Unity.md#deployment)
+  - [Deploying to WebGL](Unity.md#deploying-to-webgl)
+  - [Deploying to Android](Unity.md#deploying-to-android)
+  - [Deploying for AR/VR](Unity.md#deploying-for-arvr)
 - [Miscellaneous](Unity.md#Miscellaneous)
 
 ---
@@ -177,7 +183,65 @@ https://www.youtube.com/watch?v=yUXFHAOXhcA
 
 ---
 
+## Compiling
 
+Here is the link to CLI: https://docs.unity3d.com/Manual/EditorCommandLineArguments.html
+
+Create a build script:
+
+```
+using UnityEditor;
+class MyEditorScript
+{
+     static void PerformBuild ()
+     {
+        BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
+        buildPlayerOptions.scenes = new[] { "Assets/Scene1.unity", "Assets/Scene2.unity" };
+        BuildPipeline.BuildPlayer(buildPlayerOptions);
+     }
+}
+```
+
+Then, on Mac:
+
+    $ /Applications/Unity/Unity.app/Contents/MacOS/Unity -quit -batchmode -projectPath ~/UnityProjects/MyProject -executeMethod MyEditorScript.PerformBuild
+
+Or, on Windows:
+
+    $ "C:\Program Files\Unity\Editor\Unity.exe" -quit -batchmode -projectPath "C:\Users\UserName\Documents\MyProject" -executeMethod MyEditorScript.PerformBuild
+
+---
+
+## Testing
+
+---
+
+Here is the link to the snippets with async tests, etc.:
+
+https://docs.unity3d.com/Manual/CLIBatchmodeCoroutines.html
+
+---
+
+## Deployment
+
+### Deploying to WebGL 
+
+---
+
+Uploading WebGL deployments:
+
+https://docs.unity3d.com/Manual/webgl-building.html
+https://www.youtube.com/watch?v=s9kpPI-_QDA
+
+---
+
+### Deploying to Android
+
+---
+
+---
+
+### Deploying for AR/VR
 
 ---
 
@@ -199,8 +263,6 @@ https://www.youtube.com/watch?v=CmU5-v-v1Qo
 Unity handtracking.
 https://skarredghost.com/2020/01/03/how-to-oculus-quest-hands-sdk-unity/
 
---- 
-
 ---
 
 Unity ML-Agents Release 10, Beginner Walkthrough
@@ -208,13 +270,6 @@ https://www.youtube.com/watch?v=6lilCUCX4ik
 
 Unity ML-Agents Toolkit
 https://github.com/Unity-Technologies/ml-agents
-
----
-
-Uploading WebGL deployments:
-
-https://docs.unity3d.com/Manual/webgl-building.html
-https://www.youtube.com/watch?v=s9kpPI-_QDA
 
 ---
 

@@ -1,5 +1,19 @@
 # Vi/Vim
 
+See Also:
+
+- [Emacs](Emacs.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Vim.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 [http://www.vim.org/download.php](http://www.vim.org/download.php)  

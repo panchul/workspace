@@ -35,7 +35,27 @@ See Also:
 
 **Contents**
 
+- [XR in Unity](AugmentedReality.md#xr-in-unity)
+- [Oculus](AugmentedReality.md#Oculus)
 - [Miscellaneous](AugmentedReality.md#miscellaneous)
+
+---
+
+## XR in Unity
+
+---
+
+XR Unity Manual: https://docs.unity3d.com/Manual/XR.html
+
+---
+
+## Oculus
+
+---
+
+
+FRL update on varifocal lenses
+https://www.roadtovr.com/facebook-reality-labs-lanman-spie-xr-2020-varifocal-hdr/
 
 ---
 
@@ -50,6 +70,7 @@ www.revopoint3d.com
 ---
 
 Another company with AR entertainment and shopping
+
 https://stageverse.com/
 
 ---
@@ -58,10 +79,5 @@ Frameworks:
 
 - ARKit
 - ARCore
-
----
-
-FRL update on varifocal lenses
-https://www.roadtovr.com/facebook-reality-labs-lanman-spie-xr-2020-varifocal-hdr/
 
 ---

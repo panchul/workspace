@@ -8,7 +8,7 @@ http://www.ssh.com/
 - [ssh configuring](SSH.md#SSH-configuring)
 - [Open SSH server](SSH.md#Open-SSH-server)
 - [Tunneling](SSH.md#Tunneling)
-- [Miscallaneous](SSH.md#Miscallaneous)
+- [Miscellaneous](SSH.md#Miscellaneous)
 
 ## SSH configuring
 
@@ -187,24 +187,24 @@ https://habr.com/ru/post/331348/
 
 ---
 
-This tunnels an IRC session from client machine ```127.0.0.1``` (local-host) to
-remote server ```server.example.com```:
+This tunnels an IRC session from client machine `127.0.0.1` (local-host) to
+remote server `server.example.com`:
 
     $ ssh -f -L 1234:localhost:6667 server.example.com sleep 10
     $ irc -c '#users' -p 1234 pinky 127.0.0.1
 
-Option -f brings ssh into background, and the remote command 'sleep 10' allows to start the service
+Option `-f` brings ssh into background, and the remote command `sleep 10` allows to start the service
 which is to be tunnelled.
 
 ---
 
-## Miscallaneous
+## Miscellaneous
 
 ---
 
 Quick and dirty way to fix 'ssh permission denied(publicey)':
 
-1. update in ```/etc/ssh/sshd_config```:
+1. update in `/etc/ssh/sshd_config`:
 ```
     ... 
     PasswordAuthentication yes
@@ -217,23 +217,23 @@ Quick and dirty way to fix 'ssh permission denied(publicey)':
 
 ---
 
-1. When you enter ```ssh user@example.com```, your client and the host exchange keys.
+1. When you enter `ssh user@example.com`, your client and the host exchange keys.
 2. If you are connecting for the first time, SSH will prompt you for your approval of
  the host key.
-3. If you have a private key in your ```~/.ssh``` folder that matches one of the keys
- in ```~/.ssh/authorized_keys```, the connection continues to step 4. Otherwise if
+3. If you have a private key in your `~/.ssh` folder that matches one of the keys
+ in `~/.ssh/authorized_keys`, the connection continues to step 4. Otherwise if
  password authentification is allowed, SSH will prompt you for your password.
 4. The transferred key is used to create a session key that is used for the remainder
  of the connection, encrypting all the communication with a cipher such as AES, 3DES, Blowfish or RC4("arcfour")
 
 ---
 
-Here is a closer look with the sandboxes ```ssh1```(server) and ```ssh2```(client).
-They have the virtual network and host names ```ssh1.vm``` and ```ssh2.vm``` respectively.
+Here is a closer look with the sandboxes `ssh1`(server) and `ssh2`(client).
+They have the virtual network and host names `ssh1.vm` and `ssh2.vm` respectively.
 
-On ```ssh1.vm``` for Alice:
+On `ssh1.vm` for Alice:
 
-Create a group ```alicegroup```, and user ```alice```, unlock the account password:
+Create a group `alicegroup`, and user `alice`, unlock the account password:
 
     vagrant@ssh1:~$ sudo groupadd -force alicegroup
     vagrant@ssh1:~$ sudo useradd --create-home --gid alicegroup alice 
@@ -244,7 +244,7 @@ Or as one line:
 
     vagrant@ssh1:~$ sudo groupadd -f alicegroup ; sudo useradd -m -g alicegroup alice ; sudo passwd alice 
 
-Similar thing on ```ssh2.vm``` for Bob:
+Similar thing on `ssh2.vm` for Bob:
 
     vagrant@ssh2:~$ sudo groupadd -f bobgroup ; sudo useradd -m -g bobgroup bob ; sudo passwd bob 
     (Enter the password)
@@ -281,7 +281,7 @@ Create directory ~/.ssh if it does not exist (enter alice's password at ssh2.vm)
     Warning: Permanently added 'ssh1.vm,192.168.10.81' (ECDSA) to the list of known hosts.    alice@ssh1.vm's password: 
     (enter Alice's password)
     
-Append the public key to the ```authorized_keys``` at Alice's ```ssh1.vm`:
+Append the public key to the `authorized_keys` at Alice's `ssh1.vm`:
 
     bob@ssh2.vm:~/.ssh $ cat ~/.ssh/id_rsa.pub | ssh alice@ssh1.vm 'cat >> .ssh/authorized_keys'
     alice@ssh1.vm's password: 
