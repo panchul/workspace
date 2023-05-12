@@ -1,8 +1,18 @@
-# Generative Andversarial Network (GAN)
+# Generative Adversarial Network (GAN)
 
 See Also
 
   - [Neural Network](NeuralNetwork.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](GAN.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

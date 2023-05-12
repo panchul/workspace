@@ -2,7 +2,19 @@
 
 See Also:
 
+ - [Find](Find.md)
  - [Linux](Linux.md)
+ - [Xargs](Xargs.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Grep.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

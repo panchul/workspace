@@ -1,13 +1,15 @@
 # xargs
 
+`xargs` – construct argument list(s) and execute utility
+
+    $ xargs [-0oprt] [-E eofstr] [-I replstr [-R replacements] [-S replsize]]
+       [-J replstr] [-L number] [-n number [-x]] [-P maxprocs]
+       [-s size] [utility [argument ...]]
+
 See Also:
 
-  - [Linux](Linux.md)
-  - [Alpine](Alpine.md)
-  - [CentOS](CentOS.md)
-  - [Debian](Debian.md)
-  - [Fedora](Fedora.md)
-  - [RedHat](RedHat.md)
+  - [Find](Find.md)
+  - [Grep](Grep.md)
 
 ---
 

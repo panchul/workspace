@@ -2,6 +2,16 @@
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Motivation.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 ![life_cycles.jpg](pics/life_cycles.jpg)
 
 From Internet

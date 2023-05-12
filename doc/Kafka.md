@@ -1,10 +1,22 @@
 # Kafka
 
+[http://kafka.apache.org/](http://kafka.apache.org/) - Official Link
+
 See Also:
 
  - [Burrow](Burrow.md)
  - [Zookeeper](Zookeeper.md)
  - [Azure Service Bus](Azure.md#azure-service-bus)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Kafka.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

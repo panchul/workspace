@@ -12,6 +12,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](JSON.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 For JSON pretty-printing, `jsonpp` works fine, can fetch with `brew`.
 
     $ brew install jsonpp

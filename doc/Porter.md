@@ -4,6 +4,11 @@ Porter(a packaging tool), seems to be a nice community outreach example.
 
 https://porter.sh/quickstart/
 
+See Also:
+
+ - [Homebrew](Homebrew.md)
+ - [Aptitude](Aptitude.md)
+
 ---
 
 If you do not have Portal on your system, here is how you install it on Linux:

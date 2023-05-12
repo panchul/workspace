@@ -6,6 +6,7 @@ See also:
  - [ComputerVision](ComputerVision.md)
  - [DirectX](DirectX.md)
  - [OpenACC](OpenACC.md)
+ - [GPU](GPU.md)
  - [OpenCV](OpenCV.md)
  - [OpenGL](OpenGL.md)
  - [Nvidia Triton Inferencing Server](Triton_inference_server.md)

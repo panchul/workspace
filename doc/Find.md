@@ -2,7 +2,21 @@
 
 Standard Unix command.
 
-See also [Linux](Linux.md)
+See also:
+
+ - [Linux](Linux.md)
+ - [Grep](Grep.md)
+ - [Xargs](Xargs.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Find.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

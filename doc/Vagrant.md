@@ -10,6 +10,16 @@ See Also:
 
 ---
 
+**Content**
+
+- [Miscellaneous](Vagrant.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 [https://www.vagrantup.com/](https://www.vagrantup.com/)
 
 https://circleci.com/blog/its-the-future/ - An article about Docker and Vagrant

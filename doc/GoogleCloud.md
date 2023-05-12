@@ -14,6 +14,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](GoogleCloud.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 GCP to Azure services comparison
 https://docs.microsoft.com/en-us/azure/architecture/gcp-professional/services
 

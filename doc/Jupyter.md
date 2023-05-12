@@ -6,6 +6,16 @@ See also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Jupyter.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 A few common shortcuts
 
 - `Shift-Enter` - execute

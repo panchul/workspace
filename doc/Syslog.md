@@ -2,6 +2,14 @@
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Syslog.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 To write to syslog, `/var/log/syslog`:
 
 ```

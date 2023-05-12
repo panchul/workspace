@@ -23,6 +23,16 @@ See also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](SQLite.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 To install on Ubuntu:
 
     $ sudo apt install sqlite3    

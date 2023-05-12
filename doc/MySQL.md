@@ -8,6 +8,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](MySQL.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Install MySQL on CentOS 8
 https://www.tecmint.com/install-mysql-on-centos-8
 

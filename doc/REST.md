@@ -6,6 +6,15 @@ A RESTful API is an application program interface (API) that uses HTTP requests 
 
 ---
 
+**Contents**
+
+- [Miscellaneous](REST.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+
 Neat APIs overview, with neat tricks with well-known websites.
 https://www.youtube.com/watch?v=7YcW25PHnAA
 

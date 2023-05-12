@@ -10,6 +10,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](YAML.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 C# YAML library: https://github.com/aaubry/YamlDotNet
 
 In fact, there is a built-in .yaml support in the newer versions.

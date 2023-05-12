@@ -1,10 +1,14 @@
-
 # SMTP and mail servers
 
-## UNDER CONSTRUCTION
+---
 
+**Contents**
+
+- [Miscellaneous](SMTP.md#miscellaneous)
 
 ---
+
+## Miscellaneous
 
 Overview and comparison of SMTP servers:
 http://shearer.org/MTA_Comparison

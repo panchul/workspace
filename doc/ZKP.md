@@ -12,6 +12,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](ZKP.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 A zero-knowledge proof must satisfy three properties:
 
  - Completeness: if the statement is true, the honest verifier (that is, one

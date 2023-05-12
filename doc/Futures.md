@@ -8,6 +8,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Futures.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Example of using futures in C++:
 
     // $ g++ -std=c++1z filename.cpp 

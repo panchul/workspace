@@ -44,7 +44,7 @@
 
 ## Programming languages, scripts, etc.
 
-- Assembler  
+- [Assembler](Assembler.md)  
 - [Awk](Awk.md)
 - [Bash](Bash.md)
 - [C/C++](CPP.md)
@@ -401,6 +401,7 @@ https://www.tartssensors.com/libraries/arduino/
   
 - [Atom](Atom.md)
 - BeyondCompare  https://www.scootersoftware.com/download.php
+- [CLion](CLion.md)
 - Codeblocks http://www.codeblocks.org
 - CodeLite http://www.codelite.org
 - [Eclipse](Eclipse.md)  
@@ -485,14 +486,12 @@ Aggregated List of C++ networking libraries
 - WinAutomation http://www.winautomation.com/features/
 - xUnit
 
-
 ### Message brokers and distributed environment coordinators. 
 
 - [RabbitMQ](RabbitMQ.md)
 - [Kafka](Kafka.md)
 - [Zookeeper](Zookeeper.md)
 - [Burrow](Burrow.md)
-
 
 ### Conferencing systems and protocols
 
@@ -680,7 +679,6 @@ https://nofilmschool.com/how-to-write-a-scene
   https://tools.ietf.org/html/rfc7519 - RFC for it.
   
 - nice collection of papers on Security https://cloud.google.com/beyondcorp/#researchPapers  
-  
 
 ## BI, Business Intelligence 
 
@@ -722,7 +720,6 @@ https://nofilmschool.com/how-to-write-a-scene
 - Vismatica
 - WebFOCUS
 - Yellowfin BI
-
 
 ## Photography, Video, and optics in general
 
@@ -800,7 +797,7 @@ Another nice resource:
 ## Manufacturing, IoT, etc.
 
 - [FPGA](FPGA.md)
-
+- [GPU](GPU.md)
 - neat 3d printer https://ultimaker.com/en/products/ultimaker-s5
 
 - https://www.youtube.com/watch?v=NuPMIUWbPsQ  Tutorials about OSIsoft’s PI Server HA configuration
@@ -824,7 +821,6 @@ Another nice resource:
 ## Languages
 
 - [French](French.md)
-
 
 ## Fun and useful.
 

@@ -11,6 +11,16 @@ See also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Numpy.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Some basics of numpy arrays.
 
     >>> arr = np.arange(4)

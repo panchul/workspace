@@ -3,6 +3,7 @@
 See also:
 
  - [CUDA](CUDA.md)
+ - [GPU](GPU.md)
  - [Graphics](Graphics.md)
  - [OpenGL](OpenGL.md)
  - [OpenCV](OpenCV.md)

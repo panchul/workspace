@@ -5,6 +5,8 @@ See also:
   - [Autoconf](Autoconf.md)
   - [Automake](Automake.md)
   - [Libtool](Libtool.md)
+  - [CMake](CMake.md)
+  - [Make](Make.md)
 
 
 https://www.gnu.org/software/autoconf/autoconf.html

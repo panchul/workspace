@@ -7,6 +7,16 @@ See Also
 
 ---
 
+**Contents**
+
+- [Miscellaneous](NeuralNetwork.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Visualizing the Structure of a Neural Network
 Source Code: https://github.com/vivek3141/dl-visualization
 

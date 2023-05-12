@@ -6,6 +6,16 @@ https://keras.io/getting-started/sequential-model-guide/#getting-started-with-th
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Keras.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 presentation with overview of keras
 https://www.youtube.com/watch?v=45MbmHQ5iMY
 

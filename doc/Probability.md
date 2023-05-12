@@ -1,5 +1,19 @@
 # Probability
 
+See Also:
+
+- [Math](Math.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Probability.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 How to lie with statistics

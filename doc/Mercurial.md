@@ -8,6 +8,15 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Mercurial.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
 Quick Start
 
 Clone a project and push changes

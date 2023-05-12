@@ -13,6 +13,7 @@ See Also:
  - [Fractals](Fractals.md)
  - [gnuplot](Gnuplot.md)
  - [GoogleGlass](GoogleGlass.md)
+ - [GPU](GPU.md)
  - [MagicLeap](MagicLeap.md)
  - [OBS](OBS.md) Open Broadcaster Software
  - [OpenACC](OpenACC.md)

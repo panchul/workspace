@@ -4,6 +4,7 @@ See Also:
 
  - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
  - [Design Patterns](DesignPatterns.md)
+ - [Probability](Probability.md)
 
 ---
 

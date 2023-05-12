@@ -16,6 +16,14 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Watch.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 To watch, for example, Cuda status:
 
     $ watch -n0.1 "nvidia-settings -q GPUUtilization -q useddedicatedgpumemory"

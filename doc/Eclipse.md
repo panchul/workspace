@@ -4,7 +4,9 @@ https://www.eclipse.org/downloads/
 
 See Also:
 
-- ...
+ - [CLion](CLion.md)
+ - [IntelliJ](IntelliJ.md)
+ - [Visual Studio Code](VisualStudioCode.md)
 
 ---
 

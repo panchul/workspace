@@ -9,6 +9,16 @@ Table of Content
 
 ---
 
+**Contents**
+
+- [Miscellaneous](GraphQL.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Good source for all GraphQL
 
 https://chillicream.com/ -> DOCS

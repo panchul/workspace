@@ -13,6 +13,8 @@ See Also:
 
 My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker).
 
+---
+
 **Table of contents**
 
  - [Installation](Docker.md#installation)

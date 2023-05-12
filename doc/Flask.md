@@ -17,7 +17,7 @@ https://www.tecmint.com/install-flask-in-ubuntu/
     $ sudo apt update -y
     $ python3 --version
 
-Get the prereqs
+Get the prerequisites
 
     $ sudo apt install build-essential python3-pip libffi-dev python3-dev python3-setuptools libssl-dev
     $ sudo apt install python3-venv

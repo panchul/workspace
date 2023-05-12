@@ -1,5 +1,19 @@
 # mail
 
+See Also:
+
+ - [SMTP](SMTP.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Mail.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Simple smtp sending from command line:

@@ -69,7 +69,6 @@ The simplest ways to define a vector:
         return 0; 
     } 
 
-
 ---
 
 // vector::begin/end

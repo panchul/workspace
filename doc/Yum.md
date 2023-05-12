@@ -3,7 +3,7 @@
 See Also:
 
  - [Linux](Linux.md)
- - [aptitude](aptitude.md)
+ - [aptitude](Aptitude.md)
 
 ---
 

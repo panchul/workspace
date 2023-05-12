@@ -10,12 +10,16 @@ See Also:
   - [Ansible](Ansible.md)
   - [VMWare](VMWare.md)
 
-##Content
+---
+
+**Content**
 
  - [Installing](VirtualBox.md#installing)
  - [Shared Folders](VirtualBox.md#shared-folders)
  - [Networking](VirtualBox.md#Networking)
  - [Miscellaneous](VirtualBox.md#miscellaneous)
+
+---
 
 ## Installing
 
@@ -47,9 +51,6 @@ Idiomatic mount of a shared drive with the host(once you call your share `MY_SHA
 Mounting VirtualBox shared folders
 
 https://gist.github.com/estorgio/1d679f962e8209f8a9232f7593683265
-
-
-
 
 ---
 

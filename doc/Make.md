@@ -4,6 +4,22 @@
 
 Gnu make: [https://www.gnu.org/software/make/](https://www.gnu.org/software/make/)
 
+See Also:
+
+ - [Autoconf](Autoconf.md)
+ - [Automake](Automake.md)
+ - [CMake](CMake.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Make.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Here is the manual in .html : [https://www.gnu.org/software/make/manual/make.html](https://www.gnu.org/software/make/manual/make.html)
@@ -18,9 +34,6 @@ Neat trick with `help`:
     .DEFAULT_GOAL := help 
     help: # Show this help
     @egrep -h '\s#\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
-
-
-
 
 ---
 
