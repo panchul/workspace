@@ -8,6 +8,16 @@ https://github.com/panchul/sb_cpp/blob/master/stl_and_data_structures/set/set.cp
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Set.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
     set<int> s;
     s.insert(3);
     s.insert(2);

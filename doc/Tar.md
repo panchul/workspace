@@ -6,6 +6,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Tar.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Using tar over ssh
 From https://www.cyberciti.biz/faq/howto-use-tar-command-through-network-over-ssh-session/
 

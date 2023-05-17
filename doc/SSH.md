@@ -12,10 +12,31 @@ See Also:
 
 **Table of Content**
 
+- [HTTPS](SSH.md#https)
 - [ssh configuring](SSH.md#SSH-configuring)
 - [Open SSH server](SSH.md#Open-SSH-server)
 - [Tunneling](SSH.md#Tunneling)
 - [Miscellaneous](SSH.md#Miscellaneous)
+
+## HTTPS
+
+---
+
+For Win, for HTTPS binding, free utility:
+Download DigiCertUtil.exe from https://www.digicert.com/support/tools/certificate-utility-for-windows
+
+Before creating site binding for HTTPS on default port 443 we have to request an SSL Certificate installed on the
+web server. Some authorities require a domain name to issue a certificate. Depending on what authority (company we
+purchase SSL certificates from) we use we may have to register a domain name before requesting the SSL.
+SSL certificate requests usually done via https://www.digicert.com/kb/csr-creation.htm
+
+CSR Creation | Create Certificate Signing Request | DigiCert
+Before ordering an SSL certificate, you need to generate a CSR. Find the creation instructions for most web server platforms and software here.
+www.digicert.com
+
+AWS, Azure, GCP have their options too.
+
+---
 
 ## SSH configuring
 

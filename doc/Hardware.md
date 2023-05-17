@@ -12,6 +12,44 @@ See Also:
   - [Hardware](Hardware.md)
   - [PCB](PCB.md)
 
+**Contents**
+
+  - [Cameras and sensors](Hardware.md#cameras-and-sensors)
+  - [Relays](Hardware.md#relays)
+  - [Miscellaneous](Hardware.md#miscellaneious)
+
+---
+
+## Robotics Models
+
+---
+
+Free robot arm:
+
+free3d.com/3d-model/industrial-robot-arm-53669.html
+
+---
+
+## Cameras and sensors
+
+---
+
+Triple Lens Borescope Inspection Camera, Teslong Professional Endoscope with Light, Digital Video Scope Camera, 5" IPS Screen, Waterproof Flexible Cable for Automotive/Home/Wall/Pipe/Car (16.4ft) https://a.co/d/4RADxPv
+
+---
+
+## Relays
+
+---
+
+Nice relay, even with web api
+
+https://www.robotshop.com/products/devantech-eth008-b-8-x-16a-ethernet-relay
+
+---
+
+## Miscellaneious
+
 ---
 
 CV cameras, bundles with embedded Jetson Nano, etc.

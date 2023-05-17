@@ -2,6 +2,18 @@
 
 https://www.splunk.com/
 
+---
+
+**Contents**
+
+- [Miscellaneous](Splunk.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Quick reference guide
 https://www.splunk.com/pdfs/solution-guides/splunk-quick-reference-guide.pdf
 

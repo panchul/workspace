@@ -15,6 +15,16 @@ See also:
 
 ---
 
+**Table of Content**
+
+- [Miscellaneous](Nginx.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Installing nginx with virtual hosts and ssl certificate (on Ubuntu and CentOX)
 https://www.tecmint.com/install-nginx-with-virtual-hosts-and-ssl-certificate/
 

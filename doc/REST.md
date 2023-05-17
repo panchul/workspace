@@ -4,6 +4,10 @@ REST stands for "Representational state transfer".
 
 A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.
 
+See Also:
+
+ - [GraphQL](GraphQL.md)
+
 ---
 
 **Contents**

@@ -341,7 +341,7 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - Solar, etc. www.DIYSolar.com 
 - [EmbeddedProgramming](EmbeddedProgramming.md)
 - [FPGA](FPGA.md)
-- [Hardware](Hardware.md)
+- [Hardware](Hardware.md) - tools, parts, etc.
 - Misc Manufacturing and hardware, etc. https://www.designworldonline.com/iot-owe-advances-power-ethernet-cabling/
 - Brushless motors, etc.  https://www.alliedmotion.com/whitepaper-differences-brush-brushless-motors/
 - Sensors, and misc hardware: https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
@@ -354,6 +354,8 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - SystemC
 - TLM2
 - https://vitrek.com/ - misc hardware and electronics
+- manipulation.csail.mit.edu/pick.html - misc manipulators, etc.
+- https://automationforum.co/calibration-of-i-to-p-convertor/ - Calibrating of i to p convertor.
 
 - Summary of safety-critical systems: https://dev.to/bosepchuk/safety-critical-software-15-things-every-developer-should-know-1kdh
 

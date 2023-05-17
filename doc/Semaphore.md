@@ -8,6 +8,15 @@ See Also:
 Semaphore
 https://en.wikipedia.org/wiki/Semaphore_(programming)
 
+---
+
+**Contents**
+
+- [Miscellaneous](Semaphore.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

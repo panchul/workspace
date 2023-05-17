@@ -10,7 +10,24 @@ See Also:
 
 **Contents**
 
-- [Miscellaneous](Windows.md#miscellaneous)
+  - [Powershell](Windows.md#powershell)
+  - [Miscellaneous](Windows.md#miscellaneous)
+
+---
+
+## Powershell
+
+---
+
+Guid in Powershell:
+
+    PS C:\Users\aleksandr.panchul> [guid]::NewGuid()
+    Guid
+    Windows PowerShell
+    Copyright (C) Microsoft Corporation. All rights reserved.
+    Try the new cross-platform PowerShell https://aka.ms/pscore6
+    ----
+    c5b0f5b6-3555-4011-bbd4-f854408c926d
 
 ---
 

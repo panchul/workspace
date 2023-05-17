@@ -11,6 +11,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Redis.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Redis studio, UI for Redis
 
 https://github.com/cinience/RedisStudio/releases

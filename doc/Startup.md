@@ -2,6 +2,16 @@
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Startup.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Nice talk, from Dan Cobley, Google (Inspiring Entrepreneurs - Startup Stars)
 https://www.youtube.com/watch?v=xwMnvuloZvg
 

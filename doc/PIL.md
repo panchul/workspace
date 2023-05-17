@@ -11,6 +11,15 @@ See also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](PIL.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
 
 
 ---

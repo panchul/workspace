@@ -15,6 +15,15 @@ My Scala sandbox is [https://github.com/panchul/sb_scala](https://github.com/pan
 - [http://docs.scala-lang.org/style/](http://docs.scala-lang.org/style/) Scala coding style guidelines  
 - [http://danielwestheide.com/scala/neophytes.html](http://danielwestheide.com/scala/neophytes.html) - The Neophyte's Guide to Scala  
 
+---
+
+**Contents**
+
+- [Miscellaneous](Scala.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

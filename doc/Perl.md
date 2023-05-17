@@ -1,16 +1,24 @@
-
-
-## UNDER CONSTRUCTION
-
 # Perl
 
 My Perl sandbox is [https://github.com/panchul/sb_perl](https://github.com/panchul/sb_perl).
 
-See a separate page on reg.exes - [RegEx.md](RegEx.md)
+Sea Also:
+
+  - [RegEx.md](RegEx.md)
 
 ---
 
-To add modules, use ```cpan```
+**Contents**
+
+- [Miscellaneous](Perl.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
+To add modules, use `cpan`
 http://www.cpan.org/modules/INSTALL.html
 
 ---
@@ -72,7 +80,7 @@ Here's how the subroutines work:
 File operations summary        
 https://perldoc.perl.org/functions/open.html
 
-Using sysopen:
+Using `sysopen`:
 
     use IO::Handle;
     sysopen(my $fh, $path, O_RDWR|O_CREAT|O_EXCL)

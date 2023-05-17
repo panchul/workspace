@@ -2,6 +2,15 @@
 
 [https://www.playframework.com/](https://www.playframework.com/)
 
+---
+
+**Contents**
+
+- [Miscellaneous](PlayFramework.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

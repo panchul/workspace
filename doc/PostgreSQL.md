@@ -10,6 +10,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](PostgreSQL.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Deviations from SQL Standard:
 https://wiki.postgresql.org/wiki/PostgreSQL_vs_SQL_Standard
 

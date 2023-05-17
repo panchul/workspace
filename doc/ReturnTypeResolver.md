@@ -1,9 +1,20 @@
-
 # Return Type Resolver
 
 See Also:
 
  - [CPP](CPP.md) 
+
+---
+
+**Contents**
+
+  - [Miscellaneous](ReturnTypeResolver.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
 
 Return Type Resolver is a programming concept.
 https://dev.to/visheshpatel/7-advanced-c-concepts-you-should-know-4gog

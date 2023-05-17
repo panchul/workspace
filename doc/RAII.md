@@ -3,6 +3,18 @@
 See Also:
  - [CPP](CPP.md) 
 
+---
+
+**Contents**
+
+- [Miscellaneous](RAII.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 RAII is a programming concept.
 https://dev.to/visheshpatel/7-advanced-c-concepts-you-should-know-4gog
 

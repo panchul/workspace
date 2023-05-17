@@ -12,6 +12,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Samba.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 I created a How-To for hybrid cloud, extracting some useful steps that could be
 useful without Kubernetes. This is also useful:
  

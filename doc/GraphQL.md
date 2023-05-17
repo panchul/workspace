@@ -3,33 +3,37 @@
 See Also:
   - 
 
-Table of Content
+---
+
+**Table of Content**
 
   - [Strawberry Shake](GraphQL.md#Strawberry-Shake)
+  - [EF Designer](GraphQL.md#ef-designer)
+  - [Miscellaneous](GraphQL.md#miscellaneous)
 
 ---
 
-**Contents**
-
-- [Miscellaneous](GraphQL.md#miscellaneous)
+## Strawberry Shake
 
 ---
 
-## Miscellaneous
+Strawberry Shake videos:
+
+https://www.youtube.com/watch?v=I0ihOcBVu8c
+
+and all these
+
+https://www.youtube.com/c/ChilliCream/videos
 
 ---
 
-Good source for all GraphQL
+Client using with GraphQL is StrawberryShake which is also from Hotchocolate lib.
 
-https://chillicream.com/ -> DOCS
+https://chillicream.com/docs/strawberryshake
 
 ---
 
-https://eat.bananacakepop.com/
-
-https://www.learnentityframeworkcore.com/migrations
-
-https://www.entityframeworktutorial.net/efcore/entity-framework-core-migration.aspx
+## EF Designer
 
 ---
 
@@ -39,6 +43,27 @@ https://msawczyn.github.io/EFDesigner/  - EF Designer extension to Visual Studio
 
 https://marketplace.visualstudio.com/items?itemName=michaelsawczyn.EFDesigner2022
 
+---
+
+## Miscellaneous
+
+---
+
+Graph QL global state link
+https://chillicream.com/docs/hotchocolate/v12/server/global-state
+
+---
+
+Good source for all GraphQL
+https://chillicream.com/ -> DOCS
+
+---
+
+https://eat.bananacakepop.com/
+
+https://www.learnentityframeworkcore.com/migrations
+
+https://www.entityframeworktutorial.net/efcore/entity-framework-core-migration.aspx
 
 ---
 
@@ -100,26 +125,6 @@ https://www.youtube.com/watch?v=t7nkdORzed4&t=2s
 https://www.youtube.com/watch?v=Yy9wOhiWBJg
 
 https://graphql.org/code/#c-net
-
----
-
-## Strawberry Shake
-
----
-
-Strawberry Shake videos:
-
-https://www.youtube.com/watch?v=I0ihOcBVu8c
-
-and all these
-
-https://www.youtube.com/c/ChilliCream/videos
-
----
-
-Client using with GraphQL is StrawberryShake which is also from Hotchocolate lib.
-
-https://chillicream.com/docs/strawberryshake
 
 ---
 

@@ -311,6 +311,24 @@ https://wiki.unity3d.com/index.php/Singleton - UnitySingleton implementation
 
 ---
 
+From Unity chats, about making games:
+
+1. Define your game concept: Decide what type of game you want to make, what the gameplay mechanics will be, and what the overall story or theme will be. Consider the audience you want to target and what type of game will appeal to them.
+
+2. Choose your game engine: There are many game engines available, such as Unity, Unreal Engine, and Godot. Research the features, tools, and costs of each engine, and choose one that fits your needs and skill level.
+
+3. Create a development plan: Break down your game concept into smaller tasks and create a timeline or schedule for completing them. This plan should include milestones, deadlines, and resources required for each task.
+
+4. Create a prototype: Start with a basic prototype that includes only the core gameplay mechanics. This will help you test and refine your ideas before adding more complexity.
+
+5. Develop the game: Use your development plan to guide your progress, and create game assets, program the game mechanics, and test your game frequently. Iterate and make changes based on feedback and testing.
+
+6. Publish and market your game: Once your game is complete, publish it on a platform such as Steam, the App Store, or Google Play. Create marketing materials such as trailers, screenshots, and social media posts to promote your game and attract players.
+
+Remember that making a video game can be a complex and time-consuming process, but it can also be a rewarding experience. It's important to stay motivated, stay organized, and stay open to feedback and suggestions throughout the development process.
+
+---
+
 FileBrowser a la system
 
 Crosstales.FB.FileBrowser nice FileBrowser plugin for Unity

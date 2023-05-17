@@ -282,6 +282,11 @@ To make sure HTTPS connections work:
 
 ---
 
+ASP async link documentation with examples:
+https://andrewlock.net/running-async-tasks-on-app-startup-in-asp-net-core-part-1/
+
+---
+
 Web server in C#
 
     http://codehosting.net/blog/BlogEngine/post/Simple-C-Web-Server
