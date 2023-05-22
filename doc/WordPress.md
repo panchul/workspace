@@ -5,7 +5,18 @@
 See Also:
   - [PHP](Php.md)
 
-https://wp-cli.org/ - CLI
+---
+
+**Content**
+
+ - [Installing](WordPress.md#installing)
+ - [Cli](WordPress.md#cli)
+ - [Tutorials](WordPress.md#tutorials)
+ - [Miscellaneous](WordPress.md#miscellaneous)
+
+---
+
+## Installing
 
 ---
 
@@ -19,8 +30,24 @@ https://hostpresto.com/community/tutorials/how-to-deploy-multiple-wordpress-site
 
 ---
 
+## CLI
+
+---
+
+https://wp-cli.org/ - CLI
+
+---
+
+## Tutorials
+
+---
+
 Some basic tutorials:
 https://www.youtube.com/watch?v=wiaT4bR3xGA
+
+---
+
+## Miscellaneous
 
 ---
 

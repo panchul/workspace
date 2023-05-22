@@ -11,9 +11,30 @@ See Also:
 
 ---
 
+**Content**
+
+  - [Installing](IntelliJ.md#installing)
+  - [Miscellaneous](IntelliJ.md#miscellaneous)
+
+---
+
+## Installing
+
+---
+
+Simpliest on Ubuntu:
+
+    $ sudo snap install intellij-idea-community --classic
+
+---
+
+## Miscellaneous
+
+---
+
 - The issue with auto-removing the trailing spaces in IntelliJ
 resolved by going to `Preferences->Settings->Edit->Other Settings->Strip Down trailing spaces`
-(the drop down menu I picked "`none`")  
+(the drop-down menu I picked "`none`")  
 
 ---
 

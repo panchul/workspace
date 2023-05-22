@@ -1,5 +1,10 @@
 # Functional Programming
 
+See Also:
+
+  - [Erlang](Erlang.md)
+  - [Scala](Scala.md)
+
 ---
 
 **Contents**

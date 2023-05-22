@@ -4,41 +4,41 @@
 
 - [Programming languages, scripts, etc.](Readme.md#programming-languages-scripts-etc)
 - [Virtualization, clustering, provisioning, and monitoring](Readme.md#virtualization-clustering-provisioning-and-monitoring)
-  - [Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.](Readme.md#Continuous-Delivery,-Continuous-Integration,-Automatic-Deployment,-DevOps,-etc.)
+  - [Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.](Readme.md#continuous-delivery-continuous-integration-automatic-deployment-devops-etc)
 - [Frameworks Libraries, Static code analysis, architecture approaches, etc.](Readme.md#frameworks-libraries-static-code-analysis-architecture-approaches-etc)
   - [Data formats, APIs, Protocols](Readme.md#data-formats-apis-protocols)
-  - [Web Frameworks, servers, etc](Readme.md#Web-Frameworks,-servers,-etc)
+  - [Web Frameworks, servers, etc](Readme.md#web-frameworks-servers-etc)
   - [Testing Frameworks](Readme.md#Testing-Frameworks)
-  - [Data mining, Machine Learning, Artificial Intelligence, etc.](Readme.md#Data-mining,-Machine-Learning,-Artificial-Intelligence,-etc.)
+  - [Data mining, Machine Learning, Artificial Intelligence, etc.](Readme.md#data-mining-machine-learning-artificial-intelligence-etc)
   - [Algorithms and Data Structures](Readme.md#Algorithms-and-Data-Structures)
   - [GUI Frameworks](Readme.md#GUI-Frameworks)
 - [Databases](Readme.md#Databases)
-  - [Message brokers and distributed environment coordinators.](Readme.md#Message-brokers-and-distributed-environment-coordinators.)
+  - [Message brokers and distributed environment coordinators.](Readme.md#message-brokers-and-distributed-environment-coordinators-)
 - [Operating systems](Readme.md#Operating-systems)
   - [Networking](Readme.md#Networking)
-  - [Cryptography, Network Security, etc.](Readme.md#Cryptography,-Network-Security,-etc.)
+  - [Cryptography, Network Security, etc.](Readme.md#cryptography-network-security-etc)
   - [Misc Utilities and Commands](Readme.md#Misc-Utilities-and-Commands)
 - [Social media frameworks](Readme.md#Social-media-frameworks)
 - [Micorcontrollers, Embedded programming, hardware](Readme.md#micorcontrollers-embedded-programming-hardware)
   - [RTOS](Readme.md#RTOS)
-  - [Quantum Computing, etc.](Readme.md#Quantum-Computing,-etc.)
-- [IDEs, editors, and related](Readme.md#IDEs,-editors,-and-related)
-  - [Version control systems, configuration, build tools](Readme.md#version-control-systems-configuration-build-tools)
+  - [Quantum Computing, etc.](Readme.md#quantum-computing-etc)
+- [IDEs, editors, and related](Readme.md#ides-editors-and-related)
+  - [Version control systems, configuration, build tools](Readme.md#version-control-systems-configuration-build-tools-)
 - [Conferencing systems and protocols](Readme.md#Conferencing-systems-and-protocols)
-- [Computer Graphics, Computer Vision, Visualization, Image Processing, etc](Readme.md#Computer-Graphics,-Computer-Vision,-Visualization,-Image-Processing,-etc)
+- [Computer Graphics, Computer Vision, Visualization, Image Processing, etc](Readme.md#computer-graphics-computer-vision-visualization-image-processing-etc)
 - [Movie making](Readme.md#Movie-making)
 - [Process management and misc software lifecycle issues](Readme.md#Process-management-and-misc-software-lifecycle-issues)
-- [Blockchain, Cryptocurreicies, NFTs](Readme.md#Blockchain,-Cryptocurreicies,-NFTs)
-- [BI, Business Intelligence ](Readme.md#BI,-Business-Intelligence) 
-- [Photography, Video, and optics in general](Readme.md#Photography,-Video,-and-optics-in-general)
-- [Biology, Medicine, Gerontology, etc.](Readme.md#Biology,-Medicine,-Gerontology,-etc.)
-- [Career etc.](Readme.md#Career-etc.)
-- [GPS, Meteorology, Alternative energy, and related](Readme.md#GPS,-Meteorology,-Alternative-energy,-and-related)
+- [Blockchain, Cryptocurreicies, NFTs](Readme.md#blockchain-cryptocurreicies-nfts)
+- [BI, Business Intelligence ](Readme.md#bi-business-intelligence-) 
+- [Photography, Video, and optics in general](Readme.md#photography-video-and-optics-in-general)
+- [Biology, Medicine, Gerontology, etc.](Readme.md#biology-medicine-gerontology-etc)
+- [Career etc.](Readme.md#career-etc)
+- [GPS, Meteorology, Alternative energy, and related](Readme.md#gps-meteorology-alternative-energy-and-related)
 - [Misc business and finances](Readme.md#Misc-business-and-finances)
-- [Manufacturing, IoT, etc.](Readme.md#Manufacturing,-IoT,-etc.)
+- [Manufacturing, IoT, etc.](Readme.md#manufacturing-iot-etc)
 - [Motivation and Psychology](Readme.md#motivation-and-psychology)
 - [Languages](Readme.md#Languages)
-- [Fun and useful.](Readme.md#Fun-and-useful.)
+- [Fun and useful.](Readme.md#fun-and-useful)
 
 ---
 
@@ -213,7 +213,7 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 - autoconfig
 - [Automake](Automake.md)
 - bundler(packager for Ruby) http://bundler.io/
-- cmake https://cmake.org/overview/
+- [CMake](CMake.md)
 - [Git](Git.md)  
   - gitk
   - github
@@ -436,7 +436,7 @@ https://www.tartssensors.com/libraries/arduino/
 - [OpenVPN](OpenVPN.md)
 - [Postman](Postman.md)
 - [Wireshark](Wireshark.md)
-- Fiddler
+- [Fiddler](Fiddler.md)
 - Firebug
 - [Firewall](Firewall.md)
 - [RTP](RTP.md)
@@ -539,7 +539,7 @@ Aggregated List of C++ networking libraries
 - Seaborn,
 - Scikit-Learn,
 - Microsoft Cognitive Toolkit,
-- Google Handtracking library: https://github.com/google/mediapipe/blob/master/mediapipe/docs/hand_tracking_mobile_gpu.md
+- Google Hand Tracking library: https://github.com/google/mediapipe/blob/master/mediapipe/docs/hand_tracking_mobile_gpu.md
 - [gnuplot](Gnuplot.md)
 
 Neat command-line tricks:
@@ -647,6 +647,7 @@ https://nofilmschool.com/how-to-write-a-scene
 - Kanban
 - Trello.com
 - www.planitpoker.com
+- https://firepoker.io
 - www.websequencediagrams.com
 - www.lucidchart.com
 - https://app.diagrams.net/ - another one for UML and other types of diagrams(licidchart's competitor)
@@ -656,7 +657,7 @@ https://nofilmschool.com/how-to-write-a-scene
 - Golden Triangle Cost/Quality/TimeToMarket
   https://blog.feabhas.com/2018/08/technical-debt/
 - Holacracy and Open Book Management
- https://www.holacracy.org/
+  https://www.holacracy.org/
 - Open Book Management - we share the exact details of our Balance Sheet and P&L Statement with our entire team in
   real-time, ensuring that our staff has the data they need to treat the business as if it were their own.
 - Why Programmers should be managers: https://habr.com/sandbox/125674/
