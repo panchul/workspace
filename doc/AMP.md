@@ -22,3 +22,4 @@ See also:
 
 C++AMP - is supposed to be vendor-agnostic, to work on Nvidia, AMD, and others. 
 
+---

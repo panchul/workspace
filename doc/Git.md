@@ -12,7 +12,9 @@ See Also:
 Contents
 
 - [Installing](Git.md#installing)
+  - [on MacOS](Git.md#on-macos) 
 - [Configuring ssh](Git.md#configuring-ssh)
+- [Populating an empty repo](Git.md#populating-an-empty-repository)
 - [Undoing things](Git.md#undoing-things)
 - [Working with multiple remotes](Git.md#working-with-multiple-remotes)
 - [gitignore](Git.md#gitignore)
@@ -34,7 +36,7 @@ https://git-scm.com/downloads
 
 Git is part of Xcode, but also, as per [https://git-scm.com/download/mac](https://git-scm.com/download/mac) :
 
- $ brew install git
+    $ brew install git
 
 ---
 
@@ -80,11 +82,33 @@ You can check the existing keys like so: https://docs.github.com/en/authenticati
 
 ---
 
+## Populating an empty repository
+
+---
+
+Create a new repository on the command line:
+
+    echo "# myrepo" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/myaccount/myrepo.git
+    git push -u origin main
+
+…or push an existing repository from the command line
+
+    git remote add origin https://github.com/myaccount/myrepo.git
+    git branch -M main
+    git push -u origin main
+
+---
+
 ## Undoing things
 
 ---
 
-Unstageing an added file in Git(and keeping local changes):
+Un-stage-ing an added file in Git(and keeping local changes):
 
     $ git reset HEAD path/to/file
 
@@ -137,8 +161,7 @@ or
 
 ---
 
-
-
+TODO
 
 
 
