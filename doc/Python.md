@@ -123,6 +123,12 @@ By default, the server uses the current directory. The option -d/--directory spe
 
 ---
 
+Useful summary on Python, and Dictionaries in particular
+
+https://www.geeksforgeeks.org/python-check-whether-given-key-already-exists-in-a-dictionary/
+
+---
+
 Neat benchmarking library I noticed here:
 https://stackoverflow.com/questions/3790848/fastest-way-to-convert-an-iterator-to-a-list
 

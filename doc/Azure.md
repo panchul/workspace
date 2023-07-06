@@ -23,7 +23,7 @@ See Also:
 
 ---
 
-# Azure Functions
+## Azure Functions
 
 ---
 
@@ -44,7 +44,7 @@ KEDA, https://keda.sh
 
 ---
 
-# Azure Web Apps
+## Azure Web Apps
 
 ---
 
@@ -59,7 +59,7 @@ https://docs.microsoft.com/en-us/learn/modules/publish-app-service-static-web-ap
 
 ---
 
-# Azure Storage
+## Azure Storage
 
 ---
 
@@ -68,7 +68,7 @@ https://azure.microsoft.com/en-us/features/storage-explorer/
 
 ---
 
-# App Services
+## App Services
 
 ---
 
@@ -82,7 +82,7 @@ https://docs.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=bash&p
 
 ---
 
-# Azure CLI
+## Azure CLI
 
 ---
 
@@ -118,7 +118,7 @@ https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart?view=azure-cli-lat
 
 ---
 
-# Azure Service Bus
+## Azure Service Bus
 
 ---
 
@@ -142,7 +142,7 @@ https://azure.github.io/azure-sdk-for-net
 
 ---
 
-# B2C
+## B2C
 
 ---
 
@@ -212,7 +212,7 @@ https://www.youtube.com/watch?v=sA_mXKy_dKU
 
 ---
 
-# Miscellaneous
+## Miscellaneous
 
 ---
 

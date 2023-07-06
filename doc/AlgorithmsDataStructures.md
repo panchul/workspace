@@ -263,7 +263,7 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.74.2672&rep=rep1&type=p
 
 ---
 
-Horner's rule - the rule to compute polinomials without having to get powers of x.
+Horner's rule - the rule to compute polynomials without having to get powers of x.
 Sum(a[i]*x^i) for i from 0 to n:
 
     int Horner(int a[], unsigned int n, int x) {
@@ -276,7 +276,7 @@ Sum(a[i]*x^i) for i from 0 to n:
 
 ---
 
-Floyd's cycle-finding algorithm (Tortoice and Hare)
+Floyd's cycle-finding algorithm (Tortoise and Hare)
 https://en.wikipedia.org/wiki/Cycle_detection
 
 ---

@@ -116,6 +116,7 @@ Demo of `new` vs. `new[]`
 ---
 
 Refresher on big-O() notation, and sorting algorithms
+
 http://bigocheatsheet.com/
 
 ---
@@ -386,6 +387,7 @@ https://en.cppreference.com/w/cpp/language/value_category
 ---
 
 About shared_ptr<>, and !!! About lock_guard<>
+
 https://en.cppreference.com/w/cpp/memory/shared_ptr
 
     void del(void(*)()) {}

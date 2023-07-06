@@ -16,14 +16,15 @@ See Also:
 
 **Contents**
 
-- [Installing or Upgrading](CMake.md#installing-or-ugrading)
+- [Installing or Upgrading](CMake.md#installing-or-upgrading)
 - [cmake-gui](CMake.md#cmake-gui)
+- [Basic commands](CMake.md#basic-commands)
 - [Tutorials](CMake.md#tutorials)
 - [Miscellaneous](CMake.md#miscellaneous)
 
 ---
 
-## Installing or Ugrading
+## Installing or Upgrading
 
 Check your current version:
 
@@ -73,9 +74,27 @@ There is a gui `cmake-gui` and a terminal gui `ccmake`. They allow configuring a
 
 ---
 
+## Basic commands
+
+---
+
+In simple config, this should be enough:
+
+To generate (in current folder):
+
+    $ cmake .
+
+To build:
+
+    $ cmake --build .
+
+---
+
 ## Tutorials
 
 ---
+
+CMake's tutorial, there is also the source code with the samples:
 
 https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
