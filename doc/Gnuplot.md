@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # GnuPlot, FreeGnuPlot
 
 See Also:

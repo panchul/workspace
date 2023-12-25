@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Sporth
 
 A sound-generating scripting language, manipulates with harmonics, etc. Uses stack to do all that.

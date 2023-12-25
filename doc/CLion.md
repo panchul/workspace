@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # CLion
 
 An open-source ide, with a lot of plugins covering anything you want.

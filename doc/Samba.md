@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Samba server(network storage)
 
 See Also:

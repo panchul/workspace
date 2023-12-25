@@ -23,7 +23,7 @@
   - [RTOS](Readme.md#RTOS)
   - [Quantum Computing, etc.](Readme.md#quantum-computing-etc)
 - [IDEs, editors, and related](Readme.md#ides-editors-and-related)
-  - [Version control systems, configuration, build tools](Readme.md#version-control-systems-configuration-build-tools-)
+  - [Version control systems, configuration, build tools](Readme.md#version-control-systems-configuration-build-tools)
 - [Conferencing systems and protocols](Readme.md#Conferencing-systems-and-protocols)
 - [Computer Graphics, Computer Vision, Visualization, Image Processing, etc](Readme.md#computer-graphics-computer-vision-visualization-image-processing-etc)
 - [Movie making](Readme.md#Movie-making)
@@ -91,6 +91,7 @@
   - [Lagom](Lagom.md)    
 - [Sed](Sed.md)
 - [Sporth](Sporth.md)
+- [Starlark](Starlark.md), [Buck2'2](Buck.md) programming language.
 
 A more conceptual links, still related to Programming Languages and Math
 
@@ -212,6 +213,7 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 - [Autoconf](Autoconf.md)
 - autoconfig
 - [Automake](Automake.md)
+- [Buck and Buck2](Buck.md)
 - bundler(packager for Ruby) http://bundler.io/
 - [CMake](CMake.md)
 - [Git](Git.md)  
@@ -229,6 +231,7 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 - [NuGet](NuGet.md)
 - [Pip](Pip.md)  
 - [Rake](Rake.md)  
+- [Rustup](Rustup.md)
 - [Sbt](Sbt.md)  
 - [Subversion](Subversion.md)  
 - [yum](Yum.md)

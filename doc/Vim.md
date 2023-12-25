@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Vi/Vim
 
 See Also:

@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Scalatra
 
 Main website: http://www.scalatra.org/

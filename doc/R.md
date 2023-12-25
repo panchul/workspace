@@ -1,7 +1,4 @@
-
-
-## UNDER CONSTRUCTION
-
+[Home](Readme.md)
 # R language
 
 https://cran.r-project.org/doc/manuals/r-release/R-intro.html

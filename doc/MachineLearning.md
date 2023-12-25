@@ -10,8 +10,11 @@ See Also:
  - [Neural Network](NeuralNetwork.md)
    - [GAN](GAN.md), (Generative Adversarial networks)
  - [ONNX](ONNX.md)
- - [PyTorch](PyTorch.md)
- - [Scikit](Scikit.md)
+ - [Python](Python.md)
+   - [Matplotlib](Matplotlib.md)
+   - [Pandas](Pandas.md)
+   - [PyTorch](PyTorch.md)
+   - [Scikit](Scikit.md)
  - [Splunk](Splunk.md)
  - [TensorFlow](TensorFlow.md)
 

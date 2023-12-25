@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Python
 
 See also:
@@ -6,6 +7,7 @@ See also:
   - [Cython](Cython.md)
   - [Jupyter](Jupyter.md)
   - [Numpy](Numpy.md)
+  - [Pandas](Pandas.md)
   - [PIL](PIL.md)
   - [Pip](Pip.md)
   - [PyCharm](PyCharm.md)
@@ -18,10 +20,10 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 **Content**
 
-- [Installing](Python.md#Installing)
-- [IDEs Etc](Python.md#IDEs-Etc)
-- [Web-related](Python.md#Web-related)
-- [Miscellaneous](Python.md#Miscellaneous)
+- [Installing](Python.md#installing)
+- [IDEs Etc](Python.md#ides-etc)
+- [Web-related](Python.md#web-related)
+- [Miscellaneous](Python.md#miscellaneous)
 
 ---
 

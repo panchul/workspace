@@ -7,6 +7,7 @@ See Also:
   - [CUDA](CUDA.md)
   - [Graphics](Graphics.md)
   - [OpenCV](OpenCV.md)
+  - [VRS](VRS.md)
   - [Yolo](Yolo.md)
 
 ---

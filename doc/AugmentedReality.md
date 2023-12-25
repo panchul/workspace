@@ -28,7 +28,8 @@ See Also:
 - [Quaternions](Quaternions.md)
 - video recording for terminal `asciinema.org` `gohugo.io` web content
 - [Unity](Unity.md)
-- [Unreal Engine](UnreadlEngine.md)
+- [Unreal Engine](UnrealEngine.md)
+- [VRS](VRS.md)
 - Autodesk FBX SDK
 
 ---
