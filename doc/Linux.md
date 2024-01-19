@@ -1020,7 +1020,7 @@ https://www.linux.com/learn/cool-linux-command-line-image-management-hacks
 
 `feh`
 
-```sudo apt-get install feh``` - installs it (Ubuntu)
+`sudo apt-get install feh` - installs it (Ubuntu)
 
 To list the files with the dimensions:
 

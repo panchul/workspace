@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # ejabberd (Jabber server in Erlang)
 
 See Also:

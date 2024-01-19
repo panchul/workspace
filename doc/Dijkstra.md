@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Dijkstra (mininum spanning graph)
 
 See Also:

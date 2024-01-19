@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Multithreading
 
 See Also:
@@ -10,8 +11,39 @@ See Also:
 
 **Contents**
 
+- [Refresher of C++ basics](Multithreading.md#refresher-of-c-basics)
 - [Miscellaneous](Multithreading.md#miscellaneous)
 
+---
+
+## Refresher of C++ basics
+
+---
+```
+- std::mutex
+  try_lock
+  unlock()
+
+- std::unique_ptr<>
+  std::make_unique<>()
+
+- std::shared_ptr<>
+  std::make_shared<>()
+
+- std::thread
+
+- std::condition_variable
+  notify_one()
+  notify_all()
+  wait()
+
+- std::lock_guard<std::mutex>
+
+- std::move()
+
+- std::future
+  wait_for()
+```
 ---
 
 ## Miscellaneous
