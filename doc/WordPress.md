@@ -13,6 +13,7 @@ See Also:
  - [Installing](WordPress.md#installing)
  - [Cli](WordPress.md#cli)
  - [Tutorials](WordPress.md#tutorials)
+ - [Caching](WordPress.md#caching)
  - [Miscellaneous](WordPress.md#miscellaneous)
 
 ---
@@ -45,6 +46,20 @@ https://wp-cli.org/ - CLI
 
 Some basic tutorials:
 https://www.youtube.com/watch?v=wiaT4bR3xGA
+
+---
+
+## Caching
+
+---
+
+Without a special plan, there is no manual control over cache cleaning:
+
+https://wordpress.com/support/clear-your-sites-cache/
+
+And a way to configure it if possible:
+
+https://wordpress.org/support/topic/clearing-cache-not-working/
 
 ---
 
