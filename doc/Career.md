@@ -35,16 +35,16 @@ with his 6 rules for productivity:
 1) Avoid large meetings. Large meetings waste valuable time and energy.
 - They discourage debate
 - People are more guarded than open
-- There’s not enough time for everyone to contribute
-  Don’t schedule large meetings unless you’re certain they provide value to everyone.
+- There's not enough time for everyone to contribute
+  Don't schedule large meetings unless you're certain they provide value to everyone.
 
-2) Leave a meeting if you’re not contributing. If a meeting doesn't require your:
+2) Leave a meeting if you're not contributing. If a meeting doesn't require your:
 - Input
 - Value
 - Decisions
   Your presence is useless.
-  It’s not rude to leave a meeting.
-  But it’s rude to waste people’s time.
+  It's not rude to leave a meeting.
+  But it's rude to waste people's time.
 
 3) Forget the chain of command
    Communicate with colleagues directly.
@@ -58,9 +58,9 @@ with his 6 rules for productivity:
 - Concise
 - To the point
 - Easy to understand
-  Don’t sound smart. Be efficient.
+  Don't sound smart. Be efficient.
 
-5) Ditch frequent meetings. There’s no better way to waste everyone’s time.
+5) Ditch frequent meetings. There's no better way to waste everyone's time.
    Use meetings to:
 - Collaborate
 - Attack issues head-on
@@ -71,14 +71,14 @@ with his 6 rules for productivity:
 - Send a text
 - Send an email
 - Communicate on a discord or slack channel
-  Don’t interrupt your team’s workflow if it’s unnecessary.
+  Don't interrupt your team's workflow if it's unnecessary.
 
 6) Use common sense. If a company rule doesn't:
 - Make sense
 - Contribute to progress
 - Apply to your specific situation
   Avoid following the rule with your eyes closed.
-  Don’t follow rules. Follow principles.
+  Don't follow rules. Follow principles.
 
 ---
 
@@ -127,17 +127,17 @@ Freelancer websites.
 At some companies you look around yourself and see that your co-workers seem to
 be practicing the CIA manual. Stay away from those. :-)
 
-From the CIA’s declassified saboteur guidance, to disrupt an advisory from within is to:
+From the CIA's declassified saboteur guidance, to disrupt an advisory from within is to:
 
-- Insist on doing everything through “channels.” Never permit short-cuts to be taken in order to expedite decisions.
+- Insist on doing everything through "channels." Never permit short-cuts to be taken in order to expedite decisions.
 
-- When possible, refer all matters to committees, for “further study and consideration.” Attempt to make the committee as large as possible — never less than five.
+- When possible, refer all matters to committees, for "further study and consideration." Attempt to make the committee as large as possible - never less than five.
 
 - Bring up irrelevant issues as frequently as possible.
 
 - Haggle over precise wordings of communications, minutes, resolutions.
 
-- Advocate “caution.” Be “reasonable” and urge your fellow-conferees to be “reasonable” and avoid haste which might result in embarrassments or difficulties later on.
+- Advocate "caution." Be "reasonable" and urge your fellow-conferees to be "reasonable" and avoid haste which might result in embarrassments or difficulties later on.
 
 - Insist on perfect work in relatively unimportant products; send back for refinishing those which have the least flaw.
 
@@ -301,21 +301,21 @@ Richard Branson's article on how to delegate.
 
 When starting out, entrepreneurs face seemingly never-ending lists of tasks. I had
 to be a jack-of-all-trades at Virgin Records. I had at least 10 job titles (depending
-on who I was talking to) – marketing, PR, operations, business development… you name
+on who I was talking to) - marketing, PR, operations, business development... you name
 it, I did it.
 
 Working across so many areas is great because it enables you to learn quickly, broaden
-your skill set, and tackle challenges head on with confidence – but we could never
-have evolved from a mail-order record retailer to a global brand if I hadn’t learnt
+your skill set, and tackle challenges head on with confidence - but we could never
+have evolved from a mail-order record retailer to a global brand if I hadn't learnt
 how to delegate early on.
 
-With that in mind, I decided to write up a five-step delegation guide that I’ve
+With that in mind, I decided to write up a five-step delegation guide that I've
 followed over the years. Hopefully you find it helpful too.
 
 1. Identify your strengths and weaknesses. Reflect on the tasks that come naturally
    to you. What elements of the business do you find enjoyable and stress-free? What
    do you find demanding and time-consuming? Ask your friends, family and peers for
-   their honest observations too. Once you’ve collected your thoughts and findings,
+   their honest observations too. Once you've collected your thoughts and findings,
    write them down and take note of any patterns and themes.
 
 2. Do the same for your business as a whole. Identify any areas where improvement
@@ -331,13 +331,13 @@ followed over the years. Hopefully you find it helpful too.
    ways to improve it without losing sight of your vision.
 
 4. Shift the hierarchy and establish a company culture where every idea is welcome,
-   communicationis open and collaboration is embedded in every decision. It’s
+   communicationis open and collaboration is embedded in every decision. It's
    important to remember that people are your greatest asset and you need to invest
    in them.
 
 5. Now that you have established a loyal and trustful team with talent in the right
    places, you can sit back and start looking at the big picture. Nevertheless,
-   it’s important to remain visible, approachable and connected to all of the
+   it's important to remain visible, approachable and connected to all of the
    moving parts of the business.
 
 Delegation is a balancing act but when you get it right, that’s when growth
@@ -361,8 +361,14 @@ https://dev.to/daedtech/positioning-strategy-for-the-aspiring-software-consultan
 
 ---
 
-4 ‘ballsy questions’ everyone should ask in job interviews—but most don’t, says hiring CEO of 10 years
+4 'ballsy questions' everyone should ask in job interviews-but most don't, says hiring CEO of 10 years
 https://www.cnbc.com/2020/02/13/hiring-ceo-4-ballsy-questions-everyone-should-ask-in-job-interviews-but-most-dont.html
+
+
+1. Can you give examples of people who previously held this role, but were a bad fit? And why?
+2. How many hours do you expect the person in this role to work per week?
+3. How often does this company give salary raises to its employees?
+4. What kind of professional development benefits do you offer?
 
 ---
 
@@ -514,8 +520,8 @@ Re-phrasing dating advices(from Laura Schlessinger) and applying the same attitu
 
 - Stupid Attachment - Looking for the context of a company to find and define yourself.
 - Stupid Courtship - Become a beggar, not a chooser, in the job search ritual because you are desperate.
-- Stupid Helplessness – Being too scared and insecure to deal with your rage and turning it into wimpyness instead.
-- Stupid Forgiving – Not knowing when to break off a no-win relationship or how to not get involved in the first place.
+- Stupid Helplessness - Being too scared and insecure to deal with your rage and turning it into wimpyness instead.
+- Stupid Forgiving - Not knowing when to break off a no-win relationship or how to not get involved in the first place.
 
 ---
 
@@ -637,6 +643,17 @@ https://dev.to/shivenigma/salary-negotiation-tips-for-developers-1bhe
 
 ---
 
+Teamwork skills seem to correlate with:
+
+1. Communicate Clearly
+2. Share Knowledge
+3. Resolve Conflicts
+4. Support Diversity
+5. Demonstrate Adaptability
+6. Lead Proactively
+
+---
+
 From Internet:
 
 A Netflix engineer did 7 onsites interviews for 7 tech companies. Received 7 offers ranging $325k - $800k a year. He/she shared the resources in Blind that helped her/him to be successful. Here they are:
@@ -652,9 +669,9 @@ https://lnkd.in/d4YzR_3d
 Solve each question yourself before looking at answers. After struggling with certain topics, found some youtube resources that were really helpful.
 
 - Graph problems: https://lnkd.in/dT4brkwG
-- Kahn’s topsort: https://lnkd.in/dc8VzPx7
-- Dijkstra’s shortest path: https://lnkd.in/djWD4ncp
-- Kruskal’s MST: https://lnkd.in/dUaF7dDr
+- Kahn's topsort: https://lnkd.in/dc8VzPx7
+- Dijkstra's shortest path: https://lnkd.in/djWD4ncp
+- Kruskal's MST: https://lnkd.in/dUaF7dDr
 - Union find: https://lnkd.in/dmZSyGXq
 - Dynamic programming: https://lnkd.in/d85BHsQp
 
@@ -674,7 +691,7 @@ No. 1 tip: Pay for mock interviews, take extensive notes, study, pay for more in
 
 Grokking system design: https://lnkd.in/dKBtGDDG
 
-It’s good to complete grokking, but in practice its a little too shallow for staff level.
+It's good to complete grokking, but in practice its a little too shallow for staff level.
 
 Watch all videos and take notes from this channel: https://lnkd.in/d32sycXJ
 
@@ -684,7 +701,7 @@ Read papers on Dynamo, BigTable, MapReduce, Cassandra, Raft, Lamport Clocks, etc
 
 A lot of material written by this Medium writer is great: https://lnkd.in/d_4yxAA7
 
-Memorize Jeff Dean’s latency numbers: https://lnkd.in/dq42yWsa
+Memorize Jeff Dean's latency numbers: https://lnkd.in/dq42yWsa
 
 If you have time, read DDIA: https://dataintensive.net
 

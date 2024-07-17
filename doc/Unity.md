@@ -28,6 +28,7 @@ See Also:
   - [Deploying to WebGL](Unity.md#deploying-to-webgl)
   - [Deploying to Android](Unity.md#deploying-to-android)
   - [Deploying for AR/VR](Unity.md#deploying-for-arvr)
+- [Authentication](Unity.md#authentication)
 - [Miscellaneous](Unity.md#Miscellaneous)
 
 ---
@@ -251,6 +252,14 @@ https://www.youtube.com/watch?v=s9kpPI-_QDA
 ---
 
 ### Deploying for AR/VR
+
+---
+
+## Authentication
+
+---
+
+There is a Unity support for [FireBase](https://firebase.google.com/)
 
 ---
 

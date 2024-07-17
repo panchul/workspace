@@ -7,13 +7,23 @@ https://developer.android.com/guide/app-bundle/in-app-updates
 
 See Also:
 
+- [Kotlin](Kotlin.md)
 - [Linux](Linux.md)
 
 ---
 
 **Contents**
 
+- [Authentication](Android.md#authentication)
 - [Miscellaneous](Android.md#miscellaneous)
+
+---
+
+## Authentication
+
+---
+
+An option for authentication: [FireBase](https://firebase.google.com/)
 
 ---
 

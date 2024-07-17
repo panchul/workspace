@@ -19,11 +19,39 @@ My C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panch
 
 **Content**
 
+  - [Low Latency Etc.](CPP.md#low-latency-etc)
   - [Variadic functions](CPP.md#variadic-functions)
   - [Samples](CPP.md#Samples)
   - [Fundamentals](CPP.md#Fundamentals)
   - [Libraries(.so, .dll, .lib, etc.)](CPP.md#libraries)
   - [Miscellaneous](CPP.md#Miscellaneous)
+
+---
+
+## Low Latency Etc.
+
+---
+
+Neat summary of the modern tech
+
+"The C++ techniques you need for $600k hedge fund jobs" https://www.efinancialcareers.com/news/low-latency-c
+
+Forked a nice sandbox: https://github.com/panchul/imperial_hft
+
+Information on low latency C++ can be hard to come by. A paper* released last year by Bilokon and one of his PhD students, Burak Gunduz, looks at 12 techniques for reducing latency in C++ code, as follows:
+
+- Lock-free programming: a concurrent programming paradigm involving multi-threaded algorithms which, unlike their traditional counterparts, do not employ the usage of mutual exclusion mechanisms, such as locks, to arbitrate access to shared resources.
+- Single mix multiple data (SMID) instructions: Instructions that take advantage of the parallel processing power of contemporary CPUs, allowing simultaneous execution of multiple operations.
+- Mixing data types: When a computation involves both float and double types, implicit conversions are required. If only float computations are used, performance improves. 
+- Signed vs unsigned: Ensuring consistent signedness in comparisons to avoid conversions. 
+- Prefetching: Explicitly loading data into cache before it is needed to reduce data fetch delays, particularly in memory-bound applications
+- Branch reduction: predicting conditional branch outcomes to allow speculative code execution
+- Slowpath removal: minimize execution of rarely executed code paths.
+- Short-circuiting: Logical expressions cease evaluation when the final result is determined.
+- Inlining: Incorporating the body of a function at each point the function is called, reducing function call overhead and enabling further optimisation by the compiler
+- Constexpr: Computations marked as constexpr are evaluated at compile time, enabling constant folding and efficient code execution by eliminating runtime calculations
+- Compile-time dispatch: Techniques like template specialization or function overloading so that optimised code paths are chosen at compile time based on type or value, avoiding runtime dispatch and early optimisation decision. 
+- Cache warming: To minimize memory access time and boost program responsiveness, data is preloaded into the CPU cache before it’s needed.
 
 ---
 

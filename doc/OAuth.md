@@ -15,6 +15,10 @@ See Also:
 
 ---
 
+Authentication support option - [FireBase](https://firebase.google.com/)
+
+---
+
 ## Miscellaneous
 
 ---

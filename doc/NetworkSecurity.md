@@ -14,10 +14,14 @@ See Also:
 
 ---
 
-How to secure Lighttpd with Let’s Encrypt TLS/SSL certificate on Debian/Ubuntu
+An option for authentication - [FireBase](https://firebase.google.com/)
+
+---
+
+How to secure Lighttpd with Let's Encrypt TLS/SSL certificate on Debian/Ubuntu
 https://www.cyberciti.biz/faq/how-to-configure-lighttpd-web-server-with-free-lets-encrypt-ssl-certificate-on-debian-or-ubuntu-linux/
 
-How to configure Nginx with Let’s Encrypt on Debian/Ubuntu Linux
+How to configure Nginx with Let's Encrypt on Debian/Ubuntu Linux
 https://www.cyberciti.biz/faq/how-to-configure-nginx-with-free-lets-encrypt-ssl-certificate-on-debian-or-ubuntu-linux/
 
 ---
