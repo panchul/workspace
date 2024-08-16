@@ -253,6 +253,40 @@ crashlytics-build.properties
 
 ---
 
+Most likely, because of a 400k notebook file, had an error similar to this:
+
+```
+ % git push
+Enumerating objects: ..., done.
+Counting objects: 100% (...), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (...), done.
+
+error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+
+send-pack: unexpected disconnect while reading sideband packet
+Writing objects: 100% (...), . MiB | . MiB/s, done.
+Total ... (delta .), reused .. (delta .), pack-reused 0
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+```
+
+As per https://stackoverflow.com/questions/62753648/rpc-failed-http-400-curl-22-the-requested-url-returned-error-400-bad-request , tried:
+
+```
+    git config http.postBuffer 524288000
+```
+
+pull/push, and it helped, with a warning:
+
+```
+remote: warning: See https://gh.io/lfs for more information.
+remote: warning: File ... is 80.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+```
+
+---
+
 About sparse check-out, cloning a subdirectory.
 
 https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository

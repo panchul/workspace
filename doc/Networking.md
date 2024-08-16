@@ -394,3 +394,15 @@ To see who is using a port(and there is also utility `ss`):
     $ ps aux | grep 10177
 
 ---
+
+Stupid OSI layers nobody ever remembers right:
+
+1. Physical, raw bits
+2. Data Link, format of data on the network
+3. Network, physical path on the network, ip
+4. Transport, tcp/udp, end-to-end between the two devices.
+5. Session, maintains connection and ports
+6. Presentation, usable format, encryption, compression, etc.
+7. Application, human-computer interaction
+
+---
