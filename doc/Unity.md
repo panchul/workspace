@@ -283,6 +283,16 @@ https://www.youtube.com/watch?v=s9kpPI-_QDA
 
 ---
 
+For simple trying web deployment locally, using [Python](Python.md#web-related):
+
+```
+$ python -m http.server --directory /tmp/wherever_unity_build_is
+```
+
+On Mac and on Win, you may have to modify the firewall settings to allow serving the port.
+
+---
+
 ### Deploying to Android
 
 ---
@@ -334,13 +344,6 @@ https://www.youtube.com/watch?v=6lilCUCX4ik
 
 Unity ML-Agents Toolkit
 https://github.com/Unity-Technologies/ml-agents
-
----
-
-Uploading WebGL deployments:
-
-https://docs.unity3d.com/Manual/webgl-building.html
-https://www.youtube.com/watch?v=s9kpPI-_QDA
 
 ---
 
