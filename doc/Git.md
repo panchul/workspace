@@ -163,8 +163,60 @@ or
 
 ---
 
-TODO
+    $ git push <remote> <local_branch>:<remote_name>
 
+As an example, let’s say that you have created a local branch named “my-feature”.
+
+    $ git branch
+      master
+    * my-feature
+    feature
+
+
+    $ git push origin my-feature:feature
+
+    Enumerating objects: 6, done.
+    Counting objects: 100% (6/6), done.
+    Delta compression using up to 2 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 513 bytes | 513.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/someaccount/repo.git
+        afc4881..9ae0aee  my-feature -> feature
+
+
+    $ git pull
+
+    $ git checkout my-feature
+
+    $ git merge origin/feature
+
+    $ git push origin my-feature:feature
+
+Pushing to another repository
+
+    $ git push <remote> <branch>
+
+    $ git remote -v
+    origin  https://github.com/user/repo.git (fetch)
+    origin  https://github.com/user/repo.git (push)
+    custom  https://github.com/user/custom.git (fetch)
+    custom  https://github.com/user/custom.git (push)
+
+E.g. pushing to remote 'origin':
+
+    $ git push origin feature
+
+    Enumerating objects: 6, done.
+    Counting objects: 100% (6/6), done.
+    Delta compression using up to 2 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 513 bytes | 513.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/someaccount/repo.git
+        afc4881..9ae0aee  my-feature -> feature
 
 
 ---

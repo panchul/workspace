@@ -29,6 +29,7 @@ See Also:
   - [Deploying to Android](Unity.md#deploying-to-android)
   - [Deploying for AR/VR](Unity.md#deploying-for-arvr)
 - [Authentication](Unity.md#authentication)
+- [Scene control](Unity.md#scene-control)
 - [Miscellaneous](Unity.md#Miscellaneous)
 
 ---
@@ -117,6 +118,7 @@ public int _type = 0; // 0 - seconds, 1 - minutes, 2 - hours, 3 - calendar,
     // Update is called once per frame
     void Update()
     {
+        // we do not have to make it so complicated, but let's convert all to seconds.
         var rot = System.DateTime.Now.Hour * 60 * 60
                 + System.DateTime.Now.Minute * 60
                 + System.DateTime.Now.Second
@@ -125,17 +127,17 @@ public int _type = 0; // 0 - seconds, 1 - minutes, 2 - hours, 3 - calendar,
         {
             case 0:
                 rot %= 60;
-                rot *= 6;
+                rot *= (360/60);
                 break;
             case 1:
                 rot /= 60;
                 rot %= 60;
-                rot *= 6;
+                rot *= (360/60);
                 break;
             case 2:
-                rot /= 60*60;
+                rot /= (60*60);
                 rot %= 24;
-                rot *= 360/24;
+                rot *= 360/12; // 24 is twice 360
                 break;
         }
         print($"hour is {System.DateTime.Now.Hour} minutes {System.DateTime.Now.Minute} seconds {System.DateTime.Now.Second}");
@@ -186,6 +188,42 @@ https://www.youtube.com/watch?v=IuuKUaZQiSU
 Unity UI Toolkit in 5 Minutes
 
 https://www.youtube.com/watch?v=yUXFHAOXhcA
+
+Simple UIDocument that adds click handling events:
+
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class MyCubeController : MonoBehaviour {
+    public GameObject cube;
+    private bool _isRotating = false;
+
+    public void OnEnable() {
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+
+        Button buttonStart = root.Q < Button > ("ButtonStart");
+        Button buttonStop = root.Q < Button > ("ButtonStop");
+        Button buttonColor = root.Q < Button > ("ButtonColor");
+
+        buttonStart.clicked += () => _isRotating = true; // !_isRotating; // cube.StartRotate();
+        buttonStop.clicked += () => _isRotating = false; // !_isRotating; // cube.StopRotate();
+        //buttonColor.clicked += () => ;// cube.ChangeColor();
+    }
+
+    // Start is called before the first frame update
+    void Start() {}
+
+    // Update is called once per frame
+    void Update() {
+        if (_isRotating) {
+            cube.transform.Rotate(1.2f,0.2f,0.2f);
+        }
+    }
+}
+```
 
 ---
 
@@ -263,6 +301,14 @@ There is a Unity support for [FireBase](https://firebase.google.com/)
 
 ---
 
+## Scene control
+
+---
+
+TODO
+
+---
+
 ## Miscellaneous 
 
 ---
@@ -288,6 +334,13 @@ https://www.youtube.com/watch?v=6lilCUCX4ik
 
 Unity ML-Agents Toolkit
 https://github.com/Unity-Technologies/ml-agents
+
+---
+
+Uploading WebGL deployments:
+
+https://docs.unity3d.com/Manual/webgl-building.html
+https://www.youtube.com/watch?v=s9kpPI-_QDA
 
 ---
 
@@ -346,7 +399,7 @@ Crosstales.FB.FileBrowser nice FileBrowser plugin for Unity
 
 ---
 
-Applying Materials, shaders, textures, etc.
+## Applying Materials, shaders, textures, etc.
 
 https://www.youtube.com/watch?v=MGIBLPIz4oM
 
