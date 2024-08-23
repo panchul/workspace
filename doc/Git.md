@@ -15,6 +15,7 @@ Contents
 
 - [Installing](Git.md#installing)
   - [on MacOS](Git.md#on-macos) 
+  - [Github CLI(`gh`)](Git.md#github-cli)
 - [Configuring ssh](Git.md#configuring-ssh)
 - [Populating an empty repo](Git.md#populating-an-empty-repository)
 - [Undoing things](Git.md#undoing-things)
@@ -39,6 +40,16 @@ https://git-scm.com/downloads
 Git is part of Xcode, but also, as per [https://git-scm.com/download/mac](https://git-scm.com/download/mac) :
 
     $ brew install git
+
+---
+
+### GitHub CLI
+
+---
+
+For `gh`, Github CLI, See:
+
+https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 
 ---
 
