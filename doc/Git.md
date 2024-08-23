@@ -53,6 +53,13 @@ https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 
 ---
 
+To get `gh` going, you need to:
+
+    $ gh auth login
+    ...
+
+---
+
 ## Configuring ssh
 
 ---
