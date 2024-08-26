@@ -71,6 +71,19 @@ Check that you got the version you wanted:
 
 ---
 
+On Ubuntu, or other places, there could be an error about Ninja, install that package
+like so:
+
+    $ apt install ninja-build
+
+Might also need to link it:
+
+    # ln -s /usr/bin/ninja /usr/bin/ninja-build
+
+There is a [longer discussion](https://stackoverflow.com/questions/38658014/ninja-not-found-by-cmake).
+
+---
+
 ## cmake-gui
 
 ---
