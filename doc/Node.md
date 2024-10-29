@@ -39,6 +39,7 @@ Run is like so:
 
 Now, similarly, filter out the files we want:
 
+```
     const axios = require("axios");
     const cheerio = require("cheerio");
     const url = "https://stackoverflow.com/jobs";
@@ -66,9 +67,11 @@ Now, similarly, filter out the files we want:
             console.log(error);
         }
     })();
+```
 
 Runing it:
 
+```
     $ node app.js
     {
     title: '\nFull-Stack Software Engineer            ',
@@ -100,6 +103,7 @@ Runing it:
     link: 'https://stackoverflow.com//jobs/473494/senior-software-engineer-nori',
     date: '7h ago'
     }
+```
     
 ---
 

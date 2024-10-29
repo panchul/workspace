@@ -13,6 +13,10 @@
 
 ---
 
+"Fairness is a concept invented so dumb people and children can participate in debates". Scott Adams
+
+---
+
 Разреши другим разочароваться в тебе.
 И ты будешь свободен жить так, как ты на самом деле чувствуешь.
 
