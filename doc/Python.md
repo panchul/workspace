@@ -23,6 +23,8 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 - [Installing](Python.md#installing)
 - [IDEs Etc](Python.md#ides-etc)
 - [Web-related](Python.md#web-related)
+- [Decorators](Python.md#decorators)
+- [Abstract classes and interfaces](Python.md#abstract-classes-and-interfaces)
 - [Miscellaneous](Python.md#miscellaneous)
 
 ---
@@ -120,6 +122,172 @@ More at https://docs.python.org/3/library/http.server.html
 By default, the server uses the current directory. The option -d/--directory specifies a directory to which it should serve the files. For example, the following command uses a specific directory:
 
     $ python -m http.server --directory /tmp/
+
+## Decorators
+
+---
+
+Example of a decorator for a function(from https://www.geeksforgeeks.org/decorators-in-python/):
+
+```
+'''
+% python runit.py
+400
+200
+'''
+
+# code for testing decorator chaining 
+def decor1(func): 
+    def inner(): 
+        x = func() 
+        return x * x 
+    return inner 
+
+def decor(func): 
+    def inner(): 
+        x = func() 
+        return 2 * x 
+    return inner 
+
+@decor1
+@decor
+def num(): 
+    return 10
+
+@decor
+@decor1
+def num2():
+    return 10
+  
+## The below is basically this:
+# decor1(decor(num))
+# decor(decor1(num2))
+
+print(num()) 
+print(num2())
+```    
+
+---
+
+A decorator for a class(from https://builtin.com/software-engineering-perspectives/python-class-decorator):
+
+```
+class Power(object):
+	def __init__(self, arg):
+		self._arg = arg
+
+	def __call__(self, a, b):
+		retval = self._arg(a, b)
+		return retval ** 2
+
+@Power
+def multiply_together(a, b):
+	return a * b
+
+print(multiply_together)
+print(multiply_together(2, 2))
+```
+
+---
+
+And even better, with a static info about calls(from https://builtin.com/software-engineering-perspectives/python-class-decorator):
+
+```
+class Power(object):
+    def __init__(self, arg):
+        self._arg = arg
+        self._memory = []
+
+    def __call__(self, a, b):
+        retval = self._arg(a, b)
+        self._memory.append(retval **2)
+        return retval ** 2
+
+    def memory(self):
+        return self._memory
+
+@Power
+def multiply_together(a, b):
+    return a * b
+
+print(multiply_together)
+print(multiply_together(2, 2))
+print(multiply_together(3, 2))
+print(multiply_together(2, 6))
+print(multiply_together.memory())
+```
+
+A test run:
+
+```
+% python runit.py
+<__main__.Power object at 0x7f9c4e1235d0>
+16
+36
+144
+[16, 36, 144]
+```
+
+---
+
+## Abstract classes and interfaces
+
+---
+
+A discussion about the abstract class and interface in Python.
+
+https://stackoverflow.com/questions/372042/difference-between-abstract-class-and-interface-in-python
+
+`import abc` adds `abc.abstractmethod` decorator on relevant methods.
+The metaclass will be add the decorated functions to the `__abstractmethods__`
+
+---
+
+From here: 
+https://medium.com/@shashikantrbl123/interfaces-and-abstract-classes-in-python-understanding-the-differences-3e5889a0746a
+
+
+Now, any class that implements the Shape interface must provide an implementation of the area() method:
+
+```
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass
+    
+    @abstractmethod
+    def stop_engine(self):
+        pass
+    
+    @abstractmethod
+    def accelerate(self):
+        pass
+    
+    @abstractmethod
+    def brake(self):
+        pass
+```
+
+And then
+
+```
+class Car(Vehicle):
+    def start_engine(self):
+        print("Starting car engine...")
+    
+    def stop_engine(self):
+        print("Stopping car engine...")
+    
+    def accelerate(self):
+        print("Accelerating car...")
+    
+    def brake(self):
+        print("Applying car brakes...")
+```
+
+---
 
 ## Miscellaneous
 
@@ -418,7 +586,7 @@ TFDebug, TensorBoard, Jupiter
 
 ---
 
-Simple birthday attack calculator(from wikipedia.org). Write this into ```birthday.py```:
+Simple birthday attack calculator(from wikipedia.org). Write this into `birthday.py`:
 
     from math import log1p, sqrt
     
@@ -539,5 +707,5 @@ or, more elaborate:
         exit()
     else:
         os.system("shutdown /s")
-        
+
 ---

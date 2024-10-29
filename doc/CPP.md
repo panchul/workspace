@@ -58,10 +58,9 @@ Information on low latency C++ can be hard to come by. A paper* released last ye
 ## Variadic functions
 
 ---
-Simple demo:
-```
-// from https://en.cppreference.com/w/cpp/language/parameter_pack 
+Simple demo(from https://en.cppreference.com/w/cpp/language/parameter_pack):
 
+```
 #include <iostream>
 
 void tprintf(const char* format) { // base function
@@ -85,6 +84,7 @@ int main() {
     return 0;
 }
 ```
+
 ---
 
 ## Samples
@@ -143,8 +143,6 @@ The `LIBPATH` environment variable is not used.
 ## Fundamentals
 
 ---
-
-*Polymorphism*
 
 C++ polymorphism means that a call to a member function will cause a different function to be executed depending on the type of object that invokes the function.
 

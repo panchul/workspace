@@ -17,15 +17,16 @@ My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panch
 
 **Content**
 
- - [Dotnet CLI](CSharp.md#Dotnet-CLI)
- - [Samples](CSharp.md#Samples)
- - [Fundamentals](CSharp.md#Fundamentals)
- - [Libraries and Interop](CSharp.md#libraries-and-interop)
- - [GUI Samples](CSharp.md#gui-samples)
- - [Windows Messaging](CSharp.md#windows-messaging)
- - [Logging](CSharp.md#logging)
- - [Mono](CSharp.md#mono)
- - [Miscellaneous](CSharp.md#Miscellaneous)
+- [Dotnet CLI](CSharp.md#Dotnet-CLI)
+- [Samples](CSharp.md#Samples)
+- [Fundamentals](CSharp.md#Fundamentals)
+- [Libraries and Interop](CSharp.md#libraries-and-interop)
+- [GUI Samples](CSharp.md#gui-samples)
+- [Windows Messaging](CSharp.md#windows-messaging)
+- [Logging](CSharp.md#logging)
+- [Mono](CSharp.md#mono)
+- [Miscellaneous](CSharp.md#Miscellaneous)
+- [Links](CSharp.md#Links)
 
 ---
 
@@ -409,3 +410,8 @@ To execute a command from within .cs file:
 For JSON serialization, Newtonsoft.Json is no longer needed with .NET Core/5/6/7. Built-in System.Text.Json namespace is the way to go. 
 
 ---
+
+## Links
+
+- https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/ C# Tutorial, and reference
+- https://www.w3schools.com/cs/index.php - more conveniently structured reference

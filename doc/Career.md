@@ -29,6 +29,17 @@ See Also:
 
 ---
 
+5 suggestions for success
+
+1. First Principles Thinking. Ignore conventional wisdom, use facts.
+2. Dream big. Insanely big. See projects as civilization-level endeavors.
+3. Create a mission-driven culture.
+4. Become obsessed with systems. Identify bottlenecks and create efficiencies.
+5. Live life like it's a video game.(no need to protect your identity, no fear of
+   the opinion of others), "stay hungry, and foolish"(Steve Jobs).
+
+---
+
 According to Internet reposts, Elon Musk sent an email to the staff at Tesla
 with his 6 rules for productivity:
 
