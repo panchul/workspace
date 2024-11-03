@@ -1,5 +1,29 @@
 # Java
 
+See Also:
+
+ - [TypeScript](TypeScript.md)
+ - [Kotlin](Kotlin.md)
+
+**Contents**
+
+- [Installing](Java.md#installing)
+- [Miscellaneous](Java.md#miscellaneous)
+
+---
+
+## Installing 
+
+---
+
+To get Java 17 on Mac with homebrew:
+
+```bash
+brew install openjdk@17 
+```
+
+https://stackoverflow.com/questions/69875335/macos-how-to-install-java-17
+
 ---
 
 Tons of nice ways to install JDK on Ubuntu
@@ -32,9 +56,9 @@ Create a file Hello.java with content:
        }
     }
 
-To compile run ```javac Hello.java```
+To compile run `javac Hello.java`
 
-To execute run ```java Hello``` (runs the ```Hello.class``` file)
+To execute run `java Hello` (runs the `Hello.class` file)
 
 ---
 
@@ -58,3 +82,7 @@ $ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acce
 A bunch of tools expects variable `JAVA_HOME` defined. With a jdk, it is jdk dir plus Content/Home.
 
 ---
+
+## Miscellaneous
+
+- ...

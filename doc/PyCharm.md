@@ -8,6 +8,7 @@ https://www.jetbrains.com/pycharm/
 See Also:
 
   - [IntelliJ](IntelliJ.md)
+  - [Visual Studio Code](VisualStudioCode.md)
 
 ---
 

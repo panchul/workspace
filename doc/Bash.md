@@ -18,7 +18,21 @@ My shell sandbox is [https://github.com/panchul/sb_shell](https://github.com/pan
 
 **Contents**
 
+- [Control flow](Bash.md#control-flow)
 - [Miscellaneous](Bash.md#miscellaneous)
+
+---
+
+## Control flow
+
+---
+
+Add `set -Eeuo pipefail` in the beginning to let it fail if there is error in commands.
+
+In addition to set -e, also do set -u (or set -eu). -u puts an end to the idiotic, bug-hiding behavior that you can access any nonexistent variable and have a blank value produced with no diagnostics.
+Unofficial Bash Strict Mode: redsymbol.net/articles/unofficial-bash-strict-mode
+
+https://stackoverflow.com/questions/821396/aborting-a-shell-script-if-any-command-returns-a-non-zero-value
 
 ---
 

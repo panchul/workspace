@@ -60,6 +60,7 @@
     - [Mutex](Mutex.md) 
 - [C#](CSharp.md)   
 - [CSS](CSS.md)
+- [Dart](Dart.md)
 - [Elixir](Elixir.md)
 - [Erlang/OTP](Erlang.md)  
   - Kerl
@@ -70,6 +71,7 @@
   - CT
   - MochiWeb
 - [F#](FSharp.md)  
+- [Flutter](Flutter.md)  
 - [Go](Go.md)  
 - [Java](Java.md)  
   - [Spring](Spring.md)
@@ -93,6 +95,7 @@
 - [Sed](Sed.md)
 - [Sporth](Sporth.md)
 - [Starlark](Starlark.md), [Buck2'2](Buck.md) programming language.
+- [Swift](Swift.md)
 
 A more conceptual links, still related to Programming Languages and Math
 
@@ -138,6 +141,7 @@ A more conceptual links, still related to Programming Languages and Math
  - [CQRS](CQRS.md) Command Query Responsibility Segregation
  - [Domain Driven Design(DDD)](DDD.md)
  - [GraphQL](GraphQL.md)
+ - [Flutter](Flutter.md)
  - [Lagom](Lagom.md)
  - [M4](M4.md)
  - [MapReduce](MapReduce.md)
@@ -271,6 +275,7 @@ Topics sometimes associated with Operating Systems.
 - [Disqus](Disqus.md) Commenting, discussion forums, etc.
 - [Django](Django.md)
 - [Heroku](Heroku.md)
+- [Flutter](Flutter.md)
 - [JQuery](JQuery.md)
 - [Kivy](Kivy.md) Python framework for mobile apps
 - [nginx](Nginx.md)
@@ -647,9 +652,11 @@ https://nofilmschool.com/how-to-write-a-scene
 
 ### Process management and misc software lifecycle issues
 
+- [Asana](Asana.md)
 - [Scrum](Scrum.md)
 - Kanban
-- Trello.com
+- [Trello](Trello.md)
+- [Pivotal Tracker](PivotalTracker.md)
 - www.planitpoker.com
 - https://firepoker.io
 - www.websequencediagrams.com

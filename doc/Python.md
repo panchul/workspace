@@ -129,7 +129,7 @@ By default, the server uses the current directory. The option -d/--directory spe
 
 Example of a decorator for a function(from https://www.geeksforgeeks.org/decorators-in-python/):
 
-```
+```Python
 '''
 % python runit.py
 400
@@ -171,7 +171,7 @@ print(num2())
 
 A decorator for a class(from https://builtin.com/software-engineering-perspectives/python-class-decorator):
 
-```
+```Python
 class Power(object):
 	def __init__(self, arg):
 		self._arg = arg
@@ -192,7 +192,7 @@ print(multiply_together(2, 2))
 
 And even better, with a static info about calls(from https://builtin.com/software-engineering-perspectives/python-class-decorator):
 
-```
+```Python
 class Power(object):
     def __init__(self, arg):
         self._arg = arg
@@ -249,7 +249,7 @@ https://medium.com/@shashikantrbl123/interfaces-and-abstract-classes-in-python-u
 
 Now, any class that implements the Shape interface must provide an implementation of the area() method:
 
-```
+```Python
 from abc import ABC, abstractmethod
 
 class Vehicle(ABC):
@@ -272,7 +272,7 @@ class Vehicle(ABC):
 
 And then
 
-```
+```Python
 class Car(Vehicle):
     def start_engine(self):
         print("Starting car engine...")
@@ -309,27 +309,29 @@ https://github.com/panchul/simple_benchmark
 
 Drawing COVID19 shaped virus using Turtle Library
  
-    import turtle
-    trt = turtle.Turtle()
-    scr = turtle.Screen()
-    scr.bgcolor('black')
-    trt.pencolor('red')
-    a = 0
-    b = 0
-    trt.speed(0)
-    trt.penup()
-    trt.goto(0,200)
-    trt.pendown()
-    while True:
-        trt.forward(a)
-        trt.right(b)
-        a+=3
-        b+=1
-        if b == 210:
-            break
-        trt.hideturtle
-    turtle.done()
-    
+ ```Python
+import turtle
+trt = turtle.Turtle()
+scr = turtle.Screen()
+scr.bgcolor('black')
+trt.pencolor('red')
+a = 0
+b = 0
+trt.speed(0)
+trt.penup()
+trt.goto(0,200)
+trt.pendown()
+while True:
+    trt.forward(a)
+    trt.right(b)
+    a+=3
+    b+=1
+    if b == 210:
+        break
+    trt.hideturtle
+turtle.done()
+```
+
 ---
 
 Some .pdfs with Python books:
@@ -337,9 +339,11 @@ https://github.com/siddiquiamir/Python-Books
 
 Loading a .csv from a web server(or GitHub user content)
 
-    import pandas as pd
-    df = pd.read_csv("http://raw.githubusercontent.../my.csv")
-    df.read()
+```Python
+import pandas as pd
+df = pd.read_csv("http://raw.githubusercontent.../my.csv")
+df.read()
+```
 
 And you can now use this data frame as you wish. 
 
@@ -521,18 +525,18 @@ and not actually external programs.
 3.The Popen class of the subprocess module. This is intended as a replacement for os.popen but has
   the downside of being slightly more complicated by virtue of being so comprehensive. For example, you'd say:
 
-```print subprocess.Popen("echo Hello World", shell=True, stdout=subprocess.PIPE).stdout.read()```
+`print subprocess.Popen("echo Hello World", shell=True, stdout=subprocess.PIPE).stdout.read()`
 
 instead of:
 
-```print os.popen("echo Hello World").read()```
+`print os.popen("echo Hello World").read()`
 
 but it is nice to have all of the options there in one unified class instead of 4 different popen functions.
 
 4.The call function from the subprocess module. This is basically just like the Popen class and takes all of
   the same arguments, but it simply waits until the command completes and gives you the return code. For example:
 
-```return_code = subprocess.call("echo Hello World", shell=True)```  
+`return_code = subprocess.call("echo Hello World", shell=True)`
 
 5.If you're on Python 3.5 or later, you can use the new subprocess.run function, which is a lot like the above
   but even more flexible and returns a CompletedProcess object when the command finishes executing.

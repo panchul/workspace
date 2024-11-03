@@ -21,6 +21,7 @@ See Also:
 
 Example of using futures in C++:
 
+```C++
     // $ g++ -std=c++1z filename.cpp 
     // future example
     // see more at http://www.cplusplus.com/reference/future/future/
@@ -52,5 +53,6 @@ Example of using futures in C++:
     
       return 0;
     }
+```
 
 ---
