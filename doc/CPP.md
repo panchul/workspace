@@ -60,7 +60,7 @@ Information on low latency C++ can be hard to come by. A paper* released last ye
 ---
 Simple demo(from https://en.cppreference.com/w/cpp/language/parameter_pack):
 
-```
+```C++
 #include <iostream>
 
 void tprintf(const char* format) { // base function
@@ -152,6 +152,7 @@ https://www.cplusplus.com/doc/tutorial/polymorphism/
 
 Good summarizing public/protected/private
 
+```C++
     class Base {
     public:
         int publicMember; // Everything that is aware of Base is also
@@ -162,6 +163,7 @@ Good summarizing public/protected/private
     private:
         int privateMember; //No one but Base is aware of privateMember.
     };
+```
 
 The same happens with public, private and protected inheritance.
 Let's consider a class Base and a class Child that inherits from Base.
@@ -172,6 +174,7 @@ Let's consider a class Base and a class Child that inherits from Base.
 - If the inheritance is private, no one other than Child is aware of the inheritance.
 
 
+```C++
     class A {
     public:
         int x;
@@ -198,17 +201,19 @@ Let's consider a class Base and a class Child that inherits from Base.
         // y is private
         // z is not accessible from D
     };
-
+```
 ---
 
-Demo of `new` vs. `new[]`
+Demo of `new` vs. `new[]` (use the matching form of `delete`)
 
+```C++
     int *i = new int;
     Object *array = new Object[100];
 
     delete i; // ok
     delete[] array; //ok
     delete array; // all destructors may not be called
+```
 
 ---
 
@@ -250,32 +255,42 @@ http://www.martinbroadhurst.com/concatenate-two-vectors-in-c.html
 
 Method 1: Use std::vector::insert()
 
+```C++
     vector1.insert(vector1.end(), vector2.begin(), vector2.end());
     // insert <where>, <start> - <end>    
+```
 
 Method 2: Use std::copy with a std::back_inserter()
 
+```C++
     std::copy(vector2.begin(), vector2.end(), std::back_inserter(vector1));
     // copy < what: start, end> <where to>   
-    
+```
+
 Method 3: Use std::reserve() and then std::copy()
 This means that the vector won’t need to be reallocated during the
 copy, so may be faster.
 
+```C++
     vector1.reserve(vector1.size() + vector2.size());
     std::copy(vector2.begin(), vector2.end(), vector1.end());
     // actually probably needs 'resize', etc. the snippet above does not work. 2020/11/13
+```
 
 Method 4: Use std::transform() with std::back_inserter()
 This means you can use a functor on the elements of vector2 to modify
 them or change their type before adding them.
 
+```C++
     std::transform(vector2.begin(), vector2.end(), vector1.begin(), transformer());
+```
 
 Method 5: Use std::reserve() and then std::transform()
 
+```C++
     vector1.reserve(vector1.size() + vector2.size());
     std::transform(vector2.begin(), vector2.end(), vector1.begin(), transformer());
+```
 
 In all cases you can use the new C++11 std::begin() and std::end() functions to get the beginnings and
 endings of the vectors.
@@ -292,6 +307,7 @@ https://dev.to/visheshpatel/21-new-features-of-modern-c-to-use-in-your-project-3
 
 For example:
 
+```C++
     template <typename X, typename Y>
     auto add(X x, Y y) -> decltype(x + y)
     {
@@ -300,11 +316,12 @@ For example:
     add(1, 2);     // == 3
     add(1, 2.0);   // == 3.0
     add(1.5, 1.5); // == 3.0
-
+```
 ---
 
 The snippet about futures:
 
+```C++
     // $ g++ -std=c++1z filename.cpp 
     // future example
     // see more at http://www.cplusplus.com/reference/future/future/
@@ -336,12 +353,13 @@ The snippet about futures:
     
       return 0;
     }
-
+```
 ---
 
 Nice summary about when use `const` and when `constexpr`
 http://www.vishalchovatiya.com/when-to-use-const-vs-constexpr-in-cpp/
 
+```C++
     using ull = unsigned long long;
     constexpr ull operator"" _KB(ull no)
     {
@@ -356,15 +374,19 @@ http://www.vishalchovatiya.com/when-to-use-const-vs-constexpr-in-cpp/
         cout << 1_KB << endl;
         cout << hex << 1_MB << endl;
     }
+```
 
 Or, more basic usage:
 
+```C++
     int varA = 3;
     const int varB = 5;
     constexpr int varC = 7;
+```
 
 These are all compile-time known.
 
+```C++
     int getRandomNo()
     {
         return rand() % 10;
@@ -375,11 +397,13 @@ These are all compile-time known.
         constexpr int varC = getRandomNo();   // not OK! compilation error
         return 0;
     }
-    
+```
+
 Value of varB would not anymore compile time. While statement with varC will
 throw compilation error. The reason is constexpr will always accept a strictly
 compile-time value.
     
+```C++
     constexpr int sum(int x, int y)
     {
         return x + y;
@@ -390,6 +414,7 @@ compile-time value.
         cout << result;
         return 0;
     }
+```
 
 `const` & `constexpr` both can be applied to member methods. Member methods are
 made const to make sure that there are no accidental changes by the method. On
@@ -445,17 +470,18 @@ https://en.cppreference.com/w/cpp/language/value_category
 
 ---
 
-About shared_ptr<>, and !!! About lock_guard<>
+About `shared_ptr<>`, and !!! About `lock_guard<>`
 
 https://en.cppreference.com/w/cpp/memory/shared_ptr
 
+```C++
     void del(void(*)()) {}
     void fun() {}
     int main(){
         std::shared_ptr<void()> ee(fun, del);
         (*ee)();
     }
-
+```
 ---
 
 Nice summary of lambdas.
@@ -464,10 +490,12 @@ https://dev.to/visheshpatel/all-about-lambda-function-in-c-j4e
 
 C++ Lambda expressions.
 
+```C++
     [&i] ( ) { std::cout << i; }
-     
+```     
 is equivalent to
      
+```C++
     struct anonymous
     {
         int &m_i;
@@ -477,11 +505,12 @@ is equivalent to
             std::cout << i;
         }
     };
-
+```
 ---
 
 Higher order lambda, returning a lambda: 
 
+```C++
     const auto less_than = [](auto x) {
         return [x](auto y) {
             return y < x;
@@ -495,7 +524,7 @@ Higher order lambda, returning a lambda:
        std::cout << less_than_five(10) << std::endl;
        return 0;
     }
-
+```
 ---
 
 Nice C++ series, about smart pointers
@@ -506,6 +535,7 @@ https://www.youtube.com/watch?v=UOB7-B2MfwA
 About ‘explicit’ keyword from here:
 https://en.cppreference.com/w/cpp/language/explicit
 
+```C++
     struct A
     {
         A(int) { }      // converting constructor
@@ -539,7 +569,7 @@ https://en.cppreference.com/w/cpp/language/explicit
     //  bool nb1 = b2; // error: copy-initialization does not consider B::operator bool()
         bool nb2 = static_cast<bool>(b2); // OK: static_cast performs direct-initialization
     }
-
+```
 ---
 
 Interesting notes about push_back() vs. emplace(). Boils down to "don't be
@@ -615,10 +645,11 @@ http://www.gowrikumar.com/c/index.php
 
 Idiomatic assigning char array a string:
 
+```C++
     std::string mystring("govno");
     char p[20];
     p[mystring.copy(p,19)] = '\0';
-
+```
 ---
 
 C++ Kafka library:
@@ -635,9 +666,10 @@ Had an issue with compiling relatively basic code:
  
 needed to run these to fix it:
 
+```bash
     $ sudo apt-get update
     $ sudo apt-get install --reinstall build-essential
-
+```
 ---
 
 Snippet share website:
@@ -648,6 +680,7 @@ coliru.stacked-crooked.com/a/5aa89a65e3a86c98
 Whole lot of fun with a ‘slide’ operator:
 https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c?rq=1
  
+```C++
     #include <stdio.h>
     int main() {
         int x = 10;
@@ -655,9 +688,11 @@ https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c?rq=1
             printf("%d ", x);
         }
     }
+```    
 
 "Slide":
     
+```C++
     while (x --\
                 \
                  \
@@ -671,16 +706,19 @@ https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c?rq=1
     {
        printf("%d ", x);
     }
+```
 
 `8 6 4 2`
 
-You can control speed with an arrow!
+You can control speed with an arrow! :-)
 
+```C++
     int x = 100;
     while( 0 <-------------------- x )
     {
        printf("%d ", x);
     }
+```
 
 `90 80 70 60 50 40 30 20 10`
 
@@ -717,32 +755,37 @@ After parse:
 
 ---
 
+```C++
     #define as ;while
     int main(int argc, char* argv[]) {
         int n = atoi(argv[1]);
         do printf("n is %d\n", n) as ( n --> 0);
         return 0;
     }
-
+```
 ---
 
 It also could have been something like
 
+```C++
     for(--x++;--x;++x--)
     -->    x-->0
     ++>    x++>0
     -->=   x-->=0
     ++>=   x++>=0
+```
 
 This would also work:
 
+```C++
     while (0 <-- x)
-
+```
 ---
  
  Merging and sorting of two files
  (more at my C/C++ sandbox is [https://github.com/panchul/sb_cpp](https://github.com/panchul/sb_cpp) )
  
+```C++
     //
     // in1.txt:
     // 2 4 6 
@@ -776,11 +819,13 @@ This would also work:
         while(fin1 >> n1) fout << n1 << ' ';
         while(fin2 >> n2) fout << n2 << ' ';
     }   
+```
 
 ---
 
 Class template specialization for a particular type:
 
+```C++
     template <>
     class MyTemplate <char> {
         char element;
@@ -790,27 +835,33 @@ Class template specialization for a particular type:
             return element;
         }
     };
+```
 
 ---
 
 A funny pattern I actually saw in a production code.
 
+```C++
     …
     char ABC[4] = { "ABC" };
     char * tzchars = NULL;
     …
+```
 
 And then
 
+```C++
     …
     tzchars = &ABC[0];
     …
+```
 
 ---
 
 Some preprocessor tricks. More at
  https://stackoverflow.com/questions/1562074/how-do-i-show-the-value-of-a-define-at-compile-time
 
+```C++
     /* Some test definition here */
     #define DEFINED_BUT_NO_VALUE
     #define DEFINED_INT 3
@@ -826,7 +877,8 @@ Some preprocessor tricks. More at
     #pragma message(VAR_NAME_VALUE(DEFINED_BUT_NO_VALUE))
     #pragma message(VAR_NAME_VALUE(DEFINED_INT))
     #pragma message(VAR_NAME_VALUE(DEFINED_STR))
-    
+```
+
 Above definitions result in:
     
     test.c:10:9: note: #pragma message: NOT_DEFINED=NOT_DEFINED
@@ -840,6 +892,7 @@ There is also BOOST_PP_STRINGIZE, etc.
 
 Refresher on basic i/o (good for programming contests)
 
+```C++
     int a, b; string x;
     cin >> a >> b >> x;
     
@@ -858,12 +911,14 @@ Refresher on basic i/o (good for programming contests)
     
     freopen("input.txt", "r", stdin);   //
     freopen("output.txt", "w", stdout); // redirect of std i/o
+```
 
 ---
 
 A way to input an array of numbers.
 We expect <number>\n<number> <number> ... <number>
  
+```C++
     int n;
     cin >> n;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -880,31 +935,38 @@ We expect <number>\n<number> <number> ... <number>
     }
     int result = MyFuncThatExpectsVectorINT(c);
     ...
+```
 
 ---
 
 The priority queue with the opposite sorting ( not `less`, but `greater`)
 
+```C++
     std::priority_queue<int, std::vector<int>, std::greater<int> > newone;
+```
 
-    if default is 9,8,7,6...0
-    then with 'greater' : 0,1,2...8,9
-    
+If default is `9,8,7,6...0`, then with 'greater' : `0,1,2...8,9`
+
 ---
 
 Converting int to string.        
     
+```C++
     int a = 123;
     std::string sa(to_string(a)); 
+```
 
 and back
 
+```C++
     int b = atoi(sa);
+```
 
 There should also be `stoi(sa)`.
 
 ---
 
+```C++
     string sa = "something";
     size_t i = sa.find("some");
 
@@ -912,7 +974,8 @@ There should also be `stoi(sa)`.
         sa.erase(i, 4); // remove 4 bytes starting form that index
 
     std::reverse(sa.begin(), sa.end());
-    
+```
+
 ---
 
 C++ Parameter Pack
@@ -924,6 +987,7 @@ TODO: write a quick summary
 
 Recursive variadic function:
 
+```C++
     #include <iostream>
     void tprintf(const char* format) // base function
     {
@@ -947,6 +1011,7 @@ Recursive variadic function:
         tprintf("% world% %\n","Hello",'!',123);
         return 0;
     }
+```
 
 ---
 
@@ -962,9 +1027,10 @@ https://curl.haxx.se/libcurl/competitors.html
 
 ---
 
-merge() example, 
-The resulting vector contains: 5 10 10 15 20 20 25 30 40 50
+`merge()` example, 
+The resulting vector contains: `5 10 10 15 20 20 25 30 40 50`
 
+```C++
     // merge algorithm example
     #include <iostream>     // std::cout
     #include <algorithm>    // std::merge, std::sort
@@ -986,5 +1052,6 @@ The resulting vector contains: 5 10 10 15 20 20 25 30 40 50
     
       return 0;
     }
-   
+```
+
 ---

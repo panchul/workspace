@@ -39,7 +39,7 @@ fvm flutter build apk
 
 Some Java prerequisites may want Java 17, the easy way to get it is with homebrew:
 
-```
+```bash
 brew install openjdk@17 
 ```
 

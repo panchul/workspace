@@ -55,7 +55,7 @@ https://johnleonardfrench.com/articles/ultimate-guide-to-playscheduled-in-unity/
 
 There are some deprecated controls, I think this one works on the latest Unity:
 
-```
+```C#
 //if (Input.GetMouseButton(0))
 if (Input.GetMouseButtonDown(0))
 {
@@ -83,7 +83,7 @@ if (Input.GetMouseButtonDown(0))
 
 Example of camera-to-world translations and instantiating of an object from a prefab.
 
-```
+```C#
 Projectile fabProjectile = Resources.Load<Projectile>("Prefabs/Objects/Projectile");
 Projectile gProjectile;
 Vector3 pt_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Vector3.zero;
@@ -101,7 +101,7 @@ gProjectile.Launch(pt_pos);
 
 I implemented a simple clock, placing ClockHand objects on a clock face.
 
-```
+```C#
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -158,7 +158,7 @@ Flip/mirror camera samples:
 https://answers.unity.com/questions/20337/flipmirror-camera.html                           
 https://forum.unity.com/threads/flipping-texture2d-image-within-unity.35974/ - basic pixel by pixel snippet
 
-```
+```C#
 Texture2D FlipTexture(Texture2D original) {
      Texture2D flipped = new Texture2D(original.width,original.height);
      int xN = original.width;
@@ -192,7 +192,7 @@ https://www.youtube.com/watch?v=yUXFHAOXhcA
 
 Simple UIDocument that adds click handling events:
 
-```
+```C#
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -286,7 +286,7 @@ https://www.youtube.com/watch?v=s9kpPI-_QDA
 
 For simple trying web deployment locally, using [Python](Python.md#web-related):
 
-```
+```bash
 $ python -m http.server --directory /tmp/wherever_unity_build_is
 ```
 
@@ -411,4 +411,4 @@ https://www.youtube.com/watch?v=MGIBLPIz4oM
 
 ## Links
 
-- ...
+- [Unity's website](https://unity3d.com/)

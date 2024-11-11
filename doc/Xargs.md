@@ -15,6 +15,7 @@ See Also:
 
 To count lines using `wc`
 
+```bash
     $ find . -name '*.cpp' | xargs wc -l
-
+```
 ---

@@ -9,28 +9,43 @@ See Also:
 
 ---
 
-Visual Studio Code on Mac.
+Contents
+
+- [Visual Studio Code on Mac](VisualStudioCode.md#visual-studio-code-on-mac)
+- [Debugging](VisualStudioCode.md#debugging)
+- [Troubleshooting](VisualStudioCode.md#troubleshooting)
+- [Miscellaneous](VisualStudioCode.md#miscellaneous)
+
+---
+
+## Visual Studio Code on Mac
 
 https://code.visualstudio.com/docs/setup/mac
 
 For `code` to work in terminal, add the path to it:
 
+```bash
     $ cat << EOF >> ~/.bash_profile
     # Add Visual Studio Code (code)
     export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
     EOF
+```
 
 Then, to show installed extensions:
 
+```bash
     $ code --list-extensions
+```
 
 Create install commands:
 
+```bash
     $ code --list-extensions | % { "code --install-extension $_" }
+```
 
 It generates something like this(a useful set for c# and other dotnet web app work):
 
-```
+```bash
 code --install-extension adrianwilczynski.csharp-to-typescript
 code --install-extension adrianwilczynski.namespace
 code --install-extension alefragnani.Bookmarks
@@ -96,15 +111,12 @@ code --install-extension ybaumes.highlight-trailing-white-spaces
 code --install-extension yzhang.markdown-all-in-one
 ```
 
+## Debugging
+
 ---
 
 C++ configs, etc. Some debugging issues with Catalina.
 https://code.visualstudio.com/docs/cpp/config-clang-mac
-
----
-
-Quick 101 on VS (not Code) debugging tricks for multithreading.
-https://www.youtube.com/watch?v=ISDaHM1cHXk
 
 ---
 
@@ -115,5 +127,30 @@ https://stackoverflow.com/questions/64786161/use-input-stdin-in-debug-console-vs
 Another, official documentation for different platforms(has samples of launch.json, tasks.json, etc.):
 
 https://code.visualstudio.com/docs/cpp/config-mingw#_debug-helloworldcpp
+
+---
+
+## Troubleshooting
+
+---
+
+Issue with wanting `DartConfiguration.tcl` during testing
+
+https://github.com/microsoft/vscode-cmake-tools/issues/3917
+
+---
+
+Issue with VS Code unresponsive.
+
+https://code.visualstudio.com/docs/supporting/faq#_resolving-shell-environment-fails
+
+---
+
+## Miscellaneous
+
+---
+
+Quick 101 on VS (not Code) debugging tricks for multithreading.
+https://www.youtube.com/watch?v=ISDaHM1cHXk
 
 ---

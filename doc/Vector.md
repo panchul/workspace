@@ -3,12 +3,14 @@
 
 See Also:
 
-  - [STL](STL.md)
   - [AlgorithmsDataStructures](AlgorithmsDataStructures.md) 
   - [Deque](Deque.md)
   - [List](List.md)
   - [Map](Map.md)
   - [Stack](Stack.md)
+  - [STL](STL.md)
+  - [Trees](Trees.md)
+  - [Vector](Vector.md)
   
 My sandbox for data structures is here:
 
@@ -23,6 +25,7 @@ https://baptiste-wicht.com/posts/2012/12/cpp-benchmark-vector-list-deque.html
 
 The simplest ways to define a vector:
 
+```C++
     int main() { 
         vector<int> vect{ 10, 20, 30 }; 
       
@@ -69,9 +72,10 @@ The simplest ways to define a vector:
                 
         return 0; 
     } 
-
+```
 ---
 
+```C++
 // vector::begin/end
 
     #include <iostream>
@@ -87,6 +91,6 @@ The simplest ways to define a vector:
       std::cout << '\n';
       return 0;
     }
-
+```
 ---
   

@@ -21,6 +21,8 @@ Contents
 - [Undoing things](Git.md#undoing-things)
 - [Working with multiple remotes](Git.md#working-with-multiple-remotes)
 - [gitignore](Git.md#gitignore)
+- [Troubleshooting](Git.md#troubleshooting)
+  - [error 400 curl 22 ...](Git.md#error-rpc-failed-http-400-curl-22-the-requested-url-returned-error-400)
 - [Miscellaneous](Git.md#miscellaneous)
 
 ---
@@ -175,6 +177,30 @@ or
 
     git clean -fx
 
+
+---
+
+To remove file change from last commit, **brutally uncommitting**,
+to revert the file to the state before the last commit, do:
+
+```bash
+    git checkout HEAD^ /path/to/file
+```
+
+to update the last commit with the reverted file, do:
+
+```bash
+git commit --amend
+```
+
+to push the updated commit to the repo, do:
+
+```bash
+git push -f
+```
+
+See more on it [on stackoverflow.com](https://stackoverflow.com/questions/18357511/git-remove-committed-file-after-push)
+
 ---
 
 ## Working with multiple remotes
@@ -185,6 +211,7 @@ or
 
 As an example, let’s say that you have created a local branch named “my-feature”.
 
+```bash
     $ git branch
       master
     * my-feature
@@ -211,9 +238,11 @@ As an example, let’s say that you have created a local branch named “my-feat
     $ git merge origin/feature
 
     $ git push origin my-feature:feature
+```
 
 Pushing to another repository
 
+```bash
     $ git push <remote> <branch>
 
     $ git remote -v
@@ -221,9 +250,11 @@ Pushing to another repository
     origin  https://github.com/user/repo.git (push)
     custom  https://github.com/user/custom.git (fetch)
     custom  https://github.com/user/custom.git (push)
+```
 
 E.g. pushing to remote 'origin':
 
+```bash
     $ git push origin feature
 
     Enumerating objects: 6, done.
@@ -235,7 +266,7 @@ E.g. pushing to remote 'origin':
     remote: Resolving deltas: 100% (1/1), completed with 1 local object.
     To https://github.com/someaccount/repo.git
         afc4881..9ae0aee  my-feature -> feature
-
+```
 
 ---
 
@@ -319,9 +350,13 @@ crashlytics-build.properties
 
 ---
 
-## Miscellaneous
+## Troubleshooting
+
+See also [Undoing things](Git.md#undoing-things)
 
 ---
+
+### error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
 
 Most likely, because of a 400k notebook file, had an error similar to this:
 
@@ -354,6 +389,10 @@ remote: warning: See https://gh.io/lfs for more information.
 remote: warning: File ... is 80.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
 remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
 ```
+
+---
+
+## Miscellaneous
 
 ---
 
@@ -468,7 +507,7 @@ https://www.sourcetreeapp.com/
 
 ---
 
-Sometimes you need to run ```apt-get update``` to see git package. For example in a Dockerfile:
+Sometimes you need to run `apt-get update` to see git package. For example in a Dockerfile:
 
     ...
     RUN apt-get update
@@ -491,7 +530,7 @@ For Windows these options during installation worked ok:
 
 ---
 
-Utility ```dos2unix``` was handy for those pesky ```"\r\n"``` .
+Utility `dos2unix` was handy for those pesky `"\r\n"` .
 
 There were some issues with the credentials on Cygwin.
 
@@ -1022,5 +1061,11 @@ https://medium.com/@amanze.ogbonna/accessing-pushing-to-github-without-username-
 
 Another intro to Git. Simple examples.
 https://dev.to/john2220/basic-git-commands-you-should-know-51ij
+
+---
+
+Creating GitHub repo using only CLI
+
+https://medium.com/@alexbuzunov/locked-out-how-to-create-a-github-repo-using-only-the-cli-c7fb24a49c00
 
 ---
