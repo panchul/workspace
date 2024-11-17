@@ -56,7 +56,7 @@ git_status: # Status of repositories (public and private, from private_repo_list
 	@ for repo in `ls projects | grep sb_` ; \
 	   do sh -c "echo \"Checking \\\"projects/$$repo\\\"...\" ; cd \"projects/$$repo\" ; git fetch ; git status -sb ; cd ../.. " ; \
 	done ;
-	@echo "Checking private_repo_list items..."
+	@echo "Checking private_repo_list items ..."
 	@ oldpath=`pwd`
 	@ if [ -e private/private_repo_list.txt ] ; then \
 	    for repo in `cat private/private_repo_list.txt` ; \
@@ -65,6 +65,7 @@ git_status: # Status of repositories (public and private, from private_repo_list
 	else \
 	  @echo "HINT: You might want to run 'ls -l1 projects > private/private_repo_list.txt' to create private repo list." ; \
 	fi
+	@echo "Checking workspace repo itself ..."
 	@ git status -sb
 
 kafka: kafka_up

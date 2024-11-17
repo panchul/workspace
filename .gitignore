@@ -1,13 +1,21 @@
 
 # All sorts of private data that should not be added to the repo.
 # PCI stuff, encryption, etc.
+# 
+# Create a file `private_repo_list.txt` to be used with `make status_all`.
+# It is a line-separated list of the folders with repositories. 
 private
 !private/.git_keep
 
-# The projects that use workspace ecosystem. Sandboxes, etc.
+# The projects that usually use workspace ecosystem.
 # They usually have their own repositories
 projects
 !projects/.git_keep
+
+# The projects that may not necessarily use the workspace ecosystem, and
+# usually private on GitHub, GitLab, BitBucket, or private servers.
+projects_private
+!projects_private/.git_keep
 
 # The projects that are not under version control, and of a lesser
 # value - experimenting, trying out, running quick demos, etc.
