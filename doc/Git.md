@@ -104,6 +104,26 @@ You can check the existing keys like so: https://docs.github.com/en/authenticati
 
 ---
 
+You can test this key by running(see https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding for more):
+
+```bash
+$ ssh -T git@github.com
+# Attempt to SSH in to github
+> Hi USERNAME! You've successfully authenticated, but GitHub does not provide
+> shell access.
+```
+
+You may need to add this to your `~/.ssh/config`:
+
+```
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+---
+
 ## Populating an empty repository
 
 ---
