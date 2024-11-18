@@ -2,6 +2,38 @@
 # Ruby
 
 
+*Contents*
+
+- [Installing](Ruby.md#installing)
+- [Miscellaneous](Ruby.md#miscellaneous)
+- [Links](Ruby.md#links)
+
+---
+
+## Installing
+
+---
+
+
+Upgrading on Mac:
+
+https://mac.install.guide/ruby/update
+
+!!! This means it is MacOS's Ruby, let it be:
+
+```bash
+% which -a ruby           
+/usr/bin/ruby
+```
+
+See [Do NOT Use the MacOS System Ruby](https://mac.install.guide/faq/do-not-use-mac-system-ruby/)
+
+---
+
+## Miscellaneous
+
+---
+
 https://www.ruby-lang.org/en/downloads/
 https://rubyinstaller.org/downloads/ - for windows
 
@@ -23,5 +55,9 @@ Cute Ruby book:
 The tutorial with interactive steps:
 
     http://tryruby.org/levels/2/challenges/5
+
+---
+
+## Links
 
 ---

@@ -31,6 +31,8 @@ See Also:
 
 ## Installing or Upgrading
 
+### On Linux
+
 Check your current version:
 
     $ cmake --version
@@ -81,6 +83,30 @@ Might also need to link it:
     # ln -s /usr/bin/ninja /usr/bin/ninja-build
 
 There is a [longer discussion](https://stackoverflow.com/questions/38658014/ninja-not-found-by-cmake).
+
+---
+
+### On MacOS
+
+---
+
+On modern OSes, the default download location, `Downloads`, could be
+quaranteened, so the .app has to be moved.
+
+
+There is an easy way of adding the CMake tool to the `PATH`, by running:
+
+```bash
+$ sudo "/Applications/CMake.app/Contents/bin/cmake-gui" --install=/usr/local/bin
+```
+
+Check that it worked:
+
+```bash
+$ cmake --version
+```
+
+Here's a gist with more details https://gist.github.com/fscm/29fd23093221cf4d96ccfaac5a1a5c90
 
 ---
 

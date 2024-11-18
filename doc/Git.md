@@ -57,9 +57,10 @@ https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 
 To get `gh` going, you need to:
 
+```bash
     $ gh auth login
     ...
-
+```
 ---
 
 ## Configuring ssh
@@ -71,6 +72,7 @@ and https://docs.github.com/en/authentication/connecting-to-github-with-ssh/addi
 
 Generate a key:
 
+```bash
     MINGW64 ~/.ssh: $ ssh-keygen -t ed25519 -C "myname@example.com"
     Generating public/private ed25519 key pair.
     Enter file in which to save the key (/c/Users/myname/.ssh/id_ed25519):
@@ -84,21 +86,26 @@ Generate a key:
     +--[ED25519 256]--+
     here goes the random image
     +----[SHA256]-----+
-
+```
 Start the authenticating agent:
 
+```bash
     MINGW64 ~/.ssh: $ eval "$(ssh-agent -s)"
     Agent pid 2345
+```
 
 Add the identity
 
+```bash
     MINGW64 ~/.ssh: $ ssh-add ~/.ssh/id_ed25519
     Identity added: /c/Users/myname/.ssh/id_ed25519 (myname@example.com)
+```
 
 You can now use your public key, to, for example, GitHub, copy/paste like so:
 
+```bash
     MINGW64 ~/.ssh : $ clip < ~/.ssh/id_ed25519.pub
-
+```
 
 You can check the existing keys like so: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
 
@@ -130,6 +137,7 @@ Host github.com
 
 Create a new repository on the command line:
 
+```bash
     echo "# myrepo" >> README.md
     git init
     git add README.md
@@ -137,13 +145,15 @@ Create a new repository on the command line:
     git branch -M main
     git remote add origin https://github.com/myaccount/myrepo.git
     git push -u origin main
+```
 
 …or push an existing repository from the command line
 
+```bash
     git remote add origin https://github.com/myaccount/myrepo.git
     git branch -M main
     git push -u origin main
-
+```
 ---
 
 ## Undoing things
@@ -152,8 +162,9 @@ Create a new repository on the command line:
 
 Un-stage-ing an added file in Git(and keeping local changes):
 
+```bash
     $ git reset HEAD path/to/file
-
+```
 ---
 
 Undoing things
@@ -163,11 +174,15 @@ https://jorin.me/clean-git-history/
 
 To keep the changes:
 
+```bash
     $ git reset --soft HEAD~1
+```
 
 Do the things the hard way abandoning the changes:
     
+```bash
     $ git reset --hard HEAD~1
+```
 
 ---
 
@@ -175,28 +190,38 @@ To cleanup the untracked files, remove local untracked files from the current Gi
 
 To remove directories, run 
     
+```bash
     git clean -f -d
-
+```
 or
 
+```bash
     git clean -fd
+```
 
 To remove ignored files, run 
 
+```bash
     git clean -f -X
-    
+```
+
 or
     
+```bash
     git clean -fX
+```
 
 To remove ignored and non-ignored files, run 
 
+```bash
     git clean -f -x 
+```
 
 or
 
+```bash
     git clean -fx
-
+```
 
 ---
 
@@ -380,7 +405,7 @@ See also [Undoing things](Git.md#undoing-things)
 
 Most likely, because of a 400k notebook file, had an error similar to this:
 
-```
+```bash
  % git push
 Enumerating objects: ..., done.
 Counting objects: 100% (...), done.
@@ -398,7 +423,7 @@ Everything up-to-date
 
 As per https://stackoverflow.com/questions/62753648/rpc-failed-http-400-curl-22-the-requested-url-returned-error-400-bad-request , tried:
 
-```
+```bash
     git config http.postBuffer 524288000
 ```
 
@@ -471,41 +496,59 @@ Deleting tags (from https://stackoverflow.com/questions/5480258/how-to-delete-a-
 
 You just need to push an 'empty' reference to the remote tag name:
 
+```bash
     $ git push origin :tagname
+```
 
 Or, more expressively, use the --delete option (or -d if your git version is older than 1.8.0):
 
+```bash
     $ git push --delete origin tagname
+```
 
 Note that git has tag namespace and branch namespace so you may use the same name for a branch and for a tag. If you want to make sure that you cannot accidentally remove the branch instead of the tag, you can specify full ref which will never delete a branch:
 
+```bash
     $ git push origin :refs/tags/tagname
+```
 
 If you also need to delete the local tag, use:
 
+```bash
     $ git tag --delete tagname
+```
 
 Background
 
 Pushing a branch, tag, or other ref to a remote repository involves specifying "which repo, what source, what destination?"
 
+```bash
     $ git push remote-repo source-ref:destination-ref
+```
 
 A real world example where you push your master branch to the origin's master branch is:
 
+```bash
     $ git push origin refs/heads/master:refs/heads/master
+```
 
 Which because of default paths, can be shortened to:
 
+```bash
     $ git push origin master:master
+```
 
 Tags work the same way:
 
+```bash
     $ git push origin refs/tags/release-1.0:refs/tags/release-1.0
+```
 
 Which can also be shortened to:
 
+```bash
     $ git push origin release-1.0:release-1.0
+```
 
 By omitting the source ref (the part before the colon), you push 'nothing' to the destination, deleting the ref on the remote end.
 
@@ -568,18 +611,24 @@ Normal cycle:
 
 Fetch the repo:
 
+```bash
     git clone [repo name]
-    
+```
+
 Go to the branch you want to branch from, and create a feature branch
     
+```bash
     git checkout -b featurebranch
-    
+```
+
 Hack, hack, hack
 When ready, commit the files into the remote feature branch:
 
+```bash
     git add [files changed]
     git commit -m "implemented fieature x"
     git push
+```
 
 At the Github create the pull request.
 When ready, at Github:
@@ -591,15 +640,18 @@ When ready, at Github:
 
 The thing I often do to put the changes into the correct branch:
 
+```bash
     hack hack hack
     $ git stash
     $ git checkout the_branch_i_want
     $ git stash pop
-    
+```
+
 ---
 
 Example of starting a new repo from existing sources
            
+```bash
     $ cd /path/to/the_project
     $ git init     
     $ git add .    
@@ -610,15 +662,18 @@ Example of starting a new repo from existing sources
       Cloning into 'myproj'...
       warning: You appear to have cloned an empty repository.
       Checking connectivity... done.
+```
 
 ---
 
 Nice way to search:
 
+```bash
     $ git grep -e "pattern" branch -- some/file
 
     $ git log --pickaxe-regex -S"some.*code.*change"
-    
+```
+
 ---
 
 One way to set up a git-daemon (see another one below)
@@ -651,23 +706,31 @@ Create file `/etc/systemd/system/git-daemon.service`:
     
 Run to automatically start the service on boot.
    
+```bash
     $ systemctl enable git-daemon
+```
 
 To start:
     
+```bash
     $ systemctl start git-daemon
+```
 
 Similar to stop, restart, etc.
 If you edit the git-daemon.service file, you might run this to refresh the config:
 
+```bash
     $ systemctl daemon-reload
+```
 
 In the repository you need to let the repo be exported:
 
+```bash
     $ cd /path/to/
     $ git init --shared --bare project.git
     $ cd /path/to/project.git
     $ touch git-daemon-export-ok
+```
 
 In /etc/services there is a line for git-daemon port:
 
@@ -679,6 +742,7 @@ git             9418/tcp                        # Git Version Control System
 
 To let others push into this repository, add to the git repository's config file:
 
+```bash
     $ cd /path/to/project.git
     $ vi config
     
@@ -687,6 +751,7 @@ To let others push into this repository, add to the git repository's config file
     # UNSECURE anonymous Write access
         receivepack = true
     ...
+```
 
 ---
 
@@ -706,10 +771,13 @@ git will execute it when you run, for example:
 Another neat trick to keep but not track a file. This will allow you to
 get a local changes be ignored by git:
 
+```bash
     $ git update-index --assume-unchanged Makefile
+```
 
 If you do want to push the local changes to that file, turn it back on:
 
+```bash
     $ git update-index --no-assume-unchanged Makefile
     $ git add -p Makefile
      # ...
@@ -718,12 +786,15 @@ If you do want to push the local changes to that file, turn it back on:
     $ git commit
     $ git update-index --assume-unchanged Makefile
     $ git push
+```
 
 ---
 
 There is a feature in git, to make easier merging:
 
+```bash
     $ git config --global rerere.enabled true
+```
 
 It saves left and right for the merge and caches the resolution.
 
@@ -742,21 +813,27 @@ Open Terminal.
 
 List the current configured remote repository for your fork.
 
+```bash
     $ git remote -v
     origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
     origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+```
 
 Specify a new remote upstream repository that will be synced with the fork.
 
+```bash
     $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+```
 
 Verify the new upstream repository you've specified for your fork.
 
+```bash
     $ git remote -v
     origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
     origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
     upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
     upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+```
 
 Syncing a fork
 (from https://help.github.com/articles/syncing-a-fork/)
@@ -771,6 +848,7 @@ Change the current working directory to your local project.
 
 Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master.
 
+```bash
     $ git fetch upstream
     remote: Counting objects: 75, done.
     remote: Compressing objects: 100% (53/53), done.
@@ -778,14 +856,18 @@ Fetch the branches and their respective commits from the upstream repository. Co
     Unpacking objects: 100% (62/62), done.
     From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
      * [new branch]      master     -> upstream/master
+```
 
 Check out your fork's local master branch.
 
+```bash
     $ git checkout master
     Switched to branch 'master'
+```
 
 Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
 
+```bash
     $ git merge upstream/master
     Updating a422352..5fdff0f
     Fast-forward
@@ -794,14 +876,17 @@ Merge the changes from upstream/master into your local master branch. This bring
      2 files changed, 7 insertions(+), 9 deletions(-)
      delete mode 100644 README
      create mode 100644 README.md
+```
 
 If your local branch didn't have any unique commits, Git will instead perform a "fast-forward":
 
+```bash
     $ git merge upstream/master
     Updating 34e91da..16c56ad
     Fast-forward
      README.md                 |    5 +++--
      1 file changed, 3 insertions(+), 2 deletions(-)
+```
 
 ---
 
@@ -810,21 +895,27 @@ To completely remove a file from git repo.
 
 Step #1: Backup your repo!
 
+```bash
     $ cp -r myproject backup
+```
 
 Step #2: Identify the commit that introduced the new file
 
 e.g. for `client/public/favicons/red/hugefile.ova`
 
+```bash
     $ git log client/public/favicons/red/hugefile.ova
     Sat Aug 17 19:16:17 2019 +0300 7ff66fa Add favicons  [Moshe Zada]
+```
 
 As you can see, it seems like commit 7ff66fa introduced the big file,
 let's rewrite the history!
 
 Step #3: Go back in time
 
+```bash
     $ git rebase --interactive 7ff66fa~1
+```
 
 Right after running this command, your editor will open up with the
  commit history from 7ff66fa to the last commit, for example:
@@ -877,19 +968,27 @@ Step #4: Rewrite the history and push your changes
 Now git will start replaying the last commits and give you shell
 just before the bad commit delete the file:
 
+```bash
     $ rm client/public/favicons/red/hugefile.ova
+```
 
 Add the change to git
 
+```bash
     $ git add client/public/favicons/red/hugefile.ova
-    
+```
+
 Commit and continue the rebase
 
+```bash
     $ git commit --amend '-S' && git rebase --continue
+```
 
 Verify changes and force-push your changes
 
+```bash
     $ git push --force
+```
 
 ---
 
@@ -897,174 +996,258 @@ Nice cheat sheet (from here https://dev.to/usmslm102/git-cheat-sheet-4f5a)
 
 Initialize local git repository
 
+```bash
     $ git init
+```
 
 Check files to commits and branch name
     
+```bash
     $ git status
+```
 
 add files to staging area.
 
+```bash
     $ git add FileName.txt
+```
 
 add all modified and new files to staging area
 
+```bash
     > git add -all
+```
 
 add all files of directory to staging area
 
+```bash
     > git add folder/
+```
 
 Commit changes to local repository
 
+```bash
     > git commit -m "Message to commit"
+```
 
 history of commits
 
+```bash
     > git log --
+```
 
 Get help for any command
 
+```bash
     > git help <Command>
+```
 
 set global user name
 
+```bash
     > git config --global user.name "Name"
+```
 
 Show un-staged differences since last commit
 
+```bash
     > git diff
+```
 
 View staged differences
 
+```bash
     > git diff --staged
+```
 
 Un-stage files and HEAD Refers to last commit
 
+```bash
     > git reset HEAD FileName
+```
 
 Blow away all changes since last commit
 
+```bash
     > git checkout -- FileName
+```
 
 SKIP STAGING AND COMMIT and Add changes from all tracked files. this Doesn’t add new (untracked) files
 
+```bash
     > git commit -a -m "Modify readme"
+```
 
 Reset into staging and Move to commit before ‘HEAD’
 
+```bash
     > git reset --soft HEAD^
+```
 
 Add to the last commit with new commit message
 
+```bash
     > git commit --amend -m "New Message"
+```
 
 Undo last commit and all changes
 
+```bash
     > git reset --hard HEAD^
+```
 
 Undo last 2 commits and all changes
 
+```bash
     > git reset --hard HEAD^^
+```
 
 ADDING A REMOTE
 
+```bash
     $ git remote add <name>origin <address>https://giturl
+```
 
 show remote repositories
 
+```bash
     $ git remote -v
+```
 
 To push to remotes
 
+```bash
     $ git push -u <name>origin <branch>master
+```
 
 Remove remote
 
+```bash
     $ git remote rm <name>
+```
 
 Clone remote repository
 
+```bash
     $ git clone <address>https://giturl
+```
 
 Create branch
 
+```bash
     $ git branch <BrancName>
+```
 
 create and checkout branch
 
+```bash
     $ git checkout -b <BrancName>
+```
 
 list available branches
 
+```bash
     $ git branch
+```
 
 list remote available branches
 
+```bash
     $ git branch -r
+```
 
 Switching between branches
 
+```bash
     $ git checkout <branch name>
+```
 
 merge 2 branches
 
+```bash
     $ git merge <branch name>
+```
 
 Delete branch
 
+```bash
     $ git branch -d <branch name>
+```
 
 Force delete branch
 
+```bash
     $ git branch -D <branch name>
+```
 
 get remote changes
 
+```bash
     $ git pull
+```
 
 get the remote changes to local remote branch
 
+```bash
     $ git fetch
+```
 
 merge local remote branch changes to local master branch
  
+```bash
     $ git merge <local branch>
+```
 
 shows branches alignments
 
+```bash
     $ git remote show origin
+```
 
 remove remote branch
 
+```bash
     $ git push origin :<branch name>
+```
 
 To clean up deleted remote branches
 
+```bash
     $ git remote prune origin
+```
 
 List all tags
 
+```bash
     $ git tag
+```
 
 Create tag
 
+```bash
     $ git tag -a <Tag Name> -m "Tag message"
+```
 
 Push new tags to remote
 
+```bash
     $ git push --tags
+```
 
 Revert to existing tag.
 
+```bash
     $ git checkout <tag name>
+```
 
 ---
 
 To push from a different account without config(if password matters, skip it to enter separately):
 
+```bash
     $ git push https://username:password@github.com/username/reponame.git
-    
+```
+
 ---
 
 To cache the password for operations over https:
