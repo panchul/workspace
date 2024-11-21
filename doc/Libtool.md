@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # libtool
 
 See also:
@@ -10,6 +11,7 @@ See also:
 
 To get the autoconf, etc.:
 
+```bash
     export build=~/devtools # or wherever you'd like to build
     mkdir -p $build
     
@@ -37,5 +39,6 @@ To get the autoconf, etc.:
     ./configure --prefix=$build/autotools-bin
     make
     make install
+```
 
 ---

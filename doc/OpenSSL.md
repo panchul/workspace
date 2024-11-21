@@ -9,6 +9,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](OpenSSL.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Neat walk-through how to Secure Apache with SSL certificate on CentOS8
 https://www.tecmint.com/secure-apache-with-lets-encrypt-ssl-certificate-on-centos-8/
 

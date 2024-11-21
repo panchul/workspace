@@ -1,6 +1,11 @@
 [Home](Readme.md)
 # Play Framework
 
+See also:
+
+- [Flutter](Flutter.md)
+- [Other frameworks](Readme.md#web-frameworks-servers-etc)
+
 [https://www.playframework.com/](https://www.playframework.com/)
 
 ---

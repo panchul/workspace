@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # KEDA(Kubernetes Event-Driven Autoscaling)
 
 See Also:
@@ -8,6 +9,15 @@ See Also:
 - [Azure](Azure.md)
 - [Kubeflow](Kubeflow.md)
 
+---
+
+**Contents**
+
+- [Miscellaneous](KEDA.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

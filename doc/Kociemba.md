@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Kociemba (Rubik's cube library)
 
 https://pypi.org/project/kociemba/

@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # List
 
 See Also:
@@ -6,8 +7,17 @@ See Also:
 My sandbox for data structures is here:
 
 https://github.com/panchul/sb_cpp/tree/master/data_structures
-  
-  
+
+---
+
+**Contents**
+
+- [Miscellaneous](List.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 Discussion about lists over vectors:

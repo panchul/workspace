@@ -1,14 +1,27 @@
+[Home](Readme.md)
 # Keras
 
 https://keras.io/
-https://keras.io/#getting-started-30-seconds-to-keras
-https://keras.io/getting-started/sequential-model-guide/#getting-started-with-the-keras-sequential-model
+
+See also:
+
+- [TensorFlow](TensorFLow.md)
 
 ---
 
 **Contents**
 
+- [Installing](Keras.md#installing)
 - [Miscellaneous](Keras.md#miscellaneous)
+
+---
+
+## Installing
+
+---
+
+https://keras.io/#getting-started-30-seconds-to-keras
+https://keras.io/getting-started/sequential-model-guide/#getting-started-with-the-keras-sequential-model
 
 ---
 

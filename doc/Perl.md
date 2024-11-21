@@ -5,6 +5,7 @@ My Perl sandbox is [https://github.com/panchul/sb_perl](https://github.com/panch
 
 Sea Also:
 
+  - [Python.md](Python.md)
   - [RegEx.md](RegEx.md)
 
 ---
@@ -31,6 +32,7 @@ http://lzone.de/cheat-sheet/Perl
 
 Compound statements
 
+```Perl
         if (EXPR) BLOCK
         if (EXPR) BLOCK else BLOCK
         if (EXPR) BLOCK elsif (EXPR) BLOCK ...
@@ -53,7 +55,8 @@ Compound statements
         LABEL BLOCK
         LABEL BLOCK continue BLOCK
         PHASE BLOCK
-        
+```
+       
 ---
 
 Great summary on regexes
@@ -64,6 +67,7 @@ http://www.regular-expressions.info/perl.html
 
 Here's how the subroutines work:
 
+```Perl
     my $first_name = prompt("First name: ");
     my $last_name = prompt("Last name: ");
      
@@ -75,7 +79,8 @@ Here's how the subroutines work:
        chomp $answer;
        return $answer;
     }
-    
+```
+
 ---
 
 File operations summary        
@@ -83,6 +88,7 @@ https://perldoc.perl.org/functions/open.html
 
 Using `sysopen`:
 
+```Perl
     use IO::Handle;
     sysopen(my $fh, $path, O_RDWR|O_CREAT|O_EXCL)
             or die "Can't open $path: $!";
@@ -90,5 +96,6 @@ Using `sysopen`:
     print $fh "stuff $$\n";
     seek($fh, 0, 0);
     print "File contains: ", readline($fh);   
+```
            
 ---

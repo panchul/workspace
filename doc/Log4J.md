@@ -1,4 +1,15 @@
+[Home](Readme.md)
 # Log4j
+
+---
+
+**Contents**
+
+- [Miscellaneous](Log4J.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

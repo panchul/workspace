@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Kernel
 
 See Also:
@@ -9,6 +10,16 @@ See Also:
   - [Debian](Debian.md)
   - [RedHat](RedHat.md)
   - [Ubuntu](Ubuntu.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Kernel.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

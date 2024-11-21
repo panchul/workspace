@@ -3,9 +3,20 @@
 
 See Also:
 
-- [PostgreSQL](PostgreSQL.md)
-- [MySQL](MySQL.md)
--
+  - [PostgreSQL](PostgreSQL.md)
+  - [MySQL](MySQL.md)
+
+
+---
+
+**Contents**
+
+- [Installing](MSSQLServer.md#installing)
+- [Miscellaneous](MSSQLServer.md#miscellaneous)
+
+---
+
+## Installing
 
 ---
 
@@ -27,6 +38,10 @@ https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/start-sto
 
 Installing Developer version:
 https://www.guru99.com/download-install-sql-server.html
+
+---
+
+## Miscellaneous
 
 ---
 

@@ -13,6 +13,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](OpenVPN.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Another VPN option, Ubuntu 20.04 set up WireGuard VPN server
 https://www.cyberciti.biz/faq/ubuntu-20-04-set-up-wireguard-vpn-server/
 

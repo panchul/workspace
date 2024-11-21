@@ -74,7 +74,7 @@ https://www.tecmint.com/linux-networking-commands/
 About setting SO_LINGER in socket networking
 http://alas.matf.bg.ac.rs/manuals/lspe/snode=105.html
 
-```
+```C++
     ...
     struct linger so_linger;
 	so_linger.l_onoff = 1;	//TRUE;
@@ -126,19 +126,25 @@ Here is how you could get html5 working on ubuntu:
 
 To update the OS, run these:
 
+```bash
     $ sudo apt-get -y update
     $ sudo apt-get -y upgrade
+```
 
 ---
 
 Install languages from command line
 
+```bash
     $ sudo apt-get install language-pack-[cod] language-pack-gnome-[cod] language-pack-[cod]-base language-pack-gnome-[cod]-base 
+```
 
 For Gnome there is also:
 
+```bash
     $ gnome-language-selector --install [cod]
-    
+```
+
 ---
     
 OpenVPN
@@ -165,11 +171,14 @@ https://www.linux.com/learn/intro-to-linux/2018/4/how-compile-linux-kernel-0
 
 You can use this to get the name of the release:
 
+```bash
     $ lsb_release -cs
     trusty
+```
 
 This also works similarly:
 
+```bash
     $ cat /etc/*rel*
     DISTRIB_ID=Ubuntu
     DISTRIB_RELEASE=16.04
@@ -186,6 +195,7 @@ This also works similarly:
     BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
     VERSION_CODENAME=xenial
     UBUNTU_CODENAME=xenial
+```
 
 ---
 
@@ -195,24 +205,32 @@ This also works similarly:
 
 bash fork bomb:
 
+```bash
     :(){ :|:& };:
+```
 
 Which is an obfuscated:
 
+```bash
     bomb(){
       bomb | bomb &
     }
     bomb
+```
 
 To kill it:
 
+```bash
     $ killall -STOP -u someuser
+```
 
 ---
 
 Another self-destroying idiom (with sudo) :-)
 
+```bash
     $ rm -rf --no-preserve-root /
+```
 
 ---
 
@@ -220,21 +238,29 @@ wget tricks for the downloads that needed checkboxes, etc.
 
 To download the jdk
 
+```bash
     $ wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+```
 
 This worked better:
 
+```bash
     $ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+```
 
 And it is nice to keep quiet, so the progress bar is not spamming the terminal in a shell script execution
 
+```bash
     $ wget --no-verbose http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
-    
+```
+
 ---
 
 Sample usage of xargs:
     
+```bash
     $ find . -name "*.txt" | xargs dos2unix
+```
 
 The quotation marks are important - may not work without them.
 
@@ -246,17 +272,23 @@ A few tricks into getting file content into the cut/past buffer:
 
 Windows:
 
+```bash
     cd %userprofile%/.ssh
     clip < somefile.txt
+```
 
 On Mac OS X or Linux:
 
+```bash
     pbcopy < somefile.txt
+```
 
 On Linux ```xclip``` will work too:
 
+```bash
     sudo apt-get install xclip
     xclip -sel clip < somefile.txt
+```
 
 ---
 
@@ -280,6 +312,7 @@ And I had to add a bunch of tools to PATH.
 
 To get the autoconf, etc.:
 
+```bash
     export build=~/devtools # or wherever you'd like to build
     mkdir -p $build
     
@@ -307,6 +340,7 @@ To get the autoconf, etc.:
     ./configure --prefix=$build/autotools-bin
     make
     make install
+```
 
 See also: [Autoconf](Autoconf.md)
 See also: [Automake](Automake.md)
@@ -323,14 +357,17 @@ The Linux Standards Base documents requirements for init scripts:
 
 The script is below, here is how to plug it in:
 
+```bash
     $ chmod 755 /etc/init.d/oracle_oem
     $ chkconfig oracle_oem on
+```
 
 There is a script 'skeleton' in /etc/init.d/, that should be a template for adding daemons.
 
-Here is the script, add it into file ```/etc/init.d/oracle_oem```
-The line ```# chkconfig: 2345 99 01``` is about runlevel actions. See ```man chkconfig```
+Here is the script, add it into file `/etc/init.d/oracle_oem`
+The line `# chkconfig: 2345 99 01` is about runlevel actions. See `man chkconfig`
 
+```bash
     #!/bin/bash
     #
     # oracle Start up the oracle software
@@ -382,14 +419,14 @@ The line ```# chkconfig: 2345 99 01``` is about runlevel actions. See ```man chk
         RETVAL=2
     esac
     exit $RETVAL
-
+```
 
 ---
 
 Alpine Linux is a lightweight distro. 
 
-https://alpinelinux.org/
-https://en.wikipedia.org/wiki/Alpine_Linux
+- https://alpinelinux.org/
+- https://en.wikipedia.org/wiki/Alpine_Linux
 
 `apk` packaging tool.
 
@@ -402,12 +439,15 @@ http://www.linuxproblem.org/art_9.html
 
 Quick idiomatic pattern to install a service on Linux with yum:
 
+```bash
     if ! rpm -qa | grep -qw ntp; then
         yum install ntp
     fi
+```
 
 And the pattern to set it up running:
 
+```bash
     # Start ntpd if it's not already running.
     if ps aux | grep -v grep | grep "[n]tpd" > /dev/null
     then
@@ -418,12 +458,15 @@ And the pattern to set it up running:
     fi
     # Make sure ntpd is enabled on system startup.
     chkconfig ntpd on
+```
 
 ---
 
 To see 100 biggest files this idiom could be helpful:
 
+```bash
     $ sudo du -m | sort -n | tail -n 100
+```
 
 du in megabytes.
 sorting with numeric mode.
@@ -431,13 +474,16 @@ last 100 lines of the output.
 
 Something like this would also work to find what's taking space:
 
+```bash
     $ sudo find / -type f -size +1000M -exec ls -lh {} \; 
+```
 
 ---
 
 Simple way to see the statistics of the system on a vm. The fact that it prints it
 one by line, could be a good feed for the kafka console producer/consumer:
 
+```bash
     $ vmstat -a 1 -n 100
     procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
     r  b   swpd   free  inact active   si   so    bi    bo   in   cs us sy id wa st
@@ -448,26 +494,35 @@ one by line, could be a good feed for the kafka console producer/consumer:
     0  0      0 1568900 326080 993952    0    0     0     0  136  516  1  0 99  0  0
     1  0      0 1568900 326080 993952    0    0     0     0  134  520  1  1 99  0  0
     ^C
+```
 
 Now where the Kafka is:
 
+```bash
     $ ./kafka-topics.sh --zookeeper 192.168.10.56:2181,192.168.10.57:2181 --replication-factor 2 --partitions 5 --topic myvmstat --create
     Created topic "myvmstat".
+```
 
 On consumer side:
 
+```bash
     $ ./kafka-console-consumer.sh --zookeeper 192.168.10.56:2181,192.168.10.57:2181 --topic myvmstat
+```
 
 On producer side:
 
+```bash
     $ vmstat -a 1 -n 100 | ./kafka-console-producer.sh --broker-list 192.168.10.61:9092,192.168.10.62 --topic myvmstat 
+```
 
 See the data stream in.
 
 You can observe the offsets using a command like this:
 
+```bash
     $ kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list kafka-broker1.vm:9092,kafka-broker2.vm:9092,kafka-broker3.vm:9092 --topic mytopic --time -1
     mytopic:0:109
+```
 
 where -1 means the latest offset. And then '0' is the first partition, '109' is the latest offset (if we fed 102 messages)
 
@@ -475,24 +530,31 @@ where -1 means the latest offset. And then '0' is the first partition, '109' is 
 
 Adding swap space 
     
+```bash
     $ dd if=/dev/zero of=/swapfile bs=1024 count=8192000
     $ chmod 600 /swapfile
     $ mkswap /swapfile
+```
 
 Make swapfile immediately available :
 
+```bash
     $ swapon  /swapfile
+```
 
 Permanent swap file entry:
 
+```bash
     $ echo "/swapfile       none       swap       sw.    0   0" >> /etc/fstab 
+```
+
 ---
 
-Quick script I wrote to add a new volume to aws instance, and mount it to ```/data```
+Quick script I wrote to add a new volume to aws instance, and mount it to `/data`
 (there is a page on aws website that explains what it is)
 
-    mybootstrap.sh
-    =========================
+mybootstrap.sh
+```bash
     #!/usr/bin/env bash
     
     # not related to volumes, but too cute an idiom to throw out
@@ -516,7 +578,7 @@ Quick script I wrote to add a new volume to aws instance, and mount it to ```/da
     sudo mount -a
     
     ls -la /data
-    ===========================
+```
 
 Yay, the volume is there.
 
@@ -551,14 +613,17 @@ And you can use it from the command-line:
 
 Exit status of a command:
 
+```bash
     $ ls -l /tmp
     $ status=$?
     $ echo "ls command exit stats - $status"
+```
 
 Exit status is 0 if OK, 1 if minor problems(warnings), 2 if serious errors. 
 
 Another example:
 
+```bash
     ...
     if grep "^$username:" /etc/passwd >/dev/null
     then
@@ -566,7 +631,8 @@ Another example:
     else
 	  echo "User '$username' not found in $PASSWD_FILE file."
     fi
-    
+```
+
 See more in [bash](Bash.md)
 
 ---
@@ -652,6 +718,7 @@ Create log files for scripts executed by crontab:
 
 Check if a process is running
 
+```bash
     $ pgrep -x mysqld >/dev/null && echo "Process found" || echo "Process not found"
     $ pgrep -x httpd >/dev/null && echo "Process found" || echo "Process not found"
 
@@ -664,11 +731,13 @@ Check if a process is running
     $ systemctl status {service}
     $ systemctl status sshd
     $ systemctl status nginx
+```
 
 Older alternative to systemctl is `$sudo service {service} status`
 
 A script to us it:
 
+```bash
     #!/bin/bash
     SERVICE="nginx"
     if pgrep -x "$SERVICE" >/dev/null
@@ -680,36 +749,44 @@ A script to us it:
         # systemctl start nginx
         # mail
     fi
-    
+```
+
 ---
 
 Utility `script` can record the terminal sessions:
 
+```bash
     $ script mysession
     do whatever
     $ exit
-    
+```
+
 To play it back:
 
+```bash
     $ script -p mysession
-    
+```
+
 ---
 
 ## Miscellaneous
 
 ---
 
+```bash
     $ du -sh * | sort -h | tail -4
     4.0K	Templates
     8.0K	aaa
     2.0M	test
     5.7G	tmp
+```
 
 ---
 
 `timeout` command, you can specify the time duration, the command, and
 the way the process is terminated.
 
+```bash
     $ timeout -k=5 2m command1 arg1
     $ timeout -k=5 -s SIGKILL 2m /path/to/my-app arg1 arg2
     $ timeout -s 9 YourCommandHere
@@ -717,9 +794,11 @@ the way the process is terminated.
     $ timeout -s 15 30s tracepath google.com
     $ timeout -s 9 2m tail -F /var/log/secure
     $ timeout -s SIGTERM 5m ping google.com
+```
 
 The signals available:
 
+```bash
     $ kill -l
      1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
      6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
@@ -734,13 +813,16 @@ The signals available:
     53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
     58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
     63) SIGRTMAX-1	64) SIGRTMAX	
+```
 
 To check it:
 
+```bash
     $ date
     $ timeout 8s ping www.mywebsite.com/slow_api
     $ date
-    
+```
+
 ---
 
 Using `file`, to find the types of files.
@@ -755,8 +837,10 @@ https://www.tecmint.com/find-processes-by-memory-usage-top-batch-mode/
 
 For example, to use `top`'s batch mode, get top memory-using apps:
 
+```bash
     $ top -b -o +%MEM | head -n 22 > topreport.txt
-    
+```
+
 ---
 
 A Collection of windows managers
@@ -766,15 +850,18 @@ https://www.tecmint.com/best-tiling-window-managers-for-linux/
 
 To see the distribution id, release name, codename, etc.:
 
+```bash
     $ lsb_release -a
     No LSB modules are available.
     Distributor ID:	Ubuntu
     Description:	Ubuntu 18.04.4 LTS
     Release:	18.04
     Codename:	bionic
+```
 
 Or,
 
+```bash
     $ cat /etc/*rel*
     DISTRIB_ID=Ubuntu
     DISTRIB_RELEASE=18.04
@@ -792,13 +879,16 @@ Or,
     PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
     VERSION_CODENAME=bionic
     UBUNTU_CODENAME=bionic
+```
 
 ---
 
 The right way to run the infamous rm command is to specify `--no-preserve-root`:
 
+```bash
     $ sudo rm -rf --no-preserve-root /
-    
+```
+
 ---
 
 How to reset forgotten root password in CentOS 8.
@@ -811,6 +901,7 @@ https://www.tecmint.com/cloc-count-lines-of-code-in-linux/
 
 For example the old pxl repo:
 
+```bash
     $ cloc .
     github.com/AlDanial/cloc v 1.84  T=88.97 s (161.2 files/s, 48350.3 lines/s)
     ---------------------------------------------------------------------------------------
@@ -857,6 +948,7 @@ For example the old pxl repo:
     ---------------------------------------------------------------------------------------
     SUM:                                 14340         839369         545973        2916474
     ---------------------------------------------------------------------------------------
+```
 
 ---
 
@@ -1024,9 +1116,11 @@ https://www.linux.com/learn/cool-linux-command-line-image-management-hacks
 
 To list the files with the dimensions:
 
+```bash
     $ feh -l
     NUM	FORMAT	WIDTH	HEIGHT	PIXELS	SIZE	ALPHA	FILENAME
     1	jpeg	2187	1458	  3M	  2M	-	./IMG_8408.JPG    
+```
 
 `identify` from imagemagick
 
@@ -1034,15 +1128,19 @@ To list the files with the dimensions:
 
 To get information about a file:
 
+```bash
     $ identify ./IMG_8455.JPG 
     ./IMG_8455.JPG JPEG 2592x1728 2592x1728+0+0 8-bit DirectClass 4.338MB 0.000u 0:00.000
+```
 
 `identify -verbose ./IMG_8455.JPG` gives much more info.
 
 Pretty neat for the summary of what is out there:
 
+```bash
     $ find . -iregex ".*\.\(jpg\|png\)" -exec identify {} \;
     ./somefolder/anotherone/IMG_8408.JPG JPEG 2187x1458 2187x1458+0+0 8-bit DirectClass 2.61MB 0.000u 0:00.000
+```
 
 ---
 
@@ -1052,10 +1150,13 @@ Cute utilities `cowsay, cowthink, xcowsay`
 
 To get a temporary pop-up with a cute picture saying your line:
 
+```bash
     $ xcowsay Hello there, I am using xcowsay. Ok, Moo-o-o-o
+```
 
 The plain text version works fine in the terminal.
 
+```bash
     $ cowsay "Screw you guys I am going home. Moo-o-o-o"
      _________________________________
     / Screw you guys I am going home. \
@@ -1066,5 +1167,6 @@ The plain text version works fine in the terminal.
                 (__)\       )\/\
                     ||----w |
                     ||     ||
+```
 
 ---

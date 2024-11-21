@@ -1,6 +1,17 @@
+[Home](Readme.md)
 # Magic Leap
 
 https://www.magicleap.com/
+
+---
+
+**Contents**
+
+- [Miscellaneous](MagicLeap.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 
@@ -11,7 +22,7 @@ https://www.inputmag.com/tech/magic-leap-is-for-sale-but-the-company-was-doomed-
 From Dev Samples
 https://magicleaphelio.com/devsamples/model-switching
 
-```
+```xml
 <http>
 <head>
 </head>

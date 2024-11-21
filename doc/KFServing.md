@@ -1,8 +1,19 @@
+[Home](Readme.md)
 # KFServing
 
 See Also:
 
   - [PyTorchServe](PyTorch.md#PyTorchServe)
+
+---
+
+**Contents**
+
+- [Miscellaneous](KFServing.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

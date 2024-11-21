@@ -10,7 +10,17 @@ See Also:
 - [Jenkins](Jenkins.md)
 
 
-##
+---
+
+**Contents**
+
+- [Miscellaneous](PivotalTracker.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
 
 https://www.pivotaltracker.com/help/articles/quick_start/?auto_play=true
 

@@ -34,6 +34,7 @@ https://docs.opencv.org/4.3.0/d0/db2/tutorial_macos_install.html
 
 On Mac I did with and c examples:
 
+```bash
     $ git clone <opencv>
     $ git clone <opencv_contrib>
     $ cd opencv
@@ -41,12 +42,15 @@ On Mac I did with and c examples:
     $ cd build
     $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/Users/iam/OpenCV/opencv/build -D INSTALL_C_EXAMPLES=ON \
      -D BUILD_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=/Users/iam/OpenCV/opencv_contrib/modules ../
+```
 
 Also needs `-D OPENCV_GENERATE_PKGCONFIG=YES`, like so:
 
+```bash
     $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/Users/iam/OpenCV/opencv/build \
      -D INSTALL_C_EXAMPLES=ON  -D BUILD_EXAMPLES=OFF -D OPENCV_EXTRA_MODULES_PATH=/Users/iam/OpenCV/opencv_contrib/modules \
      -D OPENCV_GENERATE_PKGCONFIG=ON ../
+```
 
 Now the package file shows up in `unix-install/opencv4.pc`
 
@@ -55,31 +59,42 @@ https://answers.opencv.org/question/63331/opencv-30-wont-compile-with-ffmpeg-sup
 
 It will take a while. Do NOT use `-j` without a number - it may overflood your cpu and system memory. Use whatever cores you have.     
      
+```bash
     $ make -j8
     ...
+```
 
 Might need `sudo` for Linux, worked without sudo in our configuration(local, with sudo only for copying .pc):    
         
+```bash
     $ make install
     ...
-    
+```
+
 Update the path to dlls, in `.bash_profile`(or .bashrc, or.zshrc, etc.) add:
     
+```bash
     export DYLD_LIBRARY_PATH=/Users/iam/OpenCV/opencv/build/lib:$DYLD_LIBRARY_PATH
+```
 
 On Mac, copy .pc file (THIS PART DID NOT WORK):
 
+```bash
     $ cp /Users/iam/OpenCV/opencv/build/lib/pkgconfig/opencv.pc /usr/local/lib/pkgconfig/opencv4.pc
+```
 
 This works:    
     
+```bash
     $ cp /Users/iam/OpenCV/opencv/build/unix-install/opencv4.pc /usr/local/lib/pkgconfig/opencv4.pc
+```
 
 From here: https://prateekvjoshi.com/2013/10/18/package-opencv-not-found-lets-find-it/
 
 You can fake it, by creating your own opencv.pc file in `/usr/local/lib/pkgconfig`, or wherever the
 `PKG_CONFIG_PATH` points to:
 
+```bash
     prefix=/usr
     exec_prefix=${prefix}
     includedir=${prefix}/include
@@ -90,19 +105,26 @@ You can fake it, by creating your own opencv.pc file in `/usr/local/lib/pkgconfi
     Version: 2.x.x
     Cflags: -I${includedir}/opencv -I${includedir}/opencv2
     Libs: -L${libdir} -lopencv_calib3d -lopencv_imgproc -lopencv_contrib -lopencv_legacy
+```
 
 And add this to the .bash_profile:
 
+```bash
     export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/:$PKG_CONFIG_PATH   
+```
 
 Reload or `source` the .bash_profile, and try compiling a sample:
 
+```bash
     $ g++ -ggdb `pkg-config --cflags --libs opencv3` -stdlib=libstdc++ opencv_version.cpp -o /tmp/opencv_version && /tmp/opencv_version
+```
 
 This one worked(on Mac, and linux):
 
+```bash
     $ g++ -std=c++1z `pkg-config --cflags --libs opencv4` opencv_version.cpp -o ~/tmp/opencv_version && ~/tmp/opencv_version
       Welcome to OpenCV 4.3.0
+```
 
 ---
 
@@ -114,43 +136,59 @@ https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
 
 pre-reqs
 
+```bash
     $ sudo apt-get install build-essential
     $ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
     $ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+```
 
 The repo. (get the .zip for the latest stable), [https://github.com/opencv/opencv](https://github.com/opencv/opencv):
 
+```bash
     $ cd ~/<my_working_directory>
     $ git clone https://github.com/opencv/opencv.git
     $ git clone https://github.com/opencv/opencv_contrib.git
+```
 
 Get the extras right away too, for the test data[https://github.com/opencv/opencv_extra](https://github.com/opencv/opencv_extra):
 
+```bash
     $ git clone https://github.com/opencv/opencv_extra.git 
+```
 
 I did not use the one they mention at the doc, used my own
 
+```bash
     $ cd ~/opencv
     $ mkdir build
     $ cd build
 
     $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
+```
 
 or, with modules
     
+```bash
     $ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules/ ..
+```
 
 `make -j` blew up the memory in the VM on VirtualBox, used non-parallel, or limiting the number of threads:
 
+```bash
     $ make -j4
-  
+```
+
  Had an error:
  
+```bash
     cmake_symlink_library: System Error: Read-only file system   
+```
 
 A work-around is to tweak the VirtualBox:
 
+```bash
     $ VBoxManage setextradata VM_NAME VBoxInternal2/SharedFoldersEnableSymlinksCreate/SHARE_NAME 1
+```
 
 ---
 
@@ -164,48 +202,58 @@ https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
 
 ---
 
----
-
 Installing on CentOS.
 From here: https://www.vultr.com/docs/how-to-install-opencv-on-centos-7
 
 Step 1: Install dependencies for OpenCV
 
+```bash
     $ yum groupinstall "Development Tools" -y
     $ yum install cmake gcc gtk2-devel numpy pkconfig -y
+```
 
 Step 2: Download the OpenCV 3.3.0 archive
 
+```bash
     $ cd
     $ wget https://github.com/opencv/opencv/archive/3.3.0.zip
     $ unzip 3.3.0.zip
+```
 
 Step 3: Compile and install OpenCV 3.3.0
 
+```bash
     $ cd opencv-3.3.0
     $ mkdir build
     $ cd build
     $ cmake -D CMAKE_BUILD_TYPE=DEBUG -D CMAKE_INSTALL_PREFIX=/usr/local ..
     $ make
     $ make install
+```
 
 Step 4: Configure required variables
 
+```bash
     $ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
     $ echo '/usr/local/lib/' >> /etc/ld.so.conf.d/opencv.conf
     $ ldconfig
+```
 
 Step 5 (optional): Run tests
 
+```bash
     $ cd
     $ git clone https://github.com/opencv/opencv_extra.git
     $ export OPENCV_TEST_DATA_PATH=/root/opencv_extra/testdata
+```
 
 Run these opencv_test_* :
 
+```bash
     $ cd /root/opencv-3.3.0/build/bin
     $ ls
     $ ./opencv_test_photo
+```
 
 ---
 
@@ -248,6 +296,7 @@ https://www.learnopencv.com/read-write-and-display-a-video-using-opencv-cpp-pyth
 Simple Motion detector using OpenCV 
 https://www.youtube.com/watch?v=aqxVCisTRDg
 
+```python
     import cv2
     cap = cv2.VideoCapture(0)
     _, first = cap.read()
@@ -272,11 +321,13 @@ https://www.youtube.com/watch?v=aqxVCisTRDg
   
     cap.release()
     cv2.destroyAllWindows()
+```
 
 ---
 
 Another MNIST sample, with a cute gui, from https://www.youtube.com/watch?v=qmY36LzdPHo :
 
+```python
     import tensorflow as tf
     import cv2
     import numpy as np
@@ -384,6 +435,7 @@ Another MNIST sample, with a cute gui, from https://www.youtube.com/watch?v=qmY3
             break
     
     cv2.destroyAllWindows()
+```
 
 ---
 
@@ -435,21 +487,27 @@ https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-
 
 Whole lot of dependencies are needed for OpenCV to work, for example:
 
+```bash
     sudo apt update
     sudo apt install tesseract-ocr
     sudo apt install libtesseract-dev
+```
 
 On Mac:
 
+```bash
     $ brew install tesseract
     $ brew install tesseract-lang
     $ python3.6 -m pip install tesseract
 
     $ pip3 install --upgrade tensorflow
+```
 
 Or, with the list:
 
+```bash
     $ pip3 install -r requirements.txt
+```
 
 ---
 
@@ -464,16 +522,19 @@ https://answers.opencv.org/question/134419/from-cvmat-to-saving-image-in-a-given
 
 This seem to work on a caputred frame:
 
+```python
     ...
     cap.read(frame);
     imwrite("next_frame.png", frame); // can use other formats.
     imshow("Live", frame);
     ...
+```
 
 ---
 
 Capturing images
 
+```python
     import cv2
     import numpy as np
     capture=cv2.VideoCapture(0)
@@ -504,5 +565,6 @@ Capturing images
     
     capture.release()
     cv2.destroyAllWindows()
+```
 
 ---

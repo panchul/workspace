@@ -14,7 +14,20 @@ See Also:
 
 **Contents**
 
+- [IPV4 migration](AWS.md#ipv4-migration)
 - [Miscellaneous](AWS.md#miscellaneous)
+
+---
+
+## IPV4 migration
+
+---
+
+- https://aws.amazon.com/blogs/aws/new-aws-public-ipv4-address-charge-public-ip-insights/
+- https://aws.amazon.com/about-aws/whats-new/2023/07/aws-public-ip-insights-vpc-ip-address-manager/
+- https://aws.amazon.com/blogs/networking-and-content-delivery/identify-and-optimize-public-ipv4-address-usage-on-aws/
+- https://aws.amazon.com/vpc/pricing/
+- https://aws.amazon.com/support
 
 ---
 

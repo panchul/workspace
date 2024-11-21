@@ -275,9 +275,10 @@ Topics sometimes associated with Operating Systems.
 - [Disqus](Disqus.md) Commenting, discussion forums, etc.
 - [Django](Django.md)
 - [Heroku](Heroku.md)
-- [Flutter](Flutter.md)
+- [Express](ExpressJs.md)
+- [Flutter](Flutter.md) - multiple platform development
 - [JQuery](JQuery.md)
-- [Kivy](Kivy.md) Python framework for mobile apps
+- [Kivy](Kivy.md) - Python framework for mobile apps
 - [nginx](Nginx.md)
 - [Node](Node.md)
 - [PlayFramework](PlayFramework.md)
