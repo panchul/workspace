@@ -16,6 +16,35 @@ See Also:
 
 ---
 
+Neat troubleshooting of java runtime config issues:
+
+https://stackoverflow.com/questions/73145854/how-to-config-java-version-in-visual-studio-code
+
+
+For MacOS:
+
+```bash
+## Install java 11 by brew
+brew install java11
+
+## For the system Java wrappers to find this JDK, symlink it with
+sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+
+## edit settings.json
+"java.configuration.runtimes": [
+{
+    "name": "JavaSE-11",
+    "path": "/opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home",
+    "javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api",
+    "default": true
+}
+```
+
+The `"path"` could be `"/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home"`. They are the same.
+
+
+---
+
 To get Java 17 on Mac with homebrew:
 
 ```bash
@@ -50,11 +79,13 @@ https://www3.ntu.edu.sg/home/ehchua/programming/howto/Ubuntu_HowTo.html#jdk
 
 Create a file Hello.java with content:
 
+```Java
     public class Hello {
        public static void main(String[] args) {
           System.out.println("Hello, world!");
        }
     }
+```
 
 To compile run `javac Hello.java`
 
@@ -79,7 +110,7 @@ $ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acce
 
 ---
 
-A bunch of tools expects variable `JAVA_HOME` defined. With a jdk, it is jdk dir plus Content/Home.
+A bunch of tools expects variable `JAVA_HOME` defined. With a jdk, it is jdk dir plus `Content/Home`.
 
 ---
 
