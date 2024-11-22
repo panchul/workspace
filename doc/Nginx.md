@@ -48,24 +48,32 @@ https://www.cyberciti.biz/faq/how-to-install-and-use-nginx-on-centos-8/
 
 To see where the config files are:
 
+```bash
     $ sudo nginx -t
     nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
     nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
 
 ---
 
 You may also want to enable the firewall port, check the existing config and enable, e.g. like so:
 
+```bash
     $ sudo ufw status
 
     $ sudo ufw enable
+```
 
 or, maybe
 
+```bash
     $ sudo ufw allow 'Nginx Full'
+```
 
 Also allow https:
 
+```bash
     $ sudo ufw allow 443
+```
 
 ---
