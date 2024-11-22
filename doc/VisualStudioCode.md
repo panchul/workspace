@@ -12,6 +12,7 @@ See Also:
 Contents
 
 - [Visual Studio Code on Mac](VisualStudioCode.md#visual-studio-code-on-mac)
+- [Language-specific extensions](VisualStudioCode.md#visual-studio-code-on-mac)
 - [Debugging](VisualStudioCode.md#debugging)
 - [Troubleshooting](VisualStudioCode.md#troubleshooting)
 - [Miscellaneous](VisualStudioCode.md#miscellaneous)
@@ -110,6 +111,14 @@ code --install-extension vscodevim.vim
 code --install-extension ybaumes.highlight-trailing-white-spaces
 code --install-extension yzhang.markdown-all-in-one
 ```
+
+## Language-specific extensions
+
+For some things there are competitors among the extensions, which one to use for a certain language.
+
+
+
+
 
 ## Debugging
 

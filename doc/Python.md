@@ -115,7 +115,9 @@ Visual Studio Code
 
 Quick and simple HTTP server, this is to serve the folder where you run it:
 
+```bash
     $ python -m http.server --cgi
+```
 
 More at https://docs.python.org/3/library/http.server.html
 
