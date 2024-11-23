@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # MacOS
 
 See also:
@@ -7,7 +8,7 @@ See also:
 
 ---
 
-Emoji for Mac keyboards: Use CTRL + CMD + Space
+Emoji for Mac keyboards: Use `CTRL + CMD + Space`
 
 ---
 
@@ -42,21 +43,24 @@ https://itunes.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12
 
 Automake tools on Mac:
 
-    $ ﻿brew install automake
+```bash
+    $ brew install automake
+```
 
 (At some point I needed autoreconf, this helped)
 
 ---
 
 To add PATH on Mac
-Simple way is to add PATH to file ```~/.bash_profile```. Like so:
+Simple way is to add PATH to file `~/.bash_profile`. Like so:
 
-    ﻿export PATH="/usr/local/someprogramijustwrote/bin:$PATH"
-
+```bash
+    export PATH="/usr/local/someprogramijustwrote/bin:$PATH"
+```
 ---
 
 Screenshot capture:
-1. Click ```Shift-Command-4```, or, I guess ```Command-$```
+1. Click `Shift-Command-4`, or, I guess `Command-$`
 2. Mark it with mouse.
 3. The file is in Desktop with .png extention and timestamp.
 
@@ -74,15 +78,19 @@ http://www.loopinsight.com/2014/01/08/your-macs-built-in-screen-recorder/
 
 to get `http`(the command line http client):
 
+```bash
     $ brew install httpie
+```
 
 ---
 
 To get the number of CPUs
     
+```bash
     $ sysctl hw.physicalcpu hw.logicalcpu
     hw.physicalcpu: 4
     hw.logicalcpu: 8
+```
 
 ---
 
@@ -102,11 +110,15 @@ https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/
 About codesign, etc.            
 https://stackoverflow.com/questions/20875927/how-to-undo-codesign
     
+```bash
     $ codesign -s gdb-cert gdb
+```
 
 To re-sign, you have to remove the signature first:
 
+```bash
     $ codesign --remove-signature gdb
+```
 
 ---
 

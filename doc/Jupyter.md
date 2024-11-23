@@ -1,8 +1,12 @@
+[Home](Readme.md)
 # Jupyter
 
 See also:
 
-- [Python](Python.md)
+  - [Flask](Flask.md)
+  - [Jupyter](Jupyter.md)
+  - [Kubeflow](Kubeflow.md)
+  - [Python](Python.md)
 
 ---
 

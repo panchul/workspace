@@ -5,9 +5,11 @@
 
 See Also:
 
-- [Django](Django.md)
-- [Gunicorn](Gunicorn.md)
-- [Nginx](Nginx.md)
+  - [Django](Django.md)
+  - [Gunicorn](Gunicorn.md)
+  - [Jupyter](Jupyter.md)
+  - [Nginx](Nginx.md)
+  - [Plotly Dash](PlotlyDash.md)
 
 ---
 
@@ -15,24 +17,32 @@ Installing Flask on Ubuntu 20. Also demoes using `-m venv`.
 
 https://www.tecmint.com/install-flask-in-ubuntu/
 
+```bash
     $ sudo apt update -y
     $ python3 --version
+```
 
 Get the prerequisites
 
+```bash
     $ sudo apt install build-essential python3-pip libffi-dev python3-dev python3-setuptools libssl-dev
     $ sudo apt install python3-venv
     $ mkdir flask_dir && cd flask_dir
+```
 
 Sandbox it
 
+```bash
     $ python3 -m venv venv
     $ source venv/bin/activate
     $ pip3 install flask
+```
 
 Check the version
 
+```bash
     $ flask --version
+```
 
 ---
 
@@ -49,6 +59,7 @@ https://www.cncf.io/blog/2019/07/30/deploy-your-machine-learning-models-with-kub
 
 Serves the endpoint `/predict`
 
+```python
     from flask import Flask, request, jsonify
     import predict
     
@@ -63,9 +74,11 @@ Serves the endpoint `/predict`
     
     if __name__ == '__main__':
         app.run(host='0.0.0.0', port=8080)
-        
+```
+
 Here's the `predict.py` :
 
+```python
     import keras
     model = keras.models.load_model("./sentiment2.model.h5")
     
@@ -81,9 +94,11 @@ Here's the `predict.py` :
         for i, sequence in enumerate(sequences):
             results[i, sequence] = 1.
         return results
+```
 
 The deployment for it:
 
+```yaml
     apiVersion: apps/v1 
     kind: Deployment
     metadata:
@@ -103,9 +118,11 @@ The deployment for it:
                python server.py;
             ports:
             - containerPort: 808
-        
+```
+
 And the service:
 
+```yaml
     apiVersion: v1
     kind: Service
     metadata:
@@ -118,17 +135,22 @@ And the service:
       selector:
         app: imdb-server
       type: NodePort
-      
+```
+
 The demo run:
 
+```bash
     $ kubectl apply -f deployment.yml
     $ kubectl apply -f service.yml
+```
 
 Use the command `kubectl get services` to find the service IP and port.
     
+```bash
     $ curl http://node-ip:node-port/predict \ 
             -H 'Content-Type: application/json' \ 
             -d '{"input_params": "I loved this videoLike, love, amazing!!"}'      
+```
 
 ---
 
@@ -137,11 +159,14 @@ https://github.com/kubeflow/kfserving/issues/1142
 
 He seemed to have a bunch of GPUs on the system, and
 
+```
     KFServing Version: 0.4.0
     Kfdef:[k8s_istio/istio_dex/gcp_basic_auth/gcp_iap/aws/aws_cognito/ibm]
+```
 
 The server cod:
 
+```python
     import io
     import json
     
@@ -190,10 +215,11 @@ The server cod:
     
     if __name__ == '__main__':
         app.run()
-
+```
 
 kfserving.yaml(his repo: https://github.com/rtrobin/codeMixed/tree/master/server):
 
+```yaml
     apiVersion: serving.kubeflow.org/v1alpha2
     kind: InferenceService
     metadata:
@@ -212,9 +238,11 @@ kfserving.yaml(his repo: https://github.com/rtrobin/codeMixed/tree/master/server
                   nvidia.com/gpu: "1"
                 requests:
                   nvidia.com/gpu: "1"
+```
 
 pod deployment .yaml(his repo: https://github.com/rtrobin/codeMixed/tree/master/server):
 
+```yaml
     apiVersion: v1
     kind: Pod
     metadata:
@@ -230,18 +258,22 @@ pod deployment .yaml(his repo: https://github.com/rtrobin/codeMixed/tree/master/
         resources:
           limits:
             nvidia.com/gpu: 1
+```
 
 The gunicorn config file:
 
+```python
     # gunicorn.conf
     import os
     workers = int(os.environ.get('WORKER', '4'))
     bind = '0.0.0.0:' + os.environ.get('PORT', '5000')
     daemon = 'false'
     worker_connections = 2000
+```
 
 The dockerfile(his repo: https://github.com/rtrobin/codeMixed/tree/master/server):
 
+```dockerfile
     FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
     LABEL maintainer="robintang.116@gmail.com"
     RUN pip install flask gunicorn gevent \
@@ -253,6 +285,7 @@ The dockerfile(his repo: https://github.com/rtrobin/codeMixed/tree/master/server
     ENV PORT=5000
     ENV WORKER=4
     CMD exec gunicorn -c gunicorn.py main:app
-        
+```
+
 ---
         
