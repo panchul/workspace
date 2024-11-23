@@ -16,6 +16,7 @@ See Also:
 
   - [Cameras and sensors](Hardware.md#cameras-and-sensors)
   - [Relays](Hardware.md#relays)
+  - [Mechanical and structural](Hardware.md#mechanical-and-structural)
   - [Miscellaneous](Hardware.md#miscellaneious)
 
 ---
@@ -45,6 +46,14 @@ Triple Lens Borescope Inspection Camera, Teslong Professional Endoscope with Lig
 Nice relay, even with web api
 
 https://www.robotshop.com/products/devantech-eth008-b-8-x-16a-ethernet-relay
+
+---
+
+## Mechanical and structural
+
+---
+
+TODO: find that link where 2040 extrusion t-slotted aluminum beams were
 
 ---
 

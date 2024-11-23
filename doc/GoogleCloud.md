@@ -1,7 +1,7 @@
 [Home](Readme.md)
-# Google Cloud
+# Google Cloud (GCP)
 
-https://cloud.google.com/
+[https://cloud.google.com/](https://cloud.google.com/)
 
 See Also:
 
@@ -17,9 +17,27 @@ See Also:
 
 **Contents**
 
+- [CLI](GoogleCloud.md#cli)
+- [App Engine](GoogleCloud.md#app-engine)
 - [Miscellaneous](GoogleCloud.md#miscellaneous)
 
 ---
+
+## CLI
+
+---
+
+## App Engine
+
+---
+
+To deploy a [NodeJs](NodeJs.md) app:
+
+```bash
+gcloud app deploy
+```
+
+--
 
 ## Miscellaneous
 

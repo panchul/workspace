@@ -234,6 +234,7 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 - [Mercurial](Mercurial.md)
 - [npm](Npm.md)
 - [NuGet](NuGet.md)
+- [nvm](Nvm.md)
 - [Pip](Pip.md)  
 - [Rake](Rake.md)  
 - [Rustup](Rustup.md)
@@ -268,6 +269,8 @@ Topics sometimes associated with Operating Systems.
 
 ### Web Frameworks, servers, etc
 
+[A comparison of a few](https://medium.com/@greennolgaa/node-js-vs-react-vs-angular-vs-vue-a-comprehensive-comparison-6ba6165ef8f)
+
 - MochiWeb
 - [Ajax](Ajax.md)
 - [Angular](Angular.md)
@@ -275,29 +278,28 @@ Topics sometimes associated with Operating Systems.
 - [Disqus](Disqus.md) Commenting, discussion forums, etc.
 - [Django](Django.md)
 - [Heroku](Heroku.md)
-- [Express Js](ExpressJs.md)
+- [ExpressJs](ExpressJs.md)
+- Feathers.js Self-hosted, free. Email/password OAuth authentication https://feathersjs.com/
+- Firebase (closed-source, paid hosted service, paid shared dev environment)
 - [Flutter](Flutter.md) - multiple platform development
 - [JQuery](JQuery.md)
 - [Kivy](Kivy.md) - Python framework for mobile apps
 - [Laravel](Laravel.md)
+- [MEAN Stack](MEANStack.md)
+- Meteor (some venture-backed stuff, its own ecosystem)
+- Sails
 - [nginx](Nginx.md)
-- [Node](Node.md)
+- [NodeJs](NodeJs.md)
 - [PlayFramework](PlayFramework.md)
+- [React.js](ReactJs.md)
 - [RESTful services](REST.md)
 - [Scalatra](Scalatra.md)
+- [VueJs](VueJs.md)
+- [Wix](Wix.md)
 - [WordPress](WordPress.md)
 - [Yaws](Yaws.md)
 - Yeoman, http://yeoman.io/codelab/index.html
-- MEAN stack example, Angular.js and other stuff https://www.djamware.com/post/5a0673c880aca7739224ee21/mean-stack-angular-5-crud-web-application-example
- About the MEAN stack,
- JavaScript frameworks build on express.js
- https://expressjs.com/en/resources/frameworks.html
- Feathers.js seems to be a nice one. Self-hosted, free, very capable. Email/password OAuth authentication
- https://feathersjs.com/comparison
- Firebase (closed-source, paid hosted service, paid shared dev environment)
- Meteor (some venture-backed stuff, its own ecosystem)
- Sails
-
+ 
 ### Misc Utilities and Commands
 
 - [cron](Cron.md)
@@ -356,8 +358,8 @@ https://www.quantamagazine.org/frauchiger-renner-paradox-clarifies-where-our-vie
 - Misc Manufacturing and hardware, etc. https://www.designworldonline.com/iot-owe-advances-power-ethernet-cabling/
 - Brushless motors, etc.  https://www.alliedmotion.com/whitepaper-differences-brush-brushless-motors/
 - Sensors, and misc hardware: https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
-- https://www.digikey.com/ Misc hardware
-- http://www.newark.com/ Misc electronics
+- [https://www.digikey.com/](https://www.digikey.com/) Misc hardware
+- [http://www.newark.com/](http://www.newark.com/) Misc electronics
 - Embedded stuff, connections to OSIsoft’s PI servers with Python.
   https://github.com/bzshang/piwebapi-python-examples
   https://pisquare.osisoft.com/community/developers-club/blog/2015/06/04/using-pi-web-api-with-python
