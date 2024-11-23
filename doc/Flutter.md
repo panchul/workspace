@@ -8,6 +8,7 @@ See Also:
 - [CocoaPods](CocoaPods.md)
 - [Django](Django.md)
 - [Gunicorn](Gunicorn.md)
+- [Laravel](Laravel.md)
 - [Nginx](Nginx.md)
 
 ---
@@ -73,9 +74,20 @@ You may need to add `flutter/bin` to your `PATH` in, for example, `.zshrc`
 
 ## fvm
 
+Flutter Version Management: A cli to manage Flutter SDK versions.
+
 ---
 
-Flutter Version Management: A cli to manage Flutter SDK versions.
+https://fvm.app/documentation/getting-started/installation
+
+---
+
+How to setup `fvm`:
+
+https://cshanjib.medium.com/setting-up-fvm-flutter-version-management-properly-ab45ade0dd55
+
+---
+
 
 For example, building the version for android:
 

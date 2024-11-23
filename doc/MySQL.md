@@ -11,11 +11,12 @@ See Also:
 
 **Contents**
 
+- [Installing](MySQL.md#installing)
 - [Miscellaneous](MySQL.md#miscellaneous)
 
 ---
 
-## Miscellaneous
+## Installing
 
 ---
 
@@ -29,11 +30,17 @@ https://www.cyberciti.biz/faq/how-to-install-mariadb-on-centos-8/
 
 ---
 
+## Miscellaneous
+
+---
+
+```bash
     $ mysql -uusername -p
     > use mydatabasename;
     > show tables;
     ...
     > select * from mytablename;
     ...
-    
+```
+
 ---

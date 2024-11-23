@@ -1,13 +1,29 @@
+[Home](Readme.md)
 # JavaScript
 
 See Also:
 
+ - [GoogleCloud(GCP)](GoogleCloud.md)
+ - [NodeJs](NodeJs.md)
  - [TypeScript](TypeScript.md)
 
 A sandbox with some templates:
 [https://github.com/panchul/sb_javascript](https://github.com/panchul/sb_javascript)
 
 [https://www.javascript.com/](https://www.javascript.com/)
+
+**Contents**
+
+- [Installing](Javascript.md#installing)
+- [Miscellaneous](Javascript.md#miscellaneous)
+
+---
+
+## Installing 
+
+---
+
+## Miscellaneous
 
 ---
 
@@ -34,6 +50,7 @@ https://dev.to/areknawo/making-a-todo-app-in-svelte-57l3
 
 Simple fizzBuzz solution
 
+```Javascript
     function fizzBuzz(n) {
     
      if (isNaN(n) || !Number.isInteger(n) || n < 1) return null;
@@ -54,6 +71,7 @@ Simple fizzBuzz solution
      
      return output;
     }
+```
 
 ---
 

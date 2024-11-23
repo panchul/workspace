@@ -1,21 +1,106 @@
 [Home](Readme.md)
-# Node
+# Node Js
 
-Nodejs.org
+See Also:
+
+ - [GoogleCloud(GCP)](GoogleCloud.md)
+ - [Javascript](Javascript.md)
+ - [ReactJs](ReactJs.md)
+ - [TypeScript](TypeScript.md)
+
+[Nodejs.org](https://nodejs.org)
+
+---
+
+**Contents**
+
+- [Installing](NodeJs.md#installing)
+- [Popular packages](NodeJs.md#popular-packages)
+- [Tutorials](NodeJs.md#tutorials)
+- [Miscellaneous](NodeJs.md#miscellaneous)
+
+---
+
+## Installing 
+
+---
+
+Use `nodemon` to not need restarting a node app all the time.
+
+To install globally using [`npm`](Npm.md):
+
+```bash
+sudo npm i -g nodemon
+```
+
+and then
+
+```bash
+sudo nodemon index.js
+```
+
+---
+
+## Popular packages
+
+---
+
+`joi` - for schema validation
+
+
+---
+
+## Tutorials
+
+---
+
+Crash course
+https://www.youtube.com/watch?v=ENrzD9HAZK4
+
+---
+
+Node.js Crash Course Tutorial
+
+https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU
+
+---
+
+1 hour intro to NodeJs
+https://www.youtube.com/watch?v=TlB_eWDSMt4
+
+1 hour How to build a REST API with Node js & Express
+https://www.youtube.com/watch?v=pKd0Rpw7O48
+
+---
+
+Quick into, basics of Socket.io
+https://dev.to/uf4no/understanding-the-basics-of-socket-io-3a0e
+
+---
+
+Nice Udemy course with a lot of useful info.
+https://www.udemy.com/course/nodejs-the-complete-guide/
+
+---
+
+## Miscellaneous
 
 ---
 
 Introduction to Web Scraping with Nodejs
 https://dev.to/iamnotstatic/introduction-to-web-scrapping-with-nodejs-208g
 
+```bash
     $ mkdir web-scraper 
     $ cd web-scraper
     $ npm init
     $ npm install axios
     $ npm install cheerio
+```
 
 Create `app.js`:
 
+```Javascript
     const axios = require("axios");
     const cheerio = require("cheerio");
     const url = "https://stackoverflow.com/jobs";
@@ -32,14 +117,17 @@ Create `app.js`:
             console.log(error);
         }
     })();
+```
 
 Run is like so:
 
+```bash
     $ node app.js
+```
 
 Now, similarly, filter out the files we want:
 
-```
+```Javascript
     const axios = require("axios");
     const cheerio = require("cheerio");
     const url = "https://stackoverflow.com/jobs";
@@ -71,7 +159,7 @@ Now, similarly, filter out the files we want:
 
 Runing it:
 
-```
+```bash
     $ node app.js
     {
     title: '\nFull-Stack Software Engineer            ',
@@ -111,15 +199,3 @@ Making concurrent API calls in Node
 https://dev.to/yuesu/making-concurrent-api-calls-in-node-3deg
 
 The NASA repo they are using: https://github.com/yue-su/get-nasa-photo
-
----
-
-Quick into, basics of Socket.io
-https://dev.to/uf4no/understanding-the-basics-of-socket-io-3a0e
-
----
-
-Nice Udemy course with a lot of useful info.
-https://www.udemy.com/course/nodejs-the-complete-guide/
-
----
