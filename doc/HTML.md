@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # HTML
 
 See Also:
@@ -5,6 +6,7 @@ See Also:
 - [OpenGL](OpenGL.md)
 - [SVG](SVG.md)
 - [WebGL](WebGL.md)
+- [XML](XML.md)
 
 ---
 
@@ -13,9 +15,11 @@ http://cristian.sulea.net/blog/disable-browser-caching-with-meta-html-tags/
 
 In the .html itself, in the header you can put these:
 
+```html
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+```
 
 ---
 
@@ -31,6 +35,7 @@ https://www.w3schools.com/html/default.asp
 
 Example of the HTML with geolocation:
 
+```html
     <!DOCTYPE html>
     <html>
     <body>
@@ -60,14 +65,15 @@ Example of the HTML with geolocation:
     
     </body>
     </html>
+```
 
 ---
 
 Auto-refreshing via meta setting in the header:
 
+```html
     <head>
        <meta http-equiv="refresh" content="30>
     </head>
-
+```
 ---
-

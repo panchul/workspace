@@ -23,7 +23,9 @@ Running a website.
 
 To run in a command line and not exit right after starting, use jetty:join :
 
+```bash
     $ sbt jetty:start jetty:join
+```
 
 Nice links on deployment are here:
 

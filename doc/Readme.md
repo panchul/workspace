@@ -288,6 +288,7 @@ Topics sometimes associated with Operating Systems.
 - [MEAN Stack](MEANStack.md)
 - Meteor (some venture-backed stuff, its own ecosystem)
 - Sails
+- [NextJs](NextJs.md)
 - [nginx](Nginx.md)
 - [NodeJs](NodeJs.md)
 - [PlayFramework](PlayFramework.md)
@@ -656,45 +657,45 @@ https://nofilmschool.com/how-to-write-a-scene
 
 ### Process management and misc software lifecycle issues
 
-- [Asana](Asana.md)
-- [Scrum](Scrum.md)
-- Kanban
-- [Trello](Trello.md)
-- [Pivotal Tracker](PivotalTracker.md)
-- www.planitpoker.com
-- https://firepoker.io
-- www.websequencediagrams.com
-- www.lucidchart.com
 - https://app.diagrams.net/ - another one for UML and other types of diagrams(licidchart's competitor)
+- [Asana](Asana.md)
 - [Code Review](CodeReview.md)
-- monosnap utility, for video capture on Windows
-- [Univied Modeling Language(UML)](UML.md)
+- [firepoker.io](https://firepoker.io)
 - Golden Triangle Cost/Quality/TimeToMarket
-  https://blog.feabhas.com/2018/08/technical-debt/
 - Holacracy and Open Book Management
   https://www.holacracy.org/
+- [Jamboard.google.com](Jamboard.google.com)
+  https://blog.feabhas.com/2018/08/technical-debt/
+- Kanban
+- www.lucidchart.com
+- monosnap utility, for video capture on Windows
 - Open Book Management - we share the exact details of our Balance Sheet and P&L Statement with our entire team in
   real-time, ensuring that our staff has the data they need to treat the business as if it were their own.
-- Why Programmers should be managers: https://habr.com/sandbox/125674/
-- SWOT stands for Strengths, Weaknesses, Opportunities, and Threats.
+- [Pivotal Tracker](PivotalTracker.md)
+- www.planitpoker.com
+- [Scrum](Scrum.md)
+- [Trello](Trello.md)
+- [Univied Modeling Language(UML)](UML.md)
+- www.websequencediagrams.com
+
+Why Programmers should be managers: https://habr.com/sandbox/125674/
+
+SWOT stands for Strengths, Weaknesses, Opportunities, and Threats.
   Strengths and weaknesses are internal to your company—things that
   you have some control over and can change. (e.g. who is on your team,
   your patents and intellectual property, your location, etc.)
-
 
 ## Cryptography, Network Security, etc.
 
 - [Cryptography and Network Security](Cryptography.md)
 - [IPSec](IPSec.md)
+- [JWT JSON Web Tokens](JWT.md)
 - [gpg.md](Gpg.md)
 - [MD5.md](MD5.md)
 - [Obfuscators](Obfuscators.md)
 - [SASL](SASL.md)
 - [SSH](SSH.md)
 - [TLS, Transport Layer Security](TLS.md)
-- JWT JSON Web Tokens
-  https://jwt.io/ - interactive tool
-  https://tools.ietf.org/html/rfc7519 - RFC for it.
   
 - nice collection of papers on Security https://cloud.google.com/beyondcorp/#researchPapers  
 
@@ -816,20 +817,8 @@ Another nice resource:
 
 - [FPGA](FPGA.md)
 - [GPU](GPU.md)
-- neat 3d printer https://ultimaker.com/en/products/ultimaker-s5
-
-- https://www.youtube.com/watch?v=NuPMIUWbPsQ  Tutorials about OSIsoft’s PI Server HA configuration
-- https://pisquare.osisoft.com/community/Learn-PI/programming-in-pi-web-api OSIsoft website about PI programming
-- https://github.com/osisoft/PI-Web-API-Programming-Online-Course - neat course they made
-- PI SDK online videos https://pisquare.osisoft.com/community/Learn-PI/developing-applications-with-PI-AF-SDK
-- https://www.physikinstrumente.com/en/
-- https://www.thorlabs.com/navigation.cfm?guide_id=2251
-- https://www.tinkercad.com - open-source 3d printing models, like GitHub for misc design(electronic, 3d printing, etc.) 
-- A guide for selecting a camera for computer vision projects
-  http://guide.directindustry.com/choosing-the-right-machine-vision-camera/
-
+- [Hardware](./Hardware.md)
 - [Metalworks](Metalworks.md) (melting metals, etc.)
-- https://www.zoro.com - metal wire, etc.
 
 ## Motivation and Psychology
 

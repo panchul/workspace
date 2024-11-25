@@ -11,8 +11,9 @@ See also:
   - [PIL](PIL.md)
   - [Pip](Pip.md)
   - [PyCharm](PyCharm.md)
+  - [venv](Venv.md)
 
-https://www.python.org/
+[https://www.python.org/](https://www.python.org/)
 
 My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/panchul/sb_python).
 
@@ -21,6 +22,7 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 **Content**
 
 - [Installing](Python.md#installing)
+- [Package management](Python.md#package-management)
 - [IDEs Etc](Python.md#ides-etc)
 - [Web-related](Python.md#web-related)
 - [Decorators](Python.md#decorators)
@@ -33,32 +35,38 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ---
 
-Good practice is to use virtual environments, e.g. venv
+Good practice is to use virtual environments, e.g. `venv`
 
+```bash
     $ sudo apt install python3-venv
+```
 
 Then you can use virtual environments for the Python projects:
 
+```bash
     $ python3 -m venv my_env
+```
 
 Then you can activate it like so:
 
+```bash
     $ . my_env/bin/activate
     (my_env) $
+```
 
 It switched to this environment. Compare local and environment's versions:
 
+```bash
     $ pip -V
     $ python -m pip list
+```
 
 To deactivate, run the script `deactivate`
 
+```bash
     $ deactivate
     $ python -V
-
----
-
-[Pip](Pip.md) - package manager
+```
 
 ---
 
@@ -69,12 +77,15 @@ run `source "/home/.../.local/bin/virtualenvwrapper.sh"`
 
 To list environments:
 
+```bash
     $ workon
+```
 
 To switch to environment my_env(get the list of them using `python -m pip list`:
 
+```bash
     $workon my_env
-
+```
 There are also commands `mkproject` to create, `setvirtualenvproject` to bind to a virtualenv.
 
 And there is a tmp virtual environment creation, `rmvirtualenv`, `mktmpenv`.
@@ -96,6 +107,18 @@ conda - another tool
 Package Tox allows testing for different versions of Python.
 
 TODO
+
+---
+
+## Package management
+
+---
+
+[http://pypi.com](http://pypi.com) - shows latest versions for the modules
+
+---
+
+[Pip](Pip.md) - package manager
 
 ---
 
@@ -123,7 +146,9 @@ More at https://docs.python.org/3/library/http.server.html
 
 By default, the server uses the current directory. The option -d/--directory specifies a directory to which it should serve the files. For example, the following command uses a specific directory:
 
+```bash
     $ python -m http.server --directory /tmp/
+```
 
 ## Decorators
 
@@ -221,7 +246,7 @@ print(multiply_together.memory())
 
 A test run:
 
-```
+```bash
 % python runit.py
 <__main__.Power object at 0x7f9c4e1235d0>
 16
@@ -311,7 +336,7 @@ https://github.com/panchul/simple_benchmark
 
 Drawing COVID19 shaped virus using Turtle Library
  
- ```Python
+```Python
 import turtle
 trt = turtle.Turtle()
 scr = turtle.Screen()
@@ -370,6 +395,7 @@ https://www.youtube.com/watch?v=QgZ7qv4Cd0Y
 About starred expressions
 http://yaoyao.codes/python/2016/09/25/python-starred-expression
 
+```Python
     def func(a, b ,c):
         print(a, b, c)
     
@@ -377,9 +403,11 @@ http://yaoyao.codes/python/2016/09/25/python-starred-expression
     func(c=3, *(1,2))              # OK. 1 2 3
     func(c=3, **dict(a=1,b=2))     # OK. 1 2 3
     func(c=3, *(1,), **dict(b=2))  # OK. 1 2 3
-    
+```
+
 Another one, with args
 
+```Python
     def func(*args, **kwargs):
         print(args)
         print(kwargs)
@@ -391,18 +419,21 @@ Another one, with args
     #   (1,)
     #   {'a': 2}
     #   {'kwargs': {'a': 2}, 'args': (1,)}       
+```
 
 ---
 
 The `"""` usage:
 
+```Python
     print("It's a "+""" Alex's "CAR".""")
     It's a  Alex's "CAR".
-    
+```    
 ---
 
 Interesting nuance between a string and a list:
 
+```Python
     >>> first="python"
     >>> second="python"
     >>> print(first is second)
@@ -415,11 +446,12 @@ Interesting nuance between a string and a list:
     False
     >>> print(list1==list2)
     True
-
+```
 ---
 
 Basic matplotlib usage. In Jupyter Notebooks, might want to use `%matplotlib inline`:
 
+```Python
     import matplotlib
     import matplotlib.pyplot as plt
     plt.plot([0, 1, 2, 3, 4], [0, 3, 5, 9, 11])
@@ -427,7 +459,7 @@ Basic matplotlib usage. In Jupyter Notebooks, might want to use `%matplotlib inl
     plt.ylabel('Books Read')
     plt.show()
     plt.savefig('books_read.png')
-
+```
 ---
 
 Other pure Python vs NumPy, vs TensorFlow, vs Keras links
@@ -438,12 +470,16 @@ https://towardsdatascience.com/numpy-vs-tensorflow-speed-on-matrix-calculations-
 
 To install anaconda3, I downloaded it,
 
+```bash
     $ chmod 755 Anaconda...
     $ ./Anaconda...
-    
+```    
+
 Added it to .zshrc    
     
+```bash
     $ conda update --all --yes
+```
 
 From https://stackoverflow.com/questions/38109270/cv2-import-error-on-jupyter-notebook :
 
@@ -451,23 +487,31 @@ By default, Anaconda (jupyter notebook) has its own version of Python & packages
 If you have Python x.x installed on your PC, and you installed OpenCV or _whatever_packages_ using the package manager of this python version, it does NOT mean your jupyter notebook will get access to these python packages you installed earlier. They are not living in the same folder.
 To illustrate this, open your windows CMD and write :
 
+```bash
     $ python 
+```
 
 then write:
 
+```bash
     $ import os
     $ os.path
+```
 
 you will get the path of your python. in my case (C:\Python35)
 
 Now open the Anaconda Prompt and write the same commands again:
 
+```bash
     $ python 
+```
 
 then write:
 
+```bash
     $ import os
     $ os.path
+```
 
 you will get the anaconda's python path. In my case (C:\Users\MY_NAME\Anaconda3).
 
@@ -500,15 +544,17 @@ https://matplotlib.org
 Calling things from Python:
 https://stackoverflow.com/questions/89228/calling-an-external-command-in-python
 
+```Python
     import subprocess
 
     p = subprocess.Popen('ls -la', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     for line in p.stdout.readlines():
         print line,
     retval = p.wait()
+```
 
 More from the link:
-1. ```os.system("some_command with args")``` passes the command and arguments to your system's shell.
+1. `os.system("some_command with args")` passes the command and arguments to your system's shell.
  This is nice because you can actually run multiple commands at once in this manner and set up pipes
   and input/output redirection. For example:
 
@@ -594,20 +640,24 @@ TFDebug, TensorBoard, Jupiter
 
 Simple birthday attack calculator(from wikipedia.org). Write this into `birthday.py`:
 
+```bash
     from math import log1p, sqrt
     
     def birthday(probability_exponent, bits):
         probability = 10. ** probability_exponent
         outputs     =  2. ** bits
         return sqrt(2. * outputs * -log1p(-probability))
+```
 
 And you can run in a REPL like so:
 
+```bash
     $ python -i birthday.py
     >>> birthday(-15, 128)
     824963474247.1193
     >>> birthday(-6, 32)
     92.68192319417072
+```
 
 ---
 
@@ -618,11 +668,13 @@ http://devarea.com/python-writing-functions-complete-guide
 
 Pattern matching
 
+```bash
     import re
     Test_String = raw_input()
     Regex_Pattern = r'sometext'	
     match = re.findall(Regex_Pattern, Test_String)
     print "Number of matches :", len(match)
+```
 
 ---
 
@@ -654,6 +706,7 @@ A simple demo of pre-defined things in a Python script.
 
 File `one.py`
     
+```bash
     def func():
         print("func() in one.py")
 
@@ -663,9 +716,11 @@ File `one.py`
         print("one.py is being run directly")
     else:
         print("one.py is being imported into another module")
+```
 
 File `two.py`
 
+```bash
     import one
 
     print("top-level in two.py")
@@ -675,27 +730,35 @@ File `two.py`
         print("two.py is being run directly")
     else:
         print("two.py is being imported into another module")
-    
+```
+
 Now, if you invoke the interpreter as
 
+```bash
     $ python one.py
+```
 
 The output will be
 
+```
     top-level in one.py
     one.py is being run directly
-
+```
 If you run two.py instead:
 
+```bash
     $ python two.py
+```
 
 You get
 
+```
     top-level in one.py
     one.py is being imported into another module
     top-level in two.py
     func() in one.py
     two.py is being run directly
+```
 
 Thus, when module one gets loaded, its __name__ equals "one" instead of "__main__".
 
@@ -703,15 +766,19 @@ Thus, when module one gets loaded, its __name__ equals "one" instead of "__main_
 
 Simple snippet to shut down the computer:
 
+```python
     import os
     os.system("shutdown /s")
+```
 
 or, more elaborate:
 
+```python
     check = input("shutdow? (y/n)")
     if(check =="n"):
         exit()
     else:
         os.system("shutdown /s")
+```
 
 ---

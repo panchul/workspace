@@ -1,13 +1,12 @@
 [Home](Readme.md)
 # PostgreSQL
 
-https://www.postgresql.org
-
 See Also:
 
 - [MySQL](MySQL.md)
 - [MS SQL Server](MSSQLServer.md)
--
+
+https://www.postgresql.org
 
 ---
 
@@ -60,17 +59,21 @@ The repository contains many different packages including third party addons. Th
 
 To install:
 
+```bash
     $ sudo apt-get -y install postgresql-all
+```
 
 ---
 
 To configure using libpq.a :
 
+```bash
     $ pg_config --libdir
      /usr/lib/x86_64-linux-gnu
 
     $ pg_config --includedir
     /usr/include/postgresql
+```
 
 ---
 
@@ -93,7 +96,7 @@ http://suite.opengeo.org/docs/latest/dataadmin/pgGettingStarted/firstconnect.htm
 
 A few simple commands in the shell(specifying the username):
 
-```
+```bash
 $ sudo -u postgres psql
 psql (10.5 (Ubuntu 10.5-0ubuntu0.18.04))
 Type "help" for help.
@@ -130,7 +133,7 @@ postgres=# SELECT * FROM mytable;
 
 psql shell commands:
 
-```
+```bash
 $ sudo -u postgres psql
 psql (10.5 (Ubuntu 10.5-0ubuntu0.18.04))
 Type "help" for help.

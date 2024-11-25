@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Hardware
 
 See Also:
@@ -16,6 +17,7 @@ See Also:
 
   - [Cameras and sensors](Hardware.md#cameras-and-sensors)
   - [Relays](Hardware.md#relays)
+  - [3D Printing](Hardware.md#3d-printing)
   - [Mechanical and structural](Hardware.md#mechanical-and-structural)
   - [Miscellaneous](Hardware.md#miscellaneious)
 
@@ -39,28 +41,6 @@ Triple Lens Borescope Inspection Camera, Teslong Professional Endoscope with Lig
 
 ---
 
-## Relays
-
----
-
-Nice relay, even with web api
-
-https://www.robotshop.com/products/devantech-eth008-b-8-x-16a-ethernet-relay
-
----
-
-## Mechanical and structural
-
----
-
-TODO: find that link where 2040 extrusion t-slotted aluminum beams were
-
----
-
-## Miscellaneious
-
----
-
 CV cameras, bundles with embedded Jetson Nano, etc.
 https://shop-en.notavis.com/starter-pack-for-embedded-vision-projects-with-mipi.html
 https://www.vision-components.com/en/service-support/knowledge-base-faq/arm-linux/
@@ -74,6 +54,57 @@ https://www.kickstarter.com/projects/opencv/opencv-ai-kit
 
 camera-module.com had neat cameras, the shopping cart is buggy,
 e-mail to contact them is info@camera-module.com
+
+---
+
+## Relays
+
+---
+
+Nice relay, even with web api
+
+https://www.robotshop.com/products/devantech-eth008-b-8-x-16a-ethernet-relay
+
+---
+
+## 3D Printing
+
+---
+
+A neat 3d printer https://ultimaker.com/en/products/ultimaker-s5
+
+---
+
+[https://www.tinkercad.com](https://www.tinkercad.com) - open-source 3d
+printing models, like GitHub for misc design(electronic, 3d printing, etc.) 
+
+---
+
+## Mechanical and structural
+
+---
+
+TODO: find that link where 2040 extrusion t-slotted aluminum beams were
+
+---
+
+- https://www.zoro.com - metal wire, etc.
+
+---
+
+## Miscellaneious
+
+---
+
+- https://www.youtube.com/watch?v=NuPMIUWbPsQ  Tutorials about OSIsoft’s PI Server HA configuration
+- https://pisquare.osisoft.com/community/Learn-PI/programming-in-pi-web-api OSIsoft website about PI programming
+- https://github.com/osisoft/PI-Web-API-Programming-Online-Course - neat course they made
+- PI SDK online videos https://pisquare.osisoft.com/community/Learn-PI/developing-applications-with-PI-AF-SDK
+- https://www.physikinstrumente.com/en/
+- https://www.thorlabs.com/navigation.cfm?guide_id=2251
+
+- A guide for selecting a camera for computer vision projects
+  http://guide.directindustry.com/choosing-the-right-machine-vision-camera/
 
 ---
 

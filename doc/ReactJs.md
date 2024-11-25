@@ -6,9 +6,10 @@ See Also:
  - [GoogleCloud(GCP)](GoogleCloud.md)
  - [Javascript](Javascript.md)
  - [NodeJs](NodeJs.md)
+ - [NextJs](NextJs.md)
  - [TypeScript](TypeScript.md)
 
-[Nodejs.org](https://nodejs.org)
+[https://react.dev/](https://react.dev/)
 
 ---
 
@@ -24,7 +25,18 @@ See Also:
 
 ---
 
+React Developer Tools
+https://react.dev/learn/react-developer-tools
+
+---
+
 ## Tutorials
+
+---
+
+Getting Started:
+
+[https://react.dev/learn](https://react.dev/learn)
 
 ---
 

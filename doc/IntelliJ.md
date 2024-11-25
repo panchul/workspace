@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # JetBrains IntelliJ IDEA
 
 An open-source ide, with a lot of plugins covering anything you want.
@@ -6,8 +7,9 @@ An open-source ide, with a lot of plugins covering anything you want.
 
 See Also:
 
- - [PyCharm](PyCharm.md)
- - [CLion](CLion.md)
+  - [CLion](CLion.md)
+  - [PyCharm](PyCharm.md)
+  - [Visual Studio Code](VisualStudioCode.md)
 
 ---
 
@@ -24,7 +26,9 @@ See Also:
 
 Simpliest on Ubuntu:
 
+```bash
     $ sudo snap install intellij-idea-community --classic
+```
 
 ---
 

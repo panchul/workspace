@@ -1,13 +1,13 @@
 [Home](Readme.md)
 # Pandas (Python library)
 
-
 See also:
 
   - [Anaconda](Anaconda.md)
   - [Jupyter](Jupyter.md)
   - [Matplotlib](Matplotlib.md)
   - [numpy](Numpy.md)
+  - [PlotlyDash](PlotlyDash.md)
   - [Python](Python.md)
 
 ---
@@ -18,11 +18,9 @@ See also:
 
 ---
 
-
 Merge, join, concatenate and compare
 
 https://pandas.pydata.org/docs/user_guide/merging.html
-
 
 https://realpython.com/pandas-merge-join-and-concat/#examples
 
@@ -36,7 +34,7 @@ https://www.geeksforgeeks.org/how-to-count-distinct-values-of-a-pandas-dataframe
 
 Removing duplicates from a dataframe
 
-```
+```Python
 import pandas as pd
 data = {
     "A": ["TeamA", "TeamB", "TeamB", "TeamC", "TeamA"],
@@ -60,7 +58,7 @@ Filtering dataframe by another dataframe
 
 https://www.includehelp.com/python/how-to-filter-rows-from-a-dataframe-based-on-another-dataframe.aspx
 
-```
+```Python
 # Importing pandas package
 import pandas as pd
 

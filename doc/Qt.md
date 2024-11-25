@@ -1,7 +1,7 @@
 [Home](Readme.md)
 # Qt
 
-http://qt-project.org
+[http://qt-project.org](http://qt-project.org)
 
 ---
 

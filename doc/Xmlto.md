@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # XMLTo
 
 https://fedoraproject.org/wiki/Infrastructure/Fedorahosted-retirement
@@ -9,9 +10,11 @@ https://fedoraproject.org/wiki/Infrastructure/Fedorahosted-retirement
 
 Install xmlto by running the following commands:
 
+```bash
     LINKS="/usr/bin/links" \
     ./configure --prefix=/usr &&
     make
+```
 
 From the link above: 
  LINKS="/usr/bin/links": This environment variable fixes a bug causing xmlto to think that links command
@@ -21,6 +24,8 @@ From the link above:
 To test the results, issue: make check.
 Now, as the root user:
 
+```bash
     make install
+```
 
 ---

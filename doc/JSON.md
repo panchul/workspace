@@ -25,26 +25,35 @@ See Also:
 
 For JSON pretty-printing, `jsonpp` works fine, can fetch with `brew`.
 
+```bash
     $ brew install jsonpp
     $ curl -s 'http://twitter.com/users/coderwall.json' | jsonpp
+```
 
 Another utility:
 
+```bash
     $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
     $ curl http://some_api_url/ | python -m json.tool
+```
    
 This last one might get crapped up with the `curl`'s progress bar, to keep it silent:
     
+```bash
     $ curl -s http://some_api_url/ | python -m json.tool
+```
 
 or, if the JSON is in a file, you can do:
 
+```bash
     $ python -m json.tool my_json.json
+```
 
 Make it an alias:
 
+```bash
     alias prettyjson='python -m json.tool'
-
+```
 ---
 
 ## Scala implementation
@@ -52,6 +61,7 @@ Make it an alias:
 Quick and dirty json formatting, from here:
 http://stackoverflow.com/questions/29203069/format-nullable-seq-or-list-of-objects-with-play-json-and-salat
 
+```Scala
     import play.api.libs.functional.syntax._
     import play.api.libs.json._
     
@@ -79,6 +89,7 @@ http://stackoverflow.com/questions/29203069/format-nullable-seq-or-list-of-objec
     
     println("boom. done.")
     }
+```
 
 ---
 
@@ -107,7 +118,7 @@ TODO
 My fork of "JSON for Modern C++ https://nlohmann.github.io/json/":
 https://github.com/panchul/json
 
-```
+```C++
 #include <iostream>
 #include <iomanip>
 #include <nlohmann/json.hpp>
@@ -179,11 +190,13 @@ int main()
 
 To properly define json object from a string:
 
+```C++
     std::string mystring="{\"myarray_of_strings\":[\"a\",\"b\"]};
     json myjson;
     std::vector<std::string> myvector;
     std::stringstream(mystring) >> myjson;
     myjson["myarray_of_strings"].get_to(myvector);
+```
 
 ---
 
@@ -195,7 +208,7 @@ https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-
 
 Part from it, basic serialization:
 
-```
+```c#
 using System.Text.Json;
 
 namespace SerializeBasic

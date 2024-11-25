@@ -33,30 +33,36 @@ https://docs.docker.com/engine/installation/
 
 Installing on Ubuntu:
 
+```bash
     $ sudo apt install docker.io
-
+```
 To start the daemon:
     
+```bash
     $ sudo systemctl start docker
-    
+```    
 To make it start automatically:
     
+```bash
     $ sudo systemctl enable docker
-
+```
 To not need run it as `sudo`:    
     
+```bash
     $ sudo usermod -aG docker $USER
-    
+```    
 In some cases you might need this:
 
+```bash
     $ sudo chmod g+rwx "$HOME/.docker" -R
-    
+```    
 You might want to re-login to apply your new group membership
 
 Testing that docker works:
 
+```bash
     $ docker run hello-world
-  
+```  
 ---
 
 Docker for Ubuntu:
@@ -103,8 +109,9 @@ https://aka.ms/webappebook
 
 Use this to force a fresh rebuild(`--no-cache` for rebuild, and `--pull` for FROM):
 
+```bash
     $ docker build --pull --no-cache --tag myimage:version .
-
+```
 ---
 
 Nice way to connect to the host network from outside of a Docker container.
@@ -113,10 +120,12 @@ https://dev.to/natterstefan/docker-tip-how-to-get-host-s-ip-address-inside-a-doc
 You can use a Linux-specific `docker-compose.override.yml`, https://docs.docker.com/compose/extends/
 Or set the gateway via environment. E.g. in `~/.bashrc`:
 
+```bash
     export DOCKER_GATEWAY_HOST=172.17.0.1
+```
+and the `.yaml`:
 
-and the .yaml:
-
+```yaml
     # docker-compose.yml
     version: '3.7'
     services:
@@ -126,7 +135,7 @@ and the .yaml:
           - "8080:8080"
         environment:
           DB_UPSTREAM: http://${DOCKER_GATEWAY_HOST:-host.docker.internal}:3000
-
+```
 ---
 
 Nice article on how to optimize Docker containers (to not duplicate already stored content,
@@ -137,6 +146,7 @@ https://dev.to/sammyvimes/docker-on-a-diet-1n6j
 
 One of the ways to see the disk usage:
 
+```bash
     $ docker system df -v
 
     Images space usage:
@@ -152,7 +162,7 @@ One of the ways to see the disk usage:
     ...
     1ac3653c24d7        53911b53e21b        "/bin/server.out "       0                   0B                  6 weeks ago ago     Exited (137) 6 weeks ago   peaceful_carson
     ...
-
+```
 ---
 
 Nice summary of `Entrypoint` vs `CMD`
@@ -164,11 +174,15 @@ In some way it is similar to these facts:
 
 To run a stdout redirect in a sudo line, this helped:
 
+```bash
     $ sudo sh -c "echo $1 > /tmp/myserver$1/myid "
+```
 
 Without "sh -c" did not work:
 
+```bash
     $ sudo echo $1 > /tmp/zookeeper$1/myid         <----- is not allowed.
+```
 
 ---
 
@@ -190,6 +204,7 @@ https://circleci.com/blog/its-the-future/ An article about Docker and Vagrant
 Quick and simple Dockerfile.
 Write this into file name `Dockerfile`
 
+```dockerfile
     FROM ubuntu:trusty
     RUN echo 'I like Docker, and it works!'
     CMD ping localhost
@@ -197,62 +212,73 @@ Write this into file name `Dockerfile`
     # Might want to do something like:
     # ENTRYPOINT ["/bin/ping","-c","3"]
     # CMD ["localhost"]
+```
 
 Then build an image
 
+```bash
     $ docker build -t mydemo
-    
+```    
 Then run the image:
 
+```bash
     $ docker run 3485629465 -d
-         
+```         
 See that it runs:
 
+```bash
     $ docker ps -l --no-trunc
-
+```
 See what it is outputting:
 
+```bash
     $ docker logs 2364586249
-    
+```    
 ---
 
 If the services are running on their own, the entry point could be just command like
 
+```bash
     $ /bin/bash -c tail -f /usr/local/mywebserver/log.out
-
+```
 ---
 
 Example how to save a docker image in a file:
 
+```bash
     $ docker image save docker-myrepo.com/base/myserver:myversion-1.2.3 | gzip > mybase_myserver_myversion-1.2.3.docker.tgz
+```
 
 And restore in a similar fashion.
 
 ---
 
 Neat trick to use dockerized Kafka instead of the command line.
-```--rm``` removes the container when exits.
-```-i```  interactive mode 
-```-t```  allocate pseudo tty 
+`--rm` removes the container when exits.
+`-i`  interactive mode 
+`-t`  allocate pseudo tty 
 
+```bash
     $ docker run --rm -it ches/kafka:0.10.1.0 bin/kafka-topics.sh --zookeeper mykafka.mykafkadomain:2181 --topic testTopic --describe
     Topic:testTopic	PartitionCount:3	ReplicationFactor:1	Configs:
 	    Topic: testTopic	Partition: 0	Leader: 1001	Replicas: 1001	Isr: 1001
-
+```
 ---
 
 Transferring files in and out of a container without mounting volumes.
 
+```bash
     $ docker cp ~/file.txt $container_id:/home/me/
     $ docker cp $container_id:/home/me/file.txt .
-
+```
 ---
 
 Linking containers. E.g. Zookeeper and Kafka on containers, with internal network named ```myzk```:
 
+```bash
     $ docker run --name my-zookeeper -p 2181:2181 myartefactory:8080/my-zookeeper
     $ docker run --link my-zookeeper:myzk --name my-kafka -p 9092:9092 myartefactory:8080/my-kafka
-
+```
 ---
 
 From here: https://docs.docker.com/compose/bundles/

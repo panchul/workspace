@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Hash Table
 
 See Also:
@@ -9,11 +10,14 @@ See Also:
 https://en.wikipedia.org/wiki/Hash_table
 
 Hash table (`unordered_map` in C++)
+
+```
 Algorithm	Average	Worst case
 Space		O(n)	O(n)
 Search		O(1)	O(n)
 Insert		O(1)	O(n)
 Delete		O(1)	O(n)
+```
 
 ---
 
@@ -22,6 +26,7 @@ incise.org/hash-table-benchmarks.html
 
 ---
 
+```C++
     #include <iostream>
     #include <string>
     #include <unordered_map>
@@ -52,11 +57,13 @@ incise.org/hash-table-benchmarks.html
         }
         return 0;
     }
-        
+```
+
 ---
 
 Another snippet from my sandbox:    
     
+```C++
     // $ g++ -std=c++1z <filename> 
     #include <iostream>
     #include <string>
@@ -104,5 +111,6 @@ Another snippet from my sandbox:
         }
         return 0;
     }
+```
 
 ---
