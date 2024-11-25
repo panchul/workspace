@@ -20,6 +20,7 @@ Contents
 - [Populating an empty repo](Git.md#populating-an-empty-repository)
 - [Undoing things](Git.md#undoing-things)
 - [Working with multiple remotes](Git.md#working-with-multiple-remotes)
+- [Renaming branches](Git.md#renaming-branches)
 - [gitignore](Git.md#gitignore)
 - [Troubleshooting](Git.md#troubleshooting)
   - [error 400 curl 22 ...](Git.md#error-rpc-failed-http-400-curl-22-the-requested-url-returned-error-400)
@@ -252,7 +253,9 @@ See more on it [on stackoverflow.com](https://stackoverflow.com/questions/183575
 
 ---
 
+```bash
     $ git push <remote> <local_branch>:<remote_name>
+```
 
 As an example, let’s say that you have created a local branch named “my-feature”.
 
@@ -311,6 +314,21 @@ E.g. pushing to remote 'origin':
     remote: Resolving deltas: 100% (1/1), completed with 1 local object.
     To https://github.com/someaccount/repo.git
         afc4881..9ae0aee  my-feature -> feature
+```
+
+---
+
+## Renaming branches
+
+---
+
+Switching from `master` to `main`:
+
+```bash
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
 ```
 
 ---
