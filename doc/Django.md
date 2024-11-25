@@ -10,6 +10,9 @@ See Also:
   - [Flask](Flask.md)
   - [Gunicorn](Gunicorn.md)
    
+[https://www.djangoproject.com/](https://www.djangoproject.com/)
+
+---
 
 **Content**
 
@@ -34,7 +37,9 @@ See Also:
 
 If you created your own Pyton environment, which is a best practice, this should do it:
 
+```bash
     $ python -m pip install django
+```
 
 ---
 
@@ -44,26 +49,34 @@ do it with the command line:
 
 Check that Django is there:
 
+```bash
     $ python -m django --version
+```
 
 Install if needed:
 
+```bash
     $ python -m pip install django
     $ python -m django --version
     $ python -m pip install --upgrade pip
+```
 
 Create a project:
 
+```bash
     $ django-admin startproject firstproject
+```
 
 Go to that folder and run the server:
 
+```bash
     $ cd firstproject
     $ python manage.py runserver
     ...
     Django version 4.1.4, using settings 'firstproject.settings'
     Starting development server at http://127.0.0.1:8000/
     Quit the server with CONTROL-C.
+```
 
 See your site in browser in http://127.0.0.1:8000/
 
@@ -75,24 +88,34 @@ See your site in browser in http://127.0.0.1:8000/
 
 To start a new project `myprojectname`:
 
+```bash
     $ django-admin startproject myprojectname
+```
 
 It will create the needed files and subfolder `myprojectname`. Go there and run:
 
+```bash
     $ cd myprojectname
     $ python manage.py runserver
+```
 
 It runs a development server. It shows the url where it hosts it, http://127.0.0.1:8000. `Ctrl-C` to stop it.
 
+```bash
     $ python manage.py startapp website
+```
 
 You need to run the migrations:
     
+```bash
     $ python manage.py migrate
+```
 
 There is an admin user you can create:
     
+```bash
     $ python manage.py createsuperuser
+```
 
 It will ask for username and password.
 
@@ -107,25 +130,35 @@ You can now open in browser the link /admin, and create or manipulate the object
 
 The second step is to generate a migration.
 
+```bash
     $ python manage.py makemigrations
+```
 
 To see the migrations(the ones you generated, or from before):
 
+```bash
     $ python manage.py showmigrations
+```
 
 Apply migrations
 
+```bash
     $ python manage.py migrate
+```
 
 To look at the result of the applying migrations, you can use:
 
+```bash
     $ python manage.py dbshell
+```
 
 In case of SQLite, you can type `.tables` to see the tables, etc.
 
 To see what the migration will do in sql(`0001` is a partial migration name, it will look it up):
 
+```bash
     $ python manage.py sqlmigrate myappname 0001
+```
 
 ---
 
@@ -139,22 +172,28 @@ To see what the migration will do in sql(`0001` is a partial migration name, it 
 
 The `for` loop looks something like this:
 
+```xml
     <ul>
         {% for A in As %}
           whatever, usually <li>
             {{A}}   ----- the one that has __str__ implemented
         {% endfor %}
     </ul>
+```
 
 Template inheritance is using:
 
+```xml
     {% extends "base.html" %}
+```
 
 The blocks have names, you can overwrite the content of a block like so:
 
+```xml
     {% block block_name %}
         here goes the stuff
     {% endblock %}
+```
 
 ---
 
@@ -164,12 +203,14 @@ The blocks have names, you can overwrite the content of a block like so:
 
 By convention, `static` folder is for the static content, .css, pictures, etc.
 
+```xml
     {% load static %}
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <link rel="stylesheet"
             href="{% static 'website/style.css' %}">
+```
 
 ---
 
@@ -179,16 +220,20 @@ By convention, `static` folder is for the static content, .css, pictures, etc.
 
 Example of the mapping:
 
+```xml
     urlpatterns = [
         path('<int:id>', detail)
     ]
+```
 
 You can reference mapping from another location using `include`
 
+```xml
     urlpatterns = [
         path('<int:id>', detail),
         path('meetings/', include('meetings.urls')),
     ]
+```
 
 ---
 
@@ -212,23 +257,31 @@ https://docs.djangoproject.com/en/4.1/howto/deployment/
 
 Running Django with the warnings about deprecation, use `-Wa` flag:
 
+```bash
     $ python -Wa manage.py runserver
+```
 
 ---
 
 To use a different port:
 
+```bash
     $ python manage.py runserver 0.0.0.0:8080
+```
 
 You may need to allow the access to this port, see what the check says: 
 
+```bash
     $ python manage.py check --deploy
+```
 
 ---
 
 As a quick-and-dirty deployment to port 80, point to the proper venv executable:
 
+```bash
     $ sudo /home/alexp/venv/bin/python manage.py runserver 80
+```
 
 A broader discussion on permissions and best practices:
 
@@ -244,7 +297,9 @@ Several things to do to get the Django-debug-toolbar.
 
 In the right venv, install the package:
 
+```bash
     $ pip install django-debug-toolbar
+```
 
 Add the URL path:
 
@@ -306,11 +361,15 @@ for example a module ModuleName and views/forms for that test:
 
 Then you can run tests using:
 
+```bash
     $ python manage.py test
+```
 
 Or specify
 
+```bash
     $ python manage.py test ModuleName
+```
 
 ---
 

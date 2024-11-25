@@ -28,7 +28,9 @@ Some information is also in `${HOME}/.digrc`
 
 dig - DNS lookup utility
 
+```bash
     $ dig panchul.us
+```
      
 ---
 

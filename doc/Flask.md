@@ -1,8 +1,6 @@
 [Home](Readme.md)
 # Flask
 
-(Http endpoint)
-
 See Also:
 
   - [Django](Django.md)
@@ -10,6 +8,19 @@ See Also:
   - [Jupyter](Jupyter.md)
   - [Nginx](Nginx.md)
   - [Plotly Dash](PlotlyDash.md)
+
+(Http endpoint)
+
+---
+
+**Contents**
+
+- [Installing](Flask.md#installing)
+- [Miscellaneous](Flask.md#miscellaneous)
+
+---
+
+## Installing
 
 ---
 

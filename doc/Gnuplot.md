@@ -10,7 +10,9 @@ http://gnuplot.sourceforge.net/demo/
 ---
 
 To draw a file, and persist it, use `-p`:
-    
+
+```bash    
     $ gnuplot -p gnuplot.dem 
-     
+```
+
 ---     
