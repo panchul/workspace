@@ -1,13 +1,13 @@
 [Home](Readme.md)
 # Eclipse
 
-https://www.eclipse.org/downloads/
-
 See Also:
 
  - [CLion](CLion.md)
  - [IntelliJ](IntelliJ.md)
  - [Visual Studio Code](VisualStudioCode.md)
+
+[https://www.eclipse.org/downloads/](https://www.eclipse.org/downloads/)
 
 ---
 

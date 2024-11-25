@@ -1,10 +1,14 @@
 [Home](Readme.md)
-# nvm
+# nvm (Node Version Manager)
 
 See Also:
 
- - [NodeJs](NodeJs.md)
- - [ReactJs](ReactJs.md)
+  - [AngularJs](AngularJs.md)
+  - [NodeJs](NodeJs.md)
+  - [Npm](Npm.md)
+  - [ReactJs](ReactJs.md)
+
+[https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
 ---
 
@@ -18,6 +22,22 @@ See Also:
 ## Installing 
 
 ---
+
+Here's the link with the Install and Update script:
+
+https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+
+---
+
+You can use an [Ansible](Ansible.md) task:
+
+```yaml
+- name: Install nvm
+  ansible.builtin.shell: >
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+```
 
 ## Miscellaneous
 

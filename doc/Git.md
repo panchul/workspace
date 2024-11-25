@@ -18,9 +18,10 @@ Contents
   - [Github CLI(`gh`)](Git.md#github-cli)
 - [Configuring ssh](Git.md#configuring-ssh)
 - [Populating an empty repo](Git.md#populating-an-empty-repository)
+- [Renaming branches](Git.md#renaming-branches)
 - [Undoing things](Git.md#undoing-things)
 - [Working with multiple remotes](Git.md#working-with-multiple-remotes)
-- [Renaming branches](Git.md#renaming-branches)
+- [Syncing with the original repo after forking](Git.md#syncing-with-the-original-repo-after-forking)
 - [gitignore](Git.md#gitignore)
 - [Troubleshooting](Git.md#troubleshooting)
   - [error 400 curl 22 ...](Git.md#error-rpc-failed-http-400-curl-22-the-requested-url-returned-error-400)
@@ -155,6 +156,21 @@ Create a new repository on the command line:
     git branch -M main
     git push -u origin main
 ```
+---
+
+## Renaming branches
+
+---
+
+Switching from `master` to `main`:
+
+```bash
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
+
 ---
 
 ## Undoing things
@@ -318,22 +334,97 @@ E.g. pushing to remote 'origin':
 
 ---
 
-## Renaming branches
+## Syncing with the original repo after forking
 
----
+Configuring a remote for a fork
+(from here: https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
-Switching from `master` to `main`:
+You must configure a remote that points to the upstream repository in Git to sync changes you make in
+ a fork with the original repository. This also allows you to sync changes made in the original
+  repository with the fork.
+
+Open Terminal.
+
+List the current configured remote repository for your fork.
 
 ```bash
-git branch -m master main
-git fetch origin
-git branch -u origin/main main
-git remote set-head origin -a
+    $ git remote -v
+    origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+    origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+```
+
+Specify a new remote upstream repository that will be synced with the fork.
+
+```bash
+    $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+```
+
+Verify the new upstream repository you've specified for your fork.
+
+```bash
+    $ git remote -v
+    origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+    origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+    upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+    upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+```
+
+Syncing a fork
+(from https://help.github.com/articles/syncing-a-fork/)
+
+Sync a fork of a repository to keep it up-to-date with the upstream repository.
+Before you can sync your fork with an upstream repository, you must configure a remote that points to
+ the upstream repository in Git.
+
+Open Terminal.
+
+Change the current working directory to your local project.
+
+Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master.
+
+```bash
+    $ git fetch upstream
+    remote: Counting objects: 75, done.
+    remote: Compressing objects: 100% (53/53), done.
+    remote: Total 62 (delta 27), reused 44 (delta 9)
+    Unpacking objects: 100% (62/62), done.
+    From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
+     * [new branch]      master     -> upstream/master
+```
+
+Check out your fork's local master branch.
+
+```bash
+    $ git checkout master
+    Switched to branch 'master'
+```
+
+Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
+
+```bash
+    $ git merge upstream/master
+    Updating a422352..5fdff0f
+    Fast-forward
+     README                    |    9 -------
+     README.md                 |    7 ++++++
+     2 files changed, 7 insertions(+), 9 deletions(-)
+     delete mode 100644 README
+     create mode 100644 README.md
+```
+
+If your local branch didn't have any unique commits, Git will instead perform a "fast-forward":
+
+```bash
+    $ git merge upstream/master
+    Updating 34e91da..16c56ad
+    Fast-forward
+     README.md                 |    5 +++--
+     1 file changed, 3 insertions(+), 2 deletions(-)
 ```
 
 ---
 
-## gitignore
+## .gitignore
 
 ---
 
@@ -343,7 +434,7 @@ A `.gitignore` generator: [gitignore.io](gitignore.io)
 
 Example Unity .gitignore, based on https://github.com/github/gitignore/blob/master/Unity.gitignore :
 
-```
+```bash
 .DS_Store
 # vi
 .*.swp
@@ -445,9 +536,9 @@ As per https://stackoverflow.com/questions/62753648/rpc-failed-http-400-curl-22-
     git config http.postBuffer 524288000
 ```
 
-pull/push, and it helped, with a warning:
+`pull/push`, and it helped, with a warning:
 
-```
+```bash
 remote: warning: See https://gh.io/lfs for more information.
 remote: warning: File ... is 80.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
 remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
@@ -474,11 +565,15 @@ Update the email settings on the web in Settings.
 
 A no-reply email is the user id plus `@users.noreply.github.com`
 
+```bash
     $ git config --global user.email <your_noreply_email_address>
+```
 
 Verify it set ok:
 
+```bash
     $ git config --global user.email
+```
 
 ---
 
@@ -578,8 +673,7 @@ https://help.github.com/en/github/managing-packages-with-github-packages/about-g
 ---
 
 Git commit guidelines:
-
-    https://chris.beams.io/posts/git-commit/
+https://chris.beams.io/posts/git-commit/
 
 ---
 
@@ -590,11 +684,13 @@ https://www.sourcetreeapp.com/
 
 Sometimes you need to run `apt-get update` to see git package. For example in a Dockerfile:
 
+```dockerfile
     ...
     RUN apt-get update
     RUN apt-get -y install git
     ...
-    
+```
+
 - did not work without update, for some distros of ubuntu.
 
 ---
@@ -619,9 +715,11 @@ There were some issues with the credentials on Cygwin.
 
 In `.gitignore`, to exclude a file from bing ignored, use `!filename`, for example:
 
+```bash
     ...
     some_local_folder
     !some_local_folder/.git_keep
+```
 
 ---
 
@@ -701,6 +799,7 @@ Create git group and git user (restrict them properly).
 Crate folder `/srv/git/`
 Create file `/etc/systemd/system/git-daemon.service`:
 
+```
     ==================
     [Unit]
     Description=Start Git Daemon
@@ -721,7 +820,8 @@ Create file `/etc/systemd/system/git-daemon.service`:
     [Install]
     WantedBy=multi-user.target
     ==================
-    
+```
+
 Run to automatically start the service on boot.
    
 ```bash
@@ -782,7 +882,9 @@ https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
 If you write a script with name `git-somename`, and add it to PATH,
 git will execute it when you run, for example:
 
+```bash
     $ git somename arg1 arg2 whatever
+```
 
 ---
 
@@ -815,96 +917,6 @@ There is a feature in git, to make easier merging:
 ```
 
 It saves left and right for the merge and caches the resolution.
-
----
-
-Syncing with the original repo after forking.
-
-Configuring a remote for a fork
-(from here: https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-
-You must configure a remote that points to the upstream repository in Git to sync changes you make in
- a fork with the original repository. This also allows you to sync changes made in the original
-  repository with the fork.
-
-Open Terminal.
-
-List the current configured remote repository for your fork.
-
-```bash
-    $ git remote -v
-    origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
-    origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
-```
-
-Specify a new remote upstream repository that will be synced with the fork.
-
-```bash
-    $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
-```
-
-Verify the new upstream repository you've specified for your fork.
-
-```bash
-    $ git remote -v
-    origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
-    origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
-    upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
-    upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
-```
-
-Syncing a fork
-(from https://help.github.com/articles/syncing-a-fork/)
-
-Sync a fork of a repository to keep it up-to-date with the upstream repository.
-Before you can sync your fork with an upstream repository, you must configure a remote that points to
- the upstream repository in Git.
-
-Open Terminal.
-
-Change the current working directory to your local project.
-
-Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master.
-
-```bash
-    $ git fetch upstream
-    remote: Counting objects: 75, done.
-    remote: Compressing objects: 100% (53/53), done.
-    remote: Total 62 (delta 27), reused 44 (delta 9)
-    Unpacking objects: 100% (62/62), done.
-    From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
-     * [new branch]      master     -> upstream/master
-```
-
-Check out your fork's local master branch.
-
-```bash
-    $ git checkout master
-    Switched to branch 'master'
-```
-
-Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
-
-```bash
-    $ git merge upstream/master
-    Updating a422352..5fdff0f
-    Fast-forward
-     README                    |    9 -------
-     README.md                 |    7 ++++++
-     2 files changed, 7 insertions(+), 9 deletions(-)
-     delete mode 100644 README
-     create mode 100644 README.md
-```
-
-If your local branch didn't have any unique commits, Git will instead perform a "fast-forward":
-
-```bash
-    $ git merge upstream/master
-    Updating 34e91da..16c56ad
-    Fast-forward
-     README.md                 |    5 +++--
-     1 file changed, 3 insertions(+), 2 deletions(-)
-```
 
 ---
 

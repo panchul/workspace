@@ -1,8 +1,6 @@
 [Home](Readme.md)
 # Docker
 
-https://www.docker.com/
-
 See Also:
 
   - [CUDA](CUDA.md)
@@ -11,6 +9,8 @@ See Also:
   - [Kubeflow](Kubeflow.md)
   - [Kubernetes](Kubernetes.md)
   - [LXD, Linux Containers](LXD.md)
+
+[https://www.docker.com/](https://www.docker.com/)
 
 My Docker sandbox is [https://github.com/panchul/sb_docker](https://github.com/panchul/sb_docker).
 

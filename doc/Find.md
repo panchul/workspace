@@ -1,13 +1,13 @@
 [Home](Readme.md)
 # Find
 
-Standard Unix command.
-
 See also:
 
  - [Linux](Linux.md)
  - [Grep](Grep.md)
  - [Xargs](Xargs.md)
+
+Standard Unix command.
 
 ---
 

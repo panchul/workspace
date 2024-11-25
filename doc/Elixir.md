@@ -1,12 +1,12 @@
 [Home](Readme.md)
 # Elixir
 
-https://elixir-lang.org/
-https://elixir-lang.org/install.html
-
 See Also:
 
 - [Erlang](Erlang.md)
+
+https://elixir-lang.org/
+https://elixir-lang.org/install.html
 
 ---
 

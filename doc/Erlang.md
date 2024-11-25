@@ -3,11 +3,12 @@
 
 See Also:
 
-  - rebar  
-  - meck  
-  - common test(CT)  
-  - eunit  
-  - [Yaws](Yaws.md) - a dynamic web server in Erlang
+   - common test(CT)  
+  - [Elixir](Elixir.md)
+   - eunit  
+   - meck  
+   - rebar  
+   - [Yaws](Yaws.md) - a dynamic web server in Erlang
 
 My Erlang sandbox is [https://github.com/panchul/sb_erlang](https://github.com/panchul/sb_erlang).
 
@@ -15,34 +16,13 @@ My Erlang sandbox is [https://github.com/panchul/sb_erlang](https://github.com/p
 
 **Contents**
 
+- [Installing](Erlang.md#installing)
+- [Miscellaneous](Erlang.md#links)
 - [Links](Erlang.md#links)
 
 ---
 
-A refresher on exceptions
-
-```
--module(test_throw).
--compile([export_all, debug_info]).
-
-gen_exception(1) -> a;
-gen_exception(2) -> throw(a);
-gen_exception(3) -> exit(a);
-gen_exception(4) -> {'EXIT', a};
-gen_exception(5) -> erlang:error(a).
-
-demo1() ->
-	[catcher(I) || I <- [1,2,3,4,5]].
-
-catcher(N) ->
-	try gen_exception(N) of
-		Val -> {N, normal, Val}
-	catch
-		throw:X -> {N, caught, thrown, X};
-		exit:X -> {N, caught, exited, X};
-		error:X -> {N, caught, error, X}
-	end.
-```
+## Installing
 
 ---
 
@@ -69,6 +49,7 @@ Pre-requisites are needed, depending on what you want to do with it.
 
 Another way to install, with recompiling:
 
+```bash
     $ tar xzf otp_src_20.0.tar.gz 
     $ cd otp_src_20.0/
     $ export ERL_TOP=`pwd`
@@ -76,8 +57,38 @@ Another way to install, with recompiling:
     $ ./make
     $ sudo make install
     $ erl
+```
 
 It skips several components, like wxWidgets, disables OpenSSL and ODBC, uses fakefop instead of the real one.
+
+---
+
+## Miscellaneous
+
+A refresher on exceptions
+
+```Erlang
+-module(test_throw).
+-compile([export_all, debug_info]).
+
+gen_exception(1) -> a;
+gen_exception(2) -> throw(a);
+gen_exception(3) -> exit(a);
+gen_exception(4) -> {'EXIT', a};
+gen_exception(5) -> erlang:error(a).
+
+demo1() ->
+	[catcher(I) || I <- [1,2,3,4,5]].
+
+catcher(N) ->
+	try gen_exception(N) of
+		Val -> {N, normal, Val}
+	catch
+		throw:X -> {N, caught, thrown, X};
+		exit:X -> {N, caught, exited, X};
+		error:X -> {N, caught, error, X}
+	end.
+```
 
 ---
  
@@ -96,6 +107,7 @@ https://github.com/processone/ejabberd-vagrant-dev
 
 Simple Erlang script template
 
+```erlang
     #!/usr/bin/env escript
     main([Arg]) ->
       case Arg of
@@ -106,11 +118,13 @@ Simple Erlang script template
       end;
     main(_) ->
         io:format("something else~n").
-    
+```
+
 ---
 
 Snippet adding two numbers from the input:
 
+```erlang
     -module(solution).
     -export([main/0]).
 
@@ -121,11 +135,13 @@ Snippet adding two numbers from the input:
         {ok, [A, B]} = io:fread("", "~d~d"),
         Res = sum_it_up(A,B),
         io:format("~p~n",[Res]).
-    
+```
+
 ---    
 
 Snippet printing something N times
 
+```erlang
     -module(solution).
     -export([main/0]).
 
@@ -139,7 +155,8 @@ Snippet printing something N times
         {N, _} = string:to_integer(string:chomp(io:get_line(""))),
         myprint(N),
         ok.
-    
+```
+
 ---    
 
 ## Links

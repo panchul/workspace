@@ -3,11 +3,16 @@
 
 See Also:
 
-- [Flutter](Flutter.md)
-- [MEAN Stac](MEANStack.md)
-- [NodeJs](NodeJs.md)
-- [ReactJs](ReactJs.md)
-- [Other frameworks](Readme.md#web-frameworks-servers-etc)
+  - [Flutter](Flutter.md)
+  - [MEAN Stac](MEANStack.md)
+  - [NodeJs](NodeJs.md)
+  - [Npm](Npm.md)
+  - [ReactJs](ReactJs.md)
+  - [Other frameworks](Readme.md#web-frameworks-servers-etc)
+
+
+[https://angular.dev/](https://angular.dev/)
+
 
 ---
 
@@ -23,7 +28,28 @@ See Also:
 
 ---
 
-...
+Prerequisite: [Node.js](NodeJs.md)
+
+
+Clean Getting Started is, using [npm](Npm.md):
+
+```bash
+npm install -g @angular/cli
+```
+
+and to create a new project:
+
+```bash
+ng new <project-name>
+```
+
+then cd to that folder, and
+
+```bash
+npm start
+```
+
+You will have the app running on the localhost, with port it says (probably 4200)
 
 ---
 
@@ -32,7 +58,7 @@ To fix the local angular cli version not matching global, these helped.
 (https://stackoverflow.com/questions/50415235/how-to-change-upgrade-or-downgrade-angular-version)
 
 ```bash
-    $ npm install -g @angular/cli       ß----------- installed global version.
+    $ npm install -g @angular/cli       <----------- installed global version.
     $ npm uninstall -g angular-cli
     $ npm cache clean
     $ npm install -g angular-cli@1.6.1

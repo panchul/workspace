@@ -3,8 +3,10 @@
 
 See Also:
 
- - [TypeScript](TypeScript.md)
- - [Kotlin](Kotlin.md)
+  - [Erlang](Erlang.md)
+  - [Kotlin](Kotlin.md)
+  - [Scala](Scala.md)
+  - [TypeScript](TypeScript.md)
 
 **Contents**
 
@@ -43,7 +45,6 @@ sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/Java
 
 The `"path"` could be `"/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home"`. They are the same.
 
-
 ---
 
 To get Java 17 on Mac with homebrew:
@@ -68,7 +69,9 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 To install JDK on CentOS:
 (https://stackoverflow.com/questions/20901442/how-to-install-jdk-in-centos)
 
+```bash
     $ sudo yum install java-1.8.0-openjdk
+```
 
 ---
 
@@ -100,10 +103,15 @@ https://www.youtube.com/watch?v=aKGYa6Y9r60
 ---
 
 To download the jdk
+```bash
 $ wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+```
 
 This worked better:
+
+```bash
 $ wget  --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+```
 
 ---
 

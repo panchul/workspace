@@ -4,13 +4,30 @@
 See Also:
 
   - [CSharp](CSharp.md)
-  - 
+
+**Contents**
+
+- [Installing](EntityFramework.md#installing)
+- [Tutorials](EntityFramework.md#tutorials)
+- [Miscellaneous](EntityFramework.md#miscellaneous)
+
+---
+
+## Installing
+
+---
+
+## Tutorials
 
 ---
 
 Entity Framework Tutorial
 
 https://www.entityframeworktutorial.net/efcore/configure-one-to-many-relationship-using-fluent-api-in-ef-core.aspx
+
+---
+
+## Miscellaneous
 
 ---
 
@@ -69,12 +86,14 @@ I have the problem with Entity Migration, Entity 6.4 and with Microsoft.Net.SDK 
 
 I resolved it by editing my Data project with :
 
+```xml
     <ItemGroup>
       <EmbeddedResource Update="**\*.resx">
         <DependentUpon>$([System.String]::Copy('%(FileName)')).cs</DependentUpon>
       </EmbeddedResource>
     </ItemGroup>
- 
+``` 
+
 ---
 
 Neat diagrams for the sharded multitenant dbs:
