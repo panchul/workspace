@@ -163,3 +163,9 @@ Quick 101 on VS (not Code) debugging tricks for multithreading.
 https://www.youtube.com/watch?v=ISDaHM1cHXk
 
 ---
+
+To turn off restoring previous session (files and folders):
+
+Setting is something like `"window.restoreWindows": "none"`
+
+---
