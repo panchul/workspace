@@ -28,6 +28,14 @@ https://mac.install.guide/ruby/update
 
 See [Do NOT Use the MacOS System Ruby](https://mac.install.guide/faq/do-not-use-mac-system-ruby/)
 
+You may need to put the keg-only ruby ahead of the default (which is MacOS's ruby)
+
+```bash
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib $LDFLAGS"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include $CPPFLAGS"
+```
+
 ---
 
 ## Miscellaneous
