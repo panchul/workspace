@@ -25,6 +25,16 @@ See Also:
 
 ---
 
+The prefered way is to use [`nvm`](Nvm.md). E.g. for 22.11.0 LTS:
+
+```bash
+% nvm install 22.11.0
+% nvm use 22.11.0
+Now using node v22.11.0 (npm v10.9.0)
+```
+
+---
+
 Use `nodemon` to not need restarting a node app all the time.
 
 To install globally using [`npm`](Npm.md):

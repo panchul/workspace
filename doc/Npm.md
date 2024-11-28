@@ -25,6 +25,35 @@ See Also:
 
 ---
 
+Install it via [nvm](Nvm.md):
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+```
+
+Node.js v22.11.0 is latest LTS. So,
+
+```bash
+% nvm install 22.11.0
+
+Downloading and installing node v22.11.0...
+Downloading https://nodejs.org/dist/v22.11.0/node-v22.11.0-darwin-arm64.tar.xz...
+######################################################################### 100.0%
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v22.11.0 (npm v10.9.0)
+Creating default alias: default -> 22.11.0 (-> v22.11.0)
+```
+
+And activate it:
+
+```bash
+% nvm use 22.11.0
+Now using node v22.11.0 (npm v10.9.0)
+```
+
+---
+
 ## Creating a package
 
 ---
