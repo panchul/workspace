@@ -33,6 +33,50 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 
 ## Installing
 
+Here is a package downloadable for Mac: https://www.python.org/downloads/
+
+And the SSL certificates here: https://pypi.org/project/certifi/
+
+## pyenv
+
+To have multiple versions of Python:
+
+From  [https://github.com/pyenv/pyenv](https://github.com/pyenv/pyenv), for Mac:
+
+```bash
+brew update
+brew install pyenv
+```
+
+for `zsh`:
+
+```zsh
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+```
+
+If you wish to get Pyenv in noninteractive login shells as well, also add the commands to `~/.zprofile` or `~/.zlogin`.
+
+Running `pyenv install -l` gives the list of all available versions.
+
+To install another one:
+
+```bash
+pyenv install 3.11
+```
+To select it:
+
+```bash
+pyenv global 3.11
+```
+
+You may need to restart - the tieing of the version is in `.zshrc`.
+
+Now you can create the venv of your choosing, under this version.
+
+## venv
+
 ---
 
 Good practice is to use virtual environments, e.g. `venv`
