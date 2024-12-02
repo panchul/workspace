@@ -17,6 +17,7 @@ See Also:
 
 - [Installing](Npm.md#installing)
 - [Creating a package](Npm.md#creating-a-package)
+- [Deploying](Npm.md#deploying)
 - [Miscellaneous](Npm.md#miscellaneous)
 
 ---
@@ -91,6 +92,60 @@ This will install globally:
     
 ```bash
     $ npm install -g eslint
+```
+
+---
+
+## Deploying
+
+---
+
+About `package-lock.json`
+
+https://stackoverflow.com/questions/44206782/do-i-commit-the-package-lock-json-file-created-by-npm-5
+
+Yes, you SHOULD:
+
+- commit the `package-lock.json`.
+- use npm ci instead of npm install when building your applications both on your CI and your local development machine
+
+The npm ci workflow requires the existence of a package-lock.json.
+
+---
+
+About `npm run build`, vs `npm install`, vs `npm start`:
+
+https://stackoverflow.com/questions/43664200/what-is-the-difference-between-npm-install-and-npm-run-build
+
+`npm install`: installs dependencies, then calls the install from the package.json scripts field.
+
+`npm run build`: runs the build field from the package.json scripts field.
+
+---
+
+To specify a port, other than default ( 3000 ):
+
+```bash
+npm start -- --port 8000
+```
+
+Actually, you can modify in package.json:
+
+```json
+"start": "PORT=3001 react-scripts start",
+"start-pc": "set PORT=3001&& react-scripts start",
+```
+
+Than on mac:
+
+```bash
+npm start
+```
+
+On pc:
+
+```bash
+npm run start-pc
 ```
 
 ---

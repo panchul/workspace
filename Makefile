@@ -51,7 +51,7 @@ help: # Show this help
 
 status_all: git_status
 
-git_status: # Status of repositories (public and private, from private_repo_list)
+git_status: # Status of repositories (public and private, from `private_repo_list.txt`)
 	@echo "Checking sandboxes..."
 	@ for repo in `ls projects | grep sb_` ; \
 	   do sh -c "echo \"Checking \\\"projects/$$repo\\\"...\" ; cd \"projects/$$repo\" ; git fetch ; git status -sb ; cd ../.. " ; \

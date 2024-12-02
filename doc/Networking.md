@@ -393,6 +393,14 @@ To see who is using a port(and there is also utility `ss`):
 
     $ ps aux | grep 10177
 
+On mac it is
+
+```bash
+sudo lsof -i :5000 | grep LISTEN
+```
+
+
+
 ---
 
 Stupid OSI layers nobody ever remembers right:

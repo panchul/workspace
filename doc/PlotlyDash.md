@@ -21,6 +21,12 @@ Homepage and other useful pages:
 
 - [https://dash-bootstrap-components.opensource.faculty.ai/docs/components/layout](https://dash-bootstrap-components.opensource.faculty.ai/docs/components/layout)
 
+- More samples from Plotly: [https://github.com/plotly/dash-cytoscape/tree/master/demos](https://github.com/plotly/dash-cytoscape/tree/master/demos)
+
+- [demos from cytoscape.org](https://js.cytoscape.org/#demos)
+
+- AG Grid repo, with nice fin data visualization: [https://github.com/ag-grid/ag-grid](https://github.com/ag-grid/ag-grid/tree/latest)
+
 ---
 
 **Contents**
@@ -73,6 +79,8 @@ if __name__ == "__main__":
 ```
 
 ## Deploying
+
+Some working snippets in the [sb_python sandbox](https://github.com/panchul/sb_python/tree/main/plotly_dash)
 
 ---
 

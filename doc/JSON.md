@@ -54,6 +54,11 @@ Make it an alias:
 ```bash
     alias prettyjson='python -m json.tool'
 ```
+
+More discussions on this at:
+
+https://stackoverflow.com/questions/352098/how-can-i-pretty-print-json-in-a-shell-script
+
 ---
 
 ## Scala implementation
