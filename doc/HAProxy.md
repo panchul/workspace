@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # HAProxy
 
 See Also:
@@ -8,23 +9,43 @@ Free open-source TCP/HTTP load balancer.
 http://www.haproxy.org/
 
 
-To have the HAProxy playground, run this from the workspace directory:
+**Contents**
+
+- [Installing](HAProxy.md#installing)
+- [Miscellaneous](HAProxy.md#miscellaneous)
+
+---
+
+## Installing 
+
+---
+
+## Miscellaneous
+
+---
+
+To have a HAProxy playground, run this from the workspace directory:
 In one terminal:
 
+```bash
     $ make haproxy_up
     ...
     $ vagrant ssh haproxy1
     $ tail -f /var/log/haproxy.log
+```
 
 In another terminal(a client):
 
+```bash
     $ vagrant up gen1
     $ vagrant ssh gen1
     $ while true; do curl haproxy1.vm ; sleep 1; done
     ...
+```
 
 Or, better yet this:
     
+```bash
     $ while true; do curl -s haproxy1.vm | grep server ; sleep 1; done
     ...
     This is web server number "3" 
@@ -32,9 +53,11 @@ Or, better yet this:
     This is web server number "2" 
     This is web server number "3" 
     ... 
+```
 
 You will see in the first window something like this (content of /var/log/haproxy.log):
 
+```bash
     ...
     Sep  5 00:22:29 haproxy1 haproxy[2795]: 192.168.10.3:56728 [05/Sep/2017:00:22:29.260] http-in servers/apache3.vm 0/0/0/1/2 200 644 - - ---- 0/0/0/0/0 0/0 "GET / HTTP/1.1"
     Sep  5 00:22:30 haproxy1 haproxy[2795]: 192.168.10.3:56729 [05/Sep/2017:00:22:30.275] http-in servers/apache1.vm 0/0/0/0/1 200 644 - - ---- 0/0/0/0/0 0/0 "GET / HTTP/1.1"
@@ -42,9 +65,11 @@ You will see in the first window something like this (content of /var/log/haprox
     Sep  5 00:22:32 haproxy1 haproxy[2795]: 192.168.10.3:56731 [05/Sep/2017:00:22:32.303] http-in servers/apache3.vm 0/0/0/1/2 200 644 - - ---- 0/0/0/0/0 0/0 "GET / HTTP/1.1"
     Sep  5 00:22:33 haproxy1 haproxy[2795]: 192.168.10.3:56732 [05/Sep/2017:00:22:33.318] http-in servers/apache1.vm 0/0/0/0/1 200 644 - - ---- 0/0/0/0/0 0/0 "GET / HTTP/1.1"
     ...
+```
 
 At the moment of writing these notes, /etc/haproxy/haproxy.cfg, besides the default global setup has:
- 
+
+```yaml
     frontend http-in
             bind *:80
             default_backend servers
@@ -53,12 +78,15 @@ At the moment of writing these notes, /etc/haproxy/haproxy.cfg, besides the defa
             server apache1.vm 192.168.10.73:80 maxconn 32
             server apache2.vm 192.168.10.74:80 maxconn 32
             server apache3.vm 192.168.10.75:80 maxconn 32
+```
 
 And file /etc/default/haproxy has this to start HAProxy service at boot:
 
+```bash
     ...
     ENABLED=1
     ...
+```
 
 ---
 
@@ -67,7 +95,9 @@ http://www.techrepublic.com/article/how-to-install-and-setup-haproxy-on-ubuntu-1
 
 To test a config file:
 
+```bash
     $ sudo haproxy -f myhaproxy.cfg  -c
+```
 
 ---
 
@@ -75,5 +105,3 @@ This was helpful for logging:
 https://serverfault.com/questions/645924/haproxy-logging-to-syslog
 
 ---
-
-

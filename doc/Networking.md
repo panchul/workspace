@@ -28,17 +28,23 @@ See Also:
 
 For webservers and Nginx, you may also want to enable the firewall port, check the existing config and enable, e.g. like so:
 
+```bash
     $ sudo ufw status
 
     $ sudo ufw enable
+```
 
 or, maybe
 
+```bash
     $ sudo ufw allow 'Nginx Full'
+```
 
 Also allow https:
 
+```bash
     $ sudo ufw allow 443
+```
 
 ---
 
@@ -84,6 +90,7 @@ TODO: summarize
 
 How to find Public IP address(including on AWS EC2, etc.)
 
+```bash
     $ curl icanhazip.com
     $ curl ifconfig.me
     $ curl http://checkip.amazonaws.com
@@ -92,16 +99,20 @@ How to find Public IP address(including on AWS EC2, etc.)
     $ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
     $ dig +short myip.opendns.com @resolver1.opendns.com
     $ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+```
 
 Amazon-specific, to get private IPv4:
 
+```bash
     $ curl http://169.254.169.254/latest/meta-data/local-ipv4
+```
 
 And, to get public IPv4, run:
 
+```bash
     $ curl http://169.254.169.254/latest/meta-data/public-ipv4
     $ curl http://checkip.amazonaws.com
-     
+```     
 ---
 
 Installing Squid http proxy
@@ -116,6 +127,7 @@ https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands
 
 `ifconfig` might be deprecated in favor of `ip`
 
+```bash
     $ ifconfig -a
       eth0    Link encap:Ethernet  HWaddr 00:0C:29:28:FD:4C
               inet addr:192.168.50.2  Bcast:192.168.50.255  Mask:255.255.255.0
@@ -145,30 +157,40 @@ https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands
               collisions:0 txqueuelen:1000
               RX bytes:6127464 (5.8 MiB)  TX bytes:539648 (527.0 KiB)
               Interrupt:18 Base address:0x2000
+```
 
 Assigning an IP Address and Gateway to interface on the fly.
 The setting will be removed in case of system reboot.
 
+```bash
     $ ifconfig eth0 192.168.50.5 netmask 255.255.255.0
+```
 
 Enable or Disable Specific Interface:
 
+```bash
     $ ifup eth0
     $ ifdown eth0
-    
+```
+
 By default MTU size is 1500. We can set required MTU size with below command. Replace XXXX with size.
 
+```bash
     $ ifconfig eth0 mtu XXXX
+```
 
 Network interface only received packets belongs to that particular NIC.
 If you put interface in promiscuous mode it will received all the packets.
 This is very useful to capture packets and analyze later. For this you may require superuser access.
 
+```bash
     $ ifconfig eth0 - promisc
+```
 
 Ping use `ICMP` (Internet Control Message Protocol) to communicate to other devices. You can
 ping host name of ip address. Ping for 5 attempts:
 
+```bash
     $ ping -c 5 www.tecmint.com
     PING tecmint.com (50.116.66.136) 56(84) bytes of data.
     64 bytes from 50.116.66.136: icmp_seq=1 ttl=47 time=285 ms
@@ -179,9 +201,11 @@ ping host name of ip address. Ping for 5 attempts:
     --- tecmint.com ping statistics ---
     5 packets transmitted, 5 received, 0% packet loss, time 4295ms
     rtt min/avg/max/mdev = 285.062/285.324/285.406/0.599 ms
+```
 
 `traceroute` shows hops to the destination.
 
+```bash
     $ traceroute 4.2.2.2
    
     traceroute to 4.2.2.2 (4.2.2.2), 30 hops max, 60 byte packets
@@ -206,9 +230,11 @@ ping host name of ip address. Ping for 5 attempts:
     19  ae-81-81.csw3.NewYork1.Level3.net (4.69.134.74)  202.407 ms  201.479 ms ae-92-92.csw4.NewYork1.Level3.net (4.69.148.46)  208.145 ms
     20  ae-2-70.edge2.NewYork1.Level3.net (4.69.155.80)  200.572 ms ae-4-90.edge2.NewYork1.Level3.net (4.69.155.208)  200.402 ms ae-1-60.edge2.NewYork1.Level3.net (4.69.155.16)  203.573 ms
     21  b.resolvers.Level3.net (4.2.2.2)  199.725 ms  199.190 ms 
+```
 
 netstat (Network Statistics)
 
+```bash
     $ netstat -r
     
     Kernel IP routing table
@@ -216,19 +242,22 @@ netstat (Network Statistics)
     192.168.50.0    *               255.255.255.0   U         0 0          0 eth0
     link-local      *               255.255.0.0     U         0 0          0 eth0
     default         192.168.50.1    0.0.0.0         UG        0 0          0 eth0
-    
+```    
    
 `dig` (domain information groper) query DNS related information like A Record, CNAME, MX Record etc.
 This command mainly use to troubleshoot DNS related query.
 More on it here: https://www.tecmint.com/10-linux-dig-domain-information-groper-commands-to-query-dns/
     
+```bash
     $ dig www.tecmint.com; <<>> DiG 9.8.2rc1-RedHat-9.8.2-0.10.rc1.el6 <<>> www.tecmint.com
     ;; global options: +cmd
     ;; Got answer:
     ;; ->>HEADER<
+```
 
 `nslookup` command also use to find out DNS related query.
     
+```bash
     $ nslookup www.tecmint.com
     Server:         4.2.2.2
     Address:        4.2.2.2#53
@@ -237,32 +266,40 @@ More on it here: https://www.tecmint.com/10-linux-dig-domain-information-groper-
     www.tecmint.com canonical name = tecmint.com.
     Name:   tecmint.com
     Address: 50.116.66.136
-    
+```    
 
 `route` command also shows and manipulate ip routing table.
     
+```bash
     $ route
     Kernel IP routing table
     Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
     192.168.50.0    *               255.255.255.0   U     0      0        0 eth0
     link-local      *               255.255.0.0     U     1002   0        0 eth0
     default         192.168.50.1    0.0.0.0         UG    0      0        0 eth0
-          
+```
+
 Route Adding
 
+```bash
     $ route add -net 10.10.10.0/24 gw 192.168.0.1
-    
+```
+
 Route Deleting
     
+```bash
     $ route del -net 10.10.10.0/24 gw 192.168.0.1
-    
+```
+
 Adding default Gateway
 
+```bash
     $ route add default gw 192.168.0.1
-    
+```    
     
 `host` command to find name to IP or IP to name in IPv4 or IPv6 and also query DNS records.
     
+```bash
     $ host www.google.com
     www.google.com has address 173.194.38.180
     www.google.com has address 173.194.38.176
@@ -270,48 +307,61 @@ Adding default Gateway
     www.google.com has address 173.194.38.178
     www.google.com has address 173.194.38.179
     www.google.com has IPv6 address 2404:6800:4003:802::1014
+```
 
 Using `-t` option we can find out DNS Resource Records like CNAME, NS, MX, SOA etc.
     
+```bash
     $ host -t CNAME www.redhat.com
     www.redhat.com is an alias for wildcard.redhat.com.edgekey.net.    
-   
+```   
 
 `ARP` (Address Resolution Protocol) is useful to view / add the contents of the kernel’s ARP tables.
     
+```bash
     $ arp -e
     Address                  HWtype  HWaddress           Flags Mask            Iface
     192.168.50.1             ether   00:50:56:c0:00:08   C                     eth0
+```
 
 `ethtool` is a replacement of mii-tool. It is to view, setting speed and duplex of your
  Network Interface Card (NIC). You can set duplex permanently in
  `/etc/sysconfig/network-scripts/ifcfg-eth0` with `ETHTOOL_OPTS` variable.
     
+```bash
     $ ethtool eth0
     Settings for eth0:
             Current message level: 0x00000007 (7)
             Link detected: yes
-   
+```
+
 `iwconfig` command in Linux is use to configure a wireless network interface.
      
+```bash
     $ iwconfig [interface]
+```
 
 `hostname` is to identify in a network.
 You can set hostname permanently in `/etc/sysconfig/network`.
     
+```bash
     $ hostname 
     tecmint.com
-    
+```
+
 Type `system-config-network` in command prompt to configure network setting with GUI.
     
+```bash
     $ system-config-network
-                            
+```
+
 ---
 
 from https://www.tecmint.com/manage-networking-with-networkmanager-in-rhel-centos/
 
 About Network Manager, etc.
 
+```bash
     $ nmcli connection show -a
     NAME                UUID                                  TYPE      DEVICE 
     Wired connection 1  faasdgf-asdf-2345-as-asdasgasg        ethernet  enp0s3 
@@ -320,9 +370,11 @@ About Network Manager, etc.
     DEVICE  TYPE      STATE      CONNECTION         
     enp0s3  ethernet  connected  Wired connection 1 
     lo      loopback  unmanaged  -- 
-   
+```
+
 On RHEL, CentOS:
 
+```bash
     $ vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
     TYPE=Ethernet
     PROXY_METHOD=none
@@ -344,7 +396,8 @@ On RHEL, CentOS:
     GATEWAY=192.168.0.1
     DNS1=8.8.8.8
     PEERDNS=no
-         
+```
+
 ---
     
 Summary for OAuth and OIDC    
@@ -359,12 +412,16 @@ TODO: write a summary
 
 Port forwarding
 
+```bash
     $ ssh -L{port on your PC}:localhost:{database's port} root@{server IP}
+```
 
 The command will open port 3308 on your laptop and everything
 will be forwarded to 192.168.1.2:3306
 
+```bash
     $ ssh -L3308:localhost:3306 root@192.168.1.2
+```
 
 `localhost` means that database is listening on 192.168.1.2.
 You can type, for example, 192.168.3.77 and everything will be
@@ -372,7 +429,9 @@ forwarded to .3.77 server via .1.2.
 
 Another similar example. Run this on your desktop:
 
+```bash
     $ ssh -NfL 6006:localhost:6006 -i id_rsa_my user@123.45.67.89
+```
 
 Then you can access locally(as localhost) the port that is served at 123.45.67.89
 even if that is a cluster_port of a pod in Kubernetes cluster.    
@@ -381,6 +440,7 @@ even if that is a cluster_port of a pod in Kubernetes cluster.
 
 To see who is using a port(and there is also utility `ss`):
 
+```bash
     $ netstat -tulpn | grep 80
     tcp6       0      0 :::80                 :::*                   LISTEN     10177/java
 
@@ -388,18 +448,19 @@ To see who is using a port(and there is also utility `ss`):
 `-n` - shows port number
 `-t` - enables listing of tcp ports
 `-u` - enables listing udp ports.
+```
 
 10177 is a pid you are looking for. Now execute
 
+```bash
     $ ps aux | grep 10177
+```
 
 On mac it is
 
 ```bash
 sudo lsof -i :5000 | grep LISTEN
 ```
-
-
 
 ---
 

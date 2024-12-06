@@ -32,7 +32,7 @@ https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 16563  100 16563    0     0  69911      0 --:--:-- --:--:-- --:--:-- 70182
-=> Downloading nvm from git to '/Users/apanchul/.nvm'
+=> Downloading nvm from git to '~/.nvm'
 => Cloning into '/Users/username/.nvm'...
 remote: Enumerating objects: 380, done.
 remote: Counting objects: 100% (380/380), done.
