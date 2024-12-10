@@ -5,7 +5,20 @@
 
 **Contents**
 
+- [Providers](SMTP.md#providers)
 - [Miscellaneous](SMTP.md#miscellaneous)
+
+---
+
+## Providers
+
+---
+
+[infobip.com](https://www.infobip.com/)
+
+---
+
+[Mailchimp.com](https://mailchimp.com/)
 
 ---
 

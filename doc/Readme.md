@@ -275,6 +275,7 @@ Topics sometimes associated with Operating Systems.
 - [Ajax](Ajax.md)
 - [Angular](Angular.md)
 - [Apache](Apache.md)
+- AppMaster [https://appmaster.io/](https://appmaster.io/) a no-code platform
 - [Disqus](Disqus.md) Commenting, discussion forums, etc.
 - [Django](Django.md)
 - [Heroku](Heroku.md)
@@ -282,6 +283,7 @@ Topics sometimes associated with Operating Systems.
 - Feathers.js Self-hosted, free. Email/password OAuth authentication https://feathersjs.com/
 - Firebase (closed-source, paid hosted service, paid shared dev environment)
 - [Flutter](Flutter.md) - multiple platform development
+- Infobip, [https://www.infobip.com/](https://www.infobip.com/) APIs for sending messages on SMS, Email, WhatsApp, Viber, and Voice.
 - [JQuery](JQuery.md)
 - [Kivy](Kivy.md) - Python framework for mobile apps
 - [Laravel](Laravel.md)
@@ -513,6 +515,7 @@ Aggregated List of C++ networking libraries
 
 - Slack
 - ICQ
+- [infobip.com](https://www.infobip.com/)
 - XMPP
   - [Ejabberd](Ejabberd.md)
   - Mongoose

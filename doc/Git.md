@@ -23,6 +23,7 @@ Contents
 - [Working with multiple remotes](Git.md#working-with-multiple-remotes)
 - [Syncing with the original repo after forking](Git.md#syncing-with-the-original-repo-after-forking)
 - [gitignore](Git.md#gitignore)
+- [Github Specific](Git.md#github-cli)
 - [Troubleshooting](Git.md#troubleshooting)
   - [error 400 curl 22 ...](Git.md#error-rpc-failed-http-400-curl-22-the-requested-url-returned-error-400)
 - [Miscellaneous](Git.md#miscellaneous)
@@ -501,6 +502,30 @@ sysinfo.txt
 crashlytics-build.properties
 
 ```
+
+## Github Specific
+
+---
+
+If you create a repo `.github` and create a file `profile/README.md` in it, it will show up in organization's public page.
+
+---
+
+About cicd:
+
+https://github.com/features#features-automation
+
+---
+
+About collaborative coding:
+
+https://github.com/features#features-collaboration
+
+---
+
+More features:
+
+https://github.com/features
 
 ---
 
