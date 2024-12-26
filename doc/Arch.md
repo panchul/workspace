@@ -22,11 +22,10 @@ See Also:
 
 ---
 
----
-
 To install `sudo`(may not be by default in the packages)
 
+```bash
     $ packman -Sy sudo
-
+```
 
 ---

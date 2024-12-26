@@ -15,12 +15,15 @@ https://golang.org/doc/effective_go.html Effective Go
 Installing Go, several ways to do it on Ubuntu
 https://www.cyberciti.biz/faq/how-to-install-gol-ang-on-ubuntu-linux/
 
+```bash
     $ sudo apt install golang-go
     $ go version
     go version go1.13.8 linux/amd64
+```
 
 To test it, create `hello.go`:
 
+```go
     package main
     import ( 
     	"fmt" 
@@ -30,26 +33,31 @@ To test it, create `hello.go`:
         fmt.Println("Hello, world!")
         fmt.Println("hi, ", os.Getenv("USER")) 
     }
+```
 
 Run:
 
+```bash
     $ go run hello.go 
     Hello, world!
     hi,  myusername
+```
 
 Or to build a binary:
 
+```bash
     $ go build hello.go
     $ ./hello
     Hello, world!
     hi,  myusername
-
+```
     
 ---
 
 Why Go modules are faster than GOPATH
 https://dev.to/tbpalsulich/why-go-modules-are-faster-than-gopath-blj
 
+```bash
     $ mkdir /tmp/tmp.GOPATH
     $ export GOPATH=/tmp/tmp.GOPATH
     $ go env GOPATH # Just to confirm.
@@ -93,7 +101,8 @@ https://dev.to/tbpalsulich/why-go-modules-are-faster-than-gopath-blj
     real    0m10.185s
     user    0m9.610s
     sys     0m1.961s
-    
+```
+
 ---
 
 Neat multi-player game demo, on terminal, with protobufs, etc.
@@ -155,6 +164,7 @@ Great resource about Go, with a playground.
 Here is, for example about closures:
 https://gobyexample.com/closures
 
+```go
     package main
     import "fmt"
 
@@ -177,19 +187,23 @@ https://gobyexample.com/closures
         newInts := intSeq()
         fmt.Println(newInts())
     }
+```
 
 To run it:
 
+```bash
     $ go run closures.go
     1
     2
     3
     1
+```
 
 ---
 
 Basic usage of channels
 
+```go
     package main
     import "fmt"
     func main() {
@@ -199,16 +213,20 @@ Basic usage of channels
         msg := <-messages
         fmt.Println(msg)
     }
+```
 
 To run:
 
+```bash
     $ go run channels.go 
     ping
+```
 
 ---
 
 Goroutine example(from https://gobyexample.com).
 
+```go
     package main
     import "fmt"
     func f(from string) {
@@ -230,9 +248,11 @@ Goroutine example(from https://gobyexample.com).
         fmt.Scanln()
         fmt.Println("done")
     }
+```
 
 Output:
 
+```bash
     $ go run goroutines.go
     direct : 0
     direct : 1
@@ -243,6 +263,7 @@ Output:
     goroutine : 2
     <enter>
     done
+```
 
 ---
 
@@ -254,6 +275,7 @@ https://github.com/AppliedGo
 About `context` package.
 https://golang.org/pkg/context/
 
+```go
     package main
     import (
         "context"
@@ -277,17 +299,21 @@ https://golang.org/pkg/context/
         f(ctx, k)
         f(ctx, favContextKey("color"))
     }
+```
 
 This is how it works:
 
+```bash
     $ go run context.go 
     found value: Go
     key not found: color
+```
 
 ---
 
 Interfaces refresher
 
+```go
     package main
     import "fmt"
     import "math"
@@ -331,9 +357,11 @@ Interfaces refresher
         measure(r)
         measure(c)
     }
+```
 
 Output:
 
+```bash
     $ go run interfaces.go
     {3 4}
     12
@@ -341,12 +369,14 @@ Output:
     {5}
     78.53981633974483
     31.41592653589793
+```
 
 ---
 
 Deploying to Heroku: Docker, Go and React
 https://dev.to/cishiv/deploying-to-heroku-docker-go-and-react-38hh
 
+```go
     package main
     import (
         "log"
@@ -373,9 +403,11 @@ https://dev.to/cishiv/deploying-to-heroku-docker-go-and-react-38hh
             log.Fatal(http.ListenAndServe(":"+defaultPort, nil))
         }
     }
+```
 
 And the Dockerfile for it:
 
+```dockerfile
     # Stage 1
     FROM golang:alpine as builder
     RUN apk update && apk add --no-cache git
@@ -391,7 +423,8 @@ And the Dockerfile for it:
     COPY --from=builder /build/ /app/
     WORKDIR /app
     CMD ["./deployment-demo"]
-    
+```
+
 ---
 
 A post about TDD in GO
@@ -401,6 +434,7 @@ https://dev.to/jankaritech/demonstrating-tdd-test-driven-development-in-go-27b0
 
 Example `for` loop with channels
 
+```go
     package main
     import "fmt"
     func main() {
@@ -419,6 +453,7 @@ Example `for` loop with channels
         }
         close(ch) // Close channel
     }
+```
 
 ---
 

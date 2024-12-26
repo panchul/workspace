@@ -9,7 +9,7 @@ See Also:
   - [Triton inference server](Triton_inference_server.md)
 
 
-https://gunicorn.org/
+[https://gunicorn.org/](https://gunicorn.org/)
 
 web services framework, sometimes it is used behind nginx to
 serve http requests, to serve Flask, etc.
@@ -80,7 +80,7 @@ To use gunicorn:
 
 To setup gunicorn better, create `/etc/systemd/system/gunicorn.socket` (on [Ubuntu](Ubuntu.md)):
 
-```
+```conf
 [Unit]
 Description=gunicorn socket
 
@@ -93,7 +93,7 @@ WantedBy=sockets.target
 
 And the service file, create `/etc/systemd/system/gunicorn.service` (on [Ubuntu](Ubuntu.md)):
 
-```
+```conf
 [Unit]
 Description=gunicorn daemon
 Requires=gunicorn.socket
@@ -139,7 +139,7 @@ available on your `PYTHONPATH` environment variable? Did you forget to activate 
 To connect the whole thing to [nginx](Nginx.md), create an entry in
 `/etc/nginx/sites-available/someappname`
 
-```
+```conf
 server {
     listen 80;
     server_name 127.0.0.1;

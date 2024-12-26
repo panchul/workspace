@@ -1,11 +1,17 @@
 [Home](Readme.md)
 # Ansible
 
-[https://www.ansible.com/](https://www.ansible.com/)
-
 See Also:
 
-- [https://github.com/panchul/sb_ansible](https://github.com/panchul/sb_ansible)
+- [Docker](Docker.md)
+- [Npm](Npm.md)
+- [Porter](Porter.md)
+
+---
+
+[https://www.ansible.com/](https://www.ansible.com/)
+
+My sandbox for Ansible: [https://github.com/panchul/sb_ansible](https://github.com/panchul/sb_ansible)
 
 ---
 
@@ -55,43 +61,56 @@ TODO: a walk-through
 
 To run a playbook at a Vagrant box one can use:  
 
+```bash
     $ ansible-playbook --connection ssh -u vagrant -i ansible/ansible.vmhosts ansible/playbooks/mybook/mythings2do.yml
+```
 
 ---
 
+```bash
     $ sudo easy_install pip
     $ sudo pip install ansible
- 
+```
+
 run this to fix Ansible python errors:
 
+```bash
     $ pip install --upgrade setuptools --user python
+```
 
 ---
 
 Quick demo. Executing command at hostB and hostC as userMe, from terminal at hostA.
 Create inventory:
 
+```bash
     $ echo -e "[example]\n    hostB\n    hostC\n" >> myInventory
+```
 
 Super-simple ansible call, with manual asking for a password
     
+```bash
     $ ansible example --connection ssh -i myInventory -m ping -u userMe -k
     SSH password: 
     gen1 | success >> {
         "changed": false, 
         "ping": "pong"
     }
+```
 
 If you create the ssh keys as in [SSH](SSH.md), you can run without asking for passwords:
 
+```bash
     $ ansible example --connection ssh -i myInventory --private-key ~/.ssh/id_ras_mykey -m ping -u userMe -k
     gen1 | success >> {
         "changed": false, 
         "ping": "pong"
     }
+```
 
 A command with output (not a module, so not '-m', but '-a')
 
+```bash
     $ ansible example -i myhosts --private-key ~/.ssh/id_rsa_mykey -a "free -m " -u vagrant
     gen1 | success | rc=0 >>
                  total       used       free     shared    buffers     cached
@@ -104,11 +123,13 @@ A command with output (not a module, so not '-m', but '-a')
     Mem:          2000       1727        272          5         66        875
     -/+ buffers/cache:        785       1214
     Swap:         1023          0       1023
+```
 
 ---
 
 Example of ansible.hosts:
 
+```bash
     [whole_fleet:children]
     qa
     production
@@ -118,19 +139,22 @@ Example of ansible.hosts:
 
     [production]
     10.10.11.12 ansible_connection=ssh ansible_user=myuser ansible_ssh_private_key_file=myusers_key.pem
+```
 
 ---
 
-To run an individual command on servers grouped in ```hostsubset``` in file ansible.hosts:
+To run an individual command on servers grouped in `hostsubset` in file ansible.hosts:
 
+```bash
     ansible --become --connection=ssh --private-key "~/mykeyIStoreLocally.pem" -u myRemoteUsername -i ansible.hosts hostssubset -a "docker ps"
+```
 
 ---
 
 Example of using connection local:
 
-    mytest.yml -------------------------------
-    ---
+```yaml
+# mytest.yml ------------------------------------
     - hosts: 127.0.0.1
       gather_facts: no
       
@@ -140,10 +164,12 @@ Example of using connection local:
         register: date
       - name: Print the date.
         debug: var=date.stdout
-    -----------------------------------------------
+# -----------------------------------------------
+```
 
 And run it like sl:
 
+```bash
     $ ansible-playbook --connection=local mytest.yml
      [WARNING]: Host file not found: /etc/ansible/hosts
      [WARNING]: provided hosts list is empty, only localhost is available
@@ -160,6 +186,7 @@ And run it like sl:
     
     PLAY RECAP *********************************************************************
     127.0.0.1                  : ok=2    changed=1    unreachable=0    failed=0   
+```
 
 ---
 
@@ -176,19 +203,27 @@ Latest Releases Via Pip
 
 Ansible can be installed via “pip”, the Python package manager. If ‘pip’ isn’t already available in your version of Python, you can get pip by:
 
+```bash
     $ sudo easy_install pip
+```
 
 Then install Ansible with [1]:
 
+```bash
     $ sudo pip install ansible
+```
 
 Or if you are looking for the latest development version:
 
+```bash
     pip install git+https://github.com/ansible/ansible.git@devel
+```
 
 If you are installing on OS X Mavericks, you may encounter some noise from your compiler. A workaround is to do the following:
 
+```bash
     $ sudo CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install ansible
+```
 
 Readers that use virtualenv can also install Ansible under virtualenv, though we’d recommend to not worry about it and just install Ansible globally. Do not use easy_install to install ansible directly.
 

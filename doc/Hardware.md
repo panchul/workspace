@@ -18,6 +18,7 @@ See Also:
   - [Cameras and sensors](Hardware.md#cameras-and-sensors)
   - [Relays](Hardware.md#relays)
   - [3D Printing](Hardware.md#3d-printing)
+  - [SSD and storage](Hardware.md#ssd-and-storage)
   - [Mechanical and structural](Hardware.md#mechanical-and-structural)
   - [Miscellaneous](Hardware.md#miscellaneious)
 
@@ -77,6 +78,16 @@ A neat 3d printer https://ultimaker.com/en/products/ultimaker-s5
 
 [https://www.tinkercad.com](https://www.tinkercad.com) - open-source 3d
 printing models, like GitHub for misc design(electronic, 3d printing, etc.) 
+
+---
+
+## SSD and storage
+
+---
+
+Analysis of EVO vs QVO, etc. 
+
+https://www.digitaltrends.com/computing/samsung-qvo-vs-evo-guide/#dt-heading-samsung-qvo-vs-evo--the-differences-explained
 
 ---
 

@@ -21,7 +21,123 @@ See Also:
 
 **Contents**
 
+- [Law, etc](Career.md#law-etc)
+- [Interviewing](Career.md#interviewing)
+- [Freelancing](Career.md#freelancing)
 - [Miscellaneous](Career.md#miscellaneous)
+
+---
+
+## Law, etc.
+
+---
+
+From Internet:
+
+
+10 things every new in-house counsel must do within 90 days of their start date:
+
+Meet the team. This is not exclusive to the legal team. Or the executives. Or any specific business unit. Rather, the mandate is to meet everyone you can. This goes from lower level resources all the way through the C-Suite.
+
+Build a brand. Internal stakeholders often view legal as a bottleneck. “It’s stuck in legal“ is common vernacular. You’re not going to change this belief on day one. But you can start chipping away at it the moment you walk through the door.
+
+Take notes. Each company has a unique DNA that permeates throughout the organization. It’s your job to observe, ask questions, and learn how s*** gets done.
+
+Read. If it’s written and important to the company - policies, templates, material contracts, etc. - grab a cup of coffee and starting reading.
+
+Ownership. Nothing irks internal stakeholders more than someone who passes off responsibilities. Take a position and give a recommendation.
+
+Avoid the BS. Jane’s unhappy because Bob received a promotion after only 5 months and she’s worked at the company for a year and blah blah blah. The water cooler discourse may be a thing of the past with so much WFH. Regardless, your an attorney. Stay out of the mud. 
+
+Don’t be naive. Management observes far more than you realize. Unlike a law firm, in-house counsel are an expense on the P&L. This doesn’t diminish the value, but the cost does place a different type of scrutiny on the position.
+
+Organization. Work doesn’t funnel through the partner. Instead, the requests you’ll receive will come from various functions and business units. And people that have unclear roles. The best thing you can do is keep organized and build a system for yourself to keep track of it all.
+
+Prioritization. Everything seems important on day 1. It’s not. Or, at a minimum, some issues are more important than others. Raise your hand and ask for direction if you’re unsure where to start. It’s a bad look to waste cycles on low-impact work.
+
+---
+
+## Interviewing
+
+---
+
+Another post about competitive interviewing. "Interviewing is a sport! Lesson 1: Mental Power"
+https://www.linkedin.com/pulse/interviewing-sport-lesson-1-mental-power-eli-fox/
+
+---
+
+From Internet, ChatGPT prompts:
+
+1. Company Research
+
+"I have an interview with [company] for the position of [job position]. Please summarize the company's mission, core products or services, and recent news or achievements by analyzing their website [website link] and any recent press releases."
+
+2. Resume Optimization
+
+"Review my current resume attached and suggest improvements tailored for applying to a [job position] at [company]. Highlight any gaps in my experience and recommend ways to address these through online courses or projects."
+
+3. Cover Letter Writing
+
+"Based on the job description for [job position] at [company], generate a cover letter that highlights my relevant experience, skills, and why I am passionate about working for [company]."
+
+4. Interview Preparation
+
+"For the position of [job position] at [company], what are some industry-specific challenges or trends I should be aware of? How can I demonstrate my understanding or propose potential solutions during the interview?"
+
+5. Common Interview Questions
+
+"Generate a list of common interview questions for a [job position] role within the [industry] industry."
+
+6. Behavioral Interview Questions
+
+"Create a set of behavioral interview questions relevant to the [job position] role at [company]. Include a brief guide on how to structure responses using the STAR (Situation, Task, Action, Result) method, tailored to my experiences."
+
+7. Follow-Up After Interview
+
+"Draft a follow-up email template for after an interview for the [job position] role at [company]. The email should express gratitude, reiterate interest in the position, and include a statement on how I can add value to the team, reflecting specifics from our discussion."
+
+8. Technical Skills Assessment
+
+"I need to demonstrate my proficiency in [specific skill or software] for a [job position] role at [company]. Can you generate a practice test or challenges that reflect the level of understanding required?"
+
+9. Salary Negotiation Strategies
+
+"Based on the role of [job position] in [location or industry], what is the competitive salary range? Provide strategies and key phrases for negotiating a higher salary or better benefits, considering my experience level and industry standards."
+
+10. Networking and Referrals
+
+"Provide tips on how to use LinkedIn for networking with employees currently working at [company]. Include a template message for reaching out to potential contacts for insights about the [job position] and company culture."
+
+---
+
+## Freelancing
+
+---
+
+Freelancer websites.
+
+1. freelancer.com
+2. freelancehunt.com
+3. weblancer.net
+4. guru.com
+5. upwork.com
+7. peopleperhour.com
+8. freelance.ua
+9. rubrain.com
+11. work-zilla.com
+12. fiverr.com
+14. freelancermap.com
+15. freelance-info.fr
+16. authenticjobs.com
+17. toptal.com
+18. remoteok.io
+19. remotive.io
+20. remote.com
+21. weworkremotely.com
+22. remote4me.com
+23. flexjobs.com
+24. jobmote.com
+25. skipthedrive.com
 
 ---
 
@@ -108,33 +224,6 @@ The manifesto that Phil Knight created for Nike in 1980 had 10 simple rules:
 
 ---
 
-Freelancer websites.
-
-1. freelancer.com
-2. freelancehunt.com
-3. weblancer.net
-4. guru.com
-5. upwork.com
-7. peopleperhour.com
-8. freelance.ua
-9. rubrain.com
-11. work-zilla.com
-12. fiverr.com
-14. freelancermap.com
-15. freelance-info.fr
-16. authenticjobs.com
-17. toptal.com
-18. remoteok.io
-19. remotive.io
-20. remote.com
-21. weworkremotely.com
-22. remote4me.com
-23. flexjobs.com
-24. jobmote.com
-25. skipthedrive.com
-
----
-
 At some companies you look around yourself and see that your co-workers seem to
 be practicing the CIA manual. Stay away from those. :-)
 
@@ -165,11 +254,6 @@ From the CIA's declassified saboteur guidance, to disrupt an advisory from withi
 - Contrive as many interruptions to your work as you can.
 
 - Work slowly
-
----
-
-Another post about competitive interviewing. "Interviewing is a sport! Lesson 1: Mental Power"
-https://www.linkedin.com/pulse/interviewing-sport-lesson-1-mental-power-eli-fox/
 
 ---
 
@@ -601,7 +685,7 @@ https://drdianehamilton.com/chief-officer-acronyms-explained-ceo-coo-cfo-and-mor
 
 ---
 
-Amazon, Google, Microsoft Salaries
+2020 Amazon, Google, Microsoft Salaries
 https://insights.dice.com/2020/02/25/google-microsoft-amazon-salaries-revealed-pays-most/
 
 ```

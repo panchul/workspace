@@ -49,7 +49,11 @@ help: # Show this help
 	@egrep -h '\s#\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 	@echo " "
 
+# Add vm status, kubernetes and docker status, etc. if needed 
 status_all: git_status
+
+# A shorthand to be similar to `git status`
+status: git_status
 
 git_status: # Status of repositories (public and private, from `private_repo_list.txt`)
 	@echo "Checking sandboxes..."

@@ -1,37 +1,75 @@
 [Home](Readme.md)
 # ffmpeg utility
 
+See Also:
+
+ - [Graphics](Graphics.md)
+
 https://www.ffmpeg.org/
+
+**Table of contents**
+
+- [Installing](FfMpeg.md#installing)
+- [Extracting frames](FfMpeg.md#extracting-frames)
+- [Video input](FfMpeg.md#video-input)
+- [Video Encoding](FfMpeg.md#video-encoding)
+- [Miscellaneous](FfMpeg.md#Miscellaneous)
 
 ---
 
-To extract frames from a video, you can use ffmpeg:
-
-    $ ffmpeg -i somevideo.mp4 myframe%03d.jpg
+## Installing
 
 ---
 
 Building:
 
+```bash
     $ yum install nasm
+```
 
 On Mac:
 
+```bash
     $ brew install nasm    
-    
+```
+
 In the source folder:
     
+```bash
     $ ./configure
     $ make
     $ sudo make install
+```
+
+---
+
+## Extracting frames
+
+---
+
+To extract frames from a video, you can use ffmpeg:
+
+
+```bash
+    $ ffmpeg -i somevideo.mp4 myframe%03d.jpg
+```
+---
+
+## Video input
 
 ---
 
 Grabbing video from webcamera (device 0):
 
+```bash
     $ ffmpeg -y -f vfwcap -r 25 -i 0 out.mp4
+```
 
 More on this here: https://trac.ffmpeg.org/wiki/Capture/Webcam
+
+---
+
+## Video Encoding
 
 ---
 
@@ -46,7 +84,9 @@ output file sizes, so your mileage may vary.
 To take a list of images that are padded with zeros (pic0001.png, pic0002.png…. etc)
  use the following command:
 
+```bash
     $ ffmpeg -r 60 -f image2 -s 1920x1080 -i pic%04d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p test.mp4
+```
 
 where the %04d means that zeros will be padded until the length of the string is 4 i.e 0001…0020…0030…2000 and so on. If no padding is needed use something similar to pic%d.png or %d.png.
 
@@ -58,8 +98,9 @@ where the %04d means that zeros will be padded until the length of the string is
 
 Specifying start and end frames
 
+```bash
     $ ffmpeg -r 60 -f image2 -s 1920x1080 -start_number 1 -i pic%04d.png -vframes 1000 -vcodec libx264 -crf 25  -pix_fmt yuv420p test.mp4
-
+```
     -start_number specifies what image to start at
     -vframes 1000 specifies the number frames/images in the video
 
@@ -67,7 +108,9 @@ Overlaying image on video
 
 Assuming that you have an overlay image that is the same size as the video, you can use the following command to add it during the ffmpeg compression process.
 
+```bash
     $ffmpeg -r 60 -f image2 -s 1920x1080 -i pic%04d.png -i ~/path_to_overlay.png -filter_complex "[0:v][1:v] overlay=0:0" -vcodec libx264 -crf 25  -pix_fmt yuv420p test_overlay.mp4
+```
 
     ~/path_to_overlay.png is the full/relative path to the overlay image
     [0:v][1:v] joins the two video streams together, stream 1 is the set of images, stream 2 is the overlay file
@@ -78,7 +121,9 @@ Adding a mp3 to a video
 
 Adding sound to a video is straightforward
 
+```bash
     $ ffmpeg -r 60 -f image2 -s 1280x720 -i pic%05d.png -i MP3FILE.mp3 -vcodec libx264 -b 4M -vpre normal -acodec copy OUTPUT.mp4 
+```
 
     -i MP3FILE.mp3 The audio filename
     -acodec copy Copies the audio from the input stream to the output stream
@@ -87,7 +132,9 @@ Converting a video to mp4 from a different format
 
 If the video has already been compressed the following can be used to change the codmpression to h264:
 
+```bash
     $ ffmpeg  -i INPUT.avi -vcodec libx264 -crf 25 OUTPUT.mp4
+```
 
 Playback Issues for Quicktime/Other Codecs
 
@@ -112,6 +159,7 @@ Using -vpre with a setting file
 
 Example of a working frame encoding:
     
+```bash
     $ ffmpeg -r 60 -f image2 -s 1920x1080 -i frame%03d.png -c:v:1 libx264 -pix_fmt yuv420p test.mp4
     ffmpeg version 4.2.1 Copyright (c) 2000-2019 the FFmpeg developers
       built with gcc 4.8.5 (GCC) 20150623 (Red Hat 4.8.5-39)
@@ -140,6 +188,10 @@ Example of a working frame encoding:
           cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
     frame=   35 fps=0.0 q=31.0 Lsize=     755kB time=00:00:00.56 bitrate=10917.9kbits/s speed=0.815x    
     video:754kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.132701%
+```
 
 ---
 
+## Miscellaneous
+
+---

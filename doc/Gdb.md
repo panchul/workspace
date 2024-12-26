@@ -9,11 +9,15 @@ See Also:
 
 ---
 
+```bash
     $ sudo apt install gdb
-    
+```
+
 ---
 
+```bash
     $ brew install gdb
+```
 
 About code signing:
 https://sourceware.org/gdb/wiki/BuildingOnDarwin
@@ -26,11 +30,15 @@ https://stackoverflow.com/questions/20875927/how-to-undo-codesign
 
 To undo this:
 
+```bash
     $ codesign -s gdb-cert gdb
+```
 
 Use this:
 
+```bash
     $ codesign --remove-signature gdb
+```
 
 Better yet, use '-f' to force replacement of a certificate.
 
@@ -39,7 +47,7 @@ And even more:
 https://stackoverflow.com/questions/52699661/macos-mojave-how-to-achieve-codesign-to-enable-debugging-gdb
 
 
-```
+```bash
 ...
 you must change codesign -fs gdbcert /usr/local/bin/gdb to codesign --entitlements gdb.xml -fs gdbcert /usr/local/bin/gdb .
 
@@ -53,7 +61,6 @@ gdb.xml content must something like following code.
     <true/>
 </dict>
 </plist>
-
 ```
 
 More of the gdb bs:

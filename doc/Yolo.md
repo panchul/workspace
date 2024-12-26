@@ -9,6 +9,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Yolo.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 And another link with overview
 https://machinethink.net/blog/object-detection-with-yolo/
 
