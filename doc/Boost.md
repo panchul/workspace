@@ -1,13 +1,11 @@
 [Home](Readme.md)
 # Boost library
 
-http://www.boost.org/
-
----
-
 See Also:
 
 - ...
+
+http://www.boost.org/
 
 ---
 
@@ -23,7 +21,9 @@ See Also:
 
 on Linux this seem to work:
 
+```bash
     $ sudo apt-get install libboost-all-dev
+```
 
 ---
 
@@ -41,7 +41,9 @@ https://stackoverflow.com/questions/18881602/boost-logger-linking-issue
 
 This might be needed, or link the .a explicitly
 
+```bash
     export DYLD_LIBRARY_PATH=/usr/local/boost-1.68.0/lib:$DYLD_LIBRARY_PATH
+```
 
 ---
 

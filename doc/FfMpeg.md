@@ -5,7 +5,7 @@ See Also:
 
  - [Graphics](Graphics.md)
 
-https://www.ffmpeg.org/
+[https://www.ffmpeg.org/](https://www.ffmpeg.org/)
 
 **Table of contents**
 
@@ -21,13 +21,19 @@ https://www.ffmpeg.org/
 
 ---
 
-Building:
+Clone from ffmpeg.org:
+
+```bash
+    $ git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+```
+
+May need some pre-reqs:
 
 ```bash
     $ yum install nasm
 ```
 
-On Mac:
+Or on Mac:
 
 ```bash
     $ brew install nasm    
@@ -49,7 +55,6 @@ In the source folder:
 
 To extract frames from a video, you can use ffmpeg:
 
-
 ```bash
     $ ffmpeg -i somevideo.mp4 myframe%03d.jpg
 ```
@@ -65,7 +70,7 @@ Grabbing video from webcamera (device 0):
     $ ffmpeg -y -f vfwcap -r 25 -i 0 out.mp4
 ```
 
-More on this here: https://trac.ffmpeg.org/wiki/Capture/Webcam
+More on this here: [https://trac.ffmpeg.org/wiki/Capture/Webcam](https://trac.ffmpeg.org/wiki/Capture/Webcam)
 
 ---
 
@@ -109,7 +114,7 @@ Overlaying image on video
 Assuming that you have an overlay image that is the same size as the video, you can use the following command to add it during the ffmpeg compression process.
 
 ```bash
-    $ffmpeg -r 60 -f image2 -s 1920x1080 -i pic%04d.png -i ~/path_to_overlay.png -filter_complex "[0:v][1:v] overlay=0:0" -vcodec libx264 -crf 25  -pix_fmt yuv420p test_overlay.mp4
+    $ ffmpeg -r 60 -f image2 -s 1920x1080 -i pic%04d.png -i ~/path_to_overlay.png -filter_complex "[0:v][1:v] overlay=0:0" -vcodec libx264 -crf 25  -pix_fmt yuv420p test_overlay.mp4
 ```
 
     ~/path_to_overlay.png is the full/relative path to the overlay image

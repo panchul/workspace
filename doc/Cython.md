@@ -1,10 +1,6 @@
 [Home](Readme.md)
 # Cython
 
-C-Extensions for Python
-
-https://cython.org/#about
-
 See also:
 
   - [Anaconda](Anaconda.md)
@@ -13,7 +9,11 @@ See also:
   - [PIL](PIL.md)
   - [Python](Python.md)
   - python binding, etc.
-  
+
+C-Extensions for Python
+
+[https://cython.org/#about](https://cython.org/#about)
+
 ---
 
 **Contents**

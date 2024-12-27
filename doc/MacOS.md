@@ -8,7 +8,81 @@ See also:
 
 ---
 
+**Contents**
+
+- [Shortcuts, etc.](MacOS.md#shortcuts-etc)
+- [Debugging](MacOS.md#debugging)
+- [Screen capture tools](MacOS.md#screen-capture-tools)
+- [Miscellaneous](MacOS.md#miscellaneous)
+
+---
+
+## Shortcuts, etc.
+
+---
+
+`Command-Shift-.` in the file browser shows hidden files(like `.bashrc`, etc.) 
+
+---
+
 Emoji for Mac keyboards: Use `CTRL + CMD + Space`
+
+---
+
+## Debugging
+
+---
+
+Issues with gdb and Eclipse.
+
+https://www.thomasvitale.com/how-to-setup-gdb-and-eclipse-to-debug-c-files-on-macos-sierra/
+
+https://apple.stackexchange.com/questions/309017/unknown-error-2-147-414-007-on-creating-certificate-with-certificate-assist
+
+https://apple.stackexchange.com/questions/302866/keychain-access-error-when-creating-new-system-certificate
+
+https://gist.github.com/hlissner/898b7dfc0a3b63824a70e15cd0180154
+
+Another one, from some course.
+https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/mac-gdb-install.html
+            
+About codesign, etc.            
+https://stackoverflow.com/questions/20875927/how-to-undo-codesign
+    
+```bash
+    $ codesign -s gdb-cert gdb
+```
+
+To re-sign, you have to remove the signature first:
+
+```bash
+    $ codesign --remove-signature gdb
+```
+
+---
+
+## Screen capture tools
+
+---
+
+Screenshot capture:
+1. Click `Shift-Command-4`, or, I guess `Command-$`
+2. Mark it with mouse.
+3. The file is in Desktop with .png extention and timestamp.
+
+---
+
+Video capture can be done using QuickTime(that is part of standard Applications)
+1. Click 'New Screen Recording'
+2. Mark area with the mouse
+3. Click 'Stop recording' button on the menu when done.
+4. It will be saved in .mov format.
+
+http://www.loopinsight.com/2014/01/08/your-macs-built-in-screen-recorder/
+
+---
+
+## Miscellaneous
 
 ---
 
@@ -59,23 +133,6 @@ Simple way is to add PATH to file `~/.bash_profile`. Like so:
 ```
 ---
 
-Screenshot capture:
-1. Click `Shift-Command-4`, or, I guess `Command-$`
-2. Mark it with mouse.
-3. The file is in Desktop with .png extention and timestamp.
-
----
-
-Video capture can be done using QuickTime(that is part of standard Applications)
-1. Click 'New Screen Recording'
-2. Mark area with the mouse
-3. Click 'Stop recording' button on the menu when done.
-4. It will be saved in .mov format.
-
-http://www.loopinsight.com/2014/01/08/your-macs-built-in-screen-recorder/
-
----
-
 to get `http`(the command line http client):
 
 ```bash
@@ -91,37 +148,5 @@ To get the number of CPUs
     hw.physicalcpu: 4
     hw.logicalcpu: 8
 ```
-
----
-
-Issues with gdb and Eclipse.
-
-https://www.thomasvitale.com/how-to-setup-gdb-and-eclipse-to-debug-c-files-on-macos-sierra/
-
-https://apple.stackexchange.com/questions/309017/unknown-error-2-147-414-007-on-creating-certificate-with-certificate-assist
-
-https://apple.stackexchange.com/questions/302866/keychain-access-error-when-creating-new-system-certificate
-
-https://gist.github.com/hlissner/898b7dfc0a3b63824a70e15cd0180154
-
-Another one, from some course.
-https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/mac-gdb-install.html
-            
-About codesign, etc.            
-https://stackoverflow.com/questions/20875927/how-to-undo-codesign
-    
-```bash
-    $ codesign -s gdb-cert gdb
-```
-
-To re-sign, you have to remove the signature first:
-
-```bash
-    $ codesign --remove-signature gdb
-```
-
----
-
-`Command-Shift-.` in the file browser shows hidden files(like `.bashrc`, etc.) 
 
 ---

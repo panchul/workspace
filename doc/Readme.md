@@ -140,9 +140,11 @@ A more conceptual links, still related to Programming Languages and Math
  - [Confluent](Confluent.md)
  - [CQRS](CQRS.md) Command Query Responsibility Segregation
  - [Domain Driven Design(DDD)](DDD.md)
+ - [Dotnet](Dotnet.md)
  - [GraphQL](GraphQL.md)
  - [Flutter](Flutter.md)
  - [Lagom](Lagom.md)
+ - [Laravel](Laravel.md)
  - [M4](M4.md)
  - [MapReduce](MapReduce.md)
  - [OpenACC](OpenACC.md)
@@ -278,6 +280,7 @@ Topics sometimes associated with Operating Systems.
 - AppMaster [https://appmaster.io/](https://appmaster.io/) a no-code platform
 - [Disqus](Disqus.md) Commenting, discussion forums, etc.
 - [Django](Django.md)
+- [Dotnet](Dotnet.md), ASP, etc.
 - [Heroku](Heroku.md)
 - [ExpressJs](ExpressJs.md)
 - Feathers.js Self-hosted, free. Email/password OAuth authentication https://feathersjs.com/
@@ -506,21 +509,24 @@ Aggregated List of C++ networking libraries
 
 ### Message brokers and distributed environment coordinators. 
 
-- [RabbitMQ](RabbitMQ.md)
-- [Kafka](Kafka.md)
-- [Zookeeper](Zookeeper.md)
+- [Azure](Azure.md), queues, etc.
 - [Burrow](Burrow.md)
+- [Kafka](Kafka.md)
+- [RabbitMQ](RabbitMQ.md)
+- [Zookeeper](Zookeeper.md)
 
 ### Conferencing systems and protocols
 
-- Slack
+- BOSH
 - ICQ
 - [infobip.com](https://www.infobip.com/)
+- Slack
+- [SMTP and mailservers](SMTP.md)
+- Telegram
+- Whatsapp
 - XMPP
   - [Ejabberd](Ejabberd.md)
   - Mongoose
-- BOSH
-- [SMTP and mailservers](SMTP.md)
 
 ### Blockchain, Cryptocurreicies, NFTs
 
@@ -535,6 +541,7 @@ Aggregated List of C++ networking libraries
 - [Alexa](Alexa.md)
 - Caffe and Caffe2
 - Chatbots
+- Chatgpt
 - [ComputerVision](ComputerVision.md)
 - [GAN](GAN.md), (Generative Adversarial networks)
 - [Keras](Keras.md),
@@ -745,6 +752,7 @@ SWOT stands for Strengths, Weaknesses, Opportunities, and Threats.
 
 ## Photography, Video, and optics in general
 
+- [ffmpeg](FfMpeg.md) frame capture, encoding, etc.
 - [OBS](OBS.md) Open Broadcaster Software
 - [PhotoVideo](PhotoVideo.md)
 
@@ -760,7 +768,7 @@ SWOT stands for Strengths, Weaknesses, Opportunities, and Threats.
   purpose built to satisfy their every need.
   www.todayifoundout.com/index.php/2018/12/that-time-a-guy-tried-to-build-a-utopia-for-mice-and-it-all-went-to-hell
   
-  
+
 ## Career etc.
 
 - [Business](Business.md)
@@ -836,7 +844,6 @@ Another nice resource:
 
 - [misc fun, youtube, etc.](Misc_fun.html)
 - [misc historic links](Misc_historic.html)
-- [misc historic COVID19](Misc_historic_covid19.html)
 - [misc historic Ukraine](Misc_historic_ukraine.html)
 
 - The price of being single. http://ideas.ted.com/the-price-of-being-single/

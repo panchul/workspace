@@ -1,10 +1,6 @@
 [Home](Readme.md)
 # Buck
 
-https://buck2.build/
-
-https://github.com/facebook/buck2
-
 See Also:
 
  - [DVC](DVC.md)
@@ -12,6 +8,10 @@ See Also:
  - [Mercurial](Mercurial.md)
  - [Subversion](Subversion.md)
  - [npm](Npm.md)
+
+https://buck2.build/
+
+https://github.com/facebook/buck2
 
 ---
 
@@ -28,7 +28,7 @@ Contents
 
 from https://buck2.build/docs/getting_started/
 
-```
+```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup install nightly-2023-10-01
 cargo +nightly-2023-10-01 install --git https://github.com/facebook/buck2.git buck2
@@ -36,7 +36,7 @@ cargo +nightly-2023-10-01 install --git https://github.com/facebook/buck2.git bu
 
 The above commands install buck2 into a suitable directory, such as `$HOME/.cargo/bin`, which you should then add to your `$PATH`:
 
-```
+```bash
 export PATH=$HOME/.cargo/bin:$PATH
 ```
 
@@ -48,3 +48,4 @@ export PATH=$HOME/.cargo/bin:$PATH
 
 - https://rustup.rs/
 
+---

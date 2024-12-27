@@ -1,14 +1,14 @@
 [Home](Readme.md)
 # Swarm mode for Docker
 
-https://docs.docker.com/engine/swarm/
-
 See Also:
 
 - [CUDA](CUDA.md)
 - [Docker](Docker.md)
 - [Kubeflow](Kubeflow.md)
 - [Kubernetes](Kuernetes.md)
+
+https://docs.docker.com/engine/swarm/
 
 ---
 

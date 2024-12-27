@@ -1,8 +1,6 @@
 [Home](Readme.md)
 # nginx
 
-https://nginx.org/en/
-
 See also:
 
   - [Apache](Apache.md)
@@ -13,6 +11,8 @@ See also:
   - [Gunicorn](Gunicorn.md)
   - [HAProxy](HAProxy.md)
   - [Linux](Linux.md)
+
+[https://nginx.org](https://nginx.org/en/)
 
 ---
 

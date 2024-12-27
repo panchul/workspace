@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # AWS
 
 See Also:
@@ -81,6 +82,7 @@ About EBS volumes, how to format and mount them, etc:
 
 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html
 
+```bash
     $  lsblk
     NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
     xvda    202:0    0  100G  0 disk 
@@ -116,33 +118,45 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html
 
  
     $  sudo mkdir /data
+```
 
 Can mount temporarily like so:
     
+```bash
     $  sudo mount /dev/xvdb /data
+```
 
 But to do it right, need to use UUID and write it in fstab:
 
+```bash
     $  sudo file -s /dev/xvdb
     /dev/xvdb: Linux rev 1.0 ext4 filesystem data, UUID=something-sdfads-23452346-9etr-notreadluuid6 (extents) (64bit) (large files) (huge files)
+```
 
 Or can do this:
 
+```bash
     $  ls -al /dev/disk/by-uuid/
 
     $  sudo cp /etc/fstab /etc/fstab.orig
     $  sudo vi /etc/fstab
+```
 
 Add this into fstab:
 
+```bash
     UUID=1d3dddddgfd-afakaa-4asd-ag35-342sanitized55 /data ext4 defaults,nofail 0 2
+```
 
 This will mount what is in /etc/fstab:
         
+```bash
     $  sudo mount -a
+```
 
 Same thing with some automation:
 
+```bash
     lsblk
     sudo file -s /dev/xvdb
     pause "should be data"
@@ -150,14 +164,17 @@ Same thing with some automation:
     sudo mkdir /mymountpoint
     sudo file -s /dev/xvdb
     sudo cp /etc/fstab /etc/fstab.orig
+```
 
 then I had to use a temp file to because bash's "" will mess up printf's "":
     
+```bash
     sudo file -s /dev/xvdb | awk '{printf "%s    /mymountpoint ext4 defaults,nofail 0 2\n", $8}' > myvolume
     sudo sh -c "cat myvolume >> /etc/fstab "
     
     sudo mount -a
     ls -la /data
+```
 
 ---
 
@@ -189,9 +206,9 @@ https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
 AWS CLI getting started:
 http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 
-You might want to run "aws configure" to use proper AWS access credentials.
+You might want to run `"aws configure"` to use proper AWS access credentials.
 
-For Python work, install boto3, run "pip install boto3" on a system where you want to run it,
+For Python work, install boto3, run `"pip install boto3"` on a system where you want to run it,
 Boto3 repo: https://github.com/boto/boto3
 
 ---

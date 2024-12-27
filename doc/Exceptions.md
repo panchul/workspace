@@ -12,6 +12,7 @@ https://en.cppreference.com/w/cpp/language/exceptions
 
 ---
 
+```c++
     // exception constructor
     #include <iostream>       // std::cout
     #include <exception>      // std::exception
@@ -35,5 +36,6 @@ https://en.cppreference.com/w/cpp/language/exceptions
       }
       return 0;
     }
+``
     
 ---    

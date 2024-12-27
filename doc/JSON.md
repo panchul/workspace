@@ -1,13 +1,13 @@
 [Home](Readme.md)
 # JSON
 
-[http://www.json.org/](http://www.json.org/)
-
 See Also:
 
   - [APIs](APIs.md)
   - [XML](XML.md)
   - [YAML](YAML.md)
+
+[http://www.json.org/](http://www.json.org/)
 
 ---
 

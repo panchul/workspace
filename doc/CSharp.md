@@ -1,8 +1,10 @@
+[Home](Readme.md)
 # C#
 
 See Also:
 
 - [AlgorithmsDataStructures](AlgorithmsDataStructures.md)
+- [Dotnet](Dotnet.md)
 - [Entity Framework](EntityFramework.md)
 - [Futures](Futures.md)
 - [Multithreading](Multithreading.md)
@@ -17,7 +19,7 @@ My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panch
 
 **Content**
 
-- [Dotnet CLI](CSharp.md#Dotnet-CLI)
+- [Installing](CSharp.md#Dotnet-CLI)
 - [Samples](CSharp.md#Samples)
 - [Fundamentals](CSharp.md#Fundamentals)
 - [Libraries and Interop](CSharp.md#libraries-and-interop)
@@ -30,34 +32,13 @@ My C# sandbox is [https://github.com/panchul/sb_csharp](https://github.com/panch
 
 ---
 
-# Dotnet CLI
-
-    Usage: dotnet [sdk-options] [command] [command-options] [arguments]
-
-To create a solution
-
-    $ dotnet new solution
-    $ dotnet new 
-
-To add the project to the solution:
-
-    $ dotnet add projectname.csproj
-
-To run test runner (Xunit, for example):
-
-    $ dotnet test
+## Installing
 
 ---
 
-Dotnet on Ubuntu, etc.
+See also [Dotnet.md](Dotnet.md#installing)
 
-- https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net60&pivots=development-environment-vs
-- https://www.michaelcrump.net/part3-aspnetcore/
-- https://docs.microsoft.com/en-us/visualstudio/mac/asp-net-core?view=vsmac-2019
-- [troubleshooting ssh on aws](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-linux-fix-permission-denied-errors/)
-- https://www.davidhayden.me/blog/install-net5-on-ubuntu-20-04
-- https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu - good one
-- Dotnet on Ubuntu 20 https://tecadmin.net/how-to-install-net-core-on-ubuntu-20-04/
+And [Dotnet CLI](Dotnet.md#dotnet-cli)
 
 ---
 
@@ -316,6 +297,7 @@ SMTP Client, email, etc.
 
 Basic usage:
 
+```C#
     var smtpClient = new SmtpClient("smtp.gmail.com")
     {
         Port = 587,
@@ -323,9 +305,11 @@ Basic usage:
         EnableSsl = true,
     };
     smtpClient.Send("email", "recipient", "subject", "body");
+```
 
 Http body:
 
+```C#
     var mailMessage = new MailMessage
     {
         From = new MailAddress("email"),
@@ -335,20 +319,24 @@ Http body:
     };
     mailMessage.To.Add("recipient");
     smtpClient.Send(mailMessage);
+```
 
 For the attachment:
 
+```C#
     var mailMessage = new MailMessage
     {
     ...
     };
     var attachment = new Attachment("profile.jpg", MediaTypeNames.Image.Jpeg);
     mailMessage.Attachments.Add(attachment);
+```
 
 To use `ConfigurationBuilder`:
 
 declare the info in `appsettings.json`:
 
+```json
     {
        "Smtp": {
            "Host": "smtp.gmail.com",
@@ -357,9 +345,11 @@ declare the info in `appsettings.json`:
            "Password": "password"
        }
     }
+```
 
 and in the code:
 
+```C#
     var builder = new ConfigurationBuilder()
                        .AddJsonFile("appsettings.json");
     var config = builder.Build();
@@ -369,6 +359,7 @@ and in the code:
         Credentials = new NetworkCredential(config["Smtp:Username"], config["Smtp:Password"]),
         EnableSsl = true,
     };
+```
 
 ---
 
@@ -382,9 +373,11 @@ by Jeffrey Richter
 
 Simple command-line compilation and execution on Mac:
 
+```bash
     $ mcs Program.cs 
     $ mono Program.exe
-    
+```
+
 ---
 
 To sleep for 5 sec:
@@ -395,6 +388,7 @@ To sleep for 5 sec:
 
 To execute a command from within .cs file:
 
+```C#
     System.Diagnostics.Process process = new System.Diagnostics.Process();
     System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
     startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
@@ -404,6 +398,7 @@ To execute a command from within .cs file:
     process.Start();
   
     process.WaitForExit(); // if we want to wait for it to finish
+```
 
 ---
 

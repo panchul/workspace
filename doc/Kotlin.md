@@ -2,15 +2,17 @@
 
 See Also:
 
+  - [Android](Android.md)
   - [Erlang](Erlang.md)
   - [Java](Java.md)
   - [TypeScript](TypeScript.md)
   - [Scala](Scala.md)
 
+[https://kotlinlang.org/](https://kotlinlang.org/)
+
 ---
 
 **Contents**
-
 
 - [Basics](Kotlin.md#basics)
 - [Intent](Kotlin.md#intent)
@@ -20,7 +22,6 @@ See Also:
 - [Background Service](Kotlin.md#background-service)
 - [Foreground Service](Kotlin.md#foreground-service)
 - [Miscellaneous](Kafka.md#miscellaneous)
-- TODO
 
 ---
 
@@ -149,11 +150,14 @@ Resolving Circular Dependencies in Android: An Overview of the Garbage Collectio
 https://medium.com/@oznusem/circular-dependency-in-android-should-i-worry-about-it-814660ac79ec
 
 ---
+
 ###  Start an Activity from a Notification
 
 https://developer.android.com/develop/ui/views/notifications/navigation
 
 ### Vibration from an app
+
+---
 
 https://developer.android.com/reference/kotlin/android/os/Vibrator
 
@@ -162,14 +166,22 @@ Examples:
 - https://www.geeksforgeeks.org/how-to-vibrate-a-device-programmatically-in-android/
 - https://medium.com/@hasangurgur95/using-vibration-in-android-building-a-simple-app-to-demonstrate-vibration-afc59995479a
 
+---
+
 ### Modal fragment
+
+---
 
 Dialogs in general, and modal too:
 
 https://developer.android.com/develop/ui/views/components/dialogs
 
+---
 
 ## Content Providers
 
+---
+
 geeksforgeeks.org/content-providers-in-android-with-example/
 
+---

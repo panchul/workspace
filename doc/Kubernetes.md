@@ -1,8 +1,6 @@
 [Home](Readme.md)
 # Kubernetes
 
-https://kubernetes.io/
-
 See Also:
 
   - [CUDA](CUDA.md)
@@ -14,6 +12,10 @@ See Also:
   - [LXD, Linux Containers](LXD.md)
   - [Prometeus](Prometeus.md)
   - [Samba](Samba.md)
+
+[https://kubernetes.io/](https://kubernetes.io/)
+
+---
 
 **Table of contents**
 
@@ -43,15 +45,19 @@ https://github.com/IBM-Cloud/jpetstore-kubernetes
 
 If you get a service, for example:
 
+```bash
     $ kubectl get svc istio-ingressgateway -n istio-system
     NAME                   TYPE           CLUSTER-IP       EXTERNAL-IP      PORT(S)   AGE
     istio-ingressgateway   LoadBalancer   172.21.109.129   130.211.10.121   ...       17h
+```
 
 You can extract `EXTERNAL-IP` like so:
 
+```bash
     export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
     export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
-    
+```
+
 ---
  
 
@@ -114,7 +120,9 @@ Form that link:
 
 You can access Dashboard using the kubectl command-line tool by running the following command:
 
+```bash
     $ kubectl proxy
+```
 
 Kubectl will make Dashboard available at 
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/.
@@ -148,6 +156,7 @@ Mounting a local folder on a node(should be on all nodes, because the deployment
 
 Here is an example: https://stackoverflow.com/questions/48747538/using-windows-smb-shares-from-kubernetes-deployment-app
     
+```yaml
     kind: PersistentVolume
     apiVersion: v1
     metadata:
@@ -162,9 +171,11 @@ Here is an example: https://stackoverflow.com/questions/48747538/using-windows-s
         - ReadWriteMany
       hostPath:
         path: "/data/share1"
-    
+```
+
 and a claim,
-    
+
+```yaml    
     kind: PersistentVolumeClaim
     apiVersion: v1
     metadata:
@@ -176,9 +187,11 @@ and a claim,
       resources:
         requests:
           storage: 1Gi
-    
+```
+
 and assigned the claim to the application.
-    
+
+```yaml    
     apiVersion: extensions/v1beta1
     kind: Deployment
     metadata:
@@ -203,6 +216,7 @@ and assigned the claim to the application.
           - name: samba-share-volume
             persistentVolumeClaim:
               claimName: samba-share-claim
+```
 
 ---
 
@@ -296,26 +310,33 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 Getting kubectl
 
+```bash
     $ cd tmp
     $ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stabl
 e.txt)/bin/darwin/amd64/kubectl
+```
 
-Installing kubectl (or just ```brew install kubectl``` on MacOS)
+Installing kubectl (or just `brew install kubectl` on MacOS)
 
+```bash
     $ chmod +x ./kubectl
     $ sudo mv ./kubectl /usr/local/bin/kubectl
     $ kubectl cluster-info
     $ kubectl cluster-info dump
-    
+```
+
 Optional, creating the config file    
 
+```bash
     $ cd ~
     $ mkdir .kube
     $ cd .kube
     $ touch config
-    
+```
+
 Getting and running Minikube, a CLI tool that provisions and manages single-node Kubernetes clusters optimized for development workflows.
 
+```bash
     $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.21.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                    Dload  Upload   Total   Spent    Left  Speed
@@ -344,9 +365,11 @@ Getting and running Minikube, a CLI tool that provisions and manages single-node
     minikube: Running
     localkube: Running
     kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.100
+```
 
 Deploying an echoserver
     
+```bash
     $ kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
     $ kubectl expose deployment hello-minikube --type=NodePort
     $ kubectl get pod
@@ -354,9 +377,11 @@ Deploying an echoserver
     $ minikube dashboard
     $ kubectl cluster-info
     $ kubectl cluster-info dump
+```
 
 Some info from kubectl
 
+```bash
     $ kubectl get all
       NAME                                READY     STATUS    RESTARTS   AGE
       po/hello-minikube-938614450-zvvhn   1/1       Running   1          5d
@@ -370,9 +395,11 @@ Some info from kubectl
       
       NAME                          DESIRED   CURRENT   READY     AGE
       rs/hello-minikube-938614450   1         1         1         5d
+```
 
 Interacting with minikube api:
 
+```bash
     $ minikube service hello-minikube --url
     http://192.168.99.100:32306
 
@@ -394,6 +421,7 @@ Interacting with minikube api:
     user-agent=curl/7.54.0
     BODY:
     -no body in request- 
+```
 
 ---
 
@@ -401,7 +429,6 @@ Another link about Kubernetes and CoreOS:
 https://github.com/coreos/coreos-kubernetes
 
 Has deployment instructions for Vagrant stack too.
-
 
 ---
 
@@ -420,7 +447,7 @@ https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
 
 quick server, a NodeJS application(run as ‘node server.js’, or, better yet, ‘/bin/sh –c node server.js’):
 
-```
+```bash
 # cat server.js
 var http = require('http');
 var requests=0;
@@ -448,6 +475,7 @@ www.listen(8080,function () {
 
 Quick server in go:
 
+```go
     package main
     import (
         "log"
@@ -461,21 +489,27 @@ Quick server in go:
         })
         log.Fatal(http.ListenAndServe(":5000", nil))
     }
- 
+ ```
+
 Build a statically linked Go binary (no external dependencies)
 
-    $ CGO_ENABLED=0 go build -ldflags '-extldflags "-static"'
+ ```bash
+   $ CGO_ENABLED=0 go build -ldflags '-extldflags "-static"'
+```
 
 verify that the produced binary is statically linked:
 
+```bash
     $ file hello
     hello: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
 
     $ ldd hello
         not a dynamic executable
+```
 
 --------
 
+```bash
     $ minikube version
     minikube version: v0.25.0
 
@@ -507,7 +541,8 @@ verify that the produced binary is statically linked:
     $ kubectl get nodes
     NAME      STATUS    ROLES     AGE       VERSION
     host01    Ready     <none>    6m        v1.9.0
- 
+```
+
 ---
 
 Another step-by-step tutorial:

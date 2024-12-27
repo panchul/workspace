@@ -67,7 +67,7 @@ It skips several components, like wxWidgets, disables OpenSSL and ODBC, uses fak
 
 A refresher on exceptions
 
-```Erlang
+```erlang
 -module(test_throw).
 -compile([export_all, debug_info]).
 

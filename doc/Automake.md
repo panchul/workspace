@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # automake
 
 See also:
@@ -14,16 +15,17 @@ https://www.gnu.org/software/automake/automake.html
 
 **Contents**
 
+- [Installing](Automake.md#installing)
 - [Miscellaneous](Automake.md#miscellaneous)
 
 ---
 
-## Miscellaneous
-
+## Installing
 ---
 
 To get the autoconf, etc.:
 
+```bash
     export build=~/devtools # or wherever you'd like to build
     mkdir -p $build
     
@@ -51,6 +53,11 @@ To get the autoconf, etc.:
     ./configure --prefix=$build/autotools-bin
     make
     make install
+```
+
+---
+
+## Miscellaneous
 
 ---
 

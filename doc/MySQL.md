@@ -5,7 +5,10 @@ See Also:
 
  - [PostgreSQL](PostgreSQL.md)
  - [MS SQL Server](MSSQLServer.md)
- - 
+ 
+[https://www.mysql.com/](https://www.mysql.com/)
+
+Repo: [github.com/mysql/mysql-server](https://github.com/mysql/mysql-server)
 
 ---
 

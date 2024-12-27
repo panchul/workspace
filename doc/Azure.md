@@ -107,11 +107,15 @@ https://github.com/Azure/azure-cli
 
 Installing on Mac:
 
+```bash
     $ brew update && brew install azure-cli
+```
 
 Then you can log in to your account:
 
+```bash
     $ az login    
+```
 
 Azure Cloud Shell is even simpler:
 https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart?view=azure-cli-latest

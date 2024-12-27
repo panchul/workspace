@@ -1,8 +1,6 @@
 [Home](Readme.md)
 # Certbot
 
-Letsencrypt.org stuff.
-
 See Also:
 
   - [Certbot](Certbot.md)
@@ -14,6 +12,10 @@ See Also:
   - [SDN](SDN.md)
   - [Wireshark](Wireshark.md)
   - [Zero-Knowledge-Proof](ZNP.md)
+
+[Letsencrypt.org](http://letsencrypt.org) stuff.
+
+A nonprofit Certificate Authority providing TLS certificates to 500 million websites.
 
 ---
 
@@ -29,18 +31,24 @@ See Also:
 
 To run certbot on [Ubuntu](Ubuntu.md) to use with [Nginx](Nginx.md):
 
+```bash
     $ sudo certbot --nginx -d nameofapp
+```
 
 ---
 
 To check status:
 
+```bash
     $ sudo systemctl status certbot.timer
+```
 
 ---
 
 Dry run for renewal, simulating:
 
+```bash
     $ sudo certbot renew --dry-run
+```
 
 ---

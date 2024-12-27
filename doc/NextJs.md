@@ -1,8 +1,6 @@
 [Home](Readme.md)
 # NextJs
 
-https://nextjs.org/learn
-
 See Also:
 
   - [Flask](Flask.md)
@@ -10,7 +8,9 @@ See Also:
   - [Matplotlib](Matplotlib.md)
   - [Pandas](Pandas.md)
   - [Python](Python.md)
- 
+
+https://nextjs.org/learn
+
 https://dash.plotly.com/
 
 ---
