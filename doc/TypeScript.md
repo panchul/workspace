@@ -3,8 +3,24 @@
 
 See Also:
 
- - [C++](CPP.md)
+  - [C++](CPP.md)
+  - [Javascript](Javascript.md)
+  - [NodeJs](NodeJs.md)
+ 
+**Contents**
 
+- [Installing](Typscript.md#installing)
+- [Miscellaneous](Typscript.md#miscellaneous)
+
+---
+
+## Installing 
+
+---
+
+---
+
+## Miscellaneous
 ---
 
 A website to convert a json to a Typescript template.

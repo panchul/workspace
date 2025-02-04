@@ -6,6 +6,7 @@ See also:
   - [Anaconda](Anaconda.md)
   - [Jupyter](Jupyter.md)
   - [Pip](Pip.md)
+  - [Python](Python.md)
 
 Python's virtual environments
 

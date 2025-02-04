@@ -14,12 +14,78 @@ A sandbox with some templates:
 
 **Contents**
 
-- [Installing](Javascript.md#installing)
-- [Miscellaneous](Javascript.md#miscellaneous)
+  - [Installing](Javascript.md#installing)
+  - [Tutorials](Javascript.md#tutorials)
+  - [Callbacks](Javascript.md#callbacks)
+  - [Miscellaneous](Javascript.md#miscellaneous)
 
 ---
 
 ## Installing 
+
+---
+
+Don't have to, works in browsers. Can install [node](NodeJs.md), etc.
+
+---
+
+## Tutorials
+
+---
+
+Neat overview and spec:
+
+developer.mozilla.org/en-US/docs/Web/JavaScript
+
+---
+
+## Callbacks
+
+---
+
+[Plotly](PlotlyDash.md) and Javascript, not very good, but has some info:
+
+https://youtu.be/qh4Lg1X_k1A 
+
+---
+
+
+```Python
+import dash
+from dash import dcc, html, Input, Output
+from dash.exceptions import PreventUpdate
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+    dcc.Input(id='input-1', type='text', value=''),
+    html.Div(id='output-1')
+])
+
+@app.callback(
+    Output('output-1', 'children'),
+    Input('input-1', 'value')
+)
+def update_output(value):
+    if not value:
+        raise PreventUpdate
+    return f'You entered: {value}'
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
+```
+
+---
+
+
+My fork of this nice guy's repo(his videos are awesome):
+https://github.com/panchul/Dash-by-Plotly
+
+And somebody he references too: https://github.com/leberber
+
+A more elaborate code for Javascript callbacks:
+
+https://github.com/panchul/dashJsLibraries
 
 ---
 

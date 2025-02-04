@@ -1,3 +1,4 @@
+[Home](Readme.md)
 # Cryptography and Network Security
 
 See Also:
@@ -16,7 +17,45 @@ See Also:
 
 Table of Contents
 
+  - [https](Cryptocurrency.md##https)
+  - [Public Key Cryptography](Cryptography.md#public-key-cryptography)
   - [Types of attack](Cryptography.md#Types-of-attack)
+  - [Exfiltration](Cryptography.md#exfiltration)
+  - [Miscellaneous](Cryptography.md#miscellaneous)
+
+## HTTPS
+
+---
+
+http://movingtohttps.com
+
+A popular provider:
+
+http://letsencrypt.org/
+
+---
+
+Neat exercise about setting up https on CentOS 8:
+https://www.cyberciti.biz/faq/apache-with-lets-encrypt-certificates-on-centos-8/
+
+---
+
+## Public Key Cryptography
+
+---
+
+Nice summary of Public Key Cryptography
+http://s3.amazonaws.com/sdieee/1925-public-key-sys-and-protocols.pdf
+
+---
+
+About DER, BER, CER encoding rules:
+https://en.wikipedia.org/wiki/X.690
+
+Public Key Cryptography Standards (they are numbered)
+https://en.wikipedia.org/wiki/PKCS
+
+---
 
 ## Types of attack
 
@@ -28,6 +67,29 @@ More types of attack
 - Heap imploding
 - Buffer doubling
 - The Venetian exploit (https://flylib.com/books/en/1.545.1.61/1/)
+
+---
+
+## Exfiltration
+
+---
+
+Voltage Sensor for the poc of exfiltrator 
+https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
+
+---
+
+Neat reminder about data exfiltration.
+https://www.theregister.co.uk/2018/04/12/malware_exfiltrates_data_over_power_supply_cables/
+
+---
+
+## Miscellaneous
+
+---
+
+A Crash Course in Everything Cryptographic
+https://blog.usejournal.com/a-crash-course-in-everything-cryptographic-50daa0fda482
 
 ---
 
@@ -51,16 +113,6 @@ Popular Information Security Certification programs:
 
 ---
 
-Neat exercise about setting up https on CentOS 8:
-https://www.cyberciti.biz/faq/apache-with-lets-encrypt-certificates-on-centos-8/
-
----
-
-A Crash Course in Everything Cryptographic
-https://blog.usejournal.com/a-crash-course-in-everything-cryptographic-50daa0fda482
-
----
-
 35C3 - How Facebook tracks you on Android
 https://www.youtube.com/watch?v=y0vlD7r-kTc
 
@@ -72,31 +124,8 @@ https://www.youtube.com/watch?v=Dw5kme5Q_Yo
 
 ---
 
-About DER, BER, CER encoding rules:
-https://en.wikipedia.org/wiki/X.690
-
-Public Key Cryptography Standards (they are numbered)
-https://en.wikipedia.org/wiki/PKCS
-
----
-
-Nice summary of Public Key Cryptography
-http://s3.amazonaws.com/sdieee/1925-public-key-sys-and-protocols.pdf
-
----
-
 Summary of blockchain impact on the industry
 https://www.cbinsights.com/research/industries-disrupted-blockchain/
-
----
-
-Neat reminder about data exfiltration.
-https://www.theregister.co.uk/2018/04/12/malware_exfiltrates_data_over_power_supply_cables/
-
----
-
-Voltage Sensor for the poc of exfiltrator 
-https://www.robotshop.com/en/gravity-50a-current-sensor-ac-dc.html#Specifications
 
 ---
 

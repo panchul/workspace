@@ -4,6 +4,7 @@
 See Also:
 
   - [APIs](APIs.md)
+  - [Javascript](Javascript.md)
   - [XML](XML.md)
   - [YAML](YAML.md)
 
@@ -13,52 +14,10 @@ See Also:
 
 **Contents**
 
-- [Miscellaneous](JSON.md#miscellaneous)
 - [Scala implementation](JSON.md#Scala-implementation)
 - [C++ implementation folly](JSON.md#c-implementation-folly)
 - [C++ implementation nlohmann](JSON.md#c-implementation-nlohmann)
-
----
-
-## Miscellaneous
-
----
-
-For JSON pretty-printing, `jsonpp` works fine, can fetch with `brew`.
-
-```bash
-    $ brew install jsonpp
-    $ curl -s 'http://twitter.com/users/coderwall.json' | jsonpp
-```
-
-Another utility:
-
-```bash
-    $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
-    $ curl http://some_api_url/ | python -m json.tool
-```
-   
-This last one might get crapped up with the `curl`'s progress bar, to keep it silent:
-    
-```bash
-    $ curl -s http://some_api_url/ | python -m json.tool
-```
-
-or, if the JSON is in a file, you can do:
-
-```bash
-    $ python -m json.tool my_json.json
-```
-
-Make it an alias:
-
-```bash
-    alias prettyjson='python -m json.tool'
-```
-
-More discussions on this at:
-
-https://stackoverflow.com/questions/352098/how-can-i-pretty-print-json-in-a-shell-script
+- [Miscellaneous](JSON.md#miscellaneous)
 
 ---
 
@@ -246,5 +205,47 @@ namespace SerializeBasic
 // output:
 //{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot"}
 ```
+
+---
+
+## Miscellaneous
+
+---
+
+For JSON pretty-printing, `jsonpp` works fine, can fetch with `brew`.
+
+```bash
+    $ brew install jsonpp
+    $ curl -s 'http://twitter.com/users/coderwall.json' | jsonpp
+```
+
+Another utility:
+
+```bash
+    $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
+    $ curl http://some_api_url/ | python -m json.tool
+```
+   
+This last one might get crapped up with the `curl`'s progress bar, to keep it silent:
+    
+```bash
+    $ curl -s http://some_api_url/ | python -m json.tool
+```
+
+or, if the JSON is in a file, you can do:
+
+```bash
+    $ python -m json.tool my_json.json
+```
+
+Make it an alias:
+
+```bash
+    alias prettyjson='python -m json.tool'
+```
+
+More discussions on this at:
+
+https://stackoverflow.com/questions/352098/how-can-i-pretty-print-json-in-a-shell-script
 
 ---

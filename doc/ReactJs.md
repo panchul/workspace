@@ -50,6 +50,16 @@ https://github.com/Savinvadim1312/UberClone
 
 ---
 
+## Tutorials
+
+---
+
+reactnative.dev
+
+developer.mozilla.org/en-US/docs/Web/JavaScript
+
+---
+
 ## Miscellaneous
 
 ---

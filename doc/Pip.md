@@ -10,7 +10,8 @@ See Also:
 
 **Content**
 
-- [Installing](Pip.md#Installing)
+- [Installing](Pip.md#installing)
+- [Installing a package](Pip.md#installing-a-package)
 - [Creating an environment](Pip.md#Creating-an-environmtn)
 - [Requirements.txt format](Pip.md#Requirements-txt-format)
 - [Miscellaneous](Pip.md#Miscellaneous)
@@ -44,7 +45,41 @@ The packages are usually fetched from the repository https://pypi.org
 
 ---
 
+## Installing a package
+
+---
+
+Basic usage:
+
+```bash
+    $ pip install <somempackage>
+```
+
+Or, indirectly (because environment may have other things):
+
+```bash
+    $ python -m pip install <somempackage>
+```
+
+---
+
+To make a snapshot into `requirements.txt`:
+
+```bash
+    (my_env)$ python -m pip freeze > requirements.txt
+```
+
+To use a requirements.txt file in a new environment:
+
+```bash
+    $ python -m pip install -r requirements.txt
+```
+
+---
+
 ## Creating an environment
+
+Using [`venv`](Venv.md)
 
 ---
 

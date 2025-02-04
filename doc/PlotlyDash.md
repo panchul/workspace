@@ -3,7 +3,9 @@
 
 See Also:
 
+  - [Dash](Dash.md)
   - [Flask](Flask.md)
+  - [Javascript](Javascript.md)
   - [Jupyter](Jupyter.md)
   - [Matplotlib](Matplotlib.md)
   - [Pandas](Pandas.md)
@@ -35,6 +37,7 @@ Homepage and other useful pages:
 - [Bootstrapping](PlotlyDash.md#bootstrapping)
 - [Deploying](PlotlyDash.md#deploying)
 - [Web Sandbox](PlotlyDash.md#web-sandbox)
+- [Components](PlotlyDash.md#components)
 - [Tutorials](PlotlyDash.md#tutorials)
 - [Miscellaneous](PlotlyDash.md#miscellaneous)
 
@@ -253,6 +256,14 @@ def update_x_timeseries(hoverData, yaxis_column_name, axis_type):
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+
+---
+]
+## Components
+
+---
+
+github.com/plotly/dash-component-boilerplate
 
 ---
 

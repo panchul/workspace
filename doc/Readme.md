@@ -96,6 +96,7 @@
 - [Sporth](Sporth.md)
 - [Starlark](Starlark.md), [Buck2'2](Buck.md) programming language.
 - [Swift](Swift.md)
+- [TypeScript](TypeScript.md)
 
 A more conceptual links, still related to Programming Languages and Math
 
@@ -213,7 +214,6 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 
 [Databases](Databases.md)
 
-
 ### Version control systems, configuration, build tools 
 
 - [aptitude](Aptitude.md)
@@ -242,6 +242,7 @@ Microservices design patterns for CTOs: API Gateway, Backend for Frontend and mo
 - [Rustup](Rustup.md)
 - [Sbt](Sbt.md)  
 - [Subversion](Subversion.md)  
+- [yarn](Yarn.md)
 - [yum](Yum.md)
 - [ldconfig](Ldconfig.md)
 
@@ -278,6 +279,7 @@ Topics sometimes associated with Operating Systems.
 - [Angular](Angular.md)
 - [Apache](Apache.md)
 - AppMaster [https://appmaster.io/](https://appmaster.io/) a no-code platform
+- [Dash](Dash.md)
 - [Disqus](Disqus.md) Commenting, discussion forums, etc.
 - [Django](Django.md)
 - [Dotnet](Dotnet.md), ASP, etc.
@@ -297,6 +299,7 @@ Topics sometimes associated with Operating Systems.
 - [nginx](Nginx.md)
 - [NodeJs](NodeJs.md)
 - [PlayFramework](PlayFramework.md)
+- [PlotlyDash](PlotlyDash.md)
 - [React.js](ReactJs.md)
 - [RESTful services](REST.md)
 - [Scalatra](Scalatra.md)
@@ -559,7 +562,7 @@ Aggregated List of C++ networking libraries
 - Octave
 - CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
 - NumPy,
-- Pandas,
+- [Pandas](Pandas.md),
 - Seaborn,
 - Scikit-Learn,
 - Microsoft Cognitive Toolkit,
@@ -839,6 +842,7 @@ Another nice resource:
 ## Languages
 
 - [French](French.md)
+- [Spanish](Spanish.md)
 
 ## Fun and useful.
 

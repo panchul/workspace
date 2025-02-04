@@ -15,6 +15,8 @@
 
 Idiomatic redirecting to `/dev/null` :
 
+```bash
     $ nohup do_crap.sh > /dev/null &
+```
 
 ---
