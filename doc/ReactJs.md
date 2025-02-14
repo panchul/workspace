@@ -8,6 +8,7 @@ See Also:
  - [NodeJs](NodeJs.md)
  - [NextJs](NextJs.md)
  - [TypeScript](TypeScript.md)
+ - [PlotlyDash](PlotlyDash.md)
 
 [https://react.dev/](https://react.dev/)
 
@@ -16,7 +17,10 @@ See Also:
 **Contents**
 
 - [Installing](ReactJs.md#installing)
-- [Tutorials](ReactJs#tutorials)
+- [Tutorials](ReactJs.md#tutorials)
+- [React Native](ReactJs.md#react-native)
+- [React Flow](ReactJs.md#react-flow)
+- [React Leaflet](ReactJs.md#react-leaflet)
 - [Miscellaneous](ReactJs#miscellaneous)
 
 ---
@@ -50,13 +54,30 @@ https://github.com/Savinvadim1312/UberClone
 
 ---
 
-## Tutorials
+## React Native
 
 ---
 
 reactnative.dev
 
 developer.mozilla.org/en-US/docs/Web/JavaScript
+
+---
+
+## React Flow
+
+---
+
+https://reactflow.dev/learn/tutorials/react-flow-and-the-web-audio-api
+
+
+---
+
+## React Leaflet
+
+---
+
+https://react-leaflet.js.org/
 
 ---
 

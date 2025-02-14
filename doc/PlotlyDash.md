@@ -3,7 +3,6 @@
 
 See Also:
 
-  - [Dash](Dash.md)
   - [Flask](Flask.md)
   - [Javascript](Javascript.md)
   - [Jupyter](Jupyter.md)
@@ -38,6 +37,8 @@ Homepage and other useful pages:
 - [Deploying](PlotlyDash.md#deploying)
 - [Web Sandbox](PlotlyDash.md#web-sandbox)
 - [Components](PlotlyDash.md#components)
+- [Dash and ReactFlow](PlotlyDash.md#dash-and-reactflow)
+- [Dash Mantine Components(DMC)](PlotlyDash.md#dmc)
 - [Tutorials](PlotlyDash.md#tutorials)
 - [Miscellaneous](PlotlyDash.md#miscellaneous)
 
@@ -93,7 +94,7 @@ https://www.youtube.com/watch?v=Fm7DC-Z5R7A&list=PLYD54mj9I2JevdabetHsJ3RLCeMyBN
 
 https://github.com/Coding-with-Adam/deploy-app2-example
 
-They want to create and activate virtual environment, [venv](Venv.md)
+They want to create and activate virtual environment, [venv](Venv.md), and using [gunicorn](Gunicorn.md)
 
 ```bash
 python3 -m venv my_env
@@ -102,7 +103,6 @@ python3 -m venv my_env
 pip install -r requirements.txt
 
 pip install gunicorn
-
 
 # make sure to have have server = app.server (a Flask thing)
 # try it out:
@@ -264,6 +264,31 @@ if __name__ == '__main__':
 ---
 
 github.com/plotly/dash-component-boilerplate
+
+---
+
+## Dash and ReactFlow
+
+---
+
+Neat sample codes here:
+
+github.com/pip-install-python/dash-flows
+
+
+Another one, probably not working earlier version:
+
+github.com/pip-install-python/Dash-Flow
+
+---
+
+## DMC
+
+Dash Mantine Components(DMC)
+
+---
+
+https://www.dash-mantine-components.com/components/text
 
 ---
 

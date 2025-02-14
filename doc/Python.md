@@ -10,6 +10,7 @@ See also:
   - [Pandas](Pandas.md)
   - [PIL](PIL.md)
   - [Pip](Pip.md)
+  - [PlotlyDash](PlotlyDash.md)
   - [PyCharm](PyCharm.md)
   - [venv](Venv.md)
 
@@ -27,6 +28,7 @@ My Python sandbox is [https://github.com/panchul/sb_python](https://github.com/p
 - [Web-related](Python.md#web-related)
 - [Decorators](Python.md#decorators)
 - [Abstract classes and interfaces](Python.md#abstract-classes-and-interfaces)
+- [Data validation](Python.md#data-validation)
 - [Miscellaneous](Python.md#miscellaneous)
 
 ---
@@ -312,6 +314,53 @@ class Car(Vehicle):
     
     def brake(self):
         print("Applying car brakes...")
+```
+
+---
+
+## Data validation
+
+---
+
+Pydantic lib:
+
+https://docs.pydantic.dev/latest/
+
+
+```Python
+from datetime import datetime
+from pydantic import BaseModel, PositiveInt, ValidationError
+
+class User(BaseModel):
+    id: int
+    name: str = 'John Doe'
+    signup_ts: datetime | None
+    tastes: dict[str, PositiveInt]
+
+external_data = {'id': 'not an int', 'tastes': {}}  
+
+try:
+    User(**external_data)  
+except ValidationError as e:
+    print(e.errors())
+    """
+    [
+        {
+            'type': 'int_parsing',
+            'loc': ('id',),
+            'msg': 'Input should be a valid integer, unable to parse string as an integer',
+            'input': 'not an int',
+            'url': 'https://errors.pydantic.dev/2/v/int_parsing',
+        },
+        {
+            'type': 'missing',
+            'loc': ('signup_ts',),
+            'msg': 'Field required',
+            'input': {'id': 'not an int', 'tastes': {}},
+            'url': 'https://errors.pydantic.dev/2/v/missing',
+        },
+    ]
+    """
 ```
 
 ---
