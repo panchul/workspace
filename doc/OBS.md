@@ -9,6 +9,7 @@ https://github.com/obsproject
 **Contents**
 
 - [Installing](OBS.md#installing)
+- [NDI](OBS.md#ndi)
 - [Miscellaneous](OBS.md#miscellaneous)
 
 ---
@@ -26,6 +27,15 @@ sudo apt install obs-studio
 
 See more at https://obsproject.com/kb/linux-installation
 
+---
+
+## NDI
+
+---
+
+What is NDI? - Why you NEED it for OBS!
+
+https://youtube.com/watch?v=1OyfzQ-sHRs
 
 ---
 

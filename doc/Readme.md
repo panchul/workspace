@@ -8,7 +8,7 @@
 - [Frameworks Libraries, Static code analysis, architecture approaches, etc.](Readme.md#frameworks-libraries-static-code-analysis-architecture-approaches-etc)
   - [Data formats, APIs, Protocols](Readme.md#data-formats-apis-protocols)
   - [Web Frameworks, servers, etc](Readme.md#web-frameworks-servers-etc)
-  - [Testing Frameworks](Readme.md#Testing-Frameworks)
+  - [Testing Frameworks](Readme.md#testing-frameworks)
   - [Data mining, Machine Learning, Artificial Intelligence, etc.](Readme.md#data-mining-machine-learning-artificial-intelligence-etc)
   - [Algorithms and Data Structures](Readme.md#Algorithms-and-Data-Structures)
   - [GUI Frameworks](Readme.md#GUI-Frameworks)
@@ -503,8 +503,10 @@ Aggregated List of C++ networking libraries
 - Graphite
 - [Googletest](Googletest.md)
 - Meck
+- [Pytest](Pytest.md)
 - [Scalameter](Scalameter.md)
 - [ScalaTest](Scalatest.md)
+- [Selenium](Selenium.md)
 - Tsung
 - UiPath https://www.uipath.com/studio
 - WinAutomation http://www.winautomation.com/features/

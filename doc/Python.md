@@ -12,6 +12,7 @@ See also:
   - [Pip](Pip.md)
   - [PlotlyDash](PlotlyDash.md)
   - [PyCharm](PyCharm.md)
+  - [Pytest](Pytest.md)
   - [venv](Venv.md)
 
 [https://www.python.org/](https://www.python.org/)

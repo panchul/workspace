@@ -9,6 +9,7 @@ See Also:
  - [NodeJs](NodeJs.md)
  - [Nvm](Nvm.md)
  - [Subversion](Subversion.md)
+ - [webpack](Webpack.md)
  - [Yarn](Yarn.md)
  
 `npm` (Node package manager) is a software registry. It is installed with Node.js.
@@ -162,5 +163,11 @@ https://dev.to/joeattardi/how-to-publish-an-npm-package-to-npm-and-github-packag
 
 How to use a private git repo as an npm module
 (from here: https://dev.to/gate3/how-to-use-a-private-git-repo-as-an-npm-module-2cl9)
+
+---
+
+yarn vs npm, with nice side-by-side cheatsheet:
+
+phoenixnap.com/kb/yarn-vs-npm
 
 ---

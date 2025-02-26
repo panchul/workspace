@@ -29,7 +29,7 @@ See Also:
 
 ---
 
-React Developer Tools
+React Developer Tools (an extension)
 https://react.dev/learn/react-developer-tools
 
 ---

@@ -10,11 +10,26 @@ See also:
   - [PlotlyDash](PlotlyDash.md)
   - [Python](Python.md)
 
+
+https://pandas.pydata.org/docs/
+
 ---
 
 **Contents**
 
 - [Miscellaneous](Pandas.md#miscellaneous)
+- [Installing](Pandas.md#installing)
+
+---
+
+## Installing
+
+---
+
+
+---
+
+## Miscellaneous
 
 ---
 

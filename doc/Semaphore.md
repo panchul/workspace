@@ -23,7 +23,7 @@ https://en.wikipedia.org/wiki/Semaphore_(programming)
 
 Semaphore example from my sandbox:
 
-```
+```C
 #include <stdio.h> 
 #include <pthread.h> 
 #include <semaphore.h> 
