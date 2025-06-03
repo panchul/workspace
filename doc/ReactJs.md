@@ -21,6 +21,12 @@ See Also:
 - [React Native](ReactJs.md#react-native)
 - [React Flow](ReactJs.md#react-flow)
 - [React Leaflet](ReactJs.md#react-leaflet)
+- UI Design
+  - [Ant Design](ReactJs.md#ant-design)
+- Testing
+  - [Selenium](ReactJs.md#selenium)
+  - [Jest](ReactJs.md#jest)
+- [Authentication](ReactJs.md#authentication)
 - [Miscellaneous](ReactJs#miscellaneous)
 
 ---
@@ -78,6 +84,59 @@ https://reactflow.dev/learn/tutorials/react-flow-and-the-web-audio-api
 ---
 
 https://react-leaflet.js.org/
+
+---
+
+## Ant Design
+
+---
+
+Neat UI component collection
+
+[ant.design/components](https://ant.design/components/overview)
+
+---
+
+## Selenium
+
+---
+
+[Selenium.md](Selenium.md)
+
+---
+
+https://www.selenium.dev/
+
+
+---
+
+## Jest
+
+---
+
+[Jest.md](Jest.md)
+
+---
+
+Unit testing for React and others
+
+[jestjs.io](https://jestjs.io)
+
+---
+
+## Authentication
+
+---
+
+Library for logins:
+
+https://github.com/react-auth-kit/react-auth/kit
+
+---
+
+A 1.5 hour video about 2-factor authentication in React
+
+https://www.youtube.com/watch?v=dndLA0EPQWY&t=24s
 
 ---
 
