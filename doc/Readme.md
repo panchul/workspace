@@ -502,6 +502,7 @@ Aggregated List of C++ networking libraries
 - Common Test (CT)
 - Graphite
 - [Googletest](Googletest.md)
+- [Jest](Jest.md)
 - Meck
 - [Pytest](Pytest.md)
 - [Scalameter](Scalameter.md)

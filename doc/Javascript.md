@@ -6,6 +6,7 @@ See Also:
  - [GoogleCloud(GCP)](GoogleCloud.md)
  - [NodeJs](NodeJs.md)
  - [TypeScript](TypeScript.md)
+ - [Zustand](Zustand.md)
 
 A sandbox with some templates:
 [https://github.com/panchul/sb_javascript](https://github.com/panchul/sb_javascript)
@@ -17,6 +18,7 @@ A sandbox with some templates:
   - [Installing](Javascript.md#installing)
   - [Tutorials](Javascript.md#tutorials)
   - [Callbacks](Javascript.md#callbacks)
+  - [Persistence](Javascript.md#persistence)
   - [Miscellaneous](Javascript.md#miscellaneous)
 
 ---
@@ -89,6 +91,14 @@ https://github.com/panchul/dashJsLibraries
 
 ---
 
+## Persistence
+
+---
+
+One of the options is [Zustand](Zustand.md)
+
+---  
+  
 ## Miscellaneous
 
 ---

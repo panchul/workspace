@@ -19,6 +19,7 @@ See also:
   - [SQLite](SQLite.md)
   - A blog with comparison: http://highscalability.com/blog/2015/12/30/how-to-choose-an-in-memory-nosql-solution-performance-measur.html
   - [Haystack](Haystack.md)
+  - [Zustand](Zustand.md)
 
 ---
 
