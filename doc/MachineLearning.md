@@ -65,6 +65,18 @@ TODO
 
 ---
 
+ml projects ideas
+https://omdena.com/blog/deep-learning-project-ideas/
+
+---
+
+Key Concepts Machine Learning
+By Janani Ravi
+
+https://app.pluralsight.com/library/courses/key-concepts-machine-learning/table-of-contents
+ 
+---
+
 A few intro videos people seem to like:
 
 - fast.ai - making neural nets uncool again

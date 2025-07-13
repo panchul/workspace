@@ -11,6 +11,7 @@ See also:
 **Contents**
 
 - [Shortcuts, etc.](MacOS.md#shortcuts-etc)
+- [Quarantine attributes](MacOS.md#quarantine-attributes)
 - [Debugging](MacOS.md#debugging)
 - [Screen capture tools](MacOS.md#screen-capture-tools)
 - [Miscellaneous](MacOS.md#miscellaneous)
@@ -26,6 +27,14 @@ See also:
 ---
 
 Emoji for Mac keyboards: Use `CTRL + CMD + Space`
+
+---
+
+## Quarantine Attributes
+
+---
+
+[Remove the quarantine attribute](Selenium.md#remove-the-quarantine-attribute-from-chromedriver)
 
 ---
 

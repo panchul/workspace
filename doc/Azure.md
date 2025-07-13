@@ -221,6 +221,27 @@ https://www.youtube.com/watch?v=sA_mXKy_dKU
 
 ---
 
+That course has great key vault and slot deployment how-tos, mentions Selenium and automation. Great resource, even though a short course.
+
+Deploying Web Applications or Services in Microsoft Azure
+By Chris Behrens
+
+https://app.pluralsight.com/library/courses/microsoft-azure-web-applications-services-deploying/table-of-contents
+
+These are probably the other two courses the author mentions.
+
+Specifying Deployment Requirements in Microsoft Azure
+by Chris Behrens
+
+https://app.pluralsight.com/library/courses/microsoft-azure-deployment-requirements-specifying/table-of-contents
+
+Configuring a Deployment Environment in Microsoft Azure
+by Chris Behrens
+
+https://app.pluralsight.com/library/courses/microsoft-azure-deployment-environment-configuring/table-of-contents
+
+---
+
 Books on azure, dotnet, etc.
 
 Containerized Docker application lifecycle with Microsoft platform and tools

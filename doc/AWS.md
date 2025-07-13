@@ -218,3 +218,9 @@ https://dev.to/oyetoket/how-to-deploy-your-frontend-application-on-aws-s3-31m9
 (discusses S3 and react hooks)
 
 ---
+
+Merchandizing
+
+ https://sell.amazon.com/beginners-guide 
+
+ ---
