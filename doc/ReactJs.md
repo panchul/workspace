@@ -18,6 +18,7 @@ See Also:
 
 - [Installing](ReactJs.md#installing)
 - [Tutorials](ReactJs.md#tutorials)
+  - [Hooks](ReactJs.md#hooks)
 - [React Native](ReactJs.md#react-native)
 - [React Flow](ReactJs.md#react-flow)
 - [React Leaflet](ReactJs.md#react-leaflet)
@@ -27,6 +28,7 @@ See Also:
   - [Selenium](ReactJs.md#selenium)
   - [Jest](ReactJs.md#jest)
 - [Authentication](ReactJs.md#authentication)
+- [React Query](ReactJs.md#react-query)
 - [Miscellaneous](ReactJs#miscellaneous)
 
 ---
@@ -60,6 +62,16 @@ https://github.com/Savinvadim1312/UberClone
 
 ---
 
+### Hooks
+
+---
+
+All React Hooks Explained - React Hooks Tutorial 2025
+https://www.youtube.com/watch?v=xfKYYRE6-TQ
+
+
+---
+
 ## React Native
 
 ---
@@ -76,6 +88,8 @@ developer.mozilla.org/en-US/docs/Web/JavaScript
 
 https://reactflow.dev/learn/tutorials/react-flow-and-the-web-audio-api
 
+ReactFlow components:
+github.com/pip-install-python/dash-flows
 
 ---
 
@@ -137,6 +151,14 @@ https://github.com/react-auth-kit/react-auth/kit
 A 1.5 hour video about 2-factor authentication in React
 
 https://www.youtube.com/watch?v=dndLA0EPQWY&t=24s
+
+---
+
+## React Query
+
+---
+
+TODO
 
 ---
 

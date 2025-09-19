@@ -18,6 +18,7 @@ See Also:
 **Contents**
 
 - [Installing](Npm.md#installing)
+- [Integration with Git](Npm.md#integration-with-git)
 - [Creating a package](Npm.md#creating-a-package)
 - [Deploying](Npm.md#deploying)
 - [Miscellaneous](Npm.md#miscellaneous)
@@ -54,6 +55,17 @@ And activate it:
 % nvm use 22.11.0
 Now using node v22.11.0 (npm v10.9.0)
 ```
+
+---
+
+## Integration with Git
+
+---
+
+https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry
+
+
+
 
 ---
 
@@ -166,7 +178,7 @@ How to use a private git repo as an npm module
 
 ---
 
-yarn vs npm, with nice side-by-side cheatsheet:
+[yarn](Yarn.md) vs npm, with nice side-by-side cheatsheet:
 
 phoenixnap.com/kb/yarn-vs-npm
 
