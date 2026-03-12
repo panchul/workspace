@@ -58,6 +58,43 @@ https://en.wikipedia.org/wiki/PKCS
 
 ---
 
+Key Components of PKI(public key infrastructure) Flows:
+
+- Certificate Authority (CA), trusted third party that issues certificates
+- Registration Aurhority (RA), verifies requests for certificates
+- Certificate Revocation List (CRL), a list of revoked certificates
+- Automated Enrollment Protocols (ACME/SCEP), protocols used for automating certificate issuance and renewal.
+
+There is Certificate lifecycle flow:
+
+- Issuance/Request Flow: An entity (user, server, IoT device) generates a public-private key pair and sends a Certificate Signing Request (CSR) to a Registration Authority (RA). The RA validates the identity, and then the Certificate Authority (CA) signs and issues the digital certificate.
+
+- Distribution/Deployment Flow: The issued certificate is sent to the requesting entity and installed on the application, web server, or device to enable encrypted communication (e.g., loading an SSL/TLS certificate on a web server).
+
+- Validation Flow: During a transaction, a party checks the certificate to ensure it is valid, trusted, and not expired. This is often done via online protocols like Online Certificate Status Protocol (OCSP) or by checking a Certificate Revocation List (CRL).
+
+- Renewal/Re-keying Flow: Before a certificate expires, it must be renewed to avoid service interruptions. Modern PKI automates this process to prevent downtime caused by expired certificates.
+
+- Revocation Flow: If a private key is compromised, the certificate must be revoked before its expiration date. The CA adds it to the CRL to ensure it is no longer trusted. 
+
+Operational/Functional Flows
+
+- Authentication Flow (Client-to-Server): A client presents its digital certificate to a server. The server checks the certificate against its trusted root CA to verify the identity without needing a password.
+
+- Encryption Flow (Data in Transit): When communicating, a sender uses the receiver's public key (from the certificate) to encrypt data. Only the recipient's corresponding private key can decrypt the data.
+
+- Code/Document Signing Flow: A developer or author uses a private key to sign code or a document. Recipients use the corresponding public key to verify that the file is authentic and has not been altered. 
+
+Key Management Flows (Security)
+
+- Key Generation: Cryptographic keys are generated using secure algorithms.
+
+- Key Storage: Private keys are stored in secure locations, such as Hardware Security Modules (HSMs) or on smart cards, to prevent unauthorized access.
+
+- Backup and Recovery: Keys are backed up to ensure they are not lost, which would render encrypted data unrecoverable.
+
+---
+
 ## Types of attack
 
 ---

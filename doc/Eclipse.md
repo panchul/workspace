@@ -3,6 +3,7 @@
 
 See Also:
 
+ - [Cursor](Cursor.md)
  - [CLion](CLion.md)
  - [IntelliJ](IntelliJ.md)
  - [Visual Studio Code](VisualStudioCode.md)

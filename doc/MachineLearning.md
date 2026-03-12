@@ -22,7 +22,8 @@ See Also:
 **Content**
 
  - [Labs and tutorials](MachineLearning.md#labs-and-tutorials)
- - [Frameworks](MachineLearning.md#Frameworks)(for math and preprocessing) 
+ - [Frameworks](MachineLearning.md#Frameworks)(for math and preprocessing)
+ - [Transformers][MachineLearning.md#transformers] 
  - [Miscellaneous](MachineLearning.md#miscellaneous)
 
 # Frameworks
@@ -58,6 +59,19 @@ TODO
 # Labs and tutorials
 
 TODO
+
+---
+
+# Transformers
+
+Transformers, the tech behind LLMs | Deep Learning Chapter 5
+
+https://www.youtube.com/watch?v=wjZofJX0v4M
+
+
+Attention in transformers, step-by-step | Deep Learning Chapter 6
+
+https://www.youtube.com/watch?v=eMlx5fFNoYc
 
 ---
 

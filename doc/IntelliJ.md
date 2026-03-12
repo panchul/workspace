@@ -1,15 +1,17 @@
 [Home](Readme.md)
 # JetBrains IntelliJ IDEA
 
-An open-source ide, with a lot of plugins covering anything you want.
-
-[https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)
-
 See Also:
 
+  - [Cursor](Cursor.md)
   - [CLion](CLion.md)
   - [PyCharm](PyCharm.md)
   - [Visual Studio Code](VisualStudioCode.md)
+
+
+An open-source ide, with a lot of plugins covering anything you want.
+
+[https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)
 
 ---
 

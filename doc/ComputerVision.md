@@ -144,6 +144,7 @@ https://community.hortonworks.com/articles/193868/integrating-keras-tensorflow-y
 
 Simple bar-code reader using pyzbar (see my Python sandbox, (https://github.com/panchul/sb_python) 
 
+```python
     >>> from pyzbar import pyzbar
     >>> from PIL import Image
     >>> info = pyzbar.decode(Image.open('sample_barcode.png'))
@@ -158,9 +159,11 @@ Simple bar-code reader using pyzbar (see my Python sandbox, (https://github.com/
     Decoded(data=b'http://en.m.wikipedia.org', type='QRCODE', rect=Rect(left=17, top=15,
     width=147, height=147), polygon=[Point(x=17, y=15), Point(x=17, y=162), Point(x=164,
     y=162), Point(x=164, y=15)])]
+```
     
 A Python script to extract the codes from the camera feed:
 
+```python
     # pip install opencv-python 
     # pip install pillow 
     # The zbar DLLs are included with the Windows Python wheels. On other operating systems,
@@ -201,6 +204,8 @@ A Python script to extract the codes from the camera feed:
     if __name__ == '__main__':
         main()
 
+```
+
 ---
 
 One-liner text recognition using PyTesseract:
@@ -208,26 +213,32 @@ One-liner text recognition using PyTesseract:
 
 Pre-requisites:
 
+```bash
     $ pip install opencv-python
     $ sudo apt-get update
     $ sudo apt-get install tesseract-ocr
     $ sudo apt-get install libtesseract-dev
     $ pip install pytesseract
+```
 
 Might need to add the `tesseract_cmd`, might be for Windows though:
 
+```python
     import cv2
     import pytesseract
     pytesseract.pytesseract.tesseract_cmd = r'c:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+```
 
 The Python code itself:
 
+```python
     import cv2
     import pytesseract
     
     img = cv2.imread('somefile.png')
     text = pytesseract.image_to_string(img)
     print(text)
+```
 
 ---
 

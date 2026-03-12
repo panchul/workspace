@@ -20,6 +20,7 @@ See Also:
   - [3D Printing](Hardware.md#3d-printing)
   - [SSD and storage](Hardware.md#ssd-and-storage)
   - [Mechanical and structural](Hardware.md#mechanical-and-structural)
+  - [RF etc][Hardware.md#rf-etc]
   - [Miscellaneous](Hardware.md#miscellaneious)
 
 ---
@@ -100,6 +101,24 @@ TODO: find that link where 2040 extrusion t-slotted aluminum beams were
 ---
 
 - https://www.zoro.com - metal wire, etc.
+
+---
+
+## RF etc
+
+Ultra-Wideband, UWB. Indoor positioning, etc.
+
+https://www.youtube.com/watch?v=6Y8rgUD7DL4
+
+
+SS-TWR, single-sided two-way ranging
+
+https://www.youtube.com/watch?v=NrSfeQoOvqg
+
+
+Ultra-wideband Wireless Communication Technology
+
+https://www.youtube.com/watch?v=r5yxuV-Y3z8
 
 ---
 
