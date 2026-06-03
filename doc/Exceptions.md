@@ -2,6 +2,7 @@
 # Exceptions (C++)
 
 See Also:
+
   - [Cpp](CPP.md)
   - [STL](STL.md)
 
@@ -36,6 +37,6 @@ https://en.cppreference.com/w/cpp/language/exceptions
       }
       return 0;
     }
-``
-    
----    
+```
+
+---

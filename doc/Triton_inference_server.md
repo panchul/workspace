@@ -1,11 +1,26 @@
 [Home](Readme.md)
 # NVidia Triton inference server
 
+It is actually now Dynamo-Triton
+https://developer.nvidia.com/dynamo-triton
+
 (Nvidia supports it.)
 
 See Also:
 
- - [Gunicorn](Gunicorn.md)
+  - [Artificial Intelligence](ArtificialIntelligence.md#miscellaneous)
+  - [Gunicorn](Gunicorn.md)
+  - [MachineLearning](MachineLearning.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Triton_inference_server.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

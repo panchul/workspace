@@ -73,6 +73,7 @@
 - [F#](FSharp.md)  
 - [Flutter](Flutter.md)  
 - [Go](Go.md)  
+- [Haskel](Haskel.md)
 - [Java](Java.md)  
   - [Spring](Spring.md)
 - [JavaScript](Javascript.md)  
@@ -435,6 +436,7 @@ https://www.tartssensors.com/libraries/arduino/
 - LiteIDE
 - nbdev https://www.fast.ai/2019/12/02/nbdev/
 - [PyCharm](PyCharm.md) (For Python, from Jetbrains)
+- Ryder
 - Spyder (for Python)
 - Sublime http://www.sublimetext.com/
 - [vi/vim](Vim.md)
@@ -544,33 +546,34 @@ Aggregated List of C++ networking libraries
 
 - Apache MXNet,
 - AppDynamics https://www.appdynamics.com/
+- [Artificial Intelligence](ArtificialIntelligence.md)
 - [Alexa](Alexa.md)
 - Caffe and Caffe2
+- CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
 - Chatbots
 - Chatgpt
 - [ComputerVision](ComputerVision.md)
 - [GAN](GAN.md), (Generative Adversarial networks)
+- [gnuplot](Gnuplot.md)
+- Google Hand Tracking library: https://github.com/google/mediapipe/blob/master/mediapipe/docs/hand_tracking_mobile_gpu.md
 - [Keras](Keras.md),
 - [Machine Learning](MachineLearning.md)
 - [MarkovChains](MarkovChains.md)
+- Microsoft Cognitive Toolkit,
 - Neon
 - [Neural Network](NeuralNetwork.md)
 - Nirvana Cloud
+- NumPy,
+- Octave
+- [Pandas](Pandas.md),
+- [PyTorch](PyTorch.md)
+- Scikit-Learn,
+- Seaborn,
 - Speech generation
   [Political Speech Generator](https://trial.dominodatalab.com/u/domino/Political_Speech_Generator/browse?)
 - [Splunk](Splunk.md)
 - [TensorFlow](TensorFlow.md)
-- [PyTorch](PyTorch.md)
 - Tiny-DNN, https://github.com/tiny-dnn/tiny-dnn
-- Octave
-- CEO, etc. http://yesoptimist.com/intercom-growth-strategy-teardown/
-- NumPy,
-- [Pandas](Pandas.md),
-- Seaborn,
-- Scikit-Learn,
-- Microsoft Cognitive Toolkit,
-- Google Hand Tracking library: https://github.com/google/mediapipe/blob/master/mediapipe/docs/hand_tracking_mobile_gpu.md
-- [gnuplot](Gnuplot.md)
 
 Neat command-line tricks:
 - https://www.datascienceatthecommandline.com/chapter-7-exploring-data.html#creating-visualizations
@@ -631,44 +634,49 @@ https://onezero.medium.com/exclusive-live-facial-recognition-is-coming-to-u-s-po
 ### Algorithms and Data Structures
 
 - [Algorithms and Data Structures](AlgorithmsDataStructures.md)
+- distributed caching
+- [Dijkstra](Dijkstra.md)
 - [Graphs](Graphs.md)
+- load balancing
 - [Map](Map.md)
-- [Sorting](Sorting.md)
+- map-reduce
+- [MarkovChains](MarkovChains.md)
 - Nice collection for the topic of Distributed Systems and Parallel Computing
   https://ai.google/research/pubs?area=DistributedSystemsandParallelComputing
 - Scalable web architecture http://www.aosabook.org/en/distsys.html
 - service oriented architectures
-- [MarkovChains](MarkovChains.md)
-- map-reduce
-- distributed caching
-- load balancing
+- [Sorting](Sorting.md)
 
 ### GUI Frameworks
 
-- MFC
-- [wxWidgets](WxWidgets.md)
 - GTK+ http://www.gtk.org/
-- [Qt](Qt.md)
+- MFC
 - Open-source UI Automation library https://github.com/TestStack/White
+- [Qt](Qt.md)
+- [wxWidgets](WxWidgets.md)
 
 ### Computer Graphics, Computer Vision, Visualization, Image Processing, etc
 
 - [AugmentedReality](AugmentedReality.md) all sort of miscellaneous snippets.
+- [FBX](FBX.md)
 - [Graphics](Graphics.md) all sort of miscellaneous snippets.
 - [OBS](OBS.md) Open Broadcaster Software
 
 ### Movie making
 
-How to write a scene in your screenplay
+- How to write a scene in your screenplay
 https://nofilmschool.com/how-to-write-a-scene
+- [OBS](OBS.md) Open Broadcaster Software
 
 ### Continuous Delivery, Continuous Integration, Automatic Deployment, DevOps, etc.
 
+- [Buck](Buck.md)
 - [Jenkins](Jenkins.md)
 - Jira
 - [Octopus](Octopus.md)
 - Phabricator
 - Redmine
+- release strategies (blue/green, canary, feature flags).
 - Sonarqube
 
 ### Process management and misc software lifecycle issues

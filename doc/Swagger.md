@@ -1,9 +1,15 @@
 [Home](Readme.md)
 # Swagger
 
+API management system
+
 See Also:
 
  - [APIs](APIs.md)
+ - [GraphQL](GraphQL.md)
+ - [JSON-API](JSON-API.md)
+ - [OAuth](OAuth.md)
+ - [Rest](REST.md)
 
 https://swagger.io/
 
@@ -17,11 +23,13 @@ https://www.npmjs.com/package/swagger
 A way to fetch and run a fresh version of it.
 From https://swagger.io/docs/open-source-tools/swagger-editor/
 
+```bash
     $ git clone https://github.com/swagger-api/swagger-editor.git
     $ cd swagger-editor
     $ npm install
     $ npm run build
     $ npm start
+```
 
 ---
 
@@ -46,8 +54,10 @@ https://github.com/OAI/OpenAPI-Specification
 More about OpenAPI at their github:
 https://github.com/swagger-api/swagger-editor
 
+```bash
     $ docker pull swaggerapi/swagger-editor
     $ docker run -d -p 80:8080 swaggerapi/swagger-editor
+```
 
 You can then view the app by navigating to http://localhost in your browser.
 

@@ -3,6 +3,18 @@
 
 https://gnupg.org/
 
+See also:
+
+- [Cryptography](Cryptography.md)
+
+**Table of contents**
+
+- [Miscellaneous](Gpg.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
 ---
 
 To install:

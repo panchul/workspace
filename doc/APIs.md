@@ -1,11 +1,13 @@
+[Home](Readme.md)
 # APIs
 
 See Also:
 
- - [JSON-API](JSON-API.md)
- - [OAuth](OAuth.md)
- - [Rest](REST.md)
- - [Swagger](Swagger.md)
+  - [GraphQL](GraphQL.md)
+  - [JSON-API](JSON-API.md)
+  - [OAuth](OAuth.md)
+  - [Rest](REST.md)
+  - [Swagger](Swagger.md)
 
 ---
 

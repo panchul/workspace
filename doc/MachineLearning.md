@@ -1,23 +1,27 @@
 [Home](Readme.md)
 # Machine Learning
 
+This is meant to be more about Neural Networks, even though there is a chapter [Neural Network](NeuralNetwork.md). But there is also a broader chapter [Artificial Intelligence](ArtificialIntelligence.md#miscellaneous).
+
+
 See Also:
 
- - [Alexa](Alexa.md)
- - [ComputerVision](ComputerVision.md)
- - [Keras](Keras.md)
- - [Kociemba](Kociemba.md)
- - [MarkovChains](MarkovChains.md)
- - [Neural Network](NeuralNetwork.md)
-   - [GAN](GAN.md), (Generative Adversarial networks)
- - [ONNX](ONNX.md)
- - [Python](Python.md)
-   - [Matplotlib](Matplotlib.md)
-   - [Pandas](Pandas.md)
-   - [PyTorch](PyTorch.md)
-   - [Scikit](Scikit.md)
- - [Splunk](Splunk.md)
- - [TensorFlow](TensorFlow.md)
+  - [Alexa](Alexa.md)
+  - [Artificial Intelligence](ArtificialIntelligence.md#miscellaneous)
+  - [ComputerVision](ComputerVision.md)
+   - [Keras](Keras.md)
+   - [Kociemba](Kociemba.md)
+   - [MarkovChains](MarkovChains.md)
+   - [Neural Network](NeuralNetwork.md)
+    - [GAN](GAN.md), (Generative Adversarial networks)
+  - [ONNX](ONNX.md)
+  - [Python](Python.md)
+    - [Matplotlib](Matplotlib.md)
+    - [Pandas](Pandas.md)
+    - [PyTorch](PyTorch.md)
+    - [Scikit](Scikit.md)
+  - [Splunk](Splunk.md)
+  - [TensorFlow](TensorFlow.md)
 
 **Content**
 

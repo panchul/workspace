@@ -4,6 +4,7 @@
 See Also:
 
 - [Erlang](Erlang.md)
+- [Haskel](Haskel.md)
 
 https://elixir-lang.org/
 https://elixir-lang.org/install.html

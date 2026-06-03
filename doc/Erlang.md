@@ -3,12 +3,13 @@
 
 See Also:
 
-   - common test(CT)  
+  - common test(CT)  
   - [Elixir](Elixir.md)
-   - eunit  
-   - meck  
-   - rebar  
-   - [Yaws](Yaws.md) - a dynamic web server in Erlang
+  - [Haskel](Haskel.md)
+  - eunit  
+  - meck  
+  - rebar  
+  - [Yaws](Yaws.md) - a dynamic web server in Erlang
 
 My Erlang sandbox is [https://github.com/panchul/sb_erlang](https://github.com/panchul/sb_erlang).
 

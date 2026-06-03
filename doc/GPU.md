@@ -17,6 +17,7 @@ See also:
 **Table of contents**
 
 - [NVidia](GPU.md#nvidia)
+- [Tutorials](GPU.md#tutorials)
 - [Miscellaneous](GPU.md#miscellaneous)
 
 ## NVidia
@@ -26,6 +27,16 @@ See also:
 Intelligent video analytics, etc.
 
 https://forums.developer.nvidia.com/c/accelerated-computing/intelligent-video-analytics/13
+
+---
+
+## Tutorials
+
+---
+
+Neat review and sample code here:
+
+https://carpentries-incubator.github.io/lesson-gpu-programming/first_program.html
 
 ---
 

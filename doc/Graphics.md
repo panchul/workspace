@@ -265,7 +265,9 @@ https://en.wikipedia.org/wiki/Wavefront_.obj_file
 
 To extract frames from a video, you can use ffmpeg:
 
+```bash
     $ ffmpeg -i somevideo.mp4 myframe%03d.jpg
+```
 
 ---
 

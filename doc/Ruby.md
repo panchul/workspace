@@ -14,7 +14,6 @@
 
 ---
 
-
 Upgrading on Mac:
 
 https://mac.install.guide/ruby/update

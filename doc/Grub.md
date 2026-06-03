@@ -1,9 +1,19 @@
 [Home](Readme.md)
-# grub
+# Grub
 
 See Also:
 
  - [Linux](Linux.md)
+
+---
+
+**Contents**
+
+- [Miscellaneous](Grub.md#miscellaneous)
+
+---
+
+## Miscellaneous
 
 ---
 

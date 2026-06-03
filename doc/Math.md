@@ -9,6 +9,16 @@ See Also:
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Math.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 Binomial coefficients, nCk, n-choose-k
 
 https://en.wikipedia.org/wiki/Binomial_coefficient

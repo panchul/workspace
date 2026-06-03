@@ -1,5 +1,5 @@
 [Home](Readme.md)
-# cmake
+# CMake
 
 https://cmake.org/download/
 
@@ -35,11 +35,15 @@ See Also:
 
 Check your current version:
 
+```bash
     $ cmake --version
+```
 
 Uninstall it with this if necessary:
 
+```bash
     $ sudo apt remove cmake
+```
 
 Visit https://cmake.org/download/ and download the latest bash script(something
 like `cmake-3.10.0-Linux-x86_64.sh`).
@@ -48,14 +52,17 @@ You can download or copy the script to `/opt/` - that's the default install loca
 
 Make the script executable:
 
+```bash
     $ chmod +x /opt/cmake-3.*your_version*.sh
-
+```
 Change to desired installation directory (to `/opt/` for example)
 As of cmake 3.10.2 the installer no longer seems to install to /opt by default
 
 Run:
 
+```bash
     $ sudo bash /opt/cmake-3.*your_version*.sh
+```
 
 You will need to press `y` twice.
 
@@ -63,24 +70,32 @@ The script installs the binary to `/opt/cmake-3.*your_version*` so in order to g
 the cmake command, make a symbolic link if needed, the installer may
 have already created one for all binaries:
 
+```bash
     $ sudo ln -s /opt/cmake-3.*your_version*/bin/* /usr/local/bin
+```
 
 You may need to restart your terminal to 'see' the correct binary in the path.
 
 Check that you got the version you wanted:
 
+```bash
     $ cmake --version
+```
 
 ---
 
 On Ubuntu, or other places, there could be an error about Ninja, install that package
 like so:
 
+```bash
     $ apt install ninja-build
+```
 
 Might also need to link it:
 
+```bash
     # ln -s /usr/bin/ninja /usr/bin/ninja-build
+```
 
 There is a [longer discussion](https://stackoverflow.com/questions/38658014/ninja-not-found-by-cmake).
 
@@ -126,15 +141,21 @@ In simple config, this should be enough:
 
 To generate (in current folder):
 
+```bash
     $ cmake .
+```
 
 To build:
 
+```bash
     $ cmake --build .
+```
 
 To install:
 
+```bash
     $ cmake --install .
+```
 
 ---
 
@@ -142,7 +163,9 @@ To install:
 
 To install to a specific directory(prefix):
 
+```bash
     $ cmake --install . --prefix ~/pxl
+```
 
 ---
 

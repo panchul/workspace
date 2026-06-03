@@ -3,8 +3,9 @@
 
 See also
 
- - [Linux.md](Linux.md)
-
+  - [EmailClients](EmailClients.md)
+  - [Linux.md](Linux.md)
+ 
 https://httpd.apache.org/
 
 ---
@@ -16,8 +17,6 @@ https://httpd.apache.org/
 ---
 
 ## Miscellaneous
-
----
 
 ---
 
@@ -33,6 +32,7 @@ TODO: summarize
 
 Different ways to restart the server(depends on versions):
 
+```bash
     $ sudo apache2ctl restart
 
     $ sudo systemctl restart apcche2.service
@@ -46,5 +46,6 @@ Different ways to restart the server(depends on versions):
     $ sudo restart apache2
     (or, maybe)
     $ sudo reload apache2
-        
+```
+
 ---

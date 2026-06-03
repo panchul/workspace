@@ -10,6 +10,16 @@ https://www.balena.io/etcher/?ref=etcher_footer
 
 ---
 
+**Contents**
+
+- [Miscellaneous](Etcher.md#miscellaneous)
+
+---
+
+## Miscellaneous
+
+---
+
 A workaround for Catalina is to run as sudo, and keep the .iso in the belenaEtcher.app content folder
 
 ```bash
