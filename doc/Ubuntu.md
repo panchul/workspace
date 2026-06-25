@@ -19,6 +19,7 @@ See Also:
 Contents
 
 - [Installing](Ubuntu.md#installing)
+- [Updating](Ubuntu.md#updating)
 - [User Management](Ubuntu.md#User-management)
 - [Networking](Ubuntu.md#Networking)
 - [GPU and related](Ubuntu.md#gpu-and-related)
@@ -70,6 +71,21 @@ On Ubuntu, maybe with `--fix-missing`, and maybe with `apt update`:
 On Fedora 29:
 
     $ yum install kernel-develop-...    
+
+---
+
+# Updating
+
+---
+
+Release upgrade:
+
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt autoremove
+systemctl reboot
+sudo do-release-upgrade
+```
 
 ---
 

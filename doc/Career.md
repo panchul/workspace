@@ -805,3 +805,9 @@ I memorized mnemonics for structure of how I execute my interview, as well as fo
 link of post from blind website https://lnkd.in/dShYNZDf
 
 ---
+
+Blockchain jobs
+
+https://blockchainheadhunter.com/jobs
+
+---
