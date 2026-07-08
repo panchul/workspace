@@ -91,6 +91,7 @@
 - [Racket](Racket.md)  
 - [RegEx](RegEx.md)
 - [Ruby](Ruby.md)  
+- [Rust](Rust.md)  
 - [Scala](Scala.md)  
   - [Lagom](Lagom.md)    
 - [Sed](Sed.md)

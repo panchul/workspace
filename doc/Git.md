@@ -529,6 +529,60 @@ https://github.com/features
 
 ---
 
+Configuring on a fresh environment.
+
+Check if you already have some configuration:
+```bash
+$ git config --global --get user.name; git config --global --get user.email; git config --global --get init.defaultBranch; git config --global --get pull.rebase; git config --global --get core.editor; git config --global --get credential.helper; git config --global --get commit.gpgsign; git config --global --get gpg.format
+```
+
+To setup your private commit email address: https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address
+
+
+The simple best-practice setup for Linux + GitHub (replace placeholders first):
+
+1. Set identity and safe defaults
+```bash
+git config --global user.name "Your Real Name"
+git config --global user.email "you@example.com"
+git config --global init.defaultBranch main
+git config --global pull.rebase false
+git config --global fetch.prune true
+git config --global core.autocrlf input
+```
+
+2. Set credential/auth strategy (recommended: SSH keys)
+```bash
+ssh-keygen -t ed25519 -C "you@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+```
+
+3. Add the printed public key to GitHub
+GitHub -> Settings -> SSH and GPG keys -> New SSH key
+
+4. Test GitHub auth
+```bash
+ssh -T git@github.com
+```
+
+5. Ensure your repo remote uses SSH
+```bash
+git remote -v
+git remote set-url origin git@github.com:YOUR_USER/YOUR_REPO.git
+```
+
+6.Verify all config values are set
+```bash
+git config --global --list --show-origin
+git config --global --get user.name
+git config --global --get user.email
+git config --global --get init.defaultBranch
+```
+
+---
+
 ## Troubleshooting
 
 See also [Undoing things](Git.md#undoing-things)
